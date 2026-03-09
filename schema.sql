@@ -18,6 +18,8 @@ CREATE TABLE IF NOT EXISTS Encounters (
     Date_of_Encounter DATE,
     Location_Type VARCHAR,
     Conscious_Recall BOOLEAN,
+    Investigator_Credibility VARCHAR,
+    Witness_Credibility VARCHAR,
     FOREIGN KEY (Subject_ID) REFERENCES Subjects(Subject_ID)
 );
 

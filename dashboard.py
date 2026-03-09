@@ -63,7 +63,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<div class="title-glow">The Experiencer Data Project</div>', unsafe_allow_html=True)
+st.markdown('<div class="title-glow">The Anomaly Taxonomy</div>', unsafe_allow_html=True)
 st.markdown('<div class="subtitle">DECODING ENCOUNTERS USING THE BULLARD MOTIF TAXONOMY</div><br>', unsafe_allow_html=True)
 
 st.info("**Academic Framework & Methodology Disclaimer**  \n"
@@ -82,7 +82,10 @@ def load_data():
             e.Date_of_Encounter, 
             e.Location_Type, 
             e.Case_Number, 
-            e.Source_Material
+            e.Source_Material,
+            e.Investigator_Credibility,
+            e.Witness_Credibility,
+            s.Hypnosis_Utilized
         FROM Encounters e
         JOIN Subjects s ON e.Subject_ID = s.Subject_ID
     """, conn)
@@ -105,13 +108,34 @@ def load_data():
 
 encounters_df, events_df = load_data()
 
+st.sidebar.header("Data Purity Filters")
+exclude_hypnosis = st.sidebar.checkbox("Exclude Hypnosis Cases", value=False)
+
+inv_creds = [c for c in encounters_df['Investigator_Credibility'].dropna().unique()]
+if inv_creds:
+    selected_inv_cred = st.sidebar.multiselect("Investigator Credibility", inv_creds, default=inv_creds)
+
+wit_creds = [c for c in encounters_df['Witness_Credibility'].dropna().unique()]
+if wit_creds:
+    selected_wit_cred = st.sidebar.multiselect("Witness Credibility", wit_creds, default=wit_creds)
+
+st.sidebar.divider()
 st.sidebar.header("Filter Database")
 selected_source = st.sidebar.selectbox("Filter by Source Material", ["All"] + list(encounters_df['Source_Material'].dropna().unique()))
 
+filtered_encounters = encounters_df.copy()
+
 if selected_source != "All":
-    filtered_encounters = encounters_df[encounters_df['Source_Material'] == selected_source]
-else:
-    filtered_encounters = encounters_df
+    filtered_encounters = filtered_encounters[filtered_encounters['Source_Material'] == selected_source]
+
+if exclude_hypnosis:
+    filtered_encounters = filtered_encounters[filtered_encounters['Hypnosis_Utilized'] != 1]
+
+if inv_creds:
+    filtered_encounters = filtered_encounters[filtered_encounters['Investigator_Credibility'].isin(selected_inv_cred) | filtered_encounters['Investigator_Credibility'].isna()]
+    
+if wit_creds:
+    filtered_encounters = filtered_encounters[filtered_encounters['Witness_Credibility'].isin(selected_wit_cred) | filtered_encounters['Witness_Credibility'].isna()]
 
 st.metric("Total Encounters in Matrix", len(filtered_encounters))
 
