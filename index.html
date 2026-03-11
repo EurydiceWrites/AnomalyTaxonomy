@@ -85,6 +85,9 @@
 <body class="bg-mystic min-h-screen">
     <div id="root"></div>
 
+    <!-- Inject static data bundle for fully portable web deployment on GitHub Pages -->
+    <script src="data.js"></script>
+
     <script type="text/babel">
         const { useState, useEffect, useMemo } = React;
 
@@ -107,32 +110,25 @@
             const [searchQuery, setSearchQuery] = useState("");
 
             useEffect(() => {
-                const fetchData = async () => {
-                    try {
-                        const [statsRes, archRes, casesRes, heatRes, motifRes] = await Promise.all([
-                            fetch('http://127.0.0.1:5000/api/stats'),
-                            fetch('http://127.0.0.1:5000/api/architecture'),
-                            fetch('http://127.0.0.1:5000/api/cases'),
-                            fetch('http://127.0.0.1:5000/api/heatmap'),
-                            fetch('http://127.0.0.1:5000/api/motifs')
-                        ]);
-                        
-                        setStats(await statsRes.json());
-                        setArchitecture(await archRes.json());
-                        setCases(await casesRes.json());
-                        setHeatmap(await heatRes.json());
-                        setMotifDict(await motifRes.json());
-                        setLoading(false);
-                    } catch (error) {
-                        console.error("Failed to connect:", error);
+                const loadData = () => {
+                    if (typeof UAP_DATA === 'undefined') {
+                        console.error("Data bundle not found. Please ensure data.js is generated.");
+                        return;
                     }
+                    setStats(UAP_DATA.stats);
+                    setArchitecture(UAP_DATA.architecture);
+                    setCases(UAP_DATA.cases);
+                    setHeatmap(UAP_DATA.heatmap);
+                    setMotifDict(UAP_DATA.motifs);
+                    setLoading(false);
                 };
-                fetchData();
+                
+                // Slight delay to allow DOM to catch up for aesthetic loading
+                setTimeout(loadData, 800);
             }, []);
 
-            const loadSequence = async (encounter_id) => {
-                const res = await fetch(`http://127.0.0.1:5000/api/sequence/${encounter_id}`);
-                const data = await res.json();
+            const loadSequence = (encounter_id) => {
+                const data = UAP_DATA.sequences[encounter_id] || [];
                 setSequence(data);
                 setSelectedCase(cases.find(c => c.Encounter_ID === encounter_id));
             };
