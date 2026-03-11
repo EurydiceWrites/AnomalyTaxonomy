@@ -11,6 +11,8 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <!-- Babel for JSX -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -89,7 +91,130 @@
     <script src="data.js"></script>
 
     <script type="text/babel">
-        const { useState, useEffect, useMemo } = React;
+        const { useState, useEffect, useMemo, useRef } = React;
+
+        const BubbleChart = ({ data, activeCodes, onSelectCode, onClose }) => {
+            const svgRef = useRef(null);
+
+            useEffect(() => {
+                if (!data || !svgRef.current) return;
+                
+                const width = window.innerWidth * 0.8;
+                const height = window.innerHeight * 0.8;
+                
+                d3.select(svgRef.current).selectAll("*").remove();
+
+                const pack = data => d3.pack()
+                    .size([width, height])
+                    .padding(8)
+                (d3.hierarchy(data)
+                    .sum(d => d.value)
+                    .sort((a, b) => b.value - a.value));
+
+                const root = pack(data);
+
+                const svg = d3.select(svgRef.current)
+                    .attr("viewBox", `-${width / 2} -${height / 2} ${width} ${height}`)
+                    .style("display", "block")
+                    .style("margin", "0 auto")
+                    .style("cursor", "crosshair");
+
+                svg.on("click", (event) => zoom(event, root));
+
+                const node = svg.append("g")
+                    .selectAll("circle")
+                    .data(root.descendants().slice(1))
+                    .join("circle")
+                    .attr("fill", d => {
+                        if (d.children) return "rgba(10, 14, 23, 0.8)"; 
+                        return activeCodes.includes(d.data.name) ? "rgba(0, 242, 254, 0.8)" : "rgba(138, 43, 226, 0.15)";
+                    })
+                    .attr("stroke", d => {
+                        if (d.children) return "rgba(138, 43, 226, 0.4)"; 
+                        return activeCodes.includes(d.data.name) ? "#ffffff" : "rgba(0, 242, 254, 0.2)";
+                    })
+                    .attr("stroke-width", d => activeCodes.includes(d.data.name) ? 2 : 1)
+                    .on("mouseover", function(event, d) { 
+                        d3.select(this).attr("stroke", "#00f2fe").attr("stroke-width", d.children ? 2 : 2).style("filter", "drop-shadow(0 0 12px rgba(0, 242, 254, 0.6))"); 
+                    })
+                    .on("mouseout", function(event, d) { 
+                        d3.select(this)
+                          .attr("stroke", d.children ? "rgba(138, 43, 226, 0.4)" : (activeCodes.includes(d.data.name) ? "#ffffff" : "rgba(0, 242, 254, 0.2)"))
+                          .attr("stroke-width", d.children ? 1 : (activeCodes.includes(d.data.name) ? 2 : 1))
+                          .style("filter", "none");
+                    })
+                    .on("click", (event, d) => {
+                        if (d.children) {
+                            zoom(event, focus === d ? root : d);
+                            event.stopPropagation();
+                        } else {
+                            onSelectCode(d.data.name);
+                            event.stopPropagation();
+                        }
+                    });
+
+                const label = svg.append("g")
+                    .style("font", "10px sans-serif")
+                    .style("font-family", "Inter")
+                    .style("font-weight", "600")
+                    .attr("pointer-events", "none")
+                    .attr("text-anchor", "middle")
+                    .selectAll("text")
+                    .data(root.descendants())
+                    .join("text")
+                    .style("fill-opacity", d => d.parent === root ? 1 : 0)
+                    .style("display", d => d.parent === root ? "inline" : "none")
+                    .style("fill", "#fff")
+                    .text(d => d.children ? d.data.name.toUpperCase() : `${d.data.name}: ${d.data.desc.length > 20 ? d.data.desc.substring(0,20)+'...' : d.data.desc}`)
+                    .style("text-shadow", "0px 2px 4px rgba(0,0,0,1)");
+
+                let focus = root;
+                let view;
+
+                const zoomTo = v => {
+                    const k = width / v[2];
+                    view = v;
+                    label.attr("transform", d => `translate(${(d.x - v[0]) * k},${(d.y - v[1]) * k})`);
+                    node.attr("transform", d => `translate(${(d.x - v[0]) * k},${(d.y - v[1]) * k})`);
+                    node.attr("r", d => d.r * k);
+                };
+
+                const zoom = (event, d) => {
+                    focus = d;
+                    const transition = svg.transition()
+                        .duration(750)
+                        .tween("zoom", d => {
+                            const i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2.5]);
+                            return t => zoomTo(i(t));
+                        });
+                    label
+                      .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
+                      .transition(transition)
+                        .style("fill-opacity", d => d.parent === focus ? 1 : 0)
+                        .on("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
+                        .on("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
+                };
+
+                zoomTo([root.x, root.y, root.r * 2.5]);
+                
+            }, [data, activeCodes]);
+
+            return (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md p-8 fade-in">
+                    <button 
+                        onClick={onClose}
+                        className="absolute top-6 right-8 text-white hover:text-[#00f2fe] flex items-center gap-2 font-bold tracking-widest uppercase transition-colors text-xs border border-gray-600 rounded px-4 py-2 hover:border-[#00f2fe] bg-black/50"
+                    >
+                        ✖ CLOSE MAP
+                    </button>
+                    <div className="text-center absolute top-6 left-8 pointer-events-none">
+                        <h2 className="text-2xl font-extrabold text-glow tracking-widest text-left">MOTIF BUBBLE CLUSTER</h2>
+                        <p className="text-gray-400 text-sm mt-1 text-left">Click a parent cluster to zoom in. Click a specific motif to toggle filter.</p>
+                    </div>
+                    <svg ref={svgRef} className="w-full h-full max-h-[90vh]"></svg>
+                </div>
+            );
+        };
 
         const Dashboard = () => {
             const [stats, setStats] = useState({ total_encounters: 0, total_events: 0 });
@@ -109,6 +234,7 @@
             const [filterHypnosis, setFilterHypnosis] = useState(false);
             const [searchQuery, setSearchQuery] = useState("");
             const [expandedCategory, setExpandedCategory] = useState(null);
+            const [showBubbleModal, setShowBubbleModal] = useState(false);
 
             useEffect(() => {
                 const loadData = () => {
@@ -185,6 +311,22 @@
                     motifs: grouped[cat].sort((a,b) => a.motif_number.localeCompare(b.motif_number))
                 }));
             }, [motifDict, searchQuery]);
+
+            const bubbleHierarchyData = useMemo(() => {
+                const grouped = {};
+                motifDict.forEach(m => {
+                    const cat = m.current_family_header ? formatCategory(m.current_family_header) : "UNKNOWN CATEGORY";
+                    if (!grouped[cat]) grouped[cat] = [];
+                    grouped[cat].push({ name: m.motif_number, desc: m.motif_description, value: 1 });
+                });
+                return {
+                    name: "root",
+                    children: Object.keys(grouped).map(cat => ({
+                        name: cat,
+                        children: grouped[cat]
+                    }))
+                };
+            }, [motifDict]);
 
             if (loading) {
                 return (
@@ -286,7 +428,15 @@
                             
                             {/* MOTIF CLICK-THROUGH DICTIONARY */}
                             <div className="glass-card p-4 h-[750px] flex flex-col">
-                                <h3 className="text-sm font-bold text-gray-300 uppercase tracking-widest mb-4 border-b border-gray-800 pb-2">Motif Dictionary</h3>
+                                <div className="flex justify-between items-center mb-4 border-b border-gray-800 pb-2">
+                                    <h3 className="text-sm font-bold text-gray-300 uppercase tracking-widest">Motif Dictionary</h3>
+                                    <button 
+                                        onClick={() => setShowBubbleModal(true)}
+                                        className="text-[10px] font-bold px-2 py-1 flex items-center gap-1 rounded border border-[#8a2be2]/50 text-[#8a2be2] hover:bg-[#8a2be2]/20 hover:text-white transition-all"
+                                    >
+                                        🫧 View Bubble Map
+                                    </button>
+                                </div>
                                 <input 
                                     type="text"
                                     placeholder="Search codes (e.g. M119)..."
@@ -452,6 +602,23 @@
                             ))}
                         </div>
                     </div>
+
+                    {/* BUBBLE UI MODAL */}
+                    {showBubbleModal && (
+                        <BubbleChart 
+                            data={bubbleHierarchyData} 
+                            activeCodes={filterMotifCodes}
+                            onSelectCode={(code) => {
+                                setFilterMotifCodes(prev => 
+                                    prev.includes(code) 
+                                        ? prev.filter(c => c !== code)
+                                        : [...prev, code]
+                                );
+                            }}
+                            onClose={() => setShowBubbleModal(false)}
+                        />
+                    )}
+
                 </div>
             );
         };
