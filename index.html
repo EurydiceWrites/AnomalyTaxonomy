@@ -202,9 +202,6 @@
                     .text(d => d.children ? d.data.name.toUpperCase() : d.data.name)
                     .style("text-shadow", "0px 2px 4px rgba(0,0,0,1)");
 
-                // Cleanup tooltip on unmount
-                return () => tooltip.remove();
-
                 let focus = root;
                 let view;
 
@@ -233,6 +230,9 @@
                 };
 
                 zoomTo([root.x, root.y, root.r * 2.5]);
+                
+                // Cleanup tooltip on unmount
+                return () => tooltip.remove();
                 
             }, [data, activeCodes]);
 
