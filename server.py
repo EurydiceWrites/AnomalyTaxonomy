@@ -54,7 +54,7 @@ def get_cases():
     
     # We also want to know which motifs this case has, so we can filter by Motif in the UI
     motifs_query = """
-        SELECT e.Encounter_ID, m.current_family_header 
+        SELECT e.Encounter_ID, m.current_family_header, e.Motif_Code
         FROM Encounter_Events e
         JOIN Motif_Dictionary m ON e.Motif_Code = m.motif_number
     """
@@ -68,12 +68,18 @@ def get_cases():
 
     # Group motifs by encounter
     encounter_motifs = {}
+    encounter_motif_codes = {}
     for r in motifs_raw:
         eid = r['Encounter_ID']
         cat = r['current_family_header']
+        code = r['Motif_Code']
+        
         if eid not in encounter_motifs:
             encounter_motifs[eid] = set()
+            encounter_motif_codes[eid] = set()
+            
         encounter_motifs[eid].add(cat)
+        encounter_motif_codes[eid].add(code)
         
     for c in cases_raw:
         pseudo = str(c['subject']).lower()
@@ -86,9 +92,21 @@ def get_cases():
         
         # Attach list of motif categories present in this case
         c['motifs_present'] = list(encounter_motifs.get(eid, []))
+        c['motifs_present_codes'] = list(encounter_motif_codes.get(eid, []))
 
     conn.close()
     return jsonify(cases_raw)
+
+@app.route('/api/motifs', methods=['GET'])
+def get_motifs():
+    conn = get_db()
+    query = """
+        SELECT motif_number, motif_description, current_family_header
+        FROM Motif_Dictionary
+    """
+    motifs = [dict(row) for row in conn.execute(query).fetchall()]
+    conn.close()
+    return jsonify(motifs)
 
 @app.route('/api/heatmap', methods=['GET'])
 def get_heatmap():
