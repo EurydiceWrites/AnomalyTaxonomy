@@ -10,7 +10,7 @@ class EncounterEvent(BaseModel):
     This schema defines a single event (Motif) within a UFO encounter narrative.
     """
     sequence_order: int = Field(description="The chronological order of this event (1, 2, 3, etc.). If multiple traits/actions happen at the exact same moment, assign them the exact same sequence number.")
-    motif_code: str = Field(description="The alphanumeric Motif Code assigned to this event (e.g., 'E300'). If the event is a novel concept not covered by Bullard, assign the exact string 'ANOMALY'.")
+    motif_code: str = Field(description="The alphanumeric Motif Code assigned to this event (e.g., 'E300'). If the event is a novel concept not covered by Bullard, or if it doesn't perfectly match a dictionary definition (e.g., 'thin hair' is NOT 'sparse hair'), assign the exact string 'ANOMALY'. Do NOT force a fit.")
     source_citation: str = Field(description="The exact quote from the text that justifies this motif code")
     emotional_marker: Optional[str] = Field(description="The primary emotion the subject felt during this specific action (e.g., 'Terror', 'Calm', 'Confusion'). Leave null if not mentioned.")
     memory_state: str = Field(description="The mental state of the subject when they recalled or experienced this specific event. Choose EXACTLY one: 'conscious', 'hypnotic', or 'dream'.")
@@ -114,7 +114,7 @@ def process_narrative(text: str, sticky_header: str, source_citation: str, case_
     5. TEMPORAL BOUNDARIES: Use the temporal boundaries in the Sticky Header to relentlessly filter out peripheral memories and extract ONLY Motifs related to the Primary Event.
 
     You MUST ONLY USE the Motif Codes from the strict dictionary provided below. Do not invent codes.
-    If you are unsure, pick the closest fitting code.
+    WARNING: DO NOT FORCE A FIT. If the text describes a novel concept, or a descriptor that doesn't perfectly align with the dictionary (e.g., 'thin hair' does NOT mean 'sparse hair'), YOU MUST assign the exact string 'ANOMALY' instead of guessing a motif code. False positives are catastrophic to the matrix. If in doubt, use ANOMALY.
     
     {few_shot_examples}
     
