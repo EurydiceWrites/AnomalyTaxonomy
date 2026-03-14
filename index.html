@@ -299,11 +299,25 @@
                 }));
             }, [heatmap]);
 
+            // Which motif codes exist inside the currently filtered cases
+            const validMotifCodes = useMemo(() => {
+                const valid = new Set();
+                filteredCases.forEach(c => {
+                    if (c.motifs_present_codes) {
+                        c.motifs_present_codes.forEach(code => valid.add(code));
+                    }
+                });
+                return valid;
+            }, [filteredCases]);
+
             // Dictionary Search & Grouping
             const filteredGroupedDictionary = useMemo(() => {
                 const query = searchQuery.toLowerCase();
                 const grouped = {};
                 motifDict.forEach(m => {
+                    // Start by hiding motifs that are totally filtered out of the active case set
+                    if (!validMotifCodes.has(m.motif_number)) return;
+
                     if (query && !m.motif_number.toLowerCase().includes(query) && !m.motif_description.toLowerCase().includes(query)) {
                         return; // Skip if doesn't match search
                     }
@@ -315,7 +329,43 @@
                     category: cat,
                     motifs: grouped[cat].sort((a,b) => a.motif_number.localeCompare(b.motif_number))
                 }));
-            }, [motifDict, searchQuery]);
+            }, [motifDict, searchQuery, validMotifCodes]);
+
+            // Dynamically build the Constellation Network based strictly on the filtered cases, 
+            // instead of using the static global UAP_DATA.network
+            const filteredNetwork = useMemo(() => {
+                const encounterMotifs = {};
+                filteredCases.forEach(c => {
+                    encounterMotifs[c.Encounter_ID] = c.motifs_present_codes || [];
+                });
+
+                const pairCounter = {};
+                const validNodesForGraph = new Set();
+                
+                Object.values(encounterMotifs).forEach(motifs => {
+                    const sortedMotifs = [...motifs].sort();
+                    for (let i = 0; i < sortedMotifs.length; i++) {
+                        validNodesForGraph.add(sortedMotifs[i]);
+                        for (let j = i + 1; j < sortedMotifs.length; j++) {
+                            const pair = sortedMotifs[i] + '|' + sortedMotifs[j];
+                            pairCounter[pair] = (pairCounter[pair] || 0) + 1;
+                        }
+                    }
+                });
+
+                const nodes = motifDict.filter(m => validNodesForGraph.has(m.motif_number)).map(m => ({
+                    id: m.motif_number,
+                    group: m.current_family_header ? formatCategory(m.current_family_header) : "UNKNOWN CATEGORY",
+                    name: `${m.motif_number}: ${m.motif_description}`
+                }));
+
+                const links = Object.keys(pairCounter).map(pair => {
+                    const [source, target] = pair.split('|');
+                    return { source, target, value: pairCounter[pair] };
+                });
+
+                return { nodes, links };
+            }, [filteredCases, motifDict]);
 
 
 
@@ -620,7 +670,7 @@
                     {/* NETWORK UI MODAL */}
                     {showNetworkModal && (
                         <NetworkChart 
-                            data={UAP_DATA.network} 
+                            data={filteredNetwork} 
                             onClose={() => setShowNetworkModal(false)}
                             onNodeClick={(code) => {
                                 setFilterMotifCodes(prev => 
