@@ -273,7 +273,8 @@
                 return cases.filter(c => {
                     if (filterMulti && c.num_subjects < 2) return false;
                     if (filterHypnosis && c.hypnosis !== 1) return false;
-                    if (filterSource !== "ALL" && c.source !== filterSource) return false;
+                    if (filterSource === "Bullard" && (!c.source || !c.source.includes("Bullard"))) return false;
+                    if (filterSource === "Mack" && (!c.source || !c.source.toLowerCase().includes("mack"))) return false;
                     if (filterMotifCat !== "ALL" && (!c.motifs_present || !c.motifs_present.includes(filterMotifCat))) return false;
                     
                     if (filterMotifCodes.length > 0) {
@@ -396,7 +397,7 @@
                         <div className="flex items-center border border-gray-700 rounded-full px-4 py-2 bg-black/30">
                             <span className="text-sm font-bold text-gray-400 mr-2">Data Source:</span>
                             <select 
-                                className="bg-transparent text-[#39ff14] outline-none text-sm cursor-pointer appearance-none font-bold min-w-[120px]"
+                                className="bg-transparent text-[#00f2fe] outline-none text-sm cursor-pointer appearance-none font-bold min-w-[120px]"
                                 value={filterSource}
                                 onChange={(e) => setFilterSource(e.target.value)}
                             >
