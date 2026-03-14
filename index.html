@@ -15,6 +15,8 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Force Graph 2D -->
+    <script src="https://unpkg.com/react-force-graph-2d"></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
@@ -93,162 +95,139 @@
     <script type="text/babel">
         const { useState, useEffect, useMemo, useRef } = React;
 
-        const BubbleChart = ({ data, activeCodes, onSelectCode, onClose }) => {
-            const svgRef = useRef(null);
 
+
+        const ForceGraph2D = window.ForceGraph2D || window.ReactForceGraph2d;
+
+        const NetworkChart = ({ data, onClose }) => {
+            const [dimensions, setDimensions] = useState({ 
+                width: Math.min(window.innerWidth * 0.9, 1400), 
+                height: Math.min(window.innerHeight * 0.9, 900) 
+            });
+            const [minStrength, setMinStrength] = useState(10);
+            const fgRef = useRef();
+            
             useEffect(() => {
-                if (!data || !svgRef.current) return;
-                
-                const width = window.innerWidth * 0.8;
-                const height = window.innerHeight * 0.8;
-                
-                d3.select(svgRef.current).selectAll("*").remove();
-
-                const pack = data => d3.pack()
-                    .size([width, height])
-                    .padding(8)
-                (d3.hierarchy(data)
-                    .sum(d => d.value)
-                    .sort((a, b) => b.value - a.value));
-
-                const root = pack(data);
-
-                const svg = d3.select(svgRef.current)
-                    .attr("viewBox", `-${width / 2} -${height / 2} ${width} ${height}`)
-                    .style("display", "block")
-                    .style("margin", "0 auto")
-                    .style("cursor", "crosshair");
-
-                svg.on("click", (event) => zoom(event, root));
-
-                // Create tooltip div
-                const tooltip = d3.select(svgRef.current.parentNode)
-                    .append("div")
-                    .style("position", "absolute")
-                    .style("background", "rgba(10, 14, 23, 0.95)")
-                    .style("backdrop-filter", "blur(10px)")
-                    .style("border", "1px solid rgba(0, 242, 254, 0.4)")
-                    .style("border-radius", "8px")
-                    .style("padding", "12px")
-                    .style("color", "white")
-                    .style("font-size", "12px")
-                    .style("pointer-events", "none")
-                    .style("opacity", 0)
-                    .style("max-width", "250px")
-                    .style("box-shadow", "0 4px 20px rgba(0,0,0,0.5)")
-                    .style("z-index", 100);
-
-                const node = svg.append("g")
-                    .selectAll("circle")
-                    .data(root.descendants().slice(1))
-                    .join("circle")
-                    .attr("fill", d => {
-                        if (d.children) return "rgba(10, 14, 23, 0.8)"; 
-                        return activeCodes.includes(d.data.name) ? "rgba(0, 242, 254, 0.8)" : "rgba(138, 43, 226, 0.15)";
-                    })
-                    .attr("stroke", d => {
-                        if (d.children) return "rgba(138, 43, 226, 0.4)"; 
-                        return activeCodes.includes(d.data.name) ? "#ffffff" : "rgba(0, 242, 254, 0.2)";
-                    })
-                    .attr("stroke-width", d => activeCodes.includes(d.data.name) ? 2 : 1)
-                    .on("mouseover", function(event, d) { 
-                        d3.select(this).attr("stroke", "#00f2fe").attr("stroke-width", d.children ? 2 : 2).style("filter", "drop-shadow(0 0 12px rgba(0, 242, 254, 0.6))"); 
-                        
-                        // Show tooltip
-                        if (!d.children) {
-                            tooltip.transition().duration(200).style("opacity", 1);
-                            tooltip.html(`
-                                <div style="font-family: monospace; font-weight: bold; color: #00f2fe; margin-bottom: 4px;">${d.data.name}</div>
-                                <div style="line-height: 1.4;">${d.data.desc}</div>
-                            `)
-                            .style("left", (event.clientX + 15) + "px")
-                            .style("top", (event.clientY - 28) + "px");
-                        }
-                    })
-                    .on("mousemove", function(event) {
-                        tooltip.style("left", (event.clientX + 15) + "px").style("top", (event.clientY - 28) + "px");
-                    })
-                    .on("mouseout", function(event, d) { 
-                        d3.select(this)
-                          .attr("stroke", d.children ? "rgba(138, 43, 226, 0.4)" : (activeCodes.includes(d.data.name) ? "#ffffff" : "rgba(0, 242, 254, 0.2)"))
-                          .attr("stroke-width", d.children ? 1 : (activeCodes.includes(d.data.name) ? 2 : 1))
-                          .style("filter", "none");
-                          
-                        // Hide tooltip
-                        tooltip.transition().duration(500).style("opacity", 0);
-                    })
-                    .on("click", (event, d) => {
-                        if (d.children) {
-                            zoom(event, focus === d ? root : d);
-                            event.stopPropagation();
-                        } else {
-                            onSelectCode(d.data.name);
-                            event.stopPropagation();
-                        }
+                const handleResize = () => {
+                    setDimensions({ 
+                        width: Math.min(window.innerWidth * 0.9, 1400), 
+                        height: Math.min(window.innerHeight * 0.9, 900) 
                     });
-
-                const label = svg.append("g")
-                    .style("font", "12px sans-serif")
-                    .style("font-family", "Inter")
-                    .style("font-weight", "800")
-                    .attr("pointer-events", "none")
-                    .attr("text-anchor", "middle")
-                    .selectAll("text")
-                    .data(root.descendants())
-                    .join("text")
-                    .style("fill-opacity", d => d.parent === root ? 1 : 0)
-                    .style("display", d => d.parent === root ? "inline" : "none")
-                    .style("fill", "#fff")
-                    .text(d => d.children ? d.data.name.toUpperCase() : d.data.name)
-                    .style("text-shadow", "0px 2px 4px rgba(0,0,0,1)");
-
-                let focus = root;
-                let view;
-
-                const zoomTo = v => {
-                    const k = width / v[2];
-                    view = v;
-                    label.attr("transform", d => `translate(${(d.x - v[0]) * k},${(d.y - v[1]) * k})`);
-                    node.attr("transform", d => `translate(${(d.x - v[0]) * k},${(d.y - v[1]) * k})`);
-                    node.attr("r", d => d.r * k);
                 };
+                window.addEventListener('resize', handleResize);
+                return () => window.removeEventListener('resize', handleResize);
+            }, []);
 
-                const zoom = (event, d) => {
-                    focus = d;
-                    const transition = svg.transition()
-                        .duration(750)
-                        .tween("zoom", d => {
-                            const i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2.5]);
-                            return t => zoomTo(i(t));
-                        });
-                    label
-                      .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
-                      .transition(transition)
-                        .style("fill-opacity", d => d.parent === focus ? 1 : 0)
-                        .on("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
-                        .on("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
+            // Increase physics repulsion to untangle the hairball
+            useEffect(() => {
+                if (fgRef.current) {
+                    fgRef.current.d3Force('charge').strength(-800); // Push nodes apart
+                    fgRef.current.d3Force('link').distance(100); // Increase string length
+                }
+            }, []);
+
+            // Filter data to only show highly co-occurring motifs (value > minStrength) to reduce noise
+            const filteredData = useMemo(() => {
+                const filteredLinks = data.links.filter(l => l.value >= minStrength);
+                
+                // Only keep nodes that have at least one valid link after filtering
+                const validNodes = new Set();
+                filteredLinks.forEach(l => {
+                    validNodes.add(l.source);
+                    validNodes.add(l.target);
+                });
+                
+                return {
+                    nodes: data.nodes.filter(n => validNodes.has(n.id)),
+                    links: filteredLinks
                 };
-
-                zoomTo([root.x, root.y, root.r * 2.5]);
-                
-                // Cleanup tooltip on unmount
-                return () => tooltip.remove();
-                
-            }, [data, activeCodes]);
+            }, [data, minStrength]);
 
             return (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md p-8 fade-in">
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-md fade-in">
                     <button 
                         onClick={onClose}
-                        className="absolute top-6 right-8 text-white hover:text-[#00f2fe] flex items-center gap-2 font-bold tracking-widest uppercase transition-colors text-xs border border-gray-600 rounded px-4 py-2 hover:border-[#00f2fe] bg-black/50"
+                        className="absolute top-6 right-8 text-white hover:text-[#00f2fe] flex items-center gap-2 font-bold tracking-widest uppercase transition-colors text-xs border border-gray-600 rounded px-4 py-2 hover:border-[#00f2fe] bg-black/80 z-[60]"
                     >
-                        ✖ CLOSE MAP
+                        ✖ CLOSE NETWORK
                     </button>
-                    <div className="text-center absolute top-6 left-8 pointer-events-none">
-                        <h2 className="text-2xl font-extrabold text-glow tracking-widest text-left">MOTIF BUBBLE CLUSTER</h2>
-                        <p className="text-gray-400 text-sm mt-1 text-left">Click a parent cluster to zoom in. Click a specific motif to toggle filter.</p>
+
+                    <div className="relative border border-gray-800 rounded-xl bg-black/40 shadow-2xl overflow-hidden" style={{ width: dimensions.width, height: dimensions.height }}>
+                        
+                        {/* Control Panel Anchored strictly within the graph box */}
+                        <div className="absolute top-6 left-6 pointer-events-auto z-[60] bg-black/80 p-5 border border-gray-700 rounded-xl backdrop-blur-md shadow-[0_0_30px_rgba(0,0,0,0.8)] min-w-[320px] max-w-[400px]">
+                            <h2 className="text-xl font-extrabold text-glow tracking-widest leading-none mb-1">CONSTELLATION</h2>
+                            <p className="text-gray-400 text-xs mb-6 leading-tight">Physics-driven telemetry mapping of overlapping anomalies.</p>
+                            
+                            <div className="flex flex-col gap-2">
+                                <label className="text-xs font-bold text-[#00f2fe] uppercase tracking-widest flex justify-between">
+                                    <span>Signal Filter</span>
+                                    <span>{minStrength}+ Hits</span>
+                                </label>
+                                <input 
+                                    type="range" 
+                                    min="1" 
+                                    max="50" 
+                                    value={minStrength} 
+                                    onChange={(e) => setMinStrength(parseInt(e.target.value))}
+                                    className="w-full h-2 rounded-lg appearance-none cursor-pointer bg-gray-800 accent-[#00f2fe]"
+                                />
+                                <p className="text-[10px] text-gray-500 leading-tight mt-1">
+                                    Slide right to filter out rare anomalies, revealing the core structural "spine" of the UFO Matrix.
+                                </p>
+                            </div>
+                        </div>
+
+                        <ForceGraph2D
+                            ref={fgRef}
+                            graphData={filteredData}
+                            width={dimensions.width}
+                            height={dimensions.height}
+                            nodeLabel="name"
+                            nodeColor={node => {
+                                // Group color logic
+                                const colors = {
+                                    "THE UFO": "#00f2fe", // Cyan
+                                    "THE BEINGS": "#39ff14", // Neon Green
+                                    "EXAmINATION": "#ffff00", // Yellow
+                                    "COmmUNICATION": "#ffaa00", // Orange
+                                    "mESSASES": "#8a2be2", // Purple
+                                    "THE OTHERWORLD": "#ff00ff", // Magenta
+                                    "EFFECTS": "#ff007f", // Pink
+                                    "THEOPHANY": "#ffa500", // Gold
+                                    "SOUVENIR": "#00ffcc", // Aquamarine
+                                    "AFTEREFFECTS": "#ff4500", // Red-Orange
+                                };
+                                return colors[node.group] || "#ffffff";
+                            }}
+                            nodeRelSize={6}
+                            linkColor={link => `rgba(0, 242, 254, ${Math.min(0.8, link.value / 20)})`}
+                            linkWidth={link => Math.log(link.value) * 1.5}
+                            backgroundColor="transparent"
+                            enableNodeDrag={true}
+                            enableZoomPanInteraction={true}
+                        />
+
+                        {/* Anchored Slider directly below the Graph */}
+                        <div className="z-[60] bg-black/80 p-5 border border-gray-700 rounded-xl backdrop-blur-md shadow-[0_0_30px_rgba(0,0,0,0.8)] min-w-[350px] mt-4">
+                            <h2 className="text-xl font-extrabold text-white tracking-widest leading-none mb-1 text-center">FILTER NOISE</h2>
+                            <p className="text-gray-400 text-xs mb-4 text-center">Drag slider to reveal the core UFO Matrix architecture.</p>
+                            
+                            <div className="flex flex-col gap-3 items-center">
+                                <label className="text-sm font-bold text-[#00f2fe] uppercase tracking-widest text-center">
+                                    MINIMUM OCCURRENCES: {minStrength}
+                                </label>
+                                <input 
+                                    type="range" 
+                                    min="1" 
+                                    max="50" 
+                                    value={minStrength} 
+                                    onChange={(e) => setMinStrength(parseInt(e.target.value))}
+                                    className="w-full h-2 rounded-lg appearance-none cursor-pointer bg-gray-800 accent-[#00f2fe]"
+                                />
+                            </div>
+                        </div>
                     </div>
-                    <svg ref={svgRef} className="w-full h-full max-h-[90vh]"></svg>
                 </div>
             );
         };
@@ -271,7 +250,7 @@
             const [filterHypnosis, setFilterHypnosis] = useState(false);
             const [searchQuery, setSearchQuery] = useState("");
             const [expandedCategory, setExpandedCategory] = useState(null);
-            const [showBubbleModal, setShowBubbleModal] = useState(false);
+            const [showNetworkModal, setShowNetworkModal] = useState(false);
 
             useEffect(() => {
                 const loadData = () => {
@@ -349,21 +328,7 @@
                 }));
             }, [motifDict, searchQuery]);
 
-            const bubbleHierarchyData = useMemo(() => {
-                const grouped = {};
-                motifDict.forEach(m => {
-                    const cat = m.current_family_header ? formatCategory(m.current_family_header) : "UNKNOWN CATEGORY";
-                    if (!grouped[cat]) grouped[cat] = [];
-                    grouped[cat].push({ name: m.motif_number, desc: m.motif_description, value: 1 });
-                });
-                return {
-                    name: "root",
-                    children: Object.keys(grouped).map(cat => ({
-                        name: cat,
-                        children: grouped[cat]
-                    }))
-                };
-            }, [motifDict]);
+
 
             if (loading) {
                 return (
@@ -383,7 +348,7 @@
                             <div className="flex-1">
                                 <h1 className="text-5xl font-extrabold text-glow tracking-tight mb-2">UAP Sequence Explorer</h1>
                                 <p className="text-[#a0aec0] text-lg font-light tracking-wide uppercase flex items-center gap-2">
-                                    Mapping the Architecture of Anomalous Encounters
+                                    Mapping the Patterns of Anomalous Encounters
                                 </p>
                             </div>
                             <div className="text-right">
@@ -395,12 +360,12 @@
                         <div className="bg-black/40 border border-gray-800 rounded-lg p-6">
                             <p className="text-white mb-4 leading-relaxed">
                                 <strong className="text-[#00f2fe]">Welcome to the UAP Matrix.</strong><br/>
-                                Are experiencers reporting the exact same anomalous sequence of events across decades? To find out, this interactive database maps the structural DNA of {stats.total_encounters} historical anomalous encounters.
+                                Are experiencers reporting the exact same sequence of events across decades? To find out, this interactive database maps the core structure of {stats.total_encounters} historical anomalous encounters.
                             </p>
                             <h3 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-3">How to use this tool:</h3>
                             <ul className="list-disc list-inside text-gray-300 space-y-2 mb-6">
                                 <li><strong className="text-white">Filter the Matrix:</strong> Use the Global Filters below to zero in on specific types of encounters (e.g., cases involving multiple witnesses).</li>
-                                <li><strong className="text-white">Explore Case Timelines:</strong> Select a case from the Explorer grid to see its full chronological "Motif Sequence"—a step-by-step telemetry breakdown.</li>
+                                <li><strong className="text-white">Explore Case Timelines:</strong> Select a case from the Explorer grid to see its full chronological sequence of events.</li>
                                 <li><strong className="text-white">Discover Patterns:</strong> Scroll to the bottom to view the Relational Analytics engine, which visualizes decades of recurring anomalies.</li>
                             </ul>
                             
@@ -467,12 +432,14 @@
                             <div className="glass-card p-4 h-[750px] flex flex-col">
                                 <div className="flex justify-between items-center mb-4 border-b border-gray-800 pb-2">
                                     <h3 className="text-sm font-bold text-gray-300 uppercase tracking-widest">Motif Dictionary</h3>
-                                    <button 
-                                        onClick={() => setShowBubbleModal(true)}
-                                        className="text-[10px] font-bold px-2 py-1 flex items-center gap-1 rounded border border-[#8a2be2]/50 text-[#8a2be2] hover:bg-[#8a2be2]/20 hover:text-white transition-all"
-                                    >
-                                        🫧 View Bubble Map
-                                    </button>
+                                    <div className="flex gap-2">
+                                        <button 
+                                            onClick={() => setShowNetworkModal(true)}
+                                            className="text-[10px] font-bold px-2 py-1 flex items-center gap-1 rounded border border-[#00f2fe]/50 text-[#00f2fe] hover:bg-[#00f2fe]/20 hover:text-white transition-all"
+                                        >
+                                            🕸️ Constellation Graph
+                                        </button>
+                                    </div>
                                 </div>
                                 <input 
                                     type="text"
@@ -551,8 +518,14 @@
                             {/* SEQUENCE VIEWER */}
                             <div className="lg:col-span-2 glass-card p-8 h-[750px] flex flex-col relative">
                                 {!selectedCase ? (
-                                    <div className="flex-1 flex items-center justify-center text-gray-500 italic text-lg text-center px-10">
-                                        Select a designated case file to render its sequence telemetry, or click a specific Motif Code from the dictionary to filter the global matrix.
+                                    <div className="h-full flex items-center justify-center text-center p-12 text-gray-500 border border-gray-800/50 rounded-xl bg-black/40">
+                                        <div>
+                                            <div className="text-4xl mb-4 opacity-50">📂</div>
+                                            <h3 className="text-xl font-bold text-gray-400 mb-2">No Case Selected</h3>
+                                            <p className="max-w-md mx-auto">
+                                                Select a case file from the left to view its timeline, or click a specific motif code from the dictionary below to filter the global matrix.
+                                            </p>
+                                        </div>
                                     </div>
                                 ) : (
                                     <div className="flex-1 flex flex-col h-full fade-in">
@@ -640,19 +613,13 @@
                         </div>
                     </div>
 
-                    {/* BUBBLE UI MODAL */}
-                    {showBubbleModal && (
-                        <BubbleChart 
-                            data={bubbleHierarchyData} 
-                            activeCodes={filterMotifCodes}
-                            onSelectCode={(code) => {
-                                setFilterMotifCodes(prev => 
-                                    prev.includes(code) 
-                                        ? prev.filter(c => c !== code)
-                                        : [...prev, code]
-                                );
-                            }}
-                            onClose={() => setShowBubbleModal(false)}
+
+
+                    {/* NETWORK UI MODAL */}
+                    {showNetworkModal && (
+                        <NetworkChart 
+                            data={UAP_DATA.network} 
+                            onClose={() => setShowNetworkModal(false)}
                         />
                     )}
 
