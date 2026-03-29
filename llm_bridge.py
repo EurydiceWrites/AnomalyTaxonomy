@@ -13,7 +13,7 @@ class EncounterEvent(BaseModel):
     motif_code: str = Field(description="The alphanumeric Motif Code assigned to this event (e.g., 'E300'). If the event is a novel concept not covered by Bullard, or if it doesn't perfectly match a dictionary definition (e.g., 'thin hair' is NOT 'sparse hair'), assign the exact string 'ANOMALY'. Do NOT force a fit.")
     source_citation: str = Field(description="The exact quote from the text that justifies this motif code")
     emotional_marker: Optional[str] = Field(description="The primary emotion the subject felt during this specific action (e.g., 'Terror', 'Calm', 'Confusion'). Leave null if not mentioned.")
-    memory_state: Literal["conscious", "hypnosis", "altered", "unconscious"] = Field(description="The memory state of the subject during this event. 'conscious' = natural waking recall. 'hypnosis' = recovered via hypnotic regression. 'altered' = non-ordinary state like dream or trance. 'unconscious' = no memory of this period.")
+    memory_state: Literal["conscious", "hypnosis", "altered", "unconscious", "not_applicable"] = Field(description="The memory state of the subject during this event. 'conscious' = natural waking recall. 'hypnosis' = recovered via hypnotic regression. 'altered' = non-ordinary state like dream or trance. 'unconscious' = no memory of this period. 'not_applicable' = source is authored literature, mythology, or historical narrative, not a recalled personal experience.")
     source_page: str = Field(description="The physical page number(s) where this event is described, derived from the [--- START PAGE X ---] markers in the text (e.g., '42' or '42-43').")
     ai_justification: str = Field(description="When writing the ai_justification field, if the dictionary definition does not obviously match the text Bullard assigned the code to, do not assert that it fits. Instead, state what the dictionary defines the code as, state what the text actually describes, and acknowledge the gap. It is acceptable for Bullard's usage to stretch beyond the dictionary definition — your job is to be transparent about it, not to force a match.")
 
@@ -24,7 +24,7 @@ class EncounterProfile(BaseModel):
     """
     pseudonym: str = Field(description="The name or pseudonym of the subject(s)")
     age: Optional[str] = Field(description="The age of the subject at the time of the encounter, if known")
-    gender: Optional[str] = Field(description="The gender of the primary subject (e.g., 'Male', 'Female'), if known")
+    gender: Optional[Literal["male", "female", "nonbinary", "unknown"]] = Field(description="The gender of the primary subject, if known. Always lowercase.")
     date_of_encounter: Optional[str] = Field(description="The date the encounter occurred")
     location: Optional[str] = Field(description="The geographic location of the encounter")
     encounter_duration: Optional[str] = Field(description="The estimated total duration of the encounter or 'missing time'")
@@ -39,20 +39,71 @@ class EncounterProfile(BaseModel):
     pass
 
 class CaseMetadata(BaseModel):
-    hypnosis_used: Literal["YES", "NO"]
-    memory_retrieval_method: Literal["conscious", "hypnosis", "altered", "mixed", "unknown"]
+    memory_retrieval_method: Literal["conscious", "hypnosis", "altered", "mixed", "unknown", "not_applicable"]
 
 import os
 import sqlite3
 import json
+from datetime import datetime
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
 
-def process_narrative(text: str, sticky_header: str, source_citation: str, case_number: str):
+
+# --- Retrieval method context strings ---
+# These tell the LLM how to assign memory_state based on how the case was investigated.
+RETRIEVAL_CONTEXT_MAP = {
+    'hypnosis':  'RETRIEVAL METHOD CONTEXT: This entire account was recovered under hypnotic regression with a clinical investigator. Every event in this text must be assigned memory_state="hypnosis" unless the text explicitly states otherwise for a specific event.',
+    'conscious': 'RETRIEVAL METHOD CONTEXT: This account was recalled consciously by the witness without hypnotic regression. Every event must be assigned memory_state="conscious" unless the text explicitly states otherwise.',
+    'altered':   'RETRIEVAL METHOD CONTEXT: This account was recalled in a non-ordinary state (dream, trance, or similar). Every event must be assigned memory_state="altered" unless the text explicitly states otherwise.',
+    'mixed':     'RETRIEVAL METHOD CONTEXT: This account contains a mix of hypnotically and consciously recalled events. Assign memory_state on a per-event basis based on the text.',
+    'unknown':        'RETRIEVAL METHOD CONTEXT: The retrieval method for this account is unknown. Assign memory_state based on any explicit cues in the text; default to "conscious" if no cue is present.',
+    'not_applicable': 'RETRIEVAL METHOD CONTEXT: This source is authored literature, mythology, or historical narrative — not a recalled personal experience. Assign memory_state="not_applicable" for all events unless the text explicitly describes a character recalling an experience through a specific method.',
+}
+
+
+def flatten_motif_key(nested_dict):
     """
-    Processes a raw UFO narrative text block through Gemini, structuring the events
-    based on the Motif Dictionary, and saves them to the ufo_matrix.db database.
+    Walk the nested motif_key.json structure and return a flat {code: description} dict.
+
+    motif_key.json is organized like:
+        {"E--EFFECTS.": {"E100-199...": {"E100-109...": {"E100": "Vacuum effect..."}}}}
+
+    This function recursively finds every leaf node (where the value is a plain string,
+    meaning it's a code:description pair) and collects them all into one flat dictionary.
+    """
+    flat = {}
+    for key, value in nested_dict.items():
+        if isinstance(value, str):
+            # This is a leaf node — an actual motif code and its description
+            flat[key] = value
+        elif isinstance(value, dict):
+            # This is a category/subfamily — recurse deeper
+            flat.update(flatten_motif_key(value))
+    return flat
+
+
+def extract_narrative(text, sticky_header, retrieval_method="unknown",
+                      profile_name="baseline", case_number=None):
+    """
+    Sends narrative text to Gemini and returns structured extraction results.
+
+    This function handles ONLY the AI extraction step — it does NOT touch any database.
+    It loads the motif dictionary from motif_key.json (not the database), sends the text
+    to Gemini in chunks, and returns the structured results.
+
+    Parameters:
+        text:              The raw narrative text to process
+        sticky_header:     Case metadata header passed to the LLM with each chunk
+        retrieval_method:  One of: conscious, hypnosis, altered, mixed, unknown
+        profile_name:      Which prompt profile to use from prompt_library.json (default: "baseline")
+        case_number:       Case identifier (e.g., "084"). Used for JSON output filename.
+
+    Returns:
+        (final_profile, all_events, ai_events_json) where:
+        - final_profile:   EncounterProfile object from the first chunk (has subject metadata)
+        - all_events:      List of EncounterEvent objects (deduplicated, globally sequenced)
+        - ai_events_json:  List of dicts in the format qa_triage.py expects
     """
     load_dotenv()
     client = genai.Client()
@@ -70,59 +121,54 @@ def process_narrative(text: str, sticky_header: str, source_citation: str, case_
             current_chunk += para + "\n"
     if current_chunk.strip():
         chunks.append(current_chunk)
-    
+
     print(f"Divided the narrative into {len(chunks)} high-detail chunks.")
 
-    # Grab Motif Codes from database
+    # Load the Motif Dictionary from the JSON file (no database needed)
+    motif_key_path = os.path.join(os.path.dirname(__file__) or ".", "motif_key.json")
+    with open(motif_key_path, "r", encoding="utf-8") as f:
+        motif_key_nested = json.load(f)
+
+    motif_dict = flatten_motif_key(motif_key_nested)
+    print(f"[*] Loaded {len(motif_dict)} motif codes from motif_key.json")
+
+    # Build the motif rules string for the system instruction
     motif_rules = ""
-    with sqlite3.connect('ufo_matrix.db') as conn:
-        cursor = conn.cursor()
-        cursor.execute("SELECT motif_number, motif_description FROM Motif_Dictionary")
-        for row in cursor.fetchall():
-            motif_rules += f"- {row[0]}: {row[1]}\n"
+    for code, description in sorted(motif_dict.items()):
+        motif_rules += f"- {code}: {description}\n"
 
-        # Query the pre-populated retrieval method for this specific case
-        cursor.execute(
-            "SELECT memory_retrieval_method FROM Encounters WHERE Case_Number = ? COLLATE NOCASE",
-            (case_number,)
-        )
-        retrieval_row = cursor.fetchone()
-
-    RETRIEVAL_CONTEXT_MAP = {
-        'hypnosis':  'RETRIEVAL METHOD CONTEXT: This entire account was recovered under hypnotic regression with a clinical investigator. Every event in this text must be assigned memory_state="hypnosis" unless the text explicitly states otherwise for a specific event.',
-        'conscious': 'RETRIEVAL METHOD CONTEXT: This account was recalled consciously by the witness without hypnotic regression. Every event must be assigned memory_state="conscious" unless the text explicitly states otherwise.',
-        'altered':   'RETRIEVAL METHOD CONTEXT: This account was recalled in a non-ordinary state (dream, trance, or similar). Every event must be assigned memory_state="altered" unless the text explicitly states otherwise.',
-        'mixed':     'RETRIEVAL METHOD CONTEXT: This account contains a mix of hypnotically and consciously recalled events. Assign memory_state on a per-event basis based on the text.',
-        'unknown':   'RETRIEVAL METHOD CONTEXT: The retrieval method for this account is unknown. Assign memory_state based on any explicit cues in the text; default to "conscious" if no cue is present.',
-    }
-
-    retrieval_method = retrieval_row[0] if retrieval_row else 'unknown'
+    # Look up the retrieval context string for this case's memory retrieval method
     retrieval_context = RETRIEVAL_CONTEXT_MAP.get(retrieval_method, RETRIEVAL_CONTEXT_MAP['unknown'])
-    print(f"[*] Retrieval method for '{case_number}': {retrieval_method}")
+    print(f"[*] Retrieval method: {retrieval_method}")
 
+    # Load the prompt library and select the requested profile
     with open("prompt_library.json", "r", encoding="utf-8") as f:
         prompt_lib = json.load(f)
-    
-    profile = prompt_lib.get("profiles", {}).get("baseline", {})
-    
-    # Reassemble the string arrays
+
+    profile = prompt_lib.get("profiles", {}).get(profile_name, {})
+    if not profile:
+        print(f"WARNING: Profile '{profile_name}' not found in prompt_library.json. Using empty profile.")
+
+    # Reassemble the string arrays from the profile into full instruction text
     sys_inst_text = "\n".join(profile.get("system_instruction", []))
     few_shot_examples = "\n".join(profile.get("few_shot_examples", []))
     anti_hallucination_rules = "\n".join(profile.get("anti_hallucination_rules", []))
-    
+
     system_instruction = f"""
     {sys_inst_text}
-    
+
     {few_shot_examples}
-    
+
     {anti_hallucination_rules}
-    
+
     BULLARD MOTIF DICTIONARY:
     {motif_rules}
-    
+
     You MUST output valid JSON matching the requested schema.
     """
 
+    # --- GEMINI CACHE MANAGEMENT ---
+    # Volume 1 is cached on Google's servers so we don't re-upload it every time.
     print("Checking Google Servers to see if Volume 1 is already Cached...")
     cached_context = None
     try:
@@ -138,7 +184,7 @@ def process_narrative(text: str, sticky_header: str, source_citation: str, case_
         try:
             bullard_vol1 = client.files.upload(file=os.path.join("Sources", "bullard_vol1_raw.txt"))
             print(f"File uploaded! File URI: {bullard_vol1.uri}")
-            
+
             print("Caching the book into the AI's permanent memory...")
             cached_context = client.caches.create(
                 model='gemini-2.5-pro',
@@ -150,22 +196,23 @@ def process_narrative(text: str, sticky_header: str, source_citation: str, case_
                 )
             )
             print("Successfully cached!\n")
-            
+
         except Exception as e:
             print(f"File upload to Gemini failed: {e}")
             print("Please check your API key quotas or file path.")
-            return
+            return None, None, None
 
+    # --- EXTRACTION: Send each chunk to Gemini ---
     print("Sending raw text to Gemini using the Cached Brain...\n")
 
-    all_events = []
+    all_events = []       # List of (chunk_index, EncounterEvent) tuples
     final_profile = None
 
     for chunk_idx, chunk_text in enumerate(chunks):
         print(f"\n--- PROCESSING CHUNK {chunk_idx + 1} OF {len(chunks)} ---")
-        
+
         payload = f"{retrieval_context}\n\n{sticky_header}\n\n[NARRATIVE CHUNK]\n{chunk_text}"
-        
+
         response = client.models.generate_content(
             model='gemini-2.5-pro',
             contents=payload,
@@ -177,89 +224,181 @@ def process_narrative(text: str, sticky_header: str, source_citation: str, case_
             ),
         )
 
-        profile: EncounterProfile = response.parsed
-        
-        if chunk_idx == 0:
-            final_profile = profile
-            
-        all_events.extend(profile.events)
-        print(f"  -> Extracted {len(profile.events)} motif events from this chunk.")
+        chunk_profile: EncounterProfile = response.parsed
 
-    print("\nSUCCESS! Chunking complete. Committing to UFO Matrix Database...")
+        # Keep the profile from the first chunk (it has the subject metadata)
+        if chunk_idx == 0:
+            final_profile = chunk_profile
+
+        # Store each event with its chunk index so we can track provenance
+        for event in chunk_profile.events:
+            all_events.append((chunk_idx + 1, event))  # chunk is 1-indexed
+        print(f"  -> Extracted {len(chunk_profile.events)} motif events from this chunk.")
+
+    print(f"\nSUCCESS! Extraction complete.")
     print(f"Subject: {final_profile.pseudonym}")
     print(f"Date: {final_profile.date_of_encounter}")
     print(f"Summary: {final_profile.narrative_summary}\n")
 
-    with sqlite3.connect('ufo_matrix.db', timeout=15) as conn:
-        cursor = conn.cursor()
-        
-        # Determine Hypnosis state from Sticky Header dynamically
-        hypnosis_val = "YES" if "HYPNOSIS" in sticky_header.upper() else "NO"
-        case_meta = CaseMetadata(
-            hypnosis_used=hypnosis_val,
-            memory_retrieval_method=retrieval_method
-        )
+    # --- DEDUPLICATION AND GLOBAL SEQUENCING ---
+    # Events from different chunks may overlap. Deduplicate by skipping events
+    # that have the same motif_code AND sequence_order as the previous event.
+    deduped_events = []       # List of (chunk_index, EncounterEvent) — deduplicated
+    ai_events_json = []       # List of dicts for JSON output (qa_triage format)
 
+    global_sequence = 1
+    last_code = None
+    last_chunk_sequence = -1
+
+    for chunk_idx, event in all_events:
+        # Skip duplicates: same code and same sequence as last event
+        if event.motif_code == last_code and event.sequence_order == last_chunk_sequence:
+            continue
+
+        last_code = event.motif_code
+
+        # Increment global sequence when the chunk-local sequence changes
+        if event.sequence_order != last_chunk_sequence:
+            if last_chunk_sequence != -1:
+                global_sequence += 1
+            last_chunk_sequence = event.sequence_order
+
+        deduped_events.append((chunk_idx, event))
+
+        # Build the JSON dict in the format qa_triage.py expects
+        ai_events_json.append({
+            "sequence": global_sequence,
+            "motif_code": event.motif_code,
+            "citation": event.source_citation,
+            "reasoning": event.ai_justification,
+            "chunk": chunk_idx,
+            "memory_state": event.memory_state,
+            "emotional_marker": event.emotional_marker,
+            "source_page": event.source_page,
+        })
+
+    print(f"[*] After deduplication: {len(deduped_events)} events (from {len(all_events)} raw)")
+
+    # --- SAVE JSON OUTPUT ---
+    # Save the results as JSON so qa_triage.py can consume them later
+    if case_number:
+        os.makedirs("test_results/raw", exist_ok=True)
+        json_filename = f"extract_{case_number}_{profile_name}.json"
+        json_path = os.path.join("test_results", "raw", json_filename)
+
+        json_output = {
+            "case_number": case_number,
+            "profile": profile_name,
+            "timestamp": datetime.now().isoformat(),
+            "ai_count": len(ai_events_json),
+            "ai_events": ai_events_json,
+        }
+
+        with open(json_path, "w", encoding="utf-8") as f:
+            json.dump(json_output, f, indent=2, ensure_ascii=False)
+        print(f"[*] JSON results saved to: {json_path}")
+
+    # Return just the EncounterEvent objects (without chunk index) for load_to_database
+    events_only = [event for (_chunk_idx, event) in deduped_events]
+
+    return final_profile, events_only, ai_events_json
+
+
+def load_to_database(final_profile, all_events, case_number, source_citation,
+                     retrieval_method="unknown", db_path="ufo_matrix.db"):
+    """
+    Takes the extraction output and writes it to a SQLite database.
+
+    This function handles ONLY the database insertion step. It can target either
+    the production database (ufo_matrix.db) or the staging database (ufo_matrix_staging.db)
+    depending on the db_path parameter.
+
+    Parameters:
+        final_profile:    EncounterProfile object (from extract_narrative)
+        all_events:       List of EncounterEvent objects (deduplicated, globally sequenced)
+        case_number:      Case identifier (e.g., "084")
+        source_citation:  Academic citation for the source material
+        retrieval_method: One of: conscious, hypnosis, altered, mixed, unknown
+        db_path:          Path to the target database (default: "ufo_matrix.db")
+    """
+    print(f"\nCommitting to database: {db_path}...")
+    print(f"Subject: {final_profile.pseudonym}")
+
+    # Derive hypnosis_used from retrieval_method (no longer a separate field in CaseMetadata)
+    hypnosis_val = "YES" if retrieval_method == "hypnosis" else "NO"
+    case_meta = CaseMetadata(
+        memory_retrieval_method=retrieval_method
+    )
+
+    with sqlite3.connect(db_path, timeout=15) as conn:
+        cursor = conn.cursor()
+
+        # Check if this case already exists in the database
         cursor.execute("SELECT Encounter_ID, Subject_ID FROM Encounters WHERE Case_Number COLLATE NOCASE = ?", (case_number,))
         existing_encounter = cursor.fetchone()
-        
+
         if existing_encounter:
             encounter_id = existing_encounter[0]
             subject_id = existing_encounter[1]
             print(f"[*] Found Existing Database Entry (Encounter ID: {encounter_id}) for Case '{case_number}'.")
             print(f"[*] AI Motifs will be appended to this existing historical index.")
-            
-            # Delete any previously extracted events for this specific Encounter to allow clean overwrites during prompt-tuning
+
+            # Delete any previously extracted events for this specific Encounter
+            # to allow clean overwrites during prompt-tuning
             cursor.execute("DELETE FROM Encounter_Events WHERE Encounter_ID = ?", (encounter_id,))
             print(f"[*] Cleared previous events for Encounter {encounter_id} to prepare for fresh LLM extraction.")
-            
+
         else:
+            # Insert new Subject record
             cursor.execute("""
-                INSERT INTO Subjects (Pseudonym, Age, Gender, Baseline_Psychology, Hypnosis_Utilized)
+                INSERT INTO Subjects (Pseudonym, Age, Baseline_Psychology, Hypnosis_Utilized, Gender)
                 VALUES (?, ?, ?, ?, ?)
-            """, (final_profile.pseudonym, final_profile.age, final_profile.gender, final_profile.narrative_summary, case_meta.hypnosis_used))
-            
+            """, (final_profile.pseudonym, final_profile.age, final_profile.narrative_summary, hypnosis_val, final_profile.gender))
+
             subject_id = cursor.lastrowid
             print(f"[*] Created Subject Record (ID: {subject_id})")
-            
+
+            # Insert new Encounter record
             cursor.execute("""
-                INSERT INTO Encounters (Subject_ID, Case_Number, Date_of_Encounter, Location_Type, Investigator_Credibility, Witness_Credibility, Source_Material, Encounter_Duration, Principal_Investigator, Number_of_Witnesses, Entity_Type)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            """, (subject_id, case_number, final_profile.date_of_encounter, final_profile.location, final_profile.investigator_credibility, final_profile.witness_credibility, source_citation, final_profile.encounter_duration, final_profile.principal_investigator, final_profile.number_of_witnesses, final_profile.entity_type))            
+                INSERT INTO Encounters (Subject_ID, Case_Number, Date_of_Encounter, Location_Type, Investigator_Credibility, Witness_Credibility, Source_Material, memory_retrieval_method, Encounter_Duration, Entity_Type, Number_of_Witnesses, Principal_Investigator)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """, (subject_id, case_number, final_profile.date_of_encounter, final_profile.location, final_profile.investigator_credibility, final_profile.witness_credibility, source_citation, retrieval_method, final_profile.encounter_duration, final_profile.entity_type, final_profile.number_of_witnesses, final_profile.principal_investigator))
             encounter_id = cursor.lastrowid
             print(f"[*] Created Encounter Record (ID: {encounter_id})")
 
+        # --- Insert events with global sequencing ---
         print("\n--- PERMANENT SQL INGESTION ---")
         last_code_printed = None
         global_sequence = 1
         last_chunk_sequence = -1
-        
+
         for event in all_events:
             if event.motif_code == last_code_printed and event.sequence_order == last_chunk_sequence:
                 continue
-                
+
             last_code_printed = event.motif_code
-            
+
             if event.sequence_order != last_chunk_sequence:
                 if last_chunk_sequence != -1:
                     global_sequence += 1
                 last_chunk_sequence = event.sequence_order
 
+            # Look up motif description for display purposes
             if event.motif_code == "ANOMALY":
                 description = "[[NOVEL CONCEPT - NOT IN BULLARD]]"
             else:
                 cursor.execute("SELECT motif_description FROM Motif_Dictionary WHERE motif_number = ?", (event.motif_code,))
                 result = cursor.fetchone()
                 description = result[0] if result else "[[WARNING: AI HALLUCINATED FAKE CODE]]"
-            
+
             try:
                 cursor.execute("""
                     INSERT INTO Encounter_Events (Encounter_ID, Sequence_Order, Motif_Code, Emotional_Marker, Source_Citation, memory_state, source_page, ai_justification)
                     VALUES (?, ?, ?, ?, ?, ?, ?, ?)
                 """, (encounter_id, global_sequence, event.motif_code, event.emotional_marker, event.source_citation, event.memory_state, event.source_page, event.ai_justification))
-                
+
                 emotion_str = f"Emotion: {event.emotional_marker}" if event.emotional_marker else "No explicit emotion"
-                
+
                 # Sanitize output for Windows terminal, ignoring unmappable unicode characters from PDF artifacts
                 safe_desc = description.encode('cp1252', errors='ignore').decode('cp1252')
                 safe_quote = event.source_citation.encode('cp1252', errors='ignore').decode('cp1252')
@@ -269,9 +408,61 @@ def process_narrative(text: str, sticky_header: str, source_citation: str, case_
                 print(f"    Page {event.source_page} | State: {event.memory_state.upper()} | {emotion_str}")
                 print(f"    Quote: '{safe_quote}'")
                 print(f"    AI Logic: {safe_logic}\n")
-                
+
             except sqlite3.IntegrityError:
                 print(f"    [X] DB REJECTED HALLUCINATED CODE: {event.motif_code}")
 
         conn.commit()
-        print(f"\n[!!!] Phase 9 Complete: Successfully wrote all validated events directly into ufo_matrix.db!")
+        print(f"\n[!!!] Database write complete: all validated events written to {db_path}")
+
+
+def process_narrative(text: str, sticky_header: str, source_citation: str, case_number: str):
+    """
+    Backward-compatible wrapper that extracts motifs AND saves them to the production database.
+
+    This is the original entry point used by ingest_case.py. It calls extract_narrative()
+    and then load_to_database() in sequence, preserving the exact same behavior as before
+    the refactor.
+
+    For the new generalized pipeline, call extract_narrative() and load_to_database()
+    separately instead.
+    """
+    # Look up the retrieval method from the production database
+    # (In the new pipeline, this comes from the metadata scan instead)
+    retrieval_method = "unknown"
+    try:
+        with sqlite3.connect('ufo_matrix.db') as conn:
+            cursor = conn.cursor()
+            cursor.execute(
+                "SELECT memory_retrieval_method FROM Encounters WHERE Case_Number = ? COLLATE NOCASE",
+                (case_number,)
+            )
+            retrieval_row = cursor.fetchone()
+            if retrieval_row and retrieval_row[0]:
+                retrieval_method = retrieval_row[0]
+    except Exception:
+        # If the column doesn't exist or query fails, fall back to unknown
+        pass
+
+    # Step 1: Extract (no database interaction)
+    final_profile, all_events, _ai_events_json = extract_narrative(
+        text=text,
+        sticky_header=sticky_header,
+        retrieval_method=retrieval_method,
+        profile_name="baseline",
+        case_number=case_number,
+    )
+
+    # If extraction failed (e.g., Gemini upload error), stop here
+    if final_profile is None:
+        return
+
+    # Step 2: Load into production database
+    load_to_database(
+        final_profile=final_profile,
+        all_events=all_events,
+        case_number=case_number,
+        source_citation=source_citation,
+        retrieval_method=retrieval_method,
+        db_path="ufo_matrix.db",
+    )
