@@ -1,8 +1,6 @@
 from pydantic import BaseModel, Field
 from typing import List, Optional, Literal
 
-from streamlit import cursor
-
 
 # Phase 3: AI Context and Structured Outputs
 # We use Pydantic to strictly define the JSON structure we want the LLM to return.
@@ -39,6 +37,10 @@ class EncounterProfile(BaseModel):
     events: List[EncounterEvent] = Field(description="The chronological sequence of motif events in this encounter")
 
     pass
+
+class CaseMetadata(BaseModel):
+    hypnosis_used: Literal["YES", "NO"]
+    memory_retrieval_method: Literal["conscious", "hypnosis", "altered", "mixed", "unknown"]
 
 import os
 import sqlite3
@@ -192,7 +194,11 @@ def process_narrative(text: str, sticky_header: str, source_citation: str, case_
         cursor = conn.cursor()
         
         # Determine Hypnosis state from Sticky Header dynamically
-        hypnosis_used = "YES" in sticky_header.upper()
+        hypnosis_val = "YES" if "HYPNOSIS" in sticky_header.upper() else "NO"
+        case_meta = CaseMetadata(
+            hypnosis_used=hypnosis_val,
+            memory_retrieval_method=retrieval_method
+        )
 
         cursor.execute("SELECT Encounter_ID, Subject_ID FROM Encounters WHERE Case_Number COLLATE NOCASE = ?", (case_number,))
         existing_encounter = cursor.fetchone()
@@ -211,7 +217,7 @@ def process_narrative(text: str, sticky_header: str, source_citation: str, case_
             cursor.execute("""
                 INSERT INTO Subjects (Pseudonym, Age, Gender, Baseline_Psychology, Hypnosis_Utilized)
                 VALUES (?, ?, ?, ?, ?)
-            """, (final_profile.pseudonym, final_profile.age, final_profile.gender, final_profile.narrative_summary, hypnosis_used))
+            """, (final_profile.pseudonym, final_profile.age, final_profile.gender, final_profile.narrative_summary, case_meta.hypnosis_used))
             
             subject_id = cursor.lastrowid
             print(f"[*] Created Subject Record (ID: {subject_id})")
