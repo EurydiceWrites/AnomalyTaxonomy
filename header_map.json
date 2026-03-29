@@ -1,0 +1,3412 @@
+[
+  {
+    "case_number": "001",
+    "encounter_id": 1,
+    "line_start": 975,
+    "line_end": 988,
+    "type": "case",
+    "start_page_pdf": "21",
+    "start_page_bullard": "C-1",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "002",
+    "encounter_id": 2,
+    "line_start": 989,
+    "line_end": 1000,
+    "type": "case",
+    "start_page_pdf": "21",
+    "start_page_bullard": "C-1",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "003",
+    "encounter_id": 3,
+    "line_start": 1001,
+    "line_end": 1022,
+    "type": "case",
+    "start_page_pdf": "21",
+    "start_page_bullard": "C-1",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "004",
+    "encounter_id": 4,
+    "line_start": 1023,
+    "line_end": 1045,
+    "type": "case",
+    "start_page_pdf": "22",
+    "start_page_bullard": "C-2",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "005",
+    "encounter_id": 5,
+    "line_start": 1046,
+    "line_end": 1064,
+    "type": "case",
+    "start_page_pdf": "22",
+    "start_page_bullard": "C-2",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "006",
+    "encounter_id": 6,
+    "line_start": 1065,
+    "line_end": 1078,
+    "type": "case",
+    "start_page_pdf": "23",
+    "start_page_bullard": "C-2",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "007",
+    "encounter_id": 7,
+    "line_start": 1079,
+    "line_end": 1089,
+    "type": "case",
+    "start_page_pdf": "23",
+    "start_page_bullard": "C-2",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "008",
+    "encounter_id": 8,
+    "line_start": 1090,
+    "line_end": 1113,
+    "type": "case",
+    "start_page_pdf": "23",
+    "start_page_bullard": "C-2",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "009",
+    "encounter_id": 9,
+    "line_start": 1114,
+    "line_end": 1134,
+    "type": "case",
+    "start_page_pdf": "24",
+    "start_page_bullard": "C-4",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "010",
+    "encounter_id": 10,
+    "line_start": 1135,
+    "line_end": 1153,
+    "type": "case",
+    "start_page_pdf": "24",
+    "start_page_bullard": "C-4",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "011",
+    "encounter_id": 11,
+    "line_start": 1154,
+    "line_end": 1172,
+    "type": "case",
+    "start_page_pdf": "25",
+    "start_page_bullard": "C-4",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "012",
+    "encounter_id": 12,
+    "line_start": 1173,
+    "line_end": 1204,
+    "type": "case",
+    "start_page_pdf": "25",
+    "start_page_bullard": "C-4",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "013",
+    "encounter_id": 13,
+    "line_start": 1205,
+    "line_end": 1218,
+    "type": "case",
+    "start_page_pdf": "26",
+    "start_page_bullard": "C-6",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "014",
+    "encounter_id": 14,
+    "line_start": 1219,
+    "line_end": 1256,
+    "type": "case",
+    "start_page_pdf": "26",
+    "start_page_bullard": "C-6",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "015",
+    "encounter_id": 15,
+    "line_start": 1257,
+    "line_end": 1268,
+    "type": "case",
+    "start_page_pdf": "27",
+    "start_page_bullard": "C-7",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "016",
+    "encounter_id": 16,
+    "line_start": 1269,
+    "line_end": 1281,
+    "type": "case",
+    "start_page_pdf": "27",
+    "start_page_bullard": "C-7",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "017",
+    "encounter_id": 17,
+    "line_start": 1282,
+    "line_end": 1301,
+    "type": "case",
+    "start_page_pdf": "27",
+    "start_page_bullard": "C-7",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "018",
+    "encounter_id": 18,
+    "line_start": 1302,
+    "line_end": 1325,
+    "type": "case",
+    "start_page_pdf": "28",
+    "start_page_bullard": "C-8",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "019",
+    "encounter_id": 19,
+    "line_start": 1326,
+    "line_end": 1338,
+    "type": "case",
+    "start_page_pdf": "28",
+    "start_page_bullard": "C-8",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "020",
+    "encounter_id": 20,
+    "line_start": 1339,
+    "line_end": 1354,
+    "type": "case",
+    "start_page_pdf": "28",
+    "start_page_bullard": "C-8",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "021",
+    "encounter_id": 21,
+    "line_start": 1355,
+    "line_end": 1372,
+    "type": "case",
+    "start_page_pdf": "29",
+    "start_page_bullard": "C-9",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "022",
+    "encounter_id": 22,
+    "line_start": 1373,
+    "line_end": 1403,
+    "type": "case",
+    "start_page_pdf": "29",
+    "start_page_bullard": "C-9",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "023",
+    "encounter_id": 23,
+    "line_start": 1404,
+    "line_end": 1415,
+    "type": "case",
+    "start_page_pdf": "30",
+    "start_page_bullard": "C-10",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "024",
+    "encounter_id": 24,
+    "line_start": 1416,
+    "line_end": 1431,
+    "type": "case",
+    "start_page_pdf": "30",
+    "start_page_bullard": "C-10",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "025",
+    "encounter_id": 25,
+    "line_start": 1432,
+    "line_end": 1445,
+    "type": "case",
+    "start_page_pdf": "30",
+    "start_page_bullard": "C-10",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "026",
+    "encounter_id": 26,
+    "line_start": 1446,
+    "line_end": 1455,
+    "type": "case",
+    "start_page_pdf": "31",
+    "start_page_bullard": "C-11",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "027",
+    "encounter_id": 27,
+    "line_start": 1456,
+    "line_end": 1471,
+    "type": "case",
+    "start_page_pdf": "31",
+    "start_page_bullard": "C-11",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "028",
+    "encounter_id": 28,
+    "line_start": 1472,
+    "line_end": 1489,
+    "type": "case",
+    "start_page_pdf": "31",
+    "start_page_bullard": "C-11",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "029",
+    "encounter_id": 29,
+    "line_start": 1490,
+    "line_end": 1515,
+    "type": "case",
+    "start_page_pdf": "31",
+    "start_page_bullard": "C-11",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "030",
+    "encounter_id": 30,
+    "line_start": 1516,
+    "line_end": 1529,
+    "type": "case",
+    "start_page_pdf": "32",
+    "start_page_bullard": "C-12",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "031",
+    "encounter_id": 31,
+    "line_start": 1530,
+    "line_end": 1549,
+    "type": "case",
+    "start_page_pdf": "32",
+    "start_page_bullard": "C-12",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "032",
+    "encounter_id": 32,
+    "line_start": 1550,
+    "line_end": 1567,
+    "type": "case",
+    "start_page_pdf": "33",
+    "start_page_bullard": "C-13",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "033",
+    "encounter_id": 33,
+    "line_start": 1568,
+    "line_end": 1584,
+    "type": "case",
+    "start_page_pdf": "33",
+    "start_page_bullard": "C-13",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "034",
+    "encounter_id": 34,
+    "line_start": 1585,
+    "line_end": 1602,
+    "type": "case",
+    "start_page_pdf": "34",
+    "start_page_bullard": "C-14",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "035",
+    "encounter_id": 35,
+    "line_start": 1603,
+    "line_end": 1617,
+    "type": "case",
+    "start_page_pdf": "34",
+    "start_page_bullard": "C-14",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "036",
+    "encounter_id": 36,
+    "line_start": 1618,
+    "line_end": 1653,
+    "type": "case",
+    "start_page_pdf": "34",
+    "start_page_bullard": "C-14",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "037",
+    "encounter_id": 37,
+    "line_start": 1654,
+    "line_end": 1667,
+    "type": "case",
+    "start_page_pdf": "35",
+    "start_page_bullard": "C-15",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "038",
+    "encounter_id": 38,
+    "line_start": 1668,
+    "line_end": 1688,
+    "type": "case",
+    "start_page_pdf": "35",
+    "start_page_bullard": "C-15",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "039",
+    "encounter_id": 39,
+    "line_start": 1689,
+    "line_end": 1702,
+    "type": "case",
+    "start_page_pdf": "36",
+    "start_page_bullard": "C-16",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "040",
+    "encounter_id": 40,
+    "line_start": 1703,
+    "line_end": 1736,
+    "type": "case",
+    "start_page_pdf": "36",
+    "start_page_bullard": "C-16",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "041",
+    "encounter_id": 41,
+    "line_start": 1737,
+    "line_end": 1751,
+    "type": "case",
+    "start_page_pdf": "37",
+    "start_page_bullard": "C-17",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "042",
+    "encounter_id": 42,
+    "line_start": 1752,
+    "line_end": 1775,
+    "type": "case",
+    "start_page_pdf": "37",
+    "start_page_bullard": "C-17",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "043",
+    "encounter_id": 43,
+    "line_start": 1776,
+    "line_end": 1792,
+    "type": "case",
+    "start_page_pdf": "37",
+    "start_page_bullard": "C-17",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "044",
+    "encounter_id": 44,
+    "line_start": 1793,
+    "line_end": 1830,
+    "type": "case",
+    "start_page_pdf": "38",
+    "start_page_bullard": "C-18",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "045",
+    "encounter_id": 45,
+    "line_start": 1831,
+    "line_end": 1851,
+    "type": "case",
+    "start_page_pdf": "39",
+    "start_page_bullard": "C-19",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "046",
+    "encounter_id": 46,
+    "line_start": 1852,
+    "line_end": 1860,
+    "type": "case",
+    "start_page_pdf": "39",
+    "start_page_bullard": "C-19",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "047",
+    "encounter_id": 47,
+    "line_start": 1861,
+    "line_end": 1888,
+    "type": "case",
+    "start_page_pdf": "39",
+    "start_page_bullard": "C-19",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "048",
+    "encounter_id": 48,
+    "line_start": 1889,
+    "line_end": 1900,
+    "type": "case",
+    "start_page_pdf": "40",
+    "start_page_bullard": "C-20",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "049",
+    "encounter_id": 49,
+    "line_start": 1901,
+    "line_end": 1916,
+    "type": "case",
+    "start_page_pdf": "40",
+    "start_page_bullard": "C-20",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "050",
+    "encounter_id": 50,
+    "line_start": 1917,
+    "line_end": 1937,
+    "type": "case",
+    "start_page_pdf": "40",
+    "start_page_bullard": "C-20",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "051",
+    "encounter_id": 51,
+    "line_start": 1938,
+    "line_end": 1963,
+    "type": "case",
+    "start_page_pdf": "41",
+    "start_page_bullard": "C-21",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "052",
+    "encounter_id": 52,
+    "line_start": 1964,
+    "line_end": 2017,
+    "type": "case",
+    "start_page_pdf": "41",
+    "start_page_bullard": "C-21",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "053",
+    "encounter_id": 53,
+    "line_start": 2018,
+    "line_end": 2051,
+    "type": "case",
+    "start_page_pdf": "42",
+    "start_page_bullard": "C-22",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "054",
+    "encounter_id": 54,
+    "line_start": 2052,
+    "line_end": 2081,
+    "type": "case",
+    "start_page_pdf": "43",
+    "start_page_bullard": "C-23",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "055",
+    "encounter_id": 55,
+    "line_start": 2082,
+    "line_end": 2099,
+    "type": "case",
+    "start_page_pdf": "44",
+    "start_page_bullard": "C-24",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "056",
+    "encounter_id": 56,
+    "line_start": 2100,
+    "line_end": 2110,
+    "type": "case",
+    "start_page_pdf": "44",
+    "start_page_bullard": "C-24",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "057",
+    "encounter_id": 57,
+    "line_start": 2111,
+    "line_end": 2129,
+    "type": "case",
+    "start_page_pdf": "44",
+    "start_page_bullard": "C-24",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "058",
+    "encounter_id": 58,
+    "line_start": 2130,
+    "line_end": 2148,
+    "type": "case",
+    "start_page_pdf": "45",
+    "start_page_bullard": "C-25",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "058",
+    "encounter_id": 59,
+    "line_start": 2149,
+    "line_end": 2170,
+    "type": "case",
+    "start_page_pdf": "45",
+    "start_page_bullard": "C-25",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "059",
+    "encounter_id": 60,
+    "line_start": 2171,
+    "line_end": 2188,
+    "type": "case",
+    "start_page_pdf": "46",
+    "start_page_bullard": "C-26",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "060",
+    "encounter_id": 61,
+    "line_start": 2189,
+    "line_end": 2199,
+    "type": "case",
+    "start_page_pdf": "46",
+    "start_page_bullard": "C-26",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "061",
+    "encounter_id": 62,
+    "line_start": 2200,
+    "line_end": 2217,
+    "type": "case",
+    "start_page_pdf": "46",
+    "start_page_bullard": "C-26",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "062",
+    "encounter_id": 63,
+    "line_start": 2218,
+    "line_end": 2237,
+    "type": "case",
+    "start_page_pdf": "47",
+    "start_page_bullard": "C-27",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "063",
+    "encounter_id": 64,
+    "line_start": 2238,
+    "line_end": 2252,
+    "type": "case",
+    "start_page_pdf": "47",
+    "start_page_bullard": "C-27",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "064",
+    "encounter_id": 65,
+    "line_start": 2253,
+    "line_end": 2265,
+    "type": "case",
+    "start_page_pdf": "48",
+    "start_page_bullard": "C-28",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "065",
+    "encounter_id": 66,
+    "line_start": 2266,
+    "line_end": 2281,
+    "type": "case",
+    "start_page_pdf": "48",
+    "start_page_bullard": "C-28",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "066",
+    "encounter_id": 67,
+    "line_start": 2282,
+    "line_end": 2299,
+    "type": "case",
+    "start_page_pdf": "48",
+    "start_page_bullard": "C-28",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "067",
+    "encounter_id": 68,
+    "line_start": 2300,
+    "line_end": 2320,
+    "type": "case",
+    "start_page_pdf": "49",
+    "start_page_bullard": "C-29",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "068",
+    "encounter_id": 69,
+    "line_start": 2321,
+    "line_end": 2373,
+    "type": "case",
+    "start_page_pdf": "49",
+    "start_page_bullard": "C-29",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "069",
+    "encounter_id": 70,
+    "line_start": 2374,
+    "line_end": 2405,
+    "type": "case",
+    "start_page_pdf": "50",
+    "start_page_bullard": "C-30",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "070",
+    "encounter_id": 71,
+    "line_start": 2406,
+    "line_end": 2417,
+    "type": "case",
+    "start_page_pdf": "51",
+    "start_page_bullard": "C-31",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "071",
+    "encounter_id": 72,
+    "line_start": 2418,
+    "line_end": 2430,
+    "type": "case",
+    "start_page_pdf": "51",
+    "start_page_bullard": "C-31",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "072",
+    "encounter_id": 73,
+    "line_start": 2431,
+    "line_end": 2474,
+    "type": "case",
+    "start_page_pdf": "51",
+    "start_page_bullard": "C-31",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "073",
+    "encounter_id": 74,
+    "line_start": 2475,
+    "line_end": 2488,
+    "type": "case",
+    "start_page_pdf": "52",
+    "start_page_bullard": "C-32",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "074",
+    "encounter_id": 75,
+    "line_start": 2489,
+    "line_end": 2511,
+    "type": "case",
+    "start_page_pdf": "52",
+    "start_page_bullard": "C-32",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "075",
+    "encounter_id": 76,
+    "line_start": 2512,
+    "line_end": 2526,
+    "type": "case",
+    "start_page_pdf": "53",
+    "start_page_bullard": "C-33",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "076",
+    "encounter_id": 77,
+    "line_start": 2527,
+    "line_end": 2552,
+    "type": "case",
+    "start_page_pdf": "53",
+    "start_page_bullard": "C-33",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "077",
+    "encounter_id": 78,
+    "line_start": 2553,
+    "line_end": 2573,
+    "type": "case",
+    "start_page_pdf": "54",
+    "start_page_bullard": "C-34",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "078",
+    "encounter_id": 79,
+    "line_start": 2574,
+    "line_end": 2602,
+    "type": "case",
+    "start_page_pdf": "54",
+    "start_page_bullard": "C-34",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "079",
+    "encounter_id": 80,
+    "line_start": 2603,
+    "line_end": 2639,
+    "type": "case",
+    "start_page_pdf": "55",
+    "start_page_bullard": "C-35",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "080",
+    "encounter_id": 81,
+    "line_start": 2640,
+    "line_end": 2711,
+    "type": "case",
+    "start_page_pdf": "56",
+    "start_page_bullard": "C-36",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "081",
+    "encounter_id": 82,
+    "line_start": 2712,
+    "line_end": 2733,
+    "type": "case",
+    "start_page_pdf": "57",
+    "start_page_bullard": "C-37",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "082",
+    "encounter_id": 83,
+    "line_start": 2734,
+    "line_end": 2751,
+    "type": "case",
+    "start_page_pdf": "57",
+    "start_page_bullard": "C-37",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "083",
+    "encounter_id": 84,
+    "line_start": 2752,
+    "line_end": 2814,
+    "type": "case",
+    "start_page_pdf": "58",
+    "start_page_bullard": "C-38",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "084",
+    "encounter_id": 85,
+    "line_start": 2815,
+    "line_end": 2888,
+    "type": "case",
+    "start_page_pdf": "59",
+    "start_page_bullard": "C-39",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "085",
+    "encounter_id": 86,
+    "line_start": 2889,
+    "line_end": 2906,
+    "type": "case",
+    "start_page_pdf": "60",
+    "start_page_bullard": "C-40",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "086",
+    "encounter_id": 87,
+    "line_start": 2907,
+    "line_end": 2936,
+    "type": "case",
+    "start_page_pdf": "61",
+    "start_page_bullard": "C-41",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "087",
+    "encounter_id": 88,
+    "line_start": 2937,
+    "line_end": 2963,
+    "type": "case",
+    "start_page_pdf": "61",
+    "start_page_bullard": "C-41",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "088",
+    "encounter_id": 89,
+    "line_start": 2964,
+    "line_end": 3015,
+    "type": "case",
+    "start_page_pdf": "62",
+    "start_page_bullard": "C-4",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "089",
+    "encounter_id": 90,
+    "line_start": 3016,
+    "line_end": 3039,
+    "type": "case",
+    "start_page_pdf": "63",
+    "start_page_bullard": "C-43",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "090",
+    "encounter_id": 91,
+    "line_start": 3040,
+    "line_end": 3067,
+    "type": "case",
+    "start_page_pdf": "63",
+    "start_page_bullard": "C-43",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "091",
+    "encounter_id": 92,
+    "line_start": 3068,
+    "line_end": 3174,
+    "type": "case",
+    "start_page_pdf": "64",
+    "start_page_bullard": "C-44",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "092",
+    "encounter_id": 93,
+    "line_start": 3175,
+    "line_end": 3194,
+    "type": "case",
+    "start_page_pdf": "66",
+    "start_page_bullard": "C-46",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "093",
+    "encounter_id": 94,
+    "line_start": 3195,
+    "line_end": 3226,
+    "type": "case",
+    "start_page_pdf": "66",
+    "start_page_bullard": "C-46",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "094",
+    "encounter_id": 95,
+    "line_start": 3227,
+    "line_end": 3257,
+    "type": "case",
+    "start_page_pdf": "67",
+    "start_page_bullard": "C-47",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "095",
+    "encounter_id": 96,
+    "line_start": 3258,
+    "line_end": 3300,
+    "type": "case",
+    "start_page_pdf": "68",
+    "start_page_bullard": "C-48",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "096",
+    "encounter_id": 97,
+    "line_start": 3301,
+    "line_end": 3318,
+    "type": "case",
+    "start_page_pdf": "69",
+    "start_page_bullard": "C-49",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "097",
+    "encounter_id": 98,
+    "line_start": 3319,
+    "line_end": 3337,
+    "type": "case",
+    "start_page_pdf": "69",
+    "start_page_bullard": "C-49",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "098",
+    "encounter_id": 99,
+    "line_start": 3338,
+    "line_end": 3359,
+    "type": "case",
+    "start_page_pdf": "70",
+    "start_page_bullard": "C-50",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "099",
+    "encounter_id": 100,
+    "line_start": 3360,
+    "line_end": 3379,
+    "type": "case",
+    "start_page_pdf": "70",
+    "start_page_bullard": "C-50",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "100",
+    "encounter_id": 101,
+    "line_start": 3380,
+    "line_end": 3400,
+    "type": "case",
+    "start_page_pdf": "70",
+    "start_page_bullard": "C-50",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "101",
+    "encounter_id": 102,
+    "line_start": 3401,
+    "line_end": 3473,
+    "type": "case",
+    "start_page_pdf": "71",
+    "start_page_bullard": "C-51",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "102",
+    "encounter_id": 103,
+    "line_start": 3474,
+    "line_end": 3540,
+    "type": "case",
+    "start_page_pdf": "72",
+    "start_page_bullard": "C-52",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "103",
+    "encounter_id": 104,
+    "line_start": 3541,
+    "line_end": 3569,
+    "type": "case",
+    "start_page_pdf": "74",
+    "start_page_bullard": "C-54",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "104",
+    "encounter_id": 105,
+    "line_start": 3570,
+    "line_end": 3616,
+    "type": "case",
+    "start_page_pdf": "74",
+    "start_page_bullard": "C-54",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "105",
+    "encounter_id": 106,
+    "line_start": 3617,
+    "line_end": 3653,
+    "type": "case",
+    "start_page_pdf": "75",
+    "start_page_bullard": "C-55",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "106",
+    "encounter_id": 107,
+    "line_start": 3654,
+    "line_end": 3672,
+    "type": "case",
+    "start_page_pdf": "76",
+    "start_page_bullard": "C-56",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "107",
+    "encounter_id": 108,
+    "line_start": 3673,
+    "line_end": 3689,
+    "type": "case",
+    "start_page_pdf": "76",
+    "start_page_bullard": "C-56",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "108",
+    "encounter_id": 109,
+    "line_start": 3690,
+    "line_end": 3711,
+    "type": "case",
+    "start_page_pdf": "77",
+    "start_page_bullard": "C-56",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "109",
+    "encounter_id": 110,
+    "line_start": 3712,
+    "line_end": 3745,
+    "type": "case",
+    "start_page_pdf": "77",
+    "start_page_bullard": "C-56",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "110",
+    "encounter_id": 111,
+    "line_start": 3746,
+    "line_end": 3762,
+    "type": "case",
+    "start_page_pdf": "78",
+    "start_page_bullard": "C-58",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "111",
+    "encounter_id": 112,
+    "line_start": 3763,
+    "line_end": 3780,
+    "type": "case",
+    "start_page_pdf": "78",
+    "start_page_bullard": "C-58",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "112",
+    "encounter_id": 113,
+    "line_start": 3781,
+    "line_end": 3801,
+    "type": "case",
+    "start_page_pdf": "78",
+    "start_page_bullard": "C-58",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "113",
+    "encounter_id": 114,
+    "line_start": 3802,
+    "line_end": 3826,
+    "type": "case",
+    "start_page_pdf": "79",
+    "start_page_bullard": "C-59",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "114",
+    "encounter_id": 115,
+    "line_start": 3827,
+    "line_end": 3851,
+    "type": "case",
+    "start_page_pdf": "79",
+    "start_page_bullard": "C-59",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "115",
+    "encounter_id": 116,
+    "line_start": 3852,
+    "line_end": 3881,
+    "type": "case",
+    "start_page_pdf": "81",
+    "start_page_bullard": "C-61",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "116",
+    "encounter_id": 117,
+    "line_start": 3882,
+    "line_end": 3900,
+    "type": "case",
+    "start_page_pdf": "81",
+    "start_page_bullard": "C-61",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "117",
+    "encounter_id": 118,
+    "line_start": 3901,
+    "line_end": 3917,
+    "type": "case",
+    "start_page_pdf": "82",
+    "start_page_bullard": "C-62",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "118",
+    "encounter_id": 119,
+    "line_start": 3918,
+    "line_end": 3952,
+    "type": "case",
+    "start_page_pdf": "82",
+    "start_page_bullard": "C-62",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "119",
+    "encounter_id": 120,
+    "line_start": 3953,
+    "line_end": 3968,
+    "type": "case",
+    "start_page_pdf": "83",
+    "start_page_bullard": "C-63",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "120",
+    "encounter_id": 121,
+    "line_start": 3969,
+    "line_end": 3993,
+    "type": "case",
+    "start_page_pdf": "83",
+    "start_page_bullard": "C-63",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "121",
+    "encounter_id": 122,
+    "line_start": 3994,
+    "line_end": 4044,
+    "type": "case",
+    "start_page_pdf": "84",
+    "start_page_bullard": "C-64",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "122",
+    "encounter_id": 123,
+    "line_start": 4045,
+    "line_end": 4061,
+    "type": "case",
+    "start_page_pdf": "85",
+    "start_page_bullard": "C-65",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "123",
+    "encounter_id": 124,
+    "line_start": 4062,
+    "line_end": 4090,
+    "type": "case",
+    "start_page_pdf": "85",
+    "start_page_bullard": "C-65",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "124",
+    "encounter_id": 125,
+    "line_start": 4091,
+    "line_end": 4208,
+    "type": "case",
+    "start_page_pdf": "86",
+    "start_page_bullard": "C-66",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "125",
+    "encounter_id": 126,
+    "line_start": 4209,
+    "line_end": 4224,
+    "type": "case",
+    "start_page_pdf": "88",
+    "start_page_bullard": "C-68",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "126",
+    "encounter_id": 127,
+    "line_start": 4225,
+    "line_end": 4274,
+    "type": "case",
+    "start_page_pdf": "88",
+    "start_page_bullard": "C-68",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "127",
+    "encounter_id": 128,
+    "line_start": 4275,
+    "line_end": 4298,
+    "type": "case",
+    "start_page_pdf": "89",
+    "start_page_bullard": "C-69",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "128",
+    "encounter_id": 129,
+    "line_start": 4299,
+    "line_end": 4339,
+    "type": "case",
+    "start_page_pdf": "90",
+    "start_page_bullard": "C-70",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "129",
+    "encounter_id": 130,
+    "line_start": 4340,
+    "line_end": 4364,
+    "type": "case",
+    "start_page_pdf": "91",
+    "start_page_bullard": "C-71",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "130",
+    "encounter_id": 131,
+    "line_start": 4365,
+    "line_end": 4412,
+    "type": "case",
+    "start_page_pdf": "91",
+    "start_page_bullard": "C-71",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "131",
+    "encounter_id": 132,
+    "line_start": 4413,
+    "line_end": 4514,
+    "type": "case",
+    "start_page_pdf": "92",
+    "start_page_bullard": "C-72",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "132",
+    "encounter_id": 133,
+    "line_start": 4515,
+    "line_end": 4564,
+    "type": "case",
+    "start_page_pdf": "94",
+    "start_page_bullard": "C-74",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "133",
+    "encounter_id": 134,
+    "line_start": 4565,
+    "line_end": 4630,
+    "type": "case",
+    "start_page_pdf": "96",
+    "start_page_bullard": "C-76",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "134",
+    "encounter_id": 135,
+    "line_start": 4631,
+    "line_end": 4705,
+    "type": "case",
+    "start_page_pdf": "97",
+    "start_page_bullard": "C-77",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "135",
+    "encounter_id": 136,
+    "line_start": 4706,
+    "line_end": 4729,
+    "type": "case",
+    "start_page_pdf": "99",
+    "start_page_bullard": "C-79",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "136",
+    "encounter_id": 137,
+    "line_start": 4730,
+    "line_end": 5490,
+    "type": "case",
+    "start_page_pdf": "99",
+    "start_page_bullard": "C-79",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "137",
+    "encounter_id": 138,
+    "line_start": 5491,
+    "line_end": 5515,
+    "type": "case",
+    "start_page_pdf": "113",
+    "start_page_bullard": "C-93",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "138",
+    "encounter_id": 139,
+    "line_start": 5516,
+    "line_end": 5578,
+    "type": "case",
+    "start_page_pdf": "113",
+    "start_page_bullard": "C-93",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "139",
+    "encounter_id": 140,
+    "line_start": 5579,
+    "line_end": 5616,
+    "type": "case",
+    "start_page_pdf": "114",
+    "start_page_bullard": "C-94",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "140",
+    "encounter_id": 141,
+    "line_start": 5617,
+    "line_end": 5730,
+    "type": "case",
+    "start_page_pdf": "115",
+    "start_page_bullard": "C-95",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "141",
+    "encounter_id": 142,
+    "line_start": 5731,
+    "line_end": 5745,
+    "type": "case",
+    "start_page_pdf": "117",
+    "start_page_bullard": "C-97",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "142",
+    "encounter_id": 143,
+    "line_start": 5746,
+    "line_end": 5801,
+    "type": "case",
+    "start_page_pdf": "118",
+    "start_page_bullard": "C-98",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "143",
+    "encounter_id": 144,
+    "line_start": 5802,
+    "line_end": 5911,
+    "type": "case",
+    "start_page_pdf": "119",
+    "start_page_bullard": "C-99",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "144",
+    "encounter_id": 145,
+    "line_start": 5912,
+    "line_end": 5973,
+    "type": "case",
+    "start_page_pdf": "121",
+    "start_page_bullard": "C-101",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "145",
+    "encounter_id": 146,
+    "line_start": 5974,
+    "line_end": 6065,
+    "type": "case",
+    "start_page_pdf": "122",
+    "start_page_bullard": "C-102",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "146",
+    "encounter_id": 147,
+    "line_start": 6066,
+    "line_end": 6147,
+    "type": "case",
+    "start_page_pdf": "124",
+    "start_page_bullard": "C-104",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "147",
+    "encounter_id": 148,
+    "line_start": 6148,
+    "line_end": 6188,
+    "type": "case",
+    "start_page_pdf": "125",
+    "start_page_bullard": "C-105",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "148",
+    "encounter_id": 149,
+    "line_start": 6189,
+    "line_end": 6239,
+    "type": "case",
+    "start_page_pdf": "126",
+    "start_page_bullard": "C-106",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "149",
+    "encounter_id": 150,
+    "line_start": 6240,
+    "line_end": 6334,
+    "type": "case",
+    "start_page_pdf": "128",
+    "start_page_bullard": "C-108",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "150",
+    "encounter_id": 151,
+    "line_start": 6335,
+    "line_end": 6429,
+    "type": "case",
+    "start_page_pdf": "130",
+    "start_page_bullard": "C-110",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "151",
+    "encounter_id": 152,
+    "line_start": 6430,
+    "line_end": 6458,
+    "type": "case",
+    "start_page_pdf": "132",
+    "start_page_bullard": "C-112",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "152",
+    "encounter_id": 153,
+    "line_start": 6459,
+    "line_end": 6487,
+    "type": "case",
+    "start_page_pdf": "132",
+    "start_page_bullard": "C-112",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "153",
+    "encounter_id": 154,
+    "line_start": 6488,
+    "line_end": 6503,
+    "type": "case",
+    "start_page_pdf": "133",
+    "start_page_bullard": "C-113",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "154",
+    "encounter_id": 155,
+    "line_start": 6504,
+    "line_end": 6526,
+    "type": "case",
+    "start_page_pdf": "133",
+    "start_page_bullard": "C-113",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "155",
+    "encounter_id": 156,
+    "line_start": 6527,
+    "line_end": 6552,
+    "type": "case",
+    "start_page_pdf": "134",
+    "start_page_bullard": "C-114",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "156",
+    "encounter_id": 157,
+    "line_start": 6553,
+    "line_end": 6570,
+    "type": "case",
+    "start_page_pdf": "134",
+    "start_page_bullard": "C-114",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "157",
+    "encounter_id": 158,
+    "line_start": 6571,
+    "line_end": 6642,
+    "type": "case",
+    "start_page_pdf": "135",
+    "start_page_bullard": "C-115",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "158",
+    "encounter_id": 159,
+    "line_start": 6643,
+    "line_end": 6688,
+    "type": "case",
+    "start_page_pdf": "136",
+    "start_page_bullard": "C-116",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "159",
+    "encounter_id": 160,
+    "line_start": 6689,
+    "line_end": 6716,
+    "type": "case",
+    "start_page_pdf": "137",
+    "start_page_bullard": "C-117",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "160",
+    "encounter_id": 161,
+    "line_start": 6717,
+    "line_end": 6745,
+    "type": "case",
+    "start_page_pdf": "138",
+    "start_page_bullard": "C-118",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "161",
+    "encounter_id": 162,
+    "line_start": 6746,
+    "line_end": 6780,
+    "type": "case",
+    "start_page_pdf": "138",
+    "start_page_bullard": "C-118",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "162",
+    "encounter_id": 163,
+    "line_start": 6781,
+    "line_end": 6818,
+    "type": "case",
+    "start_page_pdf": "139",
+    "start_page_bullard": "C-119",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "163",
+    "encounter_id": 164,
+    "line_start": 6819,
+    "line_end": 6926,
+    "type": "case",
+    "start_page_pdf": "140",
+    "start_page_bullard": "C-120",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "164",
+    "encounter_id": 165,
+    "line_start": 6927,
+    "line_end": 6955,
+    "type": "case",
+    "start_page_pdf": "142",
+    "start_page_bullard": "C-122",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "165",
+    "encounter_id": 166,
+    "line_start": 6956,
+    "line_end": 7077,
+    "type": "case",
+    "start_page_pdf": "142",
+    "start_page_bullard": "C-122",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "166",
+    "encounter_id": 167,
+    "line_start": 7078,
+    "line_end": 7272,
+    "type": "case",
+    "start_page_pdf": "145",
+    "start_page_bullard": "C-125",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "167",
+    "encounter_id": 168,
+    "line_start": 7273,
+    "line_end": 7344,
+    "type": "case",
+    "start_page_pdf": "149",
+    "start_page_bullard": "C-129",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "168",
+    "encounter_id": 169,
+    "line_start": 7345,
+    "line_end": 7454,
+    "type": "case",
+    "start_page_pdf": "150",
+    "start_page_bullard": "C-130",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "169",
+    "encounter_id": 170,
+    "line_start": 7455,
+    "line_end": 7473,
+    "type": "case",
+    "start_page_pdf": "152",
+    "start_page_bullard": "C-132",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "170",
+    "encounter_id": 171,
+    "line_start": 7474,
+    "line_end": 7516,
+    "type": "case",
+    "start_page_pdf": "153",
+    "start_page_bullard": "C-133",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "171",
+    "encounter_id": 172,
+    "line_start": 7517,
+    "line_end": 7594,
+    "type": "case",
+    "start_page_pdf": "153",
+    "start_page_bullard": "C-133",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "172",
+    "encounter_id": 173,
+    "line_start": 7595,
+    "line_end": 7671,
+    "type": "case",
+    "start_page_pdf": "155",
+    "start_page_bullard": "C-135",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "173",
+    "encounter_id": 174,
+    "line_start": 7672,
+    "line_end": 7687,
+    "type": "case",
+    "start_page_pdf": "156",
+    "start_page_bullard": "C-136",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "174",
+    "encounter_id": 175,
+    "line_start": 7688,
+    "line_end": 7695,
+    "type": "case",
+    "start_page_pdf": "157",
+    "start_page_bullard": "C-137",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "175",
+    "encounter_id": 176,
+    "line_start": 7696,
+    "line_end": 7716,
+    "type": "case",
+    "start_page_pdf": "157",
+    "start_page_bullard": "C-137",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "176",
+    "encounter_id": 177,
+    "line_start": 7717,
+    "line_end": 7824,
+    "type": "case",
+    "start_page_pdf": "158",
+    "start_page_bullard": "C-138",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "177",
+    "encounter_id": 178,
+    "line_start": 7825,
+    "line_end": 7840,
+    "type": "case",
+    "start_page_pdf": "160",
+    "start_page_bullard": "C-140",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "178",
+    "encounter_id": 179,
+    "line_start": 7841,
+    "line_end": 7904,
+    "type": "case",
+    "start_page_pdf": "160",
+    "start_page_bullard": "C-140",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "179",
+    "encounter_id": 180,
+    "line_start": 7905,
+    "line_end": 8185,
+    "type": "case",
+    "start_page_pdf": "161",
+    "start_page_bullard": "C-141",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "180a",
+    "encounter_id": 181,
+    "line_start": 8186,
+    "line_end": 8206,
+    "type": "case",
+    "start_page_pdf": "167",
+    "start_page_bullard": "C-147",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "180b",
+    "encounter_id": 182,
+    "line_start": 8207,
+    "line_end": 8272,
+    "type": "case",
+    "start_page_pdf": "167",
+    "start_page_bullard": "C-147",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "181b",
+    "encounter_id": 184,
+    "line_start": 8273,
+    "line_end": 8305,
+    "type": "case",
+    "start_page_pdf": "169",
+    "start_page_bullard": "C-149",
+    "retrieval_method": "conscious"
+  },
+  {
+    "case_number": "182a",
+    "encounter_id": 185,
+    "line_start": 8306,
+    "line_end": 8315,
+    "type": "case",
+    "start_page_pdf": "169",
+    "start_page_bullard": "C-149",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "182b",
+    "encounter_id": 186,
+    "line_start": 8316,
+    "line_end": 8345,
+    "type": "case",
+    "start_page_pdf": "169",
+    "start_page_bullard": "C-149",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "183",
+    "encounter_id": 187,
+    "line_start": 8346,
+    "line_end": 8359,
+    "type": "case",
+    "start_page_pdf": "170",
+    "start_page_bullard": "C-150",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "184a",
+    "encounter_id": 188,
+    "line_start": 8360,
+    "line_end": 8416,
+    "type": "case",
+    "start_page_pdf": "170",
+    "start_page_bullard": "C-150",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "184b",
+    "encounter_id": 189,
+    "line_start": 8417,
+    "line_end": 8446,
+    "type": "case",
+    "start_page_pdf": "171",
+    "start_page_bullard": "C-151",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "185a",
+    "encounter_id": 190,
+    "line_start": 8447,
+    "line_end": 8488,
+    "type": "case",
+    "start_page_pdf": "172",
+    "start_page_bullard": "C-152",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "185b",
+    "encounter_id": 191,
+    "line_start": 8489,
+    "line_end": 8506,
+    "type": "case",
+    "start_page_pdf": "173",
+    "start_page_bullard": "C-153",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "185c",
+    "encounter_id": 192,
+    "line_start": 8507,
+    "line_end": 8520,
+    "type": "case",
+    "start_page_pdf": "173",
+    "start_page_bullard": "C-153",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "186a",
+    "encounter_id": 193,
+    "line_start": 8521,
+    "line_end": 8542,
+    "type": "case",
+    "start_page_pdf": "173",
+    "start_page_bullard": "C-153",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "186b",
+    "encounter_id": 194,
+    "line_start": 8543,
+    "line_end": 8561,
+    "type": "case",
+    "start_page_pdf": "174",
+    "start_page_bullard": "C-154",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "187",
+    "encounter_id": null,
+    "line_start": 8562,
+    "line_end": 8564,
+    "type": "master",
+    "start_page_pdf": "174",
+    "start_page_bullard": "C-154",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "187a",
+    "encounter_id": 195,
+    "line_start": 8565,
+    "line_end": 8736,
+    "type": "case",
+    "start_page_pdf": "174",
+    "start_page_bullard": "C-154",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "187b",
+    "encounter_id": 196,
+    "line_start": 8737,
+    "line_end": 8763,
+    "type": "case",
+    "start_page_pdf": "177",
+    "start_page_bullard": "C-157",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "187c",
+    "encounter_id": 197,
+    "line_start": 8764,
+    "line_end": 8774,
+    "type": "case",
+    "start_page_pdf": "178",
+    "start_page_bullard": "C-158",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "187d",
+    "encounter_id": 198,
+    "line_start": 8775,
+    "line_end": 8832,
+    "type": "case",
+    "start_page_pdf": "178",
+    "start_page_bullard": "C-158",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "188a",
+    "encounter_id": 199,
+    "line_start": 8833,
+    "line_end": 8900,
+    "type": "case",
+    "start_page_pdf": "179",
+    "start_page_bullard": "C-159",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "188b",
+    "encounter_id": 200,
+    "line_start": 8901,
+    "line_end": 8964,
+    "type": "case",
+    "start_page_pdf": "181",
+    "start_page_bullard": "C-161",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "189a",
+    "encounter_id": 201,
+    "line_start": 8965,
+    "line_end": 8985,
+    "type": "case",
+    "start_page_pdf": "182",
+    "start_page_bullard": "C-162",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "189b",
+    "encounter_id": 202,
+    "line_start": 8986,
+    "line_end": 8998,
+    "type": "case",
+    "start_page_pdf": "182",
+    "start_page_bullard": "C-162",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "190a",
+    "encounter_id": 203,
+    "line_start": 8999,
+    "line_end": 9027,
+    "type": "case",
+    "start_page_pdf": "183",
+    "start_page_bullard": "C-163",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "190b",
+    "encounter_id": 204,
+    "line_start": 9028,
+    "line_end": 9061,
+    "type": "case",
+    "start_page_pdf": "183",
+    "start_page_bullard": "C-163",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "191a",
+    "encounter_id": 205,
+    "line_start": 9062,
+    "line_end": 9128,
+    "type": "case",
+    "start_page_pdf": "184",
+    "start_page_bullard": "C-164",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "191b",
+    "encounter_id": 206,
+    "line_start": 9129,
+    "line_end": 9173,
+    "type": "case",
+    "start_page_pdf": "185",
+    "start_page_bullard": "C-165",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "192",
+    "encounter_id": null,
+    "line_start": 9174,
+    "line_end": 9186,
+    "type": "master",
+    "start_page_pdf": "187",
+    "start_page_bullard": "C-167",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "192a",
+    "encounter_id": 207,
+    "line_start": 9187,
+    "line_end": 9200,
+    "type": "case",
+    "start_page_pdf": "187",
+    "start_page_bullard": "C-167",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "192b",
+    "encounter_id": 208,
+    "line_start": 9201,
+    "line_end": 9229,
+    "type": "case",
+    "start_page_pdf": "187",
+    "start_page_bullard": "C-167",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "192c",
+    "encounter_id": 209,
+    "line_start": 9230,
+    "line_end": 9253,
+    "type": "case",
+    "start_page_pdf": "188",
+    "start_page_bullard": "C-168",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "192d",
+    "encounter_id": 210,
+    "line_start": 9254,
+    "line_end": 9354,
+    "type": "case",
+    "start_page_pdf": "188",
+    "start_page_bullard": "C-168",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "192e",
+    "encounter_id": 211,
+    "line_start": 9355,
+    "line_end": 9362,
+    "type": "case",
+    "start_page_pdf": "190",
+    "start_page_bullard": "C-170",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "192f",
+    "encounter_id": 212,
+    "line_start": 9363,
+    "line_end": 9385,
+    "type": "case",
+    "start_page_pdf": "190",
+    "start_page_bullard": "C-170",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "192g",
+    "encounter_id": 213,
+    "line_start": 9386,
+    "line_end": 9600,
+    "type": "case",
+    "start_page_pdf": "191",
+    "start_page_bullard": "C-171",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "192h",
+    "encounter_id": 214,
+    "line_start": 9601,
+    "line_end": 9654,
+    "type": "case",
+    "start_page_pdf": "195",
+    "start_page_bullard": "C-175",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "192i",
+    "encounter_id": 215,
+    "line_start": 9655,
+    "line_end": 9727,
+    "type": "case",
+    "start_page_pdf": "196",
+    "start_page_bullard": "C-176",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "193",
+    "encounter_id": null,
+    "line_start": 9728,
+    "line_end": 9735,
+    "type": "master",
+    "start_page_pdf": "197",
+    "start_page_bullard": "C-177",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "193a",
+    "encounter_id": 216,
+    "line_start": 9736,
+    "line_end": 9863,
+    "type": "case",
+    "start_page_pdf": "197",
+    "start_page_bullard": "C-177",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "193b",
+    "encounter_id": 217,
+    "line_start": 9864,
+    "line_end": 9892,
+    "type": "case",
+    "start_page_pdf": "200",
+    "start_page_bullard": "C-180",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "193c",
+    "encounter_id": 218,
+    "line_start": 9893,
+    "line_end": 9918,
+    "type": "case",
+    "start_page_pdf": "200",
+    "start_page_bullard": "C-180",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "193d",
+    "encounter_id": 219,
+    "line_start": 9919,
+    "line_end": 9953,
+    "type": "case",
+    "start_page_pdf": "201",
+    "start_page_bullard": "C-181",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "193e",
+    "encounter_id": 220,
+    "line_start": 9954,
+    "line_end": 9973,
+    "type": "case",
+    "start_page_pdf": "201",
+    "start_page_bullard": "C-181",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "193f",
+    "encounter_id": 221,
+    "line_start": 9974,
+    "line_end": 10142,
+    "type": "case",
+    "start_page_pdf": "202",
+    "start_page_bullard": "C-182",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "194",
+    "encounter_id": null,
+    "line_start": 10143,
+    "line_end": 10147,
+    "type": "master",
+    "start_page_pdf": "205",
+    "start_page_bullard": "C-185",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "194a",
+    "encounter_id": 222,
+    "line_start": 10148,
+    "line_end": 10210,
+    "type": "case",
+    "start_page_pdf": "205",
+    "start_page_bullard": "C-185",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "194b",
+    "encounter_id": 223,
+    "line_start": 10211,
+    "line_end": 10230,
+    "type": "case",
+    "start_page_pdf": "206",
+    "start_page_bullard": "C-186",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "194c",
+    "encounter_id": 224,
+    "line_start": 10231,
+    "line_end": 10251,
+    "type": "case",
+    "start_page_pdf": "206",
+    "start_page_bullard": "C-186",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "194d",
+    "encounter_id": 225,
+    "line_start": 10252,
+    "line_end": 10274,
+    "type": "case",
+    "start_page_pdf": "207",
+    "start_page_bullard": "C-187",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "195",
+    "encounter_id": null,
+    "line_start": 10275,
+    "line_end": 10435,
+    "type": "master",
+    "start_page_pdf": "207",
+    "start_page_bullard": "C-187",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "196",
+    "encounter_id": null,
+    "line_start": 10436,
+    "line_end": 10442,
+    "type": "master",
+    "start_page_pdf": "210",
+    "start_page_bullard": "C-190",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "196a",
+    "encounter_id": 243,
+    "line_start": 10443,
+    "line_end": 10461,
+    "type": "case",
+    "start_page_pdf": "211",
+    "start_page_bullard": "C-191",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "196b",
+    "encounter_id": 244,
+    "line_start": 10462,
+    "line_end": 10478,
+    "type": "case",
+    "start_page_pdf": "211",
+    "start_page_bullard": "C-191",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "196c",
+    "encounter_id": 245,
+    "line_start": 10479,
+    "line_end": 10510,
+    "type": "case",
+    "start_page_pdf": "211",
+    "start_page_bullard": "C-191",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "196d",
+    "encounter_id": 246,
+    "line_start": 10511,
+    "line_end": 10518,
+    "type": "case",
+    "start_page_pdf": "212",
+    "start_page_bullard": "C-192",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "196e",
+    "encounter_id": 247,
+    "line_start": 10519,
+    "line_end": 10614,
+    "type": "case",
+    "start_page_pdf": "212",
+    "start_page_bullard": "C-192",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "197",
+    "encounter_id": 248,
+    "line_start": 10615,
+    "line_end": 10675,
+    "type": "case",
+    "start_page_pdf": "214",
+    "start_page_bullard": "C-194",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "198",
+    "encounter_id": null,
+    "line_start": 10676,
+    "line_end": 10679,
+    "type": "master",
+    "start_page_pdf": "215",
+    "start_page_bullard": "C-195",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "198a",
+    "encounter_id": 249,
+    "line_start": 10680,
+    "line_end": 10698,
+    "type": "case",
+    "start_page_pdf": "215",
+    "start_page_bullard": "C-195",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "198b",
+    "encounter_id": 250,
+    "line_start": 10699,
+    "line_end": 10713,
+    "type": "case",
+    "start_page_pdf": "215",
+    "start_page_bullard": "C-195",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "198c",
+    "encounter_id": 251,
+    "line_start": 10714,
+    "line_end": 10725,
+    "type": "case",
+    "start_page_pdf": "216",
+    "start_page_bullard": "C-196",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "199",
+    "encounter_id": null,
+    "line_start": 10726,
+    "line_end": 10781,
+    "type": "master",
+    "start_page_pdf": "216",
+    "start_page_bullard": "C-196",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "199a",
+    "encounter_id": 254,
+    "line_start": 10782,
+    "line_end": 10812,
+    "type": "case",
+    "start_page_pdf": "217",
+    "start_page_bullard": "C-197",
+    "retrieval_method": "dream"
+  },
+  {
+    "case_number": "199b",
+    "encounter_id": 255,
+    "line_start": 10813,
+    "line_end": 10849,
+    "type": "case",
+    "start_page_pdf": "218",
+    "start_page_bullard": "C-198",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "199c",
+    "encounter_id": 257,
+    "line_start": 10850,
+    "line_end": 10862,
+    "type": "case",
+    "start_page_pdf": "218",
+    "start_page_bullard": "C-198",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "199d",
+    "encounter_id": 258,
+    "line_start": 10863,
+    "line_end": 10904,
+    "type": "case",
+    "start_page_pdf": "219",
+    "start_page_bullard": "C-199",
+    "retrieval_method": "dream"
+  },
+  {
+    "case_number": "200",
+    "encounter_id": 259,
+    "line_start": 10905,
+    "line_end": 10960,
+    "type": "case",
+    "start_page_pdf": "219",
+    "start_page_bullard": "C-199",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "201",
+    "encounter_id": 260,
+    "line_start": 10961,
+    "line_end": 10967,
+    "type": "master",
+    "start_page_pdf": "220",
+    "start_page_bullard": "C-200",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "201a",
+    "encounter_id": 261,
+    "line_start": 10968,
+    "line_end": 10981,
+    "type": "case",
+    "start_page_pdf": "221",
+    "start_page_bullard": "C-201",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "201b",
+    "encounter_id": 262,
+    "line_start": 10982,
+    "line_end": 10999,
+    "type": "case",
+    "start_page_pdf": "221",
+    "start_page_bullard": "C-201",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "201c",
+    "encounter_id": 263,
+    "line_start": 11000,
+    "line_end": 11009,
+    "type": "case",
+    "start_page_pdf": "221",
+    "start_page_bullard": "C-201",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "201d",
+    "encounter_id": 264,
+    "line_start": 11010,
+    "line_end": 11025,
+    "type": "case",
+    "start_page_pdf": "221",
+    "start_page_bullard": "C-201",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "202",
+    "encounter_id": 265,
+    "line_start": 11026,
+    "line_end": 11070,
+    "type": "case",
+    "start_page_pdf": "222",
+    "start_page_bullard": "C-202",
+    "retrieval_method": "dream"
+  },
+  {
+    "case_number": "203",
+    "encounter_id": 266,
+    "line_start": 11071,
+    "line_end": 11107,
+    "type": "case",
+    "start_page_pdf": "223",
+    "start_page_bullard": "C-203",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "204",
+    "encounter_id": 267,
+    "line_start": 11108,
+    "line_end": 11128,
+    "type": "case",
+    "start_page_pdf": "224",
+    "start_page_bullard": "C-204",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "205",
+    "encounter_id": 268,
+    "line_start": 11129,
+    "line_end": 11146,
+    "type": "case",
+    "start_page_pdf": "224",
+    "start_page_bullard": "C-204",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "206",
+    "encounter_id": 269,
+    "line_start": 11147,
+    "line_end": 11162,
+    "type": "case",
+    "start_page_pdf": "224",
+    "start_page_bullard": "C-204",
+    "retrieval_method": "dream"
+  },
+  {
+    "case_number": "207",
+    "encounter_id": 270,
+    "line_start": 11163,
+    "line_end": 11190,
+    "type": "case",
+    "start_page_pdf": "225",
+    "start_page_bullard": "C-205",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "208",
+    "encounter_id": 271,
+    "line_start": 11191,
+    "line_end": 11208,
+    "type": "case",
+    "start_page_pdf": "225",
+    "start_page_bullard": "C-205",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "209",
+    "encounter_id": 272,
+    "line_start": 11209,
+    "line_end": 11243,
+    "type": "case",
+    "start_page_pdf": "226",
+    "start_page_bullard": "C-206",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "210",
+    "encounter_id": 273,
+    "line_start": 11244,
+    "line_end": 11277,
+    "type": "case",
+    "start_page_pdf": "226",
+    "start_page_bullard": "C-206",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "211",
+    "encounter_id": 274,
+    "line_start": 11278,
+    "line_end": 11293,
+    "type": "case",
+    "start_page_pdf": "227",
+    "start_page_bullard": "C-207",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "212",
+    "encounter_id": 275,
+    "line_start": 11294,
+    "line_end": 11316,
+    "type": "case",
+    "start_page_pdf": "227",
+    "start_page_bullard": "C-207",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "213",
+    "encounter_id": 276,
+    "line_start": 11317,
+    "line_end": 11333,
+    "type": "case",
+    "start_page_pdf": "228",
+    "start_page_bullard": "C-208",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "214",
+    "encounter_id": 277,
+    "line_start": 11334,
+    "line_end": 11345,
+    "type": "case",
+    "start_page_pdf": "229",
+    "start_page_bullard": "C-209",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "215",
+    "encounter_id": 278,
+    "line_start": 11346,
+    "line_end": 11384,
+    "type": "case",
+    "start_page_pdf": "229",
+    "start_page_bullard": "C-209",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "216",
+    "encounter_id": 279,
+    "line_start": 11385,
+    "line_end": 11415,
+    "type": "case",
+    "start_page_pdf": "230",
+    "start_page_bullard": "C-210",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "217",
+    "encounter_id": 280,
+    "line_start": 11416,
+    "line_end": 11435,
+    "type": "case",
+    "start_page_pdf": "230",
+    "start_page_bullard": "C-210",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "218",
+    "encounter_id": 281,
+    "line_start": 11436,
+    "line_end": 11447,
+    "type": "case",
+    "start_page_pdf": "231",
+    "start_page_bullard": "C-211",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "219",
+    "encounter_id": 282,
+    "line_start": 11448,
+    "line_end": 11461,
+    "type": "case",
+    "start_page_pdf": "231",
+    "start_page_bullard": "C-211",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "220",
+    "encounter_id": 283,
+    "line_start": 11462,
+    "line_end": 11477,
+    "type": "case",
+    "start_page_pdf": "231",
+    "start_page_bullard": "C-211",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "221",
+    "encounter_id": 284,
+    "line_start": 11478,
+    "line_end": 11500,
+    "type": "case",
+    "start_page_pdf": "232",
+    "start_page_bullard": "C-211",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "222",
+    "encounter_id": 285,
+    "line_start": 11501,
+    "line_end": 11524,
+    "type": "case",
+    "start_page_pdf": "232",
+    "start_page_bullard": "C-211",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "223",
+    "encounter_id": 286,
+    "line_start": 11525,
+    "line_end": 11540,
+    "type": "case",
+    "start_page_pdf": "233",
+    "start_page_bullard": "C-213",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "224",
+    "encounter_id": 287,
+    "line_start": 11541,
+    "line_end": 11580,
+    "type": "case",
+    "start_page_pdf": "233",
+    "start_page_bullard": "C-213",
+    "retrieval_method": "dream"
+  },
+  {
+    "case_number": "225",
+    "encounter_id": 288,
+    "line_start": 11581,
+    "line_end": 11611,
+    "type": "case",
+    "start_page_pdf": "234",
+    "start_page_bullard": "C-214",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "226",
+    "encounter_id": 289,
+    "line_start": 11612,
+    "line_end": 11629,
+    "type": "case",
+    "start_page_pdf": "235",
+    "start_page_bullard": "C-215",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "227",
+    "encounter_id": 290,
+    "line_start": 11630,
+    "line_end": 11697,
+    "type": "case",
+    "start_page_pdf": "235",
+    "start_page_bullard": "C-215",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "228",
+    "encounter_id": 291,
+    "line_start": 11698,
+    "line_end": 11740,
+    "type": "case",
+    "start_page_pdf": "237",
+    "start_page_bullard": "C-217",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "229",
+    "encounter_id": 292,
+    "line_start": 11741,
+    "line_end": 11760,
+    "type": "case",
+    "start_page_pdf": "238",
+    "start_page_bullard": "C-218",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "230",
+    "encounter_id": 293,
+    "line_start": 11761,
+    "line_end": 11796,
+    "type": "case",
+    "start_page_pdf": "238",
+    "start_page_bullard": "C-218",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "231",
+    "encounter_id": 294,
+    "line_start": 11797,
+    "line_end": 11814,
+    "type": "case",
+    "start_page_pdf": "240",
+    "start_page_bullard": "C-220",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "232",
+    "encounter_id": 295,
+    "line_start": 11815,
+    "line_end": 11828,
+    "type": "case",
+    "start_page_pdf": "240",
+    "start_page_bullard": "C-220",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "233",
+    "encounter_id": 296,
+    "line_start": 11829,
+    "line_end": 11841,
+    "type": "case",
+    "start_page_pdf": "241",
+    "start_page_bullard": "C-221",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "234",
+    "encounter_id": 297,
+    "line_start": 11842,
+    "line_end": 11859,
+    "type": "case",
+    "start_page_pdf": "241",
+    "start_page_bullard": "C-221",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "235",
+    "encounter_id": 298,
+    "line_start": 11860,
+    "line_end": 11876,
+    "type": "case",
+    "start_page_pdf": "241",
+    "start_page_bullard": "C-221",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "236",
+    "encounter_id": 299,
+    "line_start": 11877,
+    "line_end": 11884,
+    "type": "case",
+    "start_page_pdf": "242",
+    "start_page_bullard": "C-222",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "237",
+    "encounter_id": 300,
+    "line_start": 11885,
+    "line_end": 11891,
+    "type": "case",
+    "start_page_pdf": "242",
+    "start_page_bullard": "C-222",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "238",
+    "encounter_id": 301,
+    "line_start": 11892,
+    "line_end": 11901,
+    "type": "case",
+    "start_page_pdf": "242",
+    "start_page_bullard": "C-222",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "239",
+    "encounter_id": 302,
+    "line_start": 11902,
+    "line_end": 11934,
+    "type": "case",
+    "start_page_pdf": "242",
+    "start_page_bullard": "C-222",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "240",
+    "encounter_id": 303,
+    "line_start": 11935,
+    "line_end": 11947,
+    "type": "case",
+    "start_page_pdf": "243",
+    "start_page_bullard": "C-223",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "241",
+    "encounter_id": 304,
+    "line_start": 11948,
+    "line_end": 11969,
+    "type": "case",
+    "start_page_pdf": "243",
+    "start_page_bullard": "C-223",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "242",
+    "encounter_id": 305,
+    "line_start": 11970,
+    "line_end": 11979,
+    "type": "case",
+    "start_page_pdf": "244",
+    "start_page_bullard": "C-224",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "243",
+    "encounter_id": 306,
+    "line_start": 11980,
+    "line_end": 11986,
+    "type": "case",
+    "start_page_pdf": "244",
+    "start_page_bullard": "C-224",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "244",
+    "encounter_id": 307,
+    "line_start": 11987,
+    "line_end": 12013,
+    "type": "case",
+    "start_page_pdf": "244",
+    "start_page_bullard": "C-224",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "245",
+    "encounter_id": 308,
+    "line_start": 12014,
+    "line_end": 12089,
+    "type": "case",
+    "start_page_pdf": "245",
+    "start_page_bullard": "C-225",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "246",
+    "encounter_id": 309,
+    "line_start": 12090,
+    "line_end": 12131,
+    "type": "case",
+    "start_page_pdf": "246",
+    "start_page_bullard": "C-226",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "247",
+    "encounter_id": 310,
+    "line_start": 12132,
+    "line_end": 12161,
+    "type": "case",
+    "start_page_pdf": "247",
+    "start_page_bullard": "C-227",
+    "retrieval_method": "conscious"
+  },
+  {
+    "case_number": "248",
+    "encounter_id": 311,
+    "line_start": 12162,
+    "line_end": 12177,
+    "type": "case",
+    "start_page_pdf": "248",
+    "start_page_bullard": "C-228",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "249",
+    "encounter_id": 312,
+    "line_start": 12178,
+    "line_end": 12206,
+    "type": "case",
+    "start_page_pdf": "248",
+    "start_page_bullard": "C-228",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "250",
+    "encounter_id": 313,
+    "line_start": 12207,
+    "line_end": 12219,
+    "type": "case",
+    "start_page_pdf": "249",
+    "start_page_bullard": "C-229",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "251",
+    "encounter_id": 314,
+    "line_start": 12220,
+    "line_end": 12233,
+    "type": "case",
+    "start_page_pdf": "249",
+    "start_page_bullard": "C-229",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "252",
+    "encounter_id": 315,
+    "line_start": 12234,
+    "line_end": 12246,
+    "type": "case",
+    "start_page_pdf": "249",
+    "start_page_bullard": "C-229",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "253",
+    "encounter_id": 316,
+    "line_start": 12247,
+    "line_end": 12270,
+    "type": "case",
+    "start_page_pdf": "250",
+    "start_page_bullard": "C-230",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "254",
+    "encounter_id": 317,
+    "line_start": 12271,
+    "line_end": 12281,
+    "type": "case",
+    "start_page_pdf": "251",
+    "start_page_bullard": "C-231",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "255",
+    "encounter_id": 318,
+    "line_start": 12282,
+    "line_end": 12293,
+    "type": "case",
+    "start_page_pdf": "251",
+    "start_page_bullard": "C-231",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "256",
+    "encounter_id": 319,
+    "line_start": 12294,
+    "line_end": 12316,
+    "type": "case",
+    "start_page_pdf": "251",
+    "start_page_bullard": "C-231",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "257",
+    "encounter_id": 320,
+    "line_start": 12317,
+    "line_end": 12361,
+    "type": "case",
+    "start_page_pdf": "252",
+    "start_page_bullard": "C-232",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "258",
+    "encounter_id": 321,
+    "line_start": 12362,
+    "line_end": 12372,
+    "type": "case",
+    "start_page_pdf": "253",
+    "start_page_bullard": "C-233",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "259",
+    "encounter_id": 322,
+    "line_start": 12373,
+    "line_end": 12384,
+    "type": "case",
+    "start_page_pdf": "253",
+    "start_page_bullard": "C-233",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "260",
+    "encounter_id": 323,
+    "line_start": 12385,
+    "line_end": 12409,
+    "type": "case",
+    "start_page_pdf": "253",
+    "start_page_bullard": "C-233",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "261",
+    "encounter_id": 324,
+    "line_start": 12410,
+    "line_end": 12425,
+    "type": "case",
+    "start_page_pdf": "254",
+    "start_page_bullard": "C-234",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "262",
+    "encounter_id": 325,
+    "line_start": 12426,
+    "line_end": 12437,
+    "type": "case",
+    "start_page_pdf": "254",
+    "start_page_bullard": "C-234",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "263",
+    "encounter_id": 326,
+    "line_start": 12438,
+    "line_end": 12452,
+    "type": "case",
+    "start_page_pdf": "254",
+    "start_page_bullard": "C-234",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "264",
+    "encounter_id": 327,
+    "line_start": 12453,
+    "line_end": 12480,
+    "type": "case",
+    "start_page_pdf": "255",
+    "start_page_bullard": "C-235",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "265",
+    "encounter_id": 328,
+    "line_start": 12481,
+    "line_end": 12497,
+    "type": "case",
+    "start_page_pdf": "255",
+    "start_page_bullard": "C-235",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "266",
+    "encounter_id": 329,
+    "line_start": 12498,
+    "line_end": 12505,
+    "type": "case",
+    "start_page_pdf": "256",
+    "start_page_bullard": "C-236",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "267",
+    "encounter_id": 330,
+    "line_start": 12506,
+    "line_end": 12514,
+    "type": "case",
+    "start_page_pdf": "256",
+    "start_page_bullard": "C-236",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "268",
+    "encounter_id": 331,
+    "line_start": 12515,
+    "line_end": 12534,
+    "type": "case",
+    "start_page_pdf": "256",
+    "start_page_bullard": "C-236",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "269",
+    "encounter_id": 332,
+    "line_start": 12535,
+    "line_end": 12548,
+    "type": "case",
+    "start_page_pdf": "256",
+    "start_page_bullard": "C-236",
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "270",
+    "encounter_id": 333,
+    "line_start": 12549,
+    "line_end": 12563,
+    "type": "case",
+    "start_page_pdf": "257",
+    "start_page_bullard": "C-237",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "181a",
+    "encounter_id": 183,
+    "line_start": 8230,
+    "line_end": 8272,
+    "type": "case",
+    "start_page_pdf": "167",
+    "start_page_bullard": "C-147",
+    "retrieval_method": "hypnosis"
+  },
+  {
+    "case_number": "195a",
+    "encounter_id": 226,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "195b",
+    "encounter_id": 227,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "195c",
+    "encounter_id": 228,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "195d",
+    "encounter_id": 229,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "195e",
+    "encounter_id": 230,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "195f",
+    "encounter_id": 231,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "195g",
+    "encounter_id": 232,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "195h",
+    "encounter_id": 233,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "195i",
+    "encounter_id": 234,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "195j",
+    "encounter_id": 235,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "195k",
+    "encounter_id": 236,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "195l",
+    "encounter_id": 237,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "195m",
+    "encounter_id": 238,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "195n",
+    "encounter_id": 239,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "195o",
+    "encounter_id": 240,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "195p",
+    "encounter_id": 241,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "195q",
+    "encounter_id": 242,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "199_1",
+    "encounter_id": 252,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "199_2",
+    "encounter_id": 253,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  },
+  {
+    "case_number": "199_3",
+    "encounter_id": 256,
+    "line_start": null,
+    "line_end": null,
+    "type": "manual",
+    "start_page_pdf": null,
+    "start_page_bullard": null,
+    "retrieval_method": "unknown"
+  }
+]
