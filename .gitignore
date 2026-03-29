@@ -1,3 +1,18 @@
+# Source documents and PDFs
+Sources/
+Training/
+
+# Old scripts archive
+old scripts for testing and other stuff/
+
+# Database backups and large binaries
+*.db.db
+ufo_matrix_backup*
+*.sqbpro
+
+# Temp files
+~$*
+
 # Environments
 .env
 .venv

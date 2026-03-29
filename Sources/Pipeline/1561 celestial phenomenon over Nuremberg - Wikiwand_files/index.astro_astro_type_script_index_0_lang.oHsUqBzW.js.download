@@ -1,1 +1,0 @@
-import{g as e,u as a}from"./settings.BuXJxCDG.js";import"./settings.DcGQUldL.js";window.addEventListener("keydown",i=>{if((i.metaKey||i.ctrlKey)&&i.key==="i"){i.preventDefault();const t=e("data-ai-panel-visibility");a(t==="visible"?"hidden":"visible")}});
