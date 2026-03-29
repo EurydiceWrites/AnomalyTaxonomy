@@ -1,0 +1,186 @@
+# Phase 2 — Enhanced Line-by-Line (Naked Baseline)
+
+> **Legend:** ✓ EXACT | ~ NEAR (sibling code) | ⚠ WRONG CODE (detected, filed wrong) | ✗ TRUE MISS (undetected)
+
+---
+
+## Case 093 — Christina Bryant (24 motifs)
+
+```
+  BULLARD                                        AI OUTPUT                                      VERDICT
+  ────────────────────────────────────────────   ────────────────────────────────────────────   ──────────────────
+  [  1] E411     lights changing color in sky     [  1] U540     lights changing color in the s  ⚠ WRONG CODE (U540)
+  [  2] B625     apparent wreck with policeman     [  2] E106     found theMselves on a back roa  ⚠ WRONG CODE (E106)
+  [  3] B291     his touch was icy cold.           [  4] B291     ...his touch was icy cold.     ✓ EXACT
+  [  4] E200     truck stop 45 Min later           [  5] E200     they found that the tiMe was 3 ✓ EXACT
+  [  5] E320     policeman touched her hand        [  6] E320     policeman touched her hand     ✓ EXACT
+  [  6] U101     craft shaped like coolie hat      [  8] U101     a craft shaped like a coolie h ✓ EXACT
+  [  7] U133     climbed a ladder                  [  9] U133     She cliMbed a ladder to enter  ✓ EXACT
+  [  8] W400     lines and stars on screen         [ 11] X257     watching lines and stars on a  ⚠ WRONG CODE (X257)
+  [  9] U300     room with surgical tables         [ 14] U300     a rooM with two surgical table ✓ EXACT
+  [ 10] E213     daughter slept on one             —                                              ✗ TRUE MISS
+  [ 11] B295     three hairless beings             [ 16] B295     three hairless beings          ✓ EXACT
+  [ 12] B230     large heads                       [ 17] B230     large heads                   ✓ EXACT
+  [ 13] B241     large eyes                        [ 18] B241     large dark alMond-shaped eyes  ✓ EXACT
+  [ 14] B243     dark eyes                         [ 20] B243     dark... eyes                  ✓ EXACT
+  [ 15] B242     almond-shaped eyes                [ 19] B242     alMond-shaped eyes            ✓ EXACT
+  [ 16] B252     small noses                       [ 21] B252     sMall noses                   ✓ EXACT
+  [ 17] B257     vestigial mouths                  [ 22] B258     vestigial Mouths.             ~ NEAR (B258)
+  [ 18] B225     bodies were thin                  [ 23] B225     Their bodies were thin        ✓ EXACT
+  [ 19] B290     skin white                        [ 24] B290     their skin white.             ✓ EXACT
+  [ 20] X155     laid witness on table             [ 25] X155     The beings laid the witness on ✓ EXACT
+  [ 21] X220     examined with devices             [ 26] X220     exaMined her with various dev ✓ EXACT
+  [ 22] X231     scraped skin sample               [ 27] X231     scraped a skin saMple         ✓ EXACT
+  [ 23] X235     drew fluid from eye               [ 28] X235     drew fluid froM her eye.      ✓ EXACT
+  [ 24] B753     interest in surgical scar         [ 29] B753     interest in a surgical scar   ✓ EXACT
+```
+
+### Summary
+| Verdict | Count |
+|---------|-------|
+| ✓ Exact | 19 |
+| ~ Near | 1 |
+| ⚠ Wrong code | 3 (AI saw it, filed it wrong) |
+| ✗ True miss | **1** (E213 — daughter on table) |
+| **📊 Comprehension** | **23/24 (95.8%)** |
+
+---
+
+## Case 192g — Betty Andreasson (122 motifs)
+
+```
+  BULLARD                                        AI OUTPUT                                      VERDICT
+  ────────────────────────────────────────────   ────────────────────────────────────────────   ──────────────────
+  [  1] E400     TV picture looked faded           —                                              ✗ TRUE MISS
+  [  2] E400     TV picture looked faded           —                                              ✗ TRUE MISS
+  [  3] B502     beings approached the house       [  2] B502     A group of strange beings appr ✓ EXACT
+  [  4] E100     stillness like a vacuum           [  3] E100     A sense of stillness, like a v ✓ EXACT
+  [  5] E202     everyone blacked out              —                                              ✗ TRUE MISS
+  [  6] E213     blacked out except Betty          [  4] E213     everyone blacked out except Be ✓ EXACT
+  [  7] E110     passed through solid wood         [  5] E110     Five beings then passed throug ✓ EXACT
+  [  8] E110     passed through solid wood (2)     —                                              ✗ TRUE MISS
+  [  9] E110     passed through solid wood (3)     —                                              ✗ TRUE MISS
+  [ 10] B900     polite and friendly manner        [  8] B900     She felt they were friendly    ✓ EXACT
+  [ 11] B900     polite and friendly (2)           —                                              ✗ TRUE MISS
+  [ 12] C110     heard him speak inside head       [  7] C110     she heard hiM speak only insid ✓ EXACT
+  [ 13] E301     felt they were friendly           —                                              ✗ TRUE MISS
+  [ 14] E301     felt they were friendly (2)       —                                              ✗ TRUE MISS
+  [ 15] B911     cooking startled them             [  9] B911     the cooking startled theM      ✓ EXACT
+  [ 16] B758     altered their message             —                                              ✗ TRUE MISS
+  [ 17] B759     food was knowledge tried by fire  —                                              ✗ TRUE MISS
+  [ 18] B221     about 4 feet tall                 [ 11] B221     Quazgaa seeMed about 4 feet ta ✓ EXACT
+  [ 19] B800     but Quazgaa                       [  6] B800     The leader knew her naMe       ✓ EXACT
+  [ 20] B805     the others slightly less          [ 12] B805     the others slightly less.      ✓ EXACT
+  [ 21] B245     eyes filled with light            [ 13] B245     The eyes filled with light on  ✓ EXACT
+  [ 22] B247     slanted upward                    [ 14] B242     and slanted upward froM tiMe   ~ NEAR (B242)
+  [ 23] B363     dark blue uniform                 [ 15] B300     The beings wore a dark blue un ~ NEAR (B300)
+  [ 24] B335     belted at waist                   [ 16] B330     belted at the waist            ~ NEAR (B330)
+  [ 25] B375     emblem of bird/phoenix            [ 17] B375     on the sleeve was an eMbleM    ✓ EXACT
+  [ 26] B350     boots                             [ 18] B350     Their footgear consisted of bo ✓ EXACT
+  [ 27] B907     politeness concealed control      [ 20] B906     politeness concealed a control ~ NEAR (B906)
+  [ 28] B906     avoided giving answers            —                                              ✗ TRUE MISS
+  [ 29] B906     avoided giving answers (2)        —                                              ✗ TRUE MISS
+  [ 30] B915     sense of humor                    [ 21] B915     The beings seeMed to have a se ✓ EXACT
+  [ 31] S105     gave Quazgaa a Bible              [ 23] S105     Betty took the beings to the l ✓ EXACT
+  [ 32] S100     thin blue book in exchange        [ 22] S100     Betty took the beings to the l ✓ EXACT
+  [ 33] M115     asked to follow him               [ 24] M115     He asked hil'I to follow hiM   ✓ EXACT
+  [ 34] M128     help world, prevent destroying    [ 25] M120     assist thel'I in their Mission ~ NEAR (M120)
+  [ 35] E315     family immobilized                [ 26] E315     Her faMily looked il'IMObilize ✓ EXACT
+  [ 36] E315     family immobilized (2)            —                                              ✗ TRUE MISS
+  [ 37] M101     assured her they were safe        [ 27] M101     Quazgaa assured her they were  ✓ EXACT
+  [ 38] E323     gave in to repeated request       [ 28] E323     she finally gave in to repeate ✓ EXACT
+  [ 39] E322     hypnotic eyes, agreed to go       [ 29] E322     and hypnotic eyes and agreed   ✓ EXACT
+  [ 40] E322     hypnotic eyes (2)                 —                                              ✗ TRUE MISS
+  [ 41] E322     hypnotic eyes (3)                 —                                              ✗ TRUE MISS
+  [ 42] E120     weightless, swept forward         [ 30] E120     she felt weightless as she swe ✓ EXACT
+  [ 43] U170     ship stood nearby in fog          [ 32] U170     The ship stood nearby the fog  ✓ EXACT
+  [ 44] U134     3 legs adjusted to contour        [ 33] U134     on 3 legs which adjusted to    ✓ EXACT
+  [ 45] U101     craft round, oval profile         [ 34] U101     The craft was round and in pro ✓ EXACT
+  [ 46] U320     rotating crystalline globes       [ 35] U320     Quazgaa !'lade the lower half  ✓ EXACT
+  [ 47] U204     inner mechanism                   —                                              ✗ TRUE MISS
+  [ 48] U200     entrance hall, several rooms      [ 37] U200     she stood in an entrance hall  ✓ EXACT
+  [ 49] E311     hands and legs tingling           [ 39] E311     her hands and legs tingling as ✓ EXACT
+  [ 50] U132     door opened out of nowhere        [ 40] U132     a door seeMed to open out of   ✓ EXACT
+  [ 51] U212     circular domed room               [ 41] U211     floating up a staircase to a   ~ NEAR (U211)
+  [ 52] U212     circular domed room (2)           —                                              ✗ TRUE MISS
+  [ 53] X227     camera-like device from wall      —                                              ✗ TRUE MISS
+  [ 54] U352     lowered by elevator               [ 43] U352     She then lowered by Means of   ✓ EXACT
+  [ 55] U351     hatch, wind and lightning         [ 44] U351     passing what seeMed to be a ha ✓ EXACT
+  [ 56] X115     cleansing device                  [ 45] X115     she stepped beneath the lights ✓ EXACT
+  [ 57] X105     changed into clothes              [ 46] X105     changed into clothes the being ✓ EXACT
+  [ 58] E217     resisted unsuccessfully           —                                              ✗ TRUE MISS
+  [ 59] B367     silvery white uniforms            [ 47] B367     Their dress had changed as wel ✓ EXACT
+  [ 60] B303     silvery white uniforms (color)    —                                              ✗ TRUE MISS
+  [ 61] B317     with gloves                       —                                              ✗ TRUE MISS
+  [ 62] B901     more considerate                  [ 19] B901     apologizing for her discoMfort ✓ EXACT
+  [ 63] B901     more considerate (2)              —                                              ✗ TRUE MISS
+  [ 64] B755     sensed her fear, surprised        [ 72] T125     It said she was chosen to show ⚠ WRONG CODE (T125)
+  [ 65] M100     went slowly, reassured            —                                              ✗ TRUE MISS
+  [ 66] U202     examination room                  —                                              ✗ TRUE MISS
+  [ 67] U212     rounded domed exam room           [ 48] U211     entered a rounded and doMed ex ~ NEAR (U211)
+  [ 68] U230     lighted brightly, no source       [ 49] U230     lighted brightly but froM no   ✓ EXACT
+  [ 69] X155     floated onto exam table           [ 50] X157     There she floated onto an exam ~ NEAR (X157)
+  [ 70] X270     measured her for light            [ 51] X270     Quazgaa 'Measured her for ligh ✓ EXACT
+  [ 71] X220     handheld device                   —                                              ✗ TRUE MISS
+  [ 72] E214     objected, he exercised control    [ 52] E214     She objected, but he exercised ✓ EXACT
+  [ 73] E306     confidence came and went          —                                              ✗ TRUE MISS
+  [ 74] X245     needle up nostril                 [ 53] X245     stuck a needle-like device up   ✓ EXACT
+  [ 75] E321     touching head, took away pain     [ 54] E321     touching her head to take away ✓ EXACT
+  [ 76] E321     laid-on hands relieved pain (2)   —                                              ✗ TRUE MISS
+  [ 77] B762     something was missing             —                                              ✗ TRUE MISS
+  [ 78] C116     barely understand beings          [ 58] C116     She could barely understand th ✓ EXACT
+  [ 79] B807     others wanted to continue tests   [ 38] B807     Quazgaa conferred with other b ✓ EXACT
+  [ 80] B803     Quazgaa sided with her            [ 59] B803     she gathered that the others    ✓ EXACT
+  [ 81] X225     eyelike device from ceiling       —                                              ✗ TRUE MISS
+  [ 82] U201     dark corridor                     —                                              ✗ TRUE MISS
+  [ 83] W410     transparent covering, liquid      [ 60] W410     she sat in one the beings clos ✓ EXACT
+  [ 84] W413     glasslike chairs                  —                                              ✗ TRUE MISS
+  [ 85] U250     coldness surrounded her           —                                              ✗ TRUE MISS
+  [ 86] A101     drew moisture from body           —                                              ✗ TRUE MISS
+  [ 87] E211     keep eyes closed, involuntary     —                                              ✗ TRUE MISS
+  [ 88] B610     silvery luminous suits            —                                              ✗ TRUE MISS
+  [ 89] W117     dark tunnel, chipped stone        [ 61] W117     escorted her into a large dark ✓ EXACT
+  [ 90] E110     floated above path (2)            —                                              ✗ TRUE MISS
+  [ 91] W102     realm with red atmosphere         [ 69] W106     she passed a Mass of crystals  ~ NEAR (W106)
+  [ 92] W104     strange crawling creatures        —                                              ✗ TRUE MISS
+  [ 93] W103     barren of plant life              [ 62] W103     passed through a Mirror-like   ✓ EXACT
+  [ 94] W105     beautiful green realm             [ 63] W105     passed through a circular MeMb ✓ EXACT
+  [ 95] W101     well lighted, no sun              [ 64] W101     This real~ was well lighted    ✓ EXACT
+  [ 96] W210     distant city visible              [ 65] W210     A distant city was visible     ✓ EXACT
+  [ 97] W221     pyramid with Sphinx               [ 66] W221     pyraMid with a Sphinx on top   ✓ EXACT
+  [ 98] W220     elevated roadway                  [ 67] W220     and an elevated roadway.       ✓ EXACT
+  [ 99] E310     head, legs felt heavy             [ 68] E310     head, arMs and legs felt heavy ✓ EXACT
+  [100] E313     limbs felt prickly                —                                              ✗ TRUE MISS
+  [101] T106     mass of crystals suspended        —                                              ✗ TRUE MISS
+  [102] T121     gigantic living bird              [ 70] T121     a gigantic, seeMingly living b ✓ EXACT
+  [103] T122     voice she took to be God's        [ 71] T122     A voice she took to be God's   ✓ EXACT
+  [104] M122     chosen to show the world          —                                              ✗ TRUE MISS
+  [105] M145     chosen ones would lead others     —                                              ✗ TRUE MISS
+  [106] W108     retraced route                    —                                              ✗ TRUE MISS
+  [107] B905     little concern on outgoing trip   —                                              ✗ TRUE MISS
+  [108] B901     more considerate on return (3)    —                                              ✗ TRUE MISS
+  [109] M120     beings loved humans               [ 73] M120     the beings loved huMans        ✓ EXACT
+  [110] M121     locked secrets in heads           —                                              ✗ TRUE MISS
+  [111] M148     unprepared would feel no fear     —                                              ✗ TRUE MISS
+  [112] M119     would have to forget              [ 74] M119     Until the appointed tiMe she   ✓ EXACT
+  [113] B248     eyes enormously enlarged          [ 75] B248     all during this discourse he   ✓ EXACT
+  [114] B610     smaller beings escorted out (2)   —                                              ✗ TRUE MISS
+  [115] E325     luminous globes for control       —                                              ✗ TRUE MISS
+  [116] S111     blue book to study                [ 78] S111     he told her the blue book was  ✓ EXACT
+  [117] E200     went to sleep, forgot             —                                              ✗ TRUE MISS
+  [118] A115     Becky's frightening dream         [ 79] A115     Becky reMeMbered a frightening ✓ EXACT
+  [119] S111     book disappeared after 10 days    —                                              ✗ TRUE MISS
+  [120] E322     being looked at him (bystander)   —                                              ✗ TRUE MISS
+  [121] E400     TV picture looked faded (2)       —                                              ✗ TRUE MISS
+  [122] E301     felt they were friendly (3)       —                                              ✗ TRUE MISS
+```
+
+### Summary
+| Verdict | Count | |
+|---------|-------|-|
+| ✓ Exact | 63 | |
+| ~ Near | 9 | |
+| ⚠ Wrong code | 9 | AI saw it, filed it wrong |
+| ✗ True miss | **41** | AI didn't detect the concept |
+| + AI extras | 9 | |
+| **📊 Comprehension** | **81/122 (66.4%)** | |

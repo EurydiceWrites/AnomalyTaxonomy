@@ -1,0 +1,49 @@
+# UAP Anomaly Taxonomy: Linguist Onboarding Walkthrough
+
+*Date: March 15, 2026*
+
+## Executive Summary
+**The Experiencer Data Project** (codenamed UFO Matrix) is an ambitious initiative to transform unstructured, qualitative UFO abduction folklore into rigid, queryable data.
+
+Historically, UFO encounter literature (from researchers like Dr. Thomas E. Bullard and Dr. John Mack) exists as dense narrative prose. Our goal is to use advanced semantic AI (Google Gemini 2.5) to read these raw, thousands-page narratives, identify phenomenological events, and extract them into a pristine relational SQLite database for analytics.
+
+This dashboard allows researchers to visualize chronological abduction flows, map co-occurring anomalies, and chart witness physiological responses with academic rigor. 
+
+---
+
+## The Foundation: The Bullard Taxonomy
+In 1987, Dr. Thomas Bullard parsed over 200 UFO encounter reports and created a standardized "Taxonomy"—a dictionary of ~300 alphanumeric Motif Codes.
+
+For example:
+- **`U103`** = Sphere (Craft Shape)
+- **`E202`** = Witness Unconscious
+- **`B296`** = Hair Sparse (Entity Description)
+
+This structured Taxonomy is the "law" of our database. Our AI must normalize any bizarre, chaotic narrative text back into Bullard's strict codes.
+
+---
+
+## Phase 1: The Transcription Engine & Initial Digitization
+We first needed a ground-truth "Answer Key." Bullard published his 270 hand-coded cases in 1987 in a typist-style PDF.
+
+We built an AI pipeline using a persona we call the **`bullard_transcriber`**. 
+- **Its Purpose:** The AI was strictly forbidden from doing any semantic reasoning. It was instructed to act purely as an OCR repair clerk. It read the PDF, found the exact codes Bullard manually typed in parentheses (e.g., "the entity was small `(B800)`"), corrected typos, and extracted the sentence immediately preceding it.
+- **The Result (Initial Pass):** We successfully pushed meticulously hand-coded cases into `ufo_matrix.db`.
+
+### WHERE WE ARE NOW: Phase 1, Step 5 (100% Visual QA)
+We are currently parked at **Phase 1, Step 5**, right before we unleash the massive **Bulk Ingestion** orchestrator scripts for the rest of the cases.
+
+We are fine-tuning the `bullard_transcriber` model by reviewing the database output line by line against the original PDF. We are logging every single discrepancy or hallucination in a **QA Log**.
+
+When we spot an error (like the AI mistakenly assigning a primary witness's physiological symptom to a bystander), we translate that into **Logic and Semantic guardrails**, engineering the `prompt_library.json` so the AI never makes that specific linguistic mistake again.
+
+---
+
+## The Linguist's Role (Why You Are Here)
+We need semantic expertise for this active QA process. 
+
+1. **Defining Semantic Boundaries:** We need to translate vague phenomenological descriptions into ironclad linguistic rules. How do we teach a machine the semantic difference between objective "Perceptual distortions" (`E106`) versus general subjective "dizziness" (`E204`) when parsing 1960s colloquial speech? 
+2. **Reviewing the QA Log:** As we do the 100% Visual QA of the database output, we need your expertise to analyze the AI's mistakes. If the AI hallucinates, we need you to help write the explicit structural or contextual rule in `prompt_library.json` that fixes the behavior.
+3. **Curating Few-Shot Examples:** We cannot just give the AI a list of "negative instructions" (do not do X). We need you to identify 3 to 5 highly nuanced, complex edge-cases from Bullard's Answer Key that perfectly demonstrate *structural implication* and *contextual inference* to inject directly into the engine's memory.
+
+We are fine-tuning the most advanced, high-fidelity UFO folklore extraction engine ever built. Your expertise in semantic logic is the final key to unlocking its accuracy.
