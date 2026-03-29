@@ -1,0 +1,87 @@
+# UFO Matrix — Session Log: March 15, 2026
+
+## Bugs Fixed
+
+### DICT-001 — Motif Dictionary Sub-Code Promotion
+**Problem:** During the original OCR ingest, a regex promoted the first sub-item description (e.g., `1. Ravenous appetite.`) to the parent code (`A101`), overwriting the correct definition (`Dehydration effect: intense thirst.`). Both `motif_key.json` and `ufo_matrix.db` were corrupted from the same source.
+
+**Scope:** 13 parent codes affected — confirmed by scanning all 522 dictionary entries for descriptions beginning with a digit and period.
+
+**Fix:** Corrected all 13 entries directly via SQL UPDATE, synced `motif_key.json`. Definitions verified against the physical Bullard Volume 2 appendix by the researcher.
+
+**Affected codes:** `A101`, `A115`, `A116`, `A119`, `A139`, `B240`, `B241`, `B242`, `B244`, `E102`, `E410`, `U133`, `X246`
+
+---
+
+### PIPE-001 — Memory State Misclassification (Systematic)
+**Problem:** The extraction script's chunking regex started at the sub-case header (e.g., `192g.`) and never captured the complex header where Bullard states the retrieval method. The model defaulted to `"conscious"` when it should have used `"hypnosis"` for most 192g events.
+
+**Fix (3 parts):**
+
+**Part 1 — Extraction draft:** Wrote a read-only scan of `bullard_vol2_raw.txt` that extracted retrieval method keywords from all 309 case headers and complex headers. Applied a two-pass filter to distinguish *retrieval method* (how the account was investigated) from *experiential state* (witness felt hypnotized by a beam). Manual QA corrections applied by researcher (Cases 130, 196c, 239 reclassified).
+
+**Final counts:** hypnosis: 128 / conscious: 2 / dream: 6 / unknown: 173
+
+**Part 2 — Schema change:** Added `memory_retrieval_method` column to `Encounters` table (values: `hypnosis`, `conscious`, `dream`, `mixed`, `unknown`). Populated 295 of 337 encounters from approved CSV. 42 non-Bullard cases (Mack, Benitez, etc.) left as `unknown` — to be populated separately.
+
+**Part 3 — Prompt injection:** Modified `extract_and_insert_192g.py` and `llm_bridge.py` to query `memory_retrieval_method` per case and prepend a one-line authoritative `RETRIEVAL METHOD CONTEXT` string to every LLM chunk payload. The model no longer guesses retrieval method from body text.
+
+---
+
+### QA-001 — Justification Standard
+**Problem:** The `ai_justification` field inconsistently asserted that loose Bullard code assignments "fit" the dictionary definition, making the column unreliable for QA.
+
+**Fix:** Researcher updated the `ai_justification` Pydantic field description in `llm_bridge.py` to require the model to explicitly state the dictionary definition, what the text actually describes, and acknowledge any gap — rather than asserting a match.
+
+---
+
+### CITE-001 — LLM-Guessed Page Numbers
+**Problem:** The `source_page` column was populated by the LLM, which grabbed inline bibliography citation numbers from the prose (e.g., `(190)`) instead of Bullard's actual catalogue page markers (`C-89`).
+
+**Fix:**
+- Added `build_page_map()` function that walks the case block line-by-line, tracking `[--- START PAGE N ---]` (→ PDF page) and `C-NNN` markers (→ Bullard catalogue page)
+- Chunker now stamps each chunk with the page values active at its start character
+- `source_page` removed from LLM's JSON schema entirely
+- Added `pdf_page` column to `Encounter_Events` table
+- Every inserted row is now script-stamped with both `source_page` (Bullard catalogue page, e.g., `C-89`) and `pdf_page` (physical PDF page number, e.g., `109`)
+
+---
+
+## Features Built
+
+### `extract_and_insert_192g.py` — Parameterized
+Refactored from a hardcoded 192g script to accept `--case-number` and `--subject` arguments. Can now process any Bullard Volume 2 case.
+
+**Usage:**
+```
+python extract_and_insert_192g.py --case-number 136 --subject "Betty and Barney Hill"
+```
+
+### Case Header Regex — Discriminator Fix
+The raw text contains the dictionary appendix before the case narratives, causing case numbers to match in two places. Fixed using a two-step discriminator: the regex now looks for `NNN. CapitalLetter` and verifies that `Duration` or `Investigation` appears within 400 characters — a pattern unique to genuine case headers.
+
+### Case 136 — Betty and Barney Hill
+Successfully processed as a test case. 150 motifs inserted across 9 chunks (29,008 chars, PDF pages 100–113). Retrieval method: `hypnosis` (Dr. Benjamin Simon). All events page-stamped correctly.
+
+### `bulk_ingest.py` — Bulk Orchestrator
+Processes all cases in the `Encounters` table automatically. Key properties:
+- DB connection opened once, committed after each case, rolled back on failure
+- Per-case error isolation — any failure is logged; the run continues
+- `--start-from` argument for resuming after interruption
+- 4s sleep between chunks, 45s retry on 429, 5s sleep between cases
+- Final summary: total attempted / succeeded / failed, with error messages
+
+---
+
+## Known Issues / Next Session
+
+### Bulk Ingest — Case Boundary Merging
+When `bulk_ingest.py` was run, corrupted OCR headers caused the case boundary regex to merge consecutive cases into a single oversized block. The `Duration/Investigation` discriminator is not reliable at scale across all 309 cases.
+
+**Plan for next session:**
+1. Build an OCR header repair script using `pdfplumber` with coordinate-aware extraction to get cleaner header text directly from the PDF
+2. Use the LLM to identify and normalize case boundaries from the PDF-extracted headers
+3. Generate a structured `{case_number, start_page, end_page}` index
+4. Replace the fragile regex in `bulk_ingest.py` with a lookup into this index
+
+This will make `bulk_ingest.py` reliable and also make future re-runs faster.

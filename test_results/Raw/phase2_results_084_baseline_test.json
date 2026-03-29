@@ -1,0 +1,683 @@
+{
+  "case_number": "084",
+  "ground_truth_count": 52,
+  "ai_count": 73,
+  "exact_matches": 46,
+  "near_misses": 3,
+  "ai_extras": 24,
+  "ai_misses": 3,
+  "match_rate": 88.5,
+  "combined_rate": 94.2,
+  "exact_match_codes": [
+    "A110",
+    "A112",
+    "A113",
+    "B221",
+    "B225",
+    "B233",
+    "B241",
+    "B242",
+    "B243",
+    "B252",
+    "B254",
+    "B258",
+    "B290",
+    "B295",
+    "B301",
+    "B307",
+    "B366",
+    "B504",
+    "B650",
+    "B800",
+    "B807",
+    "B905",
+    "B909",
+    "E102",
+    "E205",
+    "E208",
+    "E300",
+    "E315",
+    "E325",
+    "E410",
+    "M100",
+    "M118",
+    "U102",
+    "U133",
+    "U134",
+    "U201",
+    "U212",
+    "U220",
+    "U257",
+    "U530",
+    "X100",
+    "X105",
+    "X155",
+    "X215",
+    "X225",
+    "X244"
+  ],
+  "near_miss_details": [
+    [
+      "U231",
+      "U230",
+      1
+    ],
+    [
+      "E200",
+      "E202",
+      2
+    ],
+    [
+      "X200",
+      "X210",
+      10
+    ]
+  ],
+  "missed_codes": [
+    "A116",
+    "E200",
+    "E201"
+  ],
+  "extra_codes": [
+    "A116.1",
+    "U120",
+    "B101",
+    "B201",
+    "E315",
+    "ANOMALY",
+    "ANOMALY",
+    "ANOMALY",
+    "B300",
+    "B317",
+    "B610",
+    "B758",
+    "U210",
+    "U211",
+    "U251",
+    "X155",
+    "X225",
+    "X221",
+    "B802",
+    "X210",
+    "U250",
+    "X224",
+    "X220",
+    "X220"
+  ],
+  "ai_events": [
+    {
+      "sequence": 1,
+      "motif_code": "A116.1",
+      "memory_state": "conscious",
+      "citation": "retained fragMentary MeMories of seeing soMething in the sky and of standing outside his car.",
+      "reasoning": "The witness had conscious but incomplete memories of the event before undergoing hypnosis.",
+      "chunk": 1
+    },
+    {
+      "sequence": 2,
+      "motif_code": "A112",
+      "memory_state": "conscious",
+      "citation": "He also felt a strange sense of uneasiness whenever he passed ,the saMe stretch of road.",
+      "reasoning": "The witness experienced a recurring negative emotional response associated with the specific location of the encounter.",
+      "chunk": 1
+    },
+    {
+      "sequence": 3,
+      "motif_code": "E208",
+      "memory_state": "hypnosis",
+      "citation": "He felt a foreboding that SOMething would happen if he stopped",
+      "reasoning": "The witness had a premonition or sense of impending events, recalled under hypnosis.",
+      "chunk": 1
+    },
+    {
+      "sequence": 4,
+      "motif_code": "E410",
+      "memory_state": "hypnosis",
+      "citation": "but his car suddenly veered off the road as if pulled by a Magnet",
+      "reasoning": "An external force took control of the witness's vehicle, causing it to move against his will.",
+      "chunk": 1
+    },
+    {
+      "sequence": 5,
+      "motif_code": "U120",
+      "memory_state": "hypnosis",
+      "citation": "he saw a light all over the area.",
+      "reasoning": "The entire area was illuminated by a light associated with the UFO presence.",
+      "chunk": 1
+    },
+    {
+      "sequence": 6,
+      "motif_code": "B101",
+      "memory_state": "hypnosis",
+      "citation": "A sound like leather rubbing together attracted his attention",
+      "reasoning": "The witness heard a sound associated with the beings before seeing them clearly.",
+      "chunk": 1
+    },
+    {
+      "sequence": 7,
+      "motif_code": "B201",
+      "memory_state": "hypnosis",
+      "citation": "four or five beings who apparently caMe over a fence along the roadside and approached hiM",
+      "reasoning": "The witness observed the approach of beings who are subsequently described as humanoid.",
+      "chunk": 1
+    },
+    {
+      "sequence": 8,
+      "motif_code": "E315",
+      "memory_state": "hypnosis",
+      "citation": "at which tiMe he was unable to Move.",
+      "reasoning": "The witness experienced a loss of motor control and was paralyzed upon the beings' approach.",
+      "chunk": 1
+    },
+    {
+      "sequence": 9,
+      "motif_code": "B295",
+      "memory_state": "hypnosis",
+      "citation": "The beings were hairless huManoids",
+      "reasoning": "The beings are described as having no hair.",
+      "chunk": 1
+    },
+    {
+      "sequence": 10,
+      "motif_code": "B233",
+      "memory_state": "hypnosis",
+      "citation": "with heads like inverted tear-drops",
+      "reasoning": "The beings' heads are described as large at the top and tapering to a point, consistent with a pear or teardrop shape.",
+      "chunk": 1
+    },
+    {
+      "sequence": 11,
+      "motif_code": "B241",
+      "memory_state": "hypnosis",
+      "citation": "large black walnut-shaped eyes",
+      "reasoning": "The beings' eyes are explicitly described as large.",
+      "chunk": 1
+    },
+    {
+      "sequence": 12,
+      "motif_code": "B242",
+      "memory_state": "hypnosis",
+      "citation": "walnut-shaped eyes",
+      "reasoning": "The shape of the eyes is described as oval, similar to a walnut.",
+      "chunk": 1
+    },
+    {
+      "sequence": 13,
+      "motif_code": "B243",
+      "memory_state": "hypnosis",
+      "citation": "black walnut-shaped eyes",
+      "reasoning": "The beings' eyes are described as entirely black.",
+      "chunk": 1
+    },
+    {
+      "sequence": 14,
+      "motif_code": "B252",
+      "memory_state": "hypnosis",
+      "citation": "sMall nose",
+      "reasoning": "The beings' noses are described as diminutive.",
+      "chunk": 1
+    },
+    {
+      "sequence": 15,
+      "motif_code": "B258",
+      "memory_state": "hypnosis",
+      "citation": "slit Mouth",
+      "reasoning": "The beings' mouths are described as a thin slit.",
+      "chunk": 1
+    },
+    {
+      "sequence": 16,
+      "motif_code": "B254",
+      "memory_state": "hypnosis",
+      "citation": "no ears.",
+      "reasoning": "The beings are described as having no visible external ears.",
+      "chunk": 1
+    },
+    {
+      "sequence": 17,
+      "motif_code": "B290",
+      "memory_state": "hypnosis",
+      "citation": "The skin was whitish and putty-like",
+      "reasoning": "The beings' skin color and texture are described as pale and clay-like.",
+      "chunk": 1
+    },
+    {
+      "sequence": 18,
+      "motif_code": "B221",
+      "memory_state": "hypnosis",
+      "citation": "the height below his shoulder.",
+      "reasoning": "The beings' height is described as moderately short, in the 4-5 foot range.",
+      "chunk": 1
+    },
+    {
+      "sequence": 19,
+      "motif_code": "B225",
+      "memory_state": "hypnosis",
+      "citation": "The beings were extraordinarily skinny, with no Muscular definition and an apparent weight of 50 lbs.",
+      "reasoning": "The beings are described as having a frail, thin build with little muscle mass.",
+      "chunk": 1
+    },
+    {
+      "sequence": 20,
+      "motif_code": "ANOMALY",
+      "memory_state": "hypnosis",
+      "citation": "The fingers were tubelike",
+      "reasoning": "The description of 'tubelike' fingers does not match any specific code in the provided dictionary for hand/digit morphology.",
+      "chunk": 1
+    },
+    {
+      "sequence": 21,
+      "motif_code": "ANOMALY",
+      "memory_state": "hypnosis",
+      "citation": "the feet alMond-shaped",
+      "reasoning": "The description of 'almond-shaped' feet is novel and does not correspond to any available code in the dictionary.",
+      "chunk": 1
+    },
+    {
+      "sequence": 22,
+      "motif_code": "B504",
+      "memory_state": "hypnosis",
+      "citation": "MoveMent cluMsy and stiff, as if the beings hobbled.",
+      "reasoning": "The beings' locomotion is described as awkward and stiff.",
+      "chunk": 1
+    },
+    {
+      "sequence": 23,
+      "motif_code": "B366",
+      "memory_state": "hypnosis",
+      "citation": "They wore black, tight-fitting suits",
+      "reasoning": "The color of the beings' clothing is specified as black.",
+      "chunk": 1
+    },
+    {
+      "sequence": 24,
+      "motif_code": "B301",
+      "memory_state": "hypnosis",
+      "citation": "tight-fitting suits",
+      "reasoning": "The beings' clothing is described as form-fitting.",
+      "chunk": 1
+    },
+    {
+      "sequence": 25,
+      "motif_code": "B300",
+      "memory_state": "hypnosis",
+      "citation": "suits",
+      "reasoning": "The term 'suits' implies a one-piece or coverall-style garment.",
+      "chunk": 1
+    },
+    {
+      "sequence": 26,
+      "motif_code": "B317",
+      "memory_state": "hypnosis",
+      "citation": "and gloves",
+      "reasoning": "The beings are described as wearing gloves.",
+      "chunk": 1
+    },
+    {
+      "sequence": 27,
+      "motif_code": "B307",
+      "memory_state": "hypnosis",
+      "citation": "of a leatherlike Material.",
+      "reasoning": "The texture of the beings' clothing is described as similar to leather.",
+      "chunk": 1
+    },
+    {
+      "sequence": 28,
+      "motif_code": "B650",
+      "memory_state": "hypnosis",
+      "citation": "One being began digging a hole",
+      "reasoning": "A being is observed gathering samples from the environment, in this case by digging.",
+      "chunk": 1
+    },
+    {
+      "sequence": 29,
+      "motif_code": "B800",
+      "memory_state": "hypnosis",
+      "citation": "another, who seeMed to be the leader, gave diections by gesture.",
+      "reasoning": "One being is identified as a leader based on its behavior of directing others.",
+      "chunk": 1
+    },
+    {
+      "sequence": 30,
+      "motif_code": "B807",
+      "memory_state": "hypnosis",
+      "citation": "A dispute broke out between the boss and another being about where to dig",
+      "reasoning": "The beings are observed having a disagreement, indicating a non-absolute hierarchy or a democratic process.",
+      "chunk": 1
+    },
+    {
+      "sequence": 31,
+      "motif_code": "E300",
+      "memory_state": "hypnosis",
+      "citation": "He felt fear at first, but then becaMe oddly calM",
+      "reasoning": "The witness's emotional state shifted from fear to an unnatural calmness, indicating a pacification effect.",
+      "chunk": 1
+    },
+    {
+      "sequence": 32,
+      "motif_code": "E315",
+      "memory_state": "hypnosis",
+      "citation": "and was unable to Move while the beings dug",
+      "reasoning": "The witness's state of paralysis continued during the beings' activities.",
+      "chunk": 1
+    },
+    {
+      "sequence": 33,
+      "motif_code": "E325",
+      "memory_state": "hypnosis",
+      "citation": "A claMplike device seized hiM by the shoulders",
+      "reasoning": "A physical device is used to seize and control the witness's movement during the capture phase.",
+      "chunk": 1
+    },
+    {
+      "sequence": 34,
+      "motif_code": "U102",
+      "memory_state": "hypnosis",
+      "citation": "a luMinous white, egg-shaped \"saucer\"",
+      "reasoning": "The craft is described as having an oval or egg shape.",
+      "chunk": 1
+    },
+    {
+      "sequence": 35,
+      "motif_code": "ANOMALY",
+      "memory_state": "hypnosis",
+      "citation": "a luMinous white, egg-shaped \"saucer\"",
+      "reasoning": "The dictionary does not contain a code for a craft that is 'luminous white' on its exterior.",
+      "chunk": 1
+    },
+    {
+      "sequence": 36,
+      "motif_code": "U134",
+      "memory_state": "hypnosis",
+      "citation": "sitting on a platforM of girders",
+      "reasoning": "The craft is described as resting on a structural support that functions as landing gear.",
+      "chunk": 1
+    },
+    {
+      "sequence": 37,
+      "motif_code": "U530",
+      "memory_state": "hypnosis",
+      "citation": "and Making a huMMing sound",
+      "reasoning": "The craft is reported to be emitting a low, monotonous sound.",
+      "chunk": 1
+    },
+    {
+      "sequence": 38,
+      "motif_code": "B610",
+      "memory_state": "hypnosis",
+      "citation": "The beings escorted hiM up a raMp",
+      "reasoning": "The beings physically guided the witness. This is the closest semantic match for 'escort' in the dictionary.",
+      "chunk": 1
+    },
+    {
+      "sequence": 39,
+      "motif_code": "U133",
+      "memory_state": "hypnosis",
+      "citation": "up a raMp",
+      "reasoning": "The witness entered the craft via a ramp.",
+      "chunk": 1
+    },
+    {
+      "sequence": 40,
+      "motif_code": "U201",
+      "memory_state": "hypnosis",
+      "citation": "and through a tubelike passageway",
+      "reasoning": "The witness moved through a corridor or tunnel-like structure inside the craft.",
+      "chunk": 1
+    },
+    {
+      "sequence": 41,
+      "motif_code": "B758",
+      "memory_state": "hypnosis",
+      "citation": "then changed directions as though the beings did not know where to go in their own ship",
+      "reasoning": "The beings' behavior suggests confusion or error, an indication of fallibility.",
+      "chunk": 1
+    },
+    {
+      "sequence": 42,
+      "motif_code": "U220",
+      "memory_state": "hypnosis",
+      "citation": "He entered a white rooM",
+      "reasoning": "The interior room is described as white.",
+      "chunk": 1
+    },
+    {
+      "sequence": 43,
+      "motif_code": "U210",
+      "memory_state": "hypnosis",
+      "citation": "rounded",
+      "reasoning": "The interior room is described as having a round shape.",
+      "chunk": 1
+    },
+    {
+      "sequence": 44,
+      "motif_code": "U211",
+      "memory_state": "hypnosis",
+      "citation": "and doMed",
+      "reasoning": "The interior room is described as having a domed ceiling.",
+      "chunk": 1
+    },
+    {
+      "sequence": 45,
+      "motif_code": "U212",
+      "memory_state": "hypnosis",
+      "citation": "and seeMingly without an angle",
+      "reasoning": "The interior room is described as having smooth, curved surfaces with no sharp corners.",
+      "chunk": 1
+    },
+    {
+      "sequence": 46,
+      "motif_code": "U230",
+      "memory_state": "hypnosis",
+      "citation": "and glowing with a Misty luMinosity.",
+      "reasoning": "The room's lighting is described as uniform and without a discernible source.",
+      "chunk": 1
+    },
+    {
+      "sequence": 47,
+      "motif_code": "U251",
+      "memory_state": "hypnosis",
+      "citation": "glowing with a Misty luMinosity.",
+      "reasoning": "The atmosphere or lighting in the room is described as misty.",
+      "chunk": 1
+    },
+    {
+      "sequence": 48,
+      "motif_code": "X100",
+      "memory_state": "hypnosis",
+      "citation": "Though he did not reMeMber undressing, he next found hiMself seated on a table wearing only a diaper-like cloth.",
+      "reasoning": "The witness was undressed during a period of amnesia as part of the preparation for the examination.",
+      "chunk": 1
+    },
+    {
+      "sequence": 49,
+      "motif_code": "X155",
+      "memory_state": "hypnosis",
+      "citation": "he next found hiMself seated on a table",
+      "reasoning": "The witness was positioned on an examination table.",
+      "chunk": 1
+    },
+    {
+      "sequence": 50,
+      "motif_code": "X105",
+      "memory_state": "hypnosis",
+      "citation": "wearing only a diaper-like cloth.",
+      "reasoning": "The witness's original clothing was replaced with a different garment for the examination.",
+      "chunk": 1
+    },
+    {
+      "sequence": 51,
+      "motif_code": "X225",
+      "memory_state": "hypnosis",
+      "citation": "A large and intricate device like a planetariuM projector caMe down froM the ceiling",
+      "reasoning": "A scanning device is described descending from the ceiling to examine the witness.",
+      "chunk": 1
+    },
+    {
+      "sequence": 52,
+      "motif_code": "X221",
+      "memory_state": "hypnosis",
+      "citation": "and ran a needle-like device along his back.",
+      "reasoning": "A probe, described as needle-like, was used on the witness's body during the examination.",
+      "chunk": 1
+    },
+    {
+      "sequence": 53,
+      "motif_code": "B802",
+      "memory_state": "hypnosis",
+      "citation": "Two beings seeMed in control of the exaMination while others waited in the rooM.",
+      "reasoning": "Specific beings are identified as having the role of examiners or being in charge of the procedure.",
+      "chunk": 1
+    },
+    {
+      "sequence": 54,
+      "motif_code": "X155",
+      "memory_state": "hypnosis",
+      "citation": "he laid down on the table",
+      "reasoning": "The witness was repositioned to lie down on the examination table.",
+      "chunk": 1
+    },
+    {
+      "sequence": 55,
+      "motif_code": "X210",
+      "memory_state": "hypnosis",
+      "citation": "while first the two beings... exaMined his back",
+      "reasoning": "The beings performed a manual examination by touching or inspecting the witness's body.",
+      "chunk": 1
+    },
+    {
+      "sequence": 56,
+      "motif_code": "X225",
+      "memory_state": "hypnosis",
+      "citation": "then the device once again, exaMined his back",
+      "reasoning": "The scanning device was used a second time on the witness.",
+      "chunk": 1
+    },
+    {
+      "sequence": 57,
+      "motif_code": "X244",
+      "memory_state": "hypnosis",
+      "citation": "apparently testing nerves and reflexes.",
+      "reasoning": "The examination procedure included tests of the witness's neurological responses.",
+      "chunk": 1
+    },
+    {
+      "sequence": 58,
+      "motif_code": "U250",
+      "memory_state": "hypnosis",
+      "citation": "The teMperature of the rooM ranged froM norMal to chilly",
+      "reasoning": "The interior of the craft is described as having a cold temperature.",
+      "chunk": 1
+    },
+    {
+      "sequence": 59,
+      "motif_code": "U257",
+      "memory_state": "hypnosis",
+      "citation": "The teMperature of the rooM ranged froM norMal to chilly until one point when a warM",
+      "reasoning": "The witness experienced a noticeable change in the room's temperature from cold to warm.",
+      "chunk": 1
+    },
+    {
+      "sequence": 60,
+      "motif_code": "X224",
+      "memory_state": "hypnosis",
+      "citation": "a warM and pleasant light shone down on hiM.",
+      "reasoning": "A beam of light was directed at the witness during the examination.",
+      "chunk": 1
+    },
+    {
+      "sequence": 61,
+      "motif_code": "X210",
+      "memory_state": "hypnosis",
+      "citation": "as the beings exaMined hiM all over.",
+      "reasoning": "The beings conducted a general, full-body manual examination of the witness.",
+      "chunk": 1
+    },
+    {
+      "sequence": 62,
+      "motif_code": "X220",
+      "memory_state": "hypnosis",
+      "citation": "Then the beings applied a claMplike device to his hip region",
+      "reasoning": "An instrument described as a clamp was used on the witness during the examination.",
+      "chunk": 1
+    },
+    {
+      "sequence": 63,
+      "motif_code": "X220",
+      "citation": "poked his stoMach with a rod",
+      "reasoning": "The beings use a handheld rod-like instrument to physically probe the witness's body, which constitutes an instrumental examination.",
+      "chunk": 2
+    },
+    {
+      "sequence": 64,
+      "motif_code": "X215",
+      "citation": "they flexed his legs with another rodlike device",
+      "reasoning": "The beings manipulate the witness's limbs, causing flexion, which is a specific type of physical examination.",
+      "chunk": 2
+    },
+    {
+      "sequence": 65,
+      "motif_code": "M100",
+      "citation": "The beings assured hiM that he had nothing to fear",
+      "reasoning": "The beings provide verbal or telepathic reassurance to the witness, stating that he is safe or will not be harmed.",
+      "chunk": 2
+    },
+    {
+      "sequence": 66,
+      "motif_code": "M118",
+      "citation": "seeMed to instruct hiM not to reveal his experience",
+      "reasoning": "The beings give the witness a command or strong suggestion to maintain secrecy about the encounter.",
+      "chunk": 2
+    },
+    {
+      "sequence": 67,
+      "motif_code": "B905",
+      "citation": "he felt that they did not care that they hurt hiM, however",
+      "reasoning": "The witness perceives the beings' behavior as cold and indifferent to the pain they are causing him during the examination.",
+      "chunk": 2
+    },
+    {
+      "sequence": 68,
+      "motif_code": "B909",
+      "citation": "they did not like for hiM to look at theM",
+      "reasoning": "The beings exhibit an aversion to being directly observed by the witness, indicating a desire for concealment or a specific behavioral trait.",
+      "chunk": 2
+    },
+    {
+      "sequence": 69,
+      "motif_code": "E202",
+      "citation": "The witness lost consciousness",
+      "reasoning": "The witness experiences a complete loss of consciousness, resulting in a gap in his memory of the events.",
+      "chunk": 2
+    },
+    {
+      "sequence": 70,
+      "motif_code": "E205",
+      "citation": "then found hiMself ing hoMe",
+      "reasoning": "After a period of unconsciousness, the witness finds himself in a different location (on the way home) without any memory of how he traveled there.",
+      "chunk": 2
+    },
+    {
+      "sequence": 71,
+      "motif_code": "A110",
+      "citation": "with a sense of being watched",
+      "reasoning": "The witness experiences a specific form of post-abduction anxiety, feeling as though he is being observed or pursued.",
+      "chunk": 2
+    },
+    {
+      "sequence": 72,
+      "motif_code": "A113",
+      "citation": "he felt dirty and in need of a bath",
+      "reasoning": "This is a common immediate aftereffect where the witness feels a sense of physical or psychological contamination requiring cleansing.",
+      "chunk": 2
+    },
+    {
+      "sequence": 73,
+      "motif_code": "E102",
+      "citation": "No traffic seeMed to pass on the road during the course of the abduction, and no one investigated his car on the side of the road.",
+      "reasoning": "The event occurs in a location where other people would normally be present, yet it goes completely unnoticed, suggesting an unnatural isolation of the scene.",
+      "chunk": 2
+    }
+  ],
+  "stripped_text": "\"Steven Kilburn\" I early 20s I 1973 I between BaltiMore and\n: 1 hour <? )\ntion: Budd Hopkins and Ted Bloecher; hypnosis by Dr.\nFranklin, May 1978, and Dr. Aphrodite ClaMar, DeceMber 1978.\n: 5(4)\nwitness, a university student returning along a\nAl 16 .1 reMote highway at 2-3 a.M., retained fragMentary MeMories of\nseeing soMething in the sky and of standing outside his car.\nAl 12 He also felt a strange sense of uneasiness whenever he passed\n,the saMe stretch of road.\nCapture.\nhypnosis he reMeMbered that two lights descended\nfroM the sky and landed nearby. He felt a foreboding that\nSOMething would happen if he stopped, but his car suddenly\nveered off the road as if pulled by a Magnet, and when he got\nout he saw a light all over the area. A sound like leather\nrubbing together attracted his attention to four or five\nbeings who apparently caMe over a fence along the roadside and\napproached hiM, at which tiMe he was unable to Move. The\ngs were hairless huManoids with heads like inverted tear-\ns, large black walnut-shaped eyes, sMall nose, slit Mouth\nno ears. The skin was whitish and putty-like, the height\nw his shoulder. The beings were extraordinarily skinny,\nwith no Muscular definition and an apparent weight of 50 lbs.\nfingers were tubelike, the feet alMond-shaped and MoveMent\nsy and stiff, as if the beings hobbled. They wore black,\nt-fitting suits and gloves of a leatherlike Material. One\nbeing began digging a hole while another, who seeMed to be the\n, gave diections by gesture. A dispute broke out between\nthe boss and another being about where to dig (60-1, 68-70).\nHe felt fear at first, but then becaMe oddly calM, and was un\nable to Move while the beings dug (68).\nA claMplike device seized hiM by the shoulders, causing\nhiM pain in the back. The beings turned hiM toward the craft,\na luMinous white, egg-shaped \"saucer\" sitting on a platforM of\ners and Making a huMMing sound (77-8>. The beings\nrted hiM up a raMp and through a tubelike passageway, then\nchanged directions as though the beings did not know where to\ngo in their own ship <58, 77-78).\nExaMination.\nHe entered a white rooM, rounded and doMed and seeMingly\nwithout an angle, and glowing with a Misty luMinosity. Though\ndid not reMeMber undressing, he next found hiMself seated\non a table wearing only a diaper-like cloth. A large and\nintricate device like a planetariuM projector caMe down froM\nthe ceiling and ran a needle-like device along his back. Two\nbeings seeMed in control of the exaMination while others\nwaited in the rooM. After the device ascended to the ceiling\nhe laid down on the table while first the two beings, then\nthe device once again, exaMined his back, apparently testing\nnerves and reflexes. The teMperature of the rooM ranged froM\nnorMal to chilly until one point when a warM and pleasant\nlight shone down on hiM. He assuMed various positions on his\nstoMach, back and side as the beings exaMined hiM all over.\nthe beings applied a claMplike device to his hip region\nand poked his stoMach with a rod, they flexed his legs with\nanother rodlike device (78-84). The beings assured hiM that\nhe had nothing to fear and seeMed to instruct hiM not to\nreveal his experience (67-68); he felt that they did not care\nthat they hurt hiM, however <68, 70, 81 ), and they did not\nlike for hiM to look at theM (84).\nThe witness lost consciousness<?> and then found hiMself\ning hoMe with a sense of being watched (54). When he\nreached hoMe about 5 a.M. he felt dirty and in need of a bath\n(86). No traffic seeMed to pass on the road during the course\nof the abduction, and no one investigated his car on the side\nof the road."
+}

@@ -1,0 +1,3 @@
+- [x] Encounter events indexed incorrectly or not found. (Fixed: Case sensitive DB query dropped 192g events)
+- [x] AI justification says LLM structured extraction for majority of entries. (Fixed: `parse_motifs.py` now queries Gemini for `ai_justification`)
+- [x] Create decoupled JSON Prompts Library to allow dynamic testing of Few-Shot examples without rewriting python inference logic.

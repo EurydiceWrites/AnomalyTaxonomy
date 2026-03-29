@@ -1,0 +1,1467 @@
+{
+  "case_number": "192g",
+  "ground_truth_count": 121,
+  "ai_count": 165,
+  "exact_matches": 95,
+  "near_misses": 17,
+  "ai_extras": 53,
+  "ai_misses": 9,
+  "match_rate": 78.5,
+  "combined_rate": 92.6,
+  "exact_match_codes": [
+    "A101",
+    "A115",
+    "B221",
+    "B245",
+    "B248",
+    "B303",
+    "B317",
+    "B350",
+    "B363",
+    "B367",
+    "B375",
+    "B502",
+    "B610",
+    "B610",
+    "B762",
+    "B803",
+    "B807",
+    "B900",
+    "B900",
+    "B901",
+    "B901",
+    "B905",
+    "B905",
+    "B906",
+    "B906",
+    "B907",
+    "B911",
+    "B915",
+    "C110",
+    "C116",
+    "E100",
+    "E110",
+    "E120",
+    "E200",
+    "E202",
+    "E211",
+    "E214",
+    "E217",
+    "E306",
+    "E310",
+    "E311",
+    "E315",
+    "E315",
+    "E321",
+    "E321",
+    "E322",
+    "E322",
+    "E323",
+    "E326",
+    "E400",
+    "E400",
+    "M100",
+    "M101",
+    "M102",
+    "M115",
+    "M119",
+    "M120",
+    "M122",
+    "M145",
+    "S100",
+    "S105",
+    "S111",
+    "T121",
+    "T122",
+    "U101",
+    "U132",
+    "U134",
+    "U170",
+    "U200",
+    "U201",
+    "U202",
+    "U230",
+    "U250",
+    "U320",
+    "U351",
+    "U352",
+    "W101",
+    "W103",
+    "W104",
+    "W105",
+    "W108",
+    "W117",
+    "W210",
+    "W220",
+    "W221",
+    "W410",
+    "W413",
+    "X105",
+    "X115",
+    "X155",
+    "X220",
+    "X225",
+    "X245",
+    "X260",
+    "X270"
+  ],
+  "near_miss_details": [
+    [
+      "E213",
+      "E217",
+      4
+    ],
+    [
+      "E110",
+      "E120",
+      10
+    ],
+    [
+      "E110",
+      "E120",
+      10
+    ],
+    [
+      "E301",
+      "E311",
+      10
+    ],
+    [
+      "E301",
+      "E300",
+      1
+    ],
+    [
+      "B758",
+      "B762",
+      4
+    ],
+    [
+      "B800",
+      "B807",
+      7
+    ],
+    [
+      "B805",
+      "B807",
+      2
+    ],
+    [
+      "B247",
+      "B242",
+      5
+    ],
+    [
+      "B335",
+      "B330",
+      5
+    ],
+    [
+      "M128",
+      "M120",
+      8
+    ],
+    [
+      "U204",
+      "U211",
+      7
+    ],
+    [
+      "X227",
+      "X225",
+      2
+    ],
+    [
+      "U212",
+      "U211",
+      1
+    ],
+    [
+      "X247",
+      "X246",
+      1
+    ],
+    [
+      "W102",
+      "W106",
+      4
+    ],
+    [
+      "M121",
+      "M111",
+      10
+    ]
+  ],
+  "missed_codes": [
+    "B759",
+    "E323",
+    "E322",
+    "B755",
+    "B700",
+    "E313",
+    "T106",
+    "M148",
+    "S111"
+  ],
+  "extra_codes": [
+    "ANOMALY",
+    "ANOMALY",
+    "ANOMALY",
+    "ANOMALY",
+    "ANOMALY",
+    "ANOMALY",
+    "ANOMALY",
+    "E202",
+    "B911",
+    "B201",
+    "B221",
+    "S100",
+    "B323",
+    "B322",
+    "E120",
+    "E120",
+    "E120",
+    "E120",
+    "E120",
+    "E120",
+    "E120",
+    "E123",
+    "U100",
+    "U102",
+    "U320",
+    "U131",
+    "U131",
+    "B807",
+    "U210",
+    "U210",
+    "U300",
+    "E217",
+    "B367",
+    "B360",
+    "B300",
+    "B901",
+    "M100",
+    "B910",
+    "X100",
+    "W410",
+    "B368",
+    "B345",
+    "B610",
+    "W210",
+    "T121",
+    "T135",
+    "T125",
+    "X251",
+    "E204",
+    "U533",
+    "E200",
+    "A114",
+    "B223"
+  ],
+  "ai_events": [
+    {
+      "sequence": 1,
+      "motif_code": "E400",
+      "citation": "Just after supper a power failure occurred",
+      "reasoning": "A power failure in the house at the onset of the event is classified as an electromagnetic effect on machinery/electrical systems.",
+      "chunk": 1
+    },
+    {
+      "sequence": 2,
+      "motif_code": "ANOMALY",
+      "citation": "a pulsing glow appeared through the kitchen window.",
+      "reasoning": "This is the initial alien intrusion via a light phenomenon. The provided dictionary lacks a general code for a UFO/light sighting that is not a beam directly immersing the witness.",
+      "chunk": 1
+    },
+    {
+      "sequence": 3,
+      "motif_code": "B502",
+      "citation": "A group of strange beings approached the house, Moving together with a leaping Motion like grasshoppers.",
+      "reasoning": "This code describes the specific locomotive behavior of the beings, matching the text's description of a 'leaping Motion like grasshoppers'.",
+      "chunk": 1
+    },
+    {
+      "sequence": 4,
+      "motif_code": "E100",
+      "citation": "A sense of stillness, like a vacuuM, engulfed the house",
+      "reasoning": "The narrative describes an unnatural stillness that matches the definition of the vacuum effect.",
+      "chunk": 1
+    },
+    {
+      "sequence": 5,
+      "motif_code": "E202",
+      "citation": "everyone blacked out except Betty.",
+      "reasoning": "This describes the state of Betty's father and daughter, who became unconscious and immobilized at the beings' approach.",
+      "chunk": 1
+    },
+    {
+      "sequence": 6,
+      "motif_code": "ANOMALY",
+      "citation": "Five beings then passed through the solid wood of the kitchen door.",
+      "reasoning": "This describes the beings exhibiting immateriality. The dictionary's code for this, E110, is restricted to the witness. As there is no corresponding B-code for beings, this is an anomaly.",
+      "chunk": 1
+    },
+    {
+      "sequence": 7,
+      "motif_code": "C110",
+      "citation": "she heard hiM speak only inside her head.",
+      "reasoning": "This is a direct description of telepathic communication, where the witness hears a voice without any audible sound being produced.",
+      "chunk": 1
+    },
+    {
+      "sequence": 8,
+      "motif_code": "B900",
+      "citation": "She felt they were friendly (as did Becky)",
+      "reasoning": "The witness perceives the beings' demeanor as friendly upon their initial interaction.",
+      "chunk": 1
+    },
+    {
+      "sequence": 9,
+      "motif_code": "B911",
+      "citation": "the cooking startled theM",
+      "reasoning": "The beings exhibited an emotional reaction of surprise or alarm to a mundane earthly activity.",
+      "chunk": 1
+    },
+    {
+      "sequence": 10,
+      "motif_code": "B201",
+      "citation": "The beings were huManoids siMilar in appearance to those described earler",
+      "reasoning": "The text explicitly categorizes the beings as humanoids.",
+      "chunk": 1
+    },
+    {
+      "sequence": 11,
+      "motif_code": "B221",
+      "citation": "Quazgaa seeMed about 4 feet tall, the others slightly less.",
+      "reasoning": "The described height of the beings falls within the 4-5 foot range for 'moderately short'.",
+      "chunk": 1
+    },
+    {
+      "sequence": 12,
+      "motif_code": "B245",
+      "citation": "The eyes filled with light on occasion",
+      "reasoning": "This describes the eyes of the beings as luminous.",
+      "chunk": 1
+    },
+    {
+      "sequence": 13,
+      "motif_code": "B242",
+      "citation": "and slanted upward froM tiMe to tiMe.",
+      "reasoning": "A slanted shape is a form of elongated, non-round eye shape covered by this code.",
+      "chunk": 1
+    },
+    {
+      "sequence": 14,
+      "motif_code": "B303",
+      "citation": "The beings wore a dark blue uniforM",
+      "reasoning": "The text explicitly identifies the beings' clothing as a uniform.",
+      "chunk": 1
+    },
+    {
+      "sequence": 15,
+      "motif_code": "B363",
+      "citation": "dark blue uniforM",
+      "reasoning": "The color of the uniform is specified as blue.",
+      "chunk": 1
+    },
+    {
+      "sequence": 16,
+      "motif_code": "B330",
+      "citation": "belted at the waist",
+      "reasoning": "This is the only code available for belts worn by the beings.",
+      "chunk": 1
+    },
+    {
+      "sequence": 17,
+      "motif_code": "B375",
+      "citation": "on the sleeve was an eMbleM of a bird or phoenix.",
+      "reasoning": "The insignia on the uniform is described as a bird.",
+      "chunk": 1
+    },
+    {
+      "sequence": 18,
+      "motif_code": "B350",
+      "citation": "Their footgear consisted of boots",
+      "reasoning": "The text explicitly identifies the beings' footwear as boots.",
+      "chunk": 1
+    },
+    {
+      "sequence": 19,
+      "motif_code": "B907",
+      "citation": "Their politeness concealed a control techni- que, however",
+      "reasoning": "This passage implies that the beings' friendly demeanor is a facade for a manipulative purpose, matching the motif's definition.",
+      "chunk": 1
+    },
+    {
+      "sequence": 20,
+      "motif_code": "B906",
+      "citation": "they avoided giving inforl'lative answers to her questions",
+      "reasoning": "This is a direct description of the beings being evasive and not providing straight answers.",
+      "chunk": 1
+    },
+    {
+      "sequence": 21,
+      "motif_code": "B915",
+      "citation": "The beings seel'led to have a sense of hul'lor, since one stayed behind and entertained Becky by jug- gling balls of 1 ight and playing gal'les",
+      "reasoning": "The playful and entertaining behavior of one being is interpreted as demonstrating a sense of humor.",
+      "chunk": 1
+    },
+    {
+      "sequence": 22,
+      "motif_code": "S105",
+      "citation": "gave Quazgaa a Bible",
+      "reasoning": "The witness gives an object (a Bible) to the beings.",
+      "chunk": 1
+    },
+    {
+      "sequence": 23,
+      "motif_code": "S100",
+      "citation": "he handed her a thin blue book in exchange.",
+      "reasoning": "The witness receives a physical object (a book) from the beings.",
+      "chunk": 1
+    },
+    {
+      "sequence": 24,
+      "motif_code": "ANOMALY",
+      "citation": "When he spread his hand over the Bible, copies appeared and he passed thel'I to the other beings.",
+      "reasoning": "This describes an act of seemingly magical or technologically advanced duplication of an object, for which there is no specific code in the dictionary.",
+      "chunk": 1
+    },
+    {
+      "sequence": 25,
+      "motif_code": "M115",
+      "citation": "He asked hil'I to follow hiM",
+      "reasoning": "The leader of the beings explicitly asks the witness to come with him.",
+      "chunk": 1
+    },
+    {
+      "sequence": 26,
+      "motif_code": "M111",
+      "citation": "and assist thel'I in their Mission to help the world",
+      "reasoning": "The beings charge the witness with a task, which is to assist them in their stated mission.",
+      "chunk": 1
+    },
+    {
+      "sequence": 27,
+      "motif_code": "M120",
+      "citation": "their Mission to help the world and prevent hul'lans froM destroying it.",
+      "reasoning": "The beings state that their purpose is to warn or prepare humanity, framing their mission in these terms.",
+      "chunk": 1
+    },
+    {
+      "sequence": 28,
+      "motif_code": "M101",
+      "citation": "Quazgaa assured her they were safe",
+      "reasoning": "The leader provides a direct verbal assurance regarding the safety of the witness's family members.",
+      "chunk": 1
+    },
+    {
+      "sequence": 29,
+      "motif_code": "B323",
+      "citation": "she finally gave in to repeated request",
+      "reasoning": "The witness's compliance is attributed to the compelling nature of the beings' repeated requests.",
+      "chunk": 1
+    },
+    {
+      "sequence": 30,
+      "motif_code": "B322",
+      "citation": "and hypnotic eyes",
+      "reasoning": "The witness's compliance is explicitly attributed to the hypnotic quality of the beings' eyes.",
+      "chunk": 1
+    },
+    {
+      "sequence": 31,
+      "motif_code": "E120",
+      "citation": "she felt weightless as she swept forward",
+      "reasoning": "The witness reports a sensation of weightlessness while being moved by the beings.",
+      "chunk": 1
+    },
+    {
+      "sequence": 32,
+      "motif_code": "E110",
+      "citation": "through the solid door",
+      "reasoning": "The witness herself passes through a solid object, an instance of immateriality.",
+      "chunk": 1
+    },
+    {
+      "sequence": 33,
+      "motif_code": "E123",
+      "citation": "as if drawn by suction.",
+      "reasoning": "The witness describes being moved by an unseen drawing force, likened to suction.",
+      "chunk": 1
+    },
+    {
+      "sequence": 34,
+      "motif_code": "U170",
+      "citation": "The ship stood nearby in the fog",
+      "reasoning": "The craft is observed within a fog bank.",
+      "chunk": 1
+    },
+    {
+      "sequence": 35,
+      "motif_code": "U134",
+      "citation": "on 3 legs which adjusted to the contour of the land.",
+      "reasoning": "The craft is described as having landing gear consisting of three legs.",
+      "chunk": 1
+    },
+    {
+      "sequence": 36,
+      "motif_code": "U100",
+      "citation": "The craft was round",
+      "reasoning": "The basic shape of the craft is described as round, fitting the general 'disk' category.",
+      "chunk": 1
+    },
+    {
+      "sequence": 37,
+      "motif_code": "U102",
+      "citation": "and in profile oval",
+      "reasoning": "The craft's shape from a side profile is described as oval.",
+      "chunk": 1
+    },
+    {
+      "sequence": 38,
+      "motif_code": "U101",
+      "citation": "the craft was flatter below, so two thirds of the thickness was above.",
+      "reasoning": "This detailed description of the craft's proportions, with a larger upper section, defines it as a domed disk.",
+      "chunk": 1
+    },
+    {
+      "sequence": 39,
+      "motif_code": "U320",
+      "citation": "Quazgaa !'lade the lower half transparent for a short while and allowed her to view the r Mechanisl'I, rotating crystalline globes which also produced the pulsating light frol'I the beginning of the encounter.",
+      "reasoning": "The witness is shown the ship's engine, which is described as consisting of rotating crystalline globes, matching the dictionary description for this motif.",
+      "chunk": 2
+    },
+    {
+      "sequence": 40,
+      "motif_code": "U131",
+      "citation": "A door opened above the ril'I",
+      "reasoning": "This passage explicitly describes the presence and operation of a door on the craft's exterior.",
+      "chunk": 2
+    },
+    {
+      "sequence": 41,
+      "motif_code": "E120",
+      "citation": "and they swept inside",
+      "reasoning": "The verb 'swept' implies a smooth, gliding motion rather than walking, consistent with the floating effect commonly reported during entry into the craft.",
+      "chunk": 2
+    },
+    {
+      "sequence": 42,
+      "motif_code": "U200",
+      "citation": "She stood in an entrance hall",
+      "reasoning": "The witness describes being in a preliminary room upon entering the craft, which fits the description of an antechamber or entrance hall.",
+      "chunk": 2
+    },
+    {
+      "sequence": 43,
+      "motif_code": "B807",
+      "citation": "while Quazgaa conferred with other beings off to one side.",
+      "reasoning": "The leader is observed conferring with other crew members, indicating a collaborative or democratic decision-making process.",
+      "chunk": 2
+    },
+    {
+      "sequence": 44,
+      "motif_code": "E120",
+      "citation": "While there she felt weightless",
+      "reasoning": "The witness explicitly reports the sensation of weightlessness while inside the craft.",
+      "chunk": 2
+    },
+    {
+      "sequence": 45,
+      "motif_code": "E311",
+      "citation": "with her hands and legs tingling as if asleep.",
+      "reasoning": "The witness describes a tingling sensation in her limbs, which is a classic manifestation of this motif.",
+      "chunk": 2
+    },
+    {
+      "sequence": 46,
+      "motif_code": "U132",
+      "citation": "As she left the rool'I a door seeMed to open out of nowhere.",
+      "reasoning": "The door appears seamlessly from a solid wall, matching the description of doors that open and close without any visible seam.",
+      "chunk": 2
+    },
+    {
+      "sequence": 47,
+      "motif_code": "E120",
+      "citation": "beings took her floating up a staircase",
+      "reasoning": "The witness is moved via flotation, explicitly described as 'floating up a staircase'.",
+      "chunk": 2
+    },
+    {
+      "sequence": 48,
+      "motif_code": "U211",
+      "citation": "to a circular, doMed rool'I on an upper deck,",
+      "reasoning": "The room is explicitly described as being domed in shape.",
+      "chunk": 2
+    },
+    {
+      "sequence": 49,
+      "motif_code": "U210",
+      "citation": "to a circular, doMed rool'I on an upper deck,",
+      "reasoning": "The room is explicitly described as being circular in shape.",
+      "chunk": 2
+    },
+    {
+      "sequence": 50,
+      "motif_code": "U300",
+      "citation": "where she saw a desk or boxlike object",
+      "reasoning": "The witness observes a large piece of furniture, described as a desk or box, within one of the craft's rooms.",
+      "chunk": 2
+    },
+    {
+      "sequence": 51,
+      "motif_code": "ANOMALY",
+      "citation": "and objects on the wall like Mirrors, shields and syMbols.",
+      "reasoning": "The dictionary does not contain a code for decorative or symbolic objects on the walls of the craft's interior.",
+      "chunk": 2
+    },
+    {
+      "sequence": 52,
+      "motif_code": "E315",
+      "citation": "A paralyzing force held her",
+      "reasoning": "The witness reports being immobilized by an unseen force, which constitutes paralysis.",
+      "chunk": 2
+    },
+    {
+      "sequence": 53,
+      "motif_code": "X225",
+      "citation": "while a caMera-like device eMerged frol'I the wall and exaMined her.",
+      "reasoning": "A device, described as 'camera-like', performs a scan of the witness's body as part of the examination.",
+      "chunk": 2
+    },
+    {
+      "sequence": 54,
+      "motif_code": "U352",
+      "citation": "She then lowered by Means of an elevator to the Main deck below,",
+      "reasoning": "The witness is transported between decks using a device that functions as an elevator.",
+      "chunk": 2
+    },
+    {
+      "sequence": 55,
+      "motif_code": "U351",
+      "citation": "passing what seeMed to be a hatch through which an appearance like wind and lightning showered the floor",
+      "reasoning": "The witness observes a visual phenomenon described as 'like wind and lightning', matching the motif of a display of atmospheric or energetic phenomena inside the craft.",
+      "chunk": 2
+    },
+    {
+      "sequence": 56,
+      "motif_code": "X115",
+      "citation": "In another rooM she stepped beneath the lights of a \"cleansing device\" while beaMs of light shone down on her,",
+      "reasoning": "The witness undergoes a procedure in a 'cleansing device' involving immersion in light, which is a direct match for this motif.",
+      "chunk": 2
+    },
+    {
+      "sequence": 57,
+      "motif_code": "X105",
+      "citation": "changed into clothes the beings provided",
+      "reasoning": "The witness's own clothes are replaced with garments provided by the beings.",
+      "chunk": 2
+    },
+    {
+      "sequence": 58,
+      "motif_code": "E217",
+      "citation": "after resisting unsuccessfully",
+      "reasoning": "The witness attempts to resist the beings' instructions, which constitutes a form of non-denial of defense.",
+      "chunk": 2
+    },
+    {
+      "sequence": 59,
+      "motif_code": "E323",
+      "citation": "their polite insistence.",
+      "reasoning": "The beings use repeated verbal requests ('polite insistence') to compel the witness to comply, indicating a form of hypnotic or suggestive control.",
+      "chunk": 2
+    },
+    {
+      "sequence": 60,
+      "motif_code": "B367",
+      "citation": "Their dress had ged as well, to silvery white uniforMs with gloves.",
+      "reasoning": "The beings' uniforms are described as silvery in color.",
+      "chunk": 2
+    },
+    {
+      "sequence": 61,
+      "motif_code": "B360",
+      "citation": "Their dress had ged as well, to silvery white uniforMs with gloves.",
+      "reasoning": "The beings' uniforms are described as white in color.",
+      "chunk": 2
+    },
+    {
+      "sequence": 62,
+      "motif_code": "B300",
+      "citation": "Their dress had ged as well, to silvery white uniforMs with gloves.",
+      "reasoning": "The beings are described as wearing uniforms, which implies a one-piece or coverall-style garment.",
+      "chunk": 2
+    },
+    {
+      "sequence": 63,
+      "motif_code": "B317",
+      "citation": "with gloves.",
+      "reasoning": "The beings are explicitly described as wearing gloves.",
+      "chunk": 2
+    },
+    {
+      "sequence": 64,
+      "motif_code": "B911",
+      "citation": "one of her escorts seeMed to sense her fear and it rised hiM;",
+      "reasoning": "The being displays an emotional reaction of surprise upon sensing the witness's fear.",
+      "chunk": 2
+    },
+    {
+      "sequence": 65,
+      "motif_code": "B901",
+      "citation": "he then went More slowly and reassured her.",
+      "reasoning": "The being modifies his behavior to be more considerate of the witness's emotional state.",
+      "chunk": 2
+    },
+    {
+      "sequence": 66,
+      "motif_code": "M100",
+      "citation": "and reassured her.",
+      "reasoning": "The being communicates a message of reassurance to calm the witness, implying they mean no harm.",
+      "chunk": 2
+    },
+    {
+      "sequence": 67,
+      "motif_code": "U202",
+      "citation": "entered a rounded and doMed exaMination rooM,",
+      "reasoning": "The text explicitly identifies the room's function as for examination.",
+      "chunk": 2
+    },
+    {
+      "sequence": 68,
+      "motif_code": "U210",
+      "citation": "entered a rounded and doMed exaMination rooM,",
+      "reasoning": "The room is explicitly described as being rounded in shape.",
+      "chunk": 2
+    },
+    {
+      "sequence": 69,
+      "motif_code": "U211",
+      "citation": "entered a rounded and doMed exaMination rooM,",
+      "reasoning": "The room is explicitly described as being domed.",
+      "chunk": 2
+    },
+    {
+      "sequence": 70,
+      "motif_code": "U230",
+      "citation": "lighted brightly but froM no specific source.",
+      "reasoning": "The room's illumination is described as bright and diffuse, without a visible source.",
+      "chunk": 2
+    },
+    {
+      "sequence": 71,
+      "motif_code": "E120",
+      "citation": "There she floated onto exaMination table",
+      "reasoning": "The witness is moved onto the examination table via flotation.",
+      "chunk": 2
+    },
+    {
+      "sequence": 72,
+      "motif_code": "X155",
+      "citation": "There she floated onto exaMination table",
+      "reasoning": "The witness is positioned on an examination table for the procedure.",
+      "chunk": 2
+    },
+    {
+      "sequence": 73,
+      "motif_code": "X270",
+      "citation": "while Quazgaa \"Measured her for light\"",
+      "reasoning": "The being performs a specific procedure explicitly named 'Measured for light', a direct match for this motif.",
+      "chunk": 2
+    },
+    {
+      "sequence": 74,
+      "motif_code": "X220",
+      "citation": "with a handheld device.",
+      "reasoning": "The procedure is carried out using a handheld instrument.",
+      "chunk": 2
+    },
+    {
+      "sequence": 75,
+      "motif_code": "B762",
+      "citation": "He told her she was not coMpletely filled with light, and because of the spots, he would have to exaMine her physically.",
+      "reasoning": "The being makes a judgment that the witness is 'not completely filled with light' and has 'spots', deeming her unsuitable or defective in some way that requires further physical examination.",
+      "chunk": 2
+    },
+    {
+      "sequence": 76,
+      "motif_code": "E217",
+      "citation": "She objected,",
+      "reasoning": "The witness verbally protests the examination, which is a form of resistance.",
+      "chunk": 2
+    },
+    {
+      "sequence": 77,
+      "motif_code": "E214",
+      "citation": "he exercised con trol so that she reassured herself that the proceedings would be painless,",
+      "reasoning": "Under the being's mental control, the witness internally reassures herself, adopting a belief that is contrary to her fear.",
+      "chunk": 2
+    },
+    {
+      "sequence": 78,
+      "motif_code": "E306",
+      "citation": "but this confidence caMe and went",
+      "reasoning": "The mentally induced state of confidence was not stable and fluctuated, indicating that the pacification effect was wearing off or intermittent.",
+      "chunk": 2
+    },
+    {
+      "sequence": 79,
+      "motif_code": "X245",
+      "citation": "At this point he stuck a needle-like device up her nos tril and penetrated into her head,",
+      "reasoning": "A needle is inserted into the witness's head through her nostril, a specific procedure matching this motif.",
+      "chunk": 2
+    },
+    {
+      "sequence": 80,
+      "motif_code": "E321",
+      "citation": "touching her head to take away the pain.",
+      "reasoning": "The being uses touch ('touching her head') to magically relieve the witness's pain.",
+      "chunk": 2
+    },
+    {
+      "sequence": 81,
+      "motif_code": "ANOMALY",
+      "citation": "another being brought over a sMall roll of webbed paper, which Quazgaa exaMined",
+      "reasoning": "There is no motif in the dictionary that describes the examination of 'webbed paper' during a medical procedure.",
+      "chunk": 2
+    },
+    {
+      "sequence": 82,
+      "motif_code": "X246",
+      "citation": "It now seeMed to have a tiny burrlike ball attached to the end.",
+      "reasoning": "The needle, upon withdrawal, is observed to have a 'tiny burrlike ball' on its end, which is interpreted as the implant that was just inserted into the witness's head.",
+      "chunk": 2
+    },
+    {
+      "sequence": 83,
+      "motif_code": "B910",
+      "citation": "They carried out their work with dispassionate precision",
+      "reasoning": "The beings' demeanor during the procedure is described as 'dispassionate', indicating an impassive, unemotional state.",
+      "chunk": 2
+    },
+    {
+      "sequence": 84,
+      "motif_code": "B905",
+      "citation": "and left her feeling like a guinea pig",
+      "reasoning": "The beings' treatment of the witness makes her feel dehumanized, like an experimental animal, which reflects their cold and insensitive behavior.",
+      "chunk": 2
+    },
+    {
+      "sequence": 85,
+      "motif_code": "E217",
+      "citation": "She protested the tests,",
+      "reasoning": "The witness again verbally resists the examination procedures.",
+      "chunk": 2
+    },
+    {
+      "sequence": 86,
+      "motif_code": "M102",
+      "citation": "and when Quazgaa proMised they would not hurt,",
+      "reasoning": "The being makes a promise that the upcoming test will be painless.",
+      "chunk": 2
+    },
+    {
+      "sequence": 87,
+      "motif_code": "B906",
+      "citation": "she reMinded hiM that he had said the saMe thing about the previous test, and was wrong.",
+      "reasoning": "The witness points out that the being's previous promise of a painless procedure was false, revealing a pattern of deception.",
+      "chunk": 2
+    },
+    {
+      "sequence": 88,
+      "motif_code": "B807",
+      "citation": "The beings con- ferred",
+      "reasoning": "The beings pause the procedure to confer among themselves, indicating a collaborative or consultative process.",
+      "chunk": 2
+    },
+    {
+      "sequence": 89,
+      "motif_code": "X260",
+      "citation": "and then tested her for procreation by inserting a needle into her navel.",
+      "reasoning": "A needle is inserted into the witness's navel for the stated purpose of a test related to procreation.",
+      "chunk": 2
+    },
+    {
+      "sequence": 90,
+      "motif_code": "E321",
+      "citation": "Again the laid-on hands relieved her pain.",
+      "reasoning": "The beings again use touch ('laid-on hands') to magically alleviate the witness's pain.",
+      "chunk": 2
+    },
+    {
+      "sequence": 91,
+      "motif_code": "B762",
+      "citation": "The beings said soMething was Missing, perhaps in ref erence to her hysterectoMy.",
+      "reasoning": "Following a reproductive test, the beings conclude that 'something was missing', judging the witness to be defective or unsuitable for their purposes.",
+      "chunk": 2
+    },
+    {
+      "sequence": 92,
+      "motif_code": "C116",
+      "citation": "She could barely understand the Cl 16 beings unless they addressed their thoughts to her,",
+      "reasoning": "The witness specifies that telepathic communication was only intelligible when intentionally directed at her, a perfect match for this motif.",
+      "chunk": 2
+    },
+    {
+      "sequence": 93,
+      "motif_code": "B807",
+      "citation": "but she gathered that the others wanted to continue with tests,",
+      "reasoning": "The witness overhears or senses a disagreement or discussion among the beings about whether to continue the examination, indicating a dispute or conference.",
+      "chunk": 2
+    },
+    {
+      "sequence": 94,
+      "motif_code": "B803",
+      "citation": "only Quazgaa seeMed to side with her against this option.",
+      "reasoning": "This indicates one being acted as a protector for the witness against the intentions of the other beings.",
+      "chunk": 3
+    },
+    {
+      "sequence": 95,
+      "motif_code": "B807",
+      "citation": "only Quazgaa seeMed to side with her against this option.",
+      "reasoning": "The statement implies a disagreement or dispute among the beings regarding a course of action concerning the witness.",
+      "chunk": 3
+    },
+    {
+      "sequence": 96,
+      "motif_code": "X225",
+      "citation": "An eyelike device then descended froM the ceiling, scanned her stoMach and then reascended.",
+      "reasoning": "The narrative explicitly describes an 'eyelike device' descending from the ceiling to perform a scan on the witness's body.",
+      "chunk": 3
+    },
+    {
+      "sequence": 97,
+      "motif_code": "X100",
+      "citation": "The exaMination ended and she redressed in her own clothes (I 59-64).",
+      "reasoning": "This marks the conclusion of the examination phase, with the witness putting her own clothes back on.",
+      "chunk": 3
+    },
+    {
+      "sequence": 98,
+      "motif_code": "E120",
+      "citation": "Betty glided through a dark corridor into a rooM with glasslike chairs.",
+      "reasoning": "The term 'glided' indicates a floating or weightless mode of movement for the witness.",
+      "chunk": 3
+    },
+    {
+      "sequence": 99,
+      "motif_code": "U201",
+      "citation": "Betty glided through a dark corridor",
+      "reasoning": "The narrative describes a corridor, which fits the definition of a passageway within the craft.",
+      "chunk": 3
+    },
+    {
+      "sequence": 100,
+      "motif_code": "W413",
+      "citation": "When she sat in one the beings closed a transparent covering over her",
+      "reasoning": "The witness is placed in a chair with a covering, which serves as the apparatus for the otherworldly journey.",
+      "chunk": 3
+    },
+    {
+      "sequence": 101,
+      "motif_code": "U250",
+      "citation": "coldness surrounded her",
+      "reasoning": "The witness experiences a cold temperature within the transport apparatus.",
+      "chunk": 3
+    },
+    {
+      "sequence": 102,
+      "motif_code": "A101",
+      "citation": "it seeMed to draw the Moisture froM her body.",
+      "reasoning": "The sensation of moisture being drawn from the body is a direct cause or description of dehydration.",
+      "chunk": 3
+    },
+    {
+      "sequence": 103,
+      "motif_code": "E120",
+      "citation": "The beings then floated her to a second chair",
+      "reasoning": "The narrative explicitly states the witness was 'floated' from one location to another.",
+      "chunk": 3
+    },
+    {
+      "sequence": 104,
+      "motif_code": "W410",
+      "citation": "fitted tubes into her nose and and closed the cover; liquid then iMMersed her for awhile, then drained.",
+      "reasoning": "The witness is placed in a chamber which is then filled with liquid, matching the description of an immersion chamber for travel.",
+      "chunk": 3
+    },
+    {
+      "sequence": 105,
+      "motif_code": "E300",
+      "citation": "the liquid was soothing",
+      "reasoning": "The liquid has a calming and pleasant effect on the witness, consistent with pacification.",
+      "chunk": 3
+    },
+    {
+      "sequence": 106,
+      "motif_code": "E120",
+      "citation": "she felt weightless",
+      "reasoning": "The witness explicitly reports the sensation of weightlessness.",
+      "chunk": 3
+    },
+    {
+      "sequence": 107,
+      "motif_code": "ANOMALY",
+      "citation": "at one point the beings had her swallow a sweet fluid.",
+      "reasoning": "The witness is made to ingest a fluid, but its purpose is not for restoration (X310) or to induce forgetfulness (X311). It is a distinct action during the journey preparation not covered by the dictionary.",
+      "chunk": 3
+    },
+    {
+      "sequence": 108,
+      "motif_code": "E211",
+      "citation": "The beings instructed her to keep her eyes closed, but her coMpliance seeMed involuntary",
+      "reasoning": "The witness keeps her eyes closed due to an external command and an involuntary compulsion, matching the motif.",
+      "chunk": 3
+    },
+    {
+      "sequence": 109,
+      "motif_code": "B367",
+      "citation": "Two beings in silvery, luMinous suits",
+      "reasoning": "The beings' clothing is described as 'silvery'.",
+      "chunk": 3
+    },
+    {
+      "sequence": 110,
+      "motif_code": "B368",
+      "citation": "Two beings in silvery, luMinous suits",
+      "reasoning": "The beings' clothing is described as 'luMinous'.",
+      "chunk": 3
+    },
+    {
+      "sequence": 111,
+      "motif_code": "B345",
+      "citation": "with black hoods over their heads",
+      "reasoning": "The beings are described as wearing hoods.",
+      "chunk": 3
+    },
+    {
+      "sequence": 112,
+      "motif_code": "B610",
+      "citation": "escorted her into a large dark tunnel",
+      "reasoning": "The beings are described as escorting the witness.",
+      "chunk": 3
+    },
+    {
+      "sequence": 113,
+      "motif_code": "W117",
+      "citation": "a large dark tunnel, seeMinly chipped out of stone.",
+      "reasoning": "The description of a tunnel 'chipped out of stone' strongly suggests a minelike or underground location for the otherworld.",
+      "chunk": 3
+    },
+    {
+      "sequence": 114,
+      "motif_code": "E120",
+      "citation": "They floated above a path like a track",
+      "reasoning": "The witness and beings are described as floating during their movement.",
+      "chunk": 3
+    },
+    {
+      "sequence": 115,
+      "motif_code": "U131",
+      "citation": "passed through a Mirror-like door",
+      "reasoning": "This describes a door or portal within the otherworld/craft.",
+      "chunk": 3
+    },
+    {
+      "sequence": 116,
+      "motif_code": "W103",
+      "citation": "a realM a red atMosphere... The region was barren of plant life",
+      "reasoning": "The otherworld is described as having a red atmosphere and being barren, fitting the motif of a lifeless or desertlike environment.",
+      "chunk": 3
+    },
+    {
+      "sequence": 117,
+      "motif_code": "W210",
+      "citation": "she saw buildings",
+      "reasoning": "The witness observes buildings, indicating the presence of a city or structures in the otherworld.",
+      "chunk": 3
+    },
+    {
+      "sequence": 118,
+      "motif_code": "W104",
+      "citation": "strange crawling creatures like Monkeys or leMurs, only with no heads and eyes on stalks.",
+      "reasoning": "The witness observes unfamiliar animal life in the otherworld.",
+      "chunk": 3
+    },
+    {
+      "sequence": 119,
+      "motif_code": "W105",
+      "citation": "passed through a circular MeMbrane into a beautiful green realM, full of plant life and water.",
+      "reasoning": "This part of the otherworld is described as beautiful, green, and fertile with plants and water.",
+      "chunk": 3
+    },
+    {
+      "sequence": 120,
+      "motif_code": "W101",
+      "citation": "This realM was well lighted, but not by any sun or other specific source, and the horizon was vague.",
+      "reasoning": "The lighting of the otherworld is described as diffuse, without a visible sun, and having a vague horizon, matching the motif's criteria.",
+      "chunk": 3
+    },
+    {
+      "sequence": 121,
+      "motif_code": "W210",
+      "citation": "A distant city was visible",
+      "reasoning": "The witness sees a city in the otherworld.",
+      "chunk": 3
+    },
+    {
+      "sequence": 122,
+      "motif_code": "W221",
+      "citation": "also a Mid with a Sphinx on top",
+      "reasoning": "The witness observes a pyramid-like structure in the otherworld.",
+      "chunk": 3
+    },
+    {
+      "sequence": 123,
+      "motif_code": "W220",
+      "citation": "an elevated roadway.",
+      "reasoning": "The witness observes a suspended or elevated road in the otherworld.",
+      "chunk": 3
+    },
+    {
+      "sequence": 124,
+      "motif_code": "E120",
+      "citation": "When she floated about",
+      "reasoning": "The witness describes her movement as floating.",
+      "chunk": 3
+    },
+    {
+      "sequence": 125,
+      "motif_code": "E310",
+      "citation": "her head, arMs and legs felt heavy",
+      "reasoning": "The witness experiences a sensation of heaviness in her limbs.",
+      "chunk": 3
+    },
+    {
+      "sequence": 126,
+      "motif_code": "E311",
+      "citation": "her liMbs felt prickly",
+      "reasoning": "The witness experiences a prickly or tingling sensation.",
+      "chunk": 3
+    },
+    {
+      "sequence": 127,
+      "motif_code": "W106",
+      "citation": "she passed a Mass of crystals suspended in air",
+      "reasoning": "The otherworld landscape is described as containing a large formation of crystals.",
+      "chunk": 3
+    },
+    {
+      "sequence": 128,
+      "motif_code": "T121",
+      "citation": "approached a gigantic, seeMingly living bird standing before a brilliant light.",
+      "reasoning": "The witness encounters a symbolic scene featuring a large, living bird and a brilliant light, which is the beginning of a theophany.",
+      "chunk": 3
+    },
+    {
+      "sequence": 129,
+      "motif_code": "T135",
+      "citation": "The teMperature grew unbearably hot and then cooled",
+      "reasoning": "The witness experiences an intense physical sensation (heat) during the theophany.",
+      "chunk": 3
+    },
+    {
+      "sequence": 130,
+      "motif_code": "T121",
+      "citation": "the bird had disappeared. In its place was a pile of eMbers and the eMbers soon becaMe ashes, then a gray worM caMe out of the ashes",
+      "reasoning": "This describes the continuation of the symbolic scene (the Phoenix legend), which is a key component of the theophany.",
+      "chunk": 3
+    },
+    {
+      "sequence": 131,
+      "motif_code": "T122",
+      "citation": "A voice she took to be God's then spoke to her.",
+      "reasoning": "The witness perceives a direct communication from a being she identifies as God.",
+      "chunk": 3
+    },
+    {
+      "sequence": 132,
+      "motif_code": "T125",
+      "citation": "It said she was chosen to show the world because of her faith in Jesus, while she and other chosen ones like herself would lead still other to the light",
+      "reasoning": "The witness receives a direct verbal message during the theophany.",
+      "chunk": 3
+    },
+    {
+      "sequence": 133,
+      "motif_code": "M122",
+      "citation": "It said she was chosen to show the world because of her faith in Jesus",
+      "reasoning": "The message states that the witness was specifically chosen for a purpose, indicating she has been watched or selected.",
+      "chunk": 3
+    },
+    {
+      "sequence": 134,
+      "motif_code": "M145",
+      "citation": "she and other chosen ones like herself would lead still other to the light",
+      "reasoning": "The message assigns the witness a mission or task of a salvific nature.",
+      "chunk": 3
+    },
+    {
+      "sequence": 135,
+      "motif_code": "W108",
+      "citation": "Betty retraced her forMer route through the silent other world",
+      "reasoning": "The otherworld is described as being silent.",
+      "chunk": 3
+    },
+    {
+      "sequence": 136,
+      "motif_code": "W410",
+      "citation": "back to the rooM with the iMMersion chairs, where she repeated the forMer sequence of events there.",
+      "reasoning": "The witness undergoes the immersion chamber procedure again for the return journey.",
+      "chunk": 3
+    },
+    {
+      "sequence": 137,
+      "motif_code": "B905",
+      "citation": "The beings had shown little concern for her coMfort on the outgoing trip",
+      "reasoning": "This describes the beings' initial behavior as indifferent and unconcerned with the witness's well-being.",
+      "chunk": 3
+    },
+    {
+      "sequence": 138,
+      "motif_code": "B901",
+      "citation": "but during the return they seeMed More considerate and one tapped on the casing and asked if she was coMfortable.",
+      "reasoning": "The beings' behavior changes to become considerate and helpful, showing concern for the witness's comfort.",
+      "chunk": 3
+    },
+    {
+      "sequence": 139,
+      "motif_code": "M120",
+      "citation": "saying huMans lived in a fallen state .because they separated theMselves froM the state of perfect love",
+      "reasoning": "This is a message warning or informing the witness about the negative condition of humanity.",
+      "chunk": 3
+    },
+    {
+      "sequence": 140,
+      "motif_code": "M100",
+      "citation": "but the beings loved huMans and wanted to save theM.",
+      "reasoning": "The beings express a peaceful and benevolent intention toward humanity.",
+      "chunk": 3
+    },
+    {
+      "sequence": 141,
+      "motif_code": "ANOMALY",
+      "citation": "The beings could tell Much, but huMans Must look to nature through the spirit",
+      "reasoning": "This is a philosophical or spiritual instruction that does not fit into the specific message categories of warnings, prophecies, or tasks.",
+      "chunk": 3
+    },
+    {
+      "sequence": 142,
+      "motif_code": "M119",
+      "citation": "Until the appointed tiMe she.would have to forget, he said,",
+      "reasoning": "The being explicitly instructs the witness that she will have to forget the experience until a future 'appointed time', which is a direct example of this motif.",
+      "memory_state": "hypnosis",
+      "source_page": "122",
+      "chunk": 4
+    },
+    {
+      "sequence": 143,
+      "motif_code": "B248",
+      "citation": "all during this discourse he looked at her with his eyes enorMously enlarged,",
+      "reasoning": "The witness describes the being's eyes becoming 'enormously enlarged' during the communication, which is a specific physical characteristic noted in this motif.",
+      "memory_state": "hypnosis",
+      "source_page": "122",
+      "chunk": 4
+    },
+    {
+      "sequence": 144,
+      "motif_code": "X251",
+      "citation": "she felt he was iMplanting the Message deep in her Mind",
+      "reasoning": "The witness perceives that a message is being non-verbally and mentally transferred into her mind by the being, which aligns with the concept of adding thoughts or implanting a message.",
+      "memory_state": "hypnosis",
+      "source_page": "122",
+      "chunk": 4
+    },
+    {
+      "sequence": 145,
+      "motif_code": "B221",
+      "citation": "Two sMaller beings then escorted her out of the ship,",
+      "reasoning": "The beings performing the escort are described as 'sMaller', fitting the description of moderately short humanoids common in abduction narratives.",
+      "memory_state": "hypnosis",
+      "source_page": "122",
+      "chunk": 4
+    },
+    {
+      "sequence": 146,
+      "motif_code": "B610",
+      "citation": "Two sMaller beings then escorted her out of the ship,",
+      "reasoning": "The beings are described as escorting the witness, which is the core action of this motif, even if not explicitly holding her by the upper arms.",
+      "memory_state": "hypnosis",
+      "source_page": "122",
+      "chunk": 4
+    },
+    {
+      "sequence": 147,
+      "motif_code": "E204",
+      "citation": "the dazed MeMbers of Betty's faMily",
+      "reasoning": "The family members are described as being in a 'dazed' state, which corresponds to a state of disorientation or semi-consciousness.",
+      "memory_state": "hypnosis",
+      "source_page": "122",
+      "chunk": 4
+    },
+    {
+      "sequence": 148,
+      "motif_code": "E326",
+      "citation": "The beings used these globes to direct the dazed MeMbers of Betty's faMily upstairs and to bed.",
+      "reasoning": "Luminous globes are used as a tool to 'direct' or control the actions of the family members, fitting the description of this motif.",
+      "memory_state": "hypnosis",
+      "source_page": "122",
+      "chunk": 4
+    },
+    {
+      "sequence": 149,
+      "motif_code": "S111",
+      "citation": "he told her the blue book was hers to study for a tiMe. / Ten days after receiving the book it disappeared froM its hiding place",
+      "reasoning": "The witness is explicitly told she can keep the souvenir book only 'for a time', and it subsequently disappears, confirming its temporary nature.",
+      "memory_state": "hypnosis",
+      "source_page": "122, 150, 152, 155",
+      "chunk": 4
+    },
+    {
+      "sequence": 150,
+      "motif_code": "U533",
+      "citation": "heard Motor sounds,",
+      "reasoning": "The witness hears 'Motor sounds' as she is going to bed, which is interpreted as the sound of the craft departing.",
+      "memory_state": "hypnosis",
+      "source_page": "122-130",
+      "chunk": 4
+    },
+    {
+      "sequence": 151,
+      "motif_code": "E200",
+      "citation": "went to sleep and forgot Most of the experience",
+      "reasoning": "The witness loses her memory of the abduction experience upon returning, which is the defining characteristic of a time lapse or memory block.",
+      "memory_state": "hypnosis",
+      "source_page": "122-130",
+      "chunk": 4
+    },
+    {
+      "sequence": 152,
+      "motif_code": "A115",
+      "citation": "Becky reMeMbered a frightening dreaM",
+      "reasoning": "A secondary witness (daughter Becky) recalls a 'frightening dream' related to the event, which is classified as an abduction dream or nightmare.",
+      "memory_state": "conscious",
+      "source_page": "31-2, 150, 152, 155",
+      "chunk": 4
+    },
+    {
+      "sequence": 153,
+      "motif_code": "A114",
+      "citation": "kept it a secret for 3 days. / When she told her Mother Betty showed her the book but pledged Becky to secrecy.",
+      "reasoning": "Both the daughter and the primary witness actively keep the events and the evidence (the book) a secret, fulfilling the conditions of this motif.",
+      "memory_state": "conscious",
+      "source_page": "31-2, 150, 152, 155",
+      "chunk": 4
+    },
+    {
+      "sequence": 154,
+      "motif_code": "S100",
+      "citation": "The book was sMall, about 40 lono. the pages tn glow. She saw diagraMs and syMbols,",
+      "reasoning": "This passage describes the physical characteristics of the book received from the beings, which serves as a souvenir of the encounter.",
+      "memory_state": "conscious",
+      "source_page": "31-2, 150, 152, 155",
+      "chunk": 4
+    },
+    {
+      "sequence": 155,
+      "motif_code": "U320",
+      "citation": "at least one diagraM reseMbled the engine of the ship.",
+      "reasoning": "A diagram in the souvenir book is recalled as resembling the ship's engine, providing an indirect description of the craft's internal machinery.",
+      "memory_state": "conscious",
+      "source_page": "31-2, 150, 152, 155",
+      "chunk": 4
+    },
+    {
+      "sequence": 156,
+      "motif_code": "B610",
+      "citation": "'s father had a conscious MeMory of the beings approaching the house.",
+      "reasoning": "A secondary witness consciously recalls the beings' approach, which constitutes the initial phase of being escorted or taken into custody.",
+      "memory_state": "conscious",
+      "source_page": "16",
+      "chunk": 4
+    },
+    {
+      "sequence": 157,
+      "motif_code": "E322",
+      "citation": "When the being in front looked at hiM he felt strange and reMeMbered no More",
+      "reasoning": "The being's look has a direct, compelling effect on the witness, causing a strange feeling and memory loss, which is characteristic of hypnotic control via the eyes.",
+      "memory_state": "conscious",
+      "source_page": "16",
+      "chunk": 4
+    },
+    {
+      "sequence": 158,
+      "motif_code": "E200",
+      "citation": "reMeMbered no More",
+      "reasoning": "The witness's memory of the event ceases abruptly after being looked at by the being, indicating a period of missing time or a memory block.",
+      "memory_state": "conscious",
+      "source_page": "16",
+      "chunk": 4
+    },
+    {
+      "sequence": 159,
+      "motif_code": "E400",
+      "citation": "The TV was on but the (?) picture looked faded,",
+      "reasoning": "A television set is observed to be malfunctioning (faded picture) during the beings' presence, which is a typical electromagnetic effect associated with UFO encounters.",
+      "memory_state": "hypnosis",
+      "source_page": "28-31",
+      "chunk": 4
+    },
+    {
+      "sequence": 160,
+      "motif_code": "E315",
+      "citation": "the rest of her faMily sat Motionless.",
+      "reasoning": "The family members are observed to be completely motionless, indicating a state of paralysis or suspended animation induced by the beings.",
+      "memory_state": "hypnosis",
+      "source_page": "28-31",
+      "chunk": 4
+    },
+    {
+      "sequence": 161,
+      "motif_code": "B900",
+      "citation": "she felt they were ndly.",
+      "reasoning": "Despite being frightened, the witness perceives the beings as 'friendly', which reflects their outward manner or the emotional state they induced in her.",
+      "memory_state": "hypnosis",
+      "source_page": "28-31",
+      "chunk": 4
+    },
+    {
+      "sequence": 162,
+      "motif_code": "B223",
+      "citation": "When the tallest one looked at her",
+      "reasoning": "The witness identifies one of the beings as 'the tallest one', indicating a height difference among the crew, with this one being of above-average stature.",
+      "memory_state": "hypnosis",
+      "source_page": "28-31",
+      "chunk": 4
+    },
+    {
+      "sequence": 163,
+      "motif_code": "E322",
+      "citation": "When the tallest one looked at her she blacked out again",
+      "reasoning": "The being's gaze has a direct, compelling effect, causing the witness to lose consciousness, which is characteristic of hypnotic control via the eyes.",
+      "memory_state": "hypnosis",
+      "source_page": "28-31",
+      "chunk": 4
+    },
+    {
+      "sequence": 164,
+      "motif_code": "E202",
+      "citation": "she blacked out again",
+      "reasoning": "The witness loses consciousness ('blacked out') as a direct result of the being's action, fitting the description of an induced unconscious state.",
+      "memory_state": "hypnosis",
+      "source_page": "28-31",
+      "chunk": 4
+    },
+    {
+      "sequence": 165,
+      "motif_code": "B901",
+      "citation": "She also had recollections of a being keeping her coMpany while her Mother was away",
+      "reasoning": "A being is recalled as staying with the child while the primary witness was absent, an act that can be interpreted as considerate or helpful.",
+      "memory_state": "hypnosis",
+      "source_page": "230",
+      "chunk": 4
+    }
+  ],
+  "stripped_text": "Betty Andreassen <30), her father, Waino Aho <60), and daughter\nAndreassen (11 >I January 25, 1967 I South AshburnhaM, Mass.\n: abduction, exaMination, otherworldly journey, theophany\n: just over 4 hours\n: S< 5)\n's husband was in the hospital following a car accident. Her\nfather and Mother were staying with her at the tiMe and helping care for\nher 7 children, ranging in age froM tt to 3. The tiMe was about 6:35\np.M., not long after dark on an unseasonably warM and foggy winter\nnight.\nCapture.\n<?> Just after supper a power failure occurred and a pulsing\nglow appeared through the kitchen window. A group of strange\nbeings approached the house, Moving together with a leaping\nMotion like grasshoppers. A sense of stillness, like a vacuuM,\nengulfed the house, and everyone blacked out except Betty.\nFive beings then passed through the solid wood of the kitchen\ndoor. The leader knew her naMe and identified hiMself as\nQuazgaa, though she heard hiM speak only inside her head. She\nfelt they were friendly (as did Becky) and offered theM food,\nt ,B758.but the cooking startled theM, and they altered their Message\nto say that their food was knowledge tried by fire <I 15-26).\nbeings were huManoids siMilar in appearance to those\nribed earler, but Quazgaa seeMed about 4 feet tall, the\nrs slightly less. The eyes filled with light on occasion\nslanted upward froM tiMe to tiMe. The beings wore a dark\nblue uniforM, belted at the waist and with a banner across the\nchest, while on the sleeve was an eMbleM of a bird or phoenix.\nTheir footgear consisted of boots <I 25-6, 30, 104, 124-5,\n).\nOver the course of her tiMe with the beings they always\nspoke in a polite and friendly Manner, always requesting her\ncooperation <I 32, 41, 45-6, 48) or apologizing for her dis-\nCOl'lfOrt (I 63). Their politeness concealed a control techni-\nque, however, and they avoided giving inforl'lative answers to\nher questions <I 57>. The beings seel'led to have a sense of\nhul'lor, since one stayed behind and entertained Becky by jug-\ngling balls of 1 ight and playing gal'les <I 230).\nBetty took the beings to the living rooM and gave Quazgaa\na Bible; he handed her a thin blue book in exchange. When\nspread his hand over the Bible, copies appeared and he\npassed thel'I to the other beings. He asked hil'I to follow hiM\nand assist thel'I in their Mission to help the world and prevent\nhul'lans froM destroying it. Her faMily looked il'IMObilized, but\nQuazgaa assured her they were safe, so she finally gave in to\nrepeated request and hypnotic eyes and agreed to go(! 27-\n32)' IV T --\n• ou:i:.\ntold Betty to stand directly behind hiM and she\nfelt weightless as she swept forward with the beings through\nthe solid door as if drawn by suction. The ship stood nearby\nthe fog on 3 legs which adjusted to the contour of the\n, i,\nland. The craft was round and in profile oval, 40 feet in\ndiaMeter by 24 feet thick. A ril'I surrounded the circul'lfer\nence, and the craft was flatter below, so two thirds of the\nthickness laid above the ril'I. Quazgaa !'lade the lower half\ntransparent for a short while and allowed her to view the\nr Mechanisl'I, rotating crystalline globes which also pro\nduced the pulsating light frol'I the beginning of the encounter.\nA door opened above the ril'I and they swept inside <I 33-36>.\nI I. Exal'linat ion.\nthe craft she passed through several rooMs: She\nstood in an entrance hall while Quazgaa conferred with other\n• beings off to one side. While there she felt weightless but\nuncoMfortable, with her hands and legs tingling as if asleep.\nAs she left the rool'I a door seeMed to open out of nowhere.\nbeings took her floating up a staircase to a circular,\ndoMed rool'I on an upper deck, where she saw a desk or boxlike\nobject and objects on the wall like Mirrors, shields and\nsyMbols. A paralyzing force held her while a caMera-like\ndevice eMerged frol'I the wall and exaMined her. She then\nlowered by Means of an elevator to the Main deck below,\npassing what seeMed to be a hatch through which an appearance\nlike wind and lightning showered the floor <I 38-44).\nIn another rooM she stepped beneath the lights of a\n\"cleansing device\" while beaMs of light shone down on her,\nchanged into clothes the beings provided after resisting\nunsuccessfully their polite insistence. Their dress had\nged as well, to silvery white uniforMs with gloves. At\nthis point one of her escorts seeMed to sense her fear and it\nrised hiM; he then went More slowly and reassured her.\nentered a rounded and doMed exaMination rooM, lighted\nbrightly but froM no specific source. There she floated onto\nexaMination table while Quazgaa \"Measured her for light\"\nwith a handheld device. He told her she was not coMpletely\nfilled with light, and because of the spots, he would have to\nexaMine her physically. She objected, but he exercised con\ntrol so that she reassured herself that the proceedings would\nbe painless, but this confidence caMe and went (I 48-54).\nAt this point he stuck a needle-like device up her nos\ntril and penetrated into her head, touching her head to take\naway the pain. While the needle reMained in her head another\nbeing brought over a sMall roll of webbed paper, which Quazgaa\nexaMined and then withdrew the needle. It now seeMed to have\na tiny burrlike ball attached to the end. They carried out\ntheir work with dispassionate precision and left her feeling\nlike a guinea pig <I 55-59>.\nShe protested the tests, and when Quazgaa proMised they\nwould not hurt, she reMinded hiM that he had said the saMe\nthing about the previous test, and was wrong. The beings con-\nferred and then tested her for procreation by inserting a\nneedle into her navel. Again the laid-on hands relieved her\npain. The beings said soMething was Missing, perhaps in ref\nerence to her hysterectoMy. She could barely understand the\nCl 16 beings unless they addressed their thoughts to her, but she\ngathered that the others wanted to continue with tests, and\nonly Quazgaa seeMed to side with her against this option. An\neyelike device then descended froM the ceiling, scanned her\nstoMach and then reascended. The exaMination ended and she\nredressed in her own clothes (I 59-64).\nOtherworldly Journey.\nBetty glided through a dark corridor into a rooM with\nglasslike chairs. When she sat in one the beings closed a\ntransparent covering over her, and coldness surrounded her as\nit seeMed to draw the Moisture froM her body. The beings then\nfloated her to a second chair, fitted tubes into her nose and\nand closed the cover; liquid then iMMersed her for\nawhile, then drained. During her stay in this chair the\nliquid was soothing and she felt weightless, while at one\npoint the beings had her swallow a sweet fluid. The beings\ninstructed her to keep her eyes closed, but her coMpliance\nseeMed involuntary <I 65-73>.\nTwo beings in silvery, luMinous suits and with black\nWl 17 hoods over their heads escorted her into a large dark tunnel,\nseeMinly chipped out of stone. They floated above a path like\nEl 10 a track, then passed through a Mirror-like door into a realM\na red atMosphere, where she saw buildings and strange\ncrawling creatures like Monkeys or leMurs, only with no heads\nand eyes on stalks. The region was barren of plant life (I\n).\nthen passed through a circular MeMbrane into a beau-\ntiful green realM, full of plant life and water. This\nreal~\nwas well lighted, but not by any sun or other specific source,\nand the horizon was vague. A distant city was visible, also a\nMid with a Sphinx on top and an elevated roadway. When\nfloated about, her head, arMs and legs felt heavy and her\nliMbs felt prickly <I 79-83).\nTheophany.\nContinuing on her track she passed a Mass of crystals\nsuspended in air and approached a gigantic, seeMingly living\nbird standing before a brilliant light. The teMperature grew\nunbearably hot and then cooled, the light diMMed and she saw\nthat the bird had disappeared. In its place was a pile of\neMbers and the eMbers soon becaMe ashes, then a gray worM caMe\nout of the ashes <I 84-99>.\nA voice she took to be God's then spoke to her. It said\nshe was chosen to show the world because of her faith in\nJesus, while she and other chosen ones like herself would lead\nstill other to the light <I 99-100).\npeo~le\nReturn; III. Conference.\nBetty retraced her forMer route through the silent other\nworld back to the rooM with the iMMersion chairs, where she\nrepeated the forMer sequence of events there. The beings had\nshown little concern for her coMfort on the outgoing trip, but\nduring the return they seeMed More considerate and one tapped\non the casing and asked if she was coMfortable. Before she\nleft the craft Quazgaa spoke to her on his purposes and philo\nsophy, saying huMans lived in a fallen state .because they\nseparated theMselves froM the state of perfect love, but the\nbeings loved huMans and wanted to save theM. The beings could\ntell Much, but huMans Must look to nature through the spirit\nfor the right answers. Any secrets learned froM the beings\nwould be turned to wrong purposes by soMe people, but the\nbeings had locked secrets in the heads of Many, who unlike the\nunprepared would feel no fear in the future the beings caMe\nMl 19 openly. Until the appointed tiMe she.would have to forget, he\nsaid, and all during this discourse he looked at her with his\neyes enorMously enlarged, so that she felt he was iMplanting\nthe Message deep in her Mind <I 110-122).\nTwo sMaller beings then escorted her out of the ship,\neach of theM carrying a luMinous globe. The beings used these\nglobes to direct the dazed MeMbers of Betty's faMily upstairs\nand to bed. She spoke with one of the beings, whose naMe was\ns 111 Joohop, and he told her the blue book was hers to study for a\ntiMe. He took her upstairs at about 10:40 p.M.; she went to\nbed, heard Motor sounds, went to sleep and forgot Most of the\nexperience <I 122-130).\nAfterMath.\nAl 15 Becky reMeMbered a frightening dreaM but kept it a secret\nfor 3 days. When she told her Mother Betty showed her the\nbook but pledged Becky to secrecy. The book was sMall, about\n40 lono. the pages tn glow. She saw diagraMs\npage~ ~nd see~ed\nand syMbols, and at least one diagraM reseMbled the engine of\ns 111 the ship. Ten days after receiving the book it disappeared\nfroM its hiding place (I 31-2, 150, 152, 155).\n's father had a conscious MeMory of the beings ap\nproaching the house. When the being in front looked at hiM he\nfelt strange and reMeMbered no More <I 16). Under hypnosis\nreMeMbered regaining consciousness and seeing the beings\nin the living rooM with her Mother. The TV was on but the\n(?) picture looked faded, and the rest of her faMily sat Motion\nless. The beings frightened her, but she felt they were\nndly. When the tallest one looked at her she blacked out\nagain <I 28-31 ). She also had recollections of a being\nkeeping her coMpany while her Mother was away <I 230)."
+}

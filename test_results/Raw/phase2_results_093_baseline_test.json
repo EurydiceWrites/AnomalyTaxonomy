@@ -1,0 +1,288 @@
+{
+  "case_number": "093",
+  "ground_truth_count": 24,
+  "ai_count": 28,
+  "exact_matches": 16,
+  "near_misses": 2,
+  "ai_extras": 10,
+  "ai_misses": 6,
+  "match_rate": 66.7,
+  "combined_rate": 75.0,
+  "exact_match_codes": [
+    "B230",
+    "B241",
+    "B242",
+    "B243",
+    "B252",
+    "B290",
+    "B291",
+    "B295",
+    "B753",
+    "E200",
+    "U101",
+    "U133",
+    "X155",
+    "X220",
+    "X231",
+    "X235"
+  ],
+  "near_miss_details": [
+    [
+      "E213",
+      "E205",
+      8
+    ],
+    [
+      "B257",
+      "B258",
+      1
+    ]
+  ],
+  "missed_codes": [
+    "E411",
+    "B625",
+    "E320",
+    "W400",
+    "U300",
+    "B225"
+  ],
+  "extra_codes": [
+    "U540",
+    "E106",
+    "B202",
+    "B610",
+    "X150",
+    "X257",
+    "B800",
+    "U202",
+    "X205",
+    "B201"
+  ],
+  "ai_events": [
+    {
+      "sequence": 1,
+      "motif_code": "U540",
+      "memory_state": "conscious",
+      "citation": "she noticed lights changing color in the sky.",
+      "reasoning": "The UFO lights are described as changing color, which corresponds to the definition of pulsation.",
+      "chunk": 1
+    },
+    {
+      "sequence": 2,
+      "motif_code": "E205",
+      "memory_state": "conscious",
+      "citation": "They soon found theMselves on a back road,",
+      "reasoning": "The phrase 'found themselves' implies they traveled a distance to a new location without conscious awareness of how they got there.",
+      "chunk": 1
+    },
+    {
+      "sequence": 3,
+      "motif_code": "E106",
+      "memory_state": "conscious",
+      "citation": "approaching an apparent wreck with a policeMan nearby.",
+      "reasoning": "The scene of a wreck and a policeman is revealed under hypnosis to be a staged event to facilitate the abduction, qualifying as a perceptual distortion or illusion.",
+      "chunk": 1
+    },
+    {
+      "sequence": 4,
+      "motif_code": "B202",
+      "memory_state": "conscious",
+      "citation": "a policeMan nearby. He seeMed too well-dressed for patrol duty",
+      "reasoning": "The being is disguised as a human policeman.",
+      "chunk": 1
+    },
+    {
+      "sequence": 5,
+      "motif_code": "B291",
+      "memory_state": "conscious",
+      "citation": "his touch was icy cold.",
+      "reasoning": "The being's skin is described as having an unusually cold temperature.",
+      "chunk": 1
+    },
+    {
+      "sequence": 6,
+      "motif_code": "E200",
+      "memory_state": "conscious",
+      "citation": "they reached a truck stop 45 Minutes later, where they found that the tiMe was 3 a.M.",
+      "reasoning": "The witness discovers a significant discrepancy between the elapsed time she remembers (45 minutes) and the actual time (a gap of nearly 4 hours since 10:30 PM), indicating a period of missing time.",
+      "chunk": 1
+    },
+    {
+      "sequence": 7,
+      "motif_code": "B610",
+      "memory_state": "hypnosis",
+      "citation": "after the 'policeMan' touched her hand, he helped her out and took her to a craft",
+      "reasoning": "The being physically guides and escorts the witness from her vehicle to the craft.",
+      "chunk": 1
+    },
+    {
+      "sequence": 8,
+      "motif_code": "U101",
+      "memory_state": "hypnosis",
+      "citation": "a craft shaped like a coolie hat.",
+      "reasoning": "A 'coolie hat' shape describes a domed disk, a common UFO configuration.",
+      "chunk": 1
+    },
+    {
+      "sequence": 9,
+      "motif_code": "U133",
+      "memory_state": "hypnosis",
+      "citation": "She cliMbed a er [ladder] to enter",
+      "reasoning": "The witness used a ladder or similar structure to enter the craft.",
+      "chunk": 1
+    },
+    {
+      "sequence": 10,
+      "motif_code": "X150",
+      "memory_state": "hypnosis",
+      "citation": "and sat in a chair,",
+      "reasoning": "The witness is seated in a chair inside the craft, a preparatory action for what follows.",
+      "chunk": 1
+    },
+    {
+      "sequence": 11,
+      "motif_code": "X257",
+      "memory_state": "hypnosis",
+      "citation": "watching lines and stars on a screen",
+      "reasoning": "The witness is made to observe a screen displaying images, which constitutes a form of behavioral examination or data transfer.",
+      "chunk": 1
+    },
+    {
+      "sequence": 12,
+      "motif_code": "B800",
+      "memory_state": "hypnosis",
+      "citation": "while the policeMan operated controls and seeMingly piloted the ship.",
+      "reasoning": "The being disguised as a policeman is performing the role of a leader or pilot, operating the craft's controls.",
+      "chunk": 1
+    },
+    {
+      "sequence": 13,
+      "motif_code": "U202",
+      "memory_state": "hypnosis",
+      "citation": "He led her through a door into a rooM with two surgical es [tables].",
+      "reasoning": "The description of a room containing surgical tables clearly identifies it as an examination room.",
+      "chunk": 1
+    },
+    {
+      "sequence": 14,
+      "motif_code": "X205",
+      "memory_state": "hypnosis",
+      "citation": "Her daughter slept on one,",
+      "reasoning": "Another human, the witness's daughter, is present and also being held or examined.",
+      "chunk": 1
+    },
+    {
+      "sequence": 15,
+      "motif_code": "B201",
+      "memory_state": "hypnosis",
+      "citation": "watched over by three less beings with large heads, large dark alMond-shaped , sMall noses and vestigial Mouths.",
+      "reasoning": "The beings are described with features (large head, large eyes, small nose/mouth) that are characteristic of the humanoid type.",
+      "chunk": 1
+    },
+    {
+      "sequence": 16,
+      "motif_code": "B295",
+      "memory_state": "hypnosis",
+      "citation": "three less [hairless] beings",
+      "reasoning": "The typo 'less' is interpreted as 'hairless' based on the classic humanoid description that follows. Hairlessness is a key feature of this being type.",
+      "chunk": 1
+    },
+    {
+      "sequence": 17,
+      "motif_code": "B230",
+      "memory_state": "hypnosis",
+      "citation": "with large heads,",
+      "reasoning": "The beings' heads are described as large in proportion to their bodies.",
+      "chunk": 1
+    },
+    {
+      "sequence": 18,
+      "motif_code": "B241",
+      "memory_state": "hypnosis",
+      "citation": "large dark alMond-shaped ,",
+      "reasoning": "The beings' eyes are described as large.",
+      "chunk": 1
+    },
+    {
+      "sequence": 19,
+      "motif_code": "B242",
+      "memory_state": "hypnosis",
+      "citation": "alMond-shaped ,",
+      "reasoning": "The shape of the eyes is described as almond-shaped, which fits the oval/catlike category.",
+      "chunk": 1
+    },
+    {
+      "sequence": 20,
+      "motif_code": "B243",
+      "memory_state": "hypnosis",
+      "citation": "dark",
+      "reasoning": "The eyes are described as dark, implying large pupils or a uniform dark coloration.",
+      "chunk": 1
+    },
+    {
+      "sequence": 21,
+      "motif_code": "B252",
+      "memory_state": "hypnosis",
+      "citation": "sMall noses",
+      "reasoning": "The beings' noses are described as small or diminutive.",
+      "chunk": 1
+    },
+    {
+      "sequence": 22,
+      "motif_code": "B258",
+      "memory_state": "hypnosis",
+      "citation": "and vestigial Mouths.",
+      "reasoning": "The term 'vestigial' indicates a small, slit-like, or lipless mouth.",
+      "chunk": 1
+    },
+    {
+      "sequence": 23,
+      "motif_code": "B290",
+      "memory_state": "hypnosis",
+      "citation": "and their skin white.",
+      "reasoning": "The skin color of the beings is described as white, which falls into the gray/pale/ashen category.",
+      "chunk": 1
+    },
+    {
+      "sequence": 24,
+      "motif_code": "X155",
+      "memory_state": "hypnosis",
+      "citation": "The beings laid the witness on a e [table]",
+      "reasoning": "The witness is placed on a table in preparation for the examination.",
+      "chunk": 1
+    },
+    {
+      "sequence": 25,
+      "motif_code": "X220",
+      "memory_state": "hypnosis",
+      "citation": "and exaMined her with various devices,",
+      "reasoning": "The beings use multiple, unspecified instruments to conduct the physical examination.",
+      "chunk": 1
+    },
+    {
+      "sequence": 26,
+      "motif_code": "X231",
+      "memory_state": "hypnosis",
+      "citation": "scraped a skin le [sample]",
+      "reasoning": "A sample of the witness's skin is taken by scraping.",
+      "chunk": 1
+    },
+    {
+      "sequence": 27,
+      "motif_code": "X235",
+      "memory_state": "hypnosis",
+      "citation": "and drew fluid froM her eye.",
+      "reasoning": "A sample of bodily fluid (specifically, eye fluid) is extracted from the witness.",
+      "chunk": 1
+    },
+    {
+      "sequence": 28,
+      "motif_code": "B753",
+      "memory_state": "hypnosis",
+      "citation": "The beings took an interest in a surgical scar on her stoMach.",
+      "reasoning": "The beings show specific curiosity about a man-made alteration to the human body, in this case a surgical scar.",
+      "chunk": 1
+    }
+  ],
+  "stripped_text": "Christina Bryant I 28 I May 1976 I near Ala~agordo, New Mexico ·\n: about 4 hours\ntion: Bob Morgan <MUFQN)\n: 4(3)\nCapture. The witness was driving with her 4-year old\nson and a friend at 10:30 p.M. when she noticed lights\nchanging color in the sky. They soon found theMselves on a\nback road, approaching an apparent wreck with a policeMan\nnearby. He seeMed too well-dressed for patrol duty and his\ntouch was icy cold. They drove on and reached a truck stop 45\nMinutes later, where they found that the tiMe was 3 a.M.\nExaMination. Under hypnosis she reMeMbered that\nafter the \"policeMan\" touched her hand, he helped her out and\ntook her to a craft shaped like a coolie hat. She cliMbed a\ner to enter and sat in a chair, watching lines and stars\non a screen while the policeMan operated controls and\nseeMingly piloted the ship.\nHe led her through a door into a rooM with two surgical\nes. Her daughter slept on one, watched over by three\nless beings with large heads, large dark alMond-shaped\n, sMall noses and vestigial Mouths. Their bodies were\nand their skin white. The beings laid the witness on a\ne and exaMined her with various devices, scraped a skin\nle and drew fluid froM her eye. The beings took an\ninterest in a surgical scar on her stoMach.\n<San Antonio, Texas) !.J..Qhi, March 20, 1983."
+}
