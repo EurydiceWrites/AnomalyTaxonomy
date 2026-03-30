@@ -62,6 +62,19 @@ RETRIEVAL_CONTEXT_MAP = {
 }
 
 
+# --- Narrative structure context strings ---
+# These tell the LLM how the text is structured so it can extract events correctly.
+# Preambles will be written by Eurydice in a future session.
+NARRATIVE_STRUCTURE_MAP = {
+    'third_person_investigation': 'TODO: preamble pending Eurydice',
+    'interview_dialogue':         'TODO: preamble pending Eurydice',
+    'first_person_testimony':     'TODO: preamble pending Eurydice',
+    'literary_narration':         'TODO: preamble pending Eurydice',
+    'compiled_catalogue':         'TODO: preamble pending Eurydice',
+    'not_applicable':             '',
+}
+
+
 def flatten_motif_key(nested_dict):
     """
     Walk the nested motif_key.json structure and return a flat {code: description} dict.
@@ -83,8 +96,9 @@ def flatten_motif_key(nested_dict):
     return flat
 
 
-def extract_narrative(text, sticky_header, retrieval_method="unknown",
-                      profile_name="baseline", case_number=None):
+def extract_narrative(text=None, sticky_header="", retrieval_method="unknown",
+                      profile_name="baseline", case_number=None,
+                      pipeline_json_path=None, narrative_structure=None):
     """
     Sends narrative text to Gemini and returns structured extraction results.
 
@@ -92,12 +106,23 @@ def extract_narrative(text, sticky_header, retrieval_method="unknown",
     It loads the motif dictionary from motif_key.json (not the database), sends the text
     to Gemini in chunks, and returns the structured results.
 
+    Can be called in two ways:
+      1. Legacy mode (Phase 2b compatibility): pass text, sticky_header, etc. directly
+      2. Pipeline mode: pass pipeline_json_path — reads text and settings from the JSON
+
+    In pipeline mode, the extraction engine is temporally and culturally naive by design.
+    Only the narrative text, motif dictionary, Vol 1 context, prompt library rules, and
+    two preambles (retrieval method + narrative structure) enter the prompt. No dates,
+    locations, investigator names, or other contextual metadata are passed.
+
     Parameters:
-        text:              The raw narrative text to process
-        sticky_header:     Case metadata header passed to the LLM with each chunk
-        retrieval_method:  One of: conscious, hypnosis, altered, mixed, unknown
-        profile_name:      Which prompt profile to use from prompt_library.json (default: "baseline")
-        case_number:       Case identifier (e.g., "084"). Used for JSON output filename.
+        text:                The raw narrative text to process (legacy mode)
+        sticky_header:       Case metadata header passed to the LLM (legacy mode only)
+        retrieval_method:    One of: conscious, hypnosis, altered, mixed, unknown
+        profile_name:        Which prompt profile to use from prompt_library.json
+        case_number:         Case identifier (e.g., "084"). Used for JSON output filename.
+        pipeline_json_path:  Path to the pipeline JSON file (pipeline mode)
+        narrative_structure: One of the NARRATIVE_STRUCTURE_MAP keys (optional)
 
     Returns:
         (final_profile, all_events, ai_events_json) where:
@@ -105,6 +130,27 @@ def extract_narrative(text, sticky_header, retrieval_method="unknown",
         - all_events:      List of EncounterEvent objects (deduplicated, globally sequenced)
         - ai_events_json:  List of dicts in the format qa_triage.py expects
     """
+    # --- PIPELINE MODE: read settings from JSON ---
+    if pipeline_json_path:
+        with open(pipeline_json_path, "r", encoding="utf-8") as f:
+            pipeline_data = json.load(f)
+
+        # Read narrative text from the path stored in the JSON
+        text_path = pipeline_data["step_0"]["source_text_path"]
+        with open(text_path, "r", encoding="utf-8") as f:
+            text = f.read()
+
+        # Get the two preamble fields from the JSON
+        step1 = pipeline_data["step_1_scanned_metadata"]
+        retrieval_method = step1.get("memory_retrieval_method", "unknown")
+        narrative_structure = step1.get("narrative_structure", "not_applicable")
+
+        # No sticky_header in pipeline mode — the engine is intentionally naive
+        sticky_header = ""
+
+        print(f"[*] Pipeline mode: reading from {pipeline_json_path}")
+        print(f"    Text source: {text_path}")
+
     load_dotenv()
     client = genai.Client()
 
@@ -137,9 +183,15 @@ def extract_narrative(text, sticky_header, retrieval_method="unknown",
     for code, description in sorted(motif_dict.items()):
         motif_rules += f"- {code}: {description}\n"
 
-    # Look up the retrieval context string for this case's memory retrieval method
+    # Build the two preambles that enter the extraction prompt
     retrieval_context = RETRIEVAL_CONTEXT_MAP.get(retrieval_method, RETRIEVAL_CONTEXT_MAP['unknown'])
     print(f"[*] Retrieval method: {retrieval_method}")
+
+    structure_context = ""
+    if narrative_structure:
+        structure_context = NARRATIVE_STRUCTURE_MAP.get(narrative_structure, "")
+        if structure_context:
+            print(f"[*] Narrative structure: {narrative_structure}")
 
     # Load the prompt library and select the requested profile
     with open("prompt_library.json", "r", encoding="utf-8") as f:
@@ -211,7 +263,15 @@ def extract_narrative(text, sticky_header, retrieval_method="unknown",
     for chunk_idx, chunk_text in enumerate(chunks):
         print(f"\n--- PROCESSING CHUNK {chunk_idx + 1} OF {len(chunks)} ---")
 
-        payload = f"{retrieval_context}\n\n{sticky_header}\n\n[NARRATIVE CHUNK]\n{chunk_text}"
+        # Build the payload: preambles + sticky header (if any) + narrative chunk.
+        # In pipeline mode, sticky_header is empty and the two preambles guide extraction.
+        preamble_parts = [retrieval_context]
+        if structure_context:
+            preamble_parts.append(structure_context)
+        if sticky_header:
+            preamble_parts.append(sticky_header)
+        preamble = "\n\n".join(preamble_parts)
+        payload = f"{preamble}\n\n[NARRATIVE CHUNK]\n{chunk_text}"
 
         response = client.models.generate_content(
             model='gemini-2.5-pro',
@@ -298,6 +358,32 @@ def extract_narrative(text, sticky_header, retrieval_method="unknown",
             json.dump(json_output, f, indent=2, ensure_ascii=False)
         print(f"[*] JSON results saved to: {json_path}")
 
+    # --- MERGE BACK INTO PIPELINE JSON ---
+    # If running in pipeline mode, write extraction results back into the JSON file
+    if pipeline_json_path:
+        pipeline_data["step_3_extraction"] = {
+            "encounter_events": [
+                {
+                    "motif_code": ev["motif_code"],
+                    "sequence_order": ev["sequence"],
+                    "source_citation": ev["citation"],
+                    "memory_state": ev["memory_state"],
+                    "source_page": ev["source_page"],
+                    "ai_justification": ev["reasoning"],
+                    "emotional_marker": ev.get("emotional_marker"),
+                    "chunk": ev["chunk"],
+                }
+                for ev in ai_events_json
+            ],
+            "model_name": "gemini-2.5-pro",
+            "profile_used": profile_name,
+            "run_timestamp": datetime.now().isoformat(),
+        }
+
+        with open(pipeline_json_path, "w", encoding="utf-8") as f:
+            json.dump(pipeline_data, f, indent=2, ensure_ascii=False)
+        print(f"[*] Extraction results merged back into: {pipeline_json_path}")
+
     # Return just the EncounterEvent objects (without chunk index) for load_to_database
     events_only = [event for (_chunk_idx, event) in deduped_events]
 
@@ -324,8 +410,6 @@ def load_to_database(final_profile, all_events, case_number, source_citation,
     print(f"\nCommitting to database: {db_path}...")
     print(f"Subject: {final_profile.pseudonym}")
 
-    # Derive hypnosis_used from retrieval_method (no longer a separate field in CaseMetadata)
-    hypnosis_val = "YES" if retrieval_method == "hypnosis" else "NO"
     case_meta = CaseMetadata(
         memory_retrieval_method=retrieval_method
     )
@@ -351,18 +435,18 @@ def load_to_database(final_profile, all_events, case_number, source_citation,
         else:
             # Insert new Subject record
             cursor.execute("""
-                INSERT INTO Subjects (Pseudonym, Age, Baseline_Psychology, Hypnosis_Utilized, Gender)
-                VALUES (?, ?, ?, ?, ?)
-            """, (final_profile.pseudonym, final_profile.age, final_profile.narrative_summary, hypnosis_val, final_profile.gender))
+                INSERT INTO Subjects (Pseudonym, Age, Baseline_Psychology, Gender)
+                VALUES (?, ?, ?, ?)
+            """, (final_profile.pseudonym, final_profile.age, final_profile.narrative_summary, final_profile.gender))
 
             subject_id = cursor.lastrowid
             print(f"[*] Created Subject Record (ID: {subject_id})")
 
             # Insert new Encounter record
             cursor.execute("""
-                INSERT INTO Encounters (Subject_ID, Case_Number, Date_of_Encounter, Location_Type, Investigator_Credibility, Witness_Credibility, Source_Material, memory_retrieval_method, Encounter_Duration, Entity_Type, Number_of_Witnesses, Principal_Investigator)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            """, (subject_id, case_number, final_profile.date_of_encounter, final_profile.location, final_profile.investigator_credibility, final_profile.witness_credibility, source_citation, retrieval_method, final_profile.encounter_duration, final_profile.entity_type, final_profile.number_of_witnesses, final_profile.principal_investigator))
+                INSERT INTO Encounters (Subject_ID, Case_Number, Date_of_Encounter, Location_Type, Investigator_Credibility, Witness_Credibility, Source_Material, memory_retrieval_method, Entity_Type, Principal_Investigator)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """, (subject_id, case_number, final_profile.date_of_encounter, final_profile.location, final_profile.investigator_credibility, final_profile.witness_credibility, source_citation, retrieval_method, final_profile.entity_type, final_profile.principal_investigator))
             encounter_id = cursor.lastrowid
             print(f"[*] Created Encounter Record (ID: {encounter_id})")
 
@@ -393,9 +477,9 @@ def load_to_database(final_profile, all_events, case_number, source_citation,
 
             try:
                 cursor.execute("""
-                    INSERT INTO Encounter_Events (Encounter_ID, Sequence_Order, Motif_Code, Emotional_Marker, Source_Citation, memory_state, source_page, ai_justification)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-                """, (encounter_id, global_sequence, event.motif_code, event.emotional_marker, event.source_citation, event.memory_state, event.source_page, event.ai_justification))
+                    INSERT INTO Encounter_Events (Encounter_ID, Sequence_Order, Motif_Code, Source_Citation, memory_state, source_page, ai_justification)
+                    VALUES (?, ?, ?, ?, ?, ?, ?)
+                """, (encounter_id, global_sequence, event.motif_code, event.source_citation, event.memory_state, event.source_page, event.ai_justification))
 
                 emotion_str = f"Emotion: {event.emotional_marker}" if event.emotional_marker else "No explicit emotion"
 
