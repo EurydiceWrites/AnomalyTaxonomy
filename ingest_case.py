@@ -27,7 +27,7 @@ def extract_metadata_with_ai(full_text: str) -> CaseMetadata:
     prompt = f"Analyze the following full narrative from a UFO abduction case study. Determine the subject's name and age, the primary investigator's credentials, whether hypnosis was utilized, and generate a temporal map for data extraction (a primary event summary and instructions on peripheral memories to ignore).\n\nTEXT:\n{full_text}"
     
     response = client.models.generate_content(
-        model='gemini-2.5-pro',
+        model='gemini-3.1-pro-preview',
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",

@@ -98,7 +98,7 @@ def process_case(case_number, enc_id, extraction_text, master_prompt_template,
         while not success and retries > 0:
             try:
                 response = client.models.generate_content(
-                    model='gemini-2.5-pro',
+                    model='gemini-3.1-pro-preview',
                     contents=full_prompt,
                     config=types.GenerateContentConfig(
                         response_mime_type="application/json",

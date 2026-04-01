@@ -239,7 +239,7 @@ def extract_narrative(text=None, sticky_header="", retrieval_method="unknown",
 
             print("Caching the book into the AI's permanent memory...")
             cached_context = client.caches.create(
-                model='gemini-2.5-pro',
+                model='gemini-3.1-pro-preview',
                 config=types.CreateCachedContentConfig(
                     contents=[bullard_vol1],
                     system_instruction=system_instruction,
@@ -274,7 +274,7 @@ def extract_narrative(text=None, sticky_header="", retrieval_method="unknown",
         payload = f"{preamble}\n\n[NARRATIVE CHUNK]\n{chunk_text}"
 
         response = client.models.generate_content(
-            model='gemini-2.5-pro',
+            model='gemini-3.1-pro-preview',
             contents=payload,
             config=types.GenerateContentConfig(
                 cached_content=cached_context.name,
@@ -375,7 +375,7 @@ def extract_narrative(text=None, sticky_header="", retrieval_method="unknown",
                 }
                 for ev in ai_events_json
             ],
-            "model_name": "gemini-2.5-pro",
+            "model_name": "gemini-3.1-pro-preview",
             "profile_used": profile_name,
             "run_timestamp": datetime.now().isoformat(),
         }
