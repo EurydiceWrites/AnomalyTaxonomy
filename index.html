@@ -269,12 +269,15 @@
                 return ["ALL", ...Array.from(new Set(architecture.map(a => a.full_category)))];
             }, [architecture]);
 
+            const uniqueSources = useMemo(() => {
+                return ["ALL", ...Array.from(new Set(cases.map(c => c.source || "Unknown"))).sort()];
+            }, [cases]);
+
             const filteredCases = useMemo(() => {
                 return cases.filter(c => {
                     if (filterMulti && c.num_subjects < 2) return false;
                     if (filterHypnosis && c.hypnosis !== 1) return false;
-                    if (filterSource === "Bullard" && (!c.source || !c.source.includes("Bullard"))) return false;
-                    if (filterSource === "Mack" && (!c.source || !c.source.toLowerCase().includes("mack"))) return false;
+                    if (filterSource !== "ALL" && (c.source || "Unknown") !== filterSource) return false;
                     if (filterMotifCat !== "ALL" && (!c.motifs_present || !c.motifs_present.includes(filterMotifCat))) return false;
                     
                     if (filterMotifCodes.length > 0) {
@@ -451,9 +454,9 @@
                                 value={filterSource}
                                 onChange={(e) => setFilterSource(e.target.value)}
                             >
-                                <option value="ALL" className="bg-gray-900">All Sources</option>
-                                <option value="Bullard" className="bg-gray-900">Bullard Archive</option>
-                                <option value="Mack" className="bg-gray-900">John Mack Casework</option>
+                                {uniqueSources.map(s => (
+                                    <option key={s} value={s} className="bg-gray-900">{s === "ALL" ? "All Sources" : s}</option>
+                                ))}
                             </select>
                         </div>
 

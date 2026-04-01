@@ -4,8 +4,9 @@
 -- 1. Subjects Table
 CREATE TABLE IF NOT EXISTS Subjects (
     Subject_ID INTEGER PRIMARY KEY AUTOINCREMENT,
-    Pseudonym VARCHAR,
-    Age VARCHAR,
+    Pseudonym VARCHAR NOT NULL,
+    Age INTEGER,
+    Gender VARCHAR,
     Baseline_Psychology TEXT,
     Hypnosis_Utilized BOOLEAN
 );
@@ -15,19 +16,21 @@ CREATE TABLE IF NOT EXISTS Encounters (
     Encounter_ID INTEGER PRIMARY KEY AUTOINCREMENT,
     Subject_ID INTEGER NOT NULL,
     Case_Number VARCHAR,
-    Date_of_Encounter DATE,
+    Date_of_Encounter VARCHAR,
     Location_Type VARCHAR,
     Conscious_Recall BOOLEAN,
     Investigator_Credibility VARCHAR,
     Witness_Credibility VARCHAR,
     Source_Material VARCHAR,
     is_hypnosis_used BOOLEAN,
+    Number_of_Witnesses INTEGER,
+    Entity_Type VARCHAR,
     FOREIGN KEY (Subject_ID) REFERENCES Subjects(Subject_ID)
 );
 
 -- 3. Motif_Dictionary (The Taxonomy Table)
 CREATE TABLE IF NOT EXISTS Motif_Dictionary (
-    motif_number VARCHAR PRIMARY KEY, 
+    motif_number VARCHAR PRIMARY KEY,
     current_family_header VARCHAR,
     current_family VARCHAR,        
     current_subfamily VARCHAR,
@@ -45,6 +48,7 @@ CREATE TABLE IF NOT EXISTS Encounter_Events (
     memory_state VARCHAR,
     source_page VARCHAR,
     ai_justification TEXT,
+    run_timestamp TEXT,
     FOREIGN KEY (Encounter_ID) REFERENCES Encounters(Encounter_ID),
     FOREIGN KEY (Motif_Code) REFERENCES Motif_Dictionary(Motif_Code)
 );

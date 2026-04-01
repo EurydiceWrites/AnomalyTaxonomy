@@ -17,6 +17,7 @@ class CaseMetadata(BaseModel):
     case_id: str = Field(description="A unique, capitalized case ID containing the investigator and subject name (e.g., 'MACK_ED_01').")
     primary_event_summary: str = Field(description="A one-sentence summary of the primary abduction or encounter event that is the central focus of this chapter.")
     temporal_boundaries: str = Field(description="Instructions for the Motif AI extractor on which events to focus on and which peripheral memories (like childhood dreams or regressions not related to the primary event) to ignore. e.g., 'Focus ONLY on the 1989 abduction. Ignore mentions of childhood sightings.'")
+    encounter_duration: str = Field(description="The estimated total duration of the encounter or 'missing time' (e.g., '3 Hours', '2 Days'). If no timeframe is explicitly stated or can be inferred, output 'Unknown'.")
 
 def extract_metadata_with_ai(full_text: str) -> CaseMetadata:
     """Uses a Gemini call to read the full chapter text and determine the clinical metadata and temporal boundaries."""
@@ -44,7 +45,8 @@ def main():
     parser.add_argument("--pdf", required=True, help="Path to the PDF source file.")
     parser.add_argument("--start", type=int, required=True, help="Starting page number (1-indexed).")
     parser.add_argument("--end", type=int, required=True, help="Ending page number (1-indexed, inclusive).")
-    parser.add_argument("--source", default="Mack, J. E. (1994). Abduction: Human Encounters with Aliens. Scribner.", help="Academic citation for the source material.")
+    parser.add_argument("--source", required=True, help="Academic citation for the source material.")
+    parser.add_argument("--case-id", required=False, help="Explicitly link the generated events to an existing historical DB index (e.g. '192g'). Overrides AI generation.")
 
     args = parser.parse_args()
 
@@ -72,6 +74,10 @@ def main():
     # Phase 10 Upgrade: Send the FULL TEXT instead of just the first page to generate the Temporal Boundaries map
     print("\n[2/3] Automating Metadata Extraction (Full-Pass Mapping)...")
     metadata: CaseMetadata = extract_metadata_with_ai(raw_text)
+    
+    if args.case_id:
+        metadata.case_id = args.case_id
+        print(f"\n[*] DB OVERRIDE: Forcing AI Extractions to attach to Historical Encyclopedia Case '{args.case_id}'")
     
     print("--------------------------------------------------")
     print(f"Subject      : {metadata.subject}")

@@ -1,0 +1,217 @@
+{
+  "case_number": "180b",
+  "ground_truth_count": 16,
+  "ai_count": 17,
+  "exact_matches": 3,
+  "near_misses": 4,
+  "ai_extras": 10,
+  "ai_misses": 9,
+  "match_rate": 18.8,
+  "combined_rate": 43.8,
+  "exact_match_codes": [
+    "E300",
+    "U120",
+    "X155"
+  ],
+  "near_miss_details": [
+    [
+      "U101",
+      "U100",
+      1
+    ],
+    [
+      "U202",
+      "U211",
+      9
+    ],
+    [
+      "X222",
+      "X221",
+      1
+    ],
+    [
+      "E213",
+      "E218",
+      5
+    ]
+  ],
+  "missed_codes": [
+    "E200",
+    "A110",
+    "A100",
+    "U134",
+    "E123",
+    "E201",
+    "A107",
+    "X225",
+    "W415"
+  ],
+  "extra_codes": [
+    "E315",
+    "B201",
+    "B201",
+    "B230",
+    "B241",
+    "B244.1",
+    "ANOMALY",
+    "U220",
+    "U230",
+    "M100"
+  ],
+  "ai_events": [
+    {
+      "sequence": 1,
+      "motif_code": "E315",
+      "source_page": "169, 172-173",
+      "memory_state": "conscious",
+      "citation": "The witness awoke in the night, unable to speak or Move,",
+      "reasoning": "The witness's inability to speak or move upon waking is a clear instance of paralysis.",
+      "chunk": 1
+    },
+    {
+      "sequence": 2,
+      "motif_code": "U120",
+      "source_page": "169, 172-173",
+      "memory_state": "conscious",
+      "citation": "while a light shone into the rooM",
+      "reasoning": "A light shining into the room from an external, presumably UFO-related source, fits the description of a beam of light.",
+      "chunk": 1
+    },
+    {
+      "sequence": 3,
+      "motif_code": "B201",
+      "source_page": "169, 172-173",
+      "memory_state": "conscious",
+      "citation": "and a humanoid figure looked in at the third-floor window",
+      "reasoning": "The narrative explicitly identifies the figure as a 'humanoid'.",
+      "chunk": 1
+    },
+    {
+      "sequence": 4,
+      "motif_code": "E218",
+      "source_page": "170, 173-174, 178",
+      "memory_state": "conscious",
+      "citation": "he dressed and went outside, guided by an inner urge onto the grounds of a deserted Mansion",
+      "reasoning": "The witness acts on an 'inner urge' without a rational explanation, which corresponds to the motif of acting as if predestined or under external control.",
+      "chunk": 1
+    },
+    {
+      "sequence": 5,
+      "motif_code": "B201",
+      "source_page": "170, 173-174, 178",
+      "memory_state": "conscious",
+      "citation": "where he Met a group of huManoid beings with an eMbryonic appearance.",
+      "reasoning": "The narrative explicitly identifies the beings as 'humanoid' and provides a description consistent with this type.",
+      "chunk": 1
+    },
+    {
+      "sequence": 6,
+      "motif_code": "B230",
+      "source_page": "170, 173-174, 178",
+      "memory_state": "conscious",
+      "citation": "They had large crania",
+      "reasoning": "The description of 'large crania' directly matches the motif for a large head.",
+      "chunk": 1
+    },
+    {
+      "sequence": 7,
+      "motif_code": "B241",
+      "source_page": "170, 173-174, 178",
+      "memory_state": "conscious",
+      "citation": "and large, seeMingly Metallic eyes",
+      "reasoning": "The eyes are explicitly described as 'large'.",
+      "chunk": 1
+    },
+    {
+      "sequence": 8,
+      "motif_code": "B244.1",
+      "source_page": "170, 173-174, 178",
+      "memory_state": "conscious",
+      "citation": "seeMingly Metallic eyes",
+      "reasoning": "The 'Metallic' appearance of the eyes is a color/texture that is not dark or a standard iris color, fitting this 'Other color' motif.",
+      "chunk": 1
+    },
+    {
+      "sequence": 9,
+      "motif_code": "ANOMALY",
+      "source_page": "170, 173-174, 178",
+      "memory_state": "conscious",
+      "citation": "The skin was flesh colored and lined with blood vessels",
+      "reasoning": "The skin color is described as 'flesh colored' and 'lined with blood vessels', which does not fit the standard 'gray, pale, ashen or claylike' description of B290, nor any other skin color code.",
+      "chunk": 1
+    },
+    {
+      "sequence": 10,
+      "motif_code": "U100",
+      "source_page": "179",
+      "memory_state": "conscious",
+      "citation": "He saw a landed craft like a flying saucer nearby",
+      "reasoning": "The craft is described as being 'like a flying saucer,' which is the classic disk shape.",
+      "chunk": 1
+    },
+    {
+      "sequence": 11,
+      "motif_code": "X155",
+      "source_page": "174-175, 177-178",
+      "memory_state": "unconscious",
+      "citation": "He found hiMself reclining in a doMed rooM",
+      "reasoning": "The phrase 'He found himself' implies a period of missing time or unconsciousness, after which he is on a surface for examination. 'Reclining' fits the posture for this motif.",
+      "chunk": 1
+    },
+    {
+      "sequence": 12,
+      "motif_code": "U211",
+      "source_page": "174-175, 177-178",
+      "memory_state": "conscious",
+      "citation": "in a doMed rooM",
+      "reasoning": "The interior room of the craft is explicitly described as 'domed'.",
+      "chunk": 1
+    },
+    {
+      "sequence": 13,
+      "motif_code": "U220",
+      "source_page": "174-175, 177-178",
+      "memory_state": "conscious",
+      "citation": "illuMinated with a white, hazy light.",
+      "reasoning": "The color of the interior light is specified as 'white'.",
+      "chunk": 1
+    },
+    {
+      "sequence": 14,
+      "motif_code": "U230",
+      "source_page": "174-175, 177-178",
+      "memory_state": "conscious",
+      "citation": "illuMinated with a white, hazy light.",
+      "reasoning": "A 'hazy' light implies a diffuse, sourceless illumination, which is characteristic of this motif.",
+      "chunk": 1
+    },
+    {
+      "sequence": 15,
+      "motif_code": "M100",
+      "source_page": "174-175, 177-178",
+      "memory_state": "conscious",
+      "citation": "At soMe point the beings told hiM everything would be all right,",
+      "reasoning": "This is a direct statement of reassurance from the beings to the witness, promising safety.",
+      "chunk": 1
+    },
+    {
+      "sequence": 16,
+      "motif_code": "E300",
+      "source_page": "174-175, 177-178",
+      "memory_state": "conscious",
+      "citation": "and he felt calM",
+      "reasoning": "The witness experiences a feeling of calm despite the circumstances, which is the definition of the pacification effect.",
+      "chunk": 1
+    },
+    {
+      "sequence": 17,
+      "motif_code": "X221",
+      "source_page": "174-175, 177-178",
+      "memory_state": "conscious",
+      "citation": "while two glowing spheres flanked his head",
+      "reasoning": "This describes specific, non-handheld equipment used during the examination procedure. The motif of spheres flanking the head is a known variant of instrumental examination.",
+      "chunk": 1
+    }
+  ],
+  "stripped_text": "---- I 20 I 1964 I Pittsburgh, Pennsylvania\nCapture. The witness awoke in the night, unable to\nk or Move, while a light shone into the rooM and a huMan\noid figure looked in at the third-floor window <169, 172-3,\n). When the paralysis passed he dressed and went outside,\nguided by an inner urge onto the grounds of a deserted Mansion\nwhere he Met a group of huManoid beings with an eMbryonic\nappearance. They had large crania and large, seeMingly Metal-\nlic eyes recessed beneath the forehead. The skin was flesh\ncolored and lined with blood vessels ( 170, 173-4, 178). He\nsaw a landed craft like a flying saucer nearby ( 179).\nExaMination. He found hiMself reclining in a doMed\nrooM illuMinated with a white, hazy light. At soMe point the\nbeings told hiM everything would be all right, and he felt\nwhile two glowing spheres flanked his head <174-5,177-8).\nAgain in 1979 he awoke paralyzed ( 155)."
+}

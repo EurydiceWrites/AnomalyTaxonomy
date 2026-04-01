@@ -1,845 +1,552 @@
 {
-    "E--EFFECTS.": {
-        "E100-199. Unnatural Physical PhenoMena.": {
-            "E100-109. Extraordinary perceptions of the environMent.": {
-                "E100": "VacuuM effect: stillness, silence.",
-                "E101": "Pressure effects: ears pop, head hurts.",
-                "E102": "Isolation effect: everyone but witness oblivious to UFO.",
-                "E106": "Perceptual distortions and illusions."
-            },
-            "E110-119. Extraordinary states of being.": {
-                "E110": "IMMateriality (e.g., pass through a wall).",
-                "E111": "Out-of-body experience.",
-                "E115": "Disappearance."
-            },
-            "E120-129. PhenoMena counter to physical nature.": {
-                "E120": "Floating effect: apparent weightlessness.",
-                "E121": "Pseudo-floating effect: witness only feels light, or is",
-                "E123": "Levitation: drawing force.",
-                "E124": "Levitation in beaM of light.",
-                "E125": "Light behaves in odd way (e.g., \"solid light\"),"
-            },
-            "E130-139. Extraordinary distortions of tiMe.": {
-                "E130": "TiMe slows down.",
-                "E135": "TiMe speeds up."
-            }
-        },
-        "E200-299. Unusual Feelings and States of Conaciouaneaa.": {
-            "E200-209. Unusual states of consciousness.": {
-                "E200": "TiMe lapse.",
-                "E201": "Doorway aMnesia: blackout on entering or leaving craft.",
-                "E202": "Witness unconscious and iMMobilized.",
-                "E203": "Rule of differential MeMory: in Multiple-witness cases,",
-                "E204": "SaMi-consciousness, disorientation, dizziness, drained",
-                "E205": "Relocation: witness travels a distance unawares.",
-                "E207": "Obliviousness to others and vice-versa.",
-                "E208": "PreMonition: sense that soMething will happen."
-            },
-            "E210-219. Unusual behaviors.": {
-                "E210": "SoMnaMbulisM: walks while asleep or in daze.",
-                "E211": "Keeps eyes down or closed.",
-                "E212": "Lassitude, weakness.",
-                "E213": "Preference: one witness taken, others left iMMobile or",
-                "E214": "Witness reassures self or obeys beings as if they know",
-                "E215": "Inappropriate response or uncharacteristic behavior: odd",
-                "E216": "Denial of defense iMpulse.",
-                "E217": "Non-denial of defense: fight.",
-                "E218": "Predestination: act without knowing why, or on an irre"
-            }
-        },
-        "E300-399. Indications of Control.": {
-            "E300-309. Control of Mood.": {
-                "E300": "Pacification effect: witness calM, euphoric, relaxed.",
-                "E301": "Friendly effect: witness senses kindness or feels as if",
-                "E302": "Rapture effect: sense of joy, beauty.",
-                "E303": "Sadness effect: sense of loss on departure.",
-                "E306": "Pacification periodically wears off."
-            },
-            "E310-319. Control of MoveMent.": {
-                "E310": "Heavy effect: witness feels heavy, prickly.",
-                "E311": "Electrical effect: shock, tingle, itch.",
-                "E313": "Only hands influenced, or feel pain.",
-                "E314": "Force pins witness down or pushes hiM.",
-                "E315": "Paralysis, nuMbness.",
-                "E316": "Witness Moves in slow Motion.",
-                "E317": "An invisible barrier bars the witness."
-            },
-            "E320-329. Control of thought, feeling and behavior.": {
-                "E320": "Control by touch or gesture.",
-                "E321": "Laying on of hands or other \"Magical\" relief of pain.",
-                "E322": "Eyes of beings hypnotic or coMpelling.",
-                "E323": "Voice or repetition of request is coMpelling.",
-                "E325": "Control by devices or injection.",
-                "E326": "LuMinous globe controls witness.",
-                "E327": "BeaM of light controls witness.",
-                "E328": "Sound accoMpanies control.",
-                "E329": "Sensation of burning accoMpanies control."
-            }
-        },
-        "E400-499. Effects on Machinery.": {
-            "E400-409. Influences on operation.": {
-                "E400": "ElectroMagnetic effects: Malfunction of engine, electri-",
-                "E403": "Radio statrc.",
-                "E405": "Effects on watches, Mileage Meters.",
-                "E408": "Unusually low fuel consuMption.",
-                "E409": "Unusually high fuel consuMption."
-            },
-            "E410-419. Control of vehicle or other Machinery.": {
-                "E410": "1. Vehicle skids sideways.",
-                "E411": "Beings control vehicle through control of witness (e.g.,",
-                "E412": "Car rides above ground, or SMoothly and without buMps.",
-                "E414": "A broad highway or repetitive scenery appears to the",
-                "E415": "Vehicle reaches unusual, often inaccessible place or",
-                "E416": "A Machine acts as if on its own, without huMan control."
-            }
-        },
-        "E500-599. Effects on An1Mala.": {
-            "E500-509. AniMals acknowledge the presence of a UFO or beings.": {
-                "E500": "AniMals respond with arousal, barking.",
-                "E501": "Physical effects: paralysis.",
-                "E505": "Fear."
-            }
-        }
-    },
-    "U--THE UFO.": {
-        "U100-199. External Appearance.": {
-            "U100-109. Shape.": {
-                "U100": "Disk.",
-                "U101": "DoMed disk, Saturn shape.",
-                "U102": "Oval or egg shape.",
-                "E102": "1. ClaM or oyster shape.",
-                "U103": "Sphere.",
-                "U104": "Bell, MushrooM or top shape.",
-                "U105": "Upright cylinder.",
-                "U106": "Upright rectangular (\"phone booth\").",
-                "U107": "Cigar shape.",
-                "U109": "Rectangular shape."
-            },
-            "U120-129. Lights, luMinosity.": {
-                "U120": "BeaM of light iMMerses the witness.",
-                "U123": "Lights surround riM of craft."
-            },
-            "U130-139. Exterior features.": {
-                "U130": "Windows.",
-                "U131": "Doors.",
-                "U132": "Doors close seaMlessly.",
-                "U133": "1. RaMp Made of light.",
-                "U134": "Landing gear.",
-                "U135": "EMbleMs."
-            },
-            "U140-149. Color, texture.": {
-                "U140": "Silvery Metallic.",
-                "U141": "Du 11 Met a 11 i c .",
-                "U145": "5Mooth.",
-                "U146": "Rough."
-            },
-            "U150-159. Association with other craft.": {
-                "U150": "Mother ship.",
-                "U151": "ForMation.",
-                "U155": "Satellite craft."
-            },
-            "U160-169. Association with earthly features.": {
-                "U160": "Power lines.",
-                "U165": "Water."
-            },
-            "U170-179. Associated phenoMena.": {
-                "U170": "Mist, sMoke, fog."
-            }
-        },
-        "U200-299. Interior Appearance.": {
-            "U200-209. Types of rooMs present.": {
-                "U200": "AntechaMber, elevator.",
-                "U201": "Tunnel, passageway.",
-                "U202": "ExaMination rooM.",
-                "U203": "Control rooM.",
-                "U204": "Engine rooM.",
-                "U205": "Living quarters.",
-                "U206": "Dressing closet.",
-                "U207": "Passenger cabin."
-            },
-            "U210-219. Shape of rooM.": {
-                "U211": "DoMed.",
-                "U212": "Round, doMed, without sharp edges.",
-                "U213": "Wedge or pie-shaped, seMi-oval."
-            },
-            "U220-229. Color.": {
-                "U220": "White.",
-                "U221": "Silvery.",
-                "U222": "Blue."
-            },
-            "U230-239. Lightini;i.": {
-                "U230": "Bright and uniforM, without specific source.",
-                "U231": "Bright and Misty.",
-                "U235": "Bright source located above the witness.",
-                "U236": "DiM, indirect."
-            },
-            "U240-249. Material of construction.": {
-                "U240": "Metallic.",
-                "U241": "Glassy."
-            },
-            "U250-259. AtM011phere.": {
-                "U250": "Cold.",
-                "U251": "Misty.",
-                "U252": "SPlells of ozone, sulphur, Metal.",
-                "U253": "Air noxious, sickening, irritating.",
-                "U255": "Hot, stifling.",
-                "U256": "Air heavy, Moist, hard to breathe.",
-                "U257": "RooM changes froM cold to warM.",
-                "U259": "Silence."
-            }
-        },
-        "U300-399. and Furnishings Inside.": {
-            "U300-309. ExaMination equipMent.": {
-                "U300": "RooM has exaMination table or bed.",
-                "U301": "RooPI has exaMination chair or stool.",
-                "U302": "SpeciMen or instruMent cabinet.",
-                "U303": "Electronic devices reseMbling coMputers; console or de-",
-                "U304": "Needles attached to cables, probes.",
-                "U305": "An eyelike device lowers froM the ceiling.",
-                "U306": "Screen or furniture with controls.",
-                "U307": "X-ray panel.",
-                "U309": "A window, transparent wall or barrier separates witness"
-            },
-            "U320-329. Engine rooM.": {
-                "U320": "RooM contains rotating crystalline spheres.",
-                "U323": "RooM contains rafters or has unfinished look."
-            },
-            "U330-339. Living quarters.": {
-                "U335": "Recreation rooM."
-            },
-            "U350-359. Miscellaneous equipMent and iMpressions.": {
-                "U350": "The ship contains a clocklike dial device.",
-                "U351": "The ship contains a cube or screen displaying clouds,",
-                "U352": "The elevator lowers through the floor.",
-                "U355": "Interior seeM5 too large relative to the external ap",
-                "U356": "Beings can exaMine only one witness at a tiMe because of"
-            }
-        },
-        "U500-599. Behavior of the UFO.": {
-            "U500-509. Capture behavior.": {
-                "U500": "The UFO paces a car.",
-                "U501": "The UFO nears and circles.",
-                "U502": "The UFO inclines toward the witness and reveals beings.",
-                "U503": "The UFO descends ahead of the car."
-            },
-            "U510-519. Maneuvers.": {
-                "U510": "Hovers.",
-                "U512": "Hovers or Moves with penduluM or rocking Motion.",
-                "U513": "Flips on end or Moves in up-and-down zigzag.",
-                "U514": "Right-angle turn."
-            },
-            "U520-529. Takeoff.": {
-                "U520": "The craft rises slowly for a few hundred feet, then",
-                "U525": "High teMperature accoMpanies takeoff, landing.",
-                "U528": "Abrupt disappearance."
-            },
-            "U530-539. Sound.": {
-                "U530": "The witness hears a buzzing, huMMing or other Monotonous",
-                "U531": "The witness hears a whistle or hi often shri 11.",
-                "U533": "The witness hears an airplane sound, whoosh or ruMble."
-            },
-            "U540-549. Changes in lighting.": {
-                "U540": "Pulsation."
-            },
-            "U550-559. Changes in exterior features.": {
-                "U550": "Part of UFO revolves."
-            }
-        }
-    },
-    "B--THE BEINGS.": {
-        "B100-199. Unseen Beings.": {
-            "B100-109. Evidence for unseen beings.": {
-                "B100": "Beings present but unseen.",
-                "B101": "Unseen beings are heard or sensed."
-            }
-        },
-        "B200-299. Visible 8eings--Appearance.": {
-            "B200-209. Type of being.": {
-                "B200": "Non-huManoid.",
-                "B201": "HuManoid.",
-                "B202": "HuMan.",
-                "B203": "Monstrous huManoid.",
-                "B205": "Robot.",
-                "B206": "Android, clone.",
-                "B207": "Apparition.",
-                "B208": "Dog (8argest)."
-            },
-            "B210-212. Sex.": {
-                "B210": "Masculine.",
-                "B211": "FeMinine.",
-                "B212": "Neuter."
-            },
-            "B220-229. Size, physique.": {
-                "B220": "Short (3.5 feet or less).",
-                "B221": "Moderately short <4-5 feet),",
-                "B222": "Average (5.5-6 feet).",
-                "B223": "Tall (over 6 feet).",
-                "B225": "Spindly build, slight Musculature.",
-                "B226": "Average build.",
-                "B227": "Robust build."
-            },
-            "B230-239. Head and neck.": {
-                "B230": "Head large.",
-                "B231": "Head average.",
-                "B232": "Head SMall.",
-                "B233": "Head egg or pear shaped, with pointed chin, large cran-",
-                "B234": "Head oval, larger at top.",
-                "B235": "Head oval, larger at bottoM.",
-                "B238": "Being has no neck, head set directly on shoulders."
-            },
-            "B240-249. Eyes.": {
-                "B240": "1. NuMber other than two.",
-                "B241": "2. SMall size.",
-                "B242": "1. Shape round, protruding.",
-                "B243": "Eyes entirely dark.",
-                "B244": "2. Insect, coMpound eye.",
-                "B245": "LuMinous.",
-                "B246": "Eyes unblinking, staring, hypnotic.",
-                "B247": "Eyes blink in unusual way.",
-                "B248": "Eyes enlarge extraordinarily.",
-                "B249": "Eyes transparent or translucent, as if real eyes under"
-            },
-            "B250-259. Face.": {
-                "B250": "General cast Mongoloid, round or childlike.",
-                "B251": "Flat, high cheekbones.",
-                "B252": "Nose absent or diMinutive; holes only.",
-                "B253": "Nose flat or thin.",
-                "B254": "Ears close against head, absent, or holes only.",
-                "B255": "Ears projecting points.",
-                "B256": "Ears large and fanlike.",
-                "B257": "t. Teeth absent or sparse.",
-                "B258": "Mouth slitlike, lips thin.",
-                "B259": "Mouth large but lipless."
-            },
-            "B260-269. Chest, torso.": {
-                "B260": "Broad chest, shoulders.",
-                "B261": "Narrow chest, shoulders.",
-                "B265": "Narrow waist."
-            },
-            "B270-279. LiMbS,": {
-                "B270": "Extraordinarily long and spindly.",
-                "B271": "Thin.",
-                "B272": "Unusually short.",
-                "B275": "AbnorMally jointed.",
-                "B276": "CoMpletely flexible.",
-                "B277": "Mechanical.",
-                "B278": "Legs are pedestal-like (\"uniped\" )."
-            },
-            "B280-289. Hands, feet.": {
-                "B280": "Digits fewer than norMal.",
-                "B281": "Webbed.",
-                "B282": "Crab-claws.",
-                "B283": "Fused fingers and thuMb (Mittens).",
-                "B284": "Fingers balloon-like.",
-                "B285": "Fingers long and thin.",
-                "B287": "No hands.",
-                "B288": "Duck feet."
-            },
-            "B290-299. Skin, hair.": {
-                "B290": "Skin white, gray, ashen or claylike.",
-                "B291": "Skin cold, sunless, sickly, soft.",
-                "B292": "Skin wrinkled, scaly, MuMMylike, froglike.",
-                "B293": "Green.",
-                "B294": "Dark, olive.",
-                "B295": "Hair absent.",
-                "B296": "Hair sparse.",
-                "B297": "Hair artificial: wig or SMooth like plastic.",
-                "B298": "Being hairy, bearded."
-            }
-        },
-        "B300-399. Clothing.": {
-            "B300-309. General appearance.": {
-                "B300": "Coverall, one-piece.",
-                "B301": "Tight-fitting.",
-                "B302": "Diving suit, astronaut or space suit.",
-                "B303": "Un if orM.",
-                "B305": "Plastic.",
-                "B306": "Metallic.",
-                "B307": "Leather-like.",
-                "B308": "Rubbery."
-            },
-            "B310-319. Above the waist.": {
-                "B310": "Face Mask.",
-                "B315": "Cape, cloak.",
-                "B317": "Gloves.",
-                "B318": "Mittens."
-            },
-            "B330-339. Belts.": {
-                "B330": "Broad.",
-                "B331": "Belt has lights or jewels.",
-                "B335": "Breast strap, SaM Browne belt."
-            },
-            "B340-349. Headgear.": {
-                "B340": "HelMet, cap.",
-                "B341": "HelMet with visor or dark plate covering the eyes.",
-                "B342": "Coverall clothing covers head except for face.",
-                "B343": "Space helMet",
-                "B344": "Transparent face cover.",
-                "B345": "Hood.",
-                "B346": "Face Mask.",
-                "B347": "Headphones, coMMunication equipMent.",
-                "B348": "<Rotating) antenna on head."
-            },
-            "B350-359. Footgear.": {
-                "B350": "Boots."
-            },
-            "B360-369. Color of clothing.": {
-                "B360": "White.",
-                "B361": "Off-white, gray.",
-                "B362": "Red.",
-                "B363": "Blue.",
-                "B364": "Green.",
-                "B365": "Dark.",
-                "B366": "Black.",
-                "B367": "Silvery.",
-                "B368": "Phosphorescent."
-            },
-            "B370-379. Insignia.": {
-                "B370": "Triangular.",
-                "B375": "Bird.",
-                "B376": "Winged serpent.",
-                "B378": "AniMal."
-            }
-        },
-        "B400-499. Paraphernalia.": {
-            "B400-409. Breathing equipMent.": {
-                "B400": "Tube enters clothing or attaches to backpack.",
-                "B402": "Fask f'l1ask.",
-                "B403": "Diver's helJ'llet, pressure suit."
-            },
-            "B410-419. Hand tools.": {
-                "B410": "Light like flashlight or pistol.",
-                "B411": "Paralysis gun.",
-                "B415": "Floating toolbox."
-            },
-            "B420-429. Gear attached to or built into clothing.": {
-                "B420": "Light frof'l1 box on chest.",
-                "B425": "CoMMUnication device."
-            }
-        },
-        "B500-599. MoveMente of Beings.": {
-            "B500-509. LOCOMOtion.": {
-                "B500": "Beings glide or float.",
-                "B501": "Beings niMble, unusually strong.",
-                "B502": "Beings juMp or leap.",
-                "B503": "Beings Move in tandeM.",
-                "B504": "Beings Move in a cluMsy, stiff or crippled fashion.",
-                "B505": "Beings turn into light.",
-                "B506": "Beings disappear and reappear.",
-                "B509": "Photophobia: retreat froM or stay clear of light, sound."
-            }
-        },
-        "B600-699. Duties and Work.": {
-            "B610-619. Guide, escort work.": {
-                "B610": "Two beings flank the witness and hold hiM by upper arMs"
-            },
-            "B620-629. Guard, capture work.": {
-                "B620": "Stand guard, direct traffic.",
-                "B625": "Man a roadblock.",
-                "B626": "Surround car, break in."
-            },
-            "B650-659. Other duties on earth.": {
-                "B650": "Gather saMples."
-            },
-            "B660-659. Powers.": {
-                "B660": "Levitate"
-            }
-        },
-        "B700-799. Intereets and Goals.": {
-            "B700-709. Reproduction.": {
-                "B700": "Beings question witness about sex and reproduction.",
-                "B704": "Beings Mate with huMans, have offspring.",
-                "B705": "Beings unable to reproduce.",
-                "B707": "Concern with age."
-            },
-            "B710-719. Nervous systeM, brain, physiology.": {
-                "B710": "Beings question witness about body or bodily functions.",
-                "B711": "Interest in cheMical coMposition, internal Makeup.",
-                "B715": "Interest in brain or psychology.",
-                "B716": "Interest in nervous systeM."
-            },
-            "B720-729. Spiritual Matters.": {
-                "B720": "Beings profess concern with peace.",
-                "B725": "Beings disparage God, claiM godlike qualities for"
-            },
-            "B730-739. Survival needs.": {
-                "B730": "Beings seek food, breeding population."
-            },
-            "B740-749. Intelligence, knowledge.": {
-                "B740": "Interest in earthly conditions and probleMs."
-            },
-            "B750-759. Gaps in understanding.": {
-                "B750": "No understanding of age.",
-                "B751": "Beings speak oddly of tiMe.",
-                "B753": "Interest in prosthesis (false teeth, contact lenses),",
-                "B754": "Interest in cultural artifacts (e.g., shoes).",
-                "B755": "Ignorance of and interest in eMotions.",
-                "B756": "No understanding of pain.",
-                "B758": "Indications of fallibility.",
-                "B759": "Faulty understanding of speech idioMs."
-            },
-            "B760-769. Reasons for rejecting witness.": {
-                "B760": "Is too young.",
-                "B761": "Is too old.",
-                "B762": "Is defective or unsuitable.",
-                "B765": "Selectivity: only soMe witnesses Meant to be taken."
-            }
-        },
-        "B800-899. Social Structure.": {
-            "B800-809. Evidence for hierarchy.": {
-                "B800": "One being acts as leader, spokesMan",
-                "B801": "One being is an elder.",
-                "B802": "One being (or two) acts as exaMiner, \"doctor,\" or direc",
-                "B803": "One being friendly and considerate while others cold or",
-                "B805": "DiMorphisM associat~d with rank: one being taller than",
-                "B806": "Taller beings lead, shorter are subservient, do Menial",
-                "B807": "DeMocratic enough to confer, tolerate disputes."
-            }
-        },
-        "B900-999. Character and Personality.": {
-            "B900-909. Behavior toward witnesses.": {
-                "B900": "Beings are friendly, polite, faMiliar in Manner.",
-                "B901": "Beings are helpful and considerate.",
-                "B902": "Beings heal, save or help witness.",
-                "B903": "Beings force or coMpel witness against his will.",
-                "B904": "Beings are weak, lacking in will, and fearful.",
-                "B905": "Beings behave in a cold, indifferent, insensitive or",
-                "B906": "Beings avoid answering questions or deceive.",
-                "B907": "Beings' friendliness really superficial, a cover for",
-                "B908": "Beings threaten, intiMidate, or are cruel to witness.",
-                "B909": "Beings dislike for witness to watch theM."
-            },
-            "B910-919. EMotions.": {
-                "B910": "Beings are iMpassive.",
-                "B911": "Beings can be startled or excited.",
-                "B912": "Beings becoMe irritable or disgusted.",
-                "B913": "Beings are iMpatient or have little tiMe.",
-                "B914": "Beings are happy in their work, or laugh.",
-                "B915": "Beings have sense of huMor."
-            }
-        }
-    },
-    "X--EXAMINATION.": {
-        "X100-199. Preparation.": {
-            "X100-109. The witness changes clothing.": {
-                "X100": "The witness undresses (redresses) or is undressed (re-",
-                "X101": "The witness's clothes pulled up or partially reMoved.",
-                "X105": "Clothing replaced with robe, sMock or other garMent.",
-                "X109": "Witness finds clothes or household rearrangned after the"
-            },
-            "X110-119. Cleaning.": {
-                "X110": "Beings swab the witness with oily liquid, or he finds",
-                "X111": "Spray covers witness.",
-                "X114": "Beings wipe witness dry or clean.",
-                "X115": "The witness enters a \"cleansing chaMber\" and is iMMersed"
-            },
-            "X150-159. The witness is positioned for exaMination.": {
-                "X150": "The witness si t5 on a stool or chair.",
-                "X155": "The witness lies on an exal\"lining table or couch.",
-                "X156": "The witness lies iMl\"lobilized or restrained.",
-                "X157": "The witness floats suspended in air, perhaps over table."
-            }
-        },
-        "X200-299. ExaMination.": {
-            "X200-209. Personnel.": {
-                "X200": "A special doctor or exaMiner carries out or directs the",
-                "X201": "An assistant helps hiM.",
-                "X202": "A group of beings without obvious division of labor car",
-                "X203": "Ordinary hul\"lan assists in the exaM or coMforts witness.",
-                "X205": "Other huMans, perhaps strangers, exal\"lined along with the"
-            },
-            "X210-219. Type of ExaMination--I: Manual exaM.": {
-                "X210": "Beings touch witness in various places, as if exaMining",
-                "X215": "Beings flex or contort liMbs of the witness."
-            },
-            "X220-229. Type of ExaMination--II: InstruMental exaM.": {
-                "X220": "Beings use handheld instrul\"!ents, claMps.",
-                "X221": "Beings use probes or electrodes connected to other Mach-",
-                "X222": "Beings Make incision for unknown purpose.",
-                "X223": "Beings use hypoderMic needle.",
-                "X224": "Light or light beaM shines on witness.",
-                "X225": "Eyelike device descends frol\"I ceiling and scans witness.",
-                "X226": "A sMall instruMent lies on the chest of the witness.",
-                "X227": "A platelike \"X-ray\" device exaMines the witness.",
-                "X228": "A hell\"let is placed on the witness during exaMination.",
-                "X229": "1, ease injuries."
-            },
-            "X230-239. SaMple taking.": {
-                "X230": "The beings take clippings of hair and nails, or saMples",
-                "X231": "The beings scrape a saMple of skin froM the witness.",
-                "X235": "The beings take a blood or body fluids saMple.",
-                "X239": "The beings place saMple in cellophane bag, then cabinet."
-            },
-            "X240-249. Type of ExaMination--III: Neurological exaM.": {
-                "X240": "The beings show special interest in head area.",
-                "X241": "The beings probe the head of the witness.",
-                "X244": "The beings test the witness's reflexes.",
-                "X245": "The beings insert a long needle into the head, usually",
-                "X246": "1. The beings reMove an eye to Make the iMplant.",
-                "X247": "The beings reMove a device froM the witness's body."
-            },
-            "X250-259. Type of ExaMination--IV: Mental exaM.": {
-                "X250": "The beings reMove the witness's brain or thoughts.",
-                "X251": "The beings add soMething to the witness's thoughts, or",
-                "X255": "The beings probe a witness's Mind or read his thoughts.",
-                "X256": "The beings interrogate the witness.",
-                "X257": "The beings have the witness Manipulate their Machinery,"
-            },
-            "X260-269. Type of ExaMination--V: Reproductive exaM.": {
-                "X260": "Beings insert a needle into navel or abdoMen of a feMale",
-                "X261": "Beings give feMale witness a gynecological or preganacy",
-                "X262": "Beings take sperM saMple froM a Male witness.",
-                "X263": "Beings exaMine genital region of a Male witness.",
-                "X265": "The witness has sexual relations with alien being."
-            },
-            "X270-279. Type of ExaMination--VI: Spiritual exaM.": {
-                "X270": "\"Measured for light.\""
-            }
-        },
-        "X300-399. Return.": {
-            "X300-309. RearrangeMent.": {
-                "X300": "Witness replaced in different position."
-            },
-            "X310-319. Restoration.": {
-                "X310": "Witness given drink to restore strength or heal.",
-                "X311": "Lethe: witness given drink to cause forgetfulness."
-            }
-        }
-    },
-    "C--COMMUNICATION.": {
-        "C100-199. Manner of CoMMUnication of Beings with HuMana.": {
-            "C100-109. Verbal coMMunication.": {
-                "C100": "Verbal coMMunication in incoMprehensible language.",
-                "C101": "Verbal cOMMunication in subject's language.",
-                "C102": "Verbal coMMunication by Means of a Mechanical interMed",
-                "C105": "CoMMunication by sign language or gestures."
-            },
-            "C110-119. Telepathic coMMunication.": {
-                "C110": "Subject hears voice in his head or understands Meanings",
-                "C111": "Telepathic \"voice\" has a foreign accent.",
-                "C116": "Directed telepathy: subject understands only when beings",
-                "C119": "UFO responds when subject directs thoughts to it."
-            },
-            "C120-129. Miscellaneous phenoMena.": {
-                "C121": "Principle of liMited coMMunication: only one being coM"
-            }
-        },
-        "C200-299. COMMUnication Between Beings.": {
-            "C200-209. Manner of coMMunication.": {
-                "C200": "Beings cOMMUnicate with each other using a MUMbling or",
-                "C201": "Unknown language or yelping, aniMal-like sounds.",
-                "C205": "Telepathy between beings."
-            }
-        }
-    },
-    "M--MESSASES.": {
-        "M100-199.": {
-            "M100-109. Reassurances.": {
-                "M100": "ProMise subject will be safe, that they are peaceful or",
-                "M101": "ProMise subject's loved ones will be safe.",
-                "M102": "ProMise a test will not cause pain.",
-                "M103": "ProMise to return a subject hoMe.",
-                "M105": "Request witness to be unafraid."
-            },
-            "M110-119. Instructions.": {
-                "M110": "Beings tell witness to perforM soMe particular utilitar-",
-                "M111": "Beings charge subject with task, e.g., to teach, learn.",
-                "M115": "Beings ask subject to coMe away with theM.",
-                "M116": "Beings say the tiMe has coMe to return.",
-                "M117": "Beings tell witness that a sight is not for his eyes.",
-                "M118": "Beings swear the subject to secrecy.",
-                "M119": "Beings tell subject to forget, because the tiMe is not"
-            },
-            "M120-129. StateMents of purpose.": {
-                "M120": "The beings have coMe to warn or prepare us.",
-                "M121": "They have coMe to others.",
-                "M122": "They have watched witness a long tiMe, have special in",
-                "M125": "They have coMe to learn, teach or experiMent.",
-                "M128": "They have coMe to coMbat evil eneMies, or to prevent",
-                "M129": "They coMe to solve probleM of their own, e.g., reproduc"
-            },
-            "M130-139. StateMents of inforMation about origin and nature.": {
-                "M130": "The beings tell the witness where they originate, but in",
-                "M131": "The beings refuse to reveal where they coMe froM."
-            },
-            "M140-149. Prophecies.": {
-                "M140": "A tiMe of tribulation is at hand.",
-                "M141": "A triuMphant or better tiMe will follow.",
-                "M142": "An apocalyptic event or disaster is drawing near.",
-                "M143": "Beings show view of past destruction of their world, or",
-                "M145": "The witness will perforM good works, works of salvation",
-                "M146": "The life of the witness will change.",
-                "M147": "The witness will Meet other abductees and know of their",
-                "M148": "Beings will reveal theMselves to the public, or help in",
-                "M149": "The beings proMise to return to the witness, to take hiM"
-            }
-        }
-    },
-    "W--THE OTHERWORLD.": {
-        "W100-199. Nature and Conditions.": {
-            "W100-109. EnvironMental conditions.": {
-                "W100": "Sun of the otherworld is unlike our sun.",
-                "W101": "Lighting is diffuse, no sun or definite horizon visible.",
-                "W102": "Otherworld is diM, dark, chill, Misty, disagreeable.",
-                "W103": "Otherworld is barren, lifeless or desertlike.",
-                "W104": "Otherworld has unfaMiliar plants and aniMals.",
-                "W105": "Otherworld is beautiful and fertile.",
-                "W106": "Otherworld is coMposed of crystals, transparent forMs.",
-                "W108": "Otherworld is silent."
-            },
-            "W110-119. Suggestions of location.": {
-                "W110": "Otherworld seen approaching out a window (or earth de-",
-                "W111": "Base on Moon or planet.",
-                "W112": "Witness enters the sea to reach the otherworld.",
-                "W115": "Underground location: being appears froM underground or",
-                "W116": "Underground location: entrance leads underground.",
-                "W117": "Underground location: otherworld has Minelike tunnels."
-            }
-        },
-        "W200-299. Civilized Structures on the Otherworld.": {
-            "W200-209. Structures associated with travel to and froM otherworld.": {
-                "W200": "The witness sees a hangar-like rooM of great size, often",
-                "W201": "The witness sees a landing field with other UFOs present",
-                "W205": "The witness sees tunnels or corridors not associated"
-            },
-            "W210-219. Otherworldly city.": {
-                "W210": "The witness sees an unearthly city, perhaps doMed.",
-                "W215": "The witness visits a factory."
-            },
-            "W220-229. Other structures of the otherworld.": {
-                "W220": "The otherworld contains suspended roads or streets.",
-                "W221": "The otherworld has teMples or pyraMids.",
-                "W222": "One building carries a light beacon.",
-                "W225": "The otherworld includes a MuseuM or zoo.",
-                "W228": "The city is crystalline or coMposed largely of crystal."
-            }
-        },
-        "W300-399. Miscellaneous Sights on the Otherworld.": {
-            "W300-309. Inhabitants of the otherworld.": {
-                "W300": "Aliens coMprise the populace.",
-                "W305": "NorMal huMans are present."
-            }
-        },
-        "W400-499. Means of Journeying to the Otherworld.": {
-            "W400-409. Non-physical travel.": {
-                "W400": "The otherworld or scenes froM it appear through a window"
-            },
-            "W410-419. Physical travel.": {
-                "W410": "Witness placed in iMMersion chaMber.",
-                "W411": "Witness lies on water bed or pad.",
-                "W412": "Witness transported i~ transparent cylinder or cube~",
-                "W413": "Witness transported while strapped to chair or bench.",
-                "W414": "Witness sleeps through trip.",
-                "W415": "Witness senses Motion or acceleration."
-            }
-        }
-    },
-    "T--THEORHANY.": {
-        "T100-199. Character of Meeting with Divine Being.": {
-            "T100-109. Place of the theophany.": {
-                "T106": "The theophany occurs behind a cluster of crystals or be"
-            },
-            "T110-119. AccoMpanying phenoMena.": {
-                "T110": "Angel-like beings conduct the witness."
-            },
-            "T120-129. Nature of the encounter.": {
-                "T120": "A saintly or elderly being appears to the witness.",
-                "T121": "An apparitional figure or syMbolic scene appears, per-",
-                "T122": "The witness Meets with God.",
-                "T125": "The witness receives a Message.",
-                "T126": "The witness receives help against evil beings."
-            },
-            "T130-139. Effects of the theophany.": {
-                "T130": "Witness finds the experience joyful, ineffable.",
-                "T135": "Physical sensations accoMpany the experience."
-            }
-        }
-    },
-    "S--SOUVENIR.": {
-        "S100-199. Exchange of Concrete Objects or MeMorable InforMation Between": {
-            "S100-109. Nature of the souvenir.": {
-                "S100": "The witness asks for, steals or atteMpts to steal, or",
-                "S101": "Map: the witness sees a star Map depicting the beings'",
-                "S102": "The witness sees Map or iMage of beings' hoMe planet.",
-                "S105": "Beings take objects froM the witness (or are given)."
-            },
-            "S110-119. LiMitation of possession.": {
-                "S110": "The beings reclaiM a proMised souvenir before the wit",
-                "S111": "The witness retains a souvenir for a liMited tiMe."
-            }
-        }
-    },
-    "A--AFTEREFFECTS.": {
-        "A100-199. Consequences of Abduction to the Individual.": {
-            "A100-109. TeMporary physical injuries.": {
-                "A100": "Eye troubles <water, burn, vision iMpaired, sensitive to",
-                "A101": "1. Ravenous appetite.",
-                "A102": "Motility probleMs <balance, orientation, tiredness pr",
-                "A103": "Headaches, light-headedness.",
-                "A104": "General illness, nausea, gastrointestinal probleMs.",
-                "A105": "Spots or reddish Marks like puncture wounds, soreness.",
-                "A106": "Burns, blisters, peeling skin, itch, swelling,",
-                "A107": "Linear or circular scar.",
-                "A108": "Wound of unknown origin opens and bleeds.",
-                "A109": "Rash or warts appear where the beings touched."
-            },
-            "A110-119, Psychological consequences.": {
-                "A110": "Witness feels pursued or anxious without knowing why.",
-                "A111": "UFObia: witness feels alarMed on seeing UFO, aircraft,",
-                "A112": "Witness feels alarMed on passing a certain place or en-",
-                "A113": "Witness feels unclean and in need of a bath.",
-                "A114": "Witness feels obliged to keep experience a secret.",
-                "A115": "1. Periodic ill effects or ill effects on recalling ex",
-                "A116": "1. FragMentary MeMories of an experience persist.",
-                "A117": "Sleep difficulties: insoMnia.",
-                "A118": "Sleep difficulties: unusual sleepiness.",
-                "A119": "1. Possession: witness becoMes soMeone else for a tiMe;"
-            },
-            "A120-129. Positive effects.": {
-                "A120": "Witness feels refreshed and rested after encounter.",
-                "A125": "Chronic illness cured."
-            },
-            "A130-139. Long-terM general changes.": {
-                "A130": "Witness develops new intellectual abilities, interests.",
-                "A131": "Witness develops new spiritual abilities and interests.",
-                "A132": "Witness develops new physical powers and abilities.",
-                "A133": "Witness develops positive new personality--is More aware",
-                "A135": "Witness develops extrasensory powers.",
-                "A136": "Witness receives Messages, practices autoMatic writing.",
-                "A138": "Witness develops negative personality traits--becoMes",
-                "A139": "1. Witness experiences weight loss after encounter."
-            }
-        },
-        "A200-299. Future Encounters with the Unknown.": {
-            "A200-209. Men in Black CMIB>.": {
-                "A200": "Unusual Men watch the witness, threaten or warn hiM.",
-                "A202": "Witness receives crank phone calls froM uncoMMonly well",
-                "A205": "Men drive old-Model cars in new condition.",
-                "A206": "Mystery helicopters appear."
-            },
-            "A210-219. Poltergeist activity.": {
-                "A210": "Witness experiences poltergeist activity:",
-                "A215": "Apparitions appear."
-            },
-            "A220-229. Future encounters with UFOs or aliens.": {
-                "A220": "Further contacts or sightings of beings.",
-                "A221": "Further UFO sightings.",
-                "A225": "Further abductions."
-            },
-            "A230-239. Network effect.": {
-                "A230": "Spouse, friend, neighbors, relatives, etc. of witness"
-            }
-        },
-        "A300-399. Consequences of the Encounter on Non-HuMans.": {
-            "A300-309. Machines.": {
-                "A300": "Watch runs fast or slow.",
-                "A305": "Car Malfunctions."
-            },
-            "A310-319. AniMals.": {
-                "A310": "Pets avoid witness after encounter.",
-                "A315": "Periodic fear, fear of landing site or aircraft.",
-                "A316": "Personality change: aniMal becoMes listless or bad."
-            }
-        }
-    }
+  "A100": "Eye troubles <water, burn, vision impaired, sensitive to",
+  "A101": "Dehydration effect: intense thirst.",
+  "A101.1": "Ravenous appetite.",
+  "A101.2": "Loss of appetite.",
+  "A101.3": "Loss of taste for particular food.",
+  "A101.4": "Gain taste for food previously disliked.",
+  "A102": "Motility problems <balance, orientation, tiredness pr",
+  "A103": "Headaches, light-headedness.",
+  "A104": "General illness, nausea, gastrointestinal problems.",
+  "A105": "Spots or reddish marks like puncture wounds, soreness.",
+  "A106": "Burns, blisters, peeling skin, itch, swelling,",
+  "A107": "Linear or circular scar.",
+  "A108": "Wound of unknown origin opens and bleeds.",
+  "A109": "Rash or warts appear where the beings touched.",
+  "A110": "Witness feels pursued or anxious without knowing why.",
+  "A111": "UFObia: witness feels alarmed on seeing UFO, aircraft,",
+  "A112": "Witness feels alarmed on passing a certain place or en-",
+  "A113": "Witness feels unclean and in need of a bath.",
+  "A114": "Witness feels obliged to keep experience a secret.",
+  "A115": "Nightmares or abduction dreams, often recurrent, come to the witness.",
+  "A115.1": "Periodic ill effects or ill effects on recalling experience trouble witness.",
+  "A116": "Spontaneous return of memory.",
+  "A116.1": "Fragmentary memories of an experience persist.",
+  "A117": "Sleep difficulties: insomnia.",
+  "A118": "Sleep difficulties: unusual sleepiness.",
+  "A119": "Temporary amnesia (forgets name, address, etc.).",
+  "A119.1": "Possession: witness becomes someone else for a time; glossolalia.",
+  "A120": "Witness feels refreshed and rested after encounter.",
+  "A125": "Chronic illness cured.",
+  "A130": "Witness develops new intellectual abilities, interests.",
+  "A131": "Witness develops new spiritual abilities and interests.",
+  "A132": "Witness develops new physical powers and abilities.",
+  "A133": "Witness develops positive new personality--is more aware",
+  "A135": "Witness develops extrasensory powers.",
+  "A136": "Witness receives messages, practices automatic writing.",
+  "A138": "Witness develops negative personality traits--becomes",
+  "A139": "Witness develops illness because of the encounter.",
+  "A139.1": "Witness experiences weight loss after encounter.",
+  "A200": "Unusual men watch the witness, threaten or warn him.",
+  "A202": "Witness receives crank phone calls from uncommonly well",
+  "A205": "Men drive old-model cars in new condition.",
+  "A206": "Mystery helicopters appear.",
+  "A210": "Witness experiences poltergeist activity:",
+  "A215": "Apparitions appear.",
+  "A220": "Further contacts or sightings of beings.",
+  "A221": "Further UFO sightings.",
+  "A225": "Further abductions.",
+  "A230": "Spouse, friend, neighbors, relatives, etc. Of witness",
+  "A300": "Watch runs fast or slow.",
+  "A305": "Car malfunctions.",
+  "A310": "Pets avoid witness after encounter.",
+  "A315": "Periodic fear, fear of landing site or aircraft.",
+  "A316": "Personality change: animal becomes listless or bad.",
+  "B100": "Beings present but unseen.",
+  "B101": "Unseen beings are heard or sensed.",
+  "B200": "Non-humanoid.",
+  "B201": "Humanoid.",
+  "B202": "Human.",
+  "B203": "Monstrous humanoid.",
+  "B205": "Robot.",
+  "B206": "Android, clone.",
+  "B207": "Apparition.",
+  "B208": "Dog (8argest).",
+  "B210": "Masculine.",
+  "B211": "Feminine.",
+  "B212": "Neuter.",
+  "B220": "Short (3.5 feet or less).",
+  "B221": "Moderately short <4-5 feet),",
+  "B222": "Average (5.5-6 feet).",
+  "B223": "Tall (over 6 feet).",
+  "B225": "Spindly build, slight musculature.",
+  "B226": "Average build.",
+  "B227": "Robust build.",
+  "B230": "Head large.",
+  "B231": "Head average.",
+  "B232": "Head Small.",
+  "B233": "Head egg or pear shaped, with pointed chin, large cran-",
+  "B234": "Head oval, larger at top.",
+  "B235": "Head oval, larger at bottom.",
+  "B238": "Being has no neck, head set directly on shoulders.",
+  "B240": "Absent.",
+  "B240.1": "Number other than two.",
+  "B241": "Large size.",
+  "B241.1": "Average size.",
+  "B241.2": "Small size.",
+  "B241.3": "Slit.",
+  "B242": "Shape wraparound, catlike, oval.",
+  "B242.1": "Shape round, protruding.",
+  "B243": "Eyes entirely dark.",
+  "B244": "Large dark pupil.",
+  "B244.1": "Other color.",
+  "B244.2": "Insect, compound eye.",
+  "B245": "Luminous.",
+  "B246": "Eyes unblinking, staring, hypnotic.",
+  "B247": "Eyes blink in unusual way.",
+  "B248": "Eyes enlarge extraordinarily.",
+  "B249": "Eyes transparent or translucent, as if real eyes under",
+  "B250": "General cast mongoloid, round or childlike.",
+  "B251": "Flat, high cheekbones.",
+  "B252": "Nose absent or diminutive; holes only.",
+  "B253": "Nose flat or thin.",
+  "B254": "Ears close against head, absent, or holes only.",
+  "B255": "Ears projecting points.",
+  "B256": "Ears large and fanlike.",
+  "B257": "T. Teeth absent or sparse.",
+  "B257.1": "Teeth absent or sparse.",
+  "B258": "Mouth slitlike, lips thin.",
+  "B259": "Mouth large but lipless.",
+  "B260": "Broad chest, shoulders.",
+  "B261": "Narrow chest, shoulders.",
+  "B265": "Narrow waist.",
+  "B270": "Extraordinarily long and spindly.",
+  "B271": "Thin.",
+  "B272": "Unusually short.",
+  "B275": "Abnormally jointed.",
+  "B276": "Completely flexible.",
+  "B277": "Mechanical.",
+  "B278": "Legs are pedestal-like (\"uniped\" ).",
+  "B280": "Digits fewer than normal.",
+  "B281": "Webbed.",
+  "B282": "Crab-claws.",
+  "B283": "Fused fingers and thumb (mittens).",
+  "B284": "Fingers balloon-like.",
+  "B285": "Fingers long and thin.",
+  "B287": "No hands.",
+  "B288": "Duck feet.",
+  "B290": "Skin white, gray, ashen or claylike.",
+  "B291": "Skin cold, sunless, sickly, soft.",
+  "B292": "Skin wrinkled, scaly, mummylike, froglike.",
+  "B293": "Green.",
+  "B294": "Dark, olive.",
+  "B295": "Hair absent.",
+  "B296": "Hair sparse.",
+  "B297": "Hair artificial: wig or Smooth like plastic.",
+  "B298": "Being hairy, bearded.",
+  "B300": "Coverall, one-piece.",
+  "B301": "Tight-fitting.",
+  "B302": "Diving suit, astronaut or space suit.",
+  "B303": "Un if orm.",
+  "B304": "White surgical smock.",
+  "B305": "Plastic.",
+  "B306": "Metallic.",
+  "B307": "Leather-like.",
+  "B308": "Rubbery.",
+  "B310": "Face mask.",
+  "B315": "Cape, cloak.",
+  "B317": "Gloves.",
+  "B318": "Mittens.",
+  "B330": "Broad.",
+  "B331": "Belt has lights or jewels.",
+  "B335": "Breast strap, Sam Browne belt.",
+  "B340": "Helmet, cap.",
+  "B341": "Helmet with visor or dark plate covering the eyes.",
+  "B342": "Coverall clothing covers head except for face.",
+  "B343": "Space helmet",
+  "B344": "Transparent face cover.",
+  "B345": "Hood.",
+  "B346": "Face mask.",
+  "B347": "Headphones, communication equipment.",
+  "B348": "<Rotating) antenna on head.",
+  "B350": "Boots.",
+  "B360": "White.",
+  "B361": "Off-white, gray.",
+  "B362": "Red.",
+  "B363": "Blue.",
+  "B364": "Green.",
+  "B365": "Dark.",
+  "B366": "Black.",
+  "B367": "Silvery.",
+  "B368": "Phosphorescent.",
+  "B370": "Triangular.",
+  "B375": "Bird.",
+  "B376": "Winged serpent.",
+  "B378": "Animal.",
+  "B400": "Tube enters clothing or attaches to backpack.",
+  "B402": "Fask f'l1ask.",
+  "B403": "Diver's helJ'llet, pressure suit.",
+  "B410": "Light like flashlight or pistol.",
+  "B411": "Paralysis gun.",
+  "B415": "Floating toolbox.",
+  "B420": "Light frof'l1 box on chest.",
+  "B425": "CommUnication device.",
+  "B500": "Beings glide or float.",
+  "B501": "Beings nimble, unusually strong.",
+  "B502": "Beings jump or leap.",
+  "B503": "Beings move in tandem.",
+  "B504": "Beings move in a clumsy, stiff or crippled fashion.",
+  "B505": "Beings turn into light.",
+  "B506": "Beings disappear and reappear.",
+  "B509": "Photophobia: retreat from or stay clear of light, sound.",
+  "B610": "Two beings flank the witness and hold him by upper arms",
+  "B620": "Stand guard, direct traffic.",
+  "B625": "Man a roadblock.",
+  "B626": "Surround car, break in.",
+  "B650": "Gather samples.",
+  "B660": "Levitate",
+  "B700": "Beings question witness about sex and reproduction.",
+  "B704": "Beings mate with humans, have offspring.",
+  "B705": "Beings unable to reproduce.",
+  "B707": "Concern with age.",
+  "B710": "Beings question witness about body or bodily functions.",
+  "B711": "Interest in chemical composition, internal makeup.",
+  "B715": "Interest in brain or psychology.",
+  "B716": "Interest in nervous system.",
+  "B720": "Beings profess concern with peace.",
+  "B725": "Beings disparage God, claim godlike qualities for",
+  "B730": "Beings seek food, breeding population.",
+  "B740": "Interest in earthly conditions and problems.",
+  "B750": "No understanding of age.",
+  "B751": "Beings speak oddly of time.",
+  "B753": "Interest in prosthesis (false teeth, contact lenses),",
+  "B754": "Interest in cultural artifacts (e.g., shoes).",
+  "B755": "Ignorance of and interest in emotions.",
+  "B756": "No understanding of pain.",
+  "B758": "Indications of fallibility.",
+  "B759": "Faulty understanding of speech idioms.",
+  "B760": "Is too young.",
+  "B761": "Is too old.",
+  "B762": "Is defective or unsuitable.",
+  "B765": "Selectivity: only some witnesses meant to be taken.",
+  "B800": "One being acts as leader, spokesman",
+  "B801": "One being is an elder.",
+  "B802": "One being (or two) acts as examiner, \"doctor,\" or direc",
+  "B803": "One being friendly and considerate while others cold or",
+  "B805": "Dimorphism associat~d with rank: one being taller than",
+  "B806": "Taller beings lead, shorter are subservient, do menial",
+  "B807": "Democratic enough to confer, tolerate disputes.",
+  "B900": "Beings are friendly, polite, familiar in manner.",
+  "B901": "Beings are helpful and considerate.",
+  "B902": "Beings heal, save or help witness.",
+  "B903": "Beings force or compel witness against his will.",
+  "B904": "Beings are weak, lacking in will, and fearful.",
+  "B905": "Beings behave in a cold, indifferent, insensitive or",
+  "B906": "Beings avoid answering questions or deceive.",
+  "B907": "Beings' friendliness really superficial, a cover for",
+  "B908": "Beings threaten, intimidate, or are cruel to witness.",
+  "B909": "Beings dislike for witness to watch them.",
+  "B910": "Beings are impassive.",
+  "B911": "Beings can be startled or excited.",
+  "B912": "Beings become irritable or disgusted.",
+  "B913": "Beings are impatient or have little time.",
+  "B914": "Beings are happy in their work, or laugh.",
+  "B915": "Beings have sense of humor.",
+  "C100": "Verbal communication in incomprehensible language.",
+  "C101": "Verbal cOmmunication in subject's language.",
+  "C102": "Verbal communication by means of a mechanical intermed",
+  "C105": "Communication by sign language or gestures.",
+  "C110": "Subject hears voice in his head or understands meanings",
+  "C111": "Telepathic \"voice\" has a foreign accent.",
+  "C115": "Emotions conveyed not by expression but by thought.",
+  "C116": "Directed telepathy: subject understands only when beings",
+  "C119": "UFO responds when subject directs thoughts to it.",
+  "C121": "Principle of limited communication: only one being com",
+  "C200": "Beings cOmmUnicate with each other using a mUmbling or",
+  "C201": "Unknown language or yelping, animal-like sounds.",
+  "C205": "Telepathy between beings.",
+  "E100": "Vacuum effect: stillness, silence.",
+  "E101": "Pressure effects: ears pop, head hurts.",
+  "E102": "Isolation effect: everyone but witness oblivious to UFO.",
+  "E106": "Perceptual distortions and illusions.",
+  "E110": "Immateriality (e.g., pass through a wall).",
+  "E111": "Out-of-body experience.",
+  "E115": "Disappearance.",
+  "E120": "Floating effect: apparent weightlessness.",
+  "E121": "Pseudo-floating effect: witness only feels light, or is",
+  "E123": "Levitation: drawing force.",
+  "E124": "Levitation in beam of light.",
+  "E125": "Light behaves in odd way (e.g., \"solid light\"),",
+  "E130": "Time slows down.",
+  "E135": "Time speeds up.",
+  "E200": "Time lapse.",
+  "E201": "Doorway amnesia: blackout on entering or leaving craft.",
+  "E202": "Witness unconscious and immobilized.",
+  "E203": "Rule of differential memory: in multiple-witness cases,",
+  "E204": "Sami-consciousness, disorientation, dizziness, drained",
+  "E205": "Relocation: witness travels a distance unawares.",
+  "E207": "Obliviousness to others and vice-versa.",
+  "E208": "Premonition: sense that something will happen.",
+  "E210": "Somnambulism: walks while asleep or in daze.",
+  "E211": "Keeps eyes down or closed.",
+  "E212": "Lassitude, weakness.",
+  "E213": "Preference: one witness taken, others left immobile or",
+  "E214": "Witness reassures self or obeys beings as if they know",
+  "E215": "Inappropriate response or uncharacteristic behavior: odd",
+  "E216": "Denial of defense impulse.",
+  "E217": "Non-denial of defense: fight.",
+  "E218": "Predestination: act without knowing why, or on an irre",
+  "E300": "Pacification effect: witness calm, euphoric, relaxed.",
+  "E301": "Friendly effect: witness senses kindness or feels as if",
+  "E302": "Rapture effect: sense of joy, beauty.",
+  "E303": "Sadness effect: sense of loss on departure.",
+  "E306": "Pacification periodically wears off.",
+  "E310": "Heavy effect: witness feels heavy, prickly.",
+  "E311": "Electrical effect: shock, tingle, itch.",
+  "E313": "Only hands influenced, or feel pain.",
+  "E314": "Force pins witness down or pushes him.",
+  "E315": "Paralysis, numbness.",
+  "E316": "Witness moves in slow motion.",
+  "E317": "An invisible barrier bars the witness.",
+  "E320": "Control by touch or gesture.",
+  "E321": "Laying on of hands or other \"magical\" relief of pain.",
+  "E322": "Eyes of beings hypnotic or compelling.",
+  "E323": "Voice or repetition of request is compelling.",
+  "E325": "Control by devices or injection.",
+  "E326": "Luminous globe controls witness.",
+  "E327": "Beam of light controls witness.",
+  "E328": "Sound accompanies control.",
+  "E329": "Sensation of burning accompanies control.",
+  "E400": "Electromagnetic effects: malfunction of engine, electri-",
+  "E403": "Radio statrc.",
+  "E405": "Effects on watches, mileage meters.",
+  "E408": "Unusually low fuel consumption.",
+  "E409": "Unusually high fuel consumption.",
+  "E410": "UFO or beings take control of vehicle.",
+  "E410.1": "Vehicle skids sideways.",
+  "E411": "Beings control vehicle through control of witness (e.g.,",
+  "E412": "Car rides above ground, or Smoothly and without bumps.",
+  "E414": "A broad highway or repetitive scenery appears to the",
+  "E415": "Vehicle reaches unusual, often inaccessible place or",
+  "E416": "A machine acts as if on its own, without human control.",
+  "E500": "Animals respond with arousal, barking.",
+  "E501": "Physical effects: paralysis.",
+  "E505": "Fear.",
+  "M100": "Promise subject will be safe, that they are peaceful or",
+  "M101": "Promise subject's loved ones will be safe.",
+  "M102": "Promise a test will not cause pain.",
+  "M103": "Promise to return a subject home.",
+  "M105": "Request witness to be unafraid.",
+  "M109": "Farewell.",
+  "M110": "Beings tell witness to perform some particular utilitar-",
+  "M111": "Beings charge subject with task, e.g., to teach, learn.",
+  "M115": "Beings ask subject to come away with them.",
+  "M116": "Beings say the time has come to return.",
+  "M117": "Beings tell witness that a sight is not for his eyes.",
+  "M118": "Beings swear the subject to secrecy.",
+  "M119": "Beings tell subject to forget, because the time is not",
+  "M120": "The beings have come to warn or prepare us.",
+  "M121": "They have come to others.",
+  "M122": "They have watched witness a long time, have special in",
+  "M125": "They have come to learn, teach or experiment.",
+  "M128": "They have come to combat evil enemies, or to prevent",
+  "M129": "They come to solve problem of their own, e.g., reproduc",
+  "M130": "The beings tell the witness where they originate, but in",
+  "M131": "The beings refuse to reveal where they come from.",
+  "M140": "A time of tribulation is at hand.",
+  "M141": "A triumphant or better time will follow.",
+  "M142": "An apocalyptic event or disaster is drawing near.",
+  "M143": "Beings show view of past destruction of their world, or",
+  "M145": "The witness will perform good works, works of salvation",
+  "M146": "The life of the witness will change.",
+  "M147": "The witness will meet other abductees and know of their",
+  "M148": "Beings will reveal themselves to the public, or help in",
+  "M149": "The beings promise to return to the witness, to take him",
+  "S100": "The witness asks for, steals or attempts to steal, or",
+  "S101": "Map: the witness sees a star map depicting the beings'",
+  "S102": "The witness sees map or image of beings' home planet.",
+  "S105": "Beings take objects from the witness (or are given).",
+  "S110": "The beings reclaim a promised souvenir before the wit",
+  "S111": "The witness retains a souvenir for a limited time.",
+  "T106": "The theophany occurs behind a cluster of crystals or be",
+  "T110": "Angel-like beings conduct the witness.",
+  "T120": "A saintly or elderly being appears to the witness.",
+  "T121": "An apparitional figure or symbolic scene appears, per-",
+  "T122": "The witness meets with God.",
+  "T125": "The witness receives a message.",
+  "T126": "The witness receives help against evil beings.",
+  "T130": "Witness finds the experience joyful, ineffable.",
+  "T135": "Physical sensations accompany the experience.",
+  "U100": "Disk.",
+  "U101": "Domed disk, Saturn shape.",
+  "U102": "Oval or egg shape.",
+  "U102.1": "Clam or oyster shape.",
+  "U103": "Sphere.",
+  "U104": "Bell, mushroom or top shape.",
+  "U105": "Upright cylinder.",
+  "U106": "Upright rectangular (\"phone booth\").",
+  "U107": "Cigar shape.",
+  "U109": "Rectangular shape.",
+  "U120": "Beam of light immerses the witness.",
+  "U123": "Lights surround rim of craft.",
+  "U130": "Windows.",
+  "U131": "Doors.",
+  "U132": "Doors close seamlessly.",
+  "U133": "Ramps, stairs.",
+  "U133.1": "Ramp made of light.",
+  "U134": "Landing gear.",
+  "U135": "Emblems.",
+  "U140": "Silvery metallic.",
+  "U141": "Du 11 met a 11 i c .",
+  "U145": "5Mooth.",
+  "U146": "Rough.",
+  "U150": "Mother ship.",
+  "U151": "Formation.",
+  "U155": "Satellite craft.",
+  "U160": "Power lines.",
+  "U165": "Water.",
+  "U170": "Mist, smoke, fog.",
+  "U200": "Antechamber, elevator.",
+  "U201": "Tunnel, passageway.",
+  "U202": "Examination room.",
+  "U203": "Control room.",
+  "U204": "Engine room.",
+  "U205": "Living quarters.",
+  "U206": "Dressing closet.",
+  "U207": "Passenger cabin.",
+  "U210": "Round, oval.",
+  "U211": "Domed.",
+  "U212": "Round, domed, without sharp edges.",
+  "U213": "Wedge or pie-shaped, semi-oval.",
+  "U220": "White.",
+  "U221": "Silvery.",
+  "U222": "Blue.",
+  "U230": "Bright and uniform, without specific source.",
+  "U231": "Bright and misty.",
+  "U235": "Bright source located above the witness.",
+  "U236": "Dim, indirect.",
+  "U240": "Metallic.",
+  "U241": "Glassy.",
+  "U250": "Cold.",
+  "U251": "Misty.",
+  "U252": "SPlells of ozone, sulphur, metal.",
+  "U253": "Air noxious, sickening, irritating.",
+  "U255": "Hot, stifling.",
+  "U256": "Air heavy, moist, hard to breathe.",
+  "U257": "Room changes from cold to warm.",
+  "U259": "Silence.",
+  "U300": "Room has examination table or bed.",
+  "U301": "RooPI has examination chair or stool.",
+  "U302": "Specimen or instrument cabinet.",
+  "U303": "Electronic devices resembling computers; console or de-",
+  "U304": "Needles attached to cables, probes.",
+  "U305": "An eyelike device lowers from the ceiling.",
+  "U306": "Screen or furniture with controls.",
+  "U307": "X-ray panel.",
+  "U309": "A window, transparent wall or barrier separates witness",
+  "U320": "Room contains rotating crystalline spheres.",
+  "U323": "Room contains rafters or has unfinished look.",
+  "U335": "Recreation room.",
+  "U350": "The ship contains a clocklike dial device.",
+  "U351": "The ship contains a cube or screen displaying clouds,",
+  "U352": "The elevator lowers through the floor.",
+  "U355": "Interior seem5 too large relative to the external ap",
+  "U356": "Beings can examine only one witness at a time because of",
+  "U500": "The UFO paces a car.",
+  "U501": "The UFO nears and circles.",
+  "U502": "The UFO inclines toward the witness and reveals beings.",
+  "U503": "The UFO descends ahead of the car.",
+  "U510": "Hovers.",
+  "U511": "Descends like falling leaf.",
+  "U512": "Hovers or moves with pendulum or rocking motion.",
+  "U513": "Flips on end or moves in up-and-down zigzag.",
+  "U514": "Right-angle turn.",
+  "U520": "The craft rises slowly for a few hundred feet, then",
+  "U525": "High temperature accompanies takeoff, landing.",
+  "U528": "Abrupt disappearance.",
+  "U530": "The witness hears a buzzing, humming or other monotonous",
+  "U531": "The witness hears a whistle or hi often shri 11.",
+  "U533": "The witness hears an airplane sound, whoosh or rumble.",
+  "U540": "Pulsation.",
+  "U550": "Part of UFO revolves.",
+  "W100": "Sun of the otherworld is unlike our sun.",
+  "W101": "Lighting is diffuse, no sun or definite horizon visible.",
+  "W102": "Otherworld is dim, dark, chill, misty, disagreeable.",
+  "W103": "Otherworld is barren, lifeless or desertlike.",
+  "W104": "Otherworld has unfamiliar plants and animals.",
+  "W105": "Otherworld is beautiful and fertile.",
+  "W106": "Otherworld is composed of crystals, transparent forms.",
+  "W108": "Otherworld is silent.",
+  "W110": "Otherworld seen approaching out a window (or earth de-",
+  "W111": "Base on moon or planet.",
+  "W112": "Witness enters the sea to reach the otherworld.",
+  "W115": "Underground location: being appears from underground or",
+  "W116": "Underground location: entrance leads underground.",
+  "W117": "Underground location: otherworld has minelike tunnels.",
+  "W118": "Luminous tunnel to otherworld.",
+  "W200": "The witness sees a hangar-like room of great size, often",
+  "W201": "The witness sees a landing field with other UFOs present",
+  "W205": "The witness sees tunnels or corridors not associated",
+  "W210": "The witness sees an unearthly city, perhaps domed.",
+  "W215": "The witness visits a factory.",
+  "W220": "The otherworld contains suspended roads or streets.",
+  "W221": "The otherworld has temples or pyramids.",
+  "W222": "One building carries a light beacon.",
+  "W225": "The otherworld includes a museum or zoo.",
+  "W228": "The city is crystalline or composed largely of crystal.",
+  "W300": "Aliens comprise the populace.",
+  "W305": "Normal humans are present.",
+  "W400": "The otherworld or scenes from it appear through a window",
+  "W410": "Witness placed in immersion chamber.",
+  "W411": "Witness lies on water bed or pad.",
+  "W412": "Witness transported i~ transparent cylinder or cube~",
+  "W413": "Witness transported while strapped to chair or bench.",
+  "W414": "Witness sleeps through trip.",
+  "W415": "Witness senses motion or acceleration.",
+  "X100": "The witness undresses (redresses) or is undressed (re-",
+  "X101": "The witness's clothes pulled up or partially removed.",
+  "X105": "Clothing replaced with robe, smock or other garment.",
+  "X109": "Witness finds clothes or household rearrangned after the",
+  "X110": "Beings swab the witness with oily liquid, or he finds",
+  "X111": "Spray covers witness.",
+  "X114": "Beings wipe witness dry or clean.",
+  "X115": "The witness enters a \"cleansing chamber\" and is immersed",
+  "X150": "The witness si t5 on a stool or chair.",
+  "X151": "The witness sits paralyzed or strapped.",
+  "X155": "The witness lies on an exal\"lining table or couch.",
+  "X156": "The witness lies iml\"lobilized or restrained.",
+  "X157": "The witness floats suspended in air, perhaps over table.",
+  "X200": "A special doctor or examiner carries out or directs the",
+  "X201": "An assistant helps him.",
+  "X202": "A group of beings without obvious division of labor car",
+  "X203": "Ordinary hul\"lan assists in the exam or comforts witness.",
+  "X205": "Other humans, perhaps strangers, exal\"lined along with the",
+  "X210": "Beings touch witness in various places, as if examining",
+  "X215": "Beings flex or contort limbs of the witness.",
+  "X220": "Beings use handheld instrul\"!ents, clamps.",
+  "X221": "Beings use probes or electrodes connected to other mach-",
+  "X222": "Beings make incision for unknown purpose.",
+  "X223": "Beings use hypodermic needle.",
+  "X224": "Light or light beam shines on witness.",
+  "X225": "Eyelike device descends frol\"I ceiling and scans witness.",
+  "X226": "A small instrument lies on the chest of the witness.",
+  "X227": "A platelike \"X-ray\" device examines the witness.",
+  "X228": "A hell\"let is placed on the witness during examination.",
+  "X229": "1, Ease injuries.",
+  "X229.1": "Instruments ease injuries.",
+  "X230": "The beings take clippings of hair and nails, or samples",
+  "X231": "The beings scrape a sample of skin from the witness.",
+  "X235": "The beings take a blood or body fluids sample.",
+  "X239": "The beings place sample in cellophane bag, then cabinet.",
+  "X240": "The beings show special interest in head area.",
+  "X241": "The beings probe the head of the witness.",
+  "X244": "The beings test the witness's reflexes.",
+  "X245": "The beings insert a long needle into the head, usually",
+  "X246": "The beings implant a device in the head, spine, leg, or body.",
+  "X246.1": "The beings implant a device in the head, spine, leg or other part of the witness body.",
+  "X247": "The beings remove a device from the witness's body.",
+  "X250": "The beings remove the witness's brain or thoughts.",
+  "X251": "The beings add something to the witness's thoughts, or",
+  "X255": "The beings probe a witness's mind or read his thoughts.",
+  "X256": "The beings interrogate the witness.",
+  "X257": "The beings have the witness manipulate their machinery,",
+  "X260": "Beings insert a needle into navel or abdomen of a female",
+  "X261": "Beings give female witness a gynecological or preganacy",
+  "X262": "Beings take sperm sample from a male witness.",
+  "X263": "Beings examine genital region of a male witness.",
+  "X265": "The witness has sexual relations with alien being.",
+  "X270": "\"Measured for light.\"",
+  "X300": "Witness replaced in different position.",
+  "X310": "Witness given drink to restore strength or heal.",
+  "X311": "Lethe: witness given drink to cause forgetfulness."
 }

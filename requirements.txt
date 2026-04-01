@@ -1,3 +1,8 @@
-streamlit
-pandas
-altair
+google-genai>=1.52.0
+flask>=3.1.0
+flask-cors>=6.0.0
+pydantic>=2.12.0
+python-dotenv>=1.2.0
+streamlit>=1.52.0
+pandas>=2.3.0
+altair>=6.0.0

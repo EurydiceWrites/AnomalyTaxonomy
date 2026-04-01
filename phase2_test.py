@@ -109,8 +109,10 @@ print(f"  Profile: {args.profile}")
 sys_inst = "\n".join(profile['system_instruction'])
 anti_hall = "\n".join(profile.get('anti_hallucination_rules', []))
 few_shot = "\n\n".join(profile.get('few_shot_examples', []))
+narr_ctx = "\n".join(profile.get('narrative_context_rules', []))
 print(f"  Anti-hallucination rules: {len(profile.get('anti_hallucination_rules', []))} items")
 print(f"  Few-shot examples: {len(profile.get('few_shot_examples', []))} items")
+print(f"  Narrative context rules: {len(profile.get('narrative_context_rules', []))} items")
 
 # Load motif dictionary
 with open('motif_key.json', 'r', encoding='utf-8') as f:
@@ -128,6 +130,9 @@ print(f"  Vol1: {len(vol1_text)} chars loaded")
 system_instruction = f"""{sys_inst}
 
 {anti_hall}
+
+*** NARRATIVE CONTEXT RULES ***
+{narr_ctx}
 
 *** EXAMPLES OF SUCCESSFUL EXTRACTION ***
 {few_shot}

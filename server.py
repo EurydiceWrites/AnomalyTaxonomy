@@ -95,9 +95,9 @@ def get_cases():
         c['motifs_present'] = list(encounter_motifs.get(eid, []))
         c['motifs_present_codes'] = list(encounter_motif_codes.get(eid, []))
         
-        # Ensure 'source' defaults to Bullard if missing
+        # Ensure 'source' defaults to Unknown if missing
         if not c.get('source'):
-            c['source'] = 'Bullard'
+            c['source'] = 'Unknown'
 
     conn.close()
     return jsonify(cases_raw)

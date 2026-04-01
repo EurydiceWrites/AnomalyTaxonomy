@@ -123,8 +123,17 @@
         "",
         "You MUST ONLY USE the Motif Codes from the strict dictionary provided below. Do not invent codes.",
         "WARNING: Use strong semantic reasoning. The witness's words will rarely match the dictionary exactly. Map concepts based on their semantic meaning. However, DO NOT FORCE A FIT. If the concept is entirely novel and has no semantic equivalent in the dictionary, YOU MUST assign the exact string 'ANOMALY'."
+      
+          
       ],
-      "anti_hallucination_rules": [
+
+     "narrative_context_rules": [
+  "Consider the narrative context when assigning motif codes, including events that are implied but not physically described or directly stated. The absence of a described transition, the implication of a relationship, or the consequence of an action can all be codeable events.",
+  "EXAMPLE 1: 'They led me to the center of the light, and suddenly I find myself going upwards... The next thing I remember, I am inside a shiny room' — the witness has no memory of how they moved from outside to inside the craft. Code E201 (doorway amnesia) in addition to codes for the room itself.",
+  "EXAMPLE 2: 'They were walking around the craft as if looking for something. Then all of a sudden, one of them found something and called the others over' — leadership is not stated directly but is implied by the behavior of one being directing the attention of the group. Code B800 (leader).",
+  "EXAMPLE 3: 'I felt compelled to look up the tube. But I didn't feel any fear' — the witness feels an external compulsion without receiving a direct verbal or telepathic instruction. Code the implied effect (e.g., E300 for pacification, A114 for compulsion to secrecy) based on the nature of the compulsion."
+],
+    "anti_hallucination_rules": [
         "- Prefix-Family Subject Constraint: The letter prefix of each Motif Code defines WHO or WHAT the code describes. B-codes (B100-B999) describe properties, behaviors, and attributes of the BEINGS/ENTITIES only -- never the human witness. E-codes (E100-E399) describe effects on or states of the WITNESS. Do not cross-apply: if you are describing something about the witness, use an E-code; if you are describing something about the beings, use a B-code. When in doubt, check which agent (being or witness) the sentence fragment is actually about.",
         "- Fragment Provenance: When citing the sentence fragment for a motif, cite the sentence where the event ACTUALLY OCCURS in the narrative sequence -- not the sentence elsewhere in the text that best illustrates the dictionary definition. The fragment must reflect where in the story this motif happens, not where it is most clearly described.",
         "- Sometimes you will find that one sentence has more than one applicable motif codes. When this happens, slice the sentence into smaller text fragments and assign each fragment to the code that matches it, based on the Motif Dictionary description, not based on the order the codes appear in the text. ",
