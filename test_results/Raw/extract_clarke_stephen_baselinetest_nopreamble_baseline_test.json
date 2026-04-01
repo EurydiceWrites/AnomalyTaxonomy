@@ -1,0 +1,488 @@
+{
+  "case_number": "clarke_stephen_baselinetest_nopreamble",
+  "profile": "baseline_test",
+  "timestamp": "2026-03-29T21:37:31.052170",
+  "ai_count": 48,
+  "ai_events": [
+    {
+      "sequence": 1,
+      "motif_code": "U103",
+      "citation": "white balls of light burst out of the sky and dropped to the ground around me.",
+      "reasoning": "The text describes 'white balls of light' descending, which corresponds to the U103 (Sphere) motif for craft morphology.",
+      "chunk": 2,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "19"
+    },
+    {
+      "sequence": 2,
+      "motif_code": "B201",
+      "citation": "Out of the balls of light came these little men.",
+      "reasoning": "The witness describes 'little men,' which fits the general classification of B201 (HuManoid).",
+      "chunk": 2,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "19"
+    },
+    {
+      "sequence": 3,
+      "motif_code": "E200",
+      "citation": "From that moment, I remember nothing, only that they brought me back to the garden.",
+      "reasoning": "The witness explicitly states, 'From that moment, I remember nothing,' which is the definition of E200 (TiMe lapse). The memory state is 'unconscious' as he has no memory of this period.",
+      "chunk": 2,
+      "memory_state": "unconscious",
+      "emotional_marker": null,
+      "source_page": "19"
+    },
+    {
+      "sequence": 4,
+      "motif_code": "B610",
+      "citation": "Two were holding my hand...",
+      "reasoning": "The text states 'Two were holding my hand,' which is a close semantic equivalent to B610, which describes two beings flanking and holding the witness.",
+      "chunk": 2,
+      "memory_state": "conscious",
+      "emotional_marker": "Happiness",
+      "source_page": "19"
+    },
+    {
+      "sequence": 4,
+      "motif_code": "E301",
+      "citation": "...and telling me that I was now their friend.",
+      "reasoning": "The beings explicitly tell the witness 'that I was now their friend,' which directly causes the witness to feel a friendly connection, aligning with the definition of E301 (Friendly effect).",
+      "chunk": 2,
+      "memory_state": "conscious",
+      "emotional_marker": "Happiness",
+      "source_page": "19"
+    },
+    {
+      "sequence": 5,
+      "motif_code": "E300",
+      "citation": "I also had a feeling of happiness around these small beings. I remember laughing with them and playing...",
+      "reasoning": "The witness states, 'I also had a feeling of happiness around these small beings. I remember laughing with them...' This feeling of euphoria and lack of fear corresponds to the E300 (Pacification effect) motif.",
+      "chunk": 2,
+      "memory_state": "conscious",
+      "emotional_marker": "Happiness",
+      "source_page": "19"
+    },
+    {
+      "sequence": 5,
+      "motif_code": "A116",
+      "citation": "...but I don’t know where we were at the time.",
+      "reasoning": "The witness recalls laughing and playing with the beings but explicitly states, 'I don’t know where we were at the time.' This indicates an incomplete or fragmented memory of the experience, which is the definition of A116 (FragMentary MeMories of an experience persist).",
+      "chunk": 2,
+      "memory_state": "conscious",
+      "emotional_marker": "Happiness",
+      "source_page": "19"
+    },
+    {
+      "sequence": 6,
+      "motif_code": "M122",
+      "citation": "I had been chosen as a three-year-old to be a part of an experiment.",
+      "reasoning": "The witness's later understanding that he 'had been chosen as a three-year-old' directly maps to M122, which describes the beings having a special interest in the witness.",
+      "chunk": 2,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "19"
+    },
+    {
+      "sequence": 6,
+      "motif_code": "M125",
+      "citation": "I had been chosen as a three-year-old to be a part of an experiment. By that time I understood what was happening. They had recorded everything about me.",
+      "reasoning": "The witness's realization that he was part of an 'experiment' and that the beings 'had recorded everything about me' aligns with the motif M125, which states the beings' purpose is to learn or experiment.",
+      "chunk": 2,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "19"
+    },
+    {
+      "sequence": 7,
+      "motif_code": "M118",
+      "citation": "They told me it was our secret.",
+      "reasoning": "The witness explicitly states, 'They told me it was our secret,' which directly corresponds to the motif M118: 'Beings swear the subject to secrecy.'",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 8,
+      "motif_code": "B905",
+      "citation": "These space men did not consider the feelings of the humans they chose for their study.",
+      "reasoning": "The witness's statement that the beings 'did not consider the feelings of the humans' is a direct semantic match for the motif B905, which describes beings behaving in a 'cold, indifferent, insensitive or inconsiderate way.'",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": "Annoyance",
+      "source_page": "20"
+    },
+    {
+      "sequence": 8,
+      "motif_code": "B755",
+      "citation": "They underestimated or didn’t understand the independent nature of the human spirit. They don’t understand when we rebel or are uncooperative.",
+      "reasoning": "The witness's observation that the beings 'don’t understand when we rebel or are uncooperative' aligns with the concept of B755: 'Ignorance of and interest in eMotions.'",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 9,
+      "motif_code": "B903",
+      "citation": "They expect obedience.",
+      "reasoning": "The statement 'They expect obedience' implies a coercive dynamic where the witness's will is subjugated, fitting the definition of B903: 'Beings force or coMpel witness against his will.'",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 10,
+      "motif_code": "E217",
+      "citation": "“Did you rebel?” “A couple of times, but it was futile. ... Once I tried to resist, but it was impossible.”",
+      "reasoning": "The witness explicitly states they 'rebel[led]' and 'tried to resist,' which is a direct match for E217: 'Non-denial of defense: fight.'",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": "Futility",
+      "source_page": "20"
+    },
+    {
+      "sequence": 11,
+      "motif_code": "E322",
+      "citation": "with a look they can paralyze you.",
+      "reasoning": "The ability to 'paralyze you' with 'a look' directly implies that the eyes of the beings are hypnotic or compelling, matching the definition of E322.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 11,
+      "motif_code": "E315",
+      "citation": "with a look they can paralyze you.",
+      "reasoning": "The text states that a 'look' from the beings results in the witness being paralyzed, which is a direct match for the definition of E315: 'Paralysis, nuMbness.'",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 12,
+      "motif_code": "M119",
+      "citation": "They can make you forget things.",
+      "reasoning": "The dictionary defines M119 as beings *telling* the subject to forget. The text describes a more direct form of control where beings can *make* the subject forget. While not a perfect semantic match, M119 is the closest available code related to the theme of induced amnesia by the beings.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 13,
+      "motif_code": "E216",
+      "citation": "I chose not to fight them.",
+      "reasoning": "After describing futile resistance, the witness makes a conscious 'choice not to fight,' which represents a 'Denial of defense iMpulse' as defined by E216.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": "Resignation",
+      "source_page": "20"
+    },
+    {
+      "sequence": 14,
+      "motif_code": "M125",
+      "citation": "“You spoke of a human experiment. Can you explain that statement in more detail?” I asked. “That’s what they do.",
+      "reasoning": "The witness explicitly labels the beings' activities as a 'human experiment' and a 'study,' which directly corresponds to M125: 'They have coMe to learn, teach or experiMent.'",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 14,
+      "motif_code": "A225",
+      "citation": "They often take young children and continue to abduct them through adulthood.",
+      "reasoning": "The statement that the beings 'continue to abduct them through adulthood' is a direct description of repeated or 'Further abductions,' matching A225.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 15,
+      "motif_code": "X257",
+      "citation": "They began their experiment by giving me puzzles to play with, and, though I did not know it at the time, they were observing how I put them together.",
+      "reasoning": "The witness was given 'puzzles to play with' and was observed performing these tasks. This fits the definition of X257: 'The beings have the witness Manipulate their Machinery, or perforM tasks.'",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 16,
+      "motif_code": "B202",
+      "citation": "Some looked human, just like you and me.",
+      "reasoning": "The text is a direct match for the definition of B202: 'HuMan.'",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 17,
+      "motif_code": "B223",
+      "citation": "Some were taller and whiter than me.",
+      "reasoning": "The description 'taller than me' implies a height above the human average, fitting the concept of B223: 'Tall (over 6 feet).'",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 17,
+      "motif_code": "B290",
+      "citation": "Some were taller and whiter than me.",
+      "reasoning": "The description of the beings' skin as 'whiter' than the witness's directly corresponds to the 'white' descriptor in motif B290.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 18,
+      "motif_code": "B201",
+      "citation": "Others only looked a little like a human.",
+      "reasoning": "Beings that look 'a little like a human' but are not fully human fit the definition of B201: 'HuManoid.'",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 19,
+      "motif_code": "B230",
+      "citation": "Their heads were big",
+      "reasoning": "The text is a direct match for the definition of B230: 'Head large.'",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 20,
+      "motif_code": "ANOMALY",
+      "citation": "their eyes were massive",
+      "reasoning": "The witness describes the beings' eyes as 'massive.' The provided Bullard Motif Dictionary does not contain a specific code for large eyes. The closest related code, B230 (Head large), is explicitly forbidden for this context by the instructions. Therefore, this distinct and significant feature is classified as an ANOMALY.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 21,
+      "motif_code": "B910",
+      "citation": "They showed no emotion.",
+      "reasoning": "The witness's statement that 'They showed no emotion' is a direct match for the definition of B910: 'Beings are iMpassive.'",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 22,
+      "motif_code": "B292",
+      "citation": "It was a strange skin, very wrinkled and scaly.",
+      "reasoning": "The description of the skin as 'very wrinkled and scaly' is a direct match for the definition of B292.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 23,
+      "motif_code": "B221",
+      "citation": "They did not reach my shoulders",
+      "reasoning": "A being that does not reach an adult's shoulders would fall into the 'Moderately short (4-5 feet)' category, matching B221.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 24,
+      "motif_code": "B501",
+      "citation": "They were strong.",
+      "reasoning": "The witness explicitly states 'They were strong,' which is a direct match for B501: 'Beings niMble, unusually strong.'",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 24,
+      "motif_code": "E320",
+      "citation": "if they touched you, you have no energy. ... They had powers that reached into your soul and made you incapable of resisting—power over my body and my mind.",
+      "reasoning": "The witness describes a loss of energy and becoming 'incapable of resisting' as a direct result of being touched, which is a clear example of E320: 'Control by touch or gesture.'",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 25,
+      "motif_code": "E215",
+      "citation": "After that, I gave up and accepted the situation.",
+      "reasoning": "The act of giving up and accepting an abduction is an uncharacteristic behavior for a human in such a situation, fitting the definition of E215: 'Inappropriate response or uncharacteristic behavior: odd.'",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": "Resignation",
+      "source_page": "20"
+    },
+    {
+      "sequence": 26,
+      "motif_code": "B206",
+      "citation": "They introduced me to my double. That was in 1963, long before human scientists were conducting cloning experiments.",
+      "reasoning": "The witness is introduced to a 'double,' which is explicitly contextualized as a 'clone,' a direct match for B206: 'Android, clone.'",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 27,
+      "motif_code": "M111",
+      "citation": "I taught him about life.",
+      "reasoning": "The witness is tasked with teaching their clone, which fits the definition of M111: 'Beings charge subject with task, e.g., to teach, learn.'",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 28,
+      "motif_code": "ANOMALY",
+      "citation": "When I was sixteen, I stayed on board their ship, and my clone went back to Earth. He stayed there two weeks impersonating me, and no one ever knew the difference.",
+      "reasoning": "The witness describes being temporarily replaced on Earth by a clone for a period of two weeks. This specific event of substitution by a doppelgänger or clone is not covered by any code in the provided dictionary, making it an ANOMALY.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 29,
+      "motif_code": "ANOMALY",
+      "citation": "he was made to live on another planet the space travelers were populating.",
+      "reasoning": "The statement that the beings are actively 'populating' another planet is a specific motive and activity not represented in the Bullard Motif Dictionary. It goes beyond general reproduction problems (M129) or simple bases on other planets (W111).",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 30,
+      "motif_code": "ANOMALY",
+      "citation": "He looks like me, talks like me, and has my knowledge.",
+      "reasoning": "The transfer of the witness's specific knowledge to a clone is a form of information transfer not covered by existing codes like X251 (which refers to adding knowledge *to the witness*) or X255 (mind-reading). This specific application of knowledge duplication is an ANOMALY.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 31,
+      "motif_code": "M116",
+      "citation": "They came to me late that night, took me on board their ship, and told me that they were finished with me.",
+      "reasoning": "The beings' statement that they were 'finished with' the witness is a direct semantic match for M116, 'Beings say the tiMe has coMe to return,' indicating the conclusion of their interactions.",
+      "chunk": 4,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 32,
+      "motif_code": "B206",
+      "citation": "My double had learned what he needed to know.",
+      "reasoning": "The witness's reference to a 'double' who has been learning from him is a direct semantic match for the concept of an 'Android, clone' as described in motif B206.",
+      "chunk": 4,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 32,
+      "motif_code": "M125",
+      "citation": "He would be a farmer like me on another planet, and I had taught him all he needed to know.",
+      "reasoning": "The witness states that the purpose of his long-term interaction with the beings was for him to 'teach' his double. This aligns perfectly with motif M125: 'They have coMe to learn, teach or experiMent.'",
+      "chunk": 4,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 33,
+      "motif_code": "B905",
+      "citation": "They never thanked me. I think it is a concept they don’t understand.",
+      "reasoning": "The beings' failure to express gratitude is a form of cold, indifferent, or insensitive behavior, which is the core concept of motif B905.",
+      "chunk": 4,
+      "memory_state": "conscious",
+      "emotional_marker": "Resentment",
+      "source_page": "20"
+    },
+    {
+      "sequence": 34,
+      "motif_code": "B725",
+      "citation": "Because they are superior, both physically and intellectually, they have the right to do as they please with humans.",
+      "reasoning": "The witness's interpretation that the beings feel they have 'the right to do as they please with humans' due to their superiority is a semantic match for B725, which includes beings who 'claiM godlike qualities for' themselves.",
+      "chunk": 4,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 35,
+      "motif_code": "B720",
+      "citation": "The Star People do not believe in war...",
+      "reasoning": "The witness's summary of the beings' philosophy that they 'do not believe in war' is a direct match for motif B720, 'Beings profess concern with peace.'",
+      "chunk": 4,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 35,
+      "motif_code": "ANOMALY",
+      "citation": "...and they have no diseases where they come from.",
+      "reasoning": "The statement that the beings' home world is free of disease is a specific piece of information about their biology or environment for which no corresponding code exists in the Bullard dictionary.",
+      "chunk": 4,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 36,
+      "motif_code": "A114",
+      "citation": "I have never told anyone this story. I carried it in my heart.",
+      "reasoning": "This statement reflects a long-term decision by the witness to keep his experiences secret, which aligns with the definition of A114, 'Witness feels obliged to keep experience a secret.'",
+      "chunk": 4,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 37,
+      "motif_code": "A133",
+      "citation": "It is comforting to know that there are other worlds with great knowledge. It gives me hope.",
+      "reasoning": "The witness expresses a new, positive awareness and philosophical outlook ('hope') derived directly from his experiences, which is the core concept of A133, 'Witness develops positive new personality--is More aware'.",
+      "chunk": 4,
+      "memory_state": "conscious",
+      "emotional_marker": "Hope",
+      "source_page": "20"
+    },
+    {
+      "sequence": 38,
+      "motif_code": "A130",
+      "citation": "...perhaps it was through the influence of the star travelers that I felt the need to go to the university.",
+      "reasoning": "The witness speculates that his encounters directly influenced his desire to pursue higher education. This is a direct match for A130, 'Witness develops new intellectual abilities, interests.'",
+      "chunk": 4,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    }
+  ]
+}

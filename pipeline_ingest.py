@@ -1009,6 +1009,18 @@ def main():
     # Display the JSON and wait for confirmation
     _display_and_confirm(pipeline_json, json_path)
 
+    # Step 3: Extraction via Gemini Pro
+    print("\n[*] Starting Step 3: Extraction via extract_narrative()...")
+    from llm_bridge import extract_narrative
+
+    final_profile, all_events, ai_events_json = extract_narrative(
+        pipeline_json_path=json_path,
+        profile_name="baseline_test",
+    )
+
+    print(f"\n[*] Extraction complete: {len(all_events)} events")
+    print(f"[*] Results merged into: {json_path}")
+
 
 if __name__ == "__main__":
     main()

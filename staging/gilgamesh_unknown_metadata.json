@@ -1,0 +1,40 @@
+{
+  "step_0": {
+    "source_text_path": "staging\\extracted_text_extracted_text_The-Epic-of-Gilgamesh_1-29.txt",
+    "pdf_page_start": null,
+    "pdf_page_end": null,
+    "source_page_start": 88,
+    "source_page_end": 145
+  },
+  "step_1_scanned_metadata": {
+    "source_type": "literary",
+    "memory_retrieval_method": "not_applicable",
+    "narrative_structure": "literary_narration",
+    "principal_investigator": null,
+    "experiencer_name": "Gilgamesh",
+    "gender": "male",
+    "age_at_time": null,
+    "location": "Uruk, southern Mesopotamia (modern-day Iraq), Cedar Forest (Mount Lebanon), Mount Nimush, Shuruppak, Mashum (twin peaks), the steppe, the waters of death",
+    "date_of_experience": "ca. 2700 B.C.E.",
+    "entity_types": [
+      "humanoid",
+      "divine being",
+      "monster",
+      "human",
+      "animal"
+    ],
+    "narrative_summary": "The Epic of Gilgamesh tells the story of King Gilgamesh of Uruk, a powerful but oppressive ruler. The gods create the wild man Enkidu to challenge him, but they become close friends and embark on epic adventures, including slaying the giant Humbaba and the Bull of Heaven. After Enkidu's death, Gilgamesh, terrified of his own mortality, undertakes a perilous quest to find the immortal Utanapishtim and discover the secret of eternal life. Despite facing numerous trials and receiving a chance at immortality through a magic plant, he ultimately fails, as a snake steals the plant. Gilgamesh returns to Uruk a changed man, accepting his mortality and finding pride in the enduring city walls he built."
+  },
+  "step_1_source_attribution": {
+    "author_name": null,
+    "title": null,
+    "publication_year": null,
+    "publisher": null,
+    "place_of_publication": null,
+    "edition": null,
+    "translator": null,
+    "editor": null,
+    "author_role": null
+  },
+  "step_3_extraction": null
+}

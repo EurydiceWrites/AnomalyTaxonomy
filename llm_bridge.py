@@ -477,9 +477,9 @@ def load_to_database(final_profile, all_events, case_number, source_citation,
 
             try:
                 cursor.execute("""
-                    INSERT INTO Encounter_Events (Encounter_ID, Sequence_Order, Motif_Code, Source_Citation, memory_state, source_page, ai_justification)
-                    VALUES (?, ?, ?, ?, ?, ?, ?)
-                """, (encounter_id, global_sequence, event.motif_code, event.source_citation, event.memory_state, event.source_page, event.ai_justification))
+                    INSERT INTO Encounter_Events (Encounter_ID, Sequence_Order, Motif_Code, Source_Citation, memory_state, source_page, ai_justification, Emotional_Marker)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                """, (encounter_id, global_sequence, event.motif_code, event.source_citation, event.memory_state, event.source_page, event.ai_justification, event.emotional_marker))
 
                 emotion_str = f"Emotion: {event.emotional_marker}" if event.emotional_marker else "No explicit emotion"
 
