@@ -147,7 +147,7 @@ You must ONLY use codes from this dictionary. If a concept is entirely novel, as
 {motif_dict_str}
 """
 
-MODEL = 'gemini-2.5-pro'
+MODEL = 'gemini-3.1-pro-preview'
 
 # Check for existing cache first, create if not found
 print("  Checking for existing context cache...")

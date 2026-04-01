@@ -1,0 +1,16 @@
+{
+  "author_name": null,
+  "title": "Unknown",
+  "publication_year": null,
+  "publisher": null,
+  "place_of_publication": null,
+  "edition": null,
+  "translator": null,
+  "editor": null,
+  "author_role": null,
+  "scan_complete": false,
+  "missing_fields": [
+    "title",
+    "author_name (or translator/editor)"
+  ]
+}

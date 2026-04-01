@@ -78,7 +78,8 @@ class ScannedMetadata(BaseModel):
     principal_investigator: Optional[str] = Field(description="Name of the investigator or researcher, if applicable.")
     memory_retrieval_method: Literal["conscious", "hypnosis", "altered", "mixed", "unknown", "not_applicable"] = Field(description="How the account was recalled. 'hypnosis' if retrieved under hypnotic regression. 'conscious' if naturally recalled. 'altered' if dream/trance/vision. 'mixed' if combination. 'not_applicable' if the source is not a recalled experience (e.g., authored literature, mythology, historical chronicle). 'unknown' if the source appears to be a recalled experience but the retrieval method is not stated.")
     number_of_witnesses: Optional[int] = Field(description="Number of witnesses, if stated.")
-    entity_type: Optional[str] = Field(description="Type of entity described (e.g., 'Grey', 'humanoid', 'divine being', 'monster'), if applicable.")
+    entity_types: list[str] = Field(default=[], description="Types of entities described (e.g., 'Grey', 'humanoid', 'divine being', 'monster'). Return as a list — encounters can involve multiple entity types.")
+    narrative_structure: Literal["third_person_investigation", "interview_dialogue", "first_person_testimony", "literary_narration", "compiled_catalogue", "not_applicable"] = Field(description="The narrative voice/structure of the text. 'third_person_investigation' = investigator narrates experiencer's account (e.g., Hopkins, Fowler). 'interview_dialogue' = interviewer and experiencer voices on the page (e.g., Clarke, Mack). 'first_person_testimony' = experiencer narrates their own experience (e.g., Ezekiel, Enoch). 'literary_narration' = characters acting within a narrative (e.g., Gilgamesh, Mahabharata). 'compiled_catalogue' = brief compiled case summaries from secondary sources (e.g., Vallee). 'not_applicable' = edge cases.")
     source_page_start: Optional[int] = Field(description="The first printed page number found in the body of the text (e.g., page numbers physically printed on the original document pages), NOT the PDF file page numbers.")
     source_page_end: Optional[int] = Field(description="The last printed page number found in the body of the text (e.g., page numbers physically printed on the original document pages), NOT the PDF file page numbers.")
     narrative_summary: str = Field(description="A brief 1-paragraph summary of the narrative content.")
@@ -760,7 +761,8 @@ def scan_metadata(full_text, source_path, start_page, end_page, attribution=None
     print("---")
     print(f"Investigator:  {metadata.principal_investigator or 'None'}")
     print(f"Witnesses:     {metadata.number_of_witnesses if metadata.number_of_witnesses is not None else 'None'}")
-    print(f"Entity Type:   {metadata.entity_type or 'None'}")
+    print(f"Entity Types:  {', '.join(metadata.entity_types) if metadata.entity_types else 'None'}")
+    print(f"Structure:     {metadata.narrative_structure}")
     src_range = (f"{metadata.source_page_start}-{metadata.source_page_end}"
                  if metadata.source_page_start is not None else "None")
     print(f"Source Pages:  {src_range}")
@@ -772,6 +774,148 @@ def scan_metadata(full_text, source_path, start_page, end_page, attribution=None
 # ---------------------------------------------------------------------------
 # CLI entry point
 # ---------------------------------------------------------------------------
+
+def _slugify(text):
+    """Convert text to a safe lowercase slug for filenames."""
+    if not text:
+        return "unknown"
+    slug = re.sub(r'[^\w\s\-]', '', text.lower())
+    slug = re.sub(r'[\s\-]+', '_', slug).strip('_')
+    return slug or "unknown"
+
+
+def _build_pipeline_json(metadata, attribution, text_output_path,
+                         start_page, end_page, pages):
+    """
+    Build the consolidated pipeline JSON containing all metadata from Steps 0 and 1.
+    This is the single file that flows through the rest of the pipeline.
+    """
+    # Determine source page range from detected pages (if any)
+    source_start = metadata.source_page_start
+    source_end = metadata.source_page_end
+
+    pipeline = {
+        "step_0": {
+            "source_text_path": text_output_path,
+            "pdf_page_start": start_page,
+            "pdf_page_end": end_page,
+            "source_page_start": source_start,
+            "source_page_end": source_end,
+        },
+        "step_1_scanned_metadata": {
+            "source_type": metadata.source_type,
+            "memory_retrieval_method": metadata.memory_retrieval_method,
+            "narrative_structure": metadata.narrative_structure,
+            "principal_investigator": metadata.principal_investigator,
+            "experiencer_name": metadata.pseudonym,
+            "gender": metadata.gender,
+            "age_at_time": metadata.age,
+            "location": metadata.location,
+            "date_of_experience": metadata.date_of_encounter,
+            "entity_types": metadata.entity_types,
+            "narrative_summary": metadata.narrative_summary,
+        },
+        "step_1_source_attribution": {
+            "author_name": attribution.author_name if attribution else None,
+            "title": attribution.title if attribution else None,
+            "publication_year": attribution.publication_year if attribution else None,
+            "publisher": attribution.publisher if attribution else None,
+            "place_of_publication": attribution.place_of_publication if attribution else None,
+            "edition": attribution.edition if attribution else None,
+            "translator": attribution.translator if attribution else None,
+            "editor": attribution.editor if attribution else None,
+            "author_role": attribution.author_role if attribution else None,
+        },
+        "step_3_extraction": None,
+    }
+
+    return pipeline
+
+
+def _make_pipeline_json_path(metadata, attribution):
+    """
+    Build the JSON filename: staging/{experiencer_name}_{source_title}_metadata.json
+    """
+    experiencer = _slugify(metadata.pseudonym) if metadata.pseudonym else "unknown"
+    title = _slugify(attribution.title) if attribution and attribution.title else "unknown"
+    filename = f"{experiencer}_{title}_metadata.json"
+    return os.path.join("staging", filename)
+
+
+def _display_and_confirm(pipeline_json, json_path):
+    """
+    Display the pipeline JSON in the terminal and wait for user confirmation.
+    """
+    print()
+    print("=" * 65)
+    print("  PIPELINE METADATA — REVIEW BEFORE PROCEEDING")
+    print("=" * 65)
+
+    # Step 0 summary
+    s0 = pipeline_json["step_0"]
+    print(f"\n  Source text:  {s0['source_text_path']}")
+    print(f"  PDF pages:   {s0['pdf_page_start']}-{s0['pdf_page_end']}")
+    src = (f"{s0['source_page_start']}-{s0['source_page_end']}"
+           if s0['source_page_start'] is not None else "None")
+    print(f"  Source pages: {src}")
+
+    # Step 1 metadata
+    s1 = pipeline_json["step_1_scanned_metadata"]
+    print(f"\n  Experiencer:  {s1['experiencer_name'] or 'None'}")
+    print(f"  Gender:       {s1['gender'] or 'None'}")
+    print(f"  Age:          {s1['age_at_time'] or 'None'}")
+    print(f"  Type:         {s1['source_type']}")
+    print(f"  Structure:    {s1['narrative_structure']}")
+    print(f"  Retrieval:    {s1['memory_retrieval_method']}")
+    print(f"  Investigator: {s1['principal_investigator'] or 'None'}")
+    print(f"  Location:     {s1['location'] or 'None'}")
+    print(f"  Date:         {s1['date_of_experience'] or 'None'}")
+    print(f"  Entities:     {', '.join(s1['entity_types']) if s1['entity_types'] else 'None'}")
+    print(f"  Summary:      {s1['narrative_summary'][:100]}...")
+
+    # Attribution
+    sa = pipeline_json["step_1_source_attribution"]
+    print(f"\n  Author:       {sa['author_name'] or 'None'}")
+    print(f"  Title:        {sa['title'] or 'None'}")
+    print(f"  Role:         {sa['author_role'] or 'None'}")
+    if sa['publication_year']:
+        print(f"  Year:         {sa['publication_year']}")
+
+    print()
+    print("=" * 65)
+
+    # Confirmation loop
+    while True:
+        choice = input("\nMetadata looks correct? [y/n/edit]: ").strip().lower()
+
+        if choice == "y":
+            print("[*] Metadata confirmed. Ready for Step 3 (extraction).")
+            return pipeline_json
+
+        elif choice == "n":
+            print("[*] Exiting. No extraction will be run.")
+            sys.exit(0)
+
+        elif choice == "edit":
+            print(f"\n[*] Edit the JSON file at:\n    {json_path}")
+            print("[*] Make your changes, save the file, then press Enter to continue.")
+            input("    Press Enter when done... ")
+
+            # Re-read the edited JSON
+            with open(json_path, "r", encoding="utf-8") as f:
+                pipeline_json.update(json.load(f))
+
+            # Re-save (in case the user edited with formatting issues)
+            with open(json_path, "w", encoding="utf-8") as f:
+                json.dump(pipeline_json, f, indent=2, ensure_ascii=False)
+
+            print("[*] JSON re-loaded. Displaying updated metadata...")
+            # Re-display
+            return _display_and_confirm(pipeline_json, json_path)
+
+        else:
+            print("  Please enter 'y', 'n', or 'edit'.")
+
 
 def make_output_stem(source_path, start_page, end_page):
     """Build a safe filename stem, e.g. 'Hopkins_50-88'."""
@@ -827,40 +971,55 @@ def main():
 
     os.makedirs("staging", exist_ok=True)
 
-    stem = make_output_stem(source_path, args.start_page, args.end_page)
-    text_output_path = os.path.join("staging", f"extracted_text_{stem}.txt")
-    metadata_output_path = os.path.join("staging", f"metadata_{stem}.json")
-    attribution_output_path = os.path.join("staging", f"attribution_{stem}.json")
-
     # Front-matter scan (PDF only — text files don't have front matter)
     attribution = None
     if is_pdf:
         attribution = scan_front_matter(source_path, args.start_page)
 
-        # Save attribution
-        with open(attribution_output_path, "w", encoding="utf-8") as f:
-            json.dump(attribution.model_dump(), f, indent=2, ensure_ascii=False)
-        print(f"[*] Attribution saved to: {attribution_output_path}")
-
-    # Step 0
+    # Step 0: Extract text
     if is_pdf:
         pages, full_text = extract_pdf_text(source_path, args.start_page, args.end_page)
     else:
         pages, full_text = extract_txt_text(source_path)
 
+    # Save extracted text
+    stem = make_output_stem(source_path, args.start_page, args.end_page)
+    text_output_path = os.path.join("staging", f"extracted_text_{stem}.txt")
     with open(text_output_path, "w", encoding="utf-8") as f:
         f.write(full_text)
     print(f"\n[*] Extracted text saved to: {text_output_path}")
 
-    # Step 1
+    # Step 1: Metadata scan
     metadata = scan_metadata(full_text, source_path, args.start_page, args.end_page,
                              attribution=attribution)
 
-    with open(metadata_output_path, "w", encoding="utf-8") as f:
-        json.dump(metadata.model_dump(), f, indent=2, ensure_ascii=False)
-    print(f"[*] Metadata saved to: {metadata_output_path}")
+    # Build the consolidated pipeline JSON
+    pipeline_json = _build_pipeline_json(
+        metadata, attribution, text_output_path,
+        args.start_page, args.end_page, pages,
+    )
 
-    print("\n[*] Steps 0 and 1 complete. Ready for Step 2 (metadata confirmation).")
+    # Save the JSON using the naming convention:
+    # staging/{experiencer_name}_{source_title}_metadata.json
+    json_path = _make_pipeline_json_path(metadata, attribution)
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(pipeline_json, f, indent=2, ensure_ascii=False)
+    print(f"\n[*] Pipeline JSON saved to: {json_path}")
+
+    # Display the JSON and wait for confirmation
+    _display_and_confirm(pipeline_json, json_path)
+
+    # Step 3: Extraction via Gemini Pro
+    print("\n[*] Starting Step 3: Extraction via extract_narrative()...")
+    from llm_bridge import extract_narrative
+
+    final_profile, all_events, ai_events_json = extract_narrative(
+        pipeline_json_path=json_path,
+        profile_name="baseline_test",
+    )
+
+    print(f"\n[*] Extraction complete: {len(all_events)} events")
+    print(f"[*] Results merged into: {json_path}")
 
 
 if __name__ == "__main__":

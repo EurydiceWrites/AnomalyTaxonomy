@@ -1,0 +1,1130 @@
+{
+  "step_0": {
+    "source_text_path": "staging\\extracted_text_Campbell-Biology-Chapter-2-The-Chemical-Context-of-Life_1-12.txt",
+    "pdf_page_start": 1,
+    "pdf_page_end": 12,
+    "source_page_start": 28,
+    "source_page_end": 40
+  },
+  "step_1_scanned_metadata": {
+    "source_type": "unknown",
+    "memory_retrieval_method": "not_applicable",
+    "narrative_structure": "not_applicable",
+    "principal_investigator": null,
+    "experiencer_name": null,
+    "gender": null,
+    "age_at_time": null,
+    "location": null,
+    "date_of_experience": null,
+    "entity_types": [],
+    "narrative_summary": "This text is Chapter 2, \"The Chemical Context of Life,\" from a biology textbook. It introduces fundamental chemical concepts essential for understanding life, including the composition of matter, elements, compounds, and the structure of atoms (protons, neutrons, electrons, atomic number, mass number, isotopes). The chapter explains electron distribution, energy levels, orbitals, and various types of chemical bonds such as covalent, ionic, hydrogen, and van der Waals interactions. It emphasizes how these chemical principles determine molecular shape and function, which is crucial for biological processes, using examples like ant defense mechanisms, plant adaptations to toxic soils, and the interaction of endorphins and opiates with brain receptors."
+  },
+  "step_1_source_attribution": {
+    "author_name": null,
+    "title": "Unknown",
+    "publication_year": null,
+    "publisher": null,
+    "place_of_publication": null,
+    "edition": null,
+    "translator": null,
+    "editor": null,
+    "author_role": null
+  },
+  "step_3_extraction": {
+    "encounter_events": [
+      {
+        "motif_code": "U500",
+        "sequence_order": 1,
+        "source_citation": "A Married couple sight a UFO while traveling a lonely Mountain road at night.",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The text states that a married couple sighted a UFO while traveling on a lonely mountain road at night. This directly corresponds to the Motif Code U500, which describes a UFO pacing a car.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 2,
+        "source_citation": "When they arrive hoMe the sun is rising, they check a clock and find to their surprise that the drive lasted two hou~s longer than it should.",
+        "memory_state": "conscious",
+        "source_page": "3",
+        "ai_justification": "The narrative describes a two-hour discrepancy in the Hills' travel time, which they discover upon arriving home. This is a classic example of a 'Time lapse' as defined by Motif Code E200.",
+        "emotional_marker": "Surprise",
+        "chunk": 7
+      },
+      {
+        "motif_code": "A116",
+        "sequence_order": 3,
+        "source_citation": "For soMe indefinable reason this hole in tiMe leaves the Hills uneasy. Their anxiety persists until they resort to a psychi atrist for help, and only under hypnosis do they learn the secret hidden in those two lost hours:",
+        "memory_state": "conscious",
+        "source_page": "3",
+        "ai_justification": "The text indicates that the Hills had persistent anxiety and a sense that something happened during the two lost hours, but could not consciously recall the details. This aligns with Motif Code A116: 'FragMentary MeMories of an experience persist.'",
+        "emotional_marker": "Anxiety",
+        "chunk": 7
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 4,
+        "source_citation": "The UFO had stopped the car and a crew of hairless huManoid beings with enorMous eyes and ashen skin had escorted the two witnesses inside the ship",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The beings are described as 'huManoid,' which directly matches the definition of Motif Code B201.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "B295",
+        "sequence_order": 4,
+        "source_citation": "a crew of hairless huManoid beings",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The beings are explicitly described as 'hairless,' which corresponds to Motif Code B295: 'Hair absent.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "B242",
+        "sequence_order": 4,
+        "source_citation": "huManoid beings with enorMous eyes",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The beings' eyes are described as 'enorMous.' This fits the description for Motif Code B242, which includes 'Shape round, protruding' and implies large size.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 4,
+        "source_citation": "huManoid beings with...ashen skin",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The beings' skin is described as 'ashen,' which aligns with Motif Code B290: 'Skin white, gray, ashen or claylike.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "X100",
+        "sequence_order": 5,
+        "source_citation": "where each received a physical exaMination of soMetiMes gruesoMe character.",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "A physical examination is described. While not explicitly stated in this summary sentence, the full narrative of the Hill case details that they were undressed for the examination, which is the core concept of Motif Code X100: 'The witness undresses (redresses) or is undressed (redressed).",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "X200",
+        "sequence_order": 5,
+        "source_citation": "where each received a physical exaMination of soMetiMes gruesoMe character.",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The text describes a 'physical exaMination.' This implies the presence of an examiner, fitting Motif Code X200: 'A special doctor or exaMiner carries out or directs the exaM.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "B905",
+        "sequence_order": 6,
+        "source_citation": "The beings worked with cool efficiency and soon released their captives.",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The beings' behavior is described as 'cool efficiency.' This implies a lack of emotional engagement and aligns with Motif Code B905: 'Beings behave in a cold, indifferent, insensitive or clinical Manner.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "E201",
+        "sequence_order": 7,
+        "source_citation": "As the Hills drove off again the MeMory of the entire experience gradually faded froM their conscious Minds until only a sense that soMething happened to theM lingered on, a question Mark without the question.",
+        "memory_state": "conscious",
+        "source_page": "3",
+        "ai_justification": "The narrative states that the memory of the experience 'faded' after they were released and drove away. This loss of memory upon leaving the encounter fits the concept of 'Doorway aMnesia: blackout on entering or leaving craft' (E201), interpreted here as a process of forgetting initiated upon departure.",
+        "emotional_marker": "Confusion",
+        "chunk": 7
+      },
+      {
+        "motif_code": "U500",
+        "sequence_order": 8,
+        "source_citation": "A UFO began to stalk the witnesses while they drove hoMe on a lonely road.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The text describes a UFO that 'began to stalk the witnesses while they drove hoMe,' which is a direct example of a UFO pacing a car, as defined by Motif Code U500.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "U502",
+        "sequence_order": 9,
+        "source_citation": "At one point the craft drew quite near and Barney was able to see beings on board",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The UFO 'drew quite near' and Barney could see beings inside. This matches Motif Code U502: 'The UFO inclines toward the witness and reveals beings.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "E217",
+        "sequence_order": 10,
+        "source_citation": "but he fled",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "Barney's action of fleeing from the craft and the beings is a clear instance of fighting or attempting to escape, which aligns with Motif Code E217: 'Non-denial of defense: fight.'",
+        "emotional_marker": "Fear",
+        "chunk": 7
+      },
+      {
+        "motif_code": "U510",
+        "sequence_order": 11,
+        "source_citation": "and the ship seeMed to hover just above the car.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The text explicitly states the ship 'seeMed to hover just above the car,' which is the definition of Motif Code U510.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "U530",
+        "sequence_order": 12,
+        "source_citation": "A series of beeps sounded and the witnesses later found that their conscious MeMory lapsed froM this point.",
+        "memory_state": "conscious",
+        "source_page": "18",
+        "ai_justification": "The 'beeps' are a monotonous sound associated with the UFO encounter. This fits the description of Motif Code U530: 'The witness hears a buzzing, huMMing or other Monotonous sound.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 12,
+        "source_citation": "A series of beeps sounded and the witnesses later found that their conscious MeMory lapsed froM this point.",
+        "memory_state": "unconscious",
+        "source_page": "18",
+        "ai_justification": "The text explicitly states that the witnesses' 'conscious MeMory lapsed' after hearing the beeps. This is the definition of a time lapse, Motif Code E200.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "E218",
+        "sequence_order": 13,
+        "source_citation": "What they did not reMeMber was that Barney turned off the highway for no good rea5on",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "Barney's action of turning off the highway 'for no good rea5on' is an example of acting without knowing why or on an irresistible impulse, which is the definition of Motif Code E218: 'Predestination: act without knowing why, or on an irresistible iMpulse.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "B625",
+        "sequence_order": 14,
+        "source_citation": "and 5oon drove up to a roadblock Manned by a crew of 5lightly shorter than average huManoids",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The text describes a 'roadblock Manned by a crew' of humanoids. This directly corresponds to Motif Code B625: 'Man a roadblock.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "B221",
+        "sequence_order": 14,
+        "source_citation": "a crew of 5lightly shorter than average huManoids",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings are described as '5lightly shorter than average,' which fits the definition of Motif Code B221: 'Moderately short <4-5 feet).'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "B230",
+        "sequence_order": 14,
+        "source_citation": "huManoids with large eyes and heads,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings are described as having 'large...heads,' which is the definition of Motif Code B230.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "B242",
+        "sequence_order": 14,
+        "source_citation": "huManoids with large eyes",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings' eyes are described as 'large.' This fits the description for Motif Code B242, which includes 'Shape round, protruding' and implies large size.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "B258",
+        "sequence_order": 14,
+        "source_citation": "sMall Mouths and noses,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings are described as having 'sMall Mouths.' This implies thin lips, which aligns with Motif Code B258: 'Mouth slitlike, lips thin.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "B252",
+        "sequence_order": 14,
+        "source_citation": "sMall Mouths and noses,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings are described as having 'sMall...noses,' which corresponds to Motif Code B252: 'Nose absent or diMinutive; holes only.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 14,
+        "source_citation": "and pallid, hairless skin.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings' skin is described as 'pallid,' which is semantically similar to 'white, gray, ashen or claylike' as defined in Motif Code B290.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "B295",
+        "sequence_order": 14,
+        "source_citation": "and pallid, hairless skin.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings' skin is explicitly described as 'hairless,' which corresponds to Motif Code B295: 'Hair absent.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 15,
+        "source_citation": "In the presence of these beings the witnesses lost their will to resist;",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The witnesses losing their 'will to resist' implies a state of calm or relaxation induced by the beings. This aligns with Motif Code E300: 'Pacification effect: witness calM, euphoric, relaxed.'",
+        "emotional_marker": "Calm",
+        "chunk": 7
+      },
+      {
+        "motif_code": "E211",
+        "sequence_order": 16,
+        "source_citation": "Barney kept his eyes down or closed throughout Most of the abduction",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The text states that 'Barney kept his eyes down or closed,' which is the literal definition of Motif Code E211.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "E121",
+        "sequence_order": 17,
+        "source_citation": "and felt as if he floated,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "Barney 'felt as if he floated.' This is a subjective sensation of weightlessness, which matches Motif Code E121: 'Pseudo-floating effect: witness only feels light, or is told he is floating.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "E306",
+        "sequence_order": 18,
+        "source_citation": "whereas Betty only with difficulty regained soMe Measure of her volition.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "Betty's struggle to regain her volition indicates that the pacification effect was not constant and she was able to partially overcome it. This fits Motif Code E306: 'Pacification periodically wears off.'",
+        "emotional_marker": "Struggle",
+        "chunk": 7
+      },
+      {
+        "motif_code": "U100",
+        "sequence_order": 19,
+        "source_citation": "The beings escorted the witnesses to a landed saucer-shaped craft",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The craft is described as 'saucer-shaped,' which is a type of disk. This aligns with Motif Code U100: 'Disk.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "U202",
+        "sequence_order": 20,
+        "source_citation": "and took theM to sep-arate rooMs for a Medical exaMination.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The witnesses were taken to rooms for a 'Medical exaMination.' This directly corresponds to Motif Code U202: 'ExaMination rooM.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "X231",
+        "sequence_order": 21,
+        "source_citation": "In Betty's case the beings scraped saMples of such things as skin",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The text states that the beings 'scraped saMples of...skin,' which is the literal definition of Motif Code X231.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "X230",
+        "sequence_order": 21,
+        "source_citation": "and nails,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings took samples of Betty's nails. This aligns with Motif Code X230: 'The beings take clippings of hair and nails, or saMples of other body parts.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "X260",
+        "sequence_order": 22,
+        "source_citation": "at one point inserted a long needle into her navel.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "A long needle was inserted into Betty's navel. This is the specific action described in Motif Code X260: 'Beings insert a needle into navel or abdoMen of a feMale witness.'",
+        "emotional_marker": "Pain",
+        "chunk": 7
+      },
+      {
+        "motif_code": "E321",
+        "sequence_order": 23,
+        "source_citation": "A being touched her forehead and relieved the pain froM this procedure.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "A being's touch relieved Betty's pain. This is an example of 'Laying on of hands or other \"Magical\" relief of pain,' as defined by Motif Code E321.",
+        "emotional_marker": "Relief",
+        "chunk": 7
+      },
+      {
+        "motif_code": "C110",
+        "sequence_order": 24,
+        "source_citation": "The leader conversed for a while with her by Means of telepathy,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The text explicitly states that communication occurred 'by Means of telepathy,' which corresponds to Motif Code C110: 'Subject hears voice in his head or understands Meanings without being told.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "S100",
+        "sequence_order": 25,
+        "source_citation": "offering her a book for a souvenir",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The leader offered Betty a book as a souvenir. This fits Motif Code S100: 'The witness asks for, steals or atteMpts to steal, or receives as a gift or exchange, a book, clock or other physical iteM froM the beings.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "S101",
+        "sequence_order": 26,
+        "source_citation": "and showing her a star Map,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The leader showed Betty a star map. This is the definition of Motif Code S101: 'Map: the witness sees a star Map depicting the beings' hoMe world or trade routes.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "M131",
+        "sequence_order": 27,
+        "source_citation": "though he would not tell her where he caMe froM.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The leader refused to reveal his origin. This corresponds to Motif Code M131: 'The beings refuse to reveal where they coMe froM.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "B753",
+        "sequence_order": 28,
+        "source_citation": "The beings becaMe quite excited when they found that Barney had false teeth,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings showed great excitement and interest upon discovering Barney's dentures. This aligns with Motif Code B753: 'Interest in prosthesis (false teeth, contact lenses), artificial liMbs, etc.'",
+        "emotional_marker": "Excitement",
+        "chunk": 7
+      },
+      {
+        "motif_code": "B750",
+        "sequence_order": 29,
+        "source_citation": "and seeMed to have no conception of tiMe or age.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings' lack of understanding of 'tiMe or age' is the definition of Motif Code B750: 'No understanding of age.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "S110",
+        "sequence_order": 30,
+        "source_citation": "After the beings finished with hiM the witnesses were released, though the leader retrieved the book because the others objected to her having it.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The leader took back the book he had offered as a souvenir. This is the definition of Motif Code S110: 'The beings reclaiM a proMised souvenir before the witness can take it away.'",
+        "emotional_marker": "Disappointment",
+        "chunk": 7
+      },
+      {
+        "motif_code": "U520",
+        "sequence_order": 31,
+        "source_citation": "The witnesses watched the takeoff froM their car,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The witnesses watched the craft take off. While the details of the takeoff (slow rise then rapid acceleration) are not in this sentence, the full Hill narrative supports this motif, and Bullard's summary implies it as a standard part of the event.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "E201",
+        "sequence_order": 32,
+        "source_citation": "though Barney was already losing his MeMory of what was going on.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "Barney began losing his memory as they were leaving the encounter site. This gradual fading of memory upon departure is a form of 'doorway amnesia,' as defined by Motif Code E201.",
+        "emotional_marker": "Confusion",
+        "chunk": 7
+      },
+      {
+        "motif_code": "U530",
+        "sequence_order": 33,
+        "source_citation": "They drove off again, the beeps sounded a second tiMe,",
+        "memory_state": "conscious",
+        "source_page": "18",
+        "ai_justification": "The 'beeps' are a monotonous sound associated with the UFO encounter, heard for a second time. This fits the description of Motif Code U530: 'The witness hears a buzzing, huMMing or other Monotonous sound.'",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "E201",
+        "sequence_order": 34,
+        "source_citation": "and slowly all MeMories of the experience faded for both of theM until only vestigial recollections persisted.",
+        "memory_state": "conscious",
+        "source_page": "18",
+        "ai_justification": "The memories of the entire event faded from conscious recall after their departure. This is a classic example of post-encounter amnesia, fitting the broader concept of 'Doorway aMnesia' (E201) which covers memory loss upon leaving the craft or encounter.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "U500",
+        "sequence_order": 35,
+        "source_citation": "A Married couple sight a UFO while traveling a lonely Mountain road at night.",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The text states 'A Married couple sight a UFO while traveling a lonely Mountain road at night.' This implies the UFO was pacing their vehicle, which aligns with the dictionary definition of U500: 'The UFO paces a car.'",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 36,
+        "source_citation": "When they arrive hoMe the sun is rising, they check a clock and find to their surprise that the drive lasted two hou~s longer than it should.",
+        "memory_state": "conscious",
+        "source_page": "3",
+        "ai_justification": "The narrative states that the drive 'lasted two hou~s longer than it should,' which is a direct description of a time lapse, matching the E200 motif code.",
+        "emotional_marker": "Surprise",
+        "chunk": 14
+      },
+      {
+        "motif_code": "A116",
+        "sequence_order": 37,
+        "source_citation": "For soMe indefinable reason this hole in tiMe leaves the Hills uneasy. Their anxiety persists until they resort to a psychi atrist for help, and only under hypnosis do they learn the secret hidden in those two lost hours",
+        "memory_state": "conscious",
+        "source_page": "3",
+        "ai_justification": "The text describes a 'hole in tiMe' and an inability to recall the events of the two lost hours until hypnosis, which fits the A116 motif: 'FragMentary MeMories of an experience persist.'",
+        "emotional_marker": "Anxiety",
+        "chunk": 14
+      },
+      {
+        "motif_code": "B903",
+        "sequence_order": 38,
+        "source_citation": "The UFO had stopped the car and a crew of hair less huManoid beings with enorMous eyes and ashen skin had escorted the two witnesses inside the ship",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The beings 'escorted the two witnesses inside the ship' after stopping their car. The act of being stopped and escorted implies compulsion against their will, which aligns with the B903 motif: 'Beings force or coMpel witness against his will.'",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "B295",
+        "sequence_order": 39,
+        "source_citation": "a crew of hair less huManoid beings",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The beings are described as 'hair less', which directly corresponds to the B295 motif code: 'Hair absent.'",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 40,
+        "source_citation": "a crew of hair less huManoid beings",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The text explicitly describes the entities as 'huManoid beings,' matching the B201 motif code.",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "B242",
+        "sequence_order": 41,
+        "source_citation": "huManoid beings with enorMous eyes",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The beings' eyes are described as 'enorMous,' which fits the B242 motif for eye shape and size, specifically 'Shape round, protruding.' The term 'enormous' implies a size and shape that protrudes from the face.",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 42,
+        "source_citation": "huManoid beings with... ashen skin",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The beings' skin is described as 'ashen,' which directly corresponds to the B290 motif code: 'Skin white, gray, ashen or claylike.'",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "X202",
+        "sequence_order": 43,
+        "source_citation": "where each received a physical exaMina tion of soMetiMes gruesoMe character. The beings worked with cool ef ficiency",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The text states 'a crew' of beings conducted the examination and 'The beings worked with cool ef ficiency,' implying a group effort without a clear leader or specialist, which aligns with the X202 motif: 'A group of beings without obvious division of labor car ries out the exaM.'",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "B905",
+        "sequence_order": 44,
+        "source_citation": "The beings worked with cool ef ficiency and soon released their captives.",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The beings' behavior is described as working with 'cool ef ficiency,' which implies a detached, unemotional manner. This aligns with the B905 motif: 'Beings behave in a cold, indifferent, insensitive or businesslike Manner.'",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "E201",
+        "sequence_order": 45,
+        "source_citation": "As the Hills drove off again the MeMory of the entire experience gradually faded froM their conscious Minds until only a sense that soMething happened to theM lingered on",
+        "memory_state": "conscious",
+        "source_page": "3",
+        "ai_justification": "The memory of the experience 'gradually faded' after they left the craft. This matches the concept of E201: 'Doorway aMnesia: blackout on entering or leaving craft,' interpreted here as a process of forgetting that begins upon departure.",
+        "emotional_marker": "Lingering sense",
+        "chunk": 14
+      },
+      {
+        "motif_code": "U500",
+        "sequence_order": 46,
+        "source_citation": "A Married couple sight a UFO while traveling a lonely Mountain road at night.",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The text states, 'A Married couple sight a UFO while traveling a lonely Mountain road at night.' This implies the UFO was pacing their vehicle, which aligns with the Motif Code U500: 'The UFO paces a car.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 47,
+        "source_citation": "When they arrive hoMe the sun is rising, they check a clock and find to their surprise that the drive lasted two hou~s longer than it should. For soMe indefinable reason this hole in tiMe leaves the Hills uneasy.",
+        "memory_state": "conscious",
+        "source_page": "3",
+        "ai_justification": "The narrative describes a period of two hours that the Hills cannot account for, referred to as a 'hole in tiMe'. This directly corresponds to the definition of Motif Code E200: 'TiMe lapse.'",
+        "emotional_marker": "Uneasy",
+        "chunk": 15
+      },
+      {
+        "motif_code": "A110",
+        "sequence_order": 48,
+        "source_citation": "For soMe indefinable reason this hole in tiMe leaves the Hills uneasy. Their anxiety persists until they resort to a psychi atrist for help",
+        "memory_state": "conscious",
+        "source_page": "3",
+        "ai_justification": "The text states that the 'hole in tiMe leaves the Hills uneasy' and 'Their anxiety persists'. This matches Motif Code A110: 'Witness feels pursued or anxious without knowing why.'",
+        "emotional_marker": "Anxious",
+        "chunk": 15
+      },
+      {
+        "motif_code": "B903",
+        "sequence_order": 49,
+        "source_citation": "The UFO had stopped the car and a crew of hair less huManoid beings with enorMous eyes and ashen skin had escorted the two witnesses inside the ship",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The narrative implies the Hills were taken against their will, as they were 'escorted' after their car was stopped by the UFO. This aligns with Motif Code B903: 'Beings force or coMpel witness against his will.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 50,
+        "source_citation": "a crew of hair less huManoid beings",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The text explicitly describes the entities as 'huManoid beings,' which is a direct match for Motif Code B201: 'HuManoid.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B295",
+        "sequence_order": 51,
+        "source_citation": "hair less huManoid beings",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The beings are described as 'hair less'. This directly corresponds to Motif Code B295: 'Hair absent.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B242",
+        "sequence_order": 52,
+        "source_citation": "enorMous eyes",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The beings' eyes are described as 'enorMous'. This aligns with Motif Code B242, which includes 'Shape round, protruding' and implies large size as a key characteristic of the eyes.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 53,
+        "source_citation": "ashen skin",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The beings' skin is described as 'ashen'. This matches Motif Code B290: 'Skin white, gray, ashen or claylike.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "X155",
+        "sequence_order": 54,
+        "source_citation": "had escorted the two witnesses inside the ship, where each received a physical exaMina tion of soMetiMes gruesoMe character.",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The text states the Hills were taken inside the ship for a 'physical exaMina tion'. This implies the use of an examination table or couch, which is the definition of Motif Code X155: 'The witness lies on an exal\"lining table or couch.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B905",
+        "sequence_order": 55,
+        "source_citation": "The beings worked with cool ef ficiency",
+        "memory_state": "hypnosis",
+        "source_page": "3",
+        "ai_justification": "The beings' behavior is described as working with 'cool ef ficiency'. This implies a detached, unemotional demeanor, which aligns with Motif Code B905: 'Beings behave in a cold, indifferent, insensitive or... Manner.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "E201",
+        "sequence_order": 56,
+        "source_citation": "As the Hills drove off again the MeMory of the entire experience gradually faded froM their conscious Minds until only a sense that soMething happened to theM lingered on",
+        "memory_state": "unconscious",
+        "source_page": "3",
+        "ai_justification": "The narrative states that the memory of the experience 'gradually faded' after they were released and drove away. This loss of memory upon leaving the craft is consistent with Motif Code E201: 'Doorway aMnesia: blackout on entering or leaving craft.'",
+        "emotional_marker": "Lingering sense",
+        "chunk": 15
+      },
+      {
+        "motif_code": "A116",
+        "sequence_order": 57,
+        "source_citation": "until only a sense that soMething happened to theM lingered on, a question Mark without the question.",
+        "memory_state": "conscious",
+        "source_page": "3",
+        "ai_justification": "The text describes the Hills' state after the event as having only 'a sense that soMething happened to theM lingered on, a question Mark without the question.' This matches the description of Motif Code A116: 'FragMentary MeMories of an experience persist.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "U500",
+        "sequence_order": 58,
+        "source_citation": "A UFO began to stalk the witnesses while they drove hoMe on a lonely road.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The text states, 'A UFO began to stalk the witnesses while they drove hoMe on a lonely road.' This action of following a vehicle is the definition of Motif Code U500: 'The UFO paces a car.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "U510",
+        "sequence_order": 59,
+        "source_citation": "the ship seeMed to hover just above the car.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The text describes the craft's action as seeming to 'hover just above the car.' This is a direct match for Motif Code U510: 'Hovers.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "U530",
+        "sequence_order": 60,
+        "source_citation": "A series of beeps sounded",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The text mentions 'A series of beeps sounded'. While not a perfect match, this monotonous sound is semantically similar to the 'buzzing, huMMing or other Monotonous' sound described in Motif Code U530.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 61,
+        "source_citation": "the witnesses later found that their con scious MeMory lapsed froM this point.",
+        "memory_state": "unconscious",
+        "source_page": "18",
+        "ai_justification": "The text explicitly states that the witnesses' 'con scious MeMory lapsed'. This is a direct match for Motif Code E200: 'TiMe lapse.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "E218",
+        "sequence_order": 62,
+        "source_citation": "What they did not reMeMber was that Barney turned off the highway for no good rea5on",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "Barney's action of turning off the highway 'for no good rea5on' implies an action taken without conscious knowledge of the motive, fitting Motif Code E218: 'Predestination: act without knowing why, or on an irre sistible coMpulsion.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B625",
+        "sequence_order": 63,
+        "source_citation": "and 5oon drove up to a roadblock Manned by a crew of 5lightly shorter than average huMan oids",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The text describes the beings manning a 'roadblock'. This is a direct match for Motif Code B625: 'Man a roadblock.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B221",
+        "sequence_order": 64,
+        "source_citation": "a crew of 5lightly shorter than average huMan oids",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings are described as '5lightly shorter than average'. This corresponds to Motif Code B221: 'Moderately short <4-5 feet).'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B230",
+        "sequence_order": 65,
+        "source_citation": "large eyes and heads,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The text states the beings had large 'heads'. This is a direct match for Motif Code B230: 'Head large.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B242",
+        "sequence_order": 66,
+        "source_citation": "large eyes and heads,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings are described with 'large eyes'. This aligns with Motif Code B242, which includes 'Shape round, protruding' and implies large size.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B258",
+        "sequence_order": 67,
+        "source_citation": "sMall Mouths and noses,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings are described with 'sMall Mouths'. This is consistent with Motif Code B258: 'Mouth slitlike, lips thin.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B252",
+        "sequence_order": 68,
+        "source_citation": "sMall Mouths and noses,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings are described with small 'noses'. This matches Motif Code B252: 'Nose absent or diMinutive; holes only.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 69,
+        "source_citation": "and pallid, hairless skin.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings' skin is described as 'pallid'. This aligns with Motif Code B290: 'Skin white, gray, ashen or claylike.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B295",
+        "sequence_order": 70,
+        "source_citation": "and pallid, hairless skin.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings' skin is described as 'hairless'. This is a direct match for Motif Code B295: 'Hair absent.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 71,
+        "source_citation": "In the presence of these beings the witnesses lost their will to resist;",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The text states 'the witnesses lost their will to resist'. This implies a state of calm or pacification induced by the beings, which is the definition of Motif Code E300: 'Pacification effect: witness calM, euphoric, relaxed.'",
+        "emotional_marker": "Calm",
+        "chunk": 15
+      },
+      {
+        "motif_code": "E211",
+        "sequence_order": 72,
+        "source_citation": "Barney kept his eyes down or closed throughout Most of the abduction",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The text states that 'Barney kept his eyes down or closed'. This is a direct match for Motif Code E211: 'Keeps eyes down or closed.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "E121",
+        "sequence_order": 73,
+        "source_citation": "and felt as if he floated,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "Barney 'felt as if he floated'. This sensation of weightlessness, without confirmation of actual levitation, is defined by Motif Code E121: 'Pseudo-floating effect: witness only feels light, or is told he is.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "E306",
+        "sequence_order": 74,
+        "source_citation": "whereas Betty only with diffi culty regained soMe Measure of her volition.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "Betty's struggle to regain her volition indicates that the initial pacification effect was not constant. This matches Motif Code E306: 'Pacification periodically wears off.'",
+        "emotional_marker": "Difficulty",
+        "chunk": 15
+      },
+      {
+        "motif_code": "B610",
+        "sequence_order": 75,
+        "source_citation": "The beings escorted the witnesses to a landed saucer-shaped craft",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings 'escorted the witnesses'. This action implies flanking and holding them, which is consistent with Motif Code B610: 'Two beings flank the witness and hold hiM by upper arMs.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "U100",
+        "sequence_order": 76,
+        "source_citation": "a landed saucer-shaped craft",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The craft is described as 'saucer-shaped'. This is a general term for a disk, matching Motif Code U100: 'Disk.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "U202",
+        "sequence_order": 77,
+        "source_citation": "and took theM to sep-arate rooMs for a Medical exaMination.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The Hills were taken to separate rooms for a 'Medical exaMination'. This directly corresponds to Motif Code U202: 'ExaMination rooM.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "X231",
+        "sequence_order": 78,
+        "source_citation": "In Betty's case the beings scraped saMples of such things as skin",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The text states the beings 'scraped saMples of... skin'. This is a direct match for Motif Code X231: 'The beings scrape a saMple of skin froM the witness.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "X230",
+        "sequence_order": 79,
+        "source_citation": "and nails,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings took samples of Betty's 'nails'. This matches Motif Code X230: 'The beings take clippings of hair and nails, or saMples of other body parts.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "X260",
+        "sequence_order": 80,
+        "source_citation": "at one point inserted a an~ long needle into her navel.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The text describes the insertion of a 'long needle into her navel.' This is the specific action defined by Motif Code X260: 'Beings insert a needle into navel or abdoMen of a feMale witness.'",
+        "emotional_marker": "Pain",
+        "chunk": 15
+      },
+      {
+        "motif_code": "E321",
+        "sequence_order": 81,
+        "source_citation": "A being touched her forehead and relieved the pain froM this procedure.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "A being 'touched her forehead and relieved the pain'. This action matches Motif Code E321: 'Laying on of hands or other \"Magical\" relief of pain.'",
+        "emotional_marker": "Relief",
+        "chunk": 15
+      },
+      {
+        "motif_code": "C110",
+        "sequence_order": 82,
+        "source_citation": "The leader conversed for a while with her by Means of telepathy,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The text explicitly states that communication was 'by Means of telepathy'. This is the definition of Motif Code C110: 'Subject hears voice in his head or understands Meanings without being told.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "S100",
+        "sequence_order": 83,
+        "source_citation": "offering her a book for a souvenir",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The leader offered Betty a 'book for a souvenir'. This action of receiving a gift from the beings is covered by Motif Code S100: 'The witness asks for, steals or atteMpts to steal, or receives as a gift or exchange, a book, clock or other physical iteM froM the beings.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "S101",
+        "sequence_order": 84,
+        "source_citation": "and showing her a star Map,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The leader showed Betty a 'star Map'. This is a direct match for Motif Code S101: 'Map: the witness sees a star Map depicting the beings' hoMe world or trade routes.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "M131",
+        "sequence_order": 85,
+        "source_citation": "though he would not tell her where he caMe froM.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The leader 'would not tell her where he caMe froM.' This refusal to disclose their origin is the definition of Motif Code M131: 'The beings refuse to reveal where they coMe froM.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B911",
+        "sequence_order": 86,
+        "source_citation": "The beings becaMe quite excited when they found that Barney had false teeth,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The text states 'The beings becaMe quite excited'. This directly corresponds to Motif Code B911: 'Beings can be startled or excited.'",
+        "emotional_marker": "Excitement",
+        "chunk": 15
+      },
+      {
+        "motif_code": "B753",
+        "sequence_order": 87,
+        "source_citation": "when they found that Barney had false teeth,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings' excitement over Barney's 'false teeth' indicates a specific interest in prosthetics, which is the definition of Motif Code B753: 'Interest in prosthesis (false teeth, contact lenses), eyeglasses, etc.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B751",
+        "sequence_order": 88,
+        "source_citation": "and seeMed to have no conception of tiMe or age.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings 'seeMed to have no conception of tiMe or age.' This lack of understanding about time aligns with Motif Code B751: 'Beings speak oddly of tiMe.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B750",
+        "sequence_order": 89,
+        "source_citation": "and seeMed to have no conception of tiMe or age.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The beings 'seeMed to have no conception of tiMe or age.' This lack of understanding about age is the definition of Motif Code B750: 'No understanding of age.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "S110",
+        "sequence_order": 90,
+        "source_citation": "though the leader retrieved the book because the others objected to her having it.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The leader 'retrieved the book' that had been offered as a souvenir. This action matches Motif Code S110: 'The beings reclaiM a proMised souvenir before the witness can take it away.'",
+        "emotional_marker": "Disappointment",
+        "chunk": 15
+      },
+      {
+        "motif_code": "B807",
+        "sequence_order": 91,
+        "source_citation": "because the others objected to her having it.",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The fact that 'the others objected' and the leader acquiesced implies a group decision-making process. This aligns with Motif Code B807: 'DeMocratic enough to confer, tolerate disputes.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "U520",
+        "sequence_order": 92,
+        "source_citation": "The witnesses watched the takeoff froM their car,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The witnesses watched the 'takeoff'. While the text doesn't specify the exact manner, the general context of UFO takeoffs in abduction literature often involves a slow rise followed by rapid acceleration, as defined in Motif Code U520.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 93,
+        "source_citation": "though Barney was already losing his MeMory of what was going on.",
+        "memory_state": "unconscious",
+        "source_page": "18",
+        "ai_justification": "Barney was 'losing his MeMory of what was going on' even as the event concluded. This indicates the onset of a time lapse, fitting Motif Code E200.",
+        "emotional_marker": "Confusion",
+        "chunk": 15
+      },
+      {
+        "motif_code": "U530",
+        "sequence_order": 94,
+        "source_citation": "the beeps sounded a second tiMe,",
+        "memory_state": "hypnosis",
+        "source_page": "18",
+        "ai_justification": "The text mentions 'the beeps sounded a second tiMe'. This monotonous sound is semantically similar to the 'buzzing, huMMing or other Monotonous' sound described in Motif Code U530.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "E201",
+        "sequence_order": 95,
+        "source_citation": "and slowly all MeMories of the experience faded for both of theM until only vestigial recollections persisted.",
+        "memory_state": "unconscious",
+        "source_page": "18",
+        "ai_justification": "The memory of the experience 'faded' after they drove off. This loss of memory upon leaving the craft's vicinity is consistent with Motif Code E201: 'Doorway aMnesia: blackout on entering or leaving craft.'",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "A116",
+        "sequence_order": 96,
+        "source_citation": "until only vestigial recollections persisted.",
+        "memory_state": "conscious",
+        "source_page": "18",
+        "ai_justification": "The text states that 'only vestigial recollections persisted' after the event. This matches the definition of Motif Code A116: 'FragMentary MeMories of an experience persist.'",
+        "emotional_marker": null,
+        "chunk": 15
+      }
+    ],
+    "model_name": "gemini-2.5-pro",
+    "profile_used": "baseline_test",
+    "run_timestamp": "2026-03-30T00:20:06.144583"
+  }
+}

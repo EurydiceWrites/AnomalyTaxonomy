@@ -1,0 +1,537 @@
+{
+  "test_type": "A/B preamble test",
+  "variable": "narrative_structure preamble OFF",
+  "comparison_run": "stephen_untold_stories_of_alien_encounters_in_mesoamerica_sky_people_metadata.json",
+  "parameters": {
+    "model": "gemini-2.5-pro",
+    "profile": "baseline",
+    "retrieval_method": "conscious",
+    "narrative_structure": null,
+    "preamble_injected": false
+  },
+  "encounter_events": [
+    {
+      "sequence": 1,
+      "motif_code": "A221",
+      "citation": "a series of UFO sightings, which occurred for several weeks south of Belmopan, the capital city of Belize, made international news.",
+      "reasoning": "The code A221 is for 'Further UFO sightings'. The text describes sightings occurring 'repeatedly', for 'several weeks', and having appeared for 'more than fifty years', which fits the definition of further or repeated sightings.",
+      "chunk": 1,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "18"
+    },
+    {
+      "sequence": 2,
+      "motif_code": "U100",
+      "citation": "The observers described the lights as “circular disks”",
+      "reasoning": "The code U100 is for 'Disk'. The text explicitly states that observers described the objects as 'circular disks'.",
+      "chunk": 1,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "18"
+    },
+    {
+      "sequence": 2,
+      "motif_code": "U151",
+      "citation": "that appeared in groups ranging from four to twelve",
+      "reasoning": "The code U151 is for 'Formation'. The text states the craft 'appeared in groups', which is a direct match for this motif.",
+      "chunk": 1,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "18"
+    },
+    {
+      "sequence": 3,
+      "motif_code": "U103",
+      "citation": "Witnesses likened the lights to extremely bright headlights or big balls of light as bright as the moon.",
+      "reasoning": "The code U103 is for 'Sphere'. The text describes the lights as 'big balls of light', which semantically maps to a spherical exterior morphology.",
+      "chunk": 1,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "18"
+    },
+    {
+      "sequence": 4,
+      "motif_code": "A225",
+      "citation": "Buddy told me about a fifth or sixth cousin who saw the Belmopan UFOs when he was a toddler and had been abducted repeatedly ever since.",
+      "reasoning": "The code A225 is for 'Further abductions'. The text states that the cousin had been 'abducted repeatedly ever since' childhood, which is a direct match for this motif.",
+      "chunk": 1,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "18"
+    },
+    {
+      "sequence": 5,
+      "motif_code": "U103",
+      "citation": "white balls of light burst out of the sky and dropped to the ground around me.",
+      "reasoning": "The text describes 'white balls of light' descending to the ground. This matches the dictionary definition for U103 (Sphere), which refers to the exterior morphology of a craft.",
+      "chunk": 2,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "19"
+    },
+    {
+      "sequence": 6,
+      "motif_code": "B201",
+      "citation": "Out of the balls of light came these little men.",
+      "reasoning": "The witness describes the entities as 'little men,' which fits the definition of B201 (HuManoid).",
+      "chunk": 2,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "19"
+    },
+    {
+      "sequence": 6,
+      "motif_code": "B220",
+      "citation": "Out of the balls of light came these little men.",
+      "reasoning": "The witness describes the entities as 'little men' and 'small beings.' This aligns with the concept of B220 (Short (3.5 feet or less)).",
+      "chunk": 2,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "19"
+    },
+    {
+      "sequence": 6,
+      "motif_code": "B210",
+      "citation": "Out of the balls of light came these little men.",
+      "reasoning": "The witness explicitly refers to the entities as 'men,' which directly maps to B210 (Masculine).",
+      "chunk": 2,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "19"
+    },
+    {
+      "sequence": 7,
+      "motif_code": "E200",
+      "citation": "From that moment, I remember nothing, only that they brought me back to the garden.",
+      "reasoning": "The witness states, 'From that moment, I remember nothing,' which is a direct description of a time lapse, corresponding to motif E200.",
+      "chunk": 2,
+      "memory_state": "unconscious",
+      "emotional_marker": null,
+      "source_page": "19"
+    },
+    {
+      "sequence": 8,
+      "motif_code": "B610",
+      "citation": "Two were holding my hand",
+      "reasoning": "The dictionary defines B610 as 'Two beings flank the witness and hold hiM by upper arMs.' The text states 'Two were holding my hand,' which is semantically equivalent in that two beings are physically guiding the witness.",
+      "chunk": 2,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "19"
+    },
+    {
+      "sequence": 8,
+      "motif_code": "E301",
+      "citation": "telling me that I was now their friend.",
+      "reasoning": "The beings explicitly state 'that I was now their friend.' This directly causes the witness to perceive a friendly interaction, which aligns with the definition of E301 (Friendly effect: witness senses kindness or feels as if he has Met old friends).",
+      "chunk": 2,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "19"
+    },
+    {
+      "sequence": 9,
+      "motif_code": "E302",
+      "citation": "I also had a feeling of happiness around these small beings. I remember laughing with them",
+      "reasoning": "The witness explicitly states 'a feeling of happiness' and 'laughing with them,' which corresponds to E302 (Rapture effect: sense of joy, beauty).",
+      "chunk": 2,
+      "memory_state": "conscious",
+      "emotional_marker": "Happiness",
+      "source_page": "19"
+    },
+    {
+      "sequence": 9,
+      "motif_code": "A116",
+      "citation": "I remember laughing with them and playing, but I don’t know where we were at the time.",
+      "reasoning": "The witness recalls an activity ('laughing with them and playing') but cannot place it in a location ('I don’t know where we were'), indicating a partial or fragmented memory of the experience, which matches A116 (FragMentary MeMories of an experience persist).",
+      "chunk": 2,
+      "memory_state": "conscious",
+      "emotional_marker": "Happiness",
+      "source_page": "19"
+    },
+    {
+      "sequence": 10,
+      "motif_code": "M122",
+      "citation": "I had been chosen as a three-year-old to be a part of an experiment.",
+      "reasoning": "The statement that the witness was 'chosen' implies a special interest in him by the beings, which aligns with M122 (They have watched witness a long tiMe, have special interest in hiM).",
+      "chunk": 2,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "19"
+    },
+    {
+      "sequence": 10,
+      "motif_code": "M125",
+      "citation": "I had been chosen as a three-year-old to be a part of an experiment.",
+      "reasoning": "The text explicitly states the purpose of the contact was for the witness 'to be a part of an experiment,' which directly maps to M125 (They have coMe to learn, teach or experiMent).",
+      "chunk": 2,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "19"
+    },
+    {
+      "sequence": 11,
+      "motif_code": "ANOMALY",
+      "citation": "They had recorded everything about me.",
+      "reasoning": "The statement 'They had recorded everything about me' describes a long-term, comprehensive data collection process that doesn't fit neatly into any specific physical examination or mental probe motif in the dictionary. It is a summary of the beings' overall activity rather than a single event.",
+      "chunk": 2,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "19"
+    },
+    {
+      "sequence": 12,
+      "motif_code": "M118",
+      "citation": "They told me it was our secret.",
+      "reasoning": "The text directly states that the beings told the witness to keep the experience a secret, which is the definition of M118.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 13,
+      "motif_code": "B905",
+      "citation": "These space men did not consider the feelings of the humans they chose for their study. It does not seem to matter to them that they were interrupting lives.",
+      "reasoning": "The witness describes the beings as inconsiderate of human feelings and indifferent to the disruption they cause, which is a direct semantic match for B905.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 14,
+      "motif_code": "B755",
+      "citation": "They underestimated or didn’t understand the independent nature of the human spirit. They don’t understand when we rebel or are uncooperative.",
+      "reasoning": "The text states the beings 'don't understand' rebellion or the 'human spirit,' which aligns with the concept of ignorance regarding human emotions as described in B755.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 15,
+      "motif_code": "B903",
+      "citation": "They expect obedience.",
+      "reasoning": "The statement that the beings 'expect obedience' implies a coercive dynamic where the witness is compelled against their will, matching the definition of B903.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 16,
+      "motif_code": "E217",
+      "citation": "“Did you rebel?” “A couple of times, but it was futile.",
+      "reasoning": "The witness confirms that they 'rebelled' against the beings, which is a direct example of E217 (Non-denial of defense: fight).",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 17,
+      "motif_code": "E322",
+      "citation": "with a look they can paralyze you.",
+      "reasoning": "The text describes a 'look' from the beings that has the power to paralyze, which directly corresponds to the hypnotic or compelling power of the beings' eyes as defined in E322.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 18,
+      "motif_code": "ANOMALY",
+      "citation": "They can make you forget things.",
+      "reasoning": "The dictionary lacks a specific code for the beings' general capability to induce amnesia. M119 refers to a command to forget, and X311 refers to a specific method (a drink). The text describes a general power, 'They can make you forget,' which does not fit existing codes.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 19,
+      "motif_code": "A225",
+      "citation": "They often take young children and continue to abduct them through adulthood.",
+      "reasoning": "The text describes a pattern of repeated abductions over a long period, from childhood into adulthood, which is the definition of A225.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 20,
+      "motif_code": "X257",
+      "citation": "They began their experiment by giving me puzzles to play with, and, though I did not know it at the time, they were observing how I put them together. The strategy I used, the time it took, how I sorted objects.",
+      "reasoning": "The witness is given 'puzzles to play with' as a task for the beings to observe their problem-solving skills. This directly aligns with the concept of having the witness perform tasks as described in X257.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 21,
+      "motif_code": "B202",
+      "citation": "Some looked human, just like you and me.",
+      "reasoning": "The text explicitly states some beings 'looked human,' a direct match for B202.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 22,
+      "motif_code": "B223",
+      "citation": "Some were taller and whiter than me.",
+      "reasoning": "The description 'taller' fits the definition of B223 (Tall (over 6 feet)).",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 22,
+      "motif_code": "B290",
+      "citation": "Some were taller and whiter than me.",
+      "reasoning": "The description of the skin as 'whiter' fits within the definition of B290 (Skin white, gray, ashen or claylike).",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 23,
+      "motif_code": "B201",
+      "citation": "Others only looked a little like a human.",
+      "reasoning": "The description 'looked a little like a human' is the definition of a Humanoid entity, matching B201.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 23,
+      "motif_code": "B806",
+      "citation": "They were not in charge, though.",
+      "reasoning": "The text establishes a hierarchy where the human-like and taller beings were 'not in charge,' while the shorter humanoids were. This describes a social structure where taller beings are not the leaders, which is a variation of the hierarchical structure covered by B806.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 23,
+      "motif_code": "B230",
+      "citation": "Their heads were big",
+      "reasoning": "The text explicitly states the beings' 'heads were big,' a direct match for B230.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 24,
+      "motif_code": "ANOMALY",
+      "citation": "and their eyes were massive",
+      "reasoning": "The Bullard dictionary lacks a code for 'large eyes.' B230 is for a large head, and B241 is for small eyes. The common abduction trope of 'massive' eyes is therefore an ANOMALY in this dictionary.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": "Fear",
+      "source_page": "20"
+    },
+    {
+      "sequence": 25,
+      "motif_code": "B910",
+      "citation": "They showed no emotion.",
+      "reasoning": "The statement 'They showed no emotion' is a direct definition of being impassive, matching B910.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 26,
+      "motif_code": "B292",
+      "citation": "It was a strange skin, very wrinkled and scaly.",
+      "reasoning": "The description of the skin as 'very wrinkled and scaly' is a direct match for the definition of B292.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 27,
+      "motif_code": "B221",
+      "citation": "They did not reach my shoulders",
+      "reasoning": "A being that does not reach an adult's shoulders would fall into the 'moderately short' height category of 4-5 feet, matching B221.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 28,
+      "motif_code": "E320",
+      "citation": "if they touched you, you have no energy.",
+      "reasoning": "The text describes a touch that results in a loss of energy, which is a form of physical control exerted by the beings, matching E320.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 29,
+      "motif_code": "B501",
+      "citation": "They were strong.",
+      "reasoning": "The text explicitly states the beings 'were strong,' a direct match for B501.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 30,
+      "motif_code": "E217",
+      "citation": "Once I tried to resist, but it was impossible.",
+      "reasoning": "The witness's statement 'I tried to resist' fits E217 (Non-denial of defense: fight).",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": "Futility",
+      "source_page": "20"
+    },
+    {
+      "sequence": 30,
+      "motif_code": "B903",
+      "citation": "They had powers that reached into your soul and made you incapable of resisting—power over my body and my mind.",
+      "reasoning": "The fact that resistance was 'impossible' due to the beings' 'power over my body and my mind' is a clear instance of being compelled against one's will, matching B903.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": "Helplessness",
+      "source_page": "20"
+    },
+    {
+      "sequence": 31,
+      "motif_code": "E215",
+      "citation": "After that, I gave up and accepted the situation.",
+      "reasoning": "The witness's decision to 'give up and accepted the situation' of being abducted represents an odd acquiescence to an extraordinary event, which is the core concept of E215.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": "Resignation",
+      "source_page": "20"
+    },
+    {
+      "sequence": 32,
+      "motif_code": "B206",
+      "citation": "They introduced me to my double. That was in 1963, long before human scientists were conducting cloning experiments.",
+      "reasoning": "The text explicitly mentions a 'double' and uses the word 'cloning,' which is a direct match for the concept of an Android or clone in B206.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 33,
+      "motif_code": "M111",
+      "citation": "I taught him about life.",
+      "reasoning": "The witness is given the specific task of teaching their clone, which aligns with the definition of M111 (Beings charge subject with task, e.g., to teach, learn).",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 34,
+      "motif_code": "A119",
+      "citation": "When I was sixteen, I stayed on board their ship, and my clone went back to Earth. He stayed there two weeks impersonating me, and no one ever knew the difference.",
+      "reasoning": "The text describes the witness being replaced on Earth by their clone for a period of two weeks, which is a direct and literal example of being 'replaced by a double' as defined in A119.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 35,
+      "motif_code": "M129",
+      "citation": "he was made to live on another planet the space travelers were populating.",
+      "reasoning": "The beings are creating clones to populate another planet. This is a large-scale project to solve a problem of their own (colonization), which fits the scope of M129.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 36,
+      "motif_code": "X251",
+      "citation": "He looks like me, talks like me, and has my knowledge.",
+      "reasoning": "The statement that the clone 'has my knowledge' implies a transfer of knowledge from the witness to the clone, which aligns with the concept of knowledge transfer in X251.",
+      "chunk": 3,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 37,
+      "motif_code": "ANOMALY",
+      "citation": "They came to me late that night, took me on board their ship...",
+      "reasoning": "The witness provides a summary statement of being taken aboard a ship, which constitutes the capture. However, the text lacks the specific details required to map this to a precise Bullard capture motif (e.g., levitation, paralysis, being escorted). Therefore, it is logged as an ANOMALY.",
+      "chunk": 4,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 38,
+      "motif_code": "ANOMALY",
+      "citation": "...and told me that they were finished with me.",
+      "reasoning": "The beings deliver a specific message indicating the termination of their interactions with the witness. This precise message does not have a semantic equivalent in the Bullard dictionary and is therefore classified as an ANOMALY.",
+      "chunk": 4,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 39,
+      "motif_code": "B206",
+      "citation": "My double had learned what he needed to know.",
+      "reasoning": "The witness refers to a 'double' of himself created by the beings. This directly corresponds to the concept of an 'Android, clone' as defined by motif B206.",
+      "chunk": 4,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 39,
+      "motif_code": "M125",
+      "citation": "My double had learned what he needed to know. He would be a farmer like me on another planet, and I had taught him all he needed to know.",
+      "reasoning": "The beings explain that the purpose of their long-term interaction with the witness was for his 'double' to learn from him, and for the witness to teach the double. This aligns with the definition of M125: 'They have coMe to learn, teach or experiMent.'",
+      "chunk": 4,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    },
+    {
+      "sequence": 40,
+      "motif_code": "B905",
+      "citation": "They never thanked me. I think it is a concept they don’t understand.",
+      "reasoning": "The witness observes that the beings showed no gratitude for his lifelong unwilling participation. This lack of social grace or emotional consideration fits the definition of B905: 'Beings behave in a cold, indifferent, insensitive or...'",
+      "chunk": 4,
+      "memory_state": "conscious",
+      "emotional_marker": "Resentment",
+      "source_page": "20"
+    },
+    {
+      "sequence": 41,
+      "motif_code": "B725",
+      "citation": "Because they are superior, both physically and intellectually, they have the right to do as they please with humans.",
+      "reasoning": "The witness interprets the beings' attitude as one of inherent superiority that grants them the 'right to do as they please with humans.' This assertion of a superior status and right to dominion over humans aligns with the semantic meaning of B725: 'Beings disparage God, claiM godlike qualities for...'",
+      "chunk": 4,
+      "memory_state": "conscious",
+      "emotional_marker": null,
+      "source_page": "20"
+    }
+  ],
+  "event_count": 52,
+  "model_name": "gemini-2.5-pro",
+  "run_timestamp": "2026-03-29T21:20:24.251009"
+}

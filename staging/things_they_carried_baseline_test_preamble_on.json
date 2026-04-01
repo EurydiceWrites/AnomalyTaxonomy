@@ -1,0 +1,422 @@
+{
+  "step_0": {
+    "source_text_path": "staging\\extracted_text_The-Things-They-Carried-Tim-O_Brien_12-31.txt",
+    "pdf_page_start": 12,
+    "pdf_page_end": 31,
+    "source_page_start": 12,
+    "source_page_end": 31
+  },
+  "step_1_scanned_metadata": {
+    "source_type": "literary",
+    "memory_retrieval_method": "not_applicable",
+    "narrative_structure": "literary_narration",
+    "principal_investigator": null,
+    "experiencer_name": "Lieutenant Jimmy Cross",
+    "gender": "male",
+    "age_at_time": "twenty-four years old",
+    "location": "Than Khe area, south of Chu Lai, Vietnam",
+    "date_of_experience": "mid-April",
+    "entity_types": [
+      "human"
+    ],
+    "narrative_summary": "The story details the physical and emotional burdens carried by a platoon of American soldiers during the Vietnam War, focusing on First Lieutenant Jimmy Cross. It meticulously lists the items they carried, both tangible necessities and intangible weights like fear, grief, and love. A central event is the death of Ted Lavender, which Lieutenant Cross blames on his own distraction, caused by his unrequited love for Martha back home. The narrative explores themes of duty, responsibility, and the psychological impact of war, culminating in Cross's decision to burn Martha's letters and focus solely on leading his men."
+  },
+  "step_1_source_attribution": {
+    "author_name": "Tim O'Brien",
+    "title": "The Things They Carried",
+    "publication_year": null,
+    "publisher": null,
+    "place_of_publication": null,
+    "edition": null,
+    "translator": null,
+    "editor": null,
+    "author_role": "author"
+  },
+  "step_3_extraction": {
+    "encounter_events": [
+      {
+        "motif_code": "ANOMALY",
+        "sequence_order": 1,
+        "source_citation": "First Lieutenant Jimmy Cross carried letters from a girl named Martha, a junior at Mount Sebastian College in New Jersey. They were not love letters, but Lieutenant Cross was hoping, so he kept them folded in plastic at the bottom of his rucksack. In the late afternoon, after a day's march, he would dig his foxhole, wash his hands under a canteen, unwrap the letters, hold them with the tips of his fingers, and spend the last hour of light pretending. He would imagine romantic camping trips into the White Mountains in New Hampshire. He would sometimes taste the envelope flaps, knowing her tongue had been there. More than anything, he wanted Martha to love him as he loved her, but the letters were mostly chatty, elusive on the matter of love. She was a virgin, he was almost sure. She was an English major at Mount Sebastian, and she wrote beautifully about her professors and roommates and midterm exams, about her respect for Chaucer and her great affection for Virginia Woolf. She often quoted lines of poetry; she never mentioned the war, except to say, Jimmy, take care of yourself. The letters weighed 4 ounces. They were signed Love, Martha, but Lieutenant Cross understood that Love was only a way of signing and did not mean what he sometimes pretended it meant. At dusk, he would carefully return the letters to his rucksack. Slowly, a bit distracted, he would get up and move among his men, checking the perimeter, then at full dark he would return to his hole and watch the night and wonder if Martha was a virgin. The things they carried were largely determined by necessity. Among the necessities or near-necessities were P-38 can openers, pocket knives, heat tabs, wristwatches, dog tags, mosquito repellent, chewing gum, candy, cigarettes, salt tablets, packets of Kool-Aid, lighters, matches, sewing kits, Military Payment Certificates, C rations, and two or three canteens of water. Together, these items weighed between 12 and 18 pounds, depending upon a man's habits or rate of metabolism. Henry Dobbins, who was a big man, carried extra rations; he was especially fond of canned peaches in heavy syrup over pound cake. Dave Jensen, who practiced field hygiene, carried a toothbrush, dental floss, and several hotel-sized bars of soap he'd stolen on R&R in Sydney, Australia. Ted Lavender, who was scared, carried tranquilizers until he was shot in the head outside the village of Than Khe in mid-April. By necessity, and because it was SOP, they all carried steel helmets that weighed 5 pounds including the liner and camouflage cover. They carried the standard fatigue jackets and trousers. Very few carried underwear. On their feet they carried jungle boots—2.1 pounds—and Dave Jensen carried three pairs of socks and a can of Dr. Scholl's foot powder as a precaution against trench foot. Until he was shot, Ted Lavender carried 6 or 7 ounces of premium dope, which for him was a necessity.",
+        "memory_state": "not_applicable",
+        "source_page": "12-13",
+        "ai_justification": "The provided text is a work of literary fiction describing the experiences of soldiers during the Vietnam War. It contains no elements related to UFOs, alien beings, abduction, or any of the phenomena described in the Bullard Motif Dictionary. The entire narrative is thematically and contextually unrelated to the requested task of analyzing a UFO abduction report. Therefore, no specific motif codes can be applied, and the entire text is classified as an ANOMALY.",
+        "emotional_marker": "Longing and Fear",
+        "chunk": 1
+      },
+      {
+        "motif_code": "E100",
+        "sequence_order": 1,
+        "source_citation": "The morning was hot and very still. / Nothing moved. No clouds or birds or people.",
+        "memory_state": "not_applicable",
+        "source_page": "19",
+        "ai_justification": "The text describes the environment as 'very still' and that 'Nothing moved. No clouds or birds or people.' This aligns with the Motif E100 definition: 'VacuuM effect: stillness, silence'.",
+        "emotional_marker": "Anxious",
+        "chunk": 6
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 2,
+        "source_citation": "but his love was too much for him, he felt paralyzed",
+        "memory_state": "not_applicable",
+        "source_page": "19",
+        "ai_justification": "While consumed with thoughts of Martha, the character's emotional state is described with the phrase 'he felt paralyzed'. This is a direct match for Motif E315: 'Paralysis, nuMbness', interpreted in this context as an emotional paralysis.",
+        "emotional_marker": "Love",
+        "chunk": 6
+      },
+      {
+        "motif_code": "E106",
+        "sequence_order": 3,
+        "source_citation": "But he was not there. He was buried with Martha under the white sand at the Jersey shore.",
+        "memory_state": "not_applicable",
+        "source_page": "19",
+        "ai_justification": "The dictionary defines E106 as 'Perceptual distortions and illusions'. The text describes Lieutenant Cross as mentally being somewhere else ('not there') and experiencing a detailed daydream ('buried with Martha'), which constitutes a perceptual distortion from his actual reality in the tunnel.",
+        "emotional_marker": "Love",
+        "chunk": 7
+      },
+      {
+        "motif_code": "E100",
+        "sequence_order": 4,
+        "source_citation": "Vaguely, he was aware of how quiet the day was, the sullen paddies",
+        "memory_state": "not_applicable",
+        "source_page": "19",
+        "ai_justification": "The dictionary defines E100 as 'Vacuum effect: stillness, silence'. The text explicitly states that Lieutenant Cross was aware of 'how quiet the day was', which directly corresponds to the motif's definition of stillness and silence.",
+        "emotional_marker": "Detachment",
+        "chunk": 7
+      },
+      {
+        "motif_code": "E216",
+        "sequence_order": 5,
+        "source_citation": "yet he could not bring himself to worry about matters of security.",
+        "memory_state": "not_applicable",
+        "source_page": "19",
+        "ai_justification": "The dictionary defines E216 as 'Denial of defense impulse'. As a soldier in a warzone, worrying about security is a primary defense impulse. The text states that Lieutenant Cross 'could not bring himself to worry about matters of security', which is a clear denial of this impulse.",
+        "emotional_marker": "Detachment",
+        "chunk": 7
+      },
+      {
+        "motif_code": "W116",
+        "sequence_order": 6,
+        "source_citation": "A few moments later Lee Strunk crawled out of the tunnel.",
+        "memory_state": "not_applicable",
+        "source_page": "20",
+        "ai_justification": "The dictionary defines W116 as 'Underground location: entrance leads underground'. The text describes a soldier crawling 'out of the tunnel', indicating that the tunnel is an entrance leading from an underground location.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "C201",
+        "sequence_order": 7,
+        "source_citation": "Lee Strunk made a funny ghost sound, a kind of moaning, yet very happy, and right then, when Strunk made that high happy moaning sound, when he went Ahhooooo",
+        "memory_state": "not_applicable",
+        "source_page": "20",
+        "ai_justification": "The dictionary defines C201 as 'Unknown language or yelping, animal-like sounds.' The text describes Strunk making a 'funny ghost sound, a kind of moaning... Ahhooooo'. This non-verbal, unusual vocalization fits the description of a yelping or animal-like sound.",
+        "emotional_marker": "Relief",
+        "chunk": 7
+      },
+      {
+        "motif_code": "X230",
+        "sequence_order": 8,
+        "source_citation": "and used Kiowa's hunting hatchet to remove the thumb.",
+        "memory_state": "not_applicable",
+        "source_page": "20",
+        "ai_justification": "The dictionary defines X230 as 'The beings take clippings of hair and nails, or samples of skin, etc.' In this narrative, the soldier Mitchell Sanders removes a thumb from a corpse. A thumb qualifies as a body part sample under 'etc.'. Although the agent is a human and the source is a corpse, the action of taking a sample of the body aligns with the core concept of the motif.",
+        "emotional_marker": "Detachment",
+        "chunk": 7
+      },
+      {
+        "motif_code": "S100",
+        "sequence_order": 9,
+        "source_citation": "Sanders wrapped the thumb in toilet paper and handed it across to Norman Bowker.",
+        "memory_state": "not_applicable",
+        "source_page": "21",
+        "ai_justification": "The dictionary defines S100 as 'The witness asks for, steals or attempts to steal, or receives a souvenir'. The text describes Norman Bowker being handed the severed thumb, which he then carries as a superstitious item, thus receiving it as a souvenir.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "B908",
+        "sequence_order": 10,
+        "source_citation": "Smiling, he kicked the boy's head, watched the flies scatter",
+        "memory_state": "not_applicable",
+        "source_page": "21",
+        "ai_justification": "The dictionary defines B908 as 'Beings threaten, intimidate, or are cruel to witness.' In this context, the soldier Mitchell Sanders is the acting 'being'. His action of kicking the head of the dead boy is an act of cruelty, fitting the motif's description.",
+        "emotional_marker": "Callousness",
+        "chunk": 7
+      },
+      {
+        "motif_code": "A104",
+        "sequence_order": 11,
+        "source_citation": "They carried infections. / They carried diseases, among them malaria and dysentery. / They carried lice and ringworm and leeches and paddy algae and various rots and molds.",
+        "memory_state": "not_applicable",
+        "source_page": "22",
+        "ai_justification": "The text lists multiple diseases and infections carried by the soldiers, which aligns with the Motif Code A104 for 'General illness, nausea, gastrointestinal problems'.",
+        "emotional_marker": null,
+        "chunk": 8
+      },
+      {
+        "motif_code": "A113",
+        "sequence_order": 12,
+        "source_citation": "They carried lice and ringworm and leeches and paddy algae... / They carried the land itself—Vietnam, the place, the soil—a powdery orange-red dust that covered their boots and fatigues and faces.",
+        "memory_state": "not_applicable",
+        "source_page": "22",
+        "ai_justification": "The text describes the soldiers being covered in dust and carrying various parasites. This implies a state of being unclean, which corresponds to Motif Code A113: 'Witness feels unclean and in need of a bath'.",
+        "emotional_marker": null,
+        "chunk": 8
+      },
+      {
+        "motif_code": "E310",
+        "sequence_order": 13,
+        "source_citation": "all of it, they carried gravity.",
+        "memory_state": "not_applicable",
+        "source_page": "22",
+        "ai_justification": "The literary metaphor of 'carrying gravity' is a direct semantic match for Motif Code E310: 'Heavy effect: witness feels heavy, prickly'.",
+        "emotional_marker": null,
+        "chunk": 8
+      },
+      {
+        "motif_code": "A102",
+        "sequence_order": 14,
+        "source_citation": "They moved like mules. / They plodded along slowly, dumbly, leaning forward against the heat...",
+        "memory_state": "not_applicable",
+        "source_page": "22",
+        "ai_justification": "The description of moving 'like mules' and 'plodding along slowly, dumbly' indicates difficulty with movement, aligning with Motif Code A102: 'Motility problems <balance, orientation, tiredness pr'.",
+        "emotional_marker": null,
+        "chunk": 8
+      },
+      {
+        "motif_code": "E218",
+        "sequence_order": 15,
+        "source_citation": "it was just the endless march, village to village, without purpose, nothing won or lost. They marched for the sake of the march. / ...but no volition, no will, because it was automatic, it was anatomy... / They had no sense of strategy or mission. / They searched the villages without knowing what to look for, not caring...",
+        "memory_state": "not_applicable",
+        "source_page": "22",
+        "ai_justification": "The text repeatedly emphasizes that the soldiers' actions are 'without purpose,' 'automatic,' with 'no volition, no will,' and without a 'sense of strategy or mission.' This directly corresponds to the definition of Motif Code E218: 'Predestination: act without knowing why, or on an irresistible impulse'.",
+        "emotional_marker": null,
+        "chunk": 8
+      },
+      {
+        "motif_code": "E212",
+        "sequence_order": 16,
+        "source_citation": "a kind of inertia, a kind of emptiness, a dullness of desire and intellect and conscience and hope and human sensibility.",
+        "memory_state": "not_applicable",
+        "source_page": "22",
+        "ai_justification": "The description of 'emptiness, a dullness of desire and intellect' and a general lack of 'human sensibility' matches the concept of Motif Code E212: 'Lassitude, weakness'.",
+        "emotional_marker": null,
+        "chunk": 8
+      },
+      {
+        "motif_code": "A110",
+        "sequence_order": 17,
+        "source_citation": "The pressures were enormous.",
+        "memory_state": "not_applicable",
+        "source_page": "22",
+        "ai_justification": "The statement 'The pressures were enormous' implies a state of constant stress and anxiety, which aligns with Motif Code A110: 'Witness feels pursued or anxious without knowing why'.",
+        "emotional_marker": "Anxious",
+        "chunk": 8
+      },
+      {
+        "motif_code": "E215",
+        "sequence_order": 18,
+        "source_citation": "In the heat of early afternoon, they would remove their helmets and flak jackets, walking bare, which was dangerous but which helped ease",
+        "memory_state": "not_applicable",
+        "source_page": "22",
+        "ai_justification": "The act of removing protective gear ('helmets and flak jackets') in a dangerous combat environment for the sake of comfort is an example of an 'inappropriate response or uncharacteristic behavior: odd logic,' as defined by Motif Code E215.",
+        "emotional_marker": null,
+        "chunk": 8
+      },
+      {
+        "motif_code": "U170",
+        "sequence_order": 19,
+        "source_citation": "A warm dense fog had settled over the paddies",
+        "memory_state": "not_applicable",
+        "source_page": "24",
+        "ai_justification": "The text describes the presence of a 'warm dense fog', which directly matches the U170 motif for 'Mist, sMoke, fog'.",
+        "emotional_marker": null,
+        "chunk": 9
+      },
+      {
+        "motif_code": "E100",
+        "sequence_order": 19,
+        "source_citation": "and there was the stillness that precedes rain.",
+        "memory_state": "not_applicable",
+        "source_page": "24",
+        "ai_justification": "The text describes 'the stillness that precedes rain', which directly matches the E100 motif for 'VacuuM effect: stillness, silence'.",
+        "emotional_marker": null,
+        "chunk": 9
+      },
+      {
+        "motif_code": "W415",
+        "sequence_order": 19,
+        "source_citation": "They felt the rush of takeoff.",
+        "memory_state": "not_applicable",
+        "source_page": "28",
+        "ai_justification": "The text describes the soldiers feeling a 'rush of takeoff,' which directly corresponds to the motif W415: 'Witness senses Motion or acceleration.'",
+        "emotional_marker": null,
+        "chunk": 12
+      },
+      {
+        "motif_code": "ANOMALY",
+        "sequence_order": 20,
+        "source_citation": "it was a real bird, a big sleek silver bird with feathers and talons",
+        "memory_state": "not_applicable",
+        "source_page": "28",
+        "ai_justification": "The vehicle of transport is described as a 'big sleek silver bird with feathers and talons.' This does not match any of the UFO or being typologies in the Bullard dictionary, which are generally mechanical craft or humanoid/non-humanoid entities. Therefore, it is coded as ANOMALY.",
+        "emotional_marker": null,
+        "chunk": 12
+      },
+      {
+        "motif_code": "U531",
+        "sequence_order": 21,
+        "source_citation": "and high screeching.",
+        "memory_state": "not_applicable",
+        "source_page": "28",
+        "ai_justification": "The 'bird' is described as emitting a 'high screeching' sound. This aligns with the motif U531: 'The witness hears a whistle or hi often shri 11.'",
+        "emotional_marker": null,
+        "chunk": 12
+      },
+      {
+        "motif_code": "E121",
+        "sequence_order": 22,
+        "source_citation": "The weights fell off; there was nothing to bear.",
+        "memory_state": "not_applicable",
+        "source_page": "28",
+        "ai_justification": "The text describes a sensation of all 'weights' falling off and having 'nothing to bear.' This is a feeling of lightness rather than a literal observation of floating, which fits the definition of E121: 'Pseudo-floating effect: witness only feels light, or is'.",
+        "emotional_marker": "Freedom",
+        "chunk": 12
+      },
+      {
+        "motif_code": "U250",
+        "sequence_order": 23,
+        "source_citation": "feeling the cold slap of wind and altitude",
+        "memory_state": "not_applicable",
+        "source_page": "28",
+        "ai_justification": "The experience is accompanied by the physical sensation of 'cold slap of wind and altitude.' This corresponds to the motif U250, which describes a 'Cold' interior or environmental atmosphere associated with the encounter.",
+        "emotional_marker": null,
+        "chunk": 12
+      },
+      {
+        "motif_code": "X100",
+        "sequence_order": 24,
+        "source_citation": "they were naked, they were light and free",
+        "memory_state": "not_applicable",
+        "source_page": "28",
+        "ai_justification": "The text explicitly states 'they were naked' during the flight experience. This directly maps to motif X100: 'The witness undresses (redresses) or is undressed (re-dresses).'",
+        "emotional_marker": "Freedom",
+        "chunk": 12
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 25,
+        "source_citation": "it was all lightness, bright and fast and buoyant, light as light, a helium buzz in the brain, a giddy bubbling in the lungs as they were taken up over the clouds and the war...and it was a restful, unencumbered sensation",
+        "memory_state": "not_applicable",
+        "source_page": "28",
+        "ai_justification": "The experience is described with multiple euphoric and relaxing terms: 'giddy bubbling,' 'restful, unencumbered sensation,' and 'buoyant.' This aligns with motif E300: 'Pacification effect: witness calM, euphoric, relaxed.'",
+        "emotional_marker": "Euphoria",
+        "chunk": 12
+      },
+      {
+        "motif_code": "W110",
+        "sequence_order": 26,
+        "source_citation": "sailing that big silver freedom bird over the mountains and oceans, over America, over the farms and great sleeping cities and cemeteries and highways",
+        "memory_state": "not_applicable",
+        "source_page": "28",
+        "ai_justification": "The soldiers are described as flying over the Earth and seeing it from above, which corresponds to the concept of W110: 'Otherworld seen approaching out a window (or earth de-parting).'",
+        "emotional_marker": null,
+        "chunk": 12
+      },
+      {
+        "motif_code": "E120",
+        "sequence_order": 27,
+        "source_citation": "spinning off the edge of the earth and beyond the sun and through the vast, silent vacuum where there were no burdens and where everything weighed exactly nothing",
+        "memory_state": "not_applicable",
+        "source_page": "28",
+        "ai_justification": "The text explicitly states that in the vacuum of space, 'everything weighed exactly nothing.' This is a direct description of apparent weightlessness, matching motif E120: 'Floating effect: apparent weightlessness.'",
+        "emotional_marker": "Freedom",
+        "chunk": 12
+      },
+      {
+        "motif_code": "E100",
+        "sequence_order": 28,
+        "source_citation": "through the vast, silent vacuum",
+        "memory_state": "not_applicable",
+        "source_page": "28",
+        "ai_justification": "The environment of the journey into space is described as a 'vast, silent vacuum.' This corresponds to motif E100: 'VacuuM effect: stillness, silence.'",
+        "emotional_marker": null,
+        "chunk": 12
+      },
+      {
+        "motif_code": "E123",
+        "sequence_order": 29,
+        "source_citation": "they gave themselves over to lightness, they were carried, they were purely borne.",
+        "memory_state": "not_applicable",
+        "source_page": "28",
+        "ai_justification": "The text describes the soldiers being 'carried' and 'purely borne' by the experience. This implies being moved by an external force, which aligns with the concept of E123: 'Levitation: drawing force.'",
+        "emotional_marker": "Restfulness",
+        "chunk": 12
+      },
+      {
+        "motif_code": "A116",
+        "sequence_order": 30,
+        "source_citation": "the letters were in his head. And even now, without photographs, Lieutenant Cross could see Martha playing volleyball in her white gym shorts and yellow T-shirt. He could see her moving in the rain.",
+        "memory_state": "not_applicable",
+        "source_page": "29",
+        "ai_justification": "The dictionary defines A116 as 'FragMentary MeMories of an experience persist.' The text describes how, even after burning the physical letters and photos, the memories of Martha persist vividly in the character's mind, which is a direct semantic match to the motif.",
+        "emotional_marker": "love",
+        "chunk": 13
+      },
+      {
+        "motif_code": "A138",
+        "sequence_order": 31,
+        "source_citation": "He hated her. Yes, he did. He hated her. Love, too, but it was a hard, hating kind of love.",
+        "memory_state": "not_applicable",
+        "source_page": "29",
+        "ai_justification": "The dictionary defines A138 as 'Witness develops negative personality traits--becoMes'. The text describes the character developing a 'hard, hating kind of love' for Martha, which is a new and negative emotional state resulting from his trauma. This fits the development of a negative trait.",
+        "emotional_marker": "hatred",
+        "chunk": 13
+      },
+      {
+        "motif_code": "W102",
+        "sequence_order": 32,
+        "source_citation": "The morning came up wet and blurry. Everything seemed part of everything else, the fog and Martha and the deepening rain.",
+        "memory_state": "not_applicable",
+        "source_page": "29",
+        "ai_justification": "The dictionary defines W102 as 'Otherworld is diM, dark, chill, Misty, disagreeable.' The text describes the morning as 'wet and blurry' with 'the fog and... the deepening rain,' which aligns with the misty and disagreeable nature of the coded otherworld, interpreted here as the war zone.",
+        "emotional_marker": null,
+        "chunk": 13
+      },
+      {
+        "motif_code": "A133",
+        "sequence_order": 33,
+        "source_citation": "There was that new hardness in his stomach. / He was now determined to perform his duties firmly and without negligence. It wouldn't help Lavender, he knew that, but from this point on he would comport himself as an officer.",
+        "memory_state": "not_applicable",
+        "source_page": "29-30",
+        "ai_justification": "The dictionary defines A133 as 'Witness develops positive new personality--is More aware'. The text describes the character developing a 'new hardness' and a determination to 'perform his duties firmly and without negligence,' which represents a positive personality change in the context of his role as an officer.",
+        "emotional_marker": "determination",
+        "chunk": 13
+      },
+      {
+        "motif_code": "W103",
+        "sequence_order": 34,
+        "source_citation": "This was not Mount Sebastian, it was another world, where there were no pretty poems or midterm exams, a place where men died because of carelessness and gross stupidity.",
+        "memory_state": "not_applicable",
+        "source_page": "30",
+        "ai_justification": "The dictionary defines W103 as 'Otherworld is barren, lifeless or desertlike.' The text describes the war zone as 'a place where men died because of carelessness and gross stupidity,' which semantically aligns with the concept of a lifeless and dangerous environment.",
+        "emotional_marker": null,
+        "chunk": 13
+      },
+      {
+        "motif_code": "A215",
+        "sequence_order": 35,
+        "source_citation": "Briefly, in the rain, Lieutenant Cross saw Martha's gray eyes gazing back at him.",
+        "memory_state": "not_applicable",
+        "source_page": "30",
+        "ai_justification": "The dictionary defines A215 as 'Apparitions appear.' The text explicitly states that the character 'saw Martha's gray eyes gazing back at him' in the rain, an image that was not physically present, thus qualifying as an apparition.",
+        "emotional_marker": "sadness",
+        "chunk": 13
+      }
+    ],
+    "model_name": "gemini-2.5-pro",
+    "profile_used": "baseline_test",
+    "run_timestamp": "2026-03-30T00:12:47.295982"
+  }
+}
