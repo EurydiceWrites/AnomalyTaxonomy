@@ -945,9 +945,9 @@ def main():
                         help="Last PDF page to extract (1-indexed, inclusive).")
     parser.add_argument("--text", metavar="FILE",
                         help="Path to a plain text file. Use instead of pdf_path + page args.")
-    parser.add_argument("--model", default="gemini-3.1-pro-preview",
+    parser.add_argument("--model", default="claude-opus-4-6",
                         choices=["gemini-2.5-pro", "gemini-3.1-pro-preview", "claude-opus-4-6"],
-                        help="Which LLM to use for Step 3 extraction (default: gemini-3.1-pro-preview)")
+                        help="Which LLM to use for Step 3 extraction (default: claude-opus-4-6)")
     args = parser.parse_args()
 
     # Determine mode
