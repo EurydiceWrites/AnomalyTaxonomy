@@ -99,7 +99,7 @@ def flatten_motif_key(nested_dict):
 
 
 def extract_narrative(text=None, sticky_header="", retrieval_method="unknown",
-                      profile_name="baseline", case_number=None,
+                      profile_name="baseline_test", case_number=None,
                       pipeline_json_path=None, narrative_structure=None):
     """
     Sends narrative text to Gemini and returns structured extraction results.
