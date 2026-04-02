@@ -1,4 +1,12 @@
 {
+  "narrative_structure_preambles": {
+    "investigation": "This text is written by an investigator describing the experience of {experiencer_name}. Code only the events experienced by {experiencer_name}. The investigator's analytical commentary, editorial observations, procedural descriptions, and accounts of other individuals' experiences are not encounter events — do not code them. When the investigator quotes {experiencer_name} directly, the quoted content describes encounter events. When the investigator paraphrases {experiencer_name}, treat the paraphrased content as encounter events.",
+    "interview_dialogue": "This text contains dialogue between an interviewer and {experiencer_name}. Code only the events described by {experiencer_name}. The interviewer's questions, prompts, clinical observations, and interpretive commentary are not encounter events — do not code them. When {experiencer_name} describes what they saw, felt, or experienced, that content describes encounter events regardless of whether it is in response to a question. Do not code events described by other individuals who may appear in the text.",
+    "first_person_testimony": "This text is a first-person account written or spoken by {experiencer_name}. The narrator is describing their own experience. Code the events they describe. Theological interpretation, devotional language, and the narrator's attempts to explain or contextualize what they experienced are not encounter events — code what happened to them, not what they believed it meant.",
+    "literary_narration": "This text is a literary narrative. It is not an encounter report. Code any events that match motif definitions in the dictionary based on their structural content, regardless of which character experiences them. Narrative framing, poetic devices, authorial commentary, and passages describing setting or backstory without event content are not codeable events. Do not assume this text describes an encounter — code only what the dictionary supports.",
+    "compiled_catalogue": "This text is a catalogue of compiled case summaries drawn from secondary sources. Each entry is a separate encounter and should be coded independently. Entries are brief and compressed — code what is explicitly stated without inferring events from sparse descriptions. The compiler's editorial commentary, classification notes, and cross-references between cases are not encounter events.",
+    "not_applicable": ""
+  },
   "profiles": {
     "baseline": {
       "system_instruction": [

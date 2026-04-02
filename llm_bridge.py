@@ -66,15 +66,19 @@ RETRIEVAL_CONTEXT_MAP = {
 
 # --- Narrative structure context strings ---
 # These tell the LLM how the text is structured so it can extract events correctly.
-# Preambles will be written by Eurydice in a future session.
-NARRATIVE_STRUCTURE_MAP = {
-    'third_person_investigation': 'TODO: preamble pending Eurydice',
-    'interview_dialogue':         'TODO: preamble pending Eurydice',
-    'first_person_testimony':     'TODO: preamble pending Eurydice',
-    'literary_narration':         'TODO: preamble pending Eurydice',
-    'compiled_catalogue':         'TODO: preamble pending Eurydice',
-    'not_applicable':             '',
-}
+# Preambles are loaded from prompt_library.json["narrative_structure_preambles"].
+# Three preambles contain {experiencer_name} template variables for name substitution.
+def _load_narrative_structure_map():
+    """Load narrative structure preambles from prompt_library.json."""
+    try:
+        lib_path = os.path.join(os.path.dirname(__file__) or ".", "prompt_library.json")
+        with open(lib_path, "r", encoding="utf-8") as f:
+            lib = json.load(f)
+        return lib.get("narrative_structure_preambles", {})
+    except Exception:
+        return {}
+
+NARRATIVE_STRUCTURE_MAP = _load_narrative_structure_map()
 
 
 def flatten_motif_key(nested_dict):
@@ -101,7 +105,7 @@ def flatten_motif_key(nested_dict):
 def extract_narrative(text=None, sticky_header="", retrieval_method="unknown",
                       profile_name="baseline_test", case_number=None,
                       pipeline_json_path=None, narrative_structure=None,
-                      model="gemini-3.1-pro-preview"):
+                      model="gemini-3.1-pro-preview", experiencer_name=None):
     """
     Sends narrative text to Gemini and returns structured extraction results.
 
@@ -143,10 +147,11 @@ def extract_narrative(text=None, sticky_header="", retrieval_method="unknown",
         with open(text_path, "r", encoding="utf-8") as f:
             text = f.read()
 
-        # Get the two preamble fields from the JSON
+        # Get preamble fields from the JSON
         step1 = pipeline_data["step_1_scanned_metadata"]
         retrieval_method = step1.get("memory_retrieval_method", "unknown")
         narrative_structure = step1.get("narrative_structure", "not_applicable")
+        experiencer_name = step1.get("experiencer_name", None)
 
         # No sticky_header in pipeline mode — the engine is intentionally naive
         sticky_header = ""
@@ -192,9 +197,16 @@ def extract_narrative(text=None, sticky_header="", retrieval_method="unknown",
 
     structure_context = ""
     if narrative_structure:
-        structure_context = NARRATIVE_STRUCTURE_MAP.get(narrative_structure, "")
-        if structure_context:
+        preamble_template = NARRATIVE_STRUCTURE_MAP.get(narrative_structure, "")
+        if preamble_template:
+            if experiencer_name:
+                structure_context = preamble_template.format(experiencer_name=experiencer_name)
+            else:
+                print(f"  WARNING: No experiencer_name available for preamble substitution. Using 'the experiencer'.")
+                structure_context = preamble_template.replace("{experiencer_name}", "the experiencer")
             print(f"[*] Narrative structure: {narrative_structure}")
+            if experiencer_name:
+                print(f"[*] Experiencer name: {experiencer_name}")
 
     # Load the prompt library and select the requested profile
     with open("prompt_library.json", "r", encoding="utf-8") as f:
