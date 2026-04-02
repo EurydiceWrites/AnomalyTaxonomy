@@ -13,12 +13,11 @@ import re
 import time
 import argparse
 from datetime import datetime, timezone
-from google import genai
-from google.genai import types
 from dotenv import load_dotenv
 
+from llm_bridge import assemble_prompt, call_model, get_or_create_gemini_cache
+
 load_dotenv()
-client = genai.Client()
 
 # ── Args ──
 parser = argparse.ArgumentParser(description="Phase 2 Blind Calibration Test")
@@ -27,10 +26,13 @@ parser.add_argument("encounter_id", type=int, help="Encounter_ID for ground trut
 parser.add_argument("line_start", type=int, help="Start line in bullard_vol2_raw.txt")
 parser.add_argument("line_end", type=int, help="End line in bullard_vol2_raw.txt")
 parser.add_argument("--profile", default="baseline_test", help="Profile name from prompt_library.json")
+parser.add_argument("--model", default="gemini-2.5-pro",
+                    choices=["gemini-2.5-pro", "gemini-3.1-pro-preview", "claude-opus-4-6"],
+                    help="Which LLM to use for extraction")
 args = parser.parse_args()
 
 print(f"{'=' * 70}")
-print(f"PHASE 2 BLIND CALIBRATION — Case {args.case_number} (profile: {args.profile})")
+print(f"PHASE 2 BLIND CALIBRATION — Case {args.case_number} (profile: {args.profile}, model: {args.model})")
 print(f"{'=' * 70}")
 
 # ── Step 1: Strip margin codes from raw text ──
@@ -98,28 +100,17 @@ for line in stripped_lines:
     print(f"  {line}")
 print(f"  --- END ---\n")
 
-# ── Step 2: Build prompt from baseline profile + create context cache ──
-print("[Step 2] Building prompt and context cache...")
+# ── Step 2: Build prompt and set up model context ──
+print(f"[Step 2] Building prompt for model: {args.model}...")
 
 with open('prompt_library.json', 'r', encoding='utf-8') as f:
     prompt_lib = json.load(f)
 
 profile = prompt_lib['profiles'][args.profile]
 print(f"  Profile: {args.profile}")
-sys_inst = "\n".join(profile['system_instruction'])
-anti_hall = "\n".join(profile.get('anti_hallucination_rules', []))
-few_shot = "\n\n".join(profile.get('few_shot_examples', []))
-narr_ctx = "\n".join(profile.get('narrative_context_rules', []))
-print(f"  Anti-hallucination rules: {len(profile.get('anti_hallucination_rules', []))} items")
-print(f"  Few-shot examples: {len(profile.get('few_shot_examples', []))} items")
-print(f"  Narrative context rules: {len(profile.get('narrative_context_rules', []))} items")
 
-# Load motif dictionary
-with open('motif_key.json', 'r', encoding='utf-8') as f:
-    motif_key = json.load(f)
-
-# Build dict string from motif_key.json
-motif_dict_str = "\n".join([f"{code}: {desc}" for code, desc in sorted(motif_key.items())])
+# assemble_prompt() is the single source of truth — prints key counts automatically
+system_prompt = assemble_prompt(profile)
 
 # Load Bullard Volume 1 as context (the theoretical framework)
 print("  Loading Bullard Volume 1...")
@@ -127,59 +118,36 @@ with open('Sources/bullard_vol1_raw.txt', 'r', encoding='utf-8') as f:
     vol1_text = f.read()
 print(f"  Vol1: {len(vol1_text)} chars loaded")
 
-system_instruction = f"""{sys_inst}
+# Model-specific context setup
+cached_content_name = None
 
-{anti_hall}
-
-*** NARRATIVE CONTEXT RULES ***
-{narr_ctx}
-
-*** EXAMPLES OF SUCCESSFUL EXTRACTION ***
-{few_shot}
-"""
-
-# Cache contents: Vol1 + motif dictionary (static across all test runs)
-cache_contents = f"""*** REFERENCE: BULLARD'S COMPARATIVE STUDY (Volume 1) ***
+if args.model.startswith("gemini"):
+    # Gemini path: cache Vol1 + system prompt on Google's servers
+    cache_contents = f"""*** REFERENCE: BULLARD'S COMPARATIVE STUDY (Volume 1) ***
 The following is Thomas Bullard's complete comparative analysis of UFO abduction reports.
 This provides the theoretical framework, motif definitions, and coding methodology you should follow.
 Use this to understand the INTENT and CONTEXT behind each motif code when making your assignments.
 
 {vol1_text}
-
-*** MOTIF DICTIONARY ***
-You must ONLY use codes from this dictionary. If a concept is entirely novel, assign 'ANOMALY'.
-
-{motif_dict_str}
 """
-
-MODEL = 'gemini-3.1-pro-preview'
-
-# Check for existing cache first, create if not found
-print("  Checking for existing context cache...")
-existing_cache = None
-try:
-    for c_item in client.caches.list():
-        if hasattr(c_item, 'display_name') and c_item.display_name == f'bullard_vol1_{args.profile}':
-            existing_cache = c_item
-            print(f"  Found existing cache: {c_item.name}")
-            break
-except Exception as e:
-    print(f"  Cache list check failed: {e}")
-
-if existing_cache:
-    cache = existing_cache
-else:
-    print("  Creating new context cache (Vol1 + motif dictionary)...")
-    cache = client.caches.create(
-        model=MODEL,
-        config=types.CreateCachedContentConfig(
-            display_name=f'bullard_vol1_{args.profile}',
-            system_instruction=system_instruction,
-            contents=[cache_contents],
-            ttl="1800s",  # 30 minutes
-        )
+    cached_content_name = get_or_create_gemini_cache(
+        model=args.model,
+        system_prompt=system_prompt,
+        cache_contents=cache_contents,
+        display_name=f'bullard_vol1_{args.profile}',
     )
-    print(f"  Cache created: {cache.name}")
+
+elif args.model.startswith("claude"):
+    # Claude path: prepend Vol1 to system prompt (cached via Anthropic's prompt caching)
+    vol1_block = f"""*** REFERENCE: BULLARD'S COMPARATIVE STUDY (Volume 1) ***
+The following is Thomas Bullard's complete comparative analysis of UFO abduction reports.
+This provides the theoretical framework, motif definitions, and coding methodology you should follow.
+Use this to understand the INTENT and CONTEXT behind each motif code when making your assignments.
+
+{vol1_text}
+"""
+    system_prompt = vol1_block + "\n\n" + system_prompt
+    print(f"  System prompt with Vol1: {len(system_prompt)} chars (will be cached by Anthropic)")
 
 # ── Split text into chunks of ≤3000 chars at paragraph boundaries ──
 CHUNK_SIZE = 3000
@@ -198,31 +166,15 @@ print(f"  Split into {len(chunks)} chunks:")
 for i, ch in enumerate(chunks):
     print(f"    Chunk {i+1}: {len(ch)} chars")
 
-# ── Step 3: Send each chunk to Gemini (using cached context) ──
-print(f"\n[Step 3] Sending {len(chunks)} chunks to Gemini 3.1 Pro (with cached context, temperature=0.0)...")
-
-# Robustly unwrap: find the list of dicts containing 'motif_code'
-def find_motif_list(obj):
-    if isinstance(obj, list) and obj and isinstance(obj[0], dict) and 'motif_code' in obj[0]:
-        return obj
-    if isinstance(obj, dict):
-        for v in obj.values():
-            result = find_motif_list(v)
-            if result is not None:
-                return result
-    if isinstance(obj, list):
-        for item in obj:
-            result = find_motif_list(item)
-            if result is not None:
-                return result
-    return None
+# ── Step 3: Send each chunk to the model via llm_bridge ──
+print(f"\n[Step 3] Sending {len(chunks)} chunks to {args.model} (temperature=0.0)...")
 
 ai_events = []
 global_seq = 1
 
 for i, chunk in enumerate(chunks):
     print(f"\n  Chunk {i+1}/{len(chunks)} ({len(chunk)} chars)...")
-    
+
     user_prompt = f"""Analyze the following UFO encounter narrative CHUNK and extract all Motif Codes in chronological order.
 This is chunk {i+1} of {len(chunks)} from the full narrative. Start sequence numbering at {global_seq}.
 
@@ -231,42 +183,28 @@ Return a JSON array where each element has:
 - "motif_code" (string, from the dictionary)
 - "citation" (string, the text passage justifying the code)
 - "reasoning" (string, brief explanation of why this code fits)
+- "memory_state" (string, the memory state during this event)
 
 *** ENCOUNTER NARRATIVE (CHUNK {i+1} of {len(chunks)}) ***
 {chunk}
 """
-    
-    response = client.models.generate_content(
-        model=MODEL,
-        contents=user_prompt,
-        config=types.GenerateContentConfig(
-            cached_content=cache.name,
-            response_mime_type="application/json",
-            temperature=0.0
-        )
+
+    chunk_events = call_model(
+        text=user_prompt,
+        system_prompt="" if cached_content_name else system_prompt,
+        model=args.model,
+        cached_content=cached_content_name,
+        temperature=0.0,
     )
-    
-    chunk_events = json.loads(response.text)
-    unwrapped = find_motif_list(chunk_events)
-    if unwrapped is not None:
-        chunk_events = unwrapped
-    elif isinstance(chunk_events, dict):
-        for v in chunk_events.values():
-            if isinstance(v, list):
-                chunk_events = v
-                break
-    
-    if not isinstance(chunk_events, list):
-        chunk_events = []
-    
-    print(f"    → {len(chunk_events)} motifs extracted")
-    
+
+    print(f"    -> {len(chunk_events)} motifs extracted")
+
     # Re-number sequences globally
     for ev in chunk_events:
         ev['sequence'] = global_seq
         ev['chunk'] = i + 1
         global_seq += 1
-    
+
     ai_events.extend(chunk_events)
 
 print(f"  AI returned {len(ai_events)} motifs")
@@ -276,12 +214,19 @@ print("\n[Step 4] Loading ground truth from database...")
 
 conn = sqlite3.connect('ufo_matrix.db')
 c = conn.cursor()
+c.execute("SELECT Encounter_ID FROM Encounters WHERE Case_Number = ?", (args.case_number,))
+enc_row = c.fetchone()
+if enc_row:
+    gt_encounter_id = enc_row[0]
+else:
+    gt_encounter_id = args.encounter_id
+    print(f"  WARNING: Case '{args.case_number}' not found by Case_Number, falling back to encounter_id={args.encounter_id}")
 c.execute("""
     SELECT Sequence_Order, Motif_Code, source_citation
     FROM Encounter_Events
     WHERE Encounter_ID = ?
     ORDER BY Sequence_Order
-""", (args.encounter_id,))
+""", (gt_encounter_id,))
 gt_events = [(seq, code, cite) for seq, code, cite in c.fetchall()]
 conn.close()
 
@@ -419,6 +364,7 @@ for ev in ai_events:
 # ── Save results ──
 results = {
     'case_number': args.case_number,
+    'model': args.model,
     'ground_truth_count': len(gt_codes),
     'ai_count': len(ai_codes),
     'exact_matches': len(exact_matches),
@@ -435,7 +381,9 @@ results = {
     'stripped_text': stripped_text,
 }
 
-outfile = os.path.join('test_results', 'raw', f'phase2_results_{args.case_number}_{args.profile}.json')
+# Include model name in filename (strip slashes from model IDs like gemini-2.5-pro)
+model_tag = args.model.replace("/", "_")
+outfile = os.path.join('test_results', 'raw', f'phase2_results_{args.case_number}_{args.profile}_{model_tag}.json')
 with open(outfile, 'w', encoding='utf-8') as f:
     json.dump(results, f, indent=2, ensure_ascii=False)
 print(f"\nResults saved to {outfile}")

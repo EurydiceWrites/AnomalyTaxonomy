@@ -42,12 +42,14 @@ class CaseMetadata(BaseModel):
     memory_retrieval_method: Literal["conscious", "hypnosis", "altered", "mixed", "unknown", "not_applicable"]
 
 import os
+import re
 import sqlite3
 import json
 from datetime import datetime
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
+import anthropic
 
 
 # --- Retrieval method context strings ---
@@ -550,3 +552,323 @@ def process_narrative(text: str, sticky_header: str, source_citation: str, case_
         retrieval_method=retrieval_method,
         db_path="ufo_matrix.db",
     )
+
+
+# =============================================================================
+# MODEL-AGNOSTIC EXTRACTION BRIDGE
+# =============================================================================
+# These functions provide a single interface for calling any supported LLM.
+# Calling scripts use run_extraction() or call_model() instead of importing
+# google.genai or anthropic directly.
+# =============================================================================
+
+
+def get_or_create_gemini_cache(model: str, system_prompt: str,
+                               cache_contents: str, display_name: str,
+                               ttl: str = "1800s") -> str:
+    """
+    Look up an existing Gemini context cache by display_name, or create one.
+
+    Returns the cache name string for use with _call_gemini(cached_content=...).
+    This keeps all google.genai imports inside llm_bridge.py.
+
+    Parameters:
+        model:          Gemini model identifier (e.g., 'gemini-3.1-pro-preview')
+        system_prompt:  System instruction to bake into the cache
+        cache_contents: Static content to cache (e.g., Vol1 text)
+        display_name:   Human-readable cache identifier for lookup
+        ttl:            Cache time-to-live (default '1800s' = 30 minutes)
+
+    Returns:
+        The cache name string (e.g., 'cachedContents/abc123')
+    """
+    load_dotenv()
+    client = genai.Client()
+
+    # Check for existing cache first
+    print(f"  Checking for existing context cache '{display_name}'...")
+    try:
+        for c_item in client.caches.list():
+            if hasattr(c_item, 'display_name') and c_item.display_name == display_name:
+                print(f"  Found existing cache: {c_item.name}")
+                return c_item.name
+    except Exception as e:
+        print(f"  Cache list check failed: {e}")
+
+    # Create new cache
+    print(f"  Creating new context cache '{display_name}'...")
+    cache = client.caches.create(
+        model=model,
+        config=types.CreateCachedContentConfig(
+            display_name=display_name,
+            system_instruction=system_prompt,
+            contents=[cache_contents],
+            ttl=ttl,
+        )
+    )
+    print(f"  Cache created: {cache.name}")
+    return cache.name
+
+
+def assemble_prompt(profile: dict) -> str:
+    """
+    Single source of truth for prompt assembly from a prompt_library.json profile.
+
+    Takes the profile dict (already loaded by the caller) and concatenates all
+    prompt components in the correct order. Missing keys are skipped silently.
+
+    Parameters:
+        profile: A profile dict from prompt_library.json (e.g., profiles["baseline_test"])
+
+    Returns:
+        The fully assembled system prompt string.
+    """
+    parts = []
+
+    # System instruction (core rules and taxonomy)
+    sys_inst = profile.get("system_instruction", [])
+    if sys_inst:
+        parts.append("\n".join(sys_inst))
+        print(f"  System instruction: {len(sys_inst)} items")
+
+    # Narrative context rules
+    narr_ctx = profile.get("narrative_context_rules", [])
+    if narr_ctx:
+        parts.append("*** NARRATIVE CONTEXT RULES ***")
+        parts.append("\n".join(narr_ctx))
+    print(f"  Narrative context rules: {len(narr_ctx)} items")
+
+    # Anti-hallucination rules (semantic boundaries)
+    anti_hall = profile.get("anti_hallucination_rules", [])
+    if anti_hall:
+        parts.append("*** SEMANTIC BOUNDARIES & NEGATIVE PROMPTING ***")
+        parts.append("\n".join(anti_hall))
+    print(f"  Anti-hallucination rules: {len(anti_hall)} items")
+
+    # Few-shot examples
+    few_shot = profile.get("few_shot_examples", [])
+    if few_shot:
+        parts.append("*** FEW-SHOT EXAMPLES ***")
+        parts.append("\n\n".join(few_shot))
+    print(f"  Few-shot examples: {len(few_shot)} items")
+
+    # Load and append the motif dictionary
+    motif_key_path = os.path.join(os.path.dirname(__file__) or ".", "motif_key.json")
+    with open(motif_key_path, "r", encoding="utf-8") as f:
+        motif_key_nested = json.load(f)
+
+    motif_dict = flatten_motif_key(motif_key_nested)
+    motif_rules = "\n".join(f"- {code}: {desc}" for code, desc in sorted(motif_dict.items()))
+    parts.append("*** MOTIF DICTIONARY ***")
+    parts.append(f"You must ONLY use codes from this dictionary. If a concept is entirely novel, assign 'ANOMALY'.\n\n{motif_rules}")
+    print(f"  Motif dictionary: {len(motif_dict)} codes loaded")
+
+    # JSON output instruction — works for all models
+    parts.append(
+        'You MUST return your results as a JSON array. Each element must be an object '
+        'with these exact keys: "sequence" (integer), "motif_code" (string), '
+        '"citation" (string), "reasoning" (string), "memory_state" (string), '
+        '"chunk" (integer). Return ONLY the JSON array with no preamble, commentary, '
+        'or markdown formatting.'
+    )
+
+    return "\n\n".join(parts)
+
+
+def _find_motif_list(obj):
+    """
+    Recursively search a parsed JSON structure for the list of motif event dicts.
+
+    Gemini sometimes wraps the event list inside a dict (e.g., {"events": [...]}).
+    This function walks nested dicts and lists looking for a list whose first
+    element is a dict containing a 'motif_code' key.
+    """
+    if isinstance(obj, list) and obj and isinstance(obj[0], dict) and 'motif_code' in obj[0]:
+        return obj
+    if isinstance(obj, dict):
+        for v in obj.values():
+            result = _find_motif_list(v)
+            if result is not None:
+                return result
+    if isinstance(obj, list):
+        for item in obj:
+            result = _find_motif_list(item)
+            if result is not None:
+                return result
+    return None
+
+
+def parse_extraction_response(raw_text: str) -> list[dict]:
+    """
+    Parse raw LLM response text into a normalized list of event dicts.
+
+    Handles:
+    - Markdown code fences (```json ... ``` or ``` ... ```)
+    - Nested wrappers (e.g., {"events": [...]})
+    - Direct JSON arrays
+
+    Returns:
+        List of dicts, each with motif extraction data.
+    """
+    text = raw_text.strip()
+
+    # Strip markdown code fences if present
+    text = re.sub(r'^```(?:json)?\s*\n?', '', text)
+    text = re.sub(r'\n?```\s*$', '', text)
+    text = text.strip()
+
+    try:
+        parsed = json.loads(text)
+    except json.JSONDecodeError as e:
+        raise ValueError(
+            f"Failed to parse LLM response as JSON: {e}\n"
+            f"First 200 chars: {text[:200]}"
+        )
+
+    # If it's already a list of event dicts, return directly
+    if isinstance(parsed, list):
+        unwrapped = _find_motif_list(parsed)
+        return unwrapped if unwrapped is not None else parsed
+
+    # If it's a dict, try to find the event list inside
+    if isinstance(parsed, dict):
+        unwrapped = _find_motif_list(parsed)
+        if unwrapped is not None:
+            return unwrapped
+        # Last resort: look for any list value
+        for v in parsed.values():
+            if isinstance(v, list):
+                return v
+
+    return parsed if isinstance(parsed, list) else [parsed]
+
+
+def _call_gemini(text: str, system_prompt: str, model: str = "gemini-2.5-pro",
+                 cached_content: str = None, temperature: float = 0.0) -> list[dict]:
+    """
+    Send text to a Gemini model and return parsed extraction events.
+
+    Parameters:
+        text:            The user-facing content (narrative chunk + instructions)
+        system_prompt:   The system instruction. Ignored if cached_content is set
+                         (system prompt was baked into the cache at creation time).
+        model:           Gemini model identifier
+        cached_content:  Name of an existing Gemini context cache (optional)
+        temperature:     Generation temperature (default 0.0 for deterministic output)
+    """
+    load_dotenv()
+    client = genai.Client()
+
+    config_kwargs = {
+        "response_mime_type": "application/json",
+        "temperature": temperature,
+    }
+
+    if cached_content:
+        # System prompt is already inside the cache — just send the text
+        config_kwargs["cached_content"] = cached_content
+    elif system_prompt:
+        # No cache — pass system prompt as system_instruction
+        config_kwargs["system_instruction"] = system_prompt
+
+    response = client.models.generate_content(
+        model=model,
+        contents=text,
+        config=types.GenerateContentConfig(**config_kwargs),
+    )
+
+    return parse_extraction_response(response.text)
+
+
+def _call_claude(text: str, system_prompt: str, model: str = "claude-opus-4-6",
+                 temperature: float = 0.0) -> list[dict]:
+    """
+    Send text to a Claude model and return parsed extraction events.
+
+    Uses Anthropic's prompt caching to cache the system prompt (which contains
+    the motif dictionary, Vol 1 context, and prompt library rules). The 1-hour
+    TTL ensures cache hits across batch runs with pauses between cases.
+
+    Parameters:
+        text:           The user-facing content (narrative chunk + instructions)
+        system_prompt:  The full system instruction (will be cached)
+        model:          Claude model identifier
+        temperature:    Generation temperature (default 0.0)
+    """
+    load_dotenv(override=True)
+    client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from env
+
+    response = client.messages.create(
+        model=model,
+        max_tokens=16000,
+        temperature=temperature,
+        system=[
+            {
+                "type": "text",
+                "text": system_prompt,
+                "cache_control": {"type": "ephemeral", "ttl": "1h"}
+            }
+        ],
+        messages=[
+            {"role": "user", "content": text}
+        ],
+    )
+
+    # Log cache performance
+    usage = response.usage
+    print(f"  Cache write: {getattr(usage, 'cache_creation_input_tokens', 0)} tokens")
+    print(f"  Cache read:  {getattr(usage, 'cache_read_input_tokens', 0)} tokens")
+    print(f"  Uncached:    {usage.input_tokens} tokens")
+
+    raw_text = response.content[0].text
+    return parse_extraction_response(raw_text)
+
+
+def call_model(text: str, system_prompt: str, model: str = "gemini-2.5-pro",
+               cached_content: str = None, temperature: float = 0.0) -> list[dict]:
+    """
+    Low-level model dispatcher. Routes to Gemini or Claude based on model name.
+
+    Use this when you build your own prompt and just need the API routing.
+    For scripts that use prompt_library.json profiles, use run_extraction() instead.
+
+    Parameters:
+        text:           The user-facing content to send to the model
+        system_prompt:  The system instruction (empty string if baked into cache)
+        model:          Model identifier (must start with 'gemini' or 'claude')
+        cached_content: Gemini cache name (optional, Gemini-only)
+        temperature:    Generation temperature
+    """
+    if model.startswith("gemini"):
+        return _call_gemini(text, system_prompt, model,
+                            cached_content=cached_content, temperature=temperature)
+    elif model.startswith("claude"):
+        return _call_claude(text, system_prompt, model, temperature=temperature)
+    else:
+        raise ValueError(f"Unsupported model: {model}")
+
+
+def run_extraction(text: str, profile: dict, model: str = "gemini-2.5-pro",
+                   cached_content: str = None, temperature: float = 0.0) -> list[dict]:
+    """
+    High-level extraction interface. Assembles the prompt from a profile dict
+    and sends text to the specified model.
+
+    This is the primary public API for model-agnostic extraction. Changing the
+    extraction model requires changing only the model argument.
+
+    Parameters:
+        text:           The raw narrative text to extract from (one chunk)
+        profile:        Profile dict from prompt_library.json
+        model:          Which LLM to use ('gemini-2.5-pro', 'gemini-3.1-pro-preview',
+                        'claude-opus-4-6')
+        cached_content: Gemini cache name (optional, Gemini-only)
+        temperature:    Generation temperature
+
+    Returns:
+        List of dicts, each representing one extracted event with keys:
+        sequence, motif_code, citation, reasoning, memory_state, chunk
+    """
+    system_prompt = assemble_prompt(profile)
+    return call_model(text, system_prompt, model,
+                      cached_content=cached_content, temperature=temperature)

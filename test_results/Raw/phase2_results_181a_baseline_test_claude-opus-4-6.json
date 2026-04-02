@@ -1,0 +1,394 @@
+{
+  "case_number": "181a",
+  "model": "claude-opus-4-6",
+  "ground_truth_count": 22,
+  "ai_count": 38,
+  "exact_matches": 8,
+  "near_misses": 5,
+  "ai_extras": 25,
+  "ai_misses": 9,
+  "match_rate": 36.4,
+  "combined_rate": 59.1,
+  "exact_match_codes": [
+    "B610",
+    "B900",
+    "B915",
+    "C110",
+    "E200",
+    "E201",
+    "M119",
+    "U230"
+  ],
+  "near_miss_details": [
+    [
+      "B202",
+      "B201",
+      1
+    ],
+    [
+      "E300",
+      "E301",
+      1
+    ],
+    [
+      "U211",
+      "U212",
+      1
+    ],
+    [
+      "X227",
+      "X235",
+      8
+    ],
+    [
+      "B802",
+      "B800",
+      2
+    ]
+  ],
+  "missed_codes": [
+    "B909",
+    "B910",
+    "U100",
+    "W111",
+    "W201",
+    "W101",
+    "W104",
+    "E130",
+    "E135"
+  ],
+  "extra_codes": [
+    "E311",
+    "A108",
+    "U530",
+    "U252",
+    "A100",
+    "X155",
+    "U309",
+    "B230",
+    "B241",
+    "B295",
+    "B285",
+    "B225",
+    "B222",
+    "B210",
+    "B805",
+    "B301",
+    "B361",
+    "B340",
+    "B707",
+    "M130",
+    "S101",
+    "M122",
+    "M149",
+    "M125",
+    "X229.1"
+  ],
+  "ai_events": [
+    {
+      "sequence": 1,
+      "motif_code": "E200",
+      "citation": "went into the barn to gather eggs one afternoon, then suddenly found herself in the yard",
+      "reasoning": "The witness experienced a gap in time/memory, finding herself in a different location with no memory of what happened in between.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 2,
+      "motif_code": "E311",
+      "citation": "felt an itch on her leg",
+      "reasoning": "An itching/tingling sensation on the body, consistent with electrical/physical effect associated with the encounter.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 3,
+      "motif_code": "A108",
+      "citation": "The leg was wet with blood froM a painless but deep, inch-long cut underneath her undaMaged jeans",
+      "reasoning": "A wound of unknown origin that opens and bleeds, found after the encounter with no damage to clothing.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 4,
+      "motif_code": "E201",
+      "citation": "At first she reMeMbered only that she was suddenly inside a round, doMed rooM with instruMents",
+      "reasoning": "Doorway amnesia: the witness has no memory of entering the craft, finding herself suddenly inside.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 5,
+      "motif_code": "B610",
+      "citation": "under deeper hypnosis she recalled that a being carried her inside",
+      "reasoning": "A being physically carried the witness into the craft, a form of escort/procurement.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 6,
+      "motif_code": "U212",
+      "citation": "inside a round, doMed rooM with instruMents",
+      "reasoning": "The examination room is described as round and domed, matching the smooth interior without sharp edges.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 7,
+      "motif_code": "U530",
+      "citation": "The rooM had a faint huM",
+      "reasoning": "A buzzing or humming monotonous sound heard inside the craft.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 8,
+      "motif_code": "U252",
+      "citation": "a clean, ozone sMell",
+      "reasoning": "The interior smells of ozone, a recognized atmospheric characteristic of the craft interior.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 9,
+      "motif_code": "U230",
+      "citation": "A bright, pearly light without specific source illuMinated the rooM",
+      "reasoning": "Bright, uniform lighting without a specific source—the classic diffuse interior illumination.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 10,
+      "motif_code": "A100",
+      "citation": "at soMe point irritated her eyes",
+      "reasoning": "Eye irritation as a physical aftereffect of exposure to the craft's interior light.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 11,
+      "motif_code": "X155",
+      "citation": "She laid on a couch or bed",
+      "reasoning": "The witness lies on an examining table or couch during the examination.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 12,
+      "motif_code": "U309",
+      "citation": "beings she never saw clearly reMained in a separate rooM",
+      "reasoning": "A transparent wall or barrier separates the witness from the beings, who remain in a different room.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 13,
+      "motif_code": "B201",
+      "citation": "She gathered that they were huManoids with large crania and large eyes, no hair, and long, slender fingers",
+      "reasoning": "The beings are identified as humanoid in form.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 14,
+      "motif_code": "B230",
+      "citation": "huManoids with large crania",
+      "reasoning": "The beings have large heads/crania.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 15,
+      "motif_code": "B241",
+      "citation": "large eyes",
+      "reasoning": "The beings have large eyes.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 16,
+      "motif_code": "B295",
+      "citation": "no hair",
+      "reasoning": "The beings are hairless.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 17,
+      "motif_code": "B285",
+      "citation": "long, slender fingers",
+      "reasoning": "The beings have long, thin fingers.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 18,
+      "motif_code": "B225",
+      "citation": "They were thin and tall (5 feet 5 inches)",
+      "reasoning": "The beings are described as thin, indicating spindly build and slight musculature.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 19,
+      "motif_code": "B222",
+      "citation": "tall (5 feet 5 inches)",
+      "reasoning": "At 5 feet 5 inches the beings fall in the average height range (5.5-6 feet boundary area). Given the text says 'tall' relative to the child witness but the actual measurement is average.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 20,
+      "motif_code": "B210",
+      "citation": "all seeMed Male",
+      "reasoning": "The beings all appeared masculine to the witness.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 21,
+      "motif_code": "B800",
+      "citation": "The leader seeMed shorter than the being who brought her inside",
+      "reasoning": "One being is identified as a leader, distinguished from the others.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 22,
+      "motif_code": "B805",
+      "citation": "The leader seeMed shorter than the being who brought her inside",
+      "reasoning": "Dimorphism associated with rank: the leader is a different size (shorter) than the escort being.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 23,
+      "motif_code": "B301",
+      "citation": "The beings wore gray tight-fitting suits",
+      "reasoning": "The beings wear tight-fitting clothing.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 24,
+      "motif_code": "B361",
+      "citation": "gray tight-fitting suits",
+      "reasoning": "The clothing color is gray.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 25,
+      "motif_code": "B340",
+      "citation": "perhaps a helMet of soMe sort",
+      "reasoning": "The beings may have worn a helmet or cap.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 26,
+      "motif_code": "C110",
+      "citation": "She talked by telepathy for a long tiMe with a friendly, grandfatherly being",
+      "reasoning": "Communication occurs telepathically—the witness hears/understands meanings without audible speech.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 27,
+      "motif_code": "B900",
+      "citation": "a friendly, grandfatherly being who Made her feel at ease",
+      "reasoning": "The being is friendly, polite, and familiar in manner.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 28,
+      "motif_code": "E301",
+      "citation": "who Made her feel at ease",
+      "reasoning": "The witness senses kindness and feels comfortable, as if among friends.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 29,
+      "motif_code": "B707",
+      "citation": "He was curious about aniMals and huMan and aniMal life spans",
+      "reasoning": "The being shows concern with age and life spans, a recurring interest of the beings.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 30,
+      "motif_code": "B915",
+      "citation": "They discussed chickens and joked",
+      "reasoning": "The being displays a sense of humor by joking with the witness.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 31,
+      "motif_code": "M130",
+      "citation": "explained to her his travels and the planet he caMe froM, showing her star Maps to accoMpany the discussion",
+      "reasoning": "The being tells the witness where they originate, accompanied by star maps.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 32,
+      "motif_code": "S101",
+      "citation": "showing her star Maps to accoMpany the discussion",
+      "reasoning": "The witness sees a star map depicting the beings' place of origin.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 33,
+      "motif_code": "M119",
+      "citation": "In a while she would not reMeMber hiM, he said",
+      "reasoning": "The being tells the witness to forget, that the time is not yet right for her to remember.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 34,
+      "motif_code": "M122",
+      "citation": "he could always find and recognize her",
+      "reasoning": "The being indicates they have a special, ongoing interest in the witness and can locate her at will.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 35,
+      "motif_code": "M149",
+      "citation": "he Might take her at soMe later tiMe to the other world he described",
+      "reasoning": "The being promises to return to the witness and potentially take her to their world.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 36,
+      "motif_code": "M125",
+      "citation": "he asked her perMission to take a 'piece of her' (blood saMple?), which they needed for the sake of understanding",
+      "reasoning": "The beings state they have come to learn/understand, requesting a sample for this purpose.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 37,
+      "motif_code": "X235",
+      "citation": "A tubular arM then cut her leg painlessly and stopped the bleeding",
+      "reasoning": "The beings take a blood or body fluids sample using an instrument that cuts the leg.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 38,
+      "motif_code": "X229.1",
+      "citation": "cut her leg painlessly and stopped the bleeding",
+      "reasoning": "The instrument eases injury by performing the procedure painlessly and stopping the bleeding.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    }
+  ],
+  "stripped_text": "HVirginia Horton• I 6 I sUMMer 1950 I southern Manitoba, Canada\n: all afternoon<?>\ntion: Ted Bloecher, Budd Hopkins; hypnosis by Dr.\nClaMar, March, May 1979\n: 5(4)\nwitness went into the barn to gather eggs one after-\nnoon, then suddenly found herself in the yard and felt an itch\non her leg. The leg was wet with blood froM a painless but\ndeep, inch-long cut underneath her undaMaged jeans. She had\nno idea what caused the cut <129).\nCapture. At first she reMeMbered only that she was\nsuddenly inside a round, doMed rooM with instruMents, but\nunder deeper hypnosis she recalled that a being carried her\nde. The rooM had a faint huM and a clean, ozone sMell. A\nbright, pearly light without specific source illuMinated the\nrooM, and at soMe point irritated her eyes ( 138, 140-1, 147,\n).\nExaMination; III. Conference. She laid on a couch\nor bed while beings she never saw clearly reMained in a separ-\nate rooM (139, 144). She gathered that they were huManoids\nwith large crania and large eyes, no hair, and long, slender\ners. They were thin and tall (5 feet 5 inches), and all\ned -Male. The leader seeMed shorter than the being who\nght her inside ( 191 ). The beings wore gray tight-fitting\nsuits and perhaps a helMet of soMe sort ( 139, 142-3, 189).\nShe talked by telepathy for a long tiMe with a friendly,\ndfatherly being who Made her feel at ease. They discussed\nkens and joked. He was curious about aniMals and huMan\nand aniMal life spans, and explained to her his travels and\nthe planet he caMe froM, showing her star Maps to accoMpany\nthe discussion ( 139, 141, 145, 191-3). In a while she would\nMl 19 not reMeMber hiM, he said, but he could always find and recog\nnize her, and he Might take her at soMe later tiMe to the\nother world he described ( 145-6>.\nAt soMe point he asked her perMission to take a \"piece of\n( 7 > her\" <blood saMple?>, which they needed for the sake of under\nstanding. A tubular arM then cut her leg painlessly and\nstopped the bleeding ( 138, 144-5, 149-50)."
+}

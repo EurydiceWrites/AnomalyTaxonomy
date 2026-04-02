@@ -1,0 +1,233 @@
+{
+  "case_number": "069",
+  "model": "claude-opus-4-6",
+  "ground_truth_count": 9,
+  "ai_count": 22,
+  "exact_matches": 3,
+  "near_misses": 2,
+  "ai_extras": 17,
+  "ai_misses": 4,
+  "match_rate": 33.3,
+  "combined_rate": 55.6,
+  "exact_match_codes": [
+    "B201",
+    "E124",
+    "E200"
+  ],
+  "near_miss_details": [
+    [
+      "E203",
+      "E208",
+      5
+    ],
+    [
+      "B226",
+      "B221",
+      5
+    ]
+  ],
+  "missed_codes": [
+    "U101",
+    "B350",
+    "C110",
+    "M119"
+  ],
+  "extra_codes": [
+    "U120",
+    "E100",
+    "E320",
+    "E315",
+    "B245",
+    "B285",
+    "B270",
+    "B904",
+    "B291",
+    "B509",
+    "E216",
+    "U170",
+    "E201",
+    "X224",
+    "U250",
+    "U257",
+    "A114"
+  ],
+  "ai_events": [
+    {
+      "sequence": 1,
+      "motif_code": "E208",
+      "citation": "A feeling of apprehension overcaMe the witness while he watched TV about Midnight",
+      "reasoning": "The witness experiences a premonition or sense that something will happen, an unexplained feeling of apprehension before any observable event occurs.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 2,
+      "motif_code": "U120",
+      "citation": "an intense blue light, seeMingly inside the rooM, suddenly brightened and faded",
+      "reasoning": "A beam of light immerses the witness's environment, appearing inside the room as an intense blue light associated with the UFO encounter.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 3,
+      "motif_code": "E100",
+      "citation": "The night seeMed unnaturally quiet.",
+      "reasoning": "The vacuum effect: an unnatural stillness and silence falls over the environment prior to the encounter.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 4,
+      "motif_code": "E320",
+      "citation": "SoMething touched his neck and he dropped his pistol",
+      "reasoning": "Control by touch: something touches the witness's neck causing him to lose control of his weapon, indicating a control effect initiated by physical contact.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 5,
+      "motif_code": "E315",
+      "citation": "then stood (or fell to the ground) and was unable to Move.",
+      "reasoning": "Paralysis: the witness becomes immobilized and unable to move after being touched.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 6,
+      "motif_code": "B221",
+      "citation": "Shadowy noids, sMall in stature",
+      "reasoning": "The beings are described as small in stature, consistent with moderately short humanoids (4-5 feet range implied by 'small').",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 7,
+      "motif_code": "B201",
+      "citation": "Shadowy noids, sMall in stature, with bright eyes, long fingers and skinny arMs",
+      "reasoning": "The beings are humanoid in form, with recognizable but non-human features.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 8,
+      "motif_code": "B245",
+      "citation": "with bright eyes",
+      "reasoning": "The beings' eyes are described as bright, indicating luminous eyes.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 9,
+      "motif_code": "B285",
+      "citation": "long fingers",
+      "reasoning": "The beings have long and thin fingers, a distinctive physical feature.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 10,
+      "motif_code": "B270",
+      "citation": "skinny arMs",
+      "reasoning": "The beings have extraordinarily long and spindly arms.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 11,
+      "motif_code": "B904",
+      "citation": "The beings seeMed weak and fearful, with no will of their own",
+      "reasoning": "The beings are described as weak, lacking in will, and fearful—matching the code for beings that are weak and fearful.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 12,
+      "motif_code": "B291",
+      "citation": "he described theM as cold, with no tolerance for sunlight",
+      "reasoning": "The beings' skin is cold and sunless, consistent with skin described as cold and sickly. The intolerance for sunlight further supports this.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 13,
+      "motif_code": "B509",
+      "citation": "with no tolerance for sunlight",
+      "reasoning": "Photophobia: the beings retreat from or cannot tolerate light/sunlight.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 14,
+      "motif_code": "E124",
+      "citation": "They touched hiM and a light surrounded hiM, floating hiM toward a k cloud with a light inside.",
+      "reasoning": "Levitation in a beam of light: the witness is floated toward the craft while surrounded by light.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 15,
+      "motif_code": "E216",
+      "citation": "He felt no urge to escape",
+      "reasoning": "Denial of defense impulse: the witness's natural urge to flee or resist is suppressed.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 16,
+      "motif_code": "U170",
+      "citation": "floating hiM toward a k cloud with a light inside",
+      "reasoning": "The craft is associated with or concealed within a cloud/mist with a light inside, consistent with fog or mist surrounding the UFO.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 17,
+      "motif_code": "E201",
+      "citation": "He had a vague MeMory of a rooM where the beings touched hiM with lights and drained hiM of his energy",
+      "reasoning": "Doorway amnesia: the witness has only vague memory of entering the craft and being inside, indicating a blackout on entering the craft.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 18,
+      "motif_code": "X224",
+      "citation": "the beings touched hiM with lights and drained hiM of his energy",
+      "reasoning": "Light or light beam shines on the witness during what appears to be an examination procedure.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 19,
+      "motif_code": "U250",
+      "citation": "the rooM was cold at first",
+      "reasoning": "The interior of the craft is described as cold, a recurring characteristic of abduction craft interiors.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 20,
+      "motif_code": "U257",
+      "citation": "the rooM was cold at first, but later he felt warM and coMfortable.",
+      "reasoning": "The room changes from cold to warm during the witness's stay inside the craft.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 21,
+      "motif_code": "E200",
+      "citation": "He walked out of the cloud and retrieved the pistol, conscious of nothing since he went outside to investigate.",
+      "reasoning": "Time lapse: the witness has no conscious memory of the period between going outside to investigate and walking out of the cloud, indicating missing time.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 22,
+      "motif_code": "A114",
+      "citation": "he felt he should not tell what happened, and tried to discourage investigators froM exaMining the site.",
+      "reasoning": "The witness feels an internal compulsion to keep the experience secret and actively discourages investigation, consistent with feeling obliged to keep the experience a secret.",
+      "memory_state": "conscious",
+      "chunk": 1
+    }
+  ],
+  "stripped_text": "\"Howard Rich\" I 38 I October 6-7, 1979 I ToMs River, New Jersey\n: about 2 hours\ntion: Budd Hopkins, beginning Oct. 7; hypnosis by Dr.\nClaMar, March 1980.\n: 5(4)\nA feeling of apprehension overcaMe the witness while he\nwatched TV about Midnight, then an intense blue light,\nseeMingly inside the rooM, suddenly brightened and faded. He\ntook his pistol outside to investigate and saw another light\naMong soMe trees. The night seeMed unnaturally quiet.\nSoMething touched his neck and he dropped his pistol, then\nstood (or fell to the ground) and was unable to Move. Shadowy\nnoids, sMall in stature, with bright eyes, long fingers\nand skinny arMs, caMe up to hiM. The beings seeMed weak and\nfearful, wit.h no will of their own (99, 102), and he described\ntheM as cold, with no tolerance for sunlight (99>. They\ntouched hiM and a light surrounded hiM, floating hiM toward a\nk cloud with a light inside. He felt. no urge to escape\n( 102). He had a vague MeMory of a rooM where the beings\nhed with lights and drained hiM of his energy; the\nhi~\nrooM was cold at first, but later he felt warM and\ncoMfortable. He walked out of the cloud and retrieved the\npistol, conscious of nothing since he went outside to investi\ngate. The beings never spoke to hiM, but he felt he should\nnot tell what happened, and tried to discourage investigators\nfroM exaMining the site."
+}
