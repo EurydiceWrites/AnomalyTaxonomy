@@ -199,7 +199,7 @@ for i, ch in enumerate(chunks):
     print(f"    Chunk {i+1}: {len(ch)} chars")
 
 # ── Step 3: Send each chunk to Gemini (using cached context) ──
-print(f"\n[Step 3] Sending {len(chunks)} chunks to Gemini 2.5 Pro (with cached context, temperature=0.0)...")
+print(f"\n[Step 3] Sending {len(chunks)} chunks to Gemini 3.1 Pro (with cached context, temperature=0.0)...")
 
 # Robustly unwrap: find the list of dicts containing 'motif_code'
 def find_motif_list(obj):
