@@ -945,6 +945,9 @@ def main():
                         help="Last PDF page to extract (1-indexed, inclusive).")
     parser.add_argument("--text", metavar="FILE",
                         help="Path to a plain text file. Use instead of pdf_path + page args.")
+    parser.add_argument("--model", default="gemini-3.1-pro-preview",
+                        choices=["gemini-2.5-pro", "gemini-3.1-pro-preview", "claude-opus-4-6"],
+                        help="Which LLM to use for Step 3 extraction (default: gemini-3.1-pro-preview)")
     args = parser.parse_args()
 
     # Determine mode
@@ -1009,13 +1012,14 @@ def main():
     # Display the JSON and wait for confirmation
     _display_and_confirm(pipeline_json, json_path)
 
-    # Step 3: Extraction via Gemini Pro
-    print("\n[*] Starting Step 3: Extraction via extract_narrative()...")
+    # Step 3: Extraction via LLM bridge
+    print(f"\n[*] Starting Step 3: Extraction via extract_narrative() (model: {args.model})...")
     from llm_bridge import extract_narrative
 
     final_profile, all_events, ai_events_json = extract_narrative(
         pipeline_json_path=json_path,
         profile_name="baseline_test",
+        model=args.model,
     )
 
     print(f"\n[*] Extraction complete: {len(all_events)} events")
