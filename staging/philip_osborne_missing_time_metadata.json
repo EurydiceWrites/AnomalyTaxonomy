@@ -1,0 +1,1623 @@
+{
+  "step_0": {
+    "source_text_path": "staging\\extracted_text_Budd_Hopkins_-_Missing_Time__OCR__148-181.txt",
+    "pdf_page_start": 148,
+    "pdf_page_end": 181,
+    "source_page_start": 154,
+    "source_page_end": 183
+  },
+  "step_1_scanned_metadata": {
+    "source_type": "investigation",
+    "memory_retrieval_method": "hypnosis",
+    "narrative_structure": "investigation",
+    "principal_investigator": "Budd Hopkins",
+    "experiencer_name": "Philip Osborne",
+    "gender": "male",
+    "age_at_time": "6 or 7",
+    "location": "Smoky Mountains, Tennessee; Pittsburgh, Pennsylvania",
+    "date_of_experience": "Summer 1949 or 1950",
+    "entity_types": [
+      "humanoid",
+      "robot"
+    ],
+    "narrative_summary": "The text details Budd Hopkins' investigation into Philip Osborne, a man whose intense interest in UFOs suggested hidden abduction memories. Through multiple hypnotic regression sessions, Philip recalled a childhood abduction in the Smoky Mountains in 1949 or 1950, involving a geodesic dome-like UFO and a surgical procedure on his leg. He also recalled a 1964 paralysis incident in his Pittsburgh college room, followed by an abduction to the deserted Heinz mansion where he encountered humanoid figures with metallic eyes and a \"robot arm.\" A more recent paralysis in his New York apartment in 1979 also prompted his investigation. The sessions revealed Philip's struggle to articulate frightening memories, often self-censoring, but consistent patterns emerged, including descriptions of metallic-eyed humanoids, a \"robot arm\" for incisions, and a calming transition during the experience. Hopkins personally visited the Pittsburgh site to assess its plausibility."
+  },
+  "step_1_source_attribution": {
+    "author_name": "Budd Hopkins",
+    "title": "Missing Time",
+    "publication_year": null,
+    "publisher": "Ballantine",
+    "place_of_publication": null,
+    "edition": null,
+    "translator": null,
+    "editor": null,
+    "author_role": "investigator"
+  },
+  "step_3_extraction": {
+    "encounter_events": [
+      {
+        "motif_code": "E315",
+        "sequence_order": 1,
+        "source_citation": "He awakened one night and found himself totally paralyzed. He had not been dreaming; there was nothing to prepare him for this total usurpation of control. He could not call for help.",
+        "memory_state": "conscious",
+        "source_page": "156",
+        "ai_justification": "Witness awakened to find himself completely paralyzed, unable to move or call for help. This is a classic paralysis/numbness effect (E315).",
+        "emotional_marker": "terror",
+        "chunk": 2
+      },
+      {
+        "motif_code": "B100",
+        "sequence_order": 2,
+        "source_citation": "Worst of all, he sensed someone or something—a presence—in the room with him",
+        "memory_state": "conscious",
+        "source_page": "156",
+        "ai_justification": "The witness sensed a presence in the room but could not see it. This matches B100: Beings present but unseen.",
+        "emotional_marker": "fear",
+        "chunk": 2
+      },
+      {
+        "motif_code": "E306",
+        "sequence_order": 3,
+        "source_citation": "His fear lessened as the paralysis ebbed away",
+        "memory_state": "conscious",
+        "source_page": "156",
+        "ai_justification": "The paralysis/pacification effect gradually wore off, matching E306: Pacification periodically wears off.",
+        "emotional_marker": "relief",
+        "chunk": 2
+      },
+      {
+        "motif_code": "A112",
+        "sequence_order": 4,
+        "source_citation": "I just have the feeling that something might have happened to me then. There's really nothing specific, but I've just always remembered that time as being very strange and very frightening. Maybe it was just the drive up the mountain in the dark, but my mind keeps coming back to that time for some reason.",
+        "memory_state": "conscious",
+        "source_page": "156",
+        "ai_justification": "The witness feels alarmed and disturbed when recalling a particular place/event from childhood in the Smoky Mountains, with a persistent sense that something happened there. This matches A112: Witness feels alarmed on passing a certain place or encountering a certain situation.",
+        "emotional_marker": "anxiety",
+        "chunk": 2
+      },
+      {
+        "motif_code": "A116.1",
+        "sequence_order": 5,
+        "source_citation": "he recalled the earlier, very similar, experience. It happened when he was attending Carnegie Tech in Pittsburgh, probably in 1964.",
+        "memory_state": "conscious",
+        "source_page": "156",
+        "ai_justification": "Fragmentary memories of the college paralysis experience persisted over the years and were triggered by the later paralysis episode. This matches A116.1: Fragmentary memories of an experience persist.",
+        "emotional_marker": "unease",
+        "chunk": 2
+      },
+      {
+        "motif_code": "A107",
+        "sequence_order": 6,
+        "source_citation": "I've always had this scar since childhood, and no one can remember how I got it. My mother can't remember and neither can I. It just seems that one day, there it was. / The scar was about three inches long and perfectly straight. It was located at the outer juncture of his thigh and hip",
+        "memory_state": "conscious",
+        "source_page": "157",
+        "ai_justification": "Philip describes a linear scar of unknown origin present since childhood, three inches long and perfectly straight on his thigh/hip. This matches A107: Linear or circular scar. The scar is a consciously known physical fact, not recovered under hypnosis.",
+        "emotional_marker": "puzzlement",
+        "chunk": 3
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 7,
+        "source_citation": "the 1964 Pittsburgh paralysis incident with a 'presence' sensed in the room",
+        "memory_state": "conscious",
+        "source_page": "157",
+        "ai_justification": "Philip consciously recalls a paralysis incident in Pittsburgh in 1964. E315 covers paralysis and numbness experienced by the witness. This is a consciously remembered event being described prior to hypnosis.",
+        "emotional_marker": "fear",
+        "chunk": 3
+      },
+      {
+        "motif_code": "B101",
+        "sequence_order": 8,
+        "source_citation": "the 1964 Pittsburgh paralysis incident with a 'presence' sensed in the room",
+        "memory_state": "conscious",
+        "source_page": "157",
+        "ai_justification": "During the 1964 Pittsburgh incident, Philip sensed a 'presence' in the room but did not see a being. B101 covers unseen beings that are heard or sensed. This is consciously recalled.",
+        "emotional_marker": "fear",
+        "chunk": 3
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 9,
+        "source_citation": "in 1979, the New York paralysis incident",
+        "memory_state": "conscious",
+        "source_page": "157",
+        "ai_justification": "Philip experienced a second, separate paralysis incident in New York in 1979. This is a distinct event from the 1964 Pittsburgh paralysis and warrants its own row. Consciously recalled prior to hypnosis.",
+        "emotional_marker": null,
+        "chunk": 3
+      },
+      {
+        "motif_code": "A225",
+        "sequence_order": 10,
+        "source_citation": "the possibility that Virginia and Philip were each abducted at age six in the summer of 1950, and then reabducted as young adults at ages sixteen and twenty respectively",
+        "memory_state": "conscious",
+        "source_page": "157",
+        "ai_justification": "The narrative establishes that Philip experienced multiple incidents across his lifetime (childhood, 1964, 1979), indicating a pattern of repeated abductions. A225 covers further abductions. This is the investigator's framing of Philip's consciously recalled multiple events.",
+        "emotional_marker": null,
+        "chunk": 3
+      },
+      {
+        "motif_code": "U211",
+        "sequence_order": 11,
+        "source_citation": "I just see something that looks like the . . . like the upper part of a geodesic dome.",
+        "memory_state": "hypnosis",
+        "source_page": "158",
+        "ai_justification": "Philip describes seeing a domed structure, consistent with U211 (Domed interior). The geodesic dome shape corresponds to the domed craft or room interior commonly reported in abduction accounts.",
+        "emotional_marker": "agitation",
+        "chunk": 4
+      },
+      {
+        "motif_code": "U230",
+        "sequence_order": 12,
+        "source_citation": "Yes. It's just bright and it's in sections like a geodesic dome.",
+        "memory_state": "hypnosis",
+        "source_page": "158",
+        "ai_justification": "Philip confirms the dome is bright with sectioned lighting. This matches U230 (Bright and uniform, without specific source), describing the characteristic diffuse interior illumination of the craft.",
+        "emotional_marker": "agitation",
+        "chunk": 4
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 13,
+        "source_citation": "I'm trying to uh . . . uh . . . forget about it. I'm just trying to relax. / I would just like to relax more. I would like to relax more deeply.",
+        "memory_state": "hypnosis",
+        "source_page": "158-159",
+        "ai_justification": "Philip's repeated attempts to suppress the memory and his inability to verbalize what he is seeing indicate a time lapse or memory block (E200). The investigator notes 'an intensely vivid narrative had passed through his mind; we had been denied the facts,' consistent with suppressed abduction memories.",
+        "emotional_marker": "fear, resistance",
+        "chunk": 4
+      },
+      {
+        "motif_code": "U103",
+        "sequence_order": 14,
+        "source_citation": "I saw it as a . . . sphere",
+        "memory_state": "hypnosis",
+        "source_page": "160",
+        "ai_justification": "Philip describes the object he sees as a sphere, matching U103 (Sphere).",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "E123",
+        "sequence_order": 15,
+        "source_citation": "all of a sudden I'm just really going towards it very fast, and it just sort of consumes me all around.",
+        "memory_state": "hypnosis",
+        "source_page": "160",
+        "ai_justification": "Philip is drawn rapidly toward the object by an apparent force, consistent with E123 (Levitation: drawing force).",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "U120",
+        "sequence_order": 16,
+        "source_citation": "There's light all around.",
+        "memory_state": "hypnosis",
+        "source_page": "160",
+        "ai_justification": "Philip is immersed in light as he is drawn into the object, matching U120 (Beam of light immerses the witness).",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "E201",
+        "sequence_order": 17,
+        "source_citation": "And then I felt like I was traveling very fast. (Pause) I feel like I'm inside.",
+        "memory_state": "hypnosis",
+        "source_page": "160",
+        "ai_justification": "Philip transitions from traveling fast to being inside with no clear memory of entry, consistent with E201 (Doorway amnesia).",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "E120",
+        "sequence_order": 18,
+        "source_citation": "It's not as if I'm standing. I'm just sort of being, that's all.",
+        "memory_state": "hypnosis",
+        "source_page": "160",
+        "ai_justification": "Philip is not standing but suspended in a weightless state inside the craft, matching E120 (Floating effect: apparent weightlessness).",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "U211",
+        "sequence_order": 19,
+        "source_citation": "I feel that there is a dome overhead and that one-fourth of it is hinged and it lifts up so that there is a wedge open.",
+        "memory_state": "hypnosis",
+        "source_page": "160",
+        "ai_justification": "Philip describes a domed interior overhead, matching U211 (Domed room).",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "A107",
+        "sequence_order": 20,
+        "source_citation": "But I do think of that scar. I feel like I shouldn't, but I do.",
+        "memory_state": "hypnosis",
+        "source_page": "160",
+        "ai_justification": "Philip fixates on a scar on his body associated with the experience, matching A107 (Linear or circular scar). His reluctance suggests it is connected to the abduction event.",
+        "emotional_marker": "anxiety",
+        "chunk": 5
+      },
+      {
+        "motif_code": "X210",
+        "sequence_order": 21,
+        "source_citation": "I see something like a . .. I almost . .. I see a hand. It's very shiny.",
+        "memory_state": "hypnosis",
+        "source_page": "160",
+        "ai_justification": "Philip glimpses a shiny hand near his body in the context of the scar, consistent with X210 (Beings touch witness in various places, as if examining). The shiny hand implies a being's hand involved in a procedure related to the scar.",
+        "emotional_marker": "fear",
+        "chunk": 5
+      },
+      {
+        "motif_code": "X229.1",
+        "sequence_order": 22,
+        "source_citation": "I have the feeling that it just sort of goes back together by itself.",
+        "memory_state": "hypnosis",
+        "source_page": "160",
+        "ai_justification": "Philip feels the area of the scar 'goes back together by itself,' implying a wound or incision was closed or healed, matching X229.1 (Instruments ease injuries).",
+        "emotional_marker": "relief",
+        "chunk": 5
+      },
+      {
+        "motif_code": "U230",
+        "sequence_order": 23,
+        "source_citation": "But I do have light all around. I feel better than I did.",
+        "memory_state": "hypnosis",
+        "source_page": "160",
+        "ai_justification": "Philip describes being surrounded by uniform light inside the craft, matching U230 (Bright and uniform lighting, without specific source).",
+        "emotional_marker": "calm",
+        "chunk": 5
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 24,
+        "source_citation": "I just feel ah . . . not as frightened as before. / I'm more relaxed now. I just feel like I'm lying there.",
+        "memory_state": "hypnosis",
+        "source_page": "160",
+        "ai_justification": "Philip's fear subsides and he becomes relaxed and calm while still inside the experience, consistent with E300 (Pacification effect: witness calm, relaxed).",
+        "emotional_marker": "calm",
+        "chunk": 5
+      },
+      {
+        "motif_code": "E218",
+        "sequence_order": 25,
+        "source_citation": "I imagined that I went to the parking lot first and then that (the domed object) was sort of what appeared.",
+        "memory_state": "hypnosis",
+        "source_page": "162",
+        "ai_justification": "Philip describes going to the parking lot without a clear reason, acting on an impulse or predestined draw, consistent with E218 (predestination: act without knowing why).",
+        "emotional_marker": "uncertainty",
+        "chunk": 6
+      },
+      {
+        "motif_code": "U101",
+        "sequence_order": 26,
+        "source_citation": "I could feel that I was outside of it and I was looking at a dome which was almost like a nuclear reactor or something, that it was divided up into triangles like a geodesic dome, and that it was illuminated",
+        "memory_state": "hypnosis",
+        "source_page": "162",
+        "ai_justification": "Philip describes seeing a domed, illuminated structure from the outside, consistent with U101 (domed disk). The geodesic dome description matches a domed craft exterior.",
+        "emotional_marker": "awe",
+        "chunk": 6
+      },
+      {
+        "motif_code": "E120",
+        "sequence_order": 27,
+        "source_citation": "I started zooming towards it very quickly and then just sort of penetrated it and was inside of it",
+        "memory_state": "hypnosis",
+        "source_page": "162",
+        "ai_justification": "Philip describes being drawn rapidly toward the craft and penetrating it, consistent with E120 (floating effect/apparent weightlessness) as he moves without physical effort through space toward and into the object.",
+        "emotional_marker": "disorientation",
+        "chunk": 6
+      },
+      {
+        "motif_code": "U230",
+        "sequence_order": 28,
+        "source_citation": "it was as if I was inside of this brightly illuminated thing",
+        "memory_state": "hypnosis",
+        "source_page": "162",
+        "ai_justification": "Philip describes being inside a brightly illuminated space with no specific light source mentioned, consistent with U230 (bright and uniform lighting without specific source).",
+        "emotional_marker": "disorientation",
+        "chunk": 6
+      },
+      {
+        "motif_code": "W110",
+        "sequence_order": 29,
+        "source_citation": "I felt like I was sort of hurtling through space actually / I did see things like stars, etc. / that just sort of broke away at one end and I was just kind of hurtling through space",
+        "memory_state": "hypnosis",
+        "source_page": "161-162",
+        "ai_justification": "Philip describes seeing stars and hurtling through space after the illuminated structure broke away, consistent with W110 (otherworld seen approaching out a window, or earth departing). The sensation of rapid movement through space with stars visible indicates transit.",
+        "emotional_marker": "disorientation",
+        "chunk": 6
+      },
+      {
+        "motif_code": "U101",
+        "sequence_order": 30,
+        "source_citation": "I sort of sensed the dome on top of it, again, which is very bad (chuckles) but which was incredibly brilliant metallically . . . you know, a very polished surface. . . . It's as if I had the power to mentally turn the disk over, I would be able to see a dome that was very brightly reflective.",
+        "memory_state": "hypnosis",
+        "source_page": "2",
+        "ai_justification": "Philip describes a disk with a dome on top, matching U101 (Domed disk, Saturn shape).",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "U140",
+        "sequence_order": 31,
+        "source_citation": "the predominant impression was that it was very shiny and metallic and against a very dark nothing background.",
+        "memory_state": "hypnosis",
+        "source_page": "2",
+        "ai_justification": "The craft is described as shiny and metallic, matching U140 (Silvery metallic).",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "E120",
+        "sequence_order": 32,
+        "source_citation": "That was because I was hurtling through space / Philip's account of traveling through the air and merging with the object through an open triangular panel",
+        "memory_state": "hypnosis",
+        "source_page": "2",
+        "ai_justification": "Philip describes hurtling through space and traveling through the air toward the craft, indicating apparent weightlessness/floating effect (E120).",
+        "emotional_marker": "fear",
+        "chunk": 7
+      },
+      {
+        "motif_code": "E306",
+        "sequence_order": 33,
+        "source_citation": "I just had the feeling I wanted to put the brakes on. I just wanted to withdraw from that / Feeling out of control? Yes. Right, right!",
+        "memory_state": "hypnosis",
+        "source_page": "2",
+        "ai_justification": "Philip experiences fear breaking through during the floating/travel experience, wanting to withdraw and feeling out of control, indicating pacification periodically wearing off (E306).",
+        "emotional_marker": "fear, loss of control",
+        "chunk": 7
+      },
+      {
+        "motif_code": "E201",
+        "sequence_order": 34,
+        "source_citation": "merging with the object through an open triangular panel",
+        "memory_state": "hypnosis",
+        "source_page": "2",
+        "ai_justification": "Philip describes merging with the craft through a triangular panel, with the investigator noting Philip's strong block about reporting subsequent events, indicating doorway amnesia (E201) upon entry.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "X225",
+        "sequence_order": 35,
+        "source_citation": "I see a machine above me which has a kind of large eye",
+        "memory_state": "hypnosis",
+        "source_page": "163",
+        "ai_justification": "Philip describes seeing a machine with a large eyelike feature positioned above him, consistent with the motif of an eyelike scanning device descending from above during an examination.",
+        "emotional_marker": "uncertainty",
+        "chunk": 8
+      },
+      {
+        "motif_code": "A107",
+        "sequence_order": 35,
+        "source_citation": "I see sort of an open cut maybe, or maybe a scab. . .. As I touch it, I don't feel any pain.",
+        "memory_state": "hypnosis",
+        "source_page": "164",
+        "ai_justification": "Philip describes a scar on his leg, a linear or circular scar of unknown origin, consistent with A107.",
+        "emotional_marker": null,
+        "chunk": 9
+      },
+      {
+        "motif_code": "X222",
+        "sequence_order": 36,
+        "source_citation": "I just sort of felt as if perhaps it was cut open, and then I see a sort of a representation of just being opened up very cleanly and something taken out and then just put right back together",
+        "memory_state": "hypnosis",
+        "source_page": "164",
+        "ai_justification": "Philip recalls being cut open cleanly and something removed, consistent with X222: beings make incision for unknown purpose.",
+        "emotional_marker": null,
+        "chunk": 9
+      },
+      {
+        "motif_code": "X247",
+        "sequence_order": 37,
+        "source_citation": "something taken out and then just put right back together",
+        "memory_state": "hypnosis",
+        "source_page": "164",
+        "ai_justification": "Something was removed from inside the witness's leg, consistent with X247: beings remove a device from the witness's body.",
+        "emotional_marker": null,
+        "chunk": 9
+      },
+      {
+        "motif_code": "X155",
+        "sequence_order": 38,
+        "source_citation": "I did have sort of a sensation of lying on a table",
+        "memory_state": "hypnosis",
+        "source_page": "164",
+        "ai_justification": "Philip recalls lying on a table, consistent with X155: witness lies on an examining table or couch.",
+        "emotional_marker": null,
+        "chunk": 9
+      },
+      {
+        "motif_code": "U220",
+        "sequence_order": 39,
+        "source_citation": "I just sort of see whiteness",
+        "memory_state": "hypnosis",
+        "source_page": "164",
+        "ai_justification": "Philip describes the room as white, consistent with U220: room is white.",
+        "emotional_marker": null,
+        "chunk": 9
+      },
+      {
+        "motif_code": "E120",
+        "sequence_order": 40,
+        "source_citation": "I get sort of the impression of being carried somewhere else . . . like on a stretcher",
+        "memory_state": "hypnosis",
+        "source_page": "164",
+        "ai_justification": "Philip feels carried or transported, consistent with E120: floating effect, apparent weightlessness.",
+        "emotional_marker": null,
+        "chunk": 9
+      },
+      {
+        "motif_code": "B277",
+        "sequence_order": 41,
+        "source_citation": "I sort of saw that hand, that metallic hand / a sort of mechanical hand of the type that you see in, ah, robot hands and for handling nuclear materials and that sort of thing",
+        "memory_state": "hypnosis",
+        "source_page": "164",
+        "ai_justification": "Philip describes a metallic, mechanical hand, consistent with B277: mechanical limbs.",
+        "emotional_marker": null,
+        "chunk": 9
+      },
+      {
+        "motif_code": "X224",
+        "sequence_order": 42,
+        "source_citation": "I had the impression of a very bright light shining on me",
+        "memory_state": "hypnosis",
+        "source_page": "164",
+        "ai_justification": "Philip recalls a bright light shining on him during the examination, consistent with X224: light or light beam shines on witness.",
+        "emotional_marker": null,
+        "chunk": 9
+      },
+      {
+        "motif_code": "U103",
+        "sequence_order": 43,
+        "source_citation": "I see that same thing I saw before . . . very round . . . the thing, a large, illuminated, round spherical thing",
+        "memory_state": "hypnosis",
+        "source_page": "164",
+        "ai_justification": "Philip describes a large, illuminated, round spherical object, consistent with U103: sphere.",
+        "emotional_marker": null,
+        "chunk": 9
+      },
+      {
+        "motif_code": "E120",
+        "sequence_order": 44,
+        "source_citation": "when I see it, I just sort of move and glide towards it and just dissolve into it",
+        "memory_state": "hypnosis",
+        "source_page": "164",
+        "ai_justification": "Philip describes gliding toward the craft and dissolving into it, consistent with E120: floating effect, apparent weightlessness. This is a separate event from the earlier stretcher transport.",
+        "emotional_marker": null,
+        "chunk": 9
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 45,
+        "source_citation": "if I approach it in the right way, it can have a great calming effect / sometimes I feel like there is a great calming effect. . . . I just find myself sort of relaxing and letting it alone.",
+        "memory_state": "hypnosis",
+        "source_page": "165",
+        "ai_justification": "The witness describes a pacification effect where he feels calm and relaxed in the presence of the unknown apparatus, alternating with unpleasant feelings. This maps to E300 (pacification effect: witness calm, euphoric, relaxed).",
+        "emotional_marker": "calm",
+        "chunk": 10
+      },
+      {
+        "motif_code": "E306",
+        "sequence_order": 46,
+        "source_citation": "it can be either very calming or very, ah, well sort of an unpleasant thing.",
+        "memory_state": "hypnosis",
+        "source_page": "165",
+        "ai_justification": "The witness describes the calming effect alternating with unpleasant feelings, indicating the pacification periodically wears off. This maps to E306 (pacification periodically wears off).",
+        "emotional_marker": "anxiety",
+        "chunk": 10
+      },
+      {
+        "motif_code": "B241",
+        "sequence_order": 47,
+        "source_citation": "it turned to a large eye that was staring at me. The eye is either disembodied or else there is a person's face is blackened so that just the eye is apparent. . . . It's just very intense and piercing.",
+        "memory_state": "hypnosis",
+        "source_page": "165",
+        "ai_justification": "The witness describes a large eye, mapping to B241 (large size eyes). The eye is described as large, intense, and piercing.",
+        "emotional_marker": "fear",
+        "chunk": 10
+      },
+      {
+        "motif_code": "B246",
+        "sequence_order": 48,
+        "source_citation": "it turned to a large eye that was staring at me. . . . It's just very intense and piercing.",
+        "memory_state": "hypnosis",
+        "source_page": "165",
+        "ai_justification": "The eye is described as staring, intense and piercing, mapping to B246 (eyes unblinking, staring, hypnotic).",
+        "emotional_marker": "fear",
+        "chunk": 10
+      },
+      {
+        "motif_code": "B242",
+        "sequence_order": 49,
+        "source_citation": "an eye motif on that, but it was not just a shape, just the almond shape",
+        "memory_state": "hypnosis",
+        "source_page": "165",
+        "ai_justification": "The witness describes the eye as having an almond shape, mapping to B242 (shape wraparound, catlike, oval). Almond-shaped eyes are a standard descriptor for this motif.",
+        "emotional_marker": null,
+        "chunk": 10
+      },
+      {
+        "motif_code": "X225",
+        "sequence_order": 50,
+        "source_citation": "Above me, I just have the feeling of some sort of mechanical apparatus, but I can't see anything very clearly. It's just an impression.",
+        "memory_state": "hypnosis",
+        "source_page": "165",
+        "ai_justification": "The witness perceives mechanical apparatus above him, consistent with X225 (eyelike device descends from ceiling and scans witness), especially given the subsequent appearance of the large disembodied eye motif that stares at him.",
+        "emotional_marker": null,
+        "chunk": 10
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 51,
+        "source_citation": "The eye is either disembodied or else there is a person's face is blackened so that just the eye is apparent.",
+        "memory_state": "hypnosis",
+        "source_page": "165",
+        "ai_justification": "The face around the eye is described as blackened/darkened so only the eye is visible. This describes the being's skin appearance as dark, mapping to B290 area. However, the darkened face more precisely suggests the face is obscured. Given the witness describes the face as 'blackened,' this maps to B294 (dark, olive skin) but the description is ambiguous. The closest match for a face that is entirely dark with only the eye visible is the general skin descriptor B290 (skin white, gray, ashen or claylike) inverted. Since the face is described as dark/blackened, B294 is the better fit.",
+        "emotional_marker": null,
+        "chunk": 10
+      },
+      {
+        "motif_code": "B277",
+        "sequence_order": 52,
+        "source_citation": "the hand that he remembered—the one with the metallic fingers",
+        "memory_state": "hypnosis",
+        "source_page": "166",
+        "ai_justification": "Philip confirms remembering a hand with metallic fingers, which maps to B277 (mechanical) describing a mechanical quality to the being's extremities.",
+        "emotional_marker": null,
+        "chunk": 10
+      },
+      {
+        "motif_code": "B205",
+        "sequence_order": 53,
+        "source_citation": "a sort of mechanical hand of the type that you see in robot hands and for handling nuclear materials and that sort of thing",
+        "memory_state": "hypnosis",
+        "source_page": "167",
+        "ai_justification": "Philip describes a robotic, mechanical hand performing the operation, consistent with B205 (Robot).",
+        "emotional_marker": null,
+        "chunk": 11
+      },
+      {
+        "motif_code": "B277",
+        "sequence_order": 54,
+        "source_citation": "like a glove from a piece of medieval armor, only much more shiny / each of the separate fingers had separate little sections",
+        "memory_state": "hypnosis",
+        "source_page": "167",
+        "ai_justification": "The jointed, metallic, segmented hand description matches B277 (Mechanical limbs/joints).",
+        "emotional_marker": null,
+        "chunk": 11
+      },
+      {
+        "motif_code": "X222",
+        "sequence_order": 55,
+        "source_citation": "I just sort of felt as if perhaps it was cut open, and then I see a sort of representation of just being opened up very cleanly and something taken out, and then just put right back together.",
+        "memory_state": "hypnosis",
+        "source_page": "167",
+        "ai_justification": "Philip describes a clean incision made on his body and something removed, matching X222 (Beings make incision for unknown purpose).",
+        "emotional_marker": null,
+        "chunk": 11
+      },
+      {
+        "motif_code": "X231",
+        "sequence_order": 56,
+        "source_citation": "something taken out, and then just put right back together",
+        "memory_state": "hypnosis",
+        "source_page": "167",
+        "ai_justification": "A piece of flesh or tissue was removed from the witness during the incision, consistent with X231 (Beings scrape a sample of skin from the witness).",
+        "emotional_marker": null,
+        "chunk": 11
+      },
+      {
+        "motif_code": "X229.1",
+        "sequence_order": 57,
+        "source_citation": "just put right back together",
+        "memory_state": "hypnosis",
+        "source_page": "167",
+        "ai_justification": "The wound was seamlessly closed after the procedure, matching X229.1 (Instruments ease injuries).",
+        "emotional_marker": null,
+        "chunk": 11
+      },
+      {
+        "motif_code": "U202",
+        "sequence_order": 58,
+        "source_citation": "Kind of a wall arrangement, as if it was decorated with some kind of painting and there was something on that and there was kind of an eye motif on that",
+        "memory_state": "hypnosis",
+        "source_page": "167",
+        "ai_justification": "Philip describes the room where the operation took place, with distinctive wall decorations, consistent with U202 (Examination room).",
+        "emotional_marker": null,
+        "chunk": 11
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 59,
+        "source_citation": "Philip awoke in his Pittsburgh bedroom paralyzed",
+        "memory_state": "hypnosis",
+        "source_page": "168",
+        "ai_justification": "Witness awoke paralyzed, matching E315: Paralysis, numbness.",
+        "emotional_marker": "terror",
+        "chunk": 12
+      },
+      {
+        "motif_code": "B100",
+        "sequence_order": 60,
+        "source_citation": "sensing a 'presence' in the room",
+        "memory_state": "hypnosis",
+        "source_page": "168",
+        "ai_justification": "Witness sensed an unseen presence, matching B100: Beings present but unseen.",
+        "emotional_marker": "terror",
+        "chunk": 12
+      },
+      {
+        "motif_code": "E215",
+        "sequence_order": 61,
+        "source_citation": "So terrified had he been, he said, that he got up, got dressed, and went outside.",
+        "memory_state": "hypnosis",
+        "source_page": "168",
+        "ai_justification": "Going outside alone at 3 AM toward the source of terror is highly uncharacteristic and inappropriate behavior, matching E215: Inappropriate response or uncharacteristic behavior.",
+        "emotional_marker": "fear",
+        "chunk": 12
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 62,
+        "source_citation": "I really don't remember where I walked.",
+        "memory_state": "hypnosis",
+        "source_page": "168",
+        "ai_justification": "Witness cannot remember where he went during the period after leaving the house, indicating a gap in memory consistent with E200: Time lapse.",
+        "emotional_marker": "confusion",
+        "chunk": 12
+      },
+      {
+        "motif_code": "E218",
+        "sequence_order": 63,
+        "source_citation": "Philip's rationalizations for his unusual behavior were coming slowly unraveled. All of the reasons for his three A.M. stroll, which he delivered in such a natural tone of voice, began to seem absurd to both of us.",
+        "memory_state": "hypnosis",
+        "source_page": "169",
+        "ai_justification": "Philip acted on an inexplicable urge to walk outside at 3 AM without a rational reason, fitting E218: predestination, acting without knowing why.",
+        "emotional_marker": "confusion",
+        "chunk": 13
+      },
+      {
+        "motif_code": "B100",
+        "sequence_order": 64,
+        "source_citation": "I can see that room a little bit more clearly. / It's small and I see a face in the window.",
+        "memory_state": "hypnosis",
+        "source_page": "169",
+        "ai_justification": "Under hypnosis Philip recalls seeing a face in the window of his room, indicating beings present but initially only partially perceived, fitting B100: beings present but unseen/partially seen.",
+        "emotional_marker": null,
+        "chunk": 13
+      },
+      {
+        "motif_code": "U120",
+        "sequence_order": 65,
+        "source_citation": "I was only aware of a sort of a silhouette and just now I really did become more aware of a figure. . . . I just associate this with the window and this light that's coming through",
+        "memory_state": "hypnosis",
+        "source_page": "170",
+        "ai_justification": "A beam or source of light immerses or illuminates the witness through the window, associated with the presence of a being.",
+        "emotional_marker": "curiosity",
+        "chunk": 14
+      },
+      {
+        "motif_code": "B233",
+        "sequence_order": 66,
+        "source_citation": "I did have the impression that this head was kind of embryolike-shaped. . . . A big forehead",
+        "memory_state": "hypnosis",
+        "source_page": "170",
+        "ai_justification": "The being's head is described as embryo-like shaped with a large forehead, consistent with the egg or pear shaped head with large cranium motif.",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "B241",
+        "sequence_order": 67,
+        "source_citation": "These eyes were really sort of tucked into the forehead. A big forehead, but the eyes are metallic",
+        "memory_state": "hypnosis",
+        "source_page": "170",
+        "ai_justification": "The eyes are described as prominent features tucked into the large forehead, indicating large size relative to the face.",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "B244.1",
+        "sequence_order": 68,
+        "source_citation": "the eyes are metallic",
+        "memory_state": "hypnosis",
+        "source_page": "170",
+        "ai_justification": "The eyes are described as metallic in appearance, an unusual color/quality that fits 'other color' for eye description.",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "M100",
+        "sequence_order": 69,
+        "source_citation": "I sort of have the impression of someone saying that it's O.K. now",
+        "memory_state": "hypnosis",
+        "source_page": "170",
+        "ai_justification": "The witness perceives a reassuring communication from the being that things are okay, consistent with a promise of safety or peace.",
+        "emotional_marker": "reassurance",
+        "chunk": 14
+      },
+      {
+        "motif_code": "X225",
+        "sequence_order": 70,
+        "source_citation": "I had the impression at one point that it was quite huge. . . . maybe a couple of feet. If it was maybe ten feet up in the air, it was maybe larger than that / it would sort of, you know, keep changing / the pupils sort of . . . the pupils started changing and being different",
+        "memory_state": "hypnosis",
+        "source_page": "170-171",
+        "ai_justification": "A large eyelike device suspended above the witness, several feet in diameter, with changing pupils. This matches the eyelike scanning device that descends from above and scans the witness, as described in the Pascagoula and other cases.",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "X225",
+        "sequence_order": 71,
+        "source_citation": "Philip Osborne all faced a similar eye-like apparatus",
+        "memory_state": "hypnosis",
+        "source_page": "172",
+        "ai_justification": "The investigator states Philip Osborne faced an eyelike apparatus suspended over him, consistent with Bullard's X225 motif of an eyelike device descending from the ceiling and scanning the witness.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 72,
+        "source_citation": "I can just sense that I would like to be able to yell out, but I can't",
+        "memory_state": "hypnosis",
+        "source_page": "172",
+        "ai_justification": "Philip describes being unable to yell out, indicating paralysis or inability to move/speak, consistent with E315 paralysis/numbness.",
+        "emotional_marker": "terror",
+        "chunk": 15
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 73,
+        "source_citation": "I see a very terrified expression on my face",
+        "memory_state": "hypnosis",
+        "source_page": "172",
+        "ai_justification": "Philip visualizes himself with a terrified expression while immobilized and unable to call out, reinforcing the paralysis state. This is the same paralysis event as sequence 2, but the emotional terror is the salient detail here confirming the immobilized state.",
+        "emotional_marker": "terror",
+        "chunk": 15
+      },
+      {
+        "motif_code": "E204",
+        "sequence_order": 74,
+        "source_citation": "I'm just sort of drifting into another sort of level of consciousness.",
+        "memory_state": "hypnosis",
+        "source_page": "172",
+        "ai_justification": "Philip describes drifting into another level of consciousness, consistent with E204 semi-consciousness, disorientation, or dizziness during the encounter.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 75,
+        "source_citation": "I could just feel myself lying in the bed and . .. I have that sensation of my jaw locking, and so I would try to move it, but I couldn't",
+        "memory_state": "hypnosis",
+        "source_page": "173",
+        "ai_justification": "Witness describes paralysis while lying in bed—jaw locks and he cannot move it. This is the paralysis/numbness effect (E315).",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "E215",
+        "sequence_order": 76,
+        "source_citation": "I think I left by the front door, which I don't usually do",
+        "memory_state": "hypnosis",
+        "source_page": "173",
+        "ai_justification": "Witness notes he left by a door he does not normally use, indicating uncharacteristic or inappropriate behavior (E215).",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "E218",
+        "sequence_order": 77,
+        "source_citation": "I remember the stone wall . . . where that roadway goes up, and I see myself going to the Heinz mansion. This is directly to the top.",
+        "memory_state": "hypnosis",
+        "source_page": "173",
+        "ai_justification": "Witness walks to an abandoned mansion without a clear reason, acting on an inexplicable urge—predestination or acting without knowing why (E218).",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 78,
+        "source_citation": "I don't seem to be particularly tense any more.",
+        "memory_state": "hypnosis",
+        "source_page": "173",
+        "ai_justification": "Witness notes a shift from tension to calm as he approaches the commotion, consistent with the pacification effect (E300).",
+        "emotional_marker": "calm",
+        "chunk": 16
+      },
+      {
+        "motif_code": "B100",
+        "sequence_order": 79,
+        "source_citation": "I just sort of sense a commotion going on, not in the house, but outside of the house / the commotion he saw as he walked up the driveway to the Heinz mansion was occurring at the back of the house. It seemed to him to involve a number of figures, but he could not make out any details.",
+        "memory_state": "hypnosis",
+        "source_page": "173",
+        "ai_justification": "Witness senses a commotion involving multiple figures he cannot clearly see—beings present but not fully visible (B100).",
+        "emotional_marker": "curiosity",
+        "chunk": 16
+      },
+      {
+        "motif_code": "B233",
+        "sequence_order": 80,
+        "source_citation": "the initial impression was this large cranium, you know, sort of like an embryo",
+        "memory_state": "hypnosis",
+        "source_page": "174",
+        "ai_justification": "Witness describes a figure with a large cranium and embryo/fetus-like head shape, matching the pear-shaped or egg-shaped head with large cranium (B233).",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "B252",
+        "sequence_order": 81,
+        "source_citation": "either it was sort of turned away or somehow or other the features of the face were not apparent to me",
+        "memory_state": "hypnosis",
+        "source_page": "174",
+        "ai_justification": "Witness describes facial features as not apparent—diminutive or absent features consistent with vestigial nose description (B252). The face lacks discernible features.",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "B230",
+        "sequence_order": 82,
+        "source_citation": "this great forehead with these large eyes",
+        "memory_state": "hypnosis",
+        "source_page": "175",
+        "ai_justification": "Philip describes the being as having a 'great forehead,' indicating a large head/cranium characteristic of humanoid entities.",
+        "emotional_marker": null,
+        "chunk": 17
+      },
+      {
+        "motif_code": "B233",
+        "sequence_order": 83,
+        "source_citation": "I had more or less a feeling of a forehead, and his eyes were more or less contained under there",
+        "memory_state": "hypnosis",
+        "source_page": "175",
+        "ai_justification": "The description of a large cranium with a forehead under which the eyes sit corresponds to the egg or pear-shaped head with large cranium typical of B233.",
+        "emotional_marker": null,
+        "chunk": 17
+      },
+      {
+        "motif_code": "B241",
+        "sequence_order": 84,
+        "source_citation": "this great forehead with these large eyes",
+        "memory_state": "hypnosis",
+        "source_page": "175",
+        "ai_justification": "Philip explicitly describes the eyes as large, matching the large eye size motif.",
+        "emotional_marker": null,
+        "chunk": 17
+      },
+      {
+        "motif_code": "ANOMALY",
+        "sequence_order": 85,
+        "source_citation": "I had the impression of their being solid . . . but then I think that this feeling of the metallic . . . that it was almost like a metallic plate, or something",
+        "memory_state": "hypnosis",
+        "source_page": "175",
+        "ai_justification": "The description of eyes appearing solid and metallic like a plate is unusual. The closest code B249 refers to transparent/translucent eyes as if real eyes underneath, but Philip describes a metallic quality, which is semantically distinct. Assigned ANOMALY.",
+        "emotional_marker": null,
+        "chunk": 17
+      },
+      {
+        "motif_code": "ANOMALY",
+        "sequence_order": 86,
+        "source_citation": "impression of blood vessels or something. Like some sort of, ah, well, I guess blood vessels or something or other. Some sort of a texture.",
+        "memory_state": "hypnosis",
+        "source_page": "175",
+        "ai_justification": "The description of visible blood vessels or vascular texture on the being's head has no semantic equivalent in the motif dictionary. Assigned ANOMALY.",
+        "emotional_marker": null,
+        "chunk": 17
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 87,
+        "source_citation": "I did not get the impression of a grayish skin. If anything, light, but, if anything, maybe with some sort of a fleshy or a pink cast, not a gray or a gray-gray.",
+        "memory_state": "hypnosis",
+        "source_page": "175",
+        "ai_justification": "Philip explicitly denies gray skin and describes a light, fleshy or pinkish cast. B290 covers white, gray, ashen or claylike skin; the light/fleshy description is closest to this category as a variant of pale skin, though he denies the gray component. This is the nearest semantic match for skin color description.",
+        "emotional_marker": null,
+        "chunk": 17
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 88,
+        "source_citation": "At a certain point, there is a transition that seems to take place. Sometimes . . . it has a much more calming effect. / suddenly I felt much more calm",
+        "memory_state": "hypnosis",
+        "source_page": "175",
+        "ai_justification": "Philip describes a transition from fear to calm during the encounter, consistent with the pacification effect where the witness becomes calm or relaxed.",
+        "emotional_marker": "calm",
+        "chunk": 17
+      },
+      {
+        "motif_code": "E325",
+        "sequence_order": 89,
+        "source_citation": "'I wonder if I have been tranquilized or something.' Now that was almost as if I was experiencing that",
+        "memory_state": "hypnosis",
+        "source_page": "175",
+        "ai_justification": "Philip suspects he was tranquilized by some external means, suggesting control by devices or injection to induce the calming state.",
+        "emotional_marker": "calm",
+        "chunk": 17
+      },
+      {
+        "motif_code": "M100",
+        "sequence_order": 90,
+        "source_citation": "I heard that everything will be all right.",
+        "memory_state": "hypnosis",
+        "source_page": "175",
+        "ai_justification": "Philip hears a reassuring message that everything will be all right, matching the motif of beings promising the subject will be safe.",
+        "emotional_marker": "reassured",
+        "chunk": 17
+      },
+      {
+        "motif_code": "C110",
+        "sequence_order": 91,
+        "source_citation": "I heard that everything will be all right.",
+        "memory_state": "hypnosis",
+        "source_page": "175",
+        "ai_justification": "Philip 'heard' the message without indication of verbal speech, suggesting telepathic communication where the subject hears a voice in his head or understands meanings without auditory input.",
+        "emotional_marker": "reassured",
+        "chunk": 17
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 92,
+        "source_citation": "you had the impression of this great forehead with these large eyes",
+        "memory_state": "hypnosis",
+        "source_page": "175",
+        "ai_justification": "The overall description of the being — large head, large eyes, non-human features — identifies it as a humanoid entity.",
+        "emotional_marker": null,
+        "chunk": 17
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 93,
+        "source_citation": "First, Philip awakes in his room, absolutely paralyzed",
+        "memory_state": "hypnosis",
+        "source_page": "176",
+        "ai_justification": "Philip awoke paralyzed in bed, matching E315 (paralysis, numbness).",
+        "emotional_marker": null,
+        "chunk": 18
+      },
+      {
+        "motif_code": "B100",
+        "sequence_order": 94,
+        "source_citation": "and sensing a presence, a vague silhouette behind him.",
+        "memory_state": "hypnosis",
+        "source_page": "176",
+        "ai_justification": "Philip sensed a presence and saw only a vague silhouette, matching B100 (beings present but unseen).",
+        "emotional_marker": null,
+        "chunk": 18
+      },
+      {
+        "motif_code": "U120",
+        "sequence_order": 95,
+        "source_citation": "A strange light fills the room.",
+        "memory_state": "hypnosis",
+        "source_page": "176",
+        "ai_justification": "A strange light filling the room matches U120 (beam of light immerses the witness).",
+        "emotional_marker": null,
+        "chunk": 18
+      },
+      {
+        "motif_code": "E215",
+        "sequence_order": 96,
+        "source_citation": "He gets up, dresses, and goes outside, up the hill to the grounds of the deserted Heinz mansion.",
+        "memory_state": "hypnosis",
+        "source_page": "176",
+        "ai_justification": "Philip got up, dressed, and walked outside to a deserted mansion at night—uncharacteristic behavior matching E215 (inappropriate response or uncharacteristic behavior).",
+        "emotional_marker": null,
+        "chunk": 18
+      },
+      {
+        "motif_code": "E123",
+        "sequence_order": 97,
+        "source_citation": "he finds himself drawn toward a group of figures standing behind the building",
+        "memory_state": "hypnosis",
+        "source_page": "176",
+        "ai_justification": "Philip felt drawn toward the figures, matching E123 (levitation: drawing force).",
+        "emotional_marker": null,
+        "chunk": 18
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 98,
+        "source_citation": "the fuller image of a humanoid / a group of figures standing behind the building, and the abduction is consummated. His abductors have large, bulging craniums",
+        "memory_state": "hypnosis",
+        "source_page": "176",
+        "ai_justification": "The beings are described as humanoids with large craniums, matching B201 (humanoid).",
+        "emotional_marker": null,
+        "chunk": 18
+      },
+      {
+        "motif_code": "B230",
+        "sequence_order": 99,
+        "source_citation": "His abductors have large, bulging craniums",
+        "memory_state": "hypnosis",
+        "source_page": "176",
+        "ai_justification": "Large, bulging craniums match B230 (head large).",
+        "emotional_marker": null,
+        "chunk": 18
+      },
+      {
+        "motif_code": "B241",
+        "sequence_order": 100,
+        "source_citation": "the proportionate size of the eyes and the size of the head",
+        "memory_state": "hypnosis",
+        "source_page": "176",
+        "ai_justification": "The eyes are described as proportionately large relative to the head, matching B241 (large size eyes).",
+        "emotional_marker": null,
+        "chunk": 18
+      },
+      {
+        "motif_code": "ANOMALY",
+        "sequence_order": 101,
+        "source_citation": "His description of metallic eyes on apparently semitransparent skin which showed the blood vessels underneath",
+        "memory_state": "hypnosis",
+        "source_page": "176",
+        "ai_justification": "Metallic eyes are not precisely covered by any existing code. The closest would be B245 (luminous) but metallic is a distinct quality. Coded as ANOMALY.",
+        "emotional_marker": null,
+        "chunk": 18
+      },
+      {
+        "motif_code": "ANOMALY",
+        "sequence_order": 102,
+        "source_citation": "apparently semitransparent skin which showed the blood vessels underneath",
+        "memory_state": "hypnosis",
+        "source_page": "176",
+        "ai_justification": "Semitransparent skin showing blood vessels is a unique description not matching any existing skin code. Coded as ANOMALY.",
+        "emotional_marker": null,
+        "chunk": 18
+      },
+      {
+        "motif_code": "ANOMALY",
+        "sequence_order": 103,
+        "source_citation": "a specific 'fleshy or pink caste . . . not a gray or gray-gray skin'",
+        "memory_state": "hypnosis",
+        "source_page": "176",
+        "ai_justification": "Fleshy or pink skin color is explicitly not gray and does not match B290 (white, gray, ashen) or any other skin color code in the dictionary. Coded as ANOMALY.",
+        "emotional_marker": null,
+        "chunk": 18
+      },
+      {
+        "motif_code": "B100",
+        "sequence_order": 104,
+        "source_citation": "My dominant impression is of some sort of a presence at the window.",
+        "memory_state": "hypnosis",
+        "source_page": "177",
+        "ai_justification": "The witness senses a presence but cannot see the being, matching B100: Beings present but unseen.",
+        "emotional_marker": "unease",
+        "chunk": 19
+      },
+      {
+        "motif_code": "E106",
+        "sequence_order": 105,
+        "source_citation": "it's as if there's a black, ah, blot or something that's obscuring whatever may be there from my vision",
+        "memory_state": "hypnosis",
+        "source_page": "177",
+        "ai_justification": "A dark blot obscures the witness's visual field, indicating a perceptual distortion consistent with E106.",
+        "emotional_marker": "confusion",
+        "chunk": 19
+      },
+      {
+        "motif_code": "U230",
+        "sequence_order": 106,
+        "source_citation": "my impression of the room is it's very bright, and, ah, there is light although I know that is not the case, It was not a bright room",
+        "memory_state": "hypnosis",
+        "source_page": "177",
+        "ai_justification": "The witness perceives the room as very bright with no identifiable source, matching U230: Bright and uniform, without specific source.",
+        "emotional_marker": "confusion",
+        "chunk": 19
+      },
+      {
+        "motif_code": "E205",
+        "sequence_order": 107,
+        "source_citation": "I can imagine myself in another environment, almost, as if I am in another place or another enclosure, and it isn't so much being able to see it, as just sensing it.",
+        "memory_state": "hypnosis",
+        "source_page": "177",
+        "ai_justification": "The witness senses being transported to another place or enclosure without clear awareness of how, consistent with E205: Relocation, witness travels a distance unawares.",
+        "emotional_marker": "disorientation",
+        "chunk": 19
+      },
+      {
+        "motif_code": "E204",
+        "sequence_order": 108,
+        "source_citation": "I do have a sort of a sense of reclining and of being kind of enveloped in a sort of, hazy, kind of state.",
+        "memory_state": "hypnosis",
+        "source_page": "177",
+        "ai_justification": "The witness describes a hazy, semi-conscious, disoriented state while reclining, matching E204: Semi-consciousness, disorientation, dizziness, drained.",
+        "emotional_marker": "hazy",
+        "chunk": 19
+      },
+      {
+        "motif_code": "X155",
+        "sequence_order": 109,
+        "source_citation": "I do have a sort of a sense of reclining",
+        "memory_state": "hypnosis",
+        "source_page": "177",
+        "ai_justification": "The witness senses himself reclining, consistent with X155: The witness lies on an examining table or couch.",
+        "emotional_marker": null,
+        "chunk": 19
+      },
+      {
+        "motif_code": "E326",
+        "sequence_order": 110,
+        "source_citation": "it seems as if I'm sort of aware of two small balls or spheres that are illuminated from within. Ah, they're sort of either, on either side of my head",
+        "memory_state": "hypnosis",
+        "source_page": "177",
+        "ai_justification": "Two illuminated spheres flanking the witness's head match E326: Luminous globe controls witness, consistent with Bullard's description of spheres flanking Philip Osborne's head (180b) as a notable examination instrument.",
+        "emotional_marker": null,
+        "chunk": 19
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 111,
+        "source_citation": "there definitely is a state of calmness associated with this image. It is as if one suddenly makes that transition—and I do recall that from earlier sessions here—that there is a definite transition where all of a sudden calmness seems to prevail",
+        "memory_state": "hypnosis",
+        "source_page": "178",
+        "ai_justification": "Witness describes a sudden onset of calmness, consistent with the pacification effect (E300) where the witness becomes calm or euphoric.",
+        "emotional_marker": "calm",
+        "chunk": 20
+      },
+      {
+        "motif_code": "E120",
+        "sequence_order": 112,
+        "source_citation": "I almost have the sensation that I could be floating in a reclining position, or at least not aware of whatever may be supporting me",
+        "memory_state": "hypnosis",
+        "source_page": "178",
+        "ai_justification": "Witness describes a sensation of floating and being unaware of any support, consistent with the floating/weightlessness effect (E120).",
+        "emotional_marker": null,
+        "chunk": 20
+      },
+      {
+        "motif_code": "B100",
+        "sequence_order": 113,
+        "source_citation": "I could imagine that there is some presence there. . . . It's almost as if, you know, I can sense that someone is around, but I do not see anybody.",
+        "memory_state": "hypnosis",
+        "source_page": "178",
+        "ai_justification": "Witness senses a presence nearby but cannot see anyone, matching B100 (beings present but unseen).",
+        "emotional_marker": "uneasy",
+        "chunk": 20
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 114,
+        "source_citation": "I did go back to that, ah, sense of paralysis. The strange thing is that my attention is drawn to a telephone at the head of the bed, and I do recall at that time I had the sensation that I should reach for the telephone and call for help, but there wasn't any telephone there.",
+        "memory_state": "hypnosis",
+        "source_page": "178",
+        "ai_justification": "Witness describes a state of paralysis and an inability to act (wanting to call for help but unable), consistent with E315 (paralysis, numbness).",
+        "emotional_marker": "confused",
+        "chunk": 20
+      },
+      {
+        "motif_code": "E218",
+        "sequence_order": 115,
+        "source_citation": "I see myself leaving by the front door, which I don't think I would have normally done. . . . For some reason, I do just feel drawn to that spot, the (Heinz) house. I see kind of an aerial map and all of the lines are pointing in that direction.",
+        "memory_state": "hypnosis",
+        "source_page": "178",
+        "ai_justification": "Witness describes feeling irresistibly drawn to a specific location without knowing why, and leaving by an unusual route, consistent with E218 (predestination: act without knowing why, on an irresistible urge).",
+        "emotional_marker": null,
+        "chunk": 20
+      },
+      {
+        "motif_code": "E215",
+        "sequence_order": 116,
+        "source_citation": "there's almost an arrow that points over to the, to my left, which would be on the opposite end of the house, and, ah, almost a kind of a sense of inquisitiveness on my part—not a fear or anything.",
+        "memory_state": "hypnosis",
+        "source_page": "178",
+        "ai_justification": "Witness describes an inappropriate response—curiosity rather than fear in an uncanny situation—consistent with E215 (inappropriate response or uncharacteristic behavior).",
+        "emotional_marker": "curious",
+        "chunk": 20
+      },
+      {
+        "motif_code": "X205",
+        "sequence_order": 117,
+        "source_citation": "it's almost as if there are people standing there, almost in a line. I don't see them precisely as people, but you just have the impression of figures",
+        "memory_state": "hypnosis",
+        "source_page": "179",
+        "ai_justification": "Witness perceives a line of figures/people at the site, consistent with X205 (other humans, perhaps strangers, present at the scene), as seen in cases like Patty Roach where neighbors lined up near the craft.",
+        "emotional_marker": null,
+        "chunk": 20
+      },
+      {
+        "motif_code": "B242.1",
+        "sequence_order": 118,
+        "source_citation": "There's confusion concerning those things that I am describing as balls. Ah, I can almost have the impression that they are eyes",
+        "memory_state": "hypnosis",
+        "source_page": "178",
+        "ai_justification": "Witness describes ball-like objects that give the impression of being eyes, with a round, protruding quality, consistent with B242.1 (eyes round, protruding).",
+        "emotional_marker": null,
+        "chunk": 20
+      },
+      {
+        "motif_code": "E102",
+        "sequence_order": 119,
+        "source_citation": "there isn't any light there",
+        "memory_state": "hypnosis",
+        "source_page": "180",
+        "ai_justification": "The witness describes an absence of ambient light despite expected sources (starlight, moonlight, house lights), indicating an isolation effect where normal environmental conditions are suppressed.",
+        "emotional_marker": "confusion",
+        "chunk": 21
+      },
+      {
+        "motif_code": "B100",
+        "sequence_order": 120,
+        "source_citation": "there was a sense of activity or something. Someone moving around and doing something in the darkness, but I don't know exactly how that connects with the impression now.",
+        "memory_state": "hypnosis",
+        "source_page": "180",
+        "ai_justification": "The witness senses beings present but unseen, perceiving activity and someone moving around in the darkness without being able to see them.",
+        "emotional_marker": "uncertainty",
+        "chunk": 21
+      },
+      {
+        "motif_code": "E205",
+        "sequence_order": 121,
+        "source_citation": "This was where I had sort of been displaced to. . .. Gone beyond that into another . . .",
+        "memory_state": "hypnosis",
+        "source_page": "180",
+        "ai_justification": "The witness describes being displaced from his room at Carnegie Tech to another location unawares, consistent with relocation.",
+        "emotional_marker": null,
+        "chunk": 21
+      },
+      {
+        "motif_code": "U212",
+        "sequence_order": 122,
+        "source_citation": "I had the sense that, you know, there was a kind of space all around me and that I was more or less in the middle of it.",
+        "memory_state": "hypnosis",
+        "source_page": "180",
+        "ai_justification": "The witness describes being in an enclosure with space all around him, consistent with a round, domed room without sharp edges.",
+        "emotional_marker": null,
+        "chunk": 21
+      },
+      {
+        "motif_code": "E326",
+        "sequence_order": 123,
+        "source_citation": "the two spheres that seemed to be illuminated appeared to be small. You said they were on either side of you, close to the face. / I could almost sense that they were eyes at some point",
+        "memory_state": "hypnosis",
+        "source_page": "180",
+        "ai_justification": "Two small luminous spheres flanking the witness's face, which he sensed could be eyes, match the motif of luminous globes used in proximity to control or examine the witness.",
+        "emotional_marker": "unease",
+        "chunk": 21
+      },
+      {
+        "motif_code": "U230",
+        "sequence_order": 124,
+        "source_citation": "a brightness in your room. You didn't think this was ordinary to the room. / No. And I don't recall it, either.",
+        "memory_state": "hypnosis",
+        "source_page": "180",
+        "ai_justification": "The witness recalls an unusual, sourceless brightness in his room that was not ordinary, consistent with bright uniform lighting without a specific source.",
+        "emotional_marker": "surprise",
+        "chunk": 21
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 125,
+        "source_citation": "feeling very relaxed and calm, and that there was a transition where you passed something that had not been very calm, and went into a calm state.",
+        "memory_state": "hypnosis",
+        "source_page": "180",
+        "ai_justification": "The witness describes a transition from an uneasy state to one of calm and relaxation, consistent with the pacification effect where the witness becomes calm or euphoric.",
+        "emotional_marker": "calm",
+        "chunk": 21
+      },
+      {
+        "motif_code": "X155",
+        "sequence_order": 126,
+        "source_citation": "He said that around the table on which he lay",
+        "memory_state": "hypnosis",
+        "source_page": "181",
+        "ai_justification": "Philip describes lying on a table, consistent with X155 (witness lies on an examining table or couch).",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "X157",
+        "sequence_order": 127,
+        "source_citation": "or floated",
+        "memory_state": "hypnosis",
+        "source_page": "181",
+        "ai_justification": "Philip describes floating, possibly over the table, consistent with X157 (witness floats suspended in air, perhaps over table).",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "U251",
+        "sequence_order": 128,
+        "source_citation": "the atmosphere itself seemed hazy, or 'glarey,' as if the air was not absolutely transparent",
+        "memory_state": "hypnosis",
+        "source_page": "181",
+        "ai_justification": "Philip describes the atmosphere around the examination table as hazy and not fully transparent, consistent with U251 (Misty interior atmosphere).",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "X225",
+        "sequence_order": 129,
+        "source_citation": "the scanning—if that is what the function is—was carried out by the small moving spheres of light",
+        "memory_state": "hypnosis",
+        "source_page": "181",
+        "ai_justification": "Philip describes small spheres of light moving over his body in a scanning function, consistent with X225 (eyelike device descends and scans witness). The investigator confirms these are the glowing spheres that moved over his body.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "B205",
+        "sequence_order": 130,
+        "source_citation": "The mechanical man for which he invoked the calming and charming image of the Tin Man in The Wizard of Oz is a full-scale version of what in earlier sessions had been merely an armored hand.",
+        "memory_state": "hypnosis",
+        "source_page": "181",
+        "ai_justification": "Philip describes a mechanical man entity, likened to the Tin Man, which is a robotic being consistent with B205 (Robot).",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "E218",
+        "sequence_order": 131,
+        "source_citation": "Philip and his family traveled back up the Tennessee mountaintop after dark to retrieve his brother's lost jacket.",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "The family's nighttime trip to retrieve a jacket placed Philip in the situation where the abduction occurred, fitting the predestination motif of acting on an ordinary impulse that leads to the encounter.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "E115",
+        "sequence_order": 132,
+        "source_citation": "Philip was apparently separated from his family",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "Philip disappeared from his family's presence in an unknown fashion, fitting the disappearance motif.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "E123",
+        "sequence_order": 133,
+        "source_citation": "pulled swiftly into a UFO resembling a geodesic dome",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "Philip was drawn or pulled into the craft by an unknown force, matching the levitation/drawing force motif.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "U101",
+        "sequence_order": 134,
+        "source_citation": "a UFO resembling a geodesic dome, which hovered in a deserted parking lot.",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "A geodesic dome shape is consistent with a domed disk craft description.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "U510",
+        "sequence_order": 135,
+        "source_citation": "which hovered in a deserted parking lot.",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "The craft was hovering, matching the hover maneuver motif.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "X155",
+        "sequence_order": 136,
+        "source_citation": "Inside the UFO, as Philip lay on a table in a hospital-like environment",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "The witness lies on an examining table, a standard preparation element of the examination episode.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "U202",
+        "sequence_order": 137,
+        "source_citation": "a hospital-like environment",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "The hospital-like environment inside the craft corresponds to an examination room.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "X222",
+        "sequence_order": 138,
+        "source_citation": "a 'robot arm' made an incision, removed something from his leg, and then closed the wound.",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "An incision was made in the witness's leg by a mechanical arm, matching the motif for beings making an incision for unknown purpose.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "X247",
+        "sequence_order": 139,
+        "source_citation": "removed something from his leg",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "Something was removed from the witness's body (leg), consistent with the motif for beings removing a device from the witness's body.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "X225",
+        "sequence_order": 140,
+        "source_citation": "Above him hung a large eyelike apparatus",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "A large eyelike device hung above the witness, matching the scanning eye device motif.",
+        "emotional_marker": "fear then calm",
+        "chunk": 23
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 141,
+        "source_citation": "which at first frightened him, but then calmed him.",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "The eyelike apparatus induced a calming effect on the witness, matching the pacification motif.",
+        "emotional_marker": "calm",
+        "chunk": 23
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 142,
+        "source_citation": "Philip awoke in his third-floor room near Pittsburgh's Carnegie Tech to find himself totally paralyzed.",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "The witness awoke to find himself completely paralyzed, matching the paralysis motif.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "B100",
+        "sequence_order": 143,
+        "source_citation": "He sensed a presence, a silhouette, at the window behind his head.",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "The witness sensed a being present as a silhouette but did not see it clearly, matching the motif for beings present but unseen or barely perceived.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "U120",
+        "sequence_order": 144,
+        "source_citation": "Light suffused the room.",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "Light from an apparent external source filled the witness's room, consistent with a beam of light immersing the witness.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "E411",
+        "sequence_order": 145,
+        "source_citation": "Following mental directions, like a 'roadmap in his mind,' he ascended the hill behind his house to the grounds of the deserted Heinz mansion.",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "The witness was controlled through mental directions implanted in his mind, compelling him to walk to a specific location, matching the motif for beings controlling the witness through control of the witness himself.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "E215",
+        "sequence_order": 146,
+        "source_citation": "Feeling inquisitive and without fear, he approached a line of figures standing behind the house.",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "Approaching a line of alien figures without fear is an inappropriate and uncharacteristic response, matching the motif for inappropriate response or uncharacteristic behavior.",
+        "emotional_marker": "inquisitive, no fear",
+        "chunk": 23
+      },
+      {
+        "motif_code": "U100",
+        "sequence_order": 147,
+        "source_citation": "Nearby, there was a 'flying saucer'",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "The witness observed a disk-shaped craft described as a flying saucer.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "E201",
+        "sequence_order": 148,
+        "source_citation": "in some way, he next found himself reclining inside a domed room filled with hazy light.",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "The witness has no memory of how he entered the craft, finding himself suddenly inside, matching doorway amnesia.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "U211",
+        "sequence_order": 149,
+        "source_citation": "a domed room",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "The interior room is described as domed, matching the domed room shape motif.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "U231",
+        "sequence_order": 150,
+        "source_citation": "filled with hazy light",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "The room was filled with bright but hazy/misty light, matching the bright and misty lighting motif.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "E326",
+        "sequence_order": 151,
+        "source_citation": "Two small glowing balls or spheres hovered on either side of his head, which again calmed him.",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "Luminous globes hovered near the witness's head and exerted a calming control effect, matching the motif for luminous globe controlling the witness.",
+        "emotional_marker": "calm",
+        "chunk": 23
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 152,
+        "source_citation": "a pinkish, flesh-colored humanoid with 'metallic eyes' and translucent skin",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "One type of being encountered was a humanoid entity.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "B244.1",
+        "sequence_order": 153,
+        "source_citation": "'metallic eyes'",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "The humanoid's eyes are described as metallic, an unusual color/quality not matching standard dark or luminous categories.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "B249",
+        "sequence_order": 154,
+        "source_citation": "translucent skin",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "The humanoid had translucent skin, as if the real form was visible underneath, matching the motif for eyes/features being transparent or translucent. Applied here to skin transparency as the closest semantic match.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "B205",
+        "sequence_order": 155,
+        "source_citation": "a metallic, very shiny, robotlike figure with jointed, armored hands.",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "The second type of being was a robot, described as metallic and shiny with mechanical jointed hands.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "B277",
+        "sequence_order": 156,
+        "source_citation": "jointed, armored hands",
+        "memory_state": "hypnosis",
+        "source_page": "182",
+        "ai_justification": "The robot figure had mechanical, jointed hands, matching the motif for mechanical limbs.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "E218",
+        "sequence_order": 157,
+        "source_citation": "Philip, after the fright he'd experienced in his room, would only have walked up this hill if he had had absolutely no choice in the matter.",
+        "memory_state": "hypnosis",
+        "source_page": "183",
+        "ai_justification": "The investigator paraphrases Philip's experience of walking to the hilltop site without any choice, indicating predestined or compelled action — acting without knowing why or on an irresistible impulse. This matches E218: Predestination.",
+        "emotional_marker": "fear",
+        "chunk": 24
+      }
+    ],
+    "model_name": "claude-opus-4-6",
+    "profile_used": "baseline_test",
+    "run_timestamp": "2026-04-02T12:30:41.052521"
+  }
+}

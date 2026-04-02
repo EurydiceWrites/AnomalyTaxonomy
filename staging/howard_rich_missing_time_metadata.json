@@ -1,0 +1,1203 @@
+{
+  "step_0": {
+    "source_text_path": "staging\\extracted_text_Budd_Hopkins_-_Missing_Time__OCR__83-104.txt",
+    "pdf_page_start": 83,
+    "pdf_page_end": 104,
+    "source_page_start": 89,
+    "source_page_end": 110
+  },
+  "step_1_scanned_metadata": {
+    "source_type": "investigation",
+    "memory_retrieval_method": "hypnosis",
+    "narrative_structure": "investigation",
+    "principal_investigator": "Budd Hopkins",
+    "experiencer_name": "Howard Rich",
+    "gender": "male",
+    "age_at_time": "thirty-eight",
+    "location": "Toms River, New Jersey",
+    "date_of_experience": "October 6, 1979",
+    "entity_types": [
+      "humanoid",
+      "shadow figures"
+    ],
+    "narrative_summary": "The narrative details the investigation into Howard Rich's abduction experience, beginning with his conscious recall of a strange blue light filling his bedroom in Toms River, New Jersey, in October 1979, which left him deeply frightened and with a sense of dread. Investigator Budd Hopkins, a friend of Howard's, arranged for him to undergo hypnotic regression with Dr. Clamar. Under hypnosis, Howard recalled being paralyzed, dropping his gun, and being floated outside into a black cloud with a bright light, where small, black, shadow-like figures with bright eyes and long arms touched him, causing pain in his neck and stomach. He also found small spots of blood on his pillow and sheets upon waking. The experience left him with a lingering sense of apprehension and a feeling that his energy had been taken, and he exhibited a strong, unexplained reluctance to allow Hopkins to visit the site of the encounter."
+  },
+  "step_1_source_attribution": {
+    "author_name": "Budd Hopkins",
+    "title": "Missing Time",
+    "publication_year": null,
+    "publisher": "Ballantine",
+    "place_of_publication": null,
+    "edition": null,
+    "translator": null,
+    "editor": null,
+    "author_role": "investigator"
+  },
+  "step_3_extraction": {
+    "encounter_events": [
+      {
+        "motif_code": "U120",
+        "sequence_order": 1,
+        "source_citation": "the room started to fill with light, very bright light, with a bluish tinge to it. It didn't seem to be shining in the window—it seemed to be there in the room with me. It got brighter and brighter, and then it began to diminish.",
+        "memory_state": "conscious",
+        "source_page": "89",
+        "ai_justification": "A beam or field of bright bluish light immerses the witness in his room. The light fills the room and surrounds him, matching U120 (beam of light immerses the witness).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "A110",
+        "sequence_order": 2,
+        "source_citation": "when it was over, it left me very frightened. I felt a deep sense of dread.",
+        "memory_state": "conscious",
+        "source_page": "89",
+        "ai_justification": "After the light event, the witness feels a deep, unexplained sense of dread and anxiety, matching A110 (witness feels pursued or anxious without knowing why).",
+        "emotional_marker": "dread, fear",
+        "chunk": 1
+      },
+      {
+        "motif_code": "E215",
+        "sequence_order": 3,
+        "source_citation": "I got up and . . . I keep a gun in the house. I found it and loaded it and went outside to look around. I was that nervous.",
+        "memory_state": "conscious",
+        "source_page": "89",
+        "ai_justification": "The investigator describes Howard as a 'gentle and pacific man' and is shocked he owns a pistol and loaded it. This uncharacteristic, inappropriate response to the situation matches E215 (inappropriate response or uncharacteristic behavior).",
+        "emotional_marker": "extreme nervousness",
+        "chunk": 1
+      },
+      {
+        "motif_code": "A117",
+        "sequence_order": 4,
+        "source_citation": "I still couldn't settle down and go to sleep. I took a Valium, but I couldn't relax.",
+        "memory_state": "conscious",
+        "source_page": "90",
+        "ai_justification": "The witness experiences insomnia and inability to sleep even after taking a sedative, matching A117 (sleep difficulties: insomnia).",
+        "emotional_marker": "agitation, inability to relax",
+        "chunk": 1
+      },
+      {
+        "motif_code": "A110",
+        "sequence_order": 5,
+        "source_citation": "I had been struck by his deep and continuing uneasiness",
+        "memory_state": "conscious",
+        "source_page": "91",
+        "ai_justification": "Howard Rich experienced a persistent, unexplained anxiety following his encounter, matching A110: witness feels pursued or anxious without knowing why.",
+        "emotional_marker": "anxiety",
+        "chunk": 2
+      },
+      {
+        "motif_code": "E208",
+        "sequence_order": 6,
+        "source_citation": "on the other side of the ledger, the response side, there was a very deep, very sustained, fearful reaction that did not seem to have an adequate cause",
+        "memory_state": "conscious",
+        "source_page": "91",
+        "ai_justification": "Howard's intense fearful reaction disproportionate to the conscious stimulus suggests a premonition or sense that something significant happened, matching E208: sense that something will happen / has happened.",
+        "emotional_marker": "fear",
+        "chunk": 2
+      },
+      {
+        "motif_code": "U120",
+        "sequence_order": 7,
+        "source_citation": "Suddenly, the room seemed to have an incredible, intense light in it, with a blue tinge to it, that built in intensity the way a strobe light would, but it was of longer duration. I'd guess it was almost three seconds.",
+        "memory_state": "hypnosis",
+        "source_page": "92",
+        "ai_justification": "A beam of intense light with a blue tinge immerses the witness and his room, building in intensity over several seconds. This matches U120: Beam of light immerses the witness.",
+        "emotional_marker": null,
+        "chunk": 3
+      },
+      {
+        "motif_code": "E400",
+        "sequence_order": 8,
+        "source_citation": "It built, peaked, and then became dim again, and then the room seemed to be darker than it was originally, as if the bulb had gone down a bit",
+        "memory_state": "hypnosis",
+        "source_page": "92",
+        "ai_justification": "After the intense light faded, the room's electric light bulb seemed to have dimmed, suggesting electromagnetic interference with the electrical system. This matches E400: Electromagnetic effects, malfunction of electrical systems.",
+        "emotional_marker": null,
+        "chunk": 3
+      },
+      {
+        "motif_code": "E100",
+        "sequence_order": 9,
+        "source_citation": "everything seemed to become very quiet at the same time. Do you know how, after an automobile accident, in the city when you hear cars crash, for a split-second after that everything stops? Well, that kind of sound happened, or lack of",
+        "memory_state": "hypnosis",
+        "source_page": "92",
+        "ai_justification": "The witness describes a sudden, unnatural silence falling over the environment immediately after the light event, comparable to the vacuum effect of stillness and silence described in E100.",
+        "emotional_marker": "fear",
+        "chunk": 3
+      },
+      {
+        "motif_code": "E208",
+        "sequence_order": 10,
+        "source_citation": "I had an incredible feeling of fear and apprehension . . . and almost . . . see if I can find another word to fit it . . . but I guess fear and apprehension fit it best.",
+        "memory_state": "hypnosis",
+        "source_page": "92",
+        "ai_justification": "The witness experiences an overwhelming premonition of dread and apprehension that something extraordinary is happening, matching E208: Premonition, sense that something will happen.",
+        "emotional_marker": "fear, apprehension",
+        "chunk": 3
+      },
+      {
+        "motif_code": "E100",
+        "sequence_order": 11,
+        "source_citation": "There are always background sounds, woods sounds, animal sounds. . . . But I guess there was a pause there",
+        "memory_state": "hypnosis",
+        "source_page": "93",
+        "ai_justification": "The normal ambient sounds of the environment ceased, creating an unusual silence—the vacuum effect described in Bullard's dictionary as 'stillness, silence.'",
+        "emotional_marker": "unease",
+        "chunk": 4
+      },
+      {
+        "motif_code": "E208",
+        "sequence_order": 12,
+        "source_citation": "I still had that feeling of fear and apprehension / I felt it outside, all around . . . all around the house there was this feeling that there was something there, or . . . something happened.",
+        "memory_state": "hypnosis",
+        "source_page": "93",
+        "ai_justification": "The witness experienced a strong premonition or sense that something was about to happen or was present, matching E208: 'Premonition: sense that something will happen.'",
+        "emotional_marker": "fear, apprehension",
+        "chunk": 4
+      },
+      {
+        "motif_code": "E215",
+        "sequence_order": 13,
+        "source_citation": "I used to travel a lot and I kept a loaded pistol in the house, and for some reason I got the pistol and went out of the house, outside, looking around, because I felt there was danger out there.",
+        "memory_state": "hypnosis",
+        "source_page": "93",
+        "ai_justification": "The witness acted on an inexplicable compulsion to arm himself and go outside to investigate a perceived but invisible danger—an inappropriate or uncharacteristic response driven by an unknown urge, matching E215.",
+        "emotional_marker": "compulsion, fear",
+        "chunk": 4
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 14,
+        "source_citation": "The more I've been thinking about it, the more I think there was a different program on when I came back inside. I might have been out there longer than I thought.",
+        "memory_state": "conscious",
+        "source_page": "93",
+        "ai_justification": "The witness realized after the fact that a different TV program was airing when he returned, indicating unaccounted-for time had passed—classic missing time (E200). This realization occurred consciously after the event, not under hypnosis.",
+        "emotional_marker": "confusion, realization",
+        "chunk": 4
+      },
+      {
+        "motif_code": "A110",
+        "sequence_order": 15,
+        "source_citation": "There was residue after that, the next few days. I still felt tense and apprehensive.",
+        "memory_state": "conscious",
+        "source_page": "93",
+        "ai_justification": "In the days following the event, the witness experienced lingering anxiety and apprehension without a clear cause, matching A110: 'Witness feels pursued or anxious without knowing why.' This is a consciously experienced aftereffect.",
+        "emotional_marker": "anxiety, tension",
+        "chunk": 4
+      },
+      {
+        "motif_code": "A116.1",
+        "sequence_order": 16,
+        "source_citation": "As soon as she had me in a trance, I suddenly had a flash of being back there at my mother's house, outside, and I just said, 'They're coming for me.'",
+        "memory_state": "hypnosis",
+        "source_page": "93",
+        "ai_justification": "Under hypnosis, a fragmentary memory surfaced—a flash of being outside with the terrifying awareness that 'they' were coming for him. This is a fragmentary memory persisting from the experience, matching A116.1.",
+        "emotional_marker": "terror",
+        "chunk": 4
+      },
+      {
+        "motif_code": "A110",
+        "sequence_order": 17,
+        "source_citation": "a very strange feeling again of being outside",
+        "memory_state": "conscious",
+        "source_page": "89",
+        "ai_justification": "Howard describes feeling pursued or anxious without knowing why — a strange feeling of being back outside in New Jersey that arose spontaneously before the hypnosis session, during a conscious relaxation exercise.",
+        "emotional_marker": "unease",
+        "chunk": 5
+      },
+      {
+        "motif_code": "A116.1",
+        "sequence_order": 18,
+        "source_citation": "I seemed to almost have a vision of being back in New Jersey again, and a very strange feeling again of being outside, and that was it.",
+        "memory_state": "conscious",
+        "source_page": "89",
+        "ai_justification": "Howard describes a fragmentary, spontaneous memory surfacing — a vision-like flashback of being outside in New Jersey — which corresponds to A116.1 (fragmentary memories of an experience persist). This occurred consciously before the hypnosis session.",
+        "emotional_marker": "tension",
+        "chunk": 5
+      },
+      {
+        "motif_code": "E208",
+        "sequence_order": 19,
+        "source_citation": "Tense. Tensely tired. And apprehensive. / It doesn't feel safe.",
+        "memory_state": "hypnosis",
+        "source_page": "96",
+        "ai_justification": "Witness experiences a premonition or sense that something will happen, feeling tense and apprehensive without a clear cause.",
+        "emotional_marker": "apprehension",
+        "chunk": 6
+      },
+      {
+        "motif_code": "U120",
+        "sequence_order": 20,
+        "source_citation": "It's really bright. Incredibly bright. It's done something to me . . . such a bright light. / There's another bright light. / It's . . . it's trees . . . behind the house . . . with a bright light coming out.",
+        "memory_state": "hypnosis",
+        "source_page": "96",
+        "ai_justification": "A beam of intense light immerses the witness, first noticed inside and then emanating from behind the house near the trees.",
+        "emotional_marker": "agitation",
+        "chunk": 6
+      },
+      {
+        "motif_code": "E216",
+        "sequence_order": 21,
+        "source_citation": "I drop the pistol. I remember dropping it.",
+        "memory_state": "hypnosis",
+        "source_page": "96",
+        "ai_justification": "Witness drops his loaded weapon, a denial of his defense impulse. He had armed himself but involuntarily relinquishes the pistol.",
+        "emotional_marker": "helplessness",
+        "chunk": 6
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 22,
+        "source_citation": "And I feel like I can't move.",
+        "memory_state": "hypnosis",
+        "source_page": "96",
+        "ai_justification": "Witness experiences paralysis, unable to move in the presence of the beings and the bright light.",
+        "emotional_marker": "fear",
+        "chunk": 6
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 23,
+        "source_citation": "I feel like there's some people there . . . and . . . They're looking at me . . . there are people there . . . and they're trying to move me.",
+        "memory_state": "hypnosis",
+        "source_page": "96",
+        "ai_justification": "Witness perceives humanoid beings present around him, described as 'people' who are trying to move him.",
+        "emotional_marker": "agitation",
+        "chunk": 6
+      },
+      {
+        "motif_code": "E124",
+        "sequence_order": 24,
+        "source_citation": "That bright light again. It's all around me. I feel like I'm floating.",
+        "memory_state": "hypnosis",
+        "source_page": "96",
+        "ai_justification": "Witness feels as if floating while surrounded by bright light, consistent with levitation in a beam of light.",
+        "emotional_marker": "disorientation",
+        "chunk": 6
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 25,
+        "source_citation": "They're like dark black shadows in the light. There's light all around and the shapes are just black . . . just black . . . the shapes . . . the figures.",
+        "memory_state": "hypnosis",
+        "source_page": "96",
+        "ai_justification": "The beings appear as dark, shadowy silhouettes against the bright light. While described as 'black shadows,' this describes their visual appearance as dark figures, consistent with ashen/dark skin or silhouette appearance.",
+        "emotional_marker": "fear",
+        "chunk": 6
+      },
+      {
+        "motif_code": "U250",
+        "sequence_order": 26,
+        "source_citation": "It's cold, too, It's very cold.",
+        "memory_state": "hypnosis",
+        "source_page": "96",
+        "ai_justification": "Witness experiences intense cold during the encounter, consistent with cold conditions associated with the craft or abduction environment.",
+        "emotional_marker": "discomfort",
+        "chunk": 6
+      },
+      {
+        "motif_code": "A105",
+        "sequence_order": 27,
+        "source_citation": "Oh . . . there's a pain in the back of my neck. . .. Oh, God! It hurts . .. it hurts . .. Oh!",
+        "memory_state": "hypnosis",
+        "source_page": "96",
+        "ai_justification": "Witness experiences a sudden sharp pain in the back of his neck, consistent with soreness or marks like puncture wounds, possibly related to an implant or procedure.",
+        "emotional_marker": "pain",
+        "chunk": 6
+      },
+      {
+        "motif_code": "E201",
+        "sequence_order": 28,
+        "source_citation": "I think I'm back inside now. There's a different program on? A different program. / And I don't remember . . . coming in.",
+        "memory_state": "hypnosis",
+        "source_page": "96",
+        "ai_justification": "Witness experiences doorway amnesia: his memory jumps from the encounter scene to being back inside the house with no memory of returning.",
+        "emotional_marker": "confusion",
+        "chunk": 6
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 29,
+        "source_citation": "It's the late show . . . it's a movie . . . it's the second, the late, late movie on 2. It's two o'clock?",
+        "memory_state": "hypnosis",
+        "source_page": "96",
+        "ai_justification": "Witness discovers a significant period of missing time. The TV program has changed to the late late movie and it is now approximately 2 AM, indicating hours have passed unaccounted for.",
+        "emotional_marker": "confusion",
+        "chunk": 6
+      },
+      {
+        "motif_code": "A110",
+        "sequence_order": 30,
+        "source_citation": "I'm frightened somehow. I'm frightened.",
+        "memory_state": "hypnosis",
+        "source_page": "96",
+        "ai_justification": "Witness feels pursued or anxious without fully knowing why, a residual fear after the encounter with no clear conscious memory of what happened.",
+        "emotional_marker": "fear",
+        "chunk": 6
+      },
+      {
+        "motif_code": "A105",
+        "sequence_order": 31,
+        "source_citation": "There's blood on the pillow though, a little bit, a spot of red, a couple of spots of blood on the pillow. Some tiny spots of blood on the sheets when I woke up.",
+        "memory_state": "hypnosis",
+        "source_page": "97",
+        "ai_justification": "Small bloodstains on pillow and sheets of unknown origin correspond to A105: spots or reddish marks like puncture wounds, soreness. The witness cannot locate a wound on his body.",
+        "emotional_marker": "confusion",
+        "chunk": 7
+      },
+      {
+        "motif_code": "A102",
+        "sequence_order": 32,
+        "source_citation": "I feel stiff and achey when I wake up. Ache in my joints. . . . My shoulders hurt, my neck hurts. . . . It still hurts sometimes.",
+        "memory_state": "hypnosis",
+        "source_page": "97",
+        "ai_justification": "Stiffness, aching joints, and pain in shoulders and neck upon waking correspond to A102: motility problems including balance, orientation, tiredness.",
+        "emotional_marker": "pain",
+        "chunk": 7
+      },
+      {
+        "motif_code": "A117",
+        "sequence_order": 33,
+        "source_citation": "I couldn't go to sleep. I took a Valium. I couldn't go to sleep.",
+        "memory_state": "hypnosis",
+        "source_page": "97",
+        "ai_justification": "Inability to sleep even after taking a sedative corresponds to A117: sleep difficulties, insomnia.",
+        "emotional_marker": "distress",
+        "chunk": 7
+      },
+      {
+        "motif_code": "A118",
+        "sequence_order": 34,
+        "source_citation": "it's late. I slept late. I don't do that too much. By eleven o'clock, I'm tired, really feel tired.",
+        "memory_state": "hypnosis",
+        "source_page": "97",
+        "ai_justification": "Sleeping unusually late and feeling very tired corresponds to A118: sleep difficulties, unusual sleepiness.",
+        "emotional_marker": "fatigue",
+        "chunk": 7
+      },
+      {
+        "motif_code": "A110",
+        "sequence_order": 35,
+        "source_citation": "I feel really apprehensive and strange",
+        "memory_state": "hypnosis",
+        "source_page": "97",
+        "ai_justification": "Feeling apprehensive and strange without clear reason corresponds to A110: witness feels pursued or anxious without knowing why.",
+        "emotional_marker": "anxiety",
+        "chunk": 7
+      },
+      {
+        "motif_code": "E218",
+        "sequence_order": 36,
+        "source_citation": "for some reason in the late afternoon I'm driving around over there and just get out of the car at this spot and walk around, and I really don't know why I do that . . . I just look around . . . drive to another spot . . . and look around.",
+        "memory_state": "hypnosis",
+        "source_page": "97",
+        "ai_justification": "Driving to the area near the base and searching without knowing why corresponds to E218: predestination, acting without knowing why or on an irresistible urge.",
+        "emotional_marker": "compulsion",
+        "chunk": 7
+      },
+      {
+        "motif_code": "A104",
+        "sequence_order": 37,
+        "source_citation": "my stomach really hurts . . . it really hurts.",
+        "memory_state": "hypnosis",
+        "source_page": "98",
+        "ai_justification": "Stomach pain corresponds to A104: general illness, nausea, gastrointestinal problems.",
+        "emotional_marker": "pain",
+        "chunk": 7
+      },
+      {
+        "motif_code": "X210",
+        "sequence_order": 38,
+        "source_citation": "People are touching me. Why are they touching me?",
+        "memory_state": "hypnosis",
+        "source_page": "93",
+        "ai_justification": "Beings touch the witness in various places, consistent with X210 (beings touch witness as if examining).",
+        "emotional_marker": "distress",
+        "chunk": 8
+      },
+      {
+        "motif_code": "U170",
+        "sequence_order": 39,
+        "source_citation": "I'm on the grass and they're taking me into this black cloud.",
+        "memory_state": "hypnosis",
+        "source_page": "93",
+        "ai_justification": "A black cloud surrounds or engulfs the witness, consistent with U170 (mist, smoke, fog associated with the craft).",
+        "emotional_marker": "fear",
+        "chunk": 8
+      },
+      {
+        "motif_code": "U120",
+        "sequence_order": 40,
+        "source_citation": "a bright light comes out of it. It's so bright",
+        "memory_state": "hypnosis",
+        "source_page": "93",
+        "ai_justification": "A bright light from the cloud/craft immerses the witness, consistent with U120 (beam of light immerses the witness).",
+        "emotional_marker": "overwhelmed",
+        "chunk": 8
+      },
+      {
+        "motif_code": "B221",
+        "sequence_order": 41,
+        "source_citation": "these figures are black . . . and . . . there's no shape to them . . . and they're small",
+        "memory_state": "hypnosis",
+        "source_page": "93",
+        "ai_justification": "The beings are described as small, consistent with B221 (moderately short beings, 4-5 feet). The description of 'small' without further specification fits the short humanoid category.",
+        "emotional_marker": "fear",
+        "chunk": 8
+      },
+      {
+        "motif_code": "E903",
+        "sequence_order": 42,
+        "source_citation": "my body just moves. I didn't want it to move, it just moves. I didn't want it to move, it just moves into this black cloud.",
+        "memory_state": "hypnosis",
+        "source_page": "93",
+        "ai_justification": "The witness's body moves against his will, consistent with B903 mapped to the witness's experience — but this is an effect on the witness. Recoding as E123 (drawing force/levitation) since his body is moved involuntarily toward the craft.",
+        "emotional_marker": "helplessness",
+        "chunk": 8
+      },
+      {
+        "motif_code": "E123",
+        "sequence_order": 42,
+        "source_citation": "my body just moves. I didn't want it to move, it just moves. I didn't want it to move, it just moves into this black cloud.",
+        "memory_state": "hypnosis",
+        "source_page": "93",
+        "ai_justification": "The witness's body is moved against his will toward the cloud/craft, consistent with E123 (levitation: drawing force).",
+        "emotional_marker": "helplessness",
+        "chunk": 8
+      },
+      {
+        "motif_code": "U250",
+        "sequence_order": 43,
+        "source_citation": "It's . . . it's cold. I'm so cold. So cold, It's really . . . cold.",
+        "memory_state": "hypnosis",
+        "source_page": "93",
+        "ai_justification": "The witness experiences intense cold inside the craft/cloud, consistent with U250 (cold interior).",
+        "emotional_marker": "discomfort",
+        "chunk": 8
+      },
+      {
+        "motif_code": "U230",
+        "sequence_order": 44,
+        "source_citation": "It's bright again . . . / There are different lights now and they're all around the room",
+        "memory_state": "hypnosis",
+        "source_page": "93",
+        "ai_justification": "Bright lights all around the room without a specific source, consistent with U230 (bright and uniform lighting without specific source).",
+        "emotional_marker": "disorientation",
+        "chunk": 8
+      },
+      {
+        "motif_code": "X224",
+        "sequence_order": 45,
+        "source_citation": "they're touching me with the lights.",
+        "memory_state": "hypnosis",
+        "source_page": "93",
+        "ai_justification": "Beings use lights to touch/examine the witness, consistent with X224 (light or light beam shines on witness during examination).",
+        "emotional_marker": null,
+        "chunk": 8
+      },
+      {
+        "motif_code": "E120",
+        "sequence_order": 46,
+        "source_citation": "I'm floating . . . it feels like I'm floating",
+        "memory_state": "hypnosis",
+        "source_page": "93",
+        "ai_justification": "The witness experiences a sensation of floating/weightlessness, consistent with E120 (floating effect: apparent weightlessness).",
+        "emotional_marker": null,
+        "chunk": 8
+      },
+      {
+        "motif_code": "B910",
+        "sequence_order": 47,
+        "source_citation": "they don't say anything. . . . I want to talk to them, but they won't say anything . . . they won't say anything.",
+        "memory_state": "hypnosis",
+        "source_page": "93",
+        "ai_justification": "The beings refuse to communicate, remaining silent and impassive, consistent with B910 (beings are impassive).",
+        "emotional_marker": "frustration",
+        "chunk": 8
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 48,
+        "source_citation": "It feels very pleasant . . . it's soft and warm . . . I feel very good. I feel very good. It feels all right now. Nothing happened. Friendly.",
+        "memory_state": "hypnosis",
+        "source_page": "93",
+        "ai_justification": "The witness transitions from distress to calm, pleasant, euphoric feelings, consistent with E300 (pacification effect: witness calm, euphoric, relaxed).",
+        "emotional_marker": "euphoria",
+        "chunk": 8
+      },
+      {
+        "motif_code": "E301",
+        "sequence_order": 49,
+        "source_citation": "Friendly.",
+        "memory_state": "hypnosis",
+        "source_page": "93",
+        "ai_justification": "The witness senses friendliness from the beings, consistent with E301 (friendly effect: witness senses kindness).",
+        "emotional_marker": "warmth",
+        "chunk": 8
+      },
+      {
+        "motif_code": "E205",
+        "sequence_order": 50,
+        "source_citation": "I'm coming out of the cloud . . . I'm walking out of the black cloud . . . I'm on the grass . . . again. Back into the house.",
+        "memory_state": "hypnosis",
+        "source_page": "93",
+        "ai_justification": "The witness is returned to the grass and walks back to his house, consistent with E205 (relocation: witness travels a distance unawares, returned to starting point).",
+        "emotional_marker": "exhaustion",
+        "chunk": 8
+      },
+      {
+        "motif_code": "E212",
+        "sequence_order": 51,
+        "source_citation": "I feel very tired . . . feel very tired. / All my energy . . . they took all my energy.",
+        "memory_state": "hypnosis",
+        "source_page": "99",
+        "ai_justification": "The witness feels extreme tiredness and energy depletion after the encounter, consistent with E212 (lassitude, weakness).",
+        "emotional_marker": "exhaustion",
+        "chunk": 8
+      },
+      {
+        "motif_code": "B220",
+        "sequence_order": 52,
+        "source_citation": "Small. Black. Small.",
+        "memory_state": "hypnosis",
+        "source_page": "99",
+        "ai_justification": "When prompted to describe the beings more clearly, the witness reiterates they are small, consistent with B220 (short, 3.5 feet or less) or B221. Given the emphasis on 'small' the lower category is appropriate.",
+        "emotional_marker": "agitation",
+        "chunk": 8
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 53,
+        "source_citation": "Small. Black. Small. / They look like shadows with eyes",
+        "memory_state": "hypnosis",
+        "source_page": "99",
+        "ai_justification": "The beings are described as black and shadow-like, consistent with B290 (skin white, gray, ashen or claylike) — though the color is dark/black rather than gray. The closest match for their dark, shadow-like appearance.",
+        "emotional_marker": "agitation",
+        "chunk": 8
+      },
+      {
+        "motif_code": "B245",
+        "sequence_order": 54,
+        "source_citation": "Bright eyes.",
+        "memory_state": "hypnosis",
+        "source_page": "99",
+        "ai_justification": "The beings have bright, luminous eyes, consistent with B245 (luminous eyes).",
+        "emotional_marker": null,
+        "chunk": 8
+      },
+      {
+        "motif_code": "B904",
+        "sequence_order": 55,
+        "source_citation": "They have no real will. They're frightened. / They're frightened. I frightened them.",
+        "memory_state": "hypnosis",
+        "source_page": "99",
+        "ai_justification": "The beings are described as lacking will and being frightened of the witness, consistent with B904 (beings are weak, lacking in will, and fearful).",
+        "emotional_marker": null,
+        "chunk": 8
+      },
+      {
+        "motif_code": "B291",
+        "sequence_order": 56,
+        "source_citation": "They feel hollow and empty. They're like shadows.",
+        "memory_state": "hypnosis",
+        "source_page": "99",
+        "ai_justification": "The beings feel hollow and empty to the witness's perception, consistent with B291 (skin cold, sunless, sickly, soft) — describing an insubstantial, sickly quality to the beings.",
+        "emotional_marker": null,
+        "chunk": 8
+      },
+      {
+        "motif_code": "B509",
+        "sequence_order": 57,
+        "source_citation": "They don't like sunlight. I feel that. They don't like sunlight.",
+        "memory_state": "hypnosis",
+        "source_page": "100",
+        "ai_justification": "B509 (Photophobia): The witness senses that the beings retreat from or dislike light/sunlight. This is a direct statement about the beings' aversion to sunlight.",
+        "emotional_marker": "agitation",
+        "chunk": 9
+      },
+      {
+        "motif_code": "B220",
+        "sequence_order": 58,
+        "source_citation": "So small. They're small . . . small.",
+        "memory_state": "hypnosis",
+        "source_page": "100",
+        "ai_justification": "B220 (Short, 3.5 feet or less): The witness repeatedly emphasizes the small size of the beings. The emphasis on 'so small' suggests very short stature.",
+        "emotional_marker": "agitation",
+        "chunk": 9
+      },
+      {
+        "motif_code": "B291",
+        "sequence_order": 59,
+        "source_citation": "Cold. Cold, too. They're cold. Feel cold.",
+        "memory_state": "hypnosis",
+        "source_page": "100",
+        "ai_justification": "B291 (Skin cold, sunless, sickly, soft): The witness describes the beings as cold to the touch, and he himself feels cold in their presence, consistent with the beings having cold skin.",
+        "emotional_marker": "distress",
+        "chunk": 9
+      },
+      {
+        "motif_code": "E120",
+        "sequence_order": 60,
+        "source_citation": "I think I was floating somehow, and they were floating around",
+        "memory_state": "hypnosis",
+        "source_page": "100",
+        "ai_justification": "E120 (Floating effect: apparent weightlessness): The witness describes himself as floating, and the beings floating around him, indicating a weightless or levitation experience.",
+        "emotional_marker": null,
+        "chunk": 9
+      },
+      {
+        "motif_code": "E320",
+        "sequence_order": 61,
+        "source_citation": "I just remember being touched. But that seemed to happen when I went out of the house.",
+        "memory_state": "hypnosis",
+        "source_page": "100",
+        "ai_justification": "E320 (Control by touch or gesture): The witness recalls being touched by the beings early in the encounter, which coincided with the onset of his neck pain and apparent loss of control.",
+        "emotional_marker": null,
+        "chunk": 9
+      },
+      {
+        "motif_code": "A105",
+        "sequence_order": 62,
+        "source_citation": "It was just like a couple of spots on the pillow and a couple of spots on the sheets about waist level. / they were bright red.",
+        "memory_state": "conscious",
+        "source_page": "101",
+        "ai_justification": "A105 (Spots or reddish marks like puncture wounds, soreness): The witness found microscopic bright red blood spots on his pillow and sheets after the encounter, consistent with unexplained puncture-type marks.",
+        "emotional_marker": null,
+        "chunk": 9
+      },
+      {
+        "motif_code": "A104",
+        "sequence_order": 63,
+        "source_citation": "a feeling of apprehension. I just got it in my stomach again.",
+        "memory_state": "conscious",
+        "source_page": "102",
+        "ai_justification": "Howard describes a persistent stomach/abdominal pain and apprehension that he traces back to the time of the encounter, consistent with A104 (general illness, nausea, gastrointestinal problems) as an aftereffect.",
+        "emotional_marker": "apprehension",
+        "chunk": 10
+      },
+      {
+        "motif_code": "B285",
+        "sequence_order": 64,
+        "source_citation": "Long fingers and skinny arms.",
+        "memory_state": "hypnosis",
+        "source_page": "102",
+        "ai_justification": "Howard describes the beings as having long fingers and skinny arms, matching B285 (fingers long and thin) and the general description of spindly limbs.",
+        "emotional_marker": null,
+        "chunk": 10
+      },
+      {
+        "motif_code": "B270",
+        "sequence_order": 65,
+        "source_citation": "skinny arms.",
+        "memory_state": "hypnosis",
+        "source_page": "102",
+        "ai_justification": "The description of 'skinny arms' maps to B270 (arms extraordinarily long and spindly).",
+        "emotional_marker": null,
+        "chunk": 10
+      },
+      {
+        "motif_code": "E320",
+        "sequence_order": 66,
+        "source_citation": "They were touching me. Or something was touching me. It was so physical. I could feel so many physical things happening.",
+        "memory_state": "hypnosis",
+        "source_page": "102",
+        "ai_justification": "Howard describes being touched by the beings with strong physical sensations, consistent with E320 (control by touch or gesture).",
+        "emotional_marker": "distress",
+        "chunk": 10
+      },
+      {
+        "motif_code": "E120",
+        "sequence_order": 67,
+        "source_citation": "It felt like I was floating. / I don't remember my legs walking. I don't remember my limbs moving. I don't remember articulation. Like I was floating into this black cloud.",
+        "memory_state": "hypnosis",
+        "source_page": "102",
+        "ai_justification": "Howard describes a floating sensation with no memory of walking or limb movement, consistent with E120 (floating effect, apparent weightlessness).",
+        "emotional_marker": "disorientation",
+        "chunk": 10
+      },
+      {
+        "motif_code": "X210",
+        "sequence_order": 68,
+        "source_citation": "it felt like they were touching me when I was standing up outside . . . in the grass, and moving or floating me.",
+        "memory_state": "hypnosis",
+        "source_page": "102",
+        "ai_justification": "The beings touched Howard while he was outside, apparently as part of the procurement/examination process, consistent with X210 (beings touch witness in various places, as if examining).",
+        "emotional_marker": null,
+        "chunk": 10
+      },
+      {
+        "motif_code": "U120",
+        "sequence_order": 69,
+        "source_citation": "Occasionally, there was a blinding light . . . a bright light",
+        "memory_state": "hypnosis",
+        "source_page": "102",
+        "ai_justification": "Howard describes a blinding, bright light during the experience, consistent with U120 (beam of light immerses the witness).",
+        "emotional_marker": null,
+        "chunk": 10
+      },
+      {
+        "motif_code": "X210",
+        "sequence_order": 70,
+        "source_citation": "feel them touching me . .. all over.",
+        "memory_state": "hypnosis",
+        "source_page": "103",
+        "ai_justification": "The witness describes beings touching him in various places, consistent with X210: beings touch witness in various places, as if examining.",
+        "emotional_marker": null,
+        "chunk": 11
+      },
+      {
+        "motif_code": "B904",
+        "sequence_order": 71,
+        "source_citation": "It really felt like they had no will. . .. I somehow felt . . . stronger than they were. Somehow. Like . . . there was fear there from them. Somehow, they were fearful.",
+        "memory_state": "hypnosis",
+        "source_page": "103",
+        "ai_justification": "The witness perceives the beings as weak, lacking in will, and fearful, matching B904: Beings are weak, lacking in will, and fearful.",
+        "emotional_marker": null,
+        "chunk": 11
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 72,
+        "source_citation": "And yet you weren't really able to move. / No . . . essentially.",
+        "memory_state": "hypnosis",
+        "source_page": "103",
+        "ai_justification": "The witness confirms he was essentially unable to move, consistent with E315: Paralysis, numbness.",
+        "emotional_marker": null,
+        "chunk": 11
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 73,
+        "source_citation": "Very calm and relaxed. / That seemed to be towards the end. That seemed to be before I went back into the house.",
+        "memory_state": "hypnosis",
+        "source_page": "103",
+        "ai_justification": "The witness describes feeling very calm and relaxed toward the end of the experience, matching E300: Pacification effect: witness calm, euphoric, relaxed.",
+        "emotional_marker": "calm",
+        "chunk": 11
+      },
+      {
+        "motif_code": "A112",
+        "sequence_order": 74,
+        "source_citation": "No. There's nothing there. / No, I don't think there's anything there. / I don't think there's anything . . . (nervous laugh). / Well, maybe in the spring when it gets a little warmer, or something. There really is nothing.",
+        "memory_state": "conscious",
+        "source_page": "103",
+        "ai_justification": "Howard strongly and irrationally resists revisiting the encounter site, consistent with A112: Witness feels alarmed on passing a certain place or encountering a certain situation.",
+        "emotional_marker": "anxiety",
+        "chunk": 11
+      },
+      {
+        "motif_code": "A115",
+        "sequence_order": 75,
+        "source_citation": "I'm feeling O.K. right now, but I had a terrible night. I really didn't sleep very much.",
+        "memory_state": "conscious",
+        "source_page": "103",
+        "ai_justification": "Howard reports a terrible night with very little sleep following the hypnotic recall, consistent with A115: Nightmares or abduction dreams, often recurrent.",
+        "emotional_marker": "distress",
+        "chunk": 11
+      },
+      {
+        "motif_code": "A114",
+        "sequence_order": 76,
+        "source_citation": "he had suffered from a powerful sense of having done something forbidden, of having betrayed an important injunction not to remember and not to tell what happened to him.",
+        "memory_state": "conscious",
+        "source_page": "103",
+        "ai_justification": "Howard feels a powerful compulsion that he has violated a prohibition against remembering or telling, matching A114: Witness feels obliged to keep experience a secret.",
+        "emotional_marker": "guilt",
+        "chunk": 11
+      },
+      {
+        "motif_code": "E208",
+        "sequence_order": 77,
+        "source_citation": "Tense. Tensely tired and apprehensive.",
+        "memory_state": "hypnosis",
+        "source_page": "104",
+        "ai_justification": "Howard describes a premonitory sense of unease and danger before the encounter begins, matching E208 (Premonition: sense that something will happen).",
+        "emotional_marker": "apprehension",
+        "chunk": 12
+      },
+      {
+        "motif_code": "E215",
+        "sequence_order": 78,
+        "source_citation": "It doesn't feel safe.",
+        "memory_state": "hypnosis",
+        "source_page": "104",
+        "ai_justification": "Howard's feeling that it is not safe, without a rational basis, represents an inappropriate or uncharacteristic response suggesting external influence (E215).",
+        "emotional_marker": "fear",
+        "chunk": 12
+      },
+      {
+        "motif_code": "E327",
+        "sequence_order": 79,
+        "source_citation": "Howard, sitting quietly indoors, sees a strange light fill the room and says, 'It's done something to me.'",
+        "memory_state": "hypnosis",
+        "source_page": "104",
+        "ai_justification": "A beam or strange light fills the room and exerts control over Howard, matching E327 (Beam of light controls witness).",
+        "emotional_marker": "shock",
+        "chunk": 12
+      },
+      {
+        "motif_code": "E215",
+        "sequence_order": 80,
+        "source_citation": "Howard gets up, puts on his sweater, and goes out to the back of the house.",
+        "memory_state": "hypnosis",
+        "source_page": "104",
+        "ai_justification": "Howard performs actions he is 'supposed to do' under apparent external control, representing inappropriate or uncharacteristic behavior (E215).",
+        "emotional_marker": null,
+        "chunk": 12
+      },
+      {
+        "motif_code": "E216",
+        "sequence_order": 81,
+        "source_citation": "Howard takes a loaded gun with him when he goes outside. Neither action is realized. / Howard drops his weapon.",
+        "memory_state": "hypnosis",
+        "source_page": "104",
+        "ai_justification": "Howard carries a gun for self-defense but is unable to use it and drops it, matching E216 (Denial of defense impulse).",
+        "emotional_marker": null,
+        "chunk": 12
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 82,
+        "source_citation": "I feel like I can't move.",
+        "memory_state": "hypnosis",
+        "source_page": "104",
+        "ai_justification": "Howard describes being unable to move, matching E315 (Paralysis, numbness).",
+        "emotional_marker": "fear",
+        "chunk": 12
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 83,
+        "source_citation": "There are some people there and they're looking at me.",
+        "memory_state": "hypnosis",
+        "source_page": "104",
+        "ai_justification": "Howard describes beings appearing and looking at him. The investigator's broader context identifies these as UFO occupants/humanoids (B201).",
+        "emotional_marker": "fear",
+        "chunk": 12
+      },
+      {
+        "motif_code": "E120",
+        "sequence_order": 84,
+        "source_citation": "It felt like I was floating . . . I don't remember my legs walking. I don't remember my limbs moving. I don't remember articulation.",
+        "memory_state": "hypnosis",
+        "source_page": "105",
+        "ai_justification": "Howard describes a floating sensation with no memory of his limbs moving, matching E120 (Floating effect: apparent weightlessness).",
+        "emotional_marker": "disorientation",
+        "chunk": 12
+      },
+      {
+        "motif_code": "B903",
+        "sequence_order": 85,
+        "source_citation": "They're trying to move me.",
+        "memory_state": "hypnosis",
+        "source_page": "104",
+        "ai_justification": "The beings attempt to physically move Howard against his will, matching B903 (Beings force or compel witness against his will).",
+        "emotional_marker": "fear",
+        "chunk": 12
+      },
+      {
+        "motif_code": "A112",
+        "sequence_order": 86,
+        "source_citation": "Howard's repeated refusals to allow me to visit the site of his encounter seemed a product of this same kind of deeply implanted threat.",
+        "memory_state": "conscious",
+        "source_page": "104",
+        "ai_justification": "Howard's persistent refusal to revisit the encounter site reflects A112 (Witness feels alarmed on passing a certain place), attributed by the investigator to a deeply implanted threat.",
+        "emotional_marker": "fear",
+        "chunk": 12
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 87,
+        "source_citation": "I can't move! I can't take one little step! They know it, too.",
+        "memory_state": "hypnosis",
+        "source_page": "106",
+        "ai_justification": "Howard Rich describes complete paralysis and inability to move, matching E315 (Paralysis, numbness). He is immobilized and aware the beings know of his condition.",
+        "emotional_marker": "terror",
+        "chunk": 13
+      },
+      {
+        "motif_code": "E120",
+        "sequence_order": 88,
+        "source_citation": "Howard's being floated bodily inside is common.",
+        "memory_state": "hypnosis",
+        "source_page": "106",
+        "ai_justification": "The investigator paraphrases Howard Rich's experience of being floated bodily into the UFO, matching E120 (Floating effect: apparent weightlessness).",
+        "emotional_marker": null,
+        "chunk": 13
+      },
+      {
+        "motif_code": "B904",
+        "sequence_order": 89,
+        "source_citation": "They're frightened. I frightened them. I can feel it.",
+        "memory_state": "hypnosis",
+        "source_page": "106",
+        "ai_justification": "Howard Rich directly states the beings were frightened of him, matching B904 (Beings are weak, lacking in will, and fearful).",
+        "emotional_marker": null,
+        "chunk": 13
+      },
+      {
+        "motif_code": "B225",
+        "sequence_order": 90,
+        "source_citation": "I'm stronger than they are",
+        "memory_state": "hypnosis",
+        "source_page": "106",
+        "ai_justification": "Howard Rich states he is stronger than the beings, implying they have slight musculature or spindly build, matching B225 (Spindly build, slight musculature).",
+        "emotional_marker": null,
+        "chunk": 13
+      },
+      {
+        "motif_code": "C110",
+        "sequence_order": 91,
+        "source_citation": "They know it, too.",
+        "memory_state": "hypnosis",
+        "source_page": "106",
+        "ai_justification": "Howard Rich senses the beings know his state and can feel their emotions, implying telepathic awareness between witness and beings, matching C110 (Subject hears voice in his head or understands meanings).",
+        "emotional_marker": null,
+        "chunk": 13
+      },
+      {
+        "motif_code": "E208",
+        "sequence_order": 92,
+        "source_citation": "a gradual sense of dread, of something 'about to happen,'",
+        "memory_state": "hypnosis",
+        "source_page": "107",
+        "ai_justification": "Howard Rich (grouped with Steven Kilburn) experienced a premonition or sense that something was about to happen, matching E208 (Premonition: sense that something will happen).",
+        "emotional_marker": "dread",
+        "chunk": 14
+      },
+      {
+        "motif_code": "E215",
+        "sequence_order": 93,
+        "source_citation": "followed by a definite response to some kind of (telepathic?) order: get out of the car, go outside behind the house, etc.",
+        "memory_state": "hypnosis",
+        "source_page": "107",
+        "ai_justification": "The witness responds to an apparent telepathic command by performing uncharacteristic actions (going outside), matching E215 (Inappropriate response or uncharacteristic behavior).",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 94,
+        "source_citation": "and finally an absolute muscular paralysis which renders them helpless.",
+        "memory_state": "hypnosis",
+        "source_page": "107",
+        "ai_justification": "The witness experiences total muscular paralysis, matching E315 (Paralysis, numbness).",
+        "emotional_marker": "helplessness",
+        "chunk": 14
+      },
+      {
+        "motif_code": "X155",
+        "sequence_order": 95,
+        "source_citation": "which takes place almost invariably on a high, flat table inside a curved room.",
+        "memory_state": "hypnosis",
+        "source_page": "107",
+        "ai_justification": "The witness lies on an examining table, matching X155 (The witness lies on an examining table or couch).",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "U212",
+        "sequence_order": 96,
+        "source_citation": "inside a curved room.",
+        "memory_state": "hypnosis",
+        "source_page": "107",
+        "ai_justification": "The examination takes place in a curved room, matching U212 (Round, domed, without sharp edges).",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 97,
+        "source_citation": "The captive is somehow tranquilized, made to feel at ease, sometimes even quite happy and contented.",
+        "memory_state": "hypnosis",
+        "source_page": "107",
+        "ai_justification": "The witness is pacified and made to feel calm and euphoric during the examination, matching E300 (Pacification effect: witness calm, euphoric, relaxed).",
+        "emotional_marker": "calm, happy",
+        "chunk": 14
+      },
+      {
+        "motif_code": "X224",
+        "sequence_order": 98,
+        "source_citation": "There are different lights now and they're all around the room and they're touching me with the lights.",
+        "memory_state": "hypnosis",
+        "source_page": "107",
+        "ai_justification": "Beings use lights to touch/examine the witness, matching X224 (Light or light beam shines on witness).",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "E120",
+        "sequence_order": 99,
+        "source_citation": "I'm floating . . . it feels like I'm floating",
+        "memory_state": "hypnosis",
+        "source_page": "107",
+        "ai_justification": "The witness experiences a sensation of floating/weightlessness during the examination, matching E120 (Floating effect: apparent weightlessness).",
+        "emotional_marker": "pleasant",
+        "chunk": 14
+      },
+      {
+        "motif_code": "B905",
+        "sequence_order": 100,
+        "source_citation": "I want to talk to them, but they won't say anything . . . they won't say anything.",
+        "memory_state": "hypnosis",
+        "source_page": "107",
+        "ai_justification": "The beings refuse to communicate with the witness despite his desire to talk, matching B905 (Beings behave in a cold, indifferent, insensitive manner).",
+        "emotional_marker": "frustration",
+        "chunk": 14
+      },
+      {
+        "motif_code": "E302",
+        "sequence_order": 101,
+        "source_citation": "It feels very pleasant . . . it's soft and warm . . . I feel very good. I feel very good.",
+        "memory_state": "hypnosis",
+        "source_page": "107",
+        "ai_justification": "The witness experiences a sense of pleasant warmth and wellbeing during the examination, matching E302 (Rapture effect: sense of joy, beauty).",
+        "emotional_marker": "joy, warmth",
+        "chunk": 14
+      },
+      {
+        "motif_code": "E327",
+        "sequence_order": 102,
+        "source_citation": "Howard's feelings that the light in his room has 'done something to him,'",
+        "memory_state": "hypnosis",
+        "source_page": "108",
+        "ai_justification": "The investigator paraphrases Howard Rich's testimony that a light affected or controlled him, consistent with E327 (beam of light controls witness).",
+        "emotional_marker": "disturbed",
+        "chunk": 15
+      },
+      {
+        "motif_code": "E215",
+        "sequence_order": 103,
+        "source_citation": "his apparently involuntary action: 'Getting up . . . walk to the back of the house.'",
+        "memory_state": "hypnosis",
+        "source_page": "108",
+        "ai_justification": "Howard Rich describes getting up and walking involuntarily, an uncharacteristic behavior suggesting external control, matching E215 (inappropriate response or uncharacteristic behavior).",
+        "emotional_marker": "compelled",
+        "chunk": 15
+      },
+      {
+        "motif_code": "U120",
+        "sequence_order": 104,
+        "source_citation": "'There's another light.'",
+        "memory_state": "hypnosis",
+        "source_page": "108",
+        "ai_justification": "Howard Rich encounters another light at the back of the house, consistent with U120 (beam of light immerses the witness), as the light is part of the capture sequence drawing him outside.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 105,
+        "source_citation": "getting numb . .. all over . . . getting numb . . .. Oh! Oh! Oh! Can't move . . . can't move.",
+        "memory_state": "hypnosis",
+        "source_page": "109",
+        "ai_justification": "Howard describes total physical numbness and inability to move, consistent with paralysis effect during the approach of captors.",
+        "emotional_marker": "terror",
+        "chunk": 16
+      },
+      {
+        "motif_code": "E213",
+        "sequence_order": 106,
+        "source_citation": "It would seem that David had somehow been 'selected' for abduction and examination. The least 'convenient' of the three was apparently the only one taken.",
+        "memory_state": "hypnosis",
+        "source_page": "109",
+        "ai_justification": "Howard was selected from a group of three witnesses for abduction while the other two were left behind in suspended animation, matching the preference motif where one witness is taken and others left.",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "U253",
+        "sequence_order": 107,
+        "source_citation": "He cries out in obvious physical pain and complains that he is unable to breathe.",
+        "memory_state": "hypnosis",
+        "source_page": "109",
+        "ai_justification": "The witness reports inability to breathe inside the craft, consistent with noxious or difficult-to-breathe air inside the ship.",
+        "emotional_marker": "pain",
+        "chunk": 16
+      },
+      {
+        "motif_code": "X225",
+        "sequence_order": 108,
+        "source_citation": "He describes something above his head which makes him vibrate.",
+        "memory_state": "hypnosis",
+        "source_page": "109",
+        "ai_justification": "A device positioned above the witness's head that causes physical vibration is consistent with a scanning device descending from above during examination.",
+        "emotional_marker": "distress",
+        "chunk": 16
+      },
+      {
+        "motif_code": "E120",
+        "sequence_order": 109,
+        "source_citation": "I am not walking. I am moving . . . without . . . thinking. / I don't remember my legs walking. I don't remember my limbs moving. I don't remember articulation.",
+        "memory_state": "hypnosis",
+        "source_page": "109",
+        "ai_justification": "Howard describes moving without walking or conscious limb movement, consistent with the floating/weightlessness effect reported during transport within the craft.",
+        "emotional_marker": "calm",
+        "chunk": 16
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 110,
+        "source_citation": "I'm feeling relaxed . . . very relaxed.",
+        "memory_state": "hypnosis",
+        "source_page": "109",
+        "ai_justification": "The witness transitions from terror and pain to feeling very relaxed, consistent with the pacification effect imposed by the beings.",
+        "emotional_marker": "calm",
+        "chunk": 16
+      },
+      {
+        "motif_code": "E311",
+        "sequence_order": 111,
+        "source_citation": "My hands are tingling . . . hands are getting . . . cramps.",
+        "memory_state": "hypnosis",
+        "source_page": "109",
+        "ai_justification": "Tingling and cramping in the hands upon return is consistent with the electrical/tingling sensation effect associated with abduction.",
+        "emotional_marker": "discomfort",
+        "chunk": 16
+      },
+      {
+        "motif_code": "E320",
+        "sequence_order": 112,
+        "source_citation": "Something is . . . holding my hand . . . and it's all right.",
+        "memory_state": "hypnosis",
+        "source_page": "109",
+        "ai_justification": "A being holds the witness's hand with a calming effect, consistent with control by touch or gesture that reassures the witness.",
+        "emotional_marker": "reassurance",
+        "chunk": 16
+      },
+      {
+        "motif_code": "E202",
+        "sequence_order": 113,
+        "source_citation": "his friends are still inside, apparently in a state of suspended animation.",
+        "memory_state": "hypnosis",
+        "source_page": "109",
+        "ai_justification": "The other witnesses remained unconscious and immobilized in the car during the abduction, consistent with witnesses rendered unconscious and immobilized.",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 114,
+        "source_citation": "'What . . . what time is it?' 'It's . . . ten-twenty-seven.' Ten . . . twenty- . . . seven. 'Why are we late?'",
+        "memory_state": "hypnosis",
+        "source_page": "109",
+        "ai_justification": "The witnesses discover they are inexplicably late, with approximately two hours unaccounted for, consistent with the time lapse effect.",
+        "emotional_marker": "confusion",
+        "chunk": 16
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 115,
+        "source_citation": "Neither Steven Kilburn nor Howard Rich consciously remembered either. In their cases, there were almost no clues to indicate any sort of UFO encounter.",
+        "memory_state": "hypnosis",
+        "source_page": "110",
+        "ai_justification": "The investigator confirms that Howard Rich had no conscious memory of the UFO encounter or the time lapse, indicating a complete time lapse (E200) that was only recovered through hypnotic regression.",
+        "emotional_marker": null,
+        "chunk": 17
+      }
+    ],
+    "model_name": "claude-opus-4-6",
+    "profile_used": "baseline_test",
+    "run_timestamp": "2026-04-02T10:37:03.205024"
+  }
+}

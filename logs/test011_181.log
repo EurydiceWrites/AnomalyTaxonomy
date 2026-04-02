@@ -1,0 +1,242 @@
+
+[Front Matter] Scanning pages 1-181 for source attribution...
+    [OCR] Front-matter page 1... done.
+    [*] Source attribution satisfied after page 1.
+
+=== SOURCE ATTRIBUTION ===
+  Title:       Missing Time
+  Author:      Budd Hopkins
+  Role:        author
+  Publisher:   Ballantine
+  Complete:    True
+=== END ATTRIBUTION ===
+
+[Step 0] Extracting text from PDF: Budd Hopkins - Missing Time [OCR].pdf
+         Pages 182 to 213
+    [!] Page numbers detected but inconsistent — clearing. Source pages will need manual entry.
+    [*] Extracted 32 pages, 73,484 characters.
+
+[*] Extracted text saved to: staging\extracted_text_Budd_Hopkins_-_Missing_Time__OCR__182-213.txt
+
+[Step 1] Running metadata scan via Gemini Flash...
+    [*] Scan complete.
+    [*] Author role upgraded to 'investigator': Budd Hopkins
+
+=== METADATA SCAN RESULTS ===
+Source:     Budd Hopkins - Missing Time [OCR].pdf (pages 182-213)
+Subject:    Virginia Horton
+Type:       investigation
+Location:   France (Alsatian woods) and North America (farmyard)
+Date:       1950 and 1960
+Retrieval:  hypnosis
+Summary:    The text details two abduction experiences of Virginia Horton, recalled under hypnosis. The first, in 1950 at age six, involved an incision that left a scar, with her parents having no memory of its origin. The second, in 1960 as an adolescent in France, involved being lured into the woods by a telepathic "deer" that was actually a disguised humanoid. Onboard the UFO, she participated in a "celebration" for the entities' research success, during which blood and tissue samples were taken from her nose. She also recalled a brief trip into space to view Earth. Investigator Budd Hopkins analyzes these accounts, noting parallels with other abduction cases, particularly regarding memory suppression, physical examinations, and the use of soothing words to reduce resistance.
+---
+Investigator:  Budd Hopkins
+Witnesses:     1
+Entity Types:  Grey, humanoid, shapeshifter
+Structure:     investigation
+Source Pages:  182-213
+=== END SCAN ===
+
+[*] Pipeline JSON saved to: staging\virginia_horton_missing_time_metadata.json
+
+=================================================================
+  PIPELINE METADATA — REVIEW BEFORE PROCEEDING
+=================================================================
+
+  Source text:  staging\extracted_text_Budd_Hopkins_-_Missing_Time__OCR__182-213.txt
+  PDF pages:   182-213
+  Source pages: 182-213
+
+  Experiencer:  Virginia Horton
+  Gender:       female
+  Age:          6 (1950) and 16 (1960)
+  Type:         investigation
+  Structure:    investigation
+  Retrieval:    hypnosis
+  Investigator: Budd Hopkins
+  Location:     France (Alsatian woods) and North America (farmyard)
+  Date:         1950 and 1960
+  Entities:     Grey, humanoid, shapeshifter
+  Summary:      The text details two abduction experiences of Virginia Horton, recalled under hypnosis. The first, i...
+
+  Author:       Budd Hopkins
+  Title:        Missing Time
+  Role:         investigator
+
+=================================================================
+
+Metadata looks correct? [y/n/edit]: [*] Metadata confirmed. Ready for Step 3 (extraction).
+
+[*] Starting Step 3: Extraction via extract_narrative() (model: claude-opus-4-6)...
+[*] Pipeline mode: reading from staging\virginia_horton_missing_time_metadata.json
+    Text source: staging\extracted_text_Budd_Hopkins_-_Missing_Time__OCR__182-213.txt
+Divided the narrative into 25 high-detail chunks.
+[*] Loaded 550 motif codes from motif_key.json
+[*] Retrieval method: hypnosis
+[*] Narrative structure: investigation
+[*] Experiencer name: Virginia Horton
+[*] Claude system prompt: 1148034 chars (will be cached by Anthropic)
+Sending raw text to Claude using prompt caching...
+
+
+--- PROCESSING CHUNK 1 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    890 tokens
+  -> Extracted 3 motif events from this chunk.
+
+--- PROCESSING CHUNK 2 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    889 tokens
+  -> Extracted 4 motif events from this chunk.
+
+--- PROCESSING CHUNK 3 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    972 tokens
+  -> Extracted 7 motif events from this chunk.
+
+--- PROCESSING CHUNK 4 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    969 tokens
+  -> Extracted 17 motif events from this chunk.
+
+--- PROCESSING CHUNK 5 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    941 tokens
+  -> Extracted 14 motif events from this chunk.
+
+--- PROCESSING CHUNK 6 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    943 tokens
+  -> Extracted 7 motif events from this chunk.
+
+--- PROCESSING CHUNK 7 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    942 tokens
+  -> Extracted 6 motif events from this chunk.
+
+--- PROCESSING CHUNK 8 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    923 tokens
+  -> Extracted 6 motif events from this chunk.
+
+--- PROCESSING CHUNK 9 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    939 tokens
+  -> Extracted 7 motif events from this chunk.
+
+--- PROCESSING CHUNK 10 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    976 tokens
+  -> Extracted 8 motif events from this chunk.
+
+--- PROCESSING CHUNK 11 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    964 tokens
+  -> Extracted 10 motif events from this chunk.
+
+--- PROCESSING CHUNK 12 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    918 tokens
+  -> Extracted 5 motif events from this chunk.
+
+--- PROCESSING CHUNK 13 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    1004 tokens
+  -> Extracted 8 motif events from this chunk.
+
+--- PROCESSING CHUNK 14 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    952 tokens
+  -> Extracted 4 motif events from this chunk.
+
+--- PROCESSING CHUNK 15 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    950 tokens
+  -> Extracted 5 motif events from this chunk.
+
+--- PROCESSING CHUNK 16 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    945 tokens
+  -> Extracted 11 motif events from this chunk.
+
+--- PROCESSING CHUNK 17 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    961 tokens
+  -> Extracted 10 motif events from this chunk.
+
+--- PROCESSING CHUNK 18 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    961 tokens
+  -> Extracted 9 motif events from this chunk.
+
+--- PROCESSING CHUNK 19 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    947 tokens
+  -> Extracted 13 motif events from this chunk.
+
+--- PROCESSING CHUNK 20 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    992 tokens
+  -> Extracted 5 motif events from this chunk.
+
+--- PROCESSING CHUNK 21 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    923 tokens
+  -> Extracted 5 motif events from this chunk.
+
+--- PROCESSING CHUNK 22 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    875 tokens
+  -> Extracted 9 motif events from this chunk.
+
+--- PROCESSING CHUNK 23 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    1006 tokens
+  -> Extracted 3 motif events from this chunk.
+
+--- PROCESSING CHUNK 24 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    889 tokens
+  -> Extracted 3 motif events from this chunk.
+
+--- PROCESSING CHUNK 25 OF 25 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    901 tokens
+  -> Extracted 6 motif events from this chunk.
+
+SUCCESS! Extraction complete.
+Subject: Unknown
+Date: None
+Summary: 
+
+[*] After deduplication: 185 events (from 185 raw)
+[*] Extraction results merged back into: staging\virginia_horton_missing_time_metadata.json
+
+[*] Extraction complete: 185 events
+[*] Results merged into: staging\virginia_horton_missing_time_metadata.json
