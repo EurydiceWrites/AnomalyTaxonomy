@@ -1,0 +1,196 @@
+{
+  "case_number": "180a",
+  "model": "claude-opus-4-6",
+  "ground_truth_count": 16,
+  "ai_count": 18,
+  "exact_matches": 11,
+  "near_misses": 2,
+  "ai_extras": 5,
+  "ai_misses": 3,
+  "match_rate": 68.8,
+  "combined_rate": 81.2,
+  "exact_match_codes": [
+    "A100",
+    "A107",
+    "E123",
+    "E201",
+    "E300",
+    "U101",
+    "U134",
+    "U202",
+    "X155",
+    "X222",
+    "X225"
+  ],
+  "near_miss_details": [
+    [
+      "E200",
+      "E203",
+      3
+    ],
+    [
+      "E213",
+      "E218",
+      5
+    ]
+  ],
+  "missed_codes": [
+    "A110",
+    "U120",
+    "W415"
+  ],
+  "extra_codes": [
+    "U131",
+    "U230",
+    "X247",
+    "W400",
+    "B100"
+  ],
+  "ai_events": [
+    {
+      "sequence": 1,
+      "motif_code": "E218",
+      "citation": "The witness reMeMbered his faMily driving back to a parking lot at night to find his brother's coat",
+      "reasoning": "The family returns to a parking lot at night for a mundane reason, which places them in the situation where the abduction occurs—an act without knowing why it would lead to an extraordinary event.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 2,
+      "motif_code": "U101",
+      "citation": "he recalled a Metallic disc with a luMinous geodesic doMe (or a sphere)",
+      "reasoning": "The witness describes a metallic disc with a luminous dome, fitting the domed disk shape category.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 3,
+      "motif_code": "A100",
+      "citation": "the light irritated his eyes",
+      "reasoning": "The light from the craft caused eye irritation, a recognized physical aftereffect of UFO encounters.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 4,
+      "motif_code": "U134",
+      "citation": "This object landed on vertical supports",
+      "reasoning": "The craft landed on vertical supports, which constitutes landing gear.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 5,
+      "motif_code": "U131",
+      "citation": "a wedgelike section opened",
+      "reasoning": "A wedge-shaped section of the craft opened, serving as a door or entry point.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 6,
+      "motif_code": "E123",
+      "citation": "He felt hiMself drawn into the ship, perhaps by flotation or carried on a stretcher",
+      "reasoning": "The witness felt a drawing force pulling him into the craft, consistent with levitation/drawing force.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 7,
+      "motif_code": "E201",
+      "citation": "He felt hiMself drawn into the ship, perhaps by flotation or carried on a stretcher, and found hiMself lying down in a hospital-like rooM",
+      "reasoning": "The witness transitions from being drawn into the ship to finding himself already lying down inside with no memory of the transition, indicating doorway amnesia.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 8,
+      "motif_code": "U202",
+      "citation": "found hiMself lying down in a hospital-like rooM",
+      "reasoning": "The room is described as hospital-like, consistent with an examination room.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 9,
+      "motif_code": "X155",
+      "citation": "found hiMself lying down in a hospital-like rooM",
+      "reasoning": "The witness is lying down, consistent with being on an examining table or couch.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 10,
+      "motif_code": "U230",
+      "citation": "where light surrounded hiM",
+      "reasoning": "Light surrounded the witness uniformly in the room, consistent with bright uniform lighting without a specific source.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 11,
+      "motif_code": "E300",
+      "citation": "His initial anxiety gave way to relaxation",
+      "reasoning": "The witness's fear was replaced by calm relaxation, a classic pacification effect.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 12,
+      "motif_code": "X222",
+      "citation": "an arMlike device Made an incision in his leg, taking out soMething or reMoving a saMple",
+      "reasoning": "An instrument made an incision in the witness's leg, fitting the code for incisions made for unknown purposes.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 13,
+      "motif_code": "X247",
+      "citation": "taking out soMething or reMoving a saMple",
+      "reasoning": "The beings removed something from the witness's leg, which could be the removal of an implanted device, consistent with Bullard's catalogue noting this case for implant removal.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 14,
+      "motif_code": "A107",
+      "citation": "A scar reMained.",
+      "reasoning": "A scar remained from the incision, constituting a linear or circular scar as a physical aftereffect.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 15,
+      "motif_code": "X225",
+      "citation": "An eyelike device (or intent organic eye) appeared above hiM",
+      "reasoning": "An eyelike device appeared above the witness, consistent with the scanning eye device descending from the ceiling.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 16,
+      "motif_code": "W400",
+      "citation": "he seeMed to fly through space and see stars",
+      "reasoning": "The witness perceived scenes of space and stars, consistent with otherworldly scenes appearing through a window or viewscreen.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 17,
+      "motif_code": "E203",
+      "citation": "He did not recall what happened to the rest of his faMily",
+      "reasoning": "The witness could not remember what happened to his family members during the event, indicating differential memory among multiple witnesses present.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 18,
+      "motif_code": "B100",
+      "citation": "nor did he see any beings",
+      "reasoning": "No beings were visually observed, yet the examination was carried out, implying beings were present but unseen.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    }
+  ],
+  "stripped_text": "\"Philip Osborne\" I 6-7 <?> I au~~er 1949-50 I S~okey Mtna., Tenn.\ntion: Ted Bloecher, Budd Hopkins; hypnosis by Dr.\nClaMar, April-June 1979, April 1980.\n: 5(4)\nCapture. The witness reMeMbered his faMily driving\nback to a parking lot at night to find his brother's coat, and\nsoMething frightening happened there ( 156>. His MeMories\nunder hypnosis were disjointed and vague, but he recalled a\nMetallic disc with a luMinous geodesic doMe (or a sphere), and\nthe light irritated his eyes. This object landed on vertical\nsupports and a wedgelike section opened ( 158-9, 162, 164).\nExaMination. He felt hiMself drawn into the ship,\nperhaps by flotation or carried on a stretcher ( 159, 164>, and\nd hiMself lying down in a hospital-like rooM, where light\n(?) surrounded hiM. His initial anxiety gave way to relaxation\ne an arMlike device Made an incision in his leg, taking\nout soMething or reMoving a saMple. A scar reMained. An eye\n<? > like device (or intent organic eye) appeared above hiM, and he\nseeMed to fly through space and see stars <159-165). He did\n(?) not recall what happened to the rest of his faMily, nor did he\nsee any beings."
+}

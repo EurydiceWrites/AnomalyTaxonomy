@@ -1,0 +1,82 @@
+{
+  "model": "claude-opus-4-6",
+  "profile": "baseline_test",
+  "cases": [
+    {
+      "case_number": "084",
+      "ground_truth_count": 52,
+      "ai_count": 64,
+      "exact_matches": 43,
+      "near_misses": 4,
+      "ai_extras": 17,
+      "ai_misses": 5,
+      "match_rate": 82.7,
+      "combined_rate": 90.4
+    },
+    {
+      "case_number": "069",
+      "ground_truth_count": 9,
+      "ai_count": 22,
+      "exact_matches": 3,
+      "near_misses": 2,
+      "ai_extras": 17,
+      "ai_misses": 4,
+      "match_rate": 33.3,
+      "combined_rate": 55.6
+    },
+    {
+      "case_number": "180a",
+      "ground_truth_count": 16,
+      "ai_count": 18,
+      "exact_matches": 11,
+      "near_misses": 2,
+      "ai_extras": 5,
+      "ai_misses": 3,
+      "match_rate": 68.8,
+      "combined_rate": 81.2
+    },
+    {
+      "case_number": "180b",
+      "ground_truth_count": 18,
+      "ai_count": 18,
+      "exact_matches": 13,
+      "near_misses": 2,
+      "ai_extras": 3,
+      "ai_misses": 3,
+      "match_rate": 72.2,
+      "combined_rate": 83.3
+    },
+    {
+      "case_number": "181a",
+      "ground_truth_count": 22,
+      "ai_count": 38,
+      "exact_matches": 8,
+      "near_misses": 5,
+      "ai_extras": 25,
+      "ai_misses": 9,
+      "match_rate": 36.4,
+      "combined_rate": 59.1
+    },
+    {
+      "case_number": "181b",
+      "ground_truth_count": 13,
+      "ai_count": 19,
+      "exact_matches": 7,
+      "near_misses": 2,
+      "ai_extras": 10,
+      "ai_misses": 4,
+      "match_rate": 53.8,
+      "combined_rate": 69.2
+    }
+  ],
+  "totals": {
+    "ground_truth": 130,
+    "ai_count": 179,
+    "exact_matches": 85,
+    "near_misses": 17,
+    "ai_extras": 77,
+    "ai_misses": 28,
+    "match_rate": 65.4,
+    "combined_rate": 78.5
+  }
+}

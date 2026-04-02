@@ -5,7 +5,7 @@ Contains:
 - build_page_map()      — tracks Bullard/PDF page markers per line
 - slice_case_text()     — extracts text block using line boundaries
 - build_chunks()        — splits text into page-stamped chunks
-- process_case()        — sends chunks to Gemini and inserts results into DB
+- process_case()        — sends chunks to LLM (via llm_bridge) and inserts results into DB
 - RETRIEVAL_CONTEXT_MAP — maps retrieval methods to LLM context instructions
 """
 
@@ -13,7 +13,7 @@ import json
 import re
 import time
 
-from google.genai import types
+from llm_bridge import call_model
 
 
 # ---------------------------------------------------------------------------
@@ -74,7 +74,8 @@ def build_chunks(extraction_text, chunk_size=3500):
 
 
 def process_case(case_number, enc_id, extraction_text, master_prompt_template,
-                 retrieval_context, valid_motifs, cursor, client, run_ts):
+                 retrieval_context, valid_motifs, cursor, run_ts,
+                 model="gemini-2.5-pro"):
     """
     Extract motifs for one case and insert into DB.
     extraction_text is the pre-sliced text from header_map line boundaries.
@@ -97,21 +98,19 @@ def process_case(case_number, enc_id, extraction_text, master_prompt_template,
         retries = 3
         while not success and retries > 0:
             try:
-                response = client.models.generate_content(
-                    model='gemini-3.1-pro-preview',
-                    contents=full_prompt,
-                    config=types.GenerateContentConfig(
-                        response_mime_type="application/json",
-                        temperature=0.0
-                    )
+                events = call_model(
+                    text=full_prompt,
+                    system_prompt="",
+                    model=model,
+                    temperature=0.0,
                 )
-                data = json.loads(response.text)
-                events = data if isinstance(data, list) else data.get('motifs', [])
+                if not isinstance(events, list):
+                    events = events.get('motifs', []) if isinstance(events, dict) else []
                 for ev in events:
                     ev['_bullard_page'] = chunk['bullard_page']
                     ev['_pdf_page'] = chunk['pdf_page']
                 all_events.extend(events)
-                print(f"→ {len(events)} motifs")
+                print(f"-> {len(events)} motifs")
                 success = True
                 time.sleep(4)
             except Exception as e:

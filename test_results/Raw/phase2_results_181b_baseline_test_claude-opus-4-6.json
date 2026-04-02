@@ -1,0 +1,206 @@
+{
+  "case_number": "181b",
+  "model": "claude-opus-4-6",
+  "ground_truth_count": 13,
+  "ai_count": 19,
+  "exact_matches": 7,
+  "near_misses": 2,
+  "ai_extras": 10,
+  "ai_misses": 4,
+  "match_rate": 53.8,
+  "combined_rate": 69.2,
+  "exact_match_codes": [
+    "A100",
+    "B211",
+    "B914",
+    "C110",
+    "E200",
+    "U104",
+    "X235"
+  ],
+  "near_miss_details": [
+    [
+      "C200",
+      "C201",
+      1
+    ],
+    [
+      "A112",
+      "A108",
+      4
+    ]
+  ],
+  "missed_codes": [
+    "E124",
+    "B900",
+    "B901",
+    "E201"
+  ],
+  "extra_codes": [
+    "U133.1",
+    "B801",
+    "B223",
+    "B806",
+    "B365",
+    "M125",
+    "X222",
+    "B711",
+    "W400",
+    "T121"
+  ],
+  "ai_events": [
+    {
+      "sequence": 1,
+      "motif_code": "U104",
+      "citation": "she approached a top-shaped, lighted craft",
+      "reasoning": "The craft is described as 'top-shaped,' which matches the bell, mushroom or top shape category.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 2,
+      "motif_code": "C110",
+      "citation": "heard a voice in her head, calling her name",
+      "reasoning": "The witness hears a telepathic voice in her head, matching the motif for hearing a voice in the head without auditory input.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 3,
+      "motif_code": "U133.1",
+      "citation": "She entered on a conveyor-belt ramp made of light",
+      "reasoning": "The ramp is described as made of light, matching the ramp made of light motif.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 4,
+      "motif_code": "C201",
+      "citation": "talk in high-pitched clicking sounds",
+      "reasoning": "The beings communicate among themselves using high-pitched clicking sounds, an unknown non-human language.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 5,
+      "motif_code": "B801",
+      "citation": "the older being from her first abduction completing a major research project",
+      "reasoning": "An elder being is identified as having completed a major research project, indicating a senior/elder role.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 6,
+      "motif_code": "B223",
+      "citation": "The taller helper was there as well",
+      "reasoning": "A taller being is present, consistent with the tall being category and dimorphism in the crew.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 7,
+      "motif_code": "B211",
+      "citation": "also a young female",
+      "reasoning": "A young female being is identified, establishing feminine gender among the beings.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 8,
+      "motif_code": "B806",
+      "citation": "The older beings wore the darkest clothing and the younger were deferential",
+      "reasoning": "Clothing differences correlate with rank: older beings in darker clothing, younger beings deferential, indicating hierarchy associated with dimorphism.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 9,
+      "motif_code": "B365",
+      "citation": "The older beings wore the darkest clothing",
+      "reasoning": "The older/senior beings wear dark clothing.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 10,
+      "motif_code": "B914",
+      "citation": "A celebration was under way with talk in high-pitched clicking sounds, games and music",
+      "reasoning": "The beings are happy and celebrating, with games and music, indicating they are happy in their work.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 11,
+      "motif_code": "M125",
+      "citation": "she had contributed to the success of the project. It had changed their understanding of otherworldly life",
+      "reasoning": "The beings explain their purpose as research/learning, and the witness contributed to their experimental understanding.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 12,
+      "motif_code": "X222",
+      "citation": "They used the incision instrument to draw a blood sample from her nose",
+      "reasoning": "An incision instrument is used, matching the motif for beings making an incision for unknown purpose.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 13,
+      "motif_code": "X235",
+      "citation": "They used the incision instrument to draw a blood sample from her nose",
+      "reasoning": "A blood sample is taken from the witness's nose, matching the blood/body fluids sample motif.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 14,
+      "motif_code": "B711",
+      "citation": "this sample seemed intended for the girl to examine like a rare specimen, to see how the witness had changed from before",
+      "reasoning": "The beings show interest in the witness's internal chemical/biological composition and how it has changed over time.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 15,
+      "motif_code": "W400",
+      "citation": "She had vague memories of going up in the ship and looking down over North America",
+      "reasoning": "The witness sees the earth/North America through a window or viewscreen from the ship, matching scenes appearing through a window.",
+      "memory_state": "hypnosis",
+      "chunk": 1
+    },
+    {
+      "sequence": 16,
+      "motif_code": "E200",
+      "citation": "Her conscious memory returned when she saw a deer of unusual beauty",
+      "reasoning": "The witness had a time lapse—her conscious memory was absent during the abduction and only returned at this point.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 17,
+      "motif_code": "T121",
+      "citation": "she saw a deer of unusual beauty, with eyes which reminded her of the beings' eyes. It seemed to say goodbye to her and disappeared",
+      "reasoning": "An apparitional or symbolic figure appears—a deer of unusual beauty with eyes like the beings', which communicates farewell and vanishes, a symbolic scene.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 18,
+      "motif_code": "A108",
+      "citation": "When she came out of the woods she had drops of blood on her blouse, and though she had no memory of their origin",
+      "reasoning": "A wound of unknown origin opens and bleeds, leaving blood on her clothing with no conscious memory of the cause.",
+      "memory_state": "conscious",
+      "chunk": 1
+    },
+    {
+      "sequence": 19,
+      "motif_code": "A100",
+      "citation": "She again experienced eye irritation from the light within the ship",
+      "reasoning": "The witness experiences eye irritation as an aftereffect from the light inside the craft.",
+      "memory_state": "conscious",
+      "chunk": 1
+    }
+  ],
+  "stripped_text": "---- I 16 I June 1960 I Alsace. France\n: 30-60 Minutes\nCapture. While playing in the woods on a faMily\npicnic, she approached a top-shaped, lighted craft and heard a\nCl 10 voice in her head, calling her naMe. She entered on a convey\nor-belt raMp Made of light <203). A celebration was under\nway with talk in high-pitched clicking sounds, gaMes and\nMusic, on the occasion of the older being froM her first\nabduction coMpleting a Major research project. The taller\nhelper was there as well, also a young feMale. The two girls\ntalked together about dating, school and career plans. The\nolder beings wore the darkest clothing and the younger were\ndeferential (206-7>.\nExaMination. They wanted the witness to share in the\ncelebration because she had contributed to the success of the\nproject. It had changed their understanding of otherworldly\nlife, and the work seeMed endowed soMehow with spiritual\nsignificance. They used the incision instruMent to draw a\nblood saMple froM her nose, and this saMple intended\nsee~ed\nfor the girl to exaMine like a rare speciMen, to see how the\nwitness had changed froM before <205-7>.\nJourney; VII. Return. She had vague MeMories of\ngoing up in the ship and looking down over North AMerica\n<197>. Her conscious MeMory returned when she saw a deer of\nunusual beauty, with eyes which reMinded her of the beings'\neyes. It seeMed to say goodbye to her and disappeared, just\nas her parents called her. When she caMe out of the woods she\nhad drops of blood on her blouse, and though she had no MeMory\nof their origin, her father's Movie caMera recorded theM. She\nagain experinced eye irritation froM the light within the ship\n<186, 195-6, 201, 203)."
+}

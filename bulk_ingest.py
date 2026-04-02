@@ -4,7 +4,6 @@ import sqlite3
 import time
 import argparse
 from datetime import datetime, timezone
-from google import genai
 from dotenv import load_dotenv
 
 from shared_ingestion import (
@@ -23,10 +22,12 @@ sys.stdout.reconfigure(encoding='utf-8')
 parser = argparse.ArgumentParser(description="Bulk Bullard Transcriber — processes all cases in the Encounters table")
 parser.add_argument("--start-from", default=None,
                     help="Resume from this case number. All prior cases are skipped.")
+parser.add_argument("--model", default="gemini-2.5-pro",
+                    choices=["gemini-2.5-pro", "gemini-3.1-pro-preview", "claude-opus-4-6"],
+                    help="Which LLM to use for extraction")
 args = parser.parse_args()
 
 load_dotenv()
-client = genai.Client()
 
 print("=" * 70)
 print("BULK INGEST — Bullard Volume 2 Transcriber")
@@ -144,8 +145,8 @@ for current_idx, entry in enumerate(all_encounters, start=1):
             retrieval_context=retrieval_context,
             valid_motifs=valid_motifs,
             cursor=cursor,
-            client=client,
             run_ts=run_ts,
+            model=args.model,
         )
         conn.commit()
         result_msg = f"{inserted} inserted, {rejected} rejected"
