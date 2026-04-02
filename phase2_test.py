@@ -15,7 +15,7 @@ import argparse
 from datetime import datetime, timezone
 from dotenv import load_dotenv
 
-from llm_bridge import assemble_prompt, call_model, get_or_create_gemini_cache
+from llm_bridge import assemble_prompt, call_model
 
 load_dotenv()
 
@@ -112,42 +112,9 @@ print(f"  Profile: {args.profile}")
 # assemble_prompt() is the single source of truth — prints key counts automatically
 system_prompt = assemble_prompt(profile)
 
-# Load Bullard Volume 1 as context (the theoretical framework)
-print("  Loading Bullard Volume 1...")
-with open('Sources/bullard_vol1_raw.txt', 'r', encoding='utf-8') as f:
-    vol1_text = f.read()
-print(f"  Vol1: {len(vol1_text)} chars loaded")
-
-# Model-specific context setup
+# Volume 1 removed from pipeline — dictionary-only mode performs equivalently
+# at 40x lower token cost. See TEST-007 vs no-vol1 comparison (88.2% match both).
 cached_content_name = None
-
-if args.model.startswith("gemini"):
-    # Gemini path: cache Vol1 + system prompt on Google's servers
-    cache_contents = f"""*** REFERENCE: BULLARD'S COMPARATIVE STUDY (Volume 1) ***
-The following is Thomas Bullard's complete comparative analysis of UFO abduction reports.
-This provides the theoretical framework, motif definitions, and coding methodology you should follow.
-Use this to understand the INTENT and CONTEXT behind each motif code when making your assignments.
-
-{vol1_text}
-"""
-    cached_content_name = get_or_create_gemini_cache(
-        model=args.model,
-        system_prompt=system_prompt,
-        cache_contents=cache_contents,
-        display_name=f'bullard_vol1_{args.profile}',
-    )
-
-elif args.model.startswith("claude"):
-    # Claude path: prepend Vol1 to system prompt (cached via Anthropic's prompt caching)
-    vol1_block = f"""*** REFERENCE: BULLARD'S COMPARATIVE STUDY (Volume 1) ***
-The following is Thomas Bullard's complete comparative analysis of UFO abduction reports.
-This provides the theoretical framework, motif definitions, and coding methodology you should follow.
-Use this to understand the INTENT and CONTEXT behind each motif code when making your assignments.
-
-{vol1_text}
-"""
-    system_prompt = vol1_block + "\n\n" + system_prompt
-    print(f"  System prompt with Vol1: {len(system_prompt)} chars (will be cached by Anthropic)")
 
 # ── Split text into chunks of ≤3000 chars at paragraph boundaries ──
 CHUNK_SIZE = 3000

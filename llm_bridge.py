@@ -105,7 +105,8 @@ def flatten_motif_key(nested_dict):
 def extract_narrative(text=None, sticky_header="", retrieval_method="unknown",
                       profile_name="baseline_test", case_number=None,
                       pipeline_json_path=None, narrative_structure=None,
-                      model="gemini-3.1-pro-preview", experiencer_name=None):
+                      model="gemini-3.1-pro-preview", experiencer_name=None,
+                      include_vol1=False):
     """
     Sends narrative text to Gemini and returns structured extraction results.
 
@@ -239,19 +240,24 @@ def extract_narrative(text=None, sticky_header="", retrieval_method="unknown",
 
     if model.startswith("claude"):
         # --- CLAUDE PATH ---
-        # Read Vol1 and prepend to system instruction for prompt caching.
-        vol1_path = os.path.join(os.path.dirname(__file__) or ".", "Sources", "bullard_vol1_raw.txt")
-        with open(vol1_path, "r", encoding="utf-8") as f:
-            vol1_text = f.read()
-
-        claude_system_prompt = f"""*** REFERENCE: BULLARD'S COMPARATIVE STUDY (Volume 1) ***
+        vol1_block = ""
+        if include_vol1:
+            vol1_path = os.path.join(os.path.dirname(__file__) or ".", "Sources", "bullard_vol1_raw.txt")
+            with open(vol1_path, "r", encoding="utf-8") as f:
+                vol1_text = f.read()
+            vol1_block = f"""*** REFERENCE: BULLARD'S COMPARATIVE STUDY (Volume 1) ***
 The following is Thomas Bullard's complete comparative analysis of UFO abduction reports.
 This provides the theoretical framework, motif definitions, and coding methodology you should follow.
 Use this to understand the INTENT and CONTEXT behind each motif code when making your assignments.
 
 {vol1_text}
 
-{system_instruction}
+"""
+            print(f"[*] Vol 1 loaded: {len(vol1_text)} chars")
+        else:
+            print(f"[*] Vol 1 SKIPPED — dictionary-only mode")
+
+        claude_system_prompt = f"""{vol1_block}{system_instruction}
 
 You MUST return your results as a JSON object matching this schema:
 - "pseudonym" (string), "age" (string or null), "gender" (string or null),
@@ -828,10 +834,23 @@ def parse_extraction_response(raw_text: str) -> list[dict]:
     try:
         parsed = json.loads(text)
     except json.JSONDecodeError as e:
-        raise ValueError(
-            f"Failed to parse LLM response as JSON: {e}\n"
-            f"First 200 chars: {text[:200]}"
-        )
+        # Try to extract just the first JSON object/array from the response
+        # (model sometimes appends reasoning text after the JSON)
+        for end_char, start_char in [(']', '['), ('}', '{')]:
+            last = text.rfind(end_char)
+            first = text.find(start_char)
+            if first != -1 and last != -1 and last >= first:
+                try:
+                    parsed = json.loads(text[first:last + 1])
+                    print(f"  WARNING: Recovered JSON by trimming extra data after position {last + 1}")
+                    break
+                except json.JSONDecodeError:
+                    continue
+        else:
+            raise ValueError(
+                f"Failed to parse LLM response as JSON: {e}\n"
+                f"First 200 chars: {text[:200]}"
+            )
 
     # If it's already a list of event dicts, return directly
     if isinstance(parsed, list):
@@ -840,6 +859,9 @@ def parse_extraction_response(raw_text: str) -> list[dict]:
 
     # If it's a dict, try to find the event list inside
     if isinstance(parsed, dict):
+        # Empty dict = model found no events in this chunk
+        if not parsed:
+            return []
         unwrapped = _find_motif_list(parsed)
         if unwrapped is not None:
             return unwrapped

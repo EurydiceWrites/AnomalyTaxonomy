@@ -948,6 +948,8 @@ def main():
     parser.add_argument("--model", default="claude-opus-4-6",
                         choices=["gemini-2.5-pro", "gemini-3.1-pro-preview", "claude-opus-4-6"],
                         help="Which LLM to use for Step 3 extraction (default: claude-opus-4-6)")
+    parser.add_argument("--include-vol1", action="store_true",
+                        help="Load Bullard Volume 1 context (off by default — dictionary-only mode)")
     args = parser.parse_args()
 
     # Determine mode
@@ -1020,6 +1022,7 @@ def main():
         pipeline_json_path=json_path,
         profile_name="baseline_test",
         model=args.model,
+        include_vol1=args.include_vol1,
     )
 
     print(f"\n[*] Extraction complete: {len(all_events)} events")
