@@ -1,0 +1,194 @@
+
+[Front Matter] Scanning pages 1-82 for source attribution...
+    [OCR] Front-matter page 1... done.
+    [*] Source attribution satisfied after page 1.
+
+=== SOURCE ATTRIBUTION ===
+  Title:       Missing Time
+  Author:      Budd Hopkins
+  Role:        author
+  Publisher:   Ballantine
+  Complete:    True
+=== END ATTRIBUTION ===
+
+[Step 0] Extracting text from PDF: Budd Hopkins - Missing Time [OCR].pdf
+         Pages 83 to 104
+    [*] Printed page numbers detected: 89-110 (single-page, reliable)
+    [*] Extracted 22 pages, 48,308 characters.
+
+[*] Extracted text saved to: staging\extracted_text_Budd_Hopkins_-_Missing_Time__OCR__83-104.txt
+
+[Step 1] Running metadata scan via Gemini Flash...
+    [*] Scan complete.
+    [*] Author role upgraded to 'investigator': Budd Hopkins
+
+=== METADATA SCAN RESULTS ===
+Source:     Budd Hopkins - Missing Time [OCR].pdf (pages 83-104)
+Subject:    Howard Rich
+Type:       investigation
+Location:   Toms River, New Jersey
+Date:       October 6, 1979
+Retrieval:  hypnosis
+Summary:    The narrative details the investigation into Howard Rich's abduction experience, beginning with his conscious recall of a strange blue light filling his bedroom in Toms River, New Jersey, in October 1979, which left him deeply frightened and with a sense of dread. Investigator Budd Hopkins, a friend of Howard's, arranged for him to undergo hypnotic regression with Dr. Clamar. Under hypnosis, Howard recalled being paralyzed, dropping his gun, and being floated outside into a black cloud with a bright light, where small, black, shadow-like figures with bright eyes and long arms touched him, causing pain in his neck and stomach. He also found small spots of blood on his pillow and sheets upon waking. The experience left him with a lingering sense of apprehension and a feeling that his energy had been taken, and he exhibited a strong, unexplained reluctance to allow Hopkins to visit the site of the encounter.
+---
+Investigator:  Budd Hopkins
+Witnesses:     1
+Entity Types:  humanoid, shadow figures
+Structure:     investigation
+Source Pages:  89-110
+=== END SCAN ===
+
+[*] Pipeline JSON saved to: staging\howard_rich_missing_time_metadata.json
+
+=================================================================
+  PIPELINE METADATA — REVIEW BEFORE PROCEEDING
+=================================================================
+
+  Source text:  staging\extracted_text_Budd_Hopkins_-_Missing_Time__OCR__83-104.txt
+  PDF pages:   83-104
+  Source pages: 89-110
+
+  Experiencer:  Howard Rich
+  Gender:       male
+  Age:          thirty-eight
+  Type:         investigation
+  Structure:    investigation
+  Retrieval:    hypnosis
+  Investigator: Budd Hopkins
+  Location:     Toms River, New Jersey
+  Date:         October 6, 1979
+  Entities:     humanoid, shadow figures
+  Summary:      The narrative details the investigation into Howard Rich's abduction experience, beginning with his ...
+
+  Author:       Budd Hopkins
+  Title:        Missing Time
+  Role:         investigator
+
+=================================================================
+
+Metadata looks correct? [y/n/edit]: [*] Metadata confirmed. Ready for Step 3 (extraction).
+
+[*] Starting Step 3: Extraction via extract_narrative() (model: claude-opus-4-6)...
+[*] Pipeline mode: reading from staging\howard_rich_missing_time_metadata.json
+    Text source: staging\extracted_text_Budd_Hopkins_-_Missing_Time__OCR__83-104.txt
+Divided the narrative into 17 high-detail chunks.
+[*] Loaded 550 motif codes from motif_key.json
+[*] Retrieval method: hypnosis
+[*] Narrative structure: investigation
+[*] Experiencer name: Howard Rich
+[*] Claude system prompt: 1148034 chars (will be cached by Anthropic)
+Sending raw text to Claude using prompt caching...
+
+
+--- PROCESSING CHUNK 1 OF 17 ---
+  Cache write: 360900 tokens
+  Cache read:  0 tokens
+  Uncached:    954 tokens
+  -> Extracted 4 motif events from this chunk.
+
+--- PROCESSING CHUNK 2 OF 17 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    874 tokens
+  -> Extracted 2 motif events from this chunk.
+
+--- PROCESSING CHUNK 3 OF 17 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    910 tokens
+  -> Extracted 4 motif events from this chunk.
+
+--- PROCESSING CHUNK 4 OF 17 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    927 tokens
+  -> Extracted 6 motif events from this chunk.
+
+--- PROCESSING CHUNK 5 OF 17 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    917 tokens
+  -> Extracted 2 motif events from this chunk.
+
+--- PROCESSING CHUNK 6 OF 17 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    1057 tokens
+  -> Extracted 12 motif events from this chunk.
+
+--- PROCESSING CHUNK 7 OF 17 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    1048 tokens
+  -> Extracted 7 motif events from this chunk.
+
+--- PROCESSING CHUNK 8 OF 17 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    1080 tokens
+  -> Extracted 20 motif events from this chunk.
+
+--- PROCESSING CHUNK 9 OF 17 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    1007 tokens
+  -> Extracted 6 motif events from this chunk.
+
+--- PROCESSING CHUNK 10 OF 17 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    943 tokens
+  -> Extracted 7 motif events from this chunk.
+
+--- PROCESSING CHUNK 11 OF 17 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    956 tokens
+  -> Extracted 7 motif events from this chunk.
+
+--- PROCESSING CHUNK 12 OF 17 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    911 tokens
+  -> Extracted 10 motif events from this chunk.
+
+--- PROCESSING CHUNK 13 OF 17 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    892 tokens
+  -> Extracted 5 motif events from this chunk.
+
+--- PROCESSING CHUNK 14 OF 17 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    934 tokens
+  -> Extracted 10 motif events from this chunk.
+
+--- PROCESSING CHUNK 15 OF 17 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    925 tokens
+  -> Extracted 3 motif events from this chunk.
+
+--- PROCESSING CHUNK 16 OF 17 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    1011 tokens
+  -> Extracted 10 motif events from this chunk.
+
+--- PROCESSING CHUNK 17 OF 17 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    617 tokens
+  -> Extracted 1 motif events from this chunk.
+
+SUCCESS! Extraction complete.
+Subject: Unknown
+Date: None
+Summary: 
+
+[*] After deduplication: 116 events (from 116 raw)
+[*] Extraction results merged back into: staging\howard_rich_missing_time_metadata.json
+
+[*] Extraction complete: 116 events
+[*] Results merged into: staging\howard_rich_missing_time_metadata.json

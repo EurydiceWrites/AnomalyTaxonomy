@@ -1,0 +1,1894 @@
+{
+  "step_0": {
+    "source_text_path": "staging\\extracted_text_Budd_Hopkins_-_Missing_Time__OCR__182-213.txt",
+    "pdf_page_start": 182,
+    "pdf_page_end": 213,
+    "source_page_start": 182,
+    "source_page_end": 213
+  },
+  "step_1_scanned_metadata": {
+    "source_type": "investigation",
+    "memory_retrieval_method": "hypnosis",
+    "narrative_structure": "investigation",
+    "principal_investigator": "Budd Hopkins",
+    "experiencer_name": "Virginia Horton",
+    "gender": "female",
+    "age_at_time": "6 (1950) and 16 (1960)",
+    "location": "France (Alsatian woods) and North America (farmyard)",
+    "date_of_experience": "1950 and 1960",
+    "entity_types": [
+      "Grey",
+      "humanoid",
+      "shapeshifter"
+    ],
+    "narrative_summary": "The text details two abduction experiences of Virginia Horton, recalled under hypnosis. The first, in 1950 at age six, involved an incision that left a scar, with her parents having no memory of its origin. The second, in 1960 as an adolescent in France, involved being lured into the woods by a telepathic \"deer\" that was actually a disguised humanoid. Onboard the UFO, she participated in a \"celebration\" for the entities' research success, during which blood and tissue samples were taken from her nose. She also recalled a brief trip into space to view Earth. Investigator Budd Hopkins analyzes these accounts, noting parallels with other abduction cases, particularly regarding memory suppression, physical examinations, and the use of soothing words to reduce resistance."
+  },
+  "step_1_source_attribution": {
+    "author_name": "Budd Hopkins",
+    "title": "Missing Time",
+    "publication_year": null,
+    "publisher": "Ballantine",
+    "place_of_publication": null,
+    "edition": null,
+    "translator": null,
+    "editor": null,
+    "author_role": "investigator"
+  },
+  "step_3_extraction": {
+    "encounter_events": [
+      {
+        "motif_code": "X222",
+        "sequence_order": 1,
+        "source_citation": "incisions made by remote-control, robotlike machinery inside a UFO",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 183",
+        "ai_justification": "Virginia recalled under hypnosis that her childhood wound was an incision made by machinery inside a UFO. X222 covers 'Beings make incision for unknown purpose.' The incision left a noticeable scar decades later.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "A107",
+        "sequence_order": 2,
+        "source_citation": "A childhood accident which causes a wound deep enough to leave a noticeable scar thirty years later",
+        "memory_state": "conscious",
+        "source_page": "PDF PAGE 183",
+        "ai_justification": "Virginia has a visible linear or circular scar from the childhood incision that persisted into adulthood. A107 covers 'Linear or circular scar' as a physical aftereffect.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 3,
+        "source_citation": "The parents remember very little for two and possibly three",
+        "memory_state": "conscious",
+        "source_page": "PDF PAGE 183",
+        "ai_justification": "Virginia's parents have no memory of how the wound occurred despite it being a dramatic childhood injury. This amnesia surrounding the event is consistent with E200 (time lapse), as the family's memory of the incident's cause was effectively erased.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "A107",
+        "sequence_order": 4,
+        "source_citation": "The only mark on my body",
+        "memory_state": "conscious",
+        "source_page": "183",
+        "ai_justification": "Virginia identifies a distinct scar as the only mark on her body, consistent with A107 (linear or circular scar).",
+        "emotional_marker": null,
+        "chunk": 2
+      },
+      {
+        "motif_code": "A108",
+        "sequence_order": 5,
+        "source_citation": "Virginia emerged from the French woods and discovered blood on her blouse",
+        "memory_state": "conscious",
+        "source_page": "183",
+        "ai_justification": "Virginia discovered blood on her blouse after emerging from the woods with no memory of how the wound occurred, consistent with A108 (wound of unknown origin opens and bleeds).",
+        "emotional_marker": "distress",
+        "chunk": 2
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 6,
+        "source_citation": "neither child had any conscious memory of how the injuries occurred",
+        "memory_state": "conscious",
+        "source_page": "183",
+        "ai_justification": "Virginia had no conscious memory of how her injuries occurred, indicating a time lapse covering the event (E200).",
+        "emotional_marker": null,
+        "chunk": 2
+      },
+      {
+        "motif_code": "B610",
+        "sequence_order": 7,
+        "source_citation": "It was just as though somebody was carrying me over to the couch and setting me down. I don't think I was picked up by a machine . . . or by a vacuum . . . nothing like that. It was like a",
+        "memory_state": "conscious",
+        "source_page": "184",
+        "ai_justification": "Virginia describes a vague pre-hypnosis recollection of being physically picked up and carried by someone, consistent with B610 (beings flank and hold the witness). This was recalled consciously before the second hypnotic session began.",
+        "emotional_marker": null,
+        "chunk": 2
+      },
+      {
+        "motif_code": "E215",
+        "sequence_order": 8,
+        "source_citation": "I was a lot more connected to the grounds then than I am now. I used to notice, you know, how the dirt was different on rainy days than on dry days, and how the plants changed every day.",
+        "memory_state": "hypnosis",
+        "source_page": "185",
+        "ai_justification": "Under hypnosis, Virginia re-experiences her childhood state of deep environmental connectedness, which is an unusual or uncharacteristic state she no longer possesses, fitting E215 (inappropriate response or uncharacteristic behavior).",
+        "emotional_marker": "nostalgia, connectedness",
+        "chunk": 3
+      },
+      {
+        "motif_code": "C110",
+        "sequence_order": 9,
+        "source_citation": "I think that's one of the things I told my friend on the ship. I told him about the different kinds of animals. I guess that's how we got to talking about chickens.",
+        "memory_state": "hypnosis",
+        "source_page": "185",
+        "ai_justification": "Virginia describes communicating with a being ('my friend on the ship') about animals and chickens. The casual, understood nature of the exchange and the term 'told' without mention of spoken language implies telepathic or intuitive communication, fitting C110 (subject hears voice in head or understands meanings).",
+        "emotional_marker": "casual, familiar",
+        "chunk": 3
+      },
+      {
+        "motif_code": "B900",
+        "sequence_order": 10,
+        "source_citation": "I think that's one of the things I told my friend on the ship.",
+        "memory_state": "hypnosis",
+        "source_page": "185",
+        "ai_justification": "Virginia refers to the being as 'my friend,' indicating a perception of friendliness and familiarity, fitting B900 (beings are friendly, polite, familiar in manner).",
+        "emotional_marker": "warmth, familiarity",
+        "chunk": 3
+      },
+      {
+        "motif_code": "B754",
+        "sequence_order": 11,
+        "source_citation": "I guess that's how we got to talking about chickens.",
+        "memory_state": "hypnosis",
+        "source_page": "185",
+        "ai_justification": "The being's interest in chickens—a common farm animal and cultural artifact of rural life—fits B754 (interest in cultural artifacts).",
+        "emotional_marker": "curiosity",
+        "chunk": 3
+      },
+      {
+        "motif_code": "M110",
+        "sequence_order": 12,
+        "source_citation": "I think from that, that's when he suggested that I go gather the eggs and bring them in.",
+        "memory_state": "hypnosis",
+        "source_page": "185",
+        "ai_justification": "The being instructs Virginia to perform a specific utilitarian task—gathering eggs—fitting M110 (beings tell witness to perform some particular utilitarian act).",
+        "emotional_marker": "compliant",
+        "chunk": 3
+      },
+      {
+        "motif_code": "E106",
+        "sequence_order": 13,
+        "source_citation": "it could just as easily have been that I was hypnotized and thought I saw a deer to make it easy to have a story to tell. / Maybe it was something else I was suggested to remember as a deer.",
+        "memory_state": "conscious",
+        "source_page": "185",
+        "ai_justification": "Virginia speculates that the deer she saw in France may have been a hypnotic screen memory—a perceptual distortion or illusion imposed on her, fitting E106 (perceptual distortions and illusions).",
+        "emotional_marker": "uncertainty, wonder",
+        "chunk": 3
+      },
+      {
+        "motif_code": "B610",
+        "sequence_order": 14,
+        "source_citation": "humanoid type person picking me up and carrying me.",
+        "memory_state": "conscious",
+        "source_page": "185",
+        "ai_justification": "Virginia recalls a humanoid being picking her up and carrying her, fitting B610 (two beings flank the witness and hold him by upper arms—here a single being carrying the witness, the closest match for physical escort by carrying).",
+        "emotional_marker": "vague recall",
+        "chunk": 3
+      },
+      {
+        "motif_code": "M110",
+        "sequence_order": 15,
+        "source_citation": "I think my mother had told me to gather the eggs. I think when I explained to him about it, he just told me to go do that. Just to go about my business.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 186",
+        "ai_justification": "The being instructs the witness to perform a utilitarian act—to go gather the eggs, directing her to go about her business. This matches M110: beings tell witness to perform some particular utilitarian act.",
+        "emotional_marker": null,
+        "chunk": 4
+      },
+      {
+        "motif_code": "B906",
+        "sequence_order": 16,
+        "source_citation": "He probably knew that I had a cut and that would be a good way to cover it.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 186",
+        "ai_justification": "The being directed her to gather eggs as a cover story for her cut, implying deceptive intent to conceal evidence of the encounter. This matches B906: beings avoid answering questions or deceive.",
+        "emotional_marker": null,
+        "chunk": 4
+      },
+      {
+        "motif_code": "B740",
+        "sequence_order": 17,
+        "source_citation": "But I think I told him a lot about animals and plants, 'cause he was interested in that, what they look like and what they feel like, how they live and eat. How big they are.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 186",
+        "ai_justification": "The being questioned the witness extensively about earthly animals and plants—their appearance, texture, diet, and size. This matches B740: interest in earthly conditions and problems.",
+        "emotional_marker": null,
+        "chunk": 4
+      },
+      {
+        "motif_code": "X256",
+        "sequence_order": 18,
+        "source_citation": "he might have had pictures that he showed me and I would say, 'Yes, they look like that. No, they don't look like that.' And I would describe them texturely, too. What they felt like, what their fur felt like or their feathers or the leaves or whatever.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 186",
+        "ai_justification": "The being showed pictures and interrogated the witness about the accuracy of depictions of earthly creatures, asking her to confirm or deny and elaborate. This matches X256: the beings interrogate the witness.",
+        "emotional_marker": null,
+        "chunk": 4
+      },
+      {
+        "motif_code": "B911",
+        "sequence_order": 19,
+        "source_citation": "Curious. And a good listener.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 186",
+        "ai_justification": "The being displayed active curiosity and attentive listening, indicating it could be excited or engaged by new information. This matches B911: beings can be startled or excited.",
+        "emotional_marker": null,
+        "chunk": 4
+      },
+      {
+        "motif_code": "B915",
+        "sequence_order": 20,
+        "source_citation": "Had a sense of humor.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 186",
+        "ai_justification": "The witness explicitly states the being had a sense of humor. This matches B915: beings have sense of humor.",
+        "emotional_marker": null,
+        "chunk": 4
+      },
+      {
+        "motif_code": "B900",
+        "sequence_order": 21,
+        "source_citation": "And very patient.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 186",
+        "ai_justification": "The being is described as very patient, indicating a friendly and considerate manner toward the child witness. This matches B900: beings are friendly, polite, familiar in manner.",
+        "emotional_marker": null,
+        "chunk": 4
+      },
+      {
+        "motif_code": "B801",
+        "sequence_order": 22,
+        "source_citation": "And very old and mature. I mentioned last time that when I asked how old he was he just said, 'Very old,'",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 186",
+        "ai_justification": "The being identified itself as 'very old' and the witness perceived it as old and mature. This matches B801: one being is an elder.",
+        "emotional_marker": null,
+        "chunk": 4
+      },
+      {
+        "motif_code": "B750",
+        "sequence_order": 23,
+        "source_citation": "which reminds me of my grandfather, but I had the sense that he didn't think I could understand how old he was.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 186",
+        "ai_justification": "The being implied its age was beyond human comprehension, suggesting a fundamentally different concept of age or lifespan. This matches B750: no understanding of age.",
+        "emotional_marker": null,
+        "chunk": 4
+      },
+      {
+        "motif_code": "B221",
+        "sequence_order": 24,
+        "source_citation": "He was probably somewhere between five feet and five-feet-five-inches.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 186",
+        "ai_justification": "The being's height is estimated between five feet and five-feet-five-inches, placing it in the moderately short range. This matches B221: moderately short (4-5 feet).",
+        "emotional_marker": null,
+        "chunk": 4
+      },
+      {
+        "motif_code": "B805",
+        "sequence_order": 25,
+        "source_citation": "And I think he was taller than the others, but only by an inch or two. Maybe a little bit more.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 186",
+        "ai_justification": "The leader/spokesman being was slightly taller than the rest of the crew, indicating dimorphism associated with rank. This matches B805: dimorphism associated with rank.",
+        "emotional_marker": null,
+        "chunk": 4
+      },
+      {
+        "motif_code": "B220",
+        "sequence_order": 26,
+        "source_citation": "the person who carried me was shorter than an adult. Sort of the size of a big kid.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 186",
+        "ai_justification": "The being that carried the witness was shorter than an adult, described as the size of a big kid, placing it at approximately 3.5 feet or less. This matches B220: short (3.5 feet or less).",
+        "emotional_marker": null,
+        "chunk": 4
+      },
+      {
+        "motif_code": "B300",
+        "sequence_order": 27,
+        "source_citation": "I think they wore something to cover their skin, which I thought was them, but was really what they were wearing, like a soft, supple gray, almost suedelike space suits, to cover them.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 186",
+        "ai_justification": "The beings wore a one-piece covering over their entire bodies that the witness initially mistook for their skin. This matches B300: coverall, one-piece.",
+        "emotional_marker": null,
+        "chunk": 4
+      },
+      {
+        "motif_code": "B301",
+        "sequence_order": 28,
+        "source_citation": "Skin-fitting, and it was fairly thick but very soft and the texture of really fine leather",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 187",
+        "ai_justification": "The clothing was described as skin-fitting, so close it was mistaken for actual skin. This matches B301: tight-fitting.",
+        "emotional_marker": null,
+        "chunk": 4
+      },
+      {
+        "motif_code": "B361",
+        "sequence_order": 29,
+        "source_citation": "Gray and ah . . .",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 187",
+        "ai_justification": "The clothing color is described as gray. This matches B361: off-white, gray.",
+        "emotional_marker": null,
+        "chunk": 4
+      },
+      {
+        "motif_code": "B307",
+        "sequence_order": 30,
+        "source_citation": "the texture of really fine leather, you know, like nice French leather shoes, really soft leather. Not suede, but soft kid.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 187",
+        "ai_justification": "The clothing texture is compared to fine soft leather or kid leather. This matches B307: leather-like.",
+        "emotional_marker": null,
+        "chunk": 4
+      },
+      {
+        "motif_code": "B233",
+        "sequence_order": 31,
+        "source_citation": "the head was simplified, as though the thing",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 187",
+        "ai_justification": "The being's head is described as 'simplified,' suggesting reduced or vestigial features consistent with the egg or pear-shaped head with large cranium typical of humanoids. This matches B233: head egg or pear shaped, with pointed chin, large cranium.",
+        "emotional_marker": null,
+        "chunk": 4
+      },
+      {
+        "motif_code": "B341",
+        "sequence_order": 32,
+        "source_citation": "he wore over his face didn't have very many openings. I guess it had, I think, two eyes, but I think what I thought was like big eyes were probably just like glass surfaces or bubble surfaces to protect the eyes.",
+        "memory_state": "hypnosis",
+        "source_page": "187",
+        "ai_justification": "The being wears a face covering with dark protective bubble surfaces over the eyes, matching B341: helmet with visor or dark plate covering the eyes.",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "B243",
+        "sequence_order": 33,
+        "source_citation": "And they were dark and I thought they had big, dark eyes, but I don't know that that's true. I think it was that it reflected a lot of sun.",
+        "memory_state": "hypnosis",
+        "source_page": "187",
+        "ai_justification": "The witness perceived the eyes as entirely dark, matching B243: Eyes entirely dark. She qualifies this may be due to the protective covering, but the perceived appearance was dark eyes.",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "B509",
+        "sequence_order": 34,
+        "source_citation": "It seems to me our light was very bright for them",
+        "memory_state": "hypnosis",
+        "source_page": "187",
+        "ai_justification": "The beings appear sensitive to Earth's light, consistent with B509: photophobia, retreat from or stay clear of light.",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "U230",
+        "sequence_order": 35,
+        "source_citation": "inside their spaceship was very bright.",
+        "memory_state": "hypnosis",
+        "source_page": "187",
+        "ai_justification": "The interior of the craft is described as very bright, matching U230: bright and uniform lighting without specific source.",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "B223",
+        "sequence_order": 36,
+        "source_citation": "The one that carried me was the taller one.",
+        "memory_state": "hypnosis",
+        "source_page": "187",
+        "ai_justification": "One being is distinguished as taller, consistent with B223: Tall (over 6 feet), and also indicates dimorphism in the group.",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "B805",
+        "sequence_order": 37,
+        "source_citation": "The one that carried me was the taller one. I don't remember . . . I think there were three people in all",
+        "memory_state": "hypnosis",
+        "source_page": "187",
+        "ai_justification": "The taller being carried the witness while others had different roles, indicating dimorphism associated with rank (B805).",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "B610",
+        "sequence_order": 38,
+        "source_citation": "The one that carried me was the taller one.",
+        "memory_state": "hypnosis",
+        "source_page": "187",
+        "ai_justification": "The being physically carried the witness into the craft, matching B610: beings flank and hold the witness.",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 39,
+        "source_citation": "Two of them were outside and I think I saw them when I got carried in",
+        "memory_state": "hypnosis",
+        "source_page": "187",
+        "ai_justification": "The witness describes seeing the beings, who are humanoid in form, matching B201: Humanoid.",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "B909",
+        "sequence_order": 40,
+        "source_citation": "but I think they wanted to take off their costumes, so they went into a different part of the ship that they could talk to me from behind the wall.",
+        "memory_state": "hypnosis",
+        "source_page": "187",
+        "ai_justification": "The beings retreated behind a wall to avoid being seen without their costumes, matching B909: beings dislike for witness to watch them.",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 41,
+        "source_citation": "there was so much gray and their costumes were gray. But either they are gray or it has something to do with their spectrum.",
+        "memory_state": "hypnosis",
+        "source_page": "187",
+        "ai_justification": "The beings or their coverings are described as gray, matching B290: Skin white, gray, ashen or claylike.",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "B361",
+        "sequence_order": 42,
+        "source_citation": "their costumes were gray",
+        "memory_state": "hypnosis",
+        "source_page": "187",
+        "ai_justification": "The clothing/costumes are described as gray, matching B361: Off-white, gray clothing.",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "B301",
+        "sequence_order": 43,
+        "source_citation": "as smooth and close-fitting as their skin . . . it was fairly thick but very soft, and the texture of really fine leather.",
+        "memory_state": "hypnosis",
+        "source_page": "188",
+        "ai_justification": "The investigator paraphrases Virginia's description of the beings' outer covering as smooth and close-fitting like skin, matching B301: Tight-fitting clothing.",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "B307",
+        "sequence_order": 44,
+        "source_citation": "the texture of really fine leather.",
+        "memory_state": "hypnosis",
+        "source_page": "188",
+        "ai_justification": "The material of the suit is described as having the texture of fine leather, matching B307: Leather-like clothing.",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "B300",
+        "sequence_order": 45,
+        "source_citation": "she felt that her abductors' outer layer was not skin, but instead was some kind of gray, skin-like fabric.",
+        "memory_state": "hypnosis",
+        "source_page": "188",
+        "ai_justification": "The investigator paraphrases Virginia's observation that the beings wore a one-piece skin-like covering, matching B300: Coverall, one-piece.",
+        "emotional_marker": null,
+        "chunk": 5
+      },
+      {
+        "motif_code": "B800",
+        "sequence_order": 46,
+        "source_citation": "The feeling that I have about it was that this person was someone senior enough in his own society to have quasi-official status.",
+        "memory_state": "hypnosis",
+        "source_page": "189",
+        "ai_justification": "Virginia perceives the being as a leader or senior figure in his society, matching B800 (one being acts as leader, spokesman).",
+        "emotional_marker": "reflective",
+        "chunk": 6
+      },
+      {
+        "motif_code": "B901",
+        "sequence_order": 47,
+        "source_citation": "It was like he was indulging his personal interests and they were also being indulged for him by the society",
+        "memory_state": "hypnosis",
+        "source_page": "189",
+        "ai_justification": "The being is portrayed as personally motivated and considerate in his approach, explaining his work like a researcher to a child, matching B901 (beings are helpful and considerate).",
+        "emotional_marker": "warm",
+        "chunk": 6
+      },
+      {
+        "motif_code": "C110",
+        "sequence_order": 48,
+        "source_citation": "the feeling that I had was that they were listening with bated breath to every word that I said and every thought that I thought. You know, the communication process was completely absorbing them, so I didn't need to get their attention.",
+        "memory_state": "hypnosis",
+        "source_page": "189",
+        "ai_justification": "The being perceives both spoken words and thoughts, indicating telepathic communication where the subject is understood without speaking, matching C110 (subject hears voice in head or understands meanings).",
+        "emotional_marker": "awe",
+        "chunk": 6
+      },
+      {
+        "motif_code": "X255",
+        "sequence_order": 49,
+        "source_citation": "they were listening with bated breath to every word that I said and every thought that I thought",
+        "memory_state": "hypnosis",
+        "source_page": "189",
+        "ai_justification": "The beings read the witness's thoughts directly, matching X255 (beings probe a witness's mind or read his thoughts).",
+        "emotional_marker": null,
+        "chunk": 6
+      },
+      {
+        "motif_code": "B707",
+        "sequence_order": 50,
+        "source_citation": "He asked how long we lived and how long these different animals lived.",
+        "memory_state": "hypnosis",
+        "source_page": "189",
+        "ai_justification": "The being asks about human and animal lifespans, matching B707 (concern with age).",
+        "emotional_marker": null,
+        "chunk": 6
+      },
+      {
+        "motif_code": "B700",
+        "sequence_order": 51,
+        "source_citation": "I told him that they had . . . how many offspring the chickens have, and I explained about eggs versus having your own babies, and how many people have, and how many different kinds of ani-",
+        "memory_state": "hypnosis",
+        "source_page": "189",
+        "ai_justification": "The being questions the witness about reproduction and offspring of humans and animals, matching B700 (beings question witness about sex and reproduction).",
+        "emotional_marker": null,
+        "chunk": 6
+      },
+      {
+        "motif_code": "X256",
+        "sequence_order": 52,
+        "source_citation": "I'm thinking more about the tone of the question that he asked me, the things he asked me about. . .. He asked how long we lived and how long these different animals lived.",
+        "memory_state": "hypnosis",
+        "source_page": "189",
+        "ai_justification": "The being interrogates the witness with a series of questions about lifespan and biology, matching X256 (beings interrogate the witness).",
+        "emotional_marker": null,
+        "chunk": 6
+      },
+      {
+        "motif_code": "B710",
+        "sequence_order": 53,
+        "source_citation": "he asked me what plants eat and I told him they didn't eat anything, that they just lived in the air. And I think I explained to him about the seasons, and he asked about weather, too",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 190",
+        "ai_justification": "The being questions the witness about bodily functions and biology of earthly life forms—plants, animals, seasons, weather—all relating to how living things function on Earth. This maps to B710: Beings question witness about body or bodily functions, broadly construed to include biological processes.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "B740",
+        "sequence_order": 54,
+        "source_citation": "I think I also explained to him about warm-blooded and cold-blooded animals / I think I explained to him about the seasons, and he asked about weather, too / I explained how it got cold and froze things",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 190",
+        "ai_justification": "The being asks about earthly conditions—weather, seasons, temperature extremes. This maps to B740: Interest in earthly conditions and problems.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "B707",
+        "sequence_order": 55,
+        "source_citation": "I think I explained about nursing and how long animals live and plants, too",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 190",
+        "ai_justification": "The being's interest in how long animals and plants live maps to B707: Concern with age, as it reflects curiosity about lifespans.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "S101",
+        "sequence_order": 56,
+        "source_citation": "mostly they were pictures of star maps, you know, they would say, 'This is the star . . .' / He did tell me about the Milky Way, you know, and tried to make a picture of how they were with relationship to our Milky Way",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 191",
+        "ai_justification": "The being shows the witness star maps depicting his place of origin and its relationship to Earth. This maps to S101: The witness sees a star map depicting the beings' place of origin.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "M130",
+        "sequence_order": 57,
+        "source_citation": "I think most of the pictures he was trying to show me were where he came from and where he visited and where we were with relationship to that / I think that he was, like, from a different Milky Way, which means that",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 191",
+        "ai_justification": "The being attempts to explain his origin relative to the Milky Way, indicating he is from a different galaxy—information that is vague and ultimately meaningless to the witness. This maps to M130: The beings tell the witness where they originate, but in meaningless or nonsensical terms.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "B900",
+        "sequence_order": 58,
+        "source_citation": "he'd explain to me patiently that they're not a certain way everywhere and that was why he was asking",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 191",
+        "ai_justification": "The being is described as patient and willing to explain, showing a friendly and familiar manner in conversation with a child. This maps to B900: Beings are friendly, polite, familiar in manner.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "S101",
+        "sequence_order": 59,
+        "source_citation": "They did look like star maps, yes, they looked like pictures of stars at night. They looked like slides of the heavens that you might show to somebody, but they had colors. I think they were color-coded for different kinds of stars . . . they had green, and mostly white and blue. Quite a bit of blue, and some red and orange. Yellow. The green was unusual. Mostly white and blue. Some orangey-red ones.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 192",
+        "ai_justification": "The being shows Virginia visual displays that look like star maps depicting the heavens with color-coded stars, matching S101: the witness sees a star map depicting the beings' place of origin or stellar locations.",
+        "emotional_marker": "curiosity",
+        "chunk": 8
+      },
+      {
+        "motif_code": "W104",
+        "sequence_order": 60,
+        "source_citation": "There are places that have these kinds of animals and there were a whole lot of slides of things that would remind us of dinosaurs and then slides of other kinds of animals. There are a lot of different winged animals and different places. / Most of the pictures he showed me were plants and animals. A lot of different flowers of different kinds . . . almost like underwater creatures.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 192",
+        "ai_justification": "The being shows Virginia images of unfamiliar plants and animals from other worlds, including dinosaur-like creatures, large winged animals, blowfish-like airborne creatures, exotic flowers, and exotic fish. This matches W104: otherworld has unfamiliar plants and animals.",
+        "emotional_marker": "wonder",
+        "chunk": 8
+      },
+      {
+        "motif_code": "B754",
+        "sequence_order": 61,
+        "source_citation": "So I guess he was especially interested in the chickens because they are warm and have feathers, which is unusual. Birds were very interesting to him.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 192",
+        "ai_justification": "The being shows particular interest in chickens and birds as earthly creatures, fascinated by their warmth and feathers. This matches B754: interest in cultural artifacts, here extended to earthly biological specimens that fascinate the being.",
+        "emotional_marker": null,
+        "chunk": 8
+      },
+      {
+        "motif_code": "W400",
+        "sequence_order": 62,
+        "source_citation": "There were so many I couldn't soak them all up. / It's as though he showed me a matter of hundreds, but I don't remember any of them very vividly. Such diversity.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 192",
+        "ai_justification": "The being shows Virginia hundreds of images of other worlds and their life forms through visual displays, matching W400: the otherworld or scenes from it appear through a window, viewscreen or apparition-like image.",
+        "emotional_marker": "overwhelmed",
+        "chunk": 8
+      },
+      {
+        "motif_code": "M125",
+        "sequence_order": 63,
+        "source_citation": "He kept talking about diversity, which was something that he was very interested in. Diversity. About how important biological diversity is. / from a scientist's point of view, they cherished the diversity",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 192",
+        "ai_justification": "The being repeatedly emphasizes the importance of biological diversity, conveying a message about learning and scientific study. This matches M125: they have come to learn, teach or experiment.",
+        "emotional_marker": "reverence",
+        "chunk": 8
+      },
+      {
+        "motif_code": "M111",
+        "sequence_order": 64,
+        "source_citation": "I think that was a message for me when I grew up, because preserving diversity is the reason that we protect the endangered species, so it was like a reassuring message from him",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 192",
+        "ai_justification": "Virginia interprets the being's emphasis on diversity as a task or message implanted for her adult life, charging her with understanding the importance of preserving biological diversity. This matches M111: beings charge subject with task, e.g., to teach, learn.",
+        "emotional_marker": "reassurance",
+        "chunk": 8
+      },
+      {
+        "motif_code": "M128",
+        "sequence_order": 65,
+        "source_citation": "if somebody else wanted to come here and colonize, they would protect us from having our life-forms threatened because they cherish biological diversity.",
+        "memory_state": "hypnosis",
+        "source_page": "192",
+        "ai_justification": "The being describes a mission to protect Earth from ecological threats by other species, matching M128: 'They have come to combat evil enemies, or to prevent' harm.",
+        "emotional_marker": "protective, reverent",
+        "chunk": 9
+      },
+      {
+        "motif_code": "B740",
+        "sequence_order": 66,
+        "source_citation": "they would protect us from having our life-forms threatened because they cherish biological diversity",
+        "memory_state": "hypnosis",
+        "source_page": "192",
+        "ai_justification": "The being's expressed concern for Earth's ecological diversity and biological life-forms matches B740: 'Interest in earthly conditions and problems.'",
+        "emotional_marker": "wonder, reverence",
+        "chunk": 9
+      },
+      {
+        "motif_code": "B900",
+        "sequence_order": 67,
+        "source_citation": "He talked about it with a tone of voice that it was obviously something that he was not only interested in, but something he really cherished, You know, a very deep kind of a sense of wonder, and respect about it. Almost a religious quality, too.",
+        "memory_state": "hypnosis",
+        "source_page": "192",
+        "ai_justification": "The being's warm, reverent tone and deep sense of wonder convey friendliness and familiarity, matching B900: 'Beings are friendly, polite, familiar in manner.'",
+        "emotional_marker": "warmth, reverence",
+        "chunk": 9
+      },
+      {
+        "motif_code": "B707",
+        "sequence_order": 68,
+        "source_citation": "I have the feeling that he's old and that they live a long time and that therefore he's unlikely to be very much different from what he was then / It's obvious he thought I couldn't understand how old was old.",
+        "memory_state": "hypnosis",
+        "source_page": "192-193",
+        "ai_justification": "The being's extreme age and the implication that his species lives for vast periods of time matches B707: 'Concern with age.' The being also conveyed that the witness could not comprehend his age.",
+        "emotional_marker": "awe",
+        "chunk": 9
+      },
+      {
+        "motif_code": "B751",
+        "sequence_order": 69,
+        "source_citation": "he talked about it as though going from galaxy to galaxy were the kind of thing we'd talk about going from state to state or country to country.",
+        "memory_state": "hypnosis",
+        "source_page": "192",
+        "ai_justification": "The being's casual framing of intergalactic travel as routine implies a radically different relationship with time and distance, matching B751: 'Beings speak oddly of time.'",
+        "emotional_marker": "wonder",
+        "chunk": 9
+      },
+      {
+        "motif_code": "X256",
+        "sequence_order": 70,
+        "source_citation": "Did he ask you how old you were? Yes. I told him how old I was. I told him that I just started school and that I like school a lot.",
+        "memory_state": "hypnosis",
+        "source_page": "193",
+        "ai_justification": "The being questioned the witness about her age and personal life, matching X256: 'The beings interrogate the witness.'",
+        "emotional_marker": "friendly, conversational",
+        "chunk": 9
+      },
+      {
+        "motif_code": "M125",
+        "sequence_order": 71,
+        "source_citation": "he picked that up and explained a lot of what he was doing in the same way: he was trying to learn new things about what our world was like.",
+        "memory_state": "hypnosis",
+        "source_page": "193",
+        "ai_justification": "The being explicitly frames his mission as learning about the witness's world, matching M125: 'They have come to learn, teach or experiment.'",
+        "emotional_marker": "curious, collegial",
+        "chunk": 9
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 72,
+        "source_citation": "they had been looking for me. They were calling to me / 'Where were you? We were calling you.' And I said, 'I didn't hear you.' / he said, 'No, you were for awhile and then you weren't,' and he didn't know where I was",
+        "memory_state": "conscious",
+        "source_page": "PDF PAGE 194",
+        "ai_justification": "Virginia's brother reports she was missing for a period she cannot account for. She insists she was present the whole time but her brother could not find her, indicating a classic time lapse with no conscious awareness of the gap.",
+        "emotional_marker": "confusion",
+        "chunk": 10
+      },
+      {
+        "motif_code": "E207",
+        "sequence_order": 73,
+        "source_citation": "he said, 'No, you were for awhile and then you weren't,' and he didn't know where I was, and I said, 'Yes, you were right with me.'",
+        "memory_state": "conscious",
+        "source_page": "PDF PAGE 194",
+        "ai_justification": "Virginia and her brother were oblivious to each other during the missing period—she believed he was with her while he could not find her, fitting the motif of mutual obliviousness between witnesses during an abduction event.",
+        "emotional_marker": "confusion",
+        "chunk": 10
+      },
+      {
+        "motif_code": "C110",
+        "sequence_order": 74,
+        "source_citation": "the deer was looking at me and saying good-bye telepathically to me / I was communicating with this deer. That I was in touch with it. And that it was saying good-bye to me. It was as though I was talking to it",
+        "memory_state": "conscious",
+        "source_page": "PDF PAGE 194",
+        "ai_justification": "Virginia describes telepathic communication with the deer-entity, hearing its thoughts without audible speech. This is a conscious memory of telepathic exchange with a being she later recognizes as having a personality inside it.",
+        "emotional_marker": "excitement",
+        "chunk": 10
+      },
+      {
+        "motif_code": "B241",
+        "sequence_order": 75,
+        "source_citation": "big, dark . . . big, bright, dark eyes shining / the big eyes reminded me a little bit of the big eyes of . . . that the other people had",
+        "memory_state": "conscious",
+        "source_page": "PDF PAGE 194",
+        "ai_justification": "Virginia explicitly connects the deer's large, bright, dark eyes to the large eyes of the beings from her earlier encounter, identifying the entity's eyes as characteristically large like those of the humanoid beings.",
+        "emotional_marker": "recognition",
+        "chunk": 10
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 76,
+        "source_citation": "And it was gray, too. The deer was gray. Gray-brown.",
+        "memory_state": "conscious",
+        "source_page": "PDF PAGE 194",
+        "ai_justification": "The entity in deer form is described as gray/gray-brown, matching the characteristic gray skin coloration of humanoid beings in abduction reports.",
+        "emotional_marker": null,
+        "chunk": 10
+      },
+      {
+        "motif_code": "B506",
+        "sequence_order": 77,
+        "source_citation": "it just sort of dematerialized, disappeared.",
+        "memory_state": "conscious",
+        "source_page": "PDF PAGE 194",
+        "ai_justification": "The deer-entity dematerialized and disappeared before Virginia's eyes, matching the motif of beings who disappear and reappear.",
+        "emotional_marker": "wonder",
+        "chunk": 10
+      },
+      {
+        "motif_code": "M109",
+        "sequence_order": 78,
+        "source_citation": "the deer was looking at me and saying good-bye telepathically to me / it was saying good-bye to me",
+        "memory_state": "conscious",
+        "source_page": "PDF PAGE 194",
+        "ai_justification": "The entity communicates a farewell message to Virginia before departing, fitting the farewell motif where beings bid the witness goodbye.",
+        "emotional_marker": "sadness",
+        "chunk": 10
+      },
+      {
+        "motif_code": "B801",
+        "sequence_order": 79,
+        "source_citation": "the personality was a younger personality, it seemed to me, than the older man that I was dealing with the first time, It didn't seem like the same person.",
+        "memory_state": "conscious",
+        "source_page": "PDF PAGE 194",
+        "ai_justification": "Virginia distinguishes this entity's personality as younger than the elder being from her first encounter, implicitly referencing the elder status of the being from the earlier event and recognizing age-based differentiation among the beings.",
+        "emotional_marker": "contemplation",
+        "chunk": 10
+      },
+      {
+        "motif_code": "E301",
+        "sequence_order": 80,
+        "source_citation": "It was as though I had a friend and I didn't want it to leave",
+        "memory_state": "hypnosis",
+        "source_page": "195",
+        "ai_justification": "Witness senses kindness and feels as if the being is a friend, matching E301 (friendly effect: witness senses kindness or feels as if beings are friends).",
+        "emotional_marker": "affection, attachment",
+        "chunk": 11
+      },
+      {
+        "motif_code": "E303",
+        "sequence_order": 81,
+        "source_citation": "I didn't want it to leave",
+        "memory_state": "hypnosis",
+        "source_page": "195",
+        "ai_justification": "Witness feels sadness at the being's departure, matching E303 (sadness effect: sense of loss on departure).",
+        "emotional_marker": "sadness, loss",
+        "chunk": 11
+      },
+      {
+        "motif_code": "M109",
+        "sequence_order": 82,
+        "source_citation": "it said it had to go. Good-bye.",
+        "memory_state": "hypnosis",
+        "source_page": "195",
+        "ai_justification": "The being bids the witness farewell, matching M109 (Farewell).",
+        "emotional_marker": "bittersweet",
+        "chunk": 11
+      },
+      {
+        "motif_code": "M149",
+        "sequence_order": 83,
+        "source_citation": "But it wasn't a final good-bye. It was like an 'I'll-see-you-again' good-bye.",
+        "memory_state": "hypnosis",
+        "source_page": "195",
+        "ai_justification": "The being promises to return, matching M149 (beings promise to return to the witness).",
+        "emotional_marker": "hope",
+        "chunk": 11
+      },
+      {
+        "motif_code": "A100",
+        "sequence_order": 84,
+        "source_citation": "they felt very sensitive, as though, you know, there are very bright lights in a spaceship. I remember them as being extremely bright. The light must not have been ideal for my eyes.",
+        "memory_state": "hypnosis",
+        "source_page": "195",
+        "ai_justification": "Witness reports eye sensitivity from bright lights inside the craft, matching A100 (eye troubles: sensitive to light).",
+        "emotional_marker": "discomfort",
+        "chunk": 11
+      },
+      {
+        "motif_code": "U230",
+        "sequence_order": 85,
+        "source_citation": "there are very bright lights in a spaceship. I remember them as being extremely bright.",
+        "memory_state": "hypnosis",
+        "source_page": "195",
+        "ai_justification": "The interior of the craft is described as having extremely bright, uniform lighting, matching U230 (bright and uniform, without specific source).",
+        "emotional_marker": null,
+        "chunk": 11
+      },
+      {
+        "motif_code": "B900",
+        "sequence_order": 86,
+        "source_citation": "it seemed as though I had a memory that I finally did talk him into taking me for a ride, but he said he would just take me up and let me look at the Earth.",
+        "memory_state": "hypnosis",
+        "source_page": "195",
+        "ai_justification": "The being agrees to the witness's request for a ride, humoring her, matching B900 (beings are friendly, polite, familiar in manner).",
+        "emotional_marker": "gratitude",
+        "chunk": 11
+      },
+      {
+        "motif_code": "W110",
+        "sequence_order": 87,
+        "source_citation": "I think I looked at where I lived. You know, North America from outer space / I was high enough that I could see the water at the edges, and the Great Lakes. We were high.",
+        "memory_state": "hypnosis",
+        "source_page": "195",
+        "ai_justification": "Witness sees the Earth departing/receding from a window or viewport, matching W110 (otherworld seen approaching out a window, or earth departing).",
+        "emotional_marker": "wonder",
+        "chunk": 11
+      },
+      {
+        "motif_code": "W415",
+        "sequence_order": 88,
+        "source_citation": "Smooth. Like a smooth elevator. Fast. Like as though it took only about as long as it takes you to get to the top of the Empire State Building. Not over a few minutes to get high enough to see.",
+        "memory_state": "hypnosis",
+        "source_page": "195",
+        "ai_justification": "Witness senses smooth, fast motion and acceleration during the journey, matching W415 (witness senses motion or acceleration).",
+        "emotional_marker": null,
+        "chunk": 11
+      },
+      {
+        "motif_code": "E135",
+        "sequence_order": 89,
+        "source_citation": "Not over a few minutes to get high enough to see",
+        "memory_state": "hypnosis",
+        "source_page": "195",
+        "ai_justification": "The journey to a great altitude takes only a few minutes, implying time speeds up or travel is impossibly fast, matching E135 (time speeds up).",
+        "emotional_marker": null,
+        "chunk": 11
+      },
+      {
+        "motif_code": "W110",
+        "sequence_order": 90,
+        "source_citation": "1 looked at where I lived . . . and it didn't look too much like a map",
+        "memory_state": "hypnosis",
+        "source_page": "197",
+        "ai_justification": "Virginia describes looking down at the earth from above during a short flight, seeing where she lived from a high vantage point. This matches W110: otherworld seen approaching out a window, or earth departing.",
+        "emotional_marker": "wonder",
+        "chunk": 12
+      },
+      {
+        "motif_code": "M149",
+        "sequence_order": 91,
+        "source_citation": "I think he said he'd see me again.",
+        "memory_state": "hypnosis",
+        "source_page": "197",
+        "ai_justification": "The being promises to return to the witness in the future, matching M149: the beings promise to return to the witness.",
+        "emotional_marker": "sadness",
+        "chunk": 12
+      },
+      {
+        "motif_code": "M109",
+        "sequence_order": 92,
+        "source_citation": "He said he had to. / He had to leave.",
+        "memory_state": "hypnosis",
+        "source_page": "197",
+        "ai_justification": "The being bids farewell to Virginia, saying he must go. This matches M109: Farewell.",
+        "emotional_marker": "sadness",
+        "chunk": 12
+      },
+      {
+        "motif_code": "E301",
+        "sequence_order": 93,
+        "source_citation": "It was a person. It was a friend, and I don't, ah, I'm describing it as though it was a mystical experience, but it didn't feel that way. It felt like it was a good, good friend",
+        "memory_state": "hypnosis",
+        "source_page": "197",
+        "ai_justification": "Virginia describes the being as a deeply familiar, good friend, matching E301: witness senses kindness or feels as if the being is an old friend.",
+        "emotional_marker": "warmth",
+        "chunk": 12
+      },
+      {
+        "motif_code": "E303",
+        "sequence_order": 94,
+        "source_citation": "That pretty deer that I was so fond of. It was like my best, long-lost friend. I didn't want him to go away.",
+        "memory_state": "hypnosis",
+        "source_page": "197",
+        "ai_justification": "Virginia expresses deep sadness and reluctance at the being's departure, matching E303: sadness effect, sense of loss on departure.",
+        "emotional_marker": "grief",
+        "chunk": 12
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 95,
+        "source_citation": "How I found him and how the communication happened I can't remember. There's a block-out.",
+        "memory_state": "hypnosis",
+        "source_page": "197",
+        "ai_justification": "The witness describes a clear memory block covering a period of the encounter, consistent with time lapse or enforced amnesia over how the encounter began.",
+        "emotional_marker": "frustration",
+        "chunk": 13
+      },
+      {
+        "motif_code": "B202",
+        "sequence_order": 96,
+        "source_citation": "I don't think it was a deer. I mean, the mental image of a deer is there, the visual image, but the inner experience of it is not of a deer but of a person. Very definitely a human kind of a person.",
+        "memory_state": "hypnosis",
+        "source_page": "198",
+        "ai_justification": "The witness explicitly identifies the being as having a human quality, distinguishing it from an animal. This identifies the entity type as human or human-like.",
+        "emotional_marker": "realization",
+        "chunk": 13
+      },
+      {
+        "motif_code": "E301",
+        "sequence_order": 97,
+        "source_citation": "I sure knew him and I sure communicated with him, and I sure didn't want him to leave, and it wasn't a sad thing. It was like such an excitement! It was as though you bump into a friend you haven't seen for a long time whom you really like",
+        "memory_state": "hypnosis",
+        "source_page": "197",
+        "ai_justification": "The witness describes an intense feeling of familiarity and friendship toward the being, as if reuniting with an old friend. This maps to the friendly effect where the witness senses kindness or feels as if they know the being.",
+        "emotional_marker": "joy, excitement, familiarity",
+        "chunk": 13
+      },
+      {
+        "motif_code": "C110",
+        "sequence_order": 98,
+        "source_citation": "I sure communicated with him / We were talking about . . . I don't know what. About how beautiful something was. The woods or something like that.",
+        "memory_state": "hypnosis",
+        "source_page": "197",
+        "ai_justification": "The witness describes communicating with the being in a way that implies understanding without specifying audible speech, consistent with telepathic or non-verbal communication where the subject understands meanings.",
+        "emotional_marker": "warmth",
+        "chunk": 13
+      },
+      {
+        "motif_code": "M116",
+        "sequence_order": 99,
+        "source_citation": "'Your parents are calling you,' and I said, 'Well,' you know, 'that's all right.' / 'Well, you've got to go back and have your picnic,'",
+        "memory_state": "hypnosis",
+        "source_page": "197",
+        "ai_justification": "The being tells the witness it is time for her to return, directly mapping to the motif where beings say the time has come for the witness to return.",
+        "emotional_marker": "reluctance",
+        "chunk": 13
+      },
+      {
+        "motif_code": "E303",
+        "sequence_order": 100,
+        "source_citation": "I sure didn't want him to leave / But I didn't want to go back there because I was busy looking for the deer.",
+        "memory_state": "hypnosis",
+        "source_page": "197",
+        "ai_justification": "The witness expresses a strong sense of loss and reluctance at the being's departure, consistent with the sadness effect upon separation from the beings.",
+        "emotional_marker": "sadness, longing",
+        "chunk": 13
+      },
+      {
+        "motif_code": "B506",
+        "sequence_order": 101,
+        "source_citation": "I turned my head to answer them to say something like 'I'm here!' and when I turned back, the deer was gone. / He just disappeared all of a sudden. It wasn't like he'd walked away.",
+        "memory_state": "hypnosis",
+        "source_page": "198",
+        "ai_justification": "The being vanished instantaneously rather than walking away, consistent with beings who disappear and reappear.",
+        "emotional_marker": "surprise, confusion",
+        "chunk": 13
+      },
+      {
+        "motif_code": "A108",
+        "sequence_order": 102,
+        "source_citation": "And yet when I got back, I had this blood on my blouse. Just a little. Just where you would if you had a nosebleed.",
+        "memory_state": "hypnosis",
+        "source_page": "198",
+        "ai_justification": "The witness discovers blood on her blouse consistent with a nosebleed upon returning from the encounter. This maps to a wound of unknown origin that opens and bleeds, a recognized aftereffect potentially linked to nasal implant procedures.",
+        "emotional_marker": "puzzlement",
+        "chunk": 13
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 103,
+        "source_citation": "I have a big blank about what happened before that.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 199",
+        "ai_justification": "The witness explicitly states she has a large gap in her memory about what happened before the deer encounter, indicating a time lapse consistent with E200.",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "E205",
+        "sequence_order": 104,
+        "source_citation": "'Well, Roger's been here. He was looking for you.' / 'Well, he just came back. He couldn't find you.'",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 199",
+        "ai_justification": "Virginia believed she was with her brother the whole time, but her family reports Roger was back and could not find her. She was unaccountably absent from where she thought she was, consistent with relocation/traveling a distance unawares.",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "A108",
+        "sequence_order": 105,
+        "source_citation": "'You have blood on your shirt.' And I looked and it was fresh. It was fresh, fresh blood. It was fresh as when you just cut yourself. It hadn't begun to dry at all, and so I looked on my hands, and no blood, and my neck, felt my face, no blood, and felt my nose, if I had a bloody nose. No bloody nose.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 199",
+        "ai_justification": "Fresh blood appeared on the witness's blouse with no identifiable wound source on her body. This matches A108: wound of unknown origin opens and bleeds.",
+        "emotional_marker": "confusion",
+        "chunk": 14
+      },
+      {
+        "motif_code": "E303",
+        "sequence_order": 106,
+        "source_citation": "feeling very frustrated and disappointed and also as though I had lost something. Like if you're in a carnival with a friend and there are so many people and you turn to look at something and you let go of somebody's hand and it isn't as though they're permanently lost but you're separated and you know that there isn't any way that you can find each other for a while. It's a loss like being sort of yanked out of that transaction before it was over with.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 199",
+        "ai_justification": "The witness describes a profound sense of loss and being yanked out of an unfinished experience, consistent with E303: sadness effect, sense of loss on departure.",
+        "emotional_marker": "loss, sadness",
+        "chunk": 14
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 107,
+        "source_citation": "It's as though there's a big blank spot in the middle, and I don't know why that's blank.",
+        "memory_state": "hypnosis",
+        "source_page": "200",
+        "ai_justification": "Virginia describes a period of missing time—a large gap in her memory of the encounter, consistent with the time lapse motif E200.",
+        "emotional_marker": "confusion",
+        "chunk": 15
+      },
+      {
+        "motif_code": "M119",
+        "sequence_order": 108,
+        "source_citation": "I guess they had to give me, you know, a forget-it thing, because of my parents and family and stuff.",
+        "memory_state": "hypnosis",
+        "source_page": "200",
+        "ai_justification": "Virginia attributes her amnesia to the beings deliberately inducing forgetfulness, consistent with M119 (beings tell subject to forget, because the time is not yet right). She rationalizes it was for her protection as a child.",
+        "emotional_marker": "acceptance",
+        "chunk": 15
+      },
+      {
+        "motif_code": "U104",
+        "sequence_order": 109,
+        "source_citation": "There's a ship just like they have in the movies. It's round. It's top-shaped roughly, but I can't tell exactly.",
+        "memory_state": "hypnosis",
+        "source_page": "201",
+        "ai_justification": "Virginia describes the craft as round and 'top-shaped,' which matches U104 (bell, mushroom or top shape).",
+        "emotional_marker": "awe",
+        "chunk": 15
+      },
+      {
+        "motif_code": "U120",
+        "sequence_order": 110,
+        "source_citation": "There's a very bright light. / There's so much light you can't really see clearly.",
+        "memory_state": "hypnosis",
+        "source_page": "201",
+        "ai_justification": "Virginia describes being immersed in an overwhelming bright light emanating from the craft, consistent with U120 (beam of light immerses the witness).",
+        "emotional_marker": "disorientation",
+        "chunk": 15
+      },
+      {
+        "motif_code": "A100",
+        "sequence_order": 111,
+        "source_citation": "It's interesting—here I go again with this feeling in my eyes.",
+        "memory_state": "hypnosis",
+        "source_page": "201",
+        "ai_justification": "Virginia notes a recurring physical sensation in her eyes during recall, consistent with A100 (eye troubles). This is a physical aftereffect she experiences in the present while reliving the memory, linked to the bright light of the encounter.",
+        "emotional_marker": "discomfort",
+        "chunk": 15
+      },
+      {
+        "motif_code": "U120",
+        "sequence_order": 112,
+        "source_citation": "A very bright light. Pretty. Bright light. . . . There was some pink in it. And blue. Bright light.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 202",
+        "ai_justification": "A bright, colorful light immerses or engulfs the witness, consistent with U120 (beam of light immerses the witness).",
+        "emotional_marker": "wonder",
+        "chunk": 16
+      },
+      {
+        "motif_code": "C110",
+        "sequence_order": 113,
+        "source_citation": "And then I hear almost like a whisper, 'Virginia . . . Virginia,' and I think it was in my head that they were calling me, so they knew my name or they knew how to call me in my head",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 202",
+        "ai_justification": "The witness hears a voice inside her head calling her name, a clear instance of telepathic communication (C110).",
+        "emotional_marker": "recognition",
+        "chunk": 16
+      },
+      {
+        "motif_code": "M122",
+        "sequence_order": 114,
+        "source_citation": "so they knew my name or they knew how to call me in my head / I recognized the call. It was like somebody I knew",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 202",
+        "ai_justification": "The beings know the witness's name and she recognizes them as familiar from childhood, indicating they have watched her and have a special long-term interest in her (M122).",
+        "emotional_marker": "familiarity",
+        "chunk": 16
+      },
+      {
+        "motif_code": "E215",
+        "sequence_order": 115,
+        "source_citation": "So I recognized the call. It was like somebody I knew, and I went over to it and I went inside.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 202",
+        "ai_justification": "The witness voluntarily approaches and enters the craft in response to a telepathic summons, an uncharacteristic behavior (going toward an alien craft) consistent with E215 (inappropriate response or uncharacteristic behavior).",
+        "emotional_marker": "compliance",
+        "chunk": 16
+      },
+      {
+        "motif_code": "E124",
+        "sequence_order": 116,
+        "source_citation": "It was like there was a bright column of light. I don't remember whether I went up stairs or whether there was a lift.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 202",
+        "ai_justification": "The witness enters via a bright column of light, consistent with levitation in a beam of light (E124).",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "U133",
+        "sequence_order": 117,
+        "source_citation": "I think it was like a ramp that I walked up. No, it was like a conveyor belt ramp. I stood on it and it lifted",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 202",
+        "ai_justification": "The witness describes entering via a ramp or conveyor-belt mechanism, consistent with U133 (ramps, stairs).",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "B900",
+        "sequence_order": 118,
+        "source_citation": "there was a celebration. They were visiting because they were celebrating something / everybody on the ship was happy.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 202",
+        "ai_justification": "The beings are in a festive, happy, and welcoming mood, consistent with B900 (beings are friendly, polite, familiar in manner).",
+        "emotional_marker": "joy",
+        "chunk": 16
+      },
+      {
+        "motif_code": "B914",
+        "sequence_order": 119,
+        "source_citation": "there was an accomplishment that they were very pleased about and very proud of, and they were celebrating.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 202",
+        "ai_justification": "The beings are happy and celebrating an accomplishment, consistent with B914 (beings are happy in their work, or laugh).",
+        "emotional_marker": "celebration",
+        "chunk": 16
+      },
+      {
+        "motif_code": "B211",
+        "sequence_order": 120,
+        "source_citation": "there was someone who became the deer later, was like a younger person, more like my age / there was definitely sort of a female friend on the ship",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 202",
+        "ai_justification": "The witness identifies one of the beings as having a female quality, consistent with B211 (feminine).",
+        "emotional_marker": "warmth",
+        "chunk": 16
+      },
+      {
+        "motif_code": "E301",
+        "sequence_order": 121,
+        "source_citation": "it had the feeling of being more like a contemporary and it was a female feeling, like a friend / it was a relative that got to come along to meet me and it was a party.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 202",
+        "ai_justification": "The witness senses kindness and feels as if the beings are old friends, consistent with E301 (friendly effect: witness senses kindness or feels as if beings are familiar).",
+        "emotional_marker": "friendship",
+        "chunk": 16
+      },
+      {
+        "motif_code": "M125",
+        "sequence_order": 122,
+        "source_citation": "they said they wanted to share it with me because my research or their research was—",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 202",
+        "ai_justification": "The beings express that the celebration relates to research and they want to share it with the witness, indicating a purpose of learning or experimentation (M125).",
+        "emotional_marker": "inclusion",
+        "chunk": 16
+      },
+      {
+        "motif_code": "B900",
+        "sequence_order": 123,
+        "source_citation": "And so we were having a party and they were telling me about—they were having a hard time explaining to me why it was so exciting",
+        "memory_state": "hypnosis",
+        "source_page": "203",
+        "ai_justification": "The beings are friendly and familiar in manner, hosting a party-like celebration with the witness, consistent with B900 (beings are friendly, polite, familiar in manner).",
+        "emotional_marker": "warmth, celebration",
+        "chunk": 17
+      },
+      {
+        "motif_code": "B800",
+        "sequence_order": 124,
+        "source_citation": "the older man who had done the research was really beside himself with excitement. As though he had accomplished something that he was really proud of.",
+        "memory_state": "hypnosis",
+        "source_page": "203",
+        "ai_justification": "The older male being acts as the leader and spokesman, directing the interaction and expressing the significance of the research, consistent with B800.",
+        "emotional_marker": "excitement, pride",
+        "chunk": 17
+      },
+      {
+        "motif_code": "B911",
+        "sequence_order": 125,
+        "source_citation": "the older man who had done the research was really beside himself with excitement",
+        "memory_state": "hypnosis",
+        "source_page": "203",
+        "ai_justification": "The being displays genuine emotional excitement, showing he can be startled or excited, consistent with B911.",
+        "emotional_marker": "excitement",
+        "chunk": 17
+      },
+      {
+        "motif_code": "M125",
+        "sequence_order": 126,
+        "source_citation": "it had to do with research and it had to do with the study, but it seemed like its significance was greater / it had almost a religious quality the way he felt about the research that he was doing. It was like his own mission.",
+        "memory_state": "hypnosis",
+        "source_page": "203",
+        "ai_justification": "The beings' purpose is described as research and study with deep significance, consistent with M125 (they have come to learn, teach or experiment).",
+        "emotional_marker": "awe, reverence",
+        "chunk": 17
+      },
+      {
+        "motif_code": "M122",
+        "sequence_order": 127,
+        "source_citation": "their research used their visit with me so they wanted to share it with me because my contributions had been really helpful for them",
+        "memory_state": "hypnosis",
+        "source_page": "203",
+        "ai_justification": "The beings indicate they have a special, ongoing interest in the witness and have watched/tracked her over time, returning to share results from her earlier contribution, consistent with M122.",
+        "emotional_marker": "gratitude",
+        "chunk": 17
+      },
+      {
+        "motif_code": "B707",
+        "sequence_order": 128,
+        "source_citation": "I guess they wanted a sample of me to see how I was different. Because I told them I was grown up. I said, 'I'm a mature'—you know, like I explained to them I've done all my growing now. 'When you saw me, I was a child, and I have done as much growing as I am going to do.' And I guess they wanted to know how I was different.",
+        "memory_state": "hypnosis",
+        "source_page": "203",
+        "ai_justification": "The beings are interested in the witness's growth and aging from childhood to maturity, consistent with B707 (concern with age).",
+        "emotional_marker": "curiosity",
+        "chunk": 17
+      },
+      {
+        "motif_code": "X235",
+        "sequence_order": 129,
+        "source_citation": "I think they did take some blood from the inside of my nose / I think that's what happened. They did do that.",
+        "memory_state": "hypnosis",
+        "source_page": "203",
+        "ai_justification": "The beings take a blood sample from the witness's nose, consistent with X235 (beings take a blood or body fluids sample).",
+        "emotional_marker": "mild discomfort",
+        "chunk": 17
+      },
+      {
+        "motif_code": "B901",
+        "sequence_order": 130,
+        "source_citation": "I think I told them about the last time and I think they didn't want to leave a mark on me.",
+        "memory_state": "hypnosis",
+        "source_page": "203",
+        "ai_justification": "The beings are considerate and helpful, choosing a sampling method that avoids leaving a visible mark on the witness, consistent with B901.",
+        "emotional_marker": "consideration",
+        "chunk": 17
+      },
+      {
+        "motif_code": "X220",
+        "sequence_order": 131,
+        "source_citation": "They used the same instrument. It was like it had a handle that could just come out. It was like a touch on the inside. A sort of hum / A microphone. Not the kind that is like an ice cream cone, but just—this is one of the small ones, a little one. Little hand mike. Right. But it was all smooth.",
+        "memory_state": "hypnosis",
+        "source_page": "203",
+        "ai_justification": "A smooth, handheld instrument is used on the witness during the sample-taking procedure, consistent with X220 (beings use handheld instruments).",
+        "emotional_marker": "neutral",
+        "chunk": 17
+      },
+      {
+        "motif_code": "B802",
+        "sequence_order": 132,
+        "source_citation": "It wasn't him and it wasn't the woman, who—the girl, who was sort of my age. It was—oh, I think it was his sidekick from the original trip.",
+        "memory_state": "hypnosis",
+        "source_page": "203",
+        "ai_justification": "A specific being acts as the examiner who performs the sample-taking procedure, identified as the leader's assistant from the first encounter, consistent with B802 (one being acts as examiner/doctor).",
+        "emotional_marker": "neutral",
+        "chunk": 17
+      },
+      {
+        "motif_code": "X235",
+        "sequence_order": 133,
+        "source_citation": "find the blood on my blouse? The first time, I was glad to have a visible, physical evidence of it. The second time, it was just sort of annoying. So they did that",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 204",
+        "ai_justification": "Virginia references blood on her blouse from a procedure done twice, indicating the beings took a blood sample. This is coded as specimen taking of blood/body fluids.",
+        "emotional_marker": "annoyance",
+        "chunk": 18
+      },
+      {
+        "motif_code": "B900",
+        "sequence_order": 134,
+        "source_citation": "it was just a party. There was a lot of talking and a good feeling and they were playing, um, playing light inside. . . . There were lights flickering on.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 204",
+        "ai_justification": "The beings host a celebratory gathering described as a 'party' with a 'good feeling,' indicating friendly, polite, familiar manner consistent with B900.",
+        "emotional_marker": "joy",
+        "chunk": 18
+      },
+      {
+        "motif_code": "C110",
+        "sequence_order": 135,
+        "source_citation": "They were thinking at me, but they were talking to themselves",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 204",
+        "ai_justification": "The beings communicated with Virginia telepathically ('thinking at me') while using a different mode among themselves, indicating directed telepathic communication with the witness.",
+        "emotional_marker": null,
+        "chunk": 18
+      },
+      {
+        "motif_code": "C200",
+        "sequence_order": 136,
+        "source_citation": "they were talking to themselves and that had a sound—it was a little clicky, a little . .. it was like a voice was speaking, but a little bit more like smacking. You know, like (she smacks her palms) some of that stuff in it, in the talking. And at a higher pitch than we talk.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 204",
+        "ai_justification": "The beings communicated among themselves using a high-pitched, clicky, smacking sound distinct from their telepathic communication with the witness. This matches C200: beings communicate with each other using mumbling or rapid noises.",
+        "emotional_marker": null,
+        "chunk": 18
+      },
+      {
+        "motif_code": "B911",
+        "sequence_order": 137,
+        "source_citation": "And they were obviously excited. And they were trying to explain to me what they had accomplished, too.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 204",
+        "ai_justification": "The beings displayed visible excitement about their accomplishment, matching B911: beings can be startled or excited.",
+        "emotional_marker": "excitement",
+        "chunk": 18
+      },
+      {
+        "motif_code": "B720",
+        "sequence_order": 138,
+        "source_citation": "I think they succeeded into talking somebody into considering us as an endangered species, or something equivalent to that. . . . it was like a precious species, kind of a classification. But it was more than that, too. It didn't have so much just to do with Earth, it had to do with . .. I guess maybe establishing the principle of noninterference",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 204",
+        "ai_justification": "The beings explained they had achieved a classification of humans as a 'precious species' and established a principle of noninterference with indigenous cultures. This reflects a professed concern with peace and protection of humanity, matching B720.",
+        "emotional_marker": "wonder",
+        "chunk": 18
+      },
+      {
+        "motif_code": "B211",
+        "sequence_order": 139,
+        "source_citation": "Well, she looked like them. Except it seemed to me she was a lighter color.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 205",
+        "ai_justification": "Virginia describes a female being among the group, establishing the feminine gender of this entity.",
+        "emotional_marker": null,
+        "chunk": 18
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 140,
+        "source_citation": "It's as though the older you got the darker gray you were.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 205",
+        "ai_justification": "Virginia describes the skin color of the beings as gray, with variation by apparent age. This matches B290: skin white, gray, ashen or claylike.",
+        "emotional_marker": null,
+        "chunk": 18
+      },
+      {
+        "motif_code": "B805",
+        "sequence_order": 141,
+        "source_citation": "the more senior you were, the darker it was. It might have been that. It seemed like hers was lighter, more creamy-colored. And it just felt like a younger person. Like a bouncier quality. It wasn't so deliber-",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 205",
+        "ai_justification": "Virginia describes a visual distinction between senior/older beings (darker) and younger beings (lighter, bouncier), indicating dimorphism associated with rank or seniority.",
+        "emotional_marker": null,
+        "chunk": 18
+      },
+      {
+        "motif_code": "B211",
+        "sequence_order": 142,
+        "source_citation": "she wanted to hear about, you know, what the place (Earth—BH) was like.",
+        "memory_state": "hypnosis",
+        "source_page": "206",
+        "ai_justification": "The being Virginia interacts with is described as feminine ('she', 'schoolgirl'), matching B211 Feminine.",
+        "emotional_marker": "curiosity",
+        "chunk": 19
+      },
+      {
+        "motif_code": "B911",
+        "sequence_order": 143,
+        "source_citation": "it was obviously a big treat for her to be there. / she was really excited about that.",
+        "memory_state": "hypnosis",
+        "source_page": "206",
+        "ai_justification": "The young being is described as excited and treating the encounter as a 'big treat,' indicating beings can be startled or excited (B911).",
+        "emotional_marker": "excitement",
+        "chunk": 19
+      },
+      {
+        "motif_code": "B740",
+        "sequence_order": 144,
+        "source_citation": "She hadn't been there and it was obviously a big treat for her to be there. / she wanted to hear about, you know, what the place (Earth—BH) was like.",
+        "memory_state": "hypnosis",
+        "source_page": "206",
+        "ai_justification": "The young being's eagerness to learn about Earth reflects B740, interest in earthly conditions and problems.",
+        "emotional_marker": "curiosity",
+        "chunk": 19
+      },
+      {
+        "motif_code": "C110",
+        "sequence_order": 145,
+        "source_citation": "she was trying to tell me about the kinds of schools she went to. / We were trying to discuss what young people do in their spare time.",
+        "memory_state": "hypnosis",
+        "source_page": "206",
+        "ai_justification": "Virginia describes a two-way exchange of understanding with the being, consistent with telepathic communication (C110), as the beings in this case series communicate telepathically.",
+        "emotional_marker": "friendly",
+        "chunk": 19
+      },
+      {
+        "motif_code": "B900",
+        "sequence_order": 146,
+        "source_citation": "her (manner) was more bubbly, more bouncy. / The whole thing was really, um, a heavy trip for them.",
+        "memory_state": "hypnosis",
+        "source_page": "206",
+        "ai_justification": "The young being's bubbly, friendly demeanor and the general awe of the group reflects beings that are friendly and familiar in manner (B900).",
+        "emotional_marker": "warmth",
+        "chunk": 19
+      },
+      {
+        "motif_code": "B700",
+        "sequence_order": 147,
+        "source_citation": "I guess they have a mating process, too, because it was as though she was trying to explain about dating or whatever they do",
+        "memory_state": "hypnosis",
+        "source_page": "206",
+        "ai_justification": "The young being discusses their mating/dating process, reflecting B700, beings question or discuss sex and reproduction.",
+        "emotional_marker": null,
+        "chunk": 19
+      },
+      {
+        "motif_code": "B711",
+        "sequence_order": 148,
+        "source_citation": "she wanted to be a bioanthropologist like her father or grandfather, whoever he was. She was interested in that field.",
+        "memory_state": "hypnosis",
+        "source_page": "206",
+        "ai_justification": "The young being's aspiration to be a bioanthropologist reflects B711, interest in chemical composition and internal makeup, as bioanthropology studies biological aspects of humans.",
+        "emotional_marker": null,
+        "chunk": 19
+      },
+      {
+        "motif_code": "X235",
+        "sequence_order": 149,
+        "source_citation": "I think that the blood sample was . . . she was going to have a chance to examine it, study it, too.",
+        "memory_state": "hypnosis",
+        "source_page": "206",
+        "ai_justification": "Virginia references a blood sample taken from her that the young being would study, matching X235, beings take a blood or body fluids sample.",
+        "emotional_marker": null,
+        "chunk": 19
+      },
+      {
+        "motif_code": "X231",
+        "sequence_order": 150,
+        "source_citation": "Maybe they took a tissue sample. I don't know.",
+        "memory_state": "hypnosis",
+        "source_page": "206",
+        "ai_justification": "Virginia speculates a tissue sample may have been taken, matching X231, beings scrape a sample of skin from the witness.",
+        "emotional_marker": "uncertainty",
+        "chunk": 19
+      },
+      {
+        "motif_code": "B806",
+        "sequence_order": 151,
+        "source_citation": "some of them were more junior to him, considerably, and they kept quiet. It was like they stood respectfully off a little bit",
+        "memory_state": "hypnosis",
+        "source_page": "206",
+        "ai_justification": "Junior beings standing respectfully at a distance from the senior being reflects B806, taller/senior beings lead while shorter/junior ones are subservient and do menial tasks.",
+        "emotional_marker": "awe",
+        "chunk": 19
+      },
+      {
+        "motif_code": "X205",
+        "sequence_order": 152,
+        "source_citation": "there were more people along. / they were just standing there kind of being awed, you know, seeing a strange person and being at the party.",
+        "memory_state": "hypnosis",
+        "source_page": "206",
+        "ai_justification": "Multiple beings are present observing the witness, consistent with X205, other humans or strangers examined or present along with the witness.",
+        "emotional_marker": "awe",
+        "chunk": 19
+      },
+      {
+        "motif_code": "A105",
+        "sequence_order": 153,
+        "source_citation": "there is the detail of the blood on her blouse. Its presence is confirmed by her family, and it was even recorded on film.",
+        "memory_state": "conscious",
+        "source_page": "206",
+        "ai_justification": "Blood on Virginia's blouse, confirmed by family and photographs, constitutes physical evidence of spots or marks like puncture wounds (A105).",
+        "emotional_marker": null,
+        "chunk": 19
+      },
+      {
+        "motif_code": "X245",
+        "sequence_order": 154,
+        "source_citation": "The blood was the result of a probe of some kind inserted into her left nostril to take blood and tissue samples.",
+        "memory_state": "hypnosis",
+        "source_page": "206",
+        "ai_justification": "A probe inserted into the nostril matches X245, beings insert a long needle into the head, usually through the nose.",
+        "emotional_marker": null,
+        "chunk": 19
+      },
+      {
+        "motif_code": "X220",
+        "sequence_order": 155,
+        "source_citation": "He's taking an instrument and . .. ah! Ow! / He's putting that thing in my nose, and it's going up and it's breaking through something.",
+        "memory_state": "hypnosis",
+        "source_page": "207",
+        "ai_justification": "A handheld instrument is used on the witness, inserted into her nostril. This matches X220: beings use handheld instruments.",
+        "emotional_marker": "pain, distress",
+        "chunk": 20
+      },
+      {
+        "motif_code": "X245",
+        "sequence_order": 156,
+        "source_citation": "it's going up and it's breaking through something. / He had that thing up in my head!",
+        "memory_state": "hypnosis",
+        "source_page": "207",
+        "ai_justification": "The instrument is inserted through the nose and penetrates into the head, matching X245: beings insert a long needle into the head, usually through the nose.",
+        "emotional_marker": "pain, fear",
+        "chunk": 20
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 157,
+        "source_citation": "I can't move.",
+        "memory_state": "hypnosis",
+        "source_page": "207",
+        "ai_justification": "The witness reports being unable to move during the procedure, matching E315: paralysis, numbness.",
+        "emotional_marker": "helplessness",
+        "chunk": 20
+      },
+      {
+        "motif_code": "B707",
+        "sequence_order": 158,
+        "source_citation": "She was asked about the lifespan of humans and various animals.",
+        "memory_state": "hypnosis",
+        "source_page": "207",
+        "ai_justification": "The beings questioned Virginia about lifespans of humans and animals, matching B707: concern with age.",
+        "emotional_marker": null,
+        "chunk": 20
+      },
+      {
+        "motif_code": "S101",
+        "sequence_order": 159,
+        "source_citation": "She was shown star maps which apparently were color-coded, and which were 'like slides . . . you know, like windows . . .'",
+        "memory_state": "hypnosis",
+        "source_page": "207",
+        "ai_justification": "The witness was shown star maps, matching S101: the witness sees a star map depicting the beings' place of origin.",
+        "emotional_marker": null,
+        "chunk": 20
+      },
+      {
+        "motif_code": "B754",
+        "sequence_order": 160,
+        "source_citation": "And so he asked me, 'What are vegetables?' and I said that this is a broad term and could cover a great variety of certain kinds of foods we eat.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 208",
+        "ai_justification": "The being questions Virginia about vegetables, a cultural artifact/concept of human food. This maps to B754: Interest in cultural artifacts.",
+        "emotional_marker": null,
+        "chunk": 21
+      },
+      {
+        "motif_code": "B754",
+        "sequence_order": 161,
+        "source_citation": "So he said, 'Tell me about squash.' So I said it was yellow, usually, in color. And he said, 'What is yellow?'",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 208",
+        "ai_justification": "The being continues questioning about a specific food (squash) and then asks about the concept of color ('yellow'), demonstrating deep interest in basic human cultural concepts. B754: Interest in cultural artifacts.",
+        "emotional_marker": null,
+        "chunk": 21
+      },
+      {
+        "motif_code": "U230",
+        "sequence_order": 162,
+        "source_citation": "She states as an accurate memory the fact that the inside of the UFO was very bright",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 209",
+        "ai_justification": "Virginia recalls the interior of the craft as very bright, consistent with U230: Bright and uniform lighting without specific source.",
+        "emotional_marker": null,
+        "chunk": 21
+      },
+      {
+        "motif_code": "A100",
+        "sequence_order": 163,
+        "source_citation": "She recalls that her eyes were quite dry and irritated",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 209",
+        "ai_justification": "Virginia's eyes were dry and irritated during the encounter, mapping to A100: Eye troubles (water, burn, vision impaired, sensitive to light).",
+        "emotional_marker": "discomfort",
+        "chunk": 21
+      },
+      {
+        "motif_code": "X220",
+        "sequence_order": 164,
+        "source_citation": "The instrument inserted in her nostril 'had a little hum, like you held it and it would go hmmm and that was all there was to it.'",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 209",
+        "ai_justification": "A handheld instrument was inserted into Virginia's nostril during the examination, producing a humming sound. This maps to X220: Beings use handheld instruments, clamps.",
+        "emotional_marker": null,
+        "chunk": 21
+      },
+      {
+        "motif_code": "C110",
+        "sequence_order": 165,
+        "source_citation": "Telepathically, she is called by name.",
+        "memory_state": "hypnosis",
+        "source_page": "210",
+        "ai_justification": "The witness is contacted telepathically by the beings, who call her by name, matching C110: subject hears voice in head or understands meanings.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "E218",
+        "sequence_order": 166,
+        "source_citation": "an adolescent girl who had been abducted ten years earlier is somehow lured away from her family and into the woods.",
+        "memory_state": "hypnosis",
+        "source_page": "210",
+        "ai_justification": "Virginia is lured away from her family without a clear conscious reason, acting on an irresistible impulse, matching E218: predestination, act without knowing why.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 167,
+        "source_citation": "She is made to feel happy, part of a 'celebration in her honor,'",
+        "memory_state": "hypnosis",
+        "source_page": "210",
+        "ai_justification": "The witness is artificially made to feel happy and euphoric, matching E300: pacification effect, witness calm, euphoric, relaxed.",
+        "emotional_marker": "happy",
+        "chunk": 22
+      },
+      {
+        "motif_code": "B907",
+        "sequence_order": 168,
+        "source_citation": "Bestowing importance and showering love upon the potential convert weakens his opposition and sets him up for whatever unusual demands are to be made of him. / they got from her what they needed, and she was left with a bloody shirt and a confused memory.",
+        "memory_state": "hypnosis",
+        "source_page": "210",
+        "ai_justification": "The investigator's analysis, paraphrasing the witness's experience, describes the beings' friendliness as superficial and manipulative—a cover for extracting what they need. This matches B907: beings' friendliness really superficial, a cover.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "X235",
+        "sequence_order": 169,
+        "source_citation": "Blood and tissue samples are extracted from inside her nose.",
+        "memory_state": "hypnosis",
+        "source_page": "210",
+        "ai_justification": "Blood and tissue samples are taken from the witness's nose, matching X235: beings take a blood or body fluids sample.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "M119",
+        "sequence_order": 170,
+        "source_citation": "She is then taken into the woods and given post-hypnotic suggestions that she will forget everything except the fact that she saw a beautiful deer.",
+        "memory_state": "hypnosis",
+        "source_page": "210",
+        "ai_justification": "The beings instruct the witness to forget the experience, implanting a screen memory of a deer, matching M119: beings tell subject to forget, because the time is not yet right.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 171,
+        "source_citation": "She returns to her family only to discover that an odd time lapse has occurred",
+        "memory_state": "hypnosis",
+        "source_page": "210",
+        "ai_justification": "The witness discovers unaccounted-for missing time upon returning to her family, matching E200: time lapse.",
+        "emotional_marker": "confused",
+        "chunk": 22
+      },
+      {
+        "motif_code": "A108",
+        "sequence_order": 172,
+        "source_citation": "there is fresh blood on her blouse.",
+        "memory_state": "hypnosis",
+        "source_page": "210",
+        "ai_justification": "Fresh blood on the witness's blouse from the nasal extraction is physical evidence of a wound of unknown origin, matching A108: wound of unknown origin opens and bleeds.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "M122",
+        "sequence_order": 173,
+        "source_citation": "The situation of abductees being made to feel special, loved, members of the 'select,' occasionally occurs in abduction cases. The reasons for their having been singled out are almost always vague, but the abductees feel gratified",
+        "memory_state": "hypnosis",
+        "source_page": "210",
+        "ai_justification": "Virginia is made to feel she has been specially selected and watched, implying the beings have a special interest in her, matching M122: they have watched witness a long time, have special interest.",
+        "emotional_marker": "gratified",
+        "chunk": 22
+      },
+      {
+        "motif_code": "X235",
+        "sequence_order": 174,
+        "source_citation": "the blood and tissue samples taken from her",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 211",
+        "ai_justification": "Virginia insists that blood and tissue samples were taken from her, which corresponds to X235 (beings take blood or body fluids sample). This is paraphrased from Virginia's own testimony as relayed by the investigator.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "E302",
+        "sequence_order": 175,
+        "source_citation": "Virginia insists the good feelings of the celebratory party were just as real as the blood and tissue samples taken from her",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 211",
+        "ai_justification": "Virginia reports experiencing genuine good feelings and happiness during a celebratory party, corresponding to E302 (rapture effect: sense of joy, beauty). This is Virginia's direct insistence as quoted by the investigator.",
+        "emotional_marker": "happiness, joy",
+        "chunk": 23
+      },
+      {
+        "motif_code": "B907",
+        "sequence_order": 176,
+        "source_citation": "the reality is the physical operation and its attendant pain, while the sense of happiness and love is an enforced illusion",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 211",
+        "ai_justification": "The investigator infers from Virginia's case that the beings' friendliness (the celebratory party, good feelings) was superficial and a cover for the real purpose of the physical operation. This maps to B907 (beings' friendliness really superficial, a cover). While this is the investigator's interpretation, it is drawn directly from Virginia's reported experience.",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "X235",
+        "sequence_order": 177,
+        "source_citation": "Since I remembered it happening the first time, I hardly even paid any attention to it.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 212",
+        "ai_justification": "Virginia describes a nasal sample-taking procedure, comparing it to an earlier time when a similar sample was taken from her leg. The investigator contextualizes this as 'the apparent taking of blood and tissue from inside the nostril,' which maps to X235 (beings take blood or body fluids sample).",
+        "emotional_marker": "calm, indifferent",
+        "chunk": 24
+      },
+      {
+        "motif_code": "B911",
+        "sequence_order": 178,
+        "source_citation": "having a hard time explaining to me why it was so exciting, except that the older man, who had done the research, was really beside himself with excitement.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 212",
+        "ai_justification": "Virginia describes the beings as excited and having difficulty explaining their excitement, with the older man 'beside himself with excitement.' This maps to B911 (beings can be startled or excited).",
+        "emotional_marker": null,
+        "chunk": 24
+      },
+      {
+        "motif_code": "B801",
+        "sequence_order": 179,
+        "source_citation": "the older man, who had done the research, was really beside himself with excitement.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 212",
+        "ai_justification": "Virginia identifies one being as 'the older man' who had conducted the research, distinguishing him by age and role from the others. This maps to B801 (one being is an elder).",
+        "emotional_marker": null,
+        "chunk": 24
+      },
+      {
+        "motif_code": "C110",
+        "sequence_order": 180,
+        "source_citation": "she heard her name being called 'in my head . . . so they knew my name. . . . They knew how to call me. . . .'",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 213",
+        "ai_justification": "Virginia describes hearing her name called telepathically ('in my head'), matching C110: subject hears voice in head or understands meanings.",
+        "emotional_marker": null,
+        "chunk": 25
+      },
+      {
+        "motif_code": "M122",
+        "sequence_order": 181,
+        "source_citation": "so they knew my name. . . . They knew how to call me.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 213",
+        "ai_justification": "The beings already knew Virginia's name, implying prior knowledge of and special interest in the witness, matching M122: they have watched witness a long time, have special interest.",
+        "emotional_marker": null,
+        "chunk": 25
+      },
+      {
+        "motif_code": "B914",
+        "sequence_order": 182,
+        "source_citation": "I don't know what they're doing, but they seem to be so happy about whatever they're doing.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 213",
+        "ai_justification": "Virginia describes the beings as seeming happy during the tests, matching B914: beings are happy in their work, or laugh.",
+        "emotional_marker": null,
+        "chunk": 25
+      },
+      {
+        "motif_code": "E302",
+        "sequence_order": 183,
+        "source_citation": "She was annoyed by her family's insistence that she had been missing, because their hectoring questions interfered with her euphoric mood. / 'There was that sense of excitement and wonder.'",
+        "memory_state": "conscious",
+        "source_page": "PDF PAGE 213",
+        "ai_justification": "Virginia emerged from the woods in a state of euphoria and wonder, matching E302: rapture effect, sense of joy, beauty. This is a conscious memory of her emotional state upon returning.",
+        "emotional_marker": "euphoria",
+        "chunk": 25
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 184,
+        "source_citation": "She was annoyed by her family's insistence that she had been missing",
+        "memory_state": "conscious",
+        "source_page": "PDF PAGE 213",
+        "ai_justification": "Virginia's family insisted she had been missing, but she had no awareness of the lost time, matching E200: time lapse. This is a conscious observation about the gap.",
+        "emotional_marker": null,
+        "chunk": 25
+      },
+      {
+        "motif_code": "E201",
+        "sequence_order": 185,
+        "source_citation": "she still has not recalled the moment when, as a little girl, she first encountered the approaching gray-clad figures. Even her very earliest recollection—the sensation of being carried toward the UFO—is imperfectly remembered.",
+        "memory_state": "hypnosis",
+        "source_page": "PDF PAGE 213",
+        "ai_justification": "Virginia cannot recall the initial encounter or being carried toward the UFO, matching E201: doorway amnesia, blackout on entering or leaving craft.",
+        "emotional_marker": null,
+        "chunk": 25
+      }
+    ],
+    "model_name": "claude-opus-4-6",
+    "profile_used": "baseline_test",
+    "run_timestamp": "2026-04-02T12:47:11.390217"
+  }
+}

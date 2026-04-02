@@ -79,7 +79,7 @@ class ScannedMetadata(BaseModel):
     memory_retrieval_method: Literal["conscious", "hypnosis", "altered", "mixed", "unknown", "not_applicable"] = Field(description="How the account was recalled. 'hypnosis' if retrieved under hypnotic regression. 'conscious' if naturally recalled. 'altered' if dream/trance/vision. 'mixed' if combination. 'not_applicable' if the source is not a recalled experience (e.g., authored literature, mythology, historical chronicle). 'unknown' if the source appears to be a recalled experience but the retrieval method is not stated.")
     number_of_witnesses: Optional[int] = Field(description="Number of witnesses, if stated.")
     entity_types: list[str] = Field(default=[], description="Types of entities described (e.g., 'Grey', 'humanoid', 'divine being', 'monster'). Return as a list — encounters can involve multiple entity types.")
-    narrative_structure: Literal["third_person_investigation", "interview_dialogue", "first_person_testimony", "literary_narration", "compiled_catalogue", "not_applicable"] = Field(description="The narrative voice/structure of the text. 'third_person_investigation' = investigator narrates experiencer's account (e.g., Hopkins, Fowler). 'interview_dialogue' = interviewer and experiencer voices on the page (e.g., Clarke, Mack). 'first_person_testimony' = experiencer narrates their own experience (e.g., Ezekiel, Enoch). 'literary_narration' = characters acting within a narrative (e.g., Gilgamesh, Mahabharata). 'compiled_catalogue' = brief compiled case summaries from secondary sources (e.g., Vallee). 'not_applicable' = edge cases.")
+    narrative_structure: Literal["investigation", "interview_dialogue", "first_person_testimony", "literary_narration", "compiled_catalogue", "not_applicable"] = Field(description="The narrative voice/structure of the text. 'investigation' = investigator narrates experiencer's account (e.g., Hopkins, Fowler). 'interview_dialogue' = interviewer and experiencer voices on the page (e.g., Clarke, Mack). 'first_person_testimony' = experiencer narrates their own experience (e.g., Ezekiel, Enoch). 'literary_narration' = characters acting within a narrative (e.g., Gilgamesh, Mahabharata). 'compiled_catalogue' = brief compiled case summaries from secondary sources (e.g., Vallee). 'not_applicable' = edge cases.")
     source_page_start: Optional[int] = Field(description="The first printed page number found in the body of the text (e.g., page numbers physically printed on the original document pages), NOT the PDF file page numbers.")
     source_page_end: Optional[int] = Field(description="The last printed page number found in the body of the text (e.g., page numbers physically printed on the original document pages), NOT the PDF file page numbers.")
     narrative_summary: str = Field(description="A brief 1-paragraph summary of the narrative content.")
@@ -945,6 +945,11 @@ def main():
                         help="Last PDF page to extract (1-indexed, inclusive).")
     parser.add_argument("--text", metavar="FILE",
                         help="Path to a plain text file. Use instead of pdf_path + page args.")
+    parser.add_argument("--model", default="claude-opus-4-6",
+                        choices=["gemini-2.5-pro", "gemini-3.1-pro-preview", "claude-opus-4-6"],
+                        help="Which LLM to use for Step 3 extraction (default: claude-opus-4-6)")
+    parser.add_argument("--include-vol1", action="store_true",
+                        help="Load Bullard Volume 1 context (off by default — dictionary-only mode)")
     args = parser.parse_args()
 
     # Determine mode
@@ -1009,13 +1014,15 @@ def main():
     # Display the JSON and wait for confirmation
     _display_and_confirm(pipeline_json, json_path)
 
-    # Step 3: Extraction via Gemini Pro
-    print("\n[*] Starting Step 3: Extraction via extract_narrative()...")
+    # Step 3: Extraction via LLM bridge
+    print(f"\n[*] Starting Step 3: Extraction via extract_narrative() (model: {args.model})...")
     from llm_bridge import extract_narrative
 
     final_profile, all_events, ai_events_json = extract_narrative(
         pipeline_json_path=json_path,
         profile_name="baseline_test",
+        model=args.model,
+        include_vol1=args.include_vol1,
     )
 
     print(f"\n[*] Extraction complete: {len(all_events)} events")

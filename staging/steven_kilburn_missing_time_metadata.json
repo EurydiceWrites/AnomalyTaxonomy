@@ -1,0 +1,2753 @@
+{
+  "step_0": {
+    "source_text_path": "staging\\extracted_text_Budd_Hopkins_-_Missing_Time__OCR__45-82.txt",
+    "pdf_page_start": 45,
+    "pdf_page_end": 82,
+    "source_page_start": 51,
+    "source_page_end": 87
+  },
+  "step_1_scanned_metadata": {
+    "source_type": "investigation",
+    "memory_retrieval_method": "hypnosis",
+    "narrative_structure": "investigation",
+    "principal_investigator": "Budd Hopkins",
+    "experiencer_name": "Steven Kilburn",
+    "gender": "male",
+    "age_at_time": "not quite thirty",
+    "location": "Route 40 west, from Pikesville to Frederick, Maryland",
+    "date_of_experience": "1973",
+    "entity_types": [
+      "humanoid",
+      "Grey"
+    ],
+    "narrative_summary": "Steven Kilburn, a young man, sought help from Budd Hopkins after experiencing an inexplicable dread of a specific Maryland highway stretch, suspecting a forgotten incident from 1973. Through multiple hypnotic regression sessions, he recalled being stopped on Route 40, witnessing a UFO, and being abducted by several small, white-skinned, hairless humanoids with large black eyes and inverted teardrop-shaped heads. He described being subjected to a painful physical examination aboard their craft, involving a clamp on his shoulder, a rod-like instrument on his back and stomach, and temporary paralysis of his limbs. The investigation, involving psychologists and a neurosurgeon, revealed consistent details across sessions and corroborated physical reactions."
+  },
+  "step_1_source_attribution": {
+    "author_name": "Budd Hopkins",
+    "title": "Missing Time",
+    "publication_year": null,
+    "publisher": "Ballantine",
+    "place_of_publication": null,
+    "edition": null,
+    "translator": null,
+    "editor": null,
+    "author_role": "investigator"
+  },
+  "step_3_extraction": {
+    "encounter_events": [
+      {
+        "motif_code": "A112",
+        "sequence_order": 1,
+        "source_citation": "something has always bothered me about a certain stretch of road I used to pass through whenever I left my girlfriend's house in Maryland.",
+        "memory_state": "conscious",
+        "source_page": "52",
+        "ai_justification": "The witness reports a persistent, unexplained feeling of alarm associated with passing a certain place, which matches A112: 'Witness feels alarmed on passing a certain place.'",
+        "emotional_marker": "anxiety",
+        "chunk": 1
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 2,
+        "source_citation": "I can't remember anything specific, but I just feel something happened to me one time when I was driving home.",
+        "memory_state": "conscious",
+        "source_page": "52",
+        "ai_justification": "The witness describes a gap in memory where he cannot recall what happened during a drive home, consistent with E200: 'Time lapse.' He has no specific memory of the event, only a feeling that something occurred, which is the hallmark of a missing-time episode.",
+        "emotional_marker": "unease",
+        "chunk": 1
+      },
+      {
+        "motif_code": "A116.1",
+        "sequence_order": 3,
+        "source_citation": "There's probably nothing to it, but something may have happened to me when I was in college.",
+        "memory_state": "conscious",
+        "source_page": "52",
+        "ai_justification": "The witness retains fragmentary, persistent impressions of an experience he cannot fully recall, matching A116.1: 'Fragmentary memories of an experience persist.'",
+        "emotional_marker": "haunted",
+        "chunk": 1
+      },
+      {
+        "motif_code": "A112",
+        "sequence_order": 4,
+        "source_citation": "the conviction in which Steve had described the uneasiness he felt whenever he was on that particular length of highway",
+        "memory_state": "conscious",
+        "source_page": "47",
+        "ai_justification": "A112 describes a witness feeling alarmed on passing a certain place. Steven experiences a persistent, deep-seated fear specifically associated with a particular stretch of highway, a classic post-abduction phobic response to the location of the event.",
+        "emotional_marker": "deep unease, fear",
+        "chunk": 2
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 5,
+        "source_citation": "a man who, practically speaking, remembered nothing whatsoever of the experience",
+        "memory_state": "conscious",
+        "source_page": "47",
+        "ai_justification": "E200 (Time lapse) applies here. The investigator notes that Steven remembered nothing of the experience—not even a UFO sighting. This represents a complete memory blockage consistent with a time lapse, where the entire abduction event has been excised from conscious recall.",
+        "emotional_marker": "absence, blankness",
+        "chunk": 2
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 6,
+        "source_citation": "nothing whatsoever of the missing time period",
+        "memory_state": "conscious",
+        "source_page": "54",
+        "ai_justification": "Reference to a 'missing time period' directly corresponds to the Time Lapse motif (E200), where a witness has no memory of a period of time. This is described as a pre-existing condition known before hypnosis.",
+        "emotional_marker": null,
+        "chunk": 3
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 7,
+        "source_citation": "the subject underwent a frightening physical paralysis of both arms, a symptom that has since been observed during the hypnosis of other suspected abductees. In fact, even when these subjects are brought out of their trance states the paralysis of hands and arms has lingered, sometimes for minutes",
+        "memory_state": "hypnosis",
+        "source_page": "54",
+        "ai_justification": "A general contextual note about paralysis of arms occurring during hypnosis of abductees. This maps to E315 (Paralysis, numbness), a physical control effect that manifests even outside the trance state, suggesting a real somatic memory.",
+        "emotional_marker": "frightening",
+        "chunk": 3
+      },
+      {
+        "motif_code": "A112",
+        "sequence_order": 8,
+        "source_citation": "I used to drive from Baltimore—it was Pikesville—to Frederick, Maryland, to see her. I would take Route 40 west, and for, I'd say, at least ten or fifteen miles of that road, it was very, very deserted.",
+        "memory_state": "conscious",
+        "source_page": "54",
+        "ai_justification": "Steven describes a persistent, deep-seated feeling of dread associated with a specific stretch of highway. This maps to A112 (Witness feels alarmed on passing a certain place), a conscious aftereffect that motivated the investigation.",
+        "emotional_marker": "dread",
+        "chunk": 3
+      },
+      {
+        "motif_code": "E208",
+        "sequence_order": 9,
+        "source_citation": "I felt very strange, for some reason. I didn't know why. It was that feeling someone is watching you as you wake up, that sort of thing.",
+        "memory_state": "hypnosis",
+        "source_page": "55",
+        "ai_justification": "E208 (Premonition: sense that something will happen) matches the witness's description of a persistent, inexplicable feeling that something had happened or was about to happen to him.",
+        "emotional_marker": "unease",
+        "chunk": 4
+      },
+      {
+        "motif_code": "A112",
+        "sequence_order": 10,
+        "source_citation": "Every time I passed that approximate area, I felt for some reason something right there had happened.",
+        "memory_state": "hypnosis",
+        "source_page": "55",
+        "ai_justification": "A112 (Witness feels alarmed on passing a certain place) matches the witness's recurring distress specifically tied to this stretch of road.",
+        "emotional_marker": "anxiety",
+        "chunk": 4
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 11,
+        "source_citation": "I believe I was a little bit confused about the time, a loss of time on that one main experience I had.",
+        "memory_state": "hypnosis",
+        "source_page": "55",
+        "ai_justification": "E200 (Time lapse) matches the witness's description of a possible loss of time associated with the experience.",
+        "emotional_marker": "confusion",
+        "chunk": 4
+      },
+      {
+        "motif_code": "A116.1",
+        "sequence_order": 12,
+        "source_citation": "I see my car pulled over to the side—I think it was the center; there was a big median, grass median—and I see me walking. I see the car at an angle, and I see me walking from the front of the car to the right, and I see a light",
+        "memory_state": "hypnosis",
+        "source_page": "56",
+        "ai_justification": "A116.1 (Fragmentary memories of an experience persist) matches the witness's flash-like, incomplete visual memory of being outside his car near a light, which he describes as 'a memory, or a scenario that could have happened.'",
+        "emotional_marker": "bewilderment",
+        "chunk": 4
+      },
+      {
+        "motif_code": "E215",
+        "sequence_order": 13,
+        "source_citation": "I distinctly have the feeling of me being out of the car, and my car stopping",
+        "memory_state": "hypnosis",
+        "source_page": "56",
+        "ai_justification": "E215 (Inappropriate response or uncharacteristic behavior) matches the witness's inexplicable memory of his car stopping and him getting out on a dark road for no understood reason.",
+        "emotional_marker": "confusion",
+        "chunk": 4
+      },
+      {
+        "motif_code": "E208",
+        "sequence_order": 14,
+        "source_citation": "I had the feeling of being trapped in my car and wishing I could go faster. / Also, I have the memory of looking in the mirror to see if someone was looking for me. / The feeling, I think, to sum it up, was that I wasn't there alone.",
+        "memory_state": "conscious",
+        "source_page": "57",
+        "ai_justification": "Steven describes a strong premonition or sense that something was present—a feeling of being watched, followed, and not alone. This recurring sense of an impending or present unknown presence matches E208 (Premonition: sense that something will happen). He explicitly states this feeling recurred every time he passed this area.",
+        "emotional_marker": "fear",
+        "chunk": 5
+      },
+      {
+        "motif_code": "A112",
+        "sequence_order": 15,
+        "source_citation": "I'd be feeling it every time I passed this area. I distinctly remember, distinctly remember it once. I think it was the first time it happened.",
+        "memory_state": "conscious",
+        "source_page": "57",
+        "ai_justification": "Steven describes a recurring alarm triggered by passing a specific stretch of road, consistent with A112 (Witness feels alarmed on passing a certain place). This is a persistent aftereffect tied to a specific location.",
+        "emotional_marker": "fear",
+        "chunk": 5
+      },
+      {
+        "motif_code": "A110",
+        "sequence_order": 16,
+        "source_citation": "And also some kind of feeling of power that somebody else had. These were feelings that probably went through my mind very quickly, but I had that feeling",
+        "memory_state": "conscious",
+        "source_page": "57",
+        "ai_justification": "Steven describes a vague but intense anxiety about an external power or presence, without understanding its source. This matches A110 (Witness feels pursued or anxious without knowing why).",
+        "emotional_marker": "fear",
+        "chunk": 5
+      },
+      {
+        "motif_code": "E400",
+        "sequence_order": 17,
+        "source_citation": "He told of his car stopping",
+        "memory_state": "hypnosis",
+        "source_page": "58",
+        "ai_justification": "The car stopping is an electromagnetic effect on the vehicle engine, a classic EM effect associated with UFO encounters.",
+        "emotional_marker": "confusion",
+        "chunk": 6
+      },
+      {
+        "motif_code": "E204",
+        "sequence_order": 18,
+        "source_citation": "and of his confusion about what was happening.",
+        "memory_state": "hypnosis",
+        "source_page": "58",
+        "ai_justification": "The witness describes confusion and disorientation, matching E204 semi-consciousness/disorientation.",
+        "emotional_marker": "confusion",
+        "chunk": 6
+      },
+      {
+        "motif_code": "E325",
+        "sequence_order": 19,
+        "source_citation": "It's on my shoulder . .. a clamp . .. it hurts. I can't move! / A wrench . .. it fits . . . / A foot, on either side of my body.",
+        "memory_state": "hypnosis",
+        "source_page": "58",
+        "ai_justification": "A mechanical clamp-like device is placed on the witness's shoulder, immobilizing him. This is control by a device (E325), consistent with Bullard's description of Steven Kilburn's case where beings used a clamp device on his shoulders.",
+        "emotional_marker": "pain, fear",
+        "chunk": 6
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 20,
+        "source_citation": "I can't move!",
+        "memory_state": "hypnosis",
+        "source_page": "58",
+        "ai_justification": "The witness is unable to move after the clamp is applied, indicating paralysis/numbness (E315).",
+        "emotional_marker": "panic",
+        "chunk": 6
+      },
+      {
+        "motif_code": "U120",
+        "sequence_order": 21,
+        "source_citation": "There's light . .. in that direction. / No. No! There's something else. Something behind the fence!",
+        "memory_state": "hypnosis",
+        "source_page": "58",
+        "ai_justification": "A light of unknown origin appears near the witness, not from his car lights, associated with something behind the fence. This matches U120, a beam of light immersing or directed at the witness area.",
+        "emotional_marker": "fear",
+        "chunk": 6
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 22,
+        "source_citation": "Black . .. all dressed in black! Can't see their faces. . . . / more than two . . . three or more.",
+        "memory_state": "hypnosis",
+        "source_page": "58-59",
+        "ai_justification": "Three or more humanoid beings are observed dressed entirely in black with faces not visible, consistent with B201 humanoid type.",
+        "emotional_marker": "terror",
+        "chunk": 6
+      },
+      {
+        "motif_code": "B366",
+        "sequence_order": 23,
+        "source_citation": "Black . .. all dressed in black!",
+        "memory_state": "hypnosis",
+        "source_page": "58",
+        "ai_justification": "The beings' clothing is described as black, matching B366 for black clothing.",
+        "emotional_marker": "terror",
+        "chunk": 6
+      },
+      {
+        "motif_code": "B909",
+        "sequence_order": 24,
+        "source_citation": "Can't see their faces. . . .",
+        "memory_state": "hypnosis",
+        "source_page": "58",
+        "ai_justification": "The beings' faces are not visible to the witness, consistent with B909 where beings dislike being watched or conceal themselves from the witness's gaze.",
+        "emotional_marker": "fear",
+        "chunk": 6
+      },
+      {
+        "motif_code": "B221",
+        "sequence_order": 25,
+        "source_citation": "Yes. No. No, he was smaller . . . almost our size.",
+        "memory_state": "hypnosis",
+        "source_page": "60",
+        "ai_justification": "The being is described as smaller than Steven but 'almost our size,' placing it in the moderately short (4-5 feet) range for a humanoid.",
+        "emotional_marker": null,
+        "chunk": 7
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 26,
+        "source_citation": "Not like us.",
+        "memory_state": "hypnosis",
+        "source_page": "60",
+        "ai_justification": "The being is described as humanoid in general form but explicitly 'not like us,' distinguishing it from a normal human.",
+        "emotional_marker": "fear",
+        "chunk": 7
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 27,
+        "source_citation": "He's very white. / Very white neck. Neck, head, face",
+        "memory_state": "hypnosis",
+        "source_page": "60",
+        "ai_justification": "The being's skin is described as 'very white' on neck, head, and face, consistent with the white/gray/ashen skin code.",
+        "emotional_marker": "fear",
+        "chunk": 7
+      },
+      {
+        "motif_code": "B295",
+        "sequence_order": 28,
+        "source_citation": "no hair. None on his face or his head.",
+        "memory_state": "hypnosis",
+        "source_page": "60",
+        "ai_justification": "Complete absence of hair on face and head is explicitly stated, matching the hairless being code.",
+        "emotional_marker": "fear",
+        "chunk": 7
+      },
+      {
+        "motif_code": "E106",
+        "sequence_order": 29,
+        "source_citation": "I'm confused. / It's day . . . but it's night.",
+        "memory_state": "hypnosis",
+        "source_page": "60",
+        "ai_justification": "The witness perceives contradictory lighting conditions—daylight brightness during nighttime—indicating perceptual distortion or illusion.",
+        "emotional_marker": "confusion",
+        "chunk": 7
+      },
+      {
+        "motif_code": "X215",
+        "sequence_order": 30,
+        "source_citation": "My side hurts, my back. They twisted me back. I feel like . .. my back . .. I keep feeling it turning me",
+        "memory_state": "hypnosis",
+        "source_page": "60",
+        "ai_justification": "The witness's body is being physically twisted or contorted by an unseen force, consistent with beings flexing or contorting the limbs of the witness.",
+        "emotional_marker": "pain",
+        "chunk": 7
+      },
+      {
+        "motif_code": "E320",
+        "sequence_order": 31,
+        "source_citation": "yes . . . but not right away.",
+        "memory_state": "hypnosis",
+        "source_page": "60",
+        "ai_justification": "The being touches the witness, consistent with control by touch. Steven confirms the being touches him eventually.",
+        "emotional_marker": "fear",
+        "chunk": 7
+      },
+      {
+        "motif_code": "B317",
+        "sequence_order": 32,
+        "source_citation": "Leather. That's what the noise is. / gloves, or, or coats or something. It sounds like leather, like new leather gloves . . . rubbing their hands together.",
+        "memory_state": "hypnosis",
+        "source_page": "60",
+        "ai_justification": "The witness describes a sound like leather gloves, indicating the beings wear gloves. The B317 code covers gloves as part of being attire.",
+        "emotional_marker": "fear",
+        "chunk": 7
+      },
+      {
+        "motif_code": "B909",
+        "sequence_order": 33,
+        "source_citation": "I don't think I really see him, but I do. / Oh, I don't want to see him!",
+        "memory_state": "hypnosis",
+        "source_page": "60",
+        "ai_justification": "The witness's difficulty in perceiving the being and strong aversion to looking at it suggests the being discourages or resists being watched, consistent with beings disliking for the witness to watch them.",
+        "emotional_marker": "fear",
+        "chunk": 7
+      },
+      {
+        "motif_code": "E211",
+        "sequence_order": 34,
+        "source_citation": "I'm afraid! / I don't want to look.",
+        "memory_state": "hypnosis",
+        "source_page": "60",
+        "ai_justification": "The witness keeps his eyes averted and refuses to look at the being, consistent with the somnambulistic effect of keeping eyes down or closed.",
+        "emotional_marker": "fear",
+        "chunk": 7
+      },
+      {
+        "motif_code": "U530",
+        "sequence_order": 35,
+        "source_citation": "I think I hear their breathing or something . .. or sliding, or some kind of sound.",
+        "memory_state": "hypnosis",
+        "source_page": "60",
+        "ai_justification": "The witness hears an indistinct monotonous sound associated with the beings' presence, consistent with hearing a buzzing, humming or other monotonous sound.",
+        "emotional_marker": "unease",
+        "chunk": 7
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 36,
+        "source_citation": "It looks like putty or something. It looks like you could move it with your hand. / Whitish, like chalkish, whitish . . . a little tint of gray in it.",
+        "memory_state": "hypnosis",
+        "source_page": "61",
+        "ai_justification": "The witness describes the being's skin as putty-like, whitish with a tint of gray, directly matching B290: 'Skin white, gray, ashen or claylike.'",
+        "emotional_marker": "fear",
+        "chunk": 8
+      },
+      {
+        "motif_code": "B291",
+        "sequence_order": 37,
+        "source_citation": "He doesn't have regular skin. It's, uh, funny skin. It's not like skin. / It looks like putty or something. It looks like you could move it with your hand.",
+        "memory_state": "hypnosis",
+        "source_page": "61",
+        "ai_justification": "The witness describes the skin as abnormal, soft and malleable like putty, matching B291: 'Skin cold, sunless, sickly, soft.'",
+        "emotional_marker": "fear",
+        "chunk": 8
+      },
+      {
+        "motif_code": "B366",
+        "sequence_order": 38,
+        "source_citation": "Black. A turtleneck or something.",
+        "memory_state": "hypnosis",
+        "source_page": "61",
+        "ai_justification": "The being wears a black garment, matching B366: 'Black' clothing color.",
+        "emotional_marker": "fear",
+        "chunk": 8
+      },
+      {
+        "motif_code": "B301",
+        "sequence_order": 39,
+        "source_citation": "A turtleneck or something. You can see his neck. It's the same thing.",
+        "memory_state": "hypnosis",
+        "source_page": "61",
+        "ai_justification": "The turtleneck garment is tight-fitting and covers the body up to the neck, matching B301: 'Tight-fitting.'",
+        "emotional_marker": "fear",
+        "chunk": 8
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 40,
+        "source_citation": "He's, he's ugly. He doesn't have regular skin. / It's the same as, uh, his face. Like putty or something. All the, all the fingers are perfect.",
+        "memory_state": "hypnosis",
+        "source_page": "61",
+        "ai_justification": "The being has a humanoid form with a face, neck, hands and fingers, but is distinctly non-human in appearance, matching B201: 'Humanoid.'",
+        "emotional_marker": "fear",
+        "chunk": 8
+      },
+      {
+        "motif_code": "E306",
+        "sequence_order": 41,
+        "source_citation": "I'm afraid! / It's scaring me. . . . / (Agitated) I'm afraid! / Scared me with his fingers.",
+        "memory_state": "hypnosis",
+        "source_page": "61",
+        "ai_justification": "Steven repeatedly expresses intense fear throughout the encounter, indicating that any prior pacification has worn off, matching E306: 'Pacification periodically wears off.'",
+        "emotional_marker": "terror",
+        "chunk": 8
+      },
+      {
+        "motif_code": "A112",
+        "sequence_order": 42,
+        "source_citation": "he was also actually relieved to know that there had been a cause, after all, for his peculiar dread of that specific stretch of Maryland highway.",
+        "memory_state": "conscious",
+        "source_page": "63",
+        "ai_justification": "Kilburn had a long-standing, unexplained alarm when passing a certain place (the Maryland highway), which is the defining feature of A112. This dread existed prior to hypnosis and was a conscious, persistent feeling.",
+        "emotional_marker": "dread, relief",
+        "chunk": 9
+      },
+      {
+        "motif_code": "E325",
+        "sequence_order": 43,
+        "source_citation": "Its edges were rounded. It was metallic, and it fitted over his shoulder from behind, holding him immobile and turning him around painfully.",
+        "memory_state": "hypnosis",
+        "source_page": "63",
+        "ai_justification": "A metallic clamp device was used to physically control and immobilize the witness, fitting over his shoulder from behind. This is control by a device (E325).",
+        "emotional_marker": "pain, fear",
+        "chunk": 9
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 44,
+        "source_citation": "holding him immobile and turning him around painfully",
+        "memory_state": "hypnosis",
+        "source_page": "63",
+        "ai_justification": "The clamp held the witness immobile, which constitutes paralysis/immobilization as described in E315.",
+        "emotional_marker": "pain",
+        "chunk": 9
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 45,
+        "source_citation": "the white-skinned creatures",
+        "memory_state": "hypnosis",
+        "source_page": "63",
+        "ai_justification": "The beings are described as creatures with white skin, humanoid in form but distinctly non-human, matching B201 (Humanoid).",
+        "emotional_marker": "fear",
+        "chunk": 9
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 46,
+        "source_citation": "He's very white. . . . Neck, head, face . . . It looks like putty . . . like you could move it with your hand.",
+        "memory_state": "hypnosis",
+        "source_page": "63",
+        "ai_justification": "The skin is described as very white and putty-like/claylike, directly matching B290 (Skin white, gray, ashen or claylike).",
+        "emotional_marker": null,
+        "chunk": 9
+      },
+      {
+        "motif_code": "B295",
+        "sequence_order": 47,
+        "source_citation": "no hair",
+        "memory_state": "hypnosis",
+        "source_page": "63",
+        "ai_justification": "The being is explicitly described as having no hair on the head or face, matching B295 (Hair absent).",
+        "emotional_marker": null,
+        "chunk": 9
+      },
+      {
+        "motif_code": "B221",
+        "sequence_order": 48,
+        "source_citation": "They were a little under five feet tall.",
+        "memory_state": "hypnosis",
+        "source_page": "63",
+        "ai_justification": "Travis Walton's corroborating description, cited by Hopkins as strikingly similar to Kilburn's captors, places the beings at a little under five feet, matching B221 (Moderately short, 4-5 feet). This is used here as a comparative reference reinforcing the type of being Kilburn encountered.",
+        "emotional_marker": null,
+        "chunk": 9
+      },
+      {
+        "motif_code": "B285",
+        "sequence_order": 49,
+        "source_citation": "All the fingers are perfect",
+        "memory_state": "hypnosis",
+        "source_page": "63",
+        "ai_justification": "Kilburn's observation about the fingers being 'perfect' is contextualized by the Walton comparison describing 'thin round fingers looked smooth and unwrinkled,' indicating long, thin, smooth fingers matching B285.",
+        "emotional_marker": null,
+        "chunk": 9
+      },
+      {
+        "motif_code": "B909",
+        "sequence_order": 50,
+        "source_citation": "he did not want to deal with the faces of the white-skinned creatures",
+        "memory_state": "hypnosis",
+        "source_page": "63",
+        "ai_justification": "While this is the witness's reluctance rather than the beings' explicit behavior, the inability or unwillingness to confront the beings' faces under hypnosis suggests the beings' gaze or appearance was aversive, consistent with B909 (Beings dislike for witness to watch them) as an effect of the encounter dynamic.",
+        "emotional_marker": "avoidance, fear",
+        "chunk": 9
+      },
+      {
+        "motif_code": "B221",
+        "sequence_order": 51,
+        "source_citation": "the two that took me to the ship are a little taller than I am / These three images denote consistent textural, coloristic, and kinetic qualities, all apart from the repeated description of the figures being between four and five feet tall.",
+        "memory_state": "hypnosis",
+        "source_page": "64",
+        "ai_justification": "Steven describes the beings as 'a little taller than I am' and the text summarizes repeated descriptions of beings between four and five feet tall, placing them in the moderately short humanoid category (B221).",
+        "emotional_marker": "fear",
+        "chunk": 10
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 52,
+        "source_citation": "They were taken by humanoid creatures",
+        "memory_state": "hypnosis",
+        "source_page": "64",
+        "ai_justification": "The beings are explicitly described as 'humanoid creatures,' matching the humanoid entity type code B201.",
+        "emotional_marker": "fear",
+        "chunk": 10
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 53,
+        "source_citation": "They have, is it, whitish-gray skins? / whose skins were whitish-gray in color and disturbingly soft looking, like a mushroom, or a marshmallow, or like putty.",
+        "memory_state": "hypnosis",
+        "source_page": "64",
+        "ai_justification": "The beings' skin is described as 'whitish-gray' with a soft, putty-like quality, directly matching B290 (skin white, gray, ashen or claylike).",
+        "emotional_marker": "unease",
+        "chunk": 10
+      },
+      {
+        "motif_code": "B291",
+        "sequence_order": 54,
+        "source_citation": "disturbingly soft looking, like a mushroom, or a marshmallow, or like putty",
+        "memory_state": "hypnosis",
+        "source_page": "64",
+        "ai_justification": "The skin is described as 'disturbingly soft looking' with comparisons to mushroom, marshmallow, and putty, matching B291 (skin cold, sunless, sickly, soft).",
+        "emotional_marker": "unease",
+        "chunk": 10
+      },
+      {
+        "motif_code": "B230",
+        "sequence_order": 55,
+        "source_citation": "had heads larger than ours",
+        "memory_state": "hypnosis",
+        "source_page": "64",
+        "ai_justification": "Moody's description of beings with 'heads larger than ours' is cited as consistent with Steven's encounter, matching B230 (head large). This is referenced as a corroborating detail for the same type of being Steven encountered.",
+        "emotional_marker": null,
+        "chunk": 10
+      },
+      {
+        "motif_code": "B295",
+        "sequence_order": 56,
+        "source_citation": "there was no hair, no eyelashes, no eyebrows",
+        "memory_state": "hypnosis",
+        "source_page": "64",
+        "ai_justification": "The complete absence of hair including eyelashes and eyebrows matches B295 (hair absent). Referenced from Moody's corroborating description of the same type of being.",
+        "emotional_marker": null,
+        "chunk": 10
+      },
+      {
+        "motif_code": "E218",
+        "sequence_order": 57,
+        "source_citation": "I'm going fast. I'm very tired. That's all I want to say. Yeah, I'm really tired. Sleepy. Yeah, that's all.",
+        "memory_state": "hypnosis",
+        "source_page": "65",
+        "ai_justification": "The witness describes an overwhelming, unusual tiredness while driving, consistent with E218 (predestination/acting on an irresistible urge without knowing why), as this extreme drowsiness may represent the onset of external influence drawing him toward the encounter location.",
+        "emotional_marker": "fatigue, drowsiness",
+        "chunk": 11
+      },
+      {
+        "motif_code": "E400",
+        "sequence_order": 58,
+        "source_citation": "Yeah, but it's not working.",
+        "memory_state": "hypnosis",
+        "source_page": "65",
+        "ai_justification": "The dashboard clock is not working, consistent with E400 (electromagnetic effects: malfunction of engine, electrical systems). This is a classic EM effect associated with UFO proximity.",
+        "emotional_marker": null,
+        "chunk": 11
+      },
+      {
+        "motif_code": "E102",
+        "sequence_order": 59,
+        "source_citation": "It's dark. There's almost no other cars on the road. . . . I'm all alone in that whole—well, in my direction.",
+        "memory_state": "hypnosis",
+        "source_page": "65",
+        "ai_justification": "The witness notes the road is unusually empty and he is completely alone, consistent with E102 (isolation effect: everyone but witness oblivious to UFO, or absence of normal traffic).",
+        "emotional_marker": "isolation",
+        "chunk": 11
+      },
+      {
+        "motif_code": "E410",
+        "sequence_order": 60,
+        "source_citation": "I don't see anything on the road. I don't see anything at all and the right part of the car turns violently, and I'm going pretty fast but it jerks to the right. Really hard, and the car doesn't skid. It's like a huge magnet just sucked it over to",
+        "memory_state": "hypnosis",
+        "source_page": "65",
+        "ai_justification": "The car is violently jerked to the right by an unseen force described as like a huge magnet, without skidding, indicating the UFO or beings have taken control of the vehicle (E410).",
+        "emotional_marker": "shock, fear",
+        "chunk": 11
+      },
+      {
+        "motif_code": "E123",
+        "sequence_order": 61,
+        "source_citation": "It's like a huge magnet just sucked it over to",
+        "memory_state": "hypnosis",
+        "source_page": "65",
+        "ai_justification": "The magnetic drawing force pulling the car corresponds to E123 (levitation: drawing force), a force that pulls the witness or vehicle toward the UFO.",
+        "emotional_marker": "terror",
+        "chunk": 11
+      },
+      {
+        "motif_code": "E411",
+        "sequence_order": 62,
+        "source_citation": "We're coming . . . coming over to the right side of the road, the car's pulling over / Why did I pull over? I don't see anything. I just pulled over.",
+        "memory_state": "hypnosis",
+        "source_page": "66",
+        "ai_justification": "The witness's car pulls over to the side of the road without his conscious intention, indicating external control of the vehicle through control of the witness. He explicitly states he does not know why he pulled over.",
+        "emotional_marker": "confusion",
+        "chunk": 12
+      },
+      {
+        "motif_code": "E208",
+        "sequence_order": 63,
+        "source_citation": "I feel like somebody's looking over my right shoulder. . .. I don't see anything there in the back seat . . . but it's scary in the car 'cause I don't know what's going on.",
+        "memory_state": "hypnosis",
+        "source_page": "66",
+        "ai_justification": "The witness senses an unseen presence looking over his shoulder—a premonition or sense that something is about to happen, even though he cannot see anything.",
+        "emotional_marker": "fear",
+        "chunk": 12
+      },
+      {
+        "motif_code": "E215",
+        "sequence_order": 64,
+        "source_citation": "I'm out of the car . . . and I'm looking at the fence. / I'm not really scared. I just don't know what I'm doing there.",
+        "memory_state": "hypnosis",
+        "source_page": "66",
+        "ai_justification": "The witness exits the car and stands looking at a fence without understanding why—an inappropriate response and uncharacteristic behavior, acting without clear motivation.",
+        "emotional_marker": "confusion",
+        "chunk": 12
+      },
+      {
+        "motif_code": "E102",
+        "sequence_order": 65,
+        "source_citation": "And a car is passing on the road. My car is off the road . . . but it's on concrete.",
+        "memory_state": "hypnosis",
+        "source_page": "66",
+        "ai_justification": "A car passes on the road while the witness stands outside his vehicle in an unusual situation, yet no one stops or notices anything amiss—an isolation effect where others are oblivious.",
+        "emotional_marker": null,
+        "chunk": 12
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 66,
+        "source_citation": "I'm not really scared. I just don't know what I'm doing there. I keep thinking of warmth. In the car, I thought of it, and here, walking outside of the car, I thought of it.",
+        "memory_state": "hypnosis",
+        "source_page": "66",
+        "ai_justification": "Despite the bizarre and potentially threatening situation, the witness is not scared and is preoccupied with a sense of warmth—a pacification effect producing unnatural calm.",
+        "emotional_marker": "calm",
+        "chunk": 12
+      },
+      {
+        "motif_code": "E214",
+        "sequence_order": 67,
+        "source_citation": "I'm not supposed to look there.",
+        "memory_state": "hypnosis",
+        "source_page": "67",
+        "ai_justification": "The witness senses an internal prohibition against looking at something, as if obeying an implanted instruction from the beings—reassuring self or obeying beings as if they know best.",
+        "emotional_marker": "fear",
+        "chunk": 12
+      },
+      {
+        "motif_code": "U120",
+        "sequence_order": 68,
+        "source_citation": "I see two lights in the sky when I'm driving. I'm hunched over, looking up. It's a reflection in the windshield and then I turn the light on to see if it's still there. And it is. And I turn it off.",
+        "memory_state": "hypnosis",
+        "source_page": "67",
+        "ai_justification": "The witness recalls seeing two lights in the sky while driving, which he verified were external by toggling his car light. This is the initial alien intrusion—a beam or light from a UFO immersing the witness's environment.",
+        "emotional_marker": "fear",
+        "chunk": 12
+      },
+      {
+        "motif_code": "U500",
+        "sequence_order": 69,
+        "source_citation": "And it's going to the right, way up high, over the highway, over the trees, and it's going kind of slow",
+        "memory_state": "hypnosis",
+        "source_page": "68",
+        "ai_justification": "The witness observes lights moving over the highway in the same direction he is traveling, consistent with a UFO pacing a car.",
+        "emotional_marker": "curiosity",
+        "chunk": 13
+      },
+      {
+        "motif_code": "U530",
+        "sequence_order": 70,
+        "source_citation": "I don't hear anything.",
+        "memory_state": "hypnosis",
+        "source_page": "68",
+        "ai_justification": "The witness notes the absence of sound from the object, which is a notable characteristic often reported with UFOs—silence where engine noise would be expected.",
+        "emotional_marker": null,
+        "chunk": 13
+      },
+      {
+        "motif_code": "U528",
+        "sequence_order": 71,
+        "source_citation": "they go to the trees to the right and they disappear in front of me. Right in front of me.",
+        "memory_state": "hypnosis",
+        "source_page": "68",
+        "ai_justification": "The lights abruptly disappear from the witness's view, consistent with the motif of abrupt disappearance of a UFO.",
+        "emotional_marker": null,
+        "chunk": 13
+      },
+      {
+        "motif_code": "E411",
+        "sequence_order": 72,
+        "source_citation": "It was really violent the way the car went to the right. Yeah, hard. On the wheel. Hard. A really hard right. I thought it was dangerous.",
+        "memory_state": "hypnosis",
+        "source_page": "68",
+        "ai_justification": "The car violently swerves to the right against the witness's control, as if an external force is directing the vehicle through the witness's steering. This matches beings controlling a vehicle through control of the witness.",
+        "emotional_marker": "fear",
+        "chunk": 13
+      },
+      {
+        "motif_code": "E218",
+        "sequence_order": 73,
+        "source_citation": "I don't really want to go over there but I . .. I don't know.",
+        "memory_state": "hypnosis",
+        "source_page": "68",
+        "ai_justification": "The witness acts against his own wishes, drawn to investigate despite not wanting to, consistent with predestination or acting on an irresistible impulse.",
+        "emotional_marker": "conflict",
+        "chunk": 13
+      },
+      {
+        "motif_code": "E100",
+        "sequence_order": 74,
+        "source_citation": "It's really quiet.",
+        "memory_state": "hypnosis",
+        "source_page": "68",
+        "ai_justification": "The witness notes an unusual silence in the area, consistent with the vacuum effect of stillness and silence preceding or accompanying an abduction.",
+        "emotional_marker": null,
+        "chunk": 13
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 75,
+        "source_citation": "And then I remember driving home. Yeah, just driving home. And I'm OK. Back in the car and driving home. And I don't want to remember. I'm not supposed to remember.",
+        "memory_state": "hypnosis",
+        "source_page": "68",
+        "ai_justification": "The witness has a gap in memory between approaching the fence and driving home, consistent with a time lapse covering the abduction event.",
+        "emotional_marker": "anguish",
+        "chunk": 13
+      },
+      {
+        "motif_code": "M119",
+        "sequence_order": 76,
+        "source_citation": "I'm not supposed to remember. / It's really serious! I might die.",
+        "memory_state": "hypnosis",
+        "source_page": "68",
+        "ai_justification": "The witness feels a powerful compulsion not to remember, accompanied by a sense of mortal danger if he does. This is consistent with beings telling the subject to forget because the time is not yet right, enforced with a threat.",
+        "emotional_marker": "terror",
+        "chunk": 13
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 77,
+        "source_citation": "Steven's fear abated, and he began to speak in a slightly different, firmer tone of voice, repeating the sentence, 'There's nothing to be afraid of,' several times. It was eerily as if the calming words had been delivered by an outside source.",
+        "memory_state": "hypnosis",
+        "source_page": "68",
+        "ai_justification": "The witness's fear is suddenly replaced by calm, and the investigator notes it seemed as if the calming words came from an outside source. This is consistent with the pacification effect where the witness becomes calm or euphoric, apparently through external influence.",
+        "emotional_marker": "calm",
+        "chunk": 13
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 78,
+        "source_citation": "There are these things standing around me",
+        "memory_state": "hypnosis",
+        "source_page": "68",
+        "ai_justification": "The witness describes strange beings standing around him. Based on the broader case context (case 84 in Bullard's catalogue identifies these as humanoids), these are humanoid entities.",
+        "emotional_marker": "fear",
+        "chunk": 13
+      },
+      {
+        "motif_code": "B800",
+        "sequence_order": 79,
+        "source_citation": "There's one . . . he's boss.",
+        "memory_state": "hypnosis",
+        "source_page": "68",
+        "ai_justification": "The witness identifies one being as the leader or boss among the group, consistent with one being acting as leader or spokesman.",
+        "emotional_marker": null,
+        "chunk": 13
+      },
+      {
+        "motif_code": "B800",
+        "sequence_order": 80,
+        "source_citation": "He's the boss.",
+        "memory_state": "hypnosis",
+        "source_page": "69",
+        "ai_justification": "One being is identified as the leader or 'boss' of the group, matching B800: one being acts as leader.",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "B650",
+        "sequence_order": 81,
+        "source_citation": "one of them is doing something in back of me, over at the right . . . bending down and doing something. / He's got something . .. I can't really see it . . . and he's digging a hole. Not a deep hole . . . he's just kind of poking, sort of. He's bent down on his right knee. The dirt's kind of grayish . . . right off the side of the highway . . . next to the car",
+        "memory_state": "hypnosis",
+        "source_page": "69",
+        "ai_justification": "A being is digging or poking at the ground near the car, consistent with B650: gather samples.",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "B307",
+        "sequence_order": 82,
+        "source_citation": "I see that leathery stuff again. I remember it. Like a black leathery . . . like a breastplate or something . .. or a chest. I hear it, too. It's like leather rubbing . . . sliding against leather, but not real thick leather . . . kind of sticky and thin.",
+        "memory_state": "hypnosis",
+        "source_page": "69",
+        "ai_justification": "The beings' covering is described as leathery, matching B307: leather-like clothing.",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 83,
+        "source_citation": "I see the faces and they're white . . . chalky . . . ah . . . they look like they're made out of rubber, or . . . ah . . . not rubber, ah . . . what do you call it? Putty or something. Like an artist's eraser. That's what it is. It's like a big . . . and they're not shiny at all . . . really a dull finish, kind of chalky and white, only not pure white.",
+        "memory_state": "hypnosis",
+        "source_page": "69",
+        "ai_justification": "Skin described as white, chalky, putty-like, matching B290: skin white, gray, ashen or claylike.",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "X210",
+        "sequence_order": 84,
+        "source_citation": "They touch me. And it hurt.",
+        "memory_state": "hypnosis",
+        "source_page": "69",
+        "ai_justification": "Beings touch the witness in an examining manner that causes pain, matching X210: beings touch witness in various places, as if examining.",
+        "emotional_marker": "pain",
+        "chunk": 14
+      },
+      {
+        "motif_code": "B800",
+        "sequence_order": 85,
+        "source_citation": "this one is motioning to the others with one of his arms. / The . . . boss there is motioning to this one in back of me to dig or do something with his left hand, and he is pointing. I think he means to hurry up or something",
+        "memory_state": "hypnosis",
+        "source_page": "69",
+        "ai_justification": "The leader being directs others with gestures, reinforcing B800: one being acts as leader. Same leader role as sequence 1, but this is a distinct directing action during the sample-gathering phase.",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "B300",
+        "sequence_order": 86,
+        "source_citation": "It's got some kind of suit on. I don't know whether it's part of him or it's a suit or what it is. It doesn't look like skin. / He's kind of crinkly . . . whatever he has on . . . legs and top and everything.",
+        "memory_state": "hypnosis",
+        "source_page": "69",
+        "ai_justification": "The being wears a one-piece covering over legs and top, matching B300: coverall, one-piece.",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "ANOMALY",
+        "sequence_order": 87,
+        "source_citation": "Everytime it hurts, I see these fingers. Those fingers I remember. They're . . . ah . . . like tubes. That's exactly . . . they're tubes. White plastic tubes, only . . . yeah . . . they touched me. They didn't feel hard, though, but they looked hard . . . they were kind of shiny.",
+        "memory_state": "hypnosis",
+        "source_page": "69",
+        "ai_justification": "Fingers described as tube-like, shiny, hard-looking but soft to the touch. This is a distinctive description noted in Bullard's catalogue for this case (B284 is balloon-like, not tube-like). The closest code might be B285 (long and thin) but the tube-like quality is the salient feature and is semantically distinct. Assigned ANOMALY as tube-like fingers have no exact match.",
+        "emotional_marker": "pain",
+        "chunk": 14
+      },
+      {
+        "motif_code": "B220",
+        "sequence_order": 88,
+        "source_citation": "They're small. Below my shoulder . . . that height.",
+        "memory_state": "hypnosis",
+        "source_page": "69",
+        "ai_justification": "Beings are described as below the witness's shoulder, indicating very short stature, matching B220: short (3.5 feet or less).",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "B225",
+        "sequence_order": 89,
+        "source_citation": "He's skinny . . . really skinny. I don't think he'd weight very much. In fact, he'd probably weigh . . . not even fifty pounds.",
+        "memory_state": "hypnosis",
+        "source_page": "69",
+        "ai_justification": "Being described as very skinny and weighing under fifty pounds, matching B225: spindly build, slight musculature.",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 90,
+        "source_citation": "I'm not scared now. / The intense fear Steven had experienced earlier seemed now to have melted away. He appeared tranquil, as if he were enjoying these outrageous circumstances in a thoroughly detached manner.",
+        "memory_state": "hypnosis",
+        "source_page": "69",
+        "ai_justification": "The witness's earlier intense fear has been replaced by tranquility and detachment, matching E300: pacification effect, witness calm, euphoric, relaxed.",
+        "emotional_marker": "calm",
+        "chunk": 14
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 91,
+        "source_citation": "These things in front of me aren't black. / I see the faces and they're white . . . chalky",
+        "memory_state": "hypnosis",
+        "source_page": "69",
+        "ai_justification": "The beings have faces and limbs and are generally human-shaped but clearly non-human, matching B201: humanoid.",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "B913",
+        "sequence_order": 92,
+        "source_citation": "I think he means to hurry up or something",
+        "memory_state": "hypnosis",
+        "source_page": "69",
+        "ai_justification": "The leader gestures impatiently to hurry the digging being, matching B913: beings are impatient or have little time.",
+        "emotional_marker": null,
+        "chunk": 14
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 93,
+        "source_citation": "I'm not really afraid, though.",
+        "memory_state": "hypnosis",
+        "source_page": "70",
+        "ai_justification": "Steven reports a lack of fear despite the extraordinary circumstances, consistent with the pacification effect where the witness feels artificially calmed.",
+        "emotional_marker": "calm",
+        "chunk": 15
+      },
+      {
+        "motif_code": "B800",
+        "sequence_order": 94,
+        "source_citation": "The boss there...",
+        "memory_state": "hypnosis",
+        "source_page": "70",
+        "ai_justification": "Steven identifies one being as 'the boss,' indicating a leader or spokesman role among the beings.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B243",
+        "sequence_order": 95,
+        "source_citation": "his eyes are really shiny. They look black. I don't see any pupils or anything",
+        "memory_state": "hypnosis",
+        "source_page": "70",
+        "ai_justification": "The eyes are described as entirely black with no visible pupils, matching the 'eyes entirely dark' motif.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B241",
+        "sequence_order": 96,
+        "source_citation": "and they're big.",
+        "memory_state": "hypnosis",
+        "source_page": "70",
+        "ai_justification": "The eyes are described as big, matching the large eye size motif for beings.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B233",
+        "sequence_order": 97,
+        "source_citation": "His head is not round, it's like, uh, an inverted teardrop. With a big round bar on top.",
+        "memory_state": "hypnosis",
+        "source_page": "70",
+        "ai_justification": "The inverted teardrop shape with a large cranium on top matches the egg or pear-shaped head with pointed chin and large cranium.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B910",
+        "sequence_order": 98,
+        "source_citation": "He looks like he's not alive . . . maybe just because I can't really understand what he is doing or what he is thinking or anything . . . it's like everything's very stilted.",
+        "memory_state": "hypnosis",
+        "source_page": "70",
+        "ai_justification": "The being appears impassive and unreadable, with stilted behavior suggesting an impassive demeanor.",
+        "emotional_marker": "unease",
+        "chunk": 15
+      },
+      {
+        "motif_code": "B913",
+        "sequence_order": 99,
+        "source_citation": "He's not very comfortable there . . . he doesn't want to stick around. He's not telling me, but it's obvious. He wants to leave, I think, more than I do.",
+        "memory_state": "hypnosis",
+        "source_page": "70",
+        "ai_justification": "The leader appears impatient and eager to leave, consistent with the motif of beings having little time or being impatient.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "E102",
+        "sequence_order": 100,
+        "source_citation": "I'm wondering when another car is going to go by. I can see us just standing out there.",
+        "memory_state": "hypnosis",
+        "source_page": "70",
+        "ai_justification": "Steven notes the absence of passing traffic while they stand in the open, consistent with the isolation effect where everyone but the witness is oblivious to the UFO event.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 101,
+        "source_citation": "I've been aware that I can't do what I want to. They've really got something on me . . . and I don't know what it is. They can just make me do whatever they want.",
+        "memory_state": "hypnosis",
+        "source_page": "70",
+        "ai_justification": "Steven describes an inability to act on his own will, consistent with paralysis or loss of motor/volitional control imposed by the beings.",
+        "emotional_marker": "helplessness",
+        "chunk": 15
+      },
+      {
+        "motif_code": "C205",
+        "sequence_order": 102,
+        "source_citation": "They're . . . understanding each other, but they're not talking. I don't hear anything.",
+        "memory_state": "hypnosis",
+        "source_page": "70",
+        "ai_justification": "The beings communicate silently among themselves, consistent with telepathy between beings.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B807",
+        "sequence_order": 103,
+        "source_citation": "There's some conflict, I think. I don't think they're getting along so great. I think there's an argument about something 'cause this boss wants one thing and one of the other guys wants something else. I think they're arguing about a place . . . about where to dig.",
+        "memory_state": "hypnosis",
+        "source_page": "70",
+        "ai_justification": "The beings openly dispute among themselves about where to dig, with the leader overruled or challenged, consistent with democratic tolerance of disputes.",
+        "emotional_marker": "amusement",
+        "chunk": 15
+      },
+      {
+        "motif_code": "B650",
+        "sequence_order": 104,
+        "source_citation": "And the boss, there, is pointing—this is it. And the other guy is pointing over toward the fence there, over to the right where it's dark.",
+        "memory_state": "hypnosis",
+        "source_page": "70",
+        "ai_justification": "The beings are debating where to dig and gather samples, consistent with the sample-gathering duty.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "U120",
+        "sequence_order": 105,
+        "source_citation": "It's very bright. The light is coming from something in back of me. Brighter than daylight. It's really harsh light, but it's not in my eyes.",
+        "memory_state": "hypnosis",
+        "source_page": "70",
+        "ai_justification": "An intensely bright beam of light immerses the scene from behind the witness, consistent with a beam of light immersing the witness.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B245",
+        "sequence_order": 106,
+        "source_citation": "there's something really shiny coming off this character's eyes. It's almost like they're black and endless. Like they're liquid or something.",
+        "memory_state": "hypnosis",
+        "source_page": "70",
+        "ai_justification": "The eyes reflect light intensely and appear luminous, matching the luminous eyes motif.",
+        "emotional_marker": "awe",
+        "chunk": 15
+      },
+      {
+        "motif_code": "B242",
+        "sequence_order": 107,
+        "source_citation": "They're really kind of walnut-shaped. Not perfect circles, but almost.",
+        "memory_state": "hypnosis",
+        "source_page": "70",
+        "ai_justification": "The walnut shape of the eyes matches the wraparound, catlike, or oval eye shape motif.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B246",
+        "sequence_order": 108,
+        "source_citation": "I keep looking at these eyes looking at me. God. I feel like I'm under a microscope.",
+        "memory_state": "hypnosis",
+        "source_page": "70",
+        "ai_justification": "The being's unblinking, staring gaze makes the witness feel scrutinized, consistent with the hypnotic or staring eyes motif.",
+        "emotional_marker": "discomfort",
+        "chunk": 15
+      },
+      {
+        "motif_code": "B905",
+        "sequence_order": 109,
+        "source_citation": "But he doesn't really . . . I don't think he really cares about me. I don't think he's really concerned about what I'm thinking. They've got it all figured out.",
+        "memory_state": "hypnosis",
+        "source_page": "70",
+        "ai_justification": "The being shows cold indifference to the witness's thoughts and feelings, consistent with beings behaving in a cold, indifferent manner.",
+        "emotional_marker": "resignation",
+        "chunk": 15
+      },
+      {
+        "motif_code": "B504",
+        "sequence_order": 110,
+        "source_citation": "when he walked, it was almost like he had two really bad knees. He was hobbling almost . . . shifting his weight to",
+        "memory_state": "hypnosis",
+        "source_page": "70",
+        "ai_justification": "The being moves in a stiff, hobbling, crippled fashion, consistent with clumsy or crippled movement.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B909",
+        "sequence_order": 111,
+        "source_citation": "He moves like a . . . like . . . he's standing still",
+        "memory_state": "hypnosis",
+        "source_page": "70",
+        "ai_justification": "The being prefers to stand still rather than move, and Steven earlier noted the being's discomfort. Combined with the broader context of Bullard's analysis noting the beings' aversion to being watched, this stillness and discomfort in the witness's presence aligns with the motif.",
+        "emotional_marker": null,
+        "chunk": 15
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 112,
+        "source_citation": "They're shaped like cat's eyes, very almond-shaped. I don't see any toes or anything",
+        "memory_state": "hypnosis",
+        "source_page": "71",
+        "ai_justification": "The being is described as a humanoid entity with a recognizable body plan (head, limbs, torso) but distinctly non-human features.",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "B504",
+        "sequence_order": 113,
+        "source_citation": "Almost rocking back and forth. And he drags his feet a little bit.",
+        "memory_state": "hypnosis",
+        "source_page": "71",
+        "ai_justification": "The being moves in a clumsy, stiff or crippled fashion, rocking and dragging its feet.",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "B288",
+        "sequence_order": 114,
+        "source_citation": "They're shaped like cat's eyes, very almond-shaped. I don't see any toes or anything, but the almond shapes are pointed in the front and the back so that, ah, they're kind of club feet.",
+        "memory_state": "hypnosis",
+        "source_page": "71",
+        "ai_justification": "The being's feet are described as unusually shaped—almond/club-like with no toes, matching the dictionary entry for unusual duck/abnormal feet.",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "B271",
+        "sequence_order": 115,
+        "source_citation": "Skinny ankles, legs. Really skinny. Not bony, nothing like that, but he's so little.",
+        "memory_state": "hypnosis",
+        "source_page": "71",
+        "ai_justification": "The being's limbs are described as thin, matching the dictionary code for thin limbs.",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "B220",
+        "sequence_order": 116,
+        "source_citation": "but he's so little. / They're all small and whitish",
+        "memory_state": "hypnosis",
+        "source_page": "71-72",
+        "ai_justification": "The being is described as very small, consistent with short stature (3.5 feet or less).",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "B909",
+        "sequence_order": 117,
+        "source_citation": "I'm really afraid to look at him. I don't want him to think I'm being aggressive.",
+        "memory_state": "hypnosis",
+        "source_page": "71",
+        "ai_justification": "The witness senses the being dislikes being watched, leading him to avoid looking directly at the being.",
+        "emotional_marker": "fear",
+        "chunk": 16
+      },
+      {
+        "motif_code": "B225",
+        "sequence_order": 118,
+        "source_citation": "Arms, too, really skinny, like he has no biceps. He's got almost no shape. He's kind of straight down, kind of almost flat.",
+        "memory_state": "hypnosis",
+        "source_page": "71",
+        "ai_justification": "The being has a spindly build with slight musculature—no biceps, almost flat, no shape.",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "B261",
+        "sequence_order": 119,
+        "source_citation": "his shoulders . . . they're really square, but they're really small. Skinny.",
+        "memory_state": "hypnosis",
+        "source_page": "71",
+        "ai_justification": "The being's shoulders are described as very small and skinny, indicating a narrow chest/shoulders.",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "B233",
+        "sequence_order": 120,
+        "source_citation": "His chin is really pointy, too.",
+        "memory_state": "hypnosis",
+        "source_page": "71",
+        "ai_justification": "A pointy chin is a key feature of the pear/egg-shaped head with pointed chin and large cranium.",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "B254",
+        "sequence_order": 121,
+        "source_citation": "I don't see any ears, although there's something there.",
+        "memory_state": "hypnosis",
+        "source_page": "71",
+        "ai_justification": "Ears are absent or vestigial—the witness sees no ears, only 'something there,' matching ears close against head, absent, or holes only.",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "B258",
+        "sequence_order": 122,
+        "source_citation": "There's a slit where his mouth should be, but it's not open . . . just kind of across.",
+        "memory_state": "hypnosis",
+        "source_page": "71",
+        "ai_justification": "The mouth is described as a slit, matching the dictionary entry for slitlike mouth with thin lips.",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "B910",
+        "sequence_order": 123,
+        "source_citation": "He absolutely does not change expression.",
+        "memory_state": "hypnosis",
+        "source_page": "71",
+        "ai_justification": "The being is impassive, showing no change in facial expression.",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 124,
+        "source_citation": "They're almost white. / They're all small and whitish",
+        "memory_state": "hypnosis",
+        "source_page": "71-72",
+        "ai_justification": "The beings' skin is described as almost white/whitish, matching the dictionary entry for white, gray, ashen or claylike skin.",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "B800",
+        "sequence_order": 125,
+        "source_citation": "Then he looks over, the boss there, he looks over my head, 'cause it's something moving down.",
+        "memory_state": "hypnosis",
+        "source_page": "71",
+        "ai_justification": "Steven refers to one being as 'the boss,' indicating one being acts as leader or spokesman.",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "B650",
+        "sequence_order": 126,
+        "source_citation": "That guy is still digging. God, what is he digging for? He's digging with something he's got in his hands. / He's digging a hole.",
+        "memory_state": "hypnosis",
+        "source_page": "71-72",
+        "ai_justification": "A being is digging in the dirt near the road, gathering samples from the earth.",
+        "emotional_marker": "curiosity",
+        "chunk": 16
+      },
+      {
+        "motif_code": "X220",
+        "sequence_order": 127,
+        "source_citation": "He's digging with something he's got in his hands. It's not easy for him.",
+        "memory_state": "hypnosis",
+        "source_page": "71",
+        "ai_justification": "The being uses a handheld instrument to dig, matching the use of handheld instruments.",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "B758",
+        "sequence_order": 128,
+        "source_citation": "not real coordinated. They're kind of fumbling at things. I think he's having trouble digging.",
+        "memory_state": "hypnosis",
+        "source_page": "72",
+        "ai_justification": "The beings are fumbling and uncoordinated, showing indications of fallibility.",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "U120",
+        "sequence_order": 129,
+        "source_citation": "I look back at the car and now another part of the car is lit up . . . the part of the right side of the car that I'm looking at. Yeah, the light's all over. Then he looks over, the boss there, he looks over my head, 'cause it's something moving down. There's a light moving or something moving that's really bright",
+        "memory_state": "hypnosis",
+        "source_page": "71",
+        "ai_justification": "A beam of bright light immerses the area around the witness and the car, moving and illuminating the scene.",
+        "emotional_marker": null,
+        "chunk": 16
+      },
+      {
+        "motif_code": "U500",
+        "sequence_order": 130,
+        "source_citation": "I see two lights in the sky when I'm driving. I'm hunched over, looking up. It's a reflection in the windshield and then I turn the light on to see if it's still there. And it is.",
+        "memory_state": "hypnosis",
+        "source_page": "73",
+        "ai_justification": "Steven recalls seeing two lights in the sky while driving, which he identifies as a UFO flying overhead. This is the initial UFO sighting while in a moving vehicle, matching U500 (UFO paces a car).",
+        "emotional_marker": "shock",
+        "chunk": 17
+      },
+      {
+        "motif_code": "E410",
+        "sequence_order": 131,
+        "source_citation": "his description of the involuntary swerve at high speed, as if 'a huge magnet just sucked it over to the right.'",
+        "memory_state": "hypnosis",
+        "source_page": "73",
+        "ai_justification": "The car swerves involuntarily at high speed as if pulled by a magnetic force, indicating the UFO or beings took control of the vehicle. This matches E410 (UFO or beings take control of vehicle).",
+        "emotional_marker": "fear",
+        "chunk": 17
+      },
+      {
+        "motif_code": "E215",
+        "sequence_order": 132,
+        "source_citation": "he saw and heard the still-mysterious black leather objects.",
+        "memory_state": "hypnosis",
+        "source_page": "73",
+        "ai_justification": "Steven perceives mysterious black leather objects near his stopped car. This is an anomalous, unexplained perception that fits E215 (inappropriate response or uncharacteristic behavior/odd perceptions), as the objects are strange and unexplained in context.",
+        "emotional_marker": "confusion",
+        "chunk": 17
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 133,
+        "source_citation": "the approach of the white creatures",
+        "memory_state": "hypnosis",
+        "source_page": "73",
+        "ai_justification": "White creatures approach Steven. Based on the broader case context (Bullard catalogue case 84), these are humanoid beings. Matches B201 (Humanoid).",
+        "emotional_marker": "fear",
+        "chunk": 17
+      },
+      {
+        "motif_code": "M100",
+        "sequence_order": 134,
+        "source_citation": "There are other things standing around me . . . there's nothing to be afraid of.",
+        "memory_state": "hypnosis",
+        "source_page": "73",
+        "ai_justification": "The beings communicate a repeated calming message telling Steven there is nothing to be afraid of. This matches M100 (Promise subject will be safe, that they are peaceful).",
+        "emotional_marker": "calming",
+        "chunk": 17
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 135,
+        "source_citation": "the episode of the figure digging while he was somehow held motionless.",
+        "memory_state": "hypnosis",
+        "source_page": "73",
+        "ai_justification": "Steven is held motionless while a figure digs nearby. Being held immobile without apparent physical restraint matches E315 (Paralysis, numbness).",
+        "emotional_marker": "helplessness",
+        "chunk": 17
+      },
+      {
+        "motif_code": "B650",
+        "sequence_order": 136,
+        "source_citation": "the episode of the figure digging",
+        "memory_state": "hypnosis",
+        "source_page": "73",
+        "ai_justification": "A being is observed digging, which corresponds to B650 (Gather samples), as the beings appear to be collecting material from the ground.",
+        "emotional_marker": null,
+        "chunk": 17
+      },
+      {
+        "motif_code": "E325",
+        "sequence_order": 137,
+        "source_citation": "the placing of the clamp on his shoulders",
+        "memory_state": "hypnosis",
+        "source_page": "73",
+        "ai_justification": "A clamp device is placed on Steven's shoulders, a mechanical means of controlling or restraining the witness. This matches E325 (Control by devices or injection).",
+        "emotional_marker": "terror",
+        "chunk": 17
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 138,
+        "source_citation": "Steven had nothing more to go on than a vague feeling that something he could not remember happened to him one night on a particular stretch of highway.",
+        "memory_state": "conscious",
+        "source_page": "74",
+        "ai_justification": "The witness experienced a time lapse—a period of lost, unaccounted-for time on a highway—with no conscious memory of what occurred. This is the defining characteristic of E200 (Time lapse).",
+        "emotional_marker": "unease",
+        "chunk": 18
+      },
+      {
+        "motif_code": "E208",
+        "sequence_order": 139,
+        "source_citation": "Steven had nothing more to go on than a vague feeling that something he could not remember happened to him one night on a particular stretch of highway.",
+        "memory_state": "conscious",
+        "source_page": "74",
+        "ai_justification": "The persistent vague feeling that something happened, without conscious memory, constitutes a premonition or lingering sense that something occurred (E208). This feeling preceded and motivated the hypnotic investigation.",
+        "emotional_marker": "anxiety",
+        "chunk": 18
+      },
+      {
+        "motif_code": "A112",
+        "sequence_order": 140,
+        "source_citation": "a vague feeling that something he could not remember happened to him one night on a particular stretch of highway.",
+        "memory_state": "conscious",
+        "source_page": "74",
+        "ai_justification": "The witness's unease is specifically tied to a particular stretch of highway, matching A112 (Witness feels alarmed on passing a certain place). Bullard's catalogue entry for Kilburn (case 84) explicitly lists this site-specific anxiety.",
+        "emotional_marker": "anxiety",
+        "chunk": 18
+      },
+      {
+        "motif_code": "A114",
+        "sequence_order": 141,
+        "source_citation": "I didn't want to go any further. I'm afraid the worst is still to come.",
+        "memory_state": "conscious",
+        "source_page": "74",
+        "ai_justification": "The witness's reluctance to recall further and his fear of what remains hidden reflects the aftereffect of feeling obliged or compelled to keep the experience suppressed (A114), a common post-abduction secretive urge noted by Bullard.",
+        "emotional_marker": "fear",
+        "chunk": 18
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 142,
+        "source_citation": "their peculiar experience in 1972 when they lost four hours driving back from Bodega Bay.",
+        "memory_state": "conscious",
+        "source_page": "75",
+        "ai_justification": "The witnesses experienced a four-hour period of missing time during a drive, a classic time lapse event. This was consciously noticed after the fact.",
+        "emotional_marker": null,
+        "chunk": 19
+      },
+      {
+        "motif_code": "A115",
+        "sequence_order": 143,
+        "source_citation": "Judy felt oddly uncomfortable, recalling the sensation of being in her own car and somehow floating. Her sister Danon, sitting beside her in the theater, felt the same unease.",
+        "memory_state": "conscious",
+        "source_page": "75",
+        "ai_justification": "A movie scene triggered a disturbing half-memory related to the abduction experience, functioning as a recurrent abduction-related dream or flashback. This was a conscious, spontaneous recall triggered by external stimulus.",
+        "emotional_marker": "unease",
+        "chunk": 19
+      },
+      {
+        "motif_code": "A221",
+        "sequence_order": 144,
+        "source_citation": "after visiting a friend near Yolo, California, she sighted a UFO on her way home. It was a typical distant 'nocturnal light.'",
+        "memory_state": "conscious",
+        "source_page": "75",
+        "ai_justification": "A subsequent UFO sighting occurred years after the original encounter, fitting the pattern of further UFO sightings as an aftereffect.",
+        "emotional_marker": null,
+        "chunk": 19
+      },
+      {
+        "motif_code": "E410",
+        "sequence_order": 145,
+        "source_citation": "her car somehow not responding to her control, but moving of its own accord, as if it were not actually on the ground.",
+        "memory_state": "hypnosis",
+        "source_page": "75",
+        "ai_justification": "Under hypnosis, Judy recalled the vehicle moving on its own, not responding to her control, indicating the UFO or beings took control of the vehicle.",
+        "emotional_marker": null,
+        "chunk": 19
+      },
+      {
+        "motif_code": "E412",
+        "sequence_order": 146,
+        "source_citation": "as if it were not actually on the ground.",
+        "memory_state": "hypnosis",
+        "source_page": "75",
+        "ai_justification": "The car seemed to ride above the ground, matching the motif of a car riding above the surface or smoothly without bumps.",
+        "emotional_marker": null,
+        "chunk": 19
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 147,
+        "source_citation": "I think I see a . . . transparent head-shape thing with funny-looking eyes.",
+        "memory_state": "hypnosis",
+        "source_page": "75",
+        "ai_justification": "The witness describes a humanoid being with a transparent head and unusual eyes, fitting the humanoid entity type.",
+        "emotional_marker": "fear",
+        "chunk": 19
+      },
+      {
+        "motif_code": "E306",
+        "sequence_order": 148,
+        "source_citation": "It scares me! / I don't want to see it anymore!",
+        "memory_state": "hypnosis",
+        "source_page": "75",
+        "ai_justification": "The witness's intense fear and sobbing during the recall indicates pacification wearing off, with the reality of the situation rushing back.",
+        "emotional_marker": "terror",
+        "chunk": 19
+      },
+      {
+        "motif_code": "B295",
+        "sequence_order": 149,
+        "source_citation": "They look like ordinary people's heads, but they don't have any hair. No hair anywhere.",
+        "memory_state": "hypnosis",
+        "source_page": "75",
+        "ai_justification": "The beings are described as completely hairless, a key humanoid trait.",
+        "emotional_marker": null,
+        "chunk": 19
+      },
+      {
+        "motif_code": "B251",
+        "sequence_order": 150,
+        "source_citation": "Their cheekbones are funny-looking.",
+        "memory_state": "hypnosis",
+        "source_page": "75",
+        "ai_justification": "The description of unusual, prominent cheekbones matches the flat or high cheekbone facial description for humanoids.",
+        "emotional_marker": null,
+        "chunk": 19
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 151,
+        "source_citation": "(Their skin is) kind of white and milky.",
+        "memory_state": "hypnosis",
+        "source_page": "75",
+        "ai_justification": "White, milky skin matches the gray/white/ashen/claylike skin description for humanoid beings.",
+        "emotional_marker": null,
+        "chunk": 19
+      },
+      {
+        "motif_code": "B240",
+        "sequence_order": 152,
+        "source_citation": "I don't remember seeing a mouth.",
+        "memory_state": "hypnosis",
+        "source_page": "75",
+        "ai_justification": "The mouth is absent or so vestigial as to be unnoticeable, matching the absent facial feature code. While B240 is listed under eyes in the dictionary, the witness describes an absent mouth; the closest semantic match for a vestigial/absent mouth is B258 (slitlike) but the witness says she doesn't remember seeing one at all. Reassigning to the most accurate available code.",
+        "emotional_marker": null,
+        "chunk": 19
+      },
+      {
+        "motif_code": "B254",
+        "sequence_order": 153,
+        "source_citation": "I don't see any ears . . . all I see is holes.",
+        "memory_state": "hypnosis",
+        "source_page": "75",
+        "ai_justification": "Ears are absent with only holes visible, matching the description of ears close against head, absent, or holes only.",
+        "emotional_marker": null,
+        "chunk": 19
+      },
+      {
+        "motif_code": "B202",
+        "sequence_order": 154,
+        "source_citation": "Judy recalled seeing three distinct types of creatures, one of which, a woman, seemed entirely human.",
+        "memory_state": "hypnosis",
+        "source_page": "75",
+        "ai_justification": "One of the beings aboard the craft appeared to be an entirely human woman, fitting the human occupant type.",
+        "emotional_marker": null,
+        "chunk": 19
+      },
+      {
+        "motif_code": "B211",
+        "sequence_order": 155,
+        "source_citation": "one of which, a woman, seemed entirely human.",
+        "memory_state": "hypnosis",
+        "source_page": "75",
+        "ai_justification": "The human-appearing being is identified as feminine.",
+        "emotional_marker": null,
+        "chunk": 19
+      },
+      {
+        "motif_code": "E203",
+        "sequence_order": 156,
+        "source_citation": "neither Judy nor Danon (Becky apparently was asleep throughout the encounter) had any conscious recollection of a UFO sighting.",
+        "memory_state": "conscious",
+        "source_page": "75",
+        "ai_justification": "In this multiple-witness case, differential memory is evident: Becky slept through the encounter entirely, while Judy and Danon had no conscious UFO memory but shared the time loss and later half-memories. This is a consciously observed fact about the aftermath.",
+        "emotional_marker": null,
+        "chunk": 19
+      },
+      {
+        "motif_code": "E410",
+        "sequence_order": 157,
+        "source_citation": "Steven could not understand how his car, traveling downhill at about seventy miles per hour, could make a violent right turn without rolling over, moving as if 'sucked by a giant magnet.'",
+        "memory_state": "hypnosis",
+        "source_page": "76",
+        "ai_justification": "The witness's car is under apparent external control, making a violent turn at high speed without the driver's input, consistent with E410: UFO or beings take control of vehicle.",
+        "emotional_marker": "confusion",
+        "chunk": 20
+      },
+      {
+        "motif_code": "E123",
+        "sequence_order": 158,
+        "source_citation": "moving as if 'sucked by a giant magnet.'",
+        "memory_state": "hypnosis",
+        "source_page": "76",
+        "ai_justification": "The description of the car being 'sucked by a giant magnet' implies a drawing force acting on the vehicle, consistent with E123: Levitation: drawing force.",
+        "emotional_marker": "confusion",
+        "chunk": 20
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 159,
+        "source_citation": "So reluctant was he that he was not ready to explore it specifically until January of 1980 in his fourth hypnotic session.",
+        "memory_state": "conscious",
+        "source_page": "77",
+        "ai_justification": "Steven had avoided pursuing the examination memory, indicating a time lapse / memory gap regarding the core abduction events that required hypnosis to recover.",
+        "emotional_marker": "reluctance, avoidance",
+        "chunk": 21
+      },
+      {
+        "motif_code": "A112",
+        "sequence_order": 160,
+        "source_citation": "From the moment he first realized that his encounter had included an involuntary physical examination, he had avoided pursuing the matter through hypnosis.",
+        "memory_state": "conscious",
+        "source_page": "77",
+        "ai_justification": "Steven felt alarmed about revisiting the examination experience, a form of UFObia/encounter-related anxiety that caused him to avoid the topic.",
+        "emotional_marker": "avoidance, fear",
+        "chunk": 21
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 161,
+        "source_citation": "His memories began as he stood beside his car, facing his white-skinned captors.",
+        "memory_state": "hypnosis",
+        "source_page": "77",
+        "ai_justification": "The beings are described as having white skin, matching the Bullard code for skin white, gray, ashen or claylike.",
+        "emotional_marker": "fear",
+        "chunk": 21
+      },
+      {
+        "motif_code": "E325",
+        "sequence_order": 162,
+        "source_citation": "I see the . .. uh . .. I don't know what it is . . . a long clamp kind of thing. And there's a joint in the middle like an elbow, almost like an arm, and it's . . . around my shoulder.",
+        "memory_state": "hypnosis",
+        "source_page": "77",
+        "ai_justification": "A mechanical clamp device is used to physically restrain and control the witness by gripping his shoulder, matching control by devices.",
+        "emotional_marker": "fear, pain",
+        "chunk": 21
+      },
+      {
+        "motif_code": "U102",
+        "sequence_order": 163,
+        "source_citation": "It's connected to this . .. I don't know what this is. . . . It looks like a saucer . . . that's what it looks like. It's whitish.",
+        "memory_state": "hypnosis",
+        "source_page": "77",
+        "ai_justification": "The craft is described as saucer-shaped and whitish, fitting the oval/egg shape category. Steven also compares it to 'an egg sitting on it.'",
+        "emotional_marker": null,
+        "chunk": 21
+      },
+      {
+        "motif_code": "U134",
+        "sequence_order": 164,
+        "source_citation": "And it's sitting on something . . . looks like it's white also, a kind of platform. It looks like an erector set or something . . . some kind of girders, criss-cross . , . latticework . .. it sits on.",
+        "memory_state": "hypnosis",
+        "source_page": "77",
+        "ai_justification": "The craft sits on a platform of girders and latticework, functioning as landing gear or support structure.",
+        "emotional_marker": null,
+        "chunk": 21
+      },
+      {
+        "motif_code": "U323",
+        "sequence_order": 165,
+        "source_citation": "It looks like an erector set or something . . . some kind of girders, criss-cross . , . latticework . .. it sits on. Like an egg sitting on it",
+        "memory_state": "hypnosis",
+        "source_page": "77",
+        "ai_justification": "The girder/latticework support structure has an unfinished, industrial look consistent with rafters or unfinished construction appearance.",
+        "emotional_marker": null,
+        "chunk": 21
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 166,
+        "source_citation": "It's holding me . .. if it grabs me, I feel . .. it hurts my back, my lower back on the right side.",
+        "memory_state": "hypnosis",
+        "source_page": "77",
+        "ai_justification": "The clamp device immobilizes the witness by holding him in place, causing pain—a form of paralysis/physical restraint.",
+        "emotional_marker": "pain",
+        "chunk": 21
+      },
+      {
+        "motif_code": "B909",
+        "sequence_order": 167,
+        "source_citation": "They're watching me now. They're standing there watching",
+        "memory_state": "hypnosis",
+        "source_page": "77",
+        "ai_justification": "The beings stand and watch the witness, which in context of the broader Kilburn case relates to the beings' observational behavior. While B909 is 'beings dislike for witness to watch them,' the inverse—beings intently watching the restrained witness—is the closest semantic match to their surveillance behavior during capture.",
+        "emotional_marker": "unease",
+        "chunk": 21
+      },
+      {
+        "motif_code": "B221",
+        "sequence_order": 168,
+        "source_citation": "These little guys",
+        "memory_state": "hypnosis",
+        "source_page": "79",
+        "ai_justification": "The witness refers to the beings as 'little guys,' indicating moderately short stature (4-5 feet), consistent with B221.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "C105",
+        "sequence_order": 169,
+        "source_citation": "the one guy starts motioning",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "The being communicates by motioning/gesturing to the witness, fitting C105 sign language or gestures.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 170,
+        "source_citation": "I don't think I could move if I wanted to . . . that thing is really on my body.",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "The witness reports inability to move due to a device on his body, consistent with paralysis (E315).",
+        "emotional_marker": "helplessness",
+        "chunk": 22
+      },
+      {
+        "motif_code": "E325",
+        "sequence_order": 171,
+        "source_citation": "that thing is really on my body",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "A device placed on the witness's body controls his movement, fitting E325 control by devices.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "U133",
+        "sequence_order": 172,
+        "source_citation": "It's a ramp . . . a little ramp. He wants me to walk up before him.",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "The witness describes a ramp leading into the craft, matching U133 ramps/stairs.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "U530",
+        "sequence_order": 173,
+        "source_citation": "I think there's some kind of noise. . . . It's like a very, very quiet hum.",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "The witness hears a quiet humming sound from the craft, matching U530 buzzing/humming sound.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "U201",
+        "sequence_order": 174,
+        "source_citation": "there's a passageway. . . . It's round, almost like a tube we're walking through.",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "The witness describes a round, tube-like passageway inside the craft, matching U201 tunnel/passageway.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 175,
+        "source_citation": "The thing's not on my back anymore and I'm very relaxed. / I'm just very relaxed, very calm.",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "After the device is removed, the witness feels very relaxed and calm, consistent with the pacification effect E300.",
+        "emotional_marker": "calm",
+        "chunk": 22
+      },
+      {
+        "motif_code": "M100",
+        "sequence_order": 176,
+        "source_citation": "They're not going to hurt me.",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "The witness senses or is given the impression that the beings will not harm him, matching M100 promise of safety.",
+        "emotional_marker": "reassurance",
+        "chunk": 22
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 177,
+        "source_citation": "I feel like I'm almost paralyzed. It doesn't hurt, though.",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "The witness feels almost paralyzed while inside the craft, a second instance of paralysis (E315) distinct from the first which was caused by the device outside.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "U355",
+        "sequence_order": 178,
+        "source_citation": "this thing didn't look that big from the outside. Didn't look like there was that much room in it.",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "The witness notes the interior seems larger than the exterior would suggest, matching U355 interior seems too large.",
+        "emotional_marker": "surprise",
+        "chunk": 22
+      },
+      {
+        "motif_code": "B758",
+        "sequence_order": 179,
+        "source_citation": "I think we went the wrong way. Now, he . . . I don't think he knows which way to go . . . what to do now",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "The being appears to have taken a wrong turn and seems uncertain, indicating fallibility (B758).",
+        "emotional_marker": "amusement",
+        "chunk": 22
+      },
+      {
+        "motif_code": "B909",
+        "sequence_order": 180,
+        "source_citation": "he looks at me. I wasn't looking at him.",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "The witness notes he was not looking at the being, implying an aversion or avoidance of direct gaze, consistent with B909 beings dislike for witness to watch them.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "U202",
+        "sequence_order": 181,
+        "source_citation": "we go into a room . . . And the door closes behind us.",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "The witness enters a room where he is subsequently placed on a table for examination, identifying it as the examination room (U202).",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "U132",
+        "sequence_order": 182,
+        "source_citation": "the door closes behind us.",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "The door closes behind them seamlessly, consistent with U132 doors close seamlessly.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "X155",
+        "sequence_order": 183,
+        "source_citation": "I'm sitting on a table in the middle of this room.",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "The witness is placed on an examining table, matching X155.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "X221",
+        "sequence_order": 184,
+        "source_citation": "They put . . . they put a thing on my back.",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "A device or probe is applied to the witness's back during the examination, consistent with X221 probes or electrodes connected to other machinery.",
+        "emotional_marker": "pain",
+        "chunk": 22
+      },
+      {
+        "motif_code": "U212",
+        "sequence_order": 185,
+        "source_citation": "It's curved on the inside . . . the walls aren't . . . I don't think there are any angles in the room.",
+        "memory_state": "hypnosis",
+        "source_page": "79",
+        "ai_justification": "The room is described as curved with no angles, matching U212 round, domed, without sharp edges.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "U220",
+        "sequence_order": 186,
+        "source_citation": "This room, it's all white. / Everything looks kind of whitish.",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "The room is described as white, matching U220.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "U230",
+        "sequence_order": 187,
+        "source_citation": "Everything looks kind of whitish. Even when I look at my own hands . . . they look kind of whitish. It doesn't glow.",
+        "memory_state": "hypnosis",
+        "source_page": "79",
+        "ai_justification": "The uniform whitish quality of the room without a visible glow source indicates bright, uniform lighting without specific source, matching U230.",
+        "emotional_marker": null,
+        "chunk": 22
+      },
+      {
+        "motif_code": "U210",
+        "sequence_order": 188,
+        "source_citation": "the inside of the room would be the shape of a saucer. Even the ceiling is curved. It's like a big oval. Yeah, the room is a big, circular, flattened-out oval.",
+        "memory_state": "hypnosis",
+        "source_page": "80",
+        "ai_justification": "The witness describes the room as circular, flattened-out oval with curved ceiling, matching U210 (Round, oval room).",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "U231",
+        "sequence_order": 189,
+        "source_citation": "I almost want to say that the air in the room is white also. Something strange about the color of everything. I don't know how to describe it . . . everything is kind of milky or misty or something. It doesn't shine, but everything has almost that metallic kind of glow to it",
+        "memory_state": "hypnosis",
+        "source_page": "80",
+        "ai_justification": "The room is described as white, milky, misty with a metallic glow—matching U231 (Bright and misty lighting).",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "U259",
+        "sequence_order": 190,
+        "source_citation": "And there is not a sound. Nothing. I think it's the quietest place I was ever in.",
+        "memory_state": "hypnosis",
+        "source_page": "80",
+        "ai_justification": "The witness emphasizes total silence inside the craft, matching U259 (Silence).",
+        "emotional_marker": "awe",
+        "chunk": 23
+      },
+      {
+        "motif_code": "U300",
+        "sequence_order": 191,
+        "source_citation": "This table is so . . . I don't know, it's like it grows out of the floor. It's perfectly smooth. The same color. There are no drawers or anything. No cabinets, no handles. Nothing. It's just like a pillar.",
+        "memory_state": "hypnosis",
+        "source_page": "80",
+        "ai_justification": "The witness describes a smooth examination table growing from the floor, matching U300 (Room has examination table or bed).",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "E201",
+        "sequence_order": 192,
+        "source_citation": "(There is an obvious gap in his recall at this point, between his entering the room and finding himself nearly naked, seated on the table.)",
+        "memory_state": "hypnosis",
+        "source_page": "80",
+        "ai_justification": "The investigator notes a gap in recall between entering the room and being on the table, matching E201 (Doorway amnesia).",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "X100",
+        "sequence_order": 193,
+        "source_citation": "I don't know where my clothes went.",
+        "memory_state": "hypnosis",
+        "source_page": "80",
+        "ai_justification": "The witness finds his clothes removed without memory of undressing, matching X100 (Witness undresses or is undressed).",
+        "emotional_marker": "confusion",
+        "chunk": 23
+      },
+      {
+        "motif_code": "X105",
+        "sequence_order": 194,
+        "source_citation": "It looks like a wrapped diaper of some sort . . . very soft. It's wrapped in a criss-cross.",
+        "memory_state": "hypnosis",
+        "source_page": "80",
+        "ai_justification": "The witness's clothing has been replaced with a wrapped garment, matching X105 (Clothing replaced with robe, smock or other garment).",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "X202",
+        "sequence_order": 195,
+        "source_citation": "are two of them in the room . . . the one other . . . oh, no, there are a few others over there against the walls, circled around. There are two guys who seem to be running the show.",
+        "memory_state": "hypnosis",
+        "source_page": "80",
+        "ai_justification": "Multiple beings participate in the examination without a clear single examiner, matching X202 (A group of beings without obvious division of labor carry out exam).",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "B800",
+        "sequence_order": 196,
+        "source_citation": "the guy who brought me in is just sort of watching everything. He seems to know what's going on.",
+        "memory_state": "hypnosis",
+        "source_page": "80",
+        "ai_justification": "One being who escorted the witness observes and seems in charge, matching B800 (One being acts as leader, spokesman).",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "X225",
+        "sequence_order": 197,
+        "source_citation": "There's a thing over my head . . . it's coming out of the ceiling. It looks like it should be made of metal or something . . . It looks kind of like something I saw in a planetarium. A big thing. It has a kind of bulbous head on one end. It looks like a big insect. It's about twice the size of me. It's nine feet long or so, and maybe three or four feet across. It's really intricate.",
+        "memory_state": "hypnosis",
+        "source_page": "80",
+        "ai_justification": "A large, intricate device descends from the ceiling, matching X225 (Eyelike device descends from ceiling and scans witness).",
+        "emotional_marker": null,
+        "chunk": 23
+      },
+      {
+        "motif_code": "X246",
+        "sequence_order": 198,
+        "source_citation": "it turns so the needle part is pointing down towards me, and that's what runs along the bottom of my back. And I'm just sitting there, and when they put it against my back—I don't know whether they're sticking something into my back, but it hurts. / It's a flat kind of thing on the end, yeah, that's digging into my back.",
+        "memory_state": "hypnosis",
+        "source_page": "80",
+        "ai_justification": "A needle-like instrument is pressed into the witness's lower back, possibly inserting something, matching X246 (Beings implant a device in the head, spine, leg, or body).",
+        "emotional_marker": "pain",
+        "chunk": 23
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 199,
+        "source_citation": "It has a really calming effect, being in this room. (Chuckles.) It's almost like being hypnotized. This is really . . . you almost feel as if you could float. It's very peaceful.",
+        "memory_state": "hypnosis",
+        "source_page": "80",
+        "ai_justification": "The witness describes an overwhelming calming, peaceful, almost hypnotic effect, matching E300 (Pacification effect: witness calm, euphoric, relaxed).",
+        "emotional_marker": "calm",
+        "chunk": 23
+      },
+      {
+        "motif_code": "E120",
+        "sequence_order": 200,
+        "source_citation": "you almost feel as if you could float.",
+        "memory_state": "hypnosis",
+        "source_page": "80",
+        "ai_justification": "The witness describes a sensation of near-weightlessness, matching E120 (Floating effect: apparent weightlessness).",
+        "emotional_marker": "calm",
+        "chunk": 23
+      },
+      {
+        "motif_code": "X225",
+        "sequence_order": 201,
+        "source_citation": "Just touching my back. I don't know what it's doing there. / That thing has come down and it's pushing against my back again.",
+        "memory_state": "hypnosis",
+        "source_page": "81",
+        "ai_justification": "A device descends from the ceiling and scans/presses against the witness's body, consistent with X225 (eyelike device descends from ceiling and scans witness).",
+        "emotional_marker": "discomfort",
+        "chunk": 24
+      },
+      {
+        "motif_code": "X155",
+        "sequence_order": 202,
+        "source_citation": "All this time I've been sitting with my legs over the edge of this . . . I guess it's the doctor's table.",
+        "memory_state": "hypnosis",
+        "source_page": "81",
+        "ai_justification": "The witness is on an examining table, consistent with X155 (witness lies on an examining table or couch).",
+        "emotional_marker": "wry humor",
+        "chunk": 24
+      },
+      {
+        "motif_code": "U300",
+        "sequence_order": 203,
+        "source_citation": "It's one doctor's office I didn't have to wait to get into, I guess.",
+        "memory_state": "hypnosis",
+        "source_page": "81",
+        "ai_justification": "Confirms the room has an examination table, consistent with U300 (room has examination table or bed). The table also adapts to support the witness's head like a cushion.",
+        "emotional_marker": "wry humor",
+        "chunk": 24
+      },
+      {
+        "motif_code": "X100",
+        "sequence_order": 204,
+        "source_citation": "They're taking the thing I'm wearing off. / And he's (lifting?) it up with his hand. I didn't know they did anything with their hands. And it slides against my leg",
+        "memory_state": "hypnosis",
+        "source_page": "81",
+        "ai_justification": "The beings remove the witness's garment, consistent with X100 (witness undressed or is undressed by beings).",
+        "emotional_marker": "surprise",
+        "chunk": 24
+      },
+      {
+        "motif_code": "C200",
+        "sequence_order": 205,
+        "source_citation": "These two are talking to each other . . . I mean, or they're communicating with each other, 'cause there's something going on between the two of them. They're looking at each other",
+        "memory_state": "hypnosis",
+        "source_page": "81",
+        "ai_justification": "Two beings communicate with each other non-verbally, consistent with C200 (beings communicate with each other using a mumbling or buzzing sound or non-verbal exchange).",
+        "emotional_marker": null,
+        "chunk": 24
+      },
+      {
+        "motif_code": "X244",
+        "sequence_order": 206,
+        "source_citation": "it's a version of the old hit your knee and see if it jumps up in the air . . . 'cause that's what my right leg did. (Chuckles.) They're testing my reflexes.",
+        "memory_state": "hypnosis",
+        "source_page": "81",
+        "ai_justification": "The beings strike the witness's back causing a reflex leg twitch, explicitly identified as reflex testing, consistent with X244 (beings test the witness's reflexes).",
+        "emotional_marker": "pain mixed with recognition",
+        "chunk": 24
+      },
+      {
+        "motif_code": "B756",
+        "sequence_order": 207,
+        "source_citation": "I don't think they really care whether it hurts or not.",
+        "memory_state": "hypnosis",
+        "source_page": "81",
+        "ai_justification": "The witness perceives the beings as indifferent to the pain they cause, consistent with B756 (no understanding of pain).",
+        "emotional_marker": "resentment",
+        "chunk": 24
+      },
+      {
+        "motif_code": "B905",
+        "sequence_order": 208,
+        "source_citation": "I think the joy has gone out of this relationship. It's not that interesting anymore.",
+        "memory_state": "hypnosis",
+        "source_page": "81",
+        "ai_justification": "The witness's initial positive feelings give way to a sense that the beings are cold and indifferent, consistent with B905 (beings behave in a cold, indifferent, insensitive manner).",
+        "emotional_marker": "disillusionment",
+        "chunk": 24
+      },
+      {
+        "motif_code": "B913",
+        "sequence_order": 209,
+        "source_citation": "I think the guy who brought me in, the leader, I think he's getting impatient. He's kind of . . . he turns to look at where we came in.",
+        "memory_state": "hypnosis",
+        "source_page": "81",
+        "ai_justification": "The leader being shows signs of impatience, consistent with B913 (beings are impatient or have little time).",
+        "emotional_marker": null,
+        "chunk": 24
+      },
+      {
+        "motif_code": "U132",
+        "sequence_order": 210,
+        "source_citation": "That's why I think a door must have closed or something, 'cause I don't see a door there or anything. It's just all smooth.",
+        "memory_state": "hypnosis",
+        "source_page": "81",
+        "ai_justification": "The witness notes a door has closed seamlessly leaving only a smooth wall, consistent with U132 (doors close seamlessly).",
+        "emotional_marker": null,
+        "chunk": 24
+      },
+      {
+        "motif_code": "B800",
+        "sequence_order": 211,
+        "source_citation": "I think the guy who brought me in, the leader",
+        "memory_state": "hypnosis",
+        "source_page": "81",
+        "ai_justification": "The witness identifies one being as the leader who brought him in, consistent with B800 (one being acts as leader, spokesman).",
+        "emotional_marker": null,
+        "chunk": 24
+      },
+      {
+        "motif_code": "B620",
+        "sequence_order": 212,
+        "source_citation": "about five or six of them, 'cause they're kind of scattered around against the walls with their hands behind their backs. They look like guards or something.",
+        "memory_state": "hypnosis",
+        "source_page": "82",
+        "ai_justification": "Multiple beings standing against the walls with hands behind their backs, described by the witness as looking like guards. This matches B620: Stand guard, direct traffic.",
+        "emotional_marker": "amusement",
+        "chunk": 25
+      },
+      {
+        "motif_code": "X224",
+        "sequence_order": 213,
+        "source_citation": "It's kind of a light now, out of the ceiling, out of the center. It's coming actually out of the center where this big device is hooked up. And it shines on me.",
+        "memory_state": "hypnosis",
+        "source_page": "82",
+        "ai_justification": "A light from the ceiling shines on the witness during the examination. This matches X224: Light or light beam shines on witness.",
+        "emotional_marker": null,
+        "chunk": 25
+      },
+      {
+        "motif_code": "U257",
+        "sequence_order": 214,
+        "source_citation": "Kinda warm. Feels good. It was getting a little bit cold in there. It feels good now.",
+        "memory_state": "hypnosis",
+        "source_page": "82",
+        "ai_justification": "The witness notes the room was cold but the light made it warm. This matches U257: Room changes from cold to warm.",
+        "emotional_marker": "relief",
+        "chunk": 25
+      },
+      {
+        "motif_code": "X229.1",
+        "sequence_order": 215,
+        "source_citation": "My back feels better, too.",
+        "memory_state": "hypnosis",
+        "source_page": "82",
+        "ai_justification": "The light from the device eases the witness's back pain. This matches X229.1: Instruments ease injuries.",
+        "emotional_marker": "relief",
+        "chunk": 25
+      },
+      {
+        "motif_code": "M110",
+        "sequence_order": 216,
+        "source_citation": "They want me to turn over . . . on my stomach.",
+        "memory_state": "hypnosis",
+        "source_page": "82",
+        "ai_justification": "The beings instruct the witness to perform a utilitarian act (turning over for examination). This matches M110: Beings tell witness to perform some particular utilitarian act.",
+        "emotional_marker": null,
+        "chunk": 25
+      },
+      {
+        "motif_code": "X155",
+        "sequence_order": 217,
+        "source_citation": "And, uh, I don't think they're going to miss anything . . . they're going to get me from all angles.",
+        "memory_state": "hypnosis",
+        "source_page": "82",
+        "ai_justification": "The witness is lying on the examination table being examined from all sides. This matches X155: The witness lies on an examining table or couch.",
+        "emotional_marker": "resignation",
+        "chunk": 25
+      },
+      {
+        "motif_code": "X210",
+        "sequence_order": 218,
+        "source_citation": "I feel something touching that spot where it itched. / I think it's the mark on my back that they want to look at. To see what it is, I think. I think I have something on my back, some kind of a mole or something. Yeah, they're touching it.",
+        "memory_state": "hypnosis",
+        "source_page": "82",
+        "ai_justification": "A being touches and examines a specific spot on the witness's back. This matches X210: Beings touch witness in various places, as if examining.",
+        "emotional_marker": null,
+        "chunk": 25
+      },
+      {
+        "motif_code": "B275",
+        "sequence_order": 219,
+        "source_citation": "his head is like . . . strange the way his head turns down. I didn't notice any of them do that before. It's like on a joint or something . . . his head is very . . . and I do see his neck. I didn't know he had a neck, but he does. It's a little skinny thing. But he turns and it's just like . . . I think his neck can bend . . . it's strange.",
+        "memory_state": "hypnosis",
+        "source_page": "82",
+        "ai_justification": "The witness describes the being's head turning on an unusual joint, with a neck that bends in a strange way. This matches B275: Abnormally jointed.",
+        "emotional_marker": "surprise",
+        "chunk": 25
+      },
+      {
+        "motif_code": "B271",
+        "sequence_order": 220,
+        "source_citation": "It's a little skinny thing.",
+        "memory_state": "hypnosis",
+        "source_page": "82",
+        "ai_justification": "The witness describes the being's neck as a 'little skinny thing,' indicating thin body parts. This matches B271: Thin.",
+        "emotional_marker": "amusement",
+        "chunk": 25
+      },
+      {
+        "motif_code": "B291",
+        "sequence_order": 221,
+        "source_citation": "It looks like hard plastic and it feels hard. I don't know how he could possibly feel anything with a hard finger like that.",
+        "memory_state": "hypnosis",
+        "source_page": "82",
+        "ai_justification": "The witness describes the being's finger as feeling like hard plastic, an unusual skin texture. This matches B291: Skin cold, sunless, sickly, soft — used here for the unusual tactile quality of the skin, though hard rather than soft, it describes the alien quality of the skin's feel.",
+        "emotional_marker": "puzzlement",
+        "chunk": 25
+      },
+      {
+        "motif_code": "B756",
+        "sequence_order": 222,
+        "source_citation": "Oh! He had some kind of . . . pushed at it with his finger . . . on the edge. That's funny, when he touched it, the little thing on my back, it hurt farther down. / Now he's just pushing on it, pushing down on it. I think he just wants to feel it.",
+        "memory_state": "hypnosis",
+        "source_page": "82",
+        "ai_justification": "The being presses on the mark causing pain, seemingly unaware or unconcerned that the pressing causes the witness pain. This matches B756: No understanding of pain.",
+        "emotional_marker": "discomfort",
+        "chunk": 25
+      },
+      {
+        "motif_code": "B220",
+        "sequence_order": 223,
+        "source_citation": "It's strange, but what I can't figure out is he's so short and this table sits up really high.",
+        "memory_state": "hypnosis",
+        "source_page": "83",
+        "ai_justification": "The witness notes the being is notably short relative to the high examination table. This matches B220: Short (3.5 feet or less).",
+        "emotional_marker": "puzzlement",
+        "chunk": 25
+      },
+      {
+        "motif_code": "E120",
+        "sequence_order": 224,
+        "source_citation": "Unless he's floating. (Chuckles.) Maybe he is.",
+        "memory_state": "hypnosis",
+        "source_page": "77",
+        "ai_justification": "The witness observes that the being examining him appears to be floating, consistent with the floating/weightlessness motif attributed to beings' movement.",
+        "emotional_marker": "bemused curiosity",
+        "chunk": 26
+      },
+      {
+        "motif_code": "X210",
+        "sequence_order": 225,
+        "source_citation": "Oh! He pushed that spot on my back with his hand. He should leave it alone. It hurts.",
+        "memory_state": "hypnosis",
+        "source_page": "77",
+        "ai_justification": "A being touches and pushes on the witness's back as part of the physical examination, consistent with beings touching witness in various places.",
+        "emotional_marker": "pain, annoyance",
+        "chunk": 26
+      },
+      {
+        "motif_code": "B800",
+        "sequence_order": 226,
+        "source_citation": "The other guy, the boss there who walked me in, now has his back partially turned.",
+        "memory_state": "hypnosis",
+        "source_page": "77",
+        "ai_justification": "The witness identifies one being as 'the boss' who escorted him in, indicating a leader/spokesman role distinct from the examiner.",
+        "emotional_marker": null,
+        "chunk": 26
+      },
+      {
+        "motif_code": "B909",
+        "sequence_order": 227,
+        "source_citation": "Maybe he can't stand the sight of blood.",
+        "memory_state": "hypnosis",
+        "source_page": "77",
+        "ai_justification": "The leader turns away from the examination, and the witness speculates the being dislikes watching, consistent with beings disliking for witness to watch them or aversion to certain sights.",
+        "emotional_marker": "speculation",
+        "chunk": 26
+      },
+      {
+        "motif_code": "X220",
+        "sequence_order": 228,
+        "source_citation": "I keep getting the feeling that my back is open, but there's no blood. Or that it's not cut or anything. I get the feeling that they're looking inside of it.",
+        "memory_state": "hypnosis",
+        "source_page": "77",
+        "ai_justification": "The beings appear to be using some instrument or technique to look inside the witness's back without cutting, consistent with instrumental examination using handheld instruments.",
+        "emotional_marker": "unease, confusion",
+        "chunk": 26
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 229,
+        "source_citation": "My leg, my right leg especially, going down my right leg, it feels a little bit numb. Also like it's falling asleep.",
+        "memory_state": "hypnosis",
+        "source_page": "77",
+        "ai_justification": "The witness experiences numbness and a sensation of his leg falling asleep during the examination, consistent with paralysis/numbness effects.",
+        "emotional_marker": "discomfort",
+        "chunk": 26
+      },
+      {
+        "motif_code": "X210",
+        "sequence_order": 230,
+        "source_citation": "Now, it's my stomach. This thing, uh, they turn me on my left side now and I'm lying on my left side. My stomach hurts. Right side of my stomach, almost right on the opposite side of where my back hurts.",
+        "memory_state": "hypnosis",
+        "source_page": "77",
+        "ai_justification": "The beings reposition the witness and examine his stomach area, touching and manipulating him as part of the physical examination.",
+        "emotional_marker": "pain",
+        "chunk": 26
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 231,
+        "source_citation": "I'm getting sleepy there. I don't know whether they're doing it or if I'm just getting sleepy. Yeah, I'm really comfortable.",
+        "memory_state": "hypnosis",
+        "source_page": "77",
+        "ai_justification": "The witness becomes sleepy and comfortable during the examination, possibly induced by the beings, consistent with pacification effect.",
+        "emotional_marker": "drowsy comfort",
+        "chunk": 26
+      },
+      {
+        "motif_code": "X220",
+        "sequence_order": 232,
+        "source_citation": "Something is poking my stomach. I mean, not poking into . .. on the outside it's poking. / Clamp. Kind of like the thing that was on my shoulder, only it's rounder, it's on my hip, my right hip.",
+        "memory_state": "hypnosis",
+        "source_page": "77",
+        "ai_justification": "A clamp-like device is placed on the witness's hip, consistent with beings using handheld instruments and clamps during examination.",
+        "emotional_marker": "discomfort",
+        "chunk": 26
+      },
+      {
+        "motif_code": "X221",
+        "sequence_order": 233,
+        "source_citation": "A rod now, it's just poking into my . . . I can see the color of this. This is dark, this is like a dark gray. Just poking it up against, like almost tapping, really . .. it comes from that thing. That thing has come down again, and I see it's like a rod, it's like a wand, tapping against my stomach, slowly. I see it sliding back and forth . . . tap, slowly it moves back, tap, and it pushes against my stomach.",
+        "memory_state": "hypnosis",
+        "source_page": "77-78",
+        "ai_justification": "A rod-like probe descends from a device above and systematically taps and slides against the witness's stomach, consistent with probes connected to other machinery.",
+        "emotional_marker": "discomfort, fascination",
+        "chunk": 26
+      },
+      {
+        "motif_code": "B230",
+        "sequence_order": 234,
+        "source_citation": "I'm looking back at that other guy standing there, the one who brought me in, and I see the back of his head, now. . . . It's almost perfectly round.",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "The witness describes the leader's head as almost perfectly round, consistent with the large/distinctive head characteristic of humanoid beings.",
+        "emotional_marker": "curiosity",
+        "chunk": 26
+      },
+      {
+        "motif_code": "B290",
+        "sequence_order": 235,
+        "source_citation": "I don't even know if that's skin on his head. A very, very faint line like a ripple . . . like a seam. Right down the middle. I can't tell if it's skin or something he has over his head.",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "The witness describes the being's head covering or skin as ambiguous with a seam-like line, consistent with descriptions of unusual skin texture—claylike, smooth, or artificial-looking.",
+        "emotional_marker": "puzzlement",
+        "chunk": 26
+      },
+      {
+        "motif_code": "B261",
+        "sequence_order": 236,
+        "source_citation": "He has the tiniest little chest. I can't see any ribs. Just . . . there's no muscular definition or anything.",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "The witness describes the being's extremely narrow, undeveloped chest with no muscular definition, consistent with narrow chest/shoulders and slight musculature.",
+        "emotional_marker": "mild disgust",
+        "chunk": 26
+      },
+      {
+        "motif_code": "B225",
+        "sequence_order": 237,
+        "source_citation": "He has the tiniest little chest. I can't see any ribs. Just . . . there's no muscular definition or anything.",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "The description of no muscular definition and a tiny chest is consistent with spindly build and slight musculature.",
+        "emotional_marker": "mild disgust",
+        "chunk": 26
+      },
+      {
+        "motif_code": "B909",
+        "sequence_order": 238,
+        "source_citation": "He turns around, and he sees I'm looking at him, and I don't",
+        "memory_state": "hypnosis",
+        "source_page": "78",
+        "ai_justification": "The being notices the witness looking at him, consistent with beings disliking being watched by the witness.",
+        "emotional_marker": "tension",
+        "chunk": 26
+      },
+      {
+        "motif_code": "B800",
+        "sequence_order": 239,
+        "source_citation": "The supervisor in this room is the other guy, though. It's like he's the boss and he just took over once we got into this room.",
+        "memory_state": "hypnosis",
+        "source_page": "85",
+        "ai_justification": "One being acts as leader/boss in the examination room, matching B800 (one being acts as leader, spokesman).",
+        "emotional_marker": null,
+        "chunk": 27
+      },
+      {
+        "motif_code": "X225",
+        "sequence_order": 240,
+        "source_citation": "That thing is gone, now. The thing moved up into the ceiling and the light isn't on me anymore.",
+        "memory_state": "hypnosis",
+        "source_page": "85",
+        "ai_justification": "An eyelike scanning device that had been shining light on the witness retracts into the ceiling, matching X225 (eyelike device descends from ceiling and scans witness).",
+        "emotional_marker": null,
+        "chunk": 27
+      },
+      {
+        "motif_code": "E214",
+        "sequence_order": 241,
+        "source_citation": "I'm lying on my back now. I do that myself, though. I knew they wanted me on my back and maybe they just let me do it . . . instead of forcing me.",
+        "memory_state": "hypnosis",
+        "source_page": "85",
+        "ai_justification": "Witness complies with the beings' wishes as if he knows what they want, matching E214 (witness reassures self or obeys beings as if they know best).",
+        "emotional_marker": null,
+        "chunk": 27
+      },
+      {
+        "motif_code": "X155",
+        "sequence_order": 242,
+        "source_citation": "I'm lying on my back now.",
+        "memory_state": "hypnosis",
+        "source_page": "85",
+        "ai_justification": "Witness lies on an examining surface, matching X155 (witness lies on examining table or couch).",
+        "emotional_marker": null,
+        "chunk": 27
+      },
+      {
+        "motif_code": "B802",
+        "sequence_order": 243,
+        "source_citation": "our doctor . . . I don't know what else to call him . . . he's coming over and he's looking at . . . that spot on my stomach.",
+        "memory_state": "hypnosis",
+        "source_page": "85",
+        "ai_justification": "The witness identifies one being as 'the doctor' who carries out the examination, matching B802 (one being acts as examiner/doctor).",
+        "emotional_marker": null,
+        "chunk": 27
+      },
+      {
+        "motif_code": "X210",
+        "sequence_order": 244,
+        "source_citation": "he's looking at . . . that spot on my stomach. It tickles a little bit. (Chuckles.) He feels it. A little sensitive.",
+        "memory_state": "hypnosis",
+        "source_page": "85",
+        "ai_justification": "The being touches and feels the witness's stomach, matching X210 (beings touch witness in various places, as if examining).",
+        "emotional_marker": "amusement",
+        "chunk": 27
+      },
+      {
+        "motif_code": "B221",
+        "sequence_order": 245,
+        "source_citation": "Still don't understand how he can be looking down . . . he's so short.",
+        "memory_state": "hypnosis",
+        "source_page": "85",
+        "ai_justification": "The examiner being is described as notably short, matching B221 (moderately short, 4-5 feet).",
+        "emotional_marker": "puzzlement",
+        "chunk": 27
+      },
+      {
+        "motif_code": "E204",
+        "sequence_order": 246,
+        "source_citation": "I almost feel, lying there, I'm almost high, just a little bit dizzy. But I'm very relaxed.",
+        "memory_state": "hypnosis",
+        "source_page": "85",
+        "ai_justification": "Witness feels dizzy and semi-conscious, matching E204 (semi-consciousness, disorientation, dizziness, drained).",
+        "emotional_marker": "relaxation",
+        "chunk": 27
+      },
+      {
+        "motif_code": "X220",
+        "sequence_order": 247,
+        "source_citation": "Now there's a metal thing comes up around both my legs. It's very skinny. Moves my legs apart a little bit.",
+        "memory_state": "hypnosis",
+        "source_page": "85",
+        "ai_justification": "A metal instrument is used to manipulate the witness's legs, matching X220 (beings use handheld instruments, clamps).",
+        "emotional_marker": null,
+        "chunk": 27
+      },
+      {
+        "motif_code": "X263",
+        "sequence_order": 248,
+        "source_citation": "comes right up under my legs as high as it can go. And they want to feel what's on my skin. My right leg . . . moves my right leg all the way up—that's why I feel like a frog. The doctor now touches my skin under that . . . my leg . . . inside my leg",
+        "memory_state": "hypnosis",
+        "source_page": "85",
+        "ai_justification": "The instrument spreads the witness's legs and the doctor examines the inner leg/groin area, matching X263 (beings examine genital region of a male witness).",
+        "emotional_marker": "discomfort",
+        "chunk": 27
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 249,
+        "source_citation": "My right hand is now paralyzed. I want to move but I can't. / it's falling asleep, there's no feeling in it. Now my left one's getting numb. It starts from the fingertips and it goes right to the elbows, right up to the shoulders. They're both totally paralyzed. / My legs are now paralyzed.",
+        "memory_state": "hypnosis",
+        "source_page": "85",
+        "ai_justification": "Progressive paralysis spreads through the witness's arms and legs, matching E315 (paralysis, numbness).",
+        "emotional_marker": null,
+        "chunk": 27
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 250,
+        "source_citation": "God, I'm even more relaxed than I was before. (Sighs.) I'm almost asleep, but not quite.",
+        "memory_state": "hypnosis",
+        "source_page": "85",
+        "ai_justification": "Witness becomes extremely relaxed and nearly unconscious, matching E300 (pacification effect: witness calm, euphoric, relaxed).",
+        "emotional_marker": "deep relaxation",
+        "chunk": 27
+      },
+      {
+        "motif_code": "E101",
+        "sequence_order": 251,
+        "source_citation": "Immediately upon awakening from the trance, Steve complained that his ears bothered him. He felt a peculiar pressure not unlike that experienced in an airplane during a sudden shift of altitude.",
+        "memory_state": "conscious",
+        "source_page": "85",
+        "ai_justification": "After hypnosis, the witness experiences ear pressure, matching E101 (pressure effects: ears pop, head hurts). This is a conscious post-hypnosis observation.",
+        "emotional_marker": "discomfort",
+        "chunk": 27
+      },
+      {
+        "motif_code": "U202",
+        "sequence_order": 252,
+        "source_citation": "When he first entered the big, whitish room, he walked towards the table",
+        "memory_state": "hypnosis",
+        "source_page": "86",
+        "ai_justification": "Steven describes entering a large whitish room containing an examination table, consistent with U202 (Examination room).",
+        "emotional_marker": null,
+        "chunk": 28
+      },
+      {
+        "motif_code": "U220",
+        "sequence_order": 253,
+        "source_citation": "the big, whitish room",
+        "memory_state": "hypnosis",
+        "source_page": "86",
+        "ai_justification": "The room is described as whitish, matching U220 (White interior).",
+        "emotional_marker": null,
+        "chunk": 28
+      },
+      {
+        "motif_code": "U300",
+        "sequence_order": 254,
+        "source_citation": "he walked towards the table, which he said grew straight out of the floor 'like a mesa,' and which was about chest-high",
+        "memory_state": "hypnosis",
+        "source_page": "86",
+        "ai_justification": "The table grows from the floor like a mesa, consistent with U300 (Room has examination table or bed).",
+        "emotional_marker": null,
+        "chunk": 28
+      },
+      {
+        "motif_code": "E201",
+        "sequence_order": 255,
+        "source_citation": "The next moment, he was seated on the table nearly naked, and his clothes were nowhere to be seen.",
+        "memory_state": "hypnosis",
+        "source_page": "86",
+        "ai_justification": "Steven experiences a gap in memory between approaching the table and finding himself on it, consistent with E201 (Doorway amnesia: blackout during transition).",
+        "emotional_marker": null,
+        "chunk": 28
+      },
+      {
+        "motif_code": "X100",
+        "sequence_order": 256,
+        "source_citation": "he was seated on the table nearly naked, and his clothes were nowhere to be seen.",
+        "memory_state": "hypnosis",
+        "source_page": "86",
+        "ai_justification": "Steven finds himself nearly naked with clothes gone, indicating undressing occurred, matching X100 (Witness undresses or is undressed).",
+        "emotional_marker": null,
+        "chunk": 28
+      },
+      {
+        "motif_code": "X155",
+        "sequence_order": 257,
+        "source_citation": "he was seated on the table nearly naked",
+        "memory_state": "hypnosis",
+        "source_page": "86",
+        "ai_justification": "Steven is positioned on the examination table, consistent with X155 (Witness lies on examining table or couch). Though seated rather than lying, the table is the examination surface.",
+        "emotional_marker": null,
+        "chunk": 28
+      },
+      {
+        "motif_code": "X156",
+        "sequence_order": 258,
+        "source_citation": "The thin, round metal loops which raised and slightly spread his legs must have come up from the surface of the table. They completely encircled his thighs very high up—almost at the level of his hip sockets",
+        "memory_state": "hypnosis",
+        "source_page": "86",
+        "ai_justification": "Metal loops from the table restrain and position the witness's legs, consistent with X156 (Witness lies immobilized or restrained).",
+        "emotional_marker": "discomfort",
+        "chunk": 28
+      },
+      {
+        "motif_code": "X263",
+        "sequence_order": 259,
+        "source_citation": "the ultimate effect was to force him into a posture not unlike that which results from obstetrical stirrups. As he phrased it at the time, 'I feel like a frog.'",
+        "memory_state": "hypnosis",
+        "source_page": "86",
+        "ai_justification": "The obstetrical stirrup posture with legs spread at the groin level implies examination of the genital region of a male witness, matching X263.",
+        "emotional_marker": "embarrassment",
+        "chunk": 28
+      },
+      {
+        "motif_code": "A113",
+        "sequence_order": 260,
+        "source_citation": "he felt physically dirty, and wanted very much to shower, though he was so tired that he gave up on the idea and just went to bed.",
+        "memory_state": "conscious",
+        "source_page": "86",
+        "ai_justification": "After the original 1973 event, Steven felt physically dirty and wanted to shower, matching A113 (Witness feels unclean and in need of a bath). This is a conscious post-event memory.",
+        "emotional_marker": "disgust",
+        "chunk": 28
+      },
+      {
+        "motif_code": "A114",
+        "sequence_order": 261,
+        "source_citation": "He definitely had the sense that he had withheld some details of his ordeal from Dr. Clamar and myself, though he wasn't sure what they might be. 'I really don't like to think about it,' he said. 'I'm trying to put the whole thing out of my mind.'",
+        "memory_state": "conscious",
+        "source_page": "86",
+        "ai_justification": "Steven feels compelled to withhold details and avoid thinking about the experience, matching A114 (Witness feels obliged to keep experience a secret).",
+        "emotional_marker": "avoidance",
+        "chunk": 28
+      },
+      {
+        "motif_code": "B802",
+        "sequence_order": 262,
+        "source_citation": "Steven said that the 'doctor' held a whitish, cylindrical object 'like a wand' in his",
+        "memory_state": "hypnosis",
+        "source_page": "86",
+        "ai_justification": "The being is referred to as the 'doctor,' indicating one being acts as examiner, matching B802.",
+        "emotional_marker": null,
+        "chunk": 28
+      },
+      {
+        "motif_code": "X220",
+        "sequence_order": 263,
+        "source_citation": "the 'doctor' held a whitish, cylindrical object 'like a wand' in his",
+        "memory_state": "hypnosis",
+        "source_page": "86",
+        "ai_justification": "The doctor holds a whitish cylindrical wand-like handheld instrument, matching X220 (Beings use handheld instruments).",
+        "emotional_marker": null,
+        "chunk": 28
+      },
+      {
+        "motif_code": "X220",
+        "sequence_order": 264,
+        "source_citation": "this tubular implement with a rounded end was placed against his chest.",
+        "memory_state": "hypnosis",
+        "source_page": "87",
+        "ai_justification": "A handheld instrument (tubular, rounded end, about 7-8 inches long) is used on the witness during the examination, matching X220: 'Beings use handheld instruments, clamps.'",
+        "emotional_marker": null,
+        "chunk": 29
+      },
+      {
+        "motif_code": "X226",
+        "sequence_order": 265,
+        "source_citation": "For a short time, he recalls, this tubular implement with a rounded end was placed against his chest.",
+        "memory_state": "hypnosis",
+        "source_page": "87",
+        "ai_justification": "The instrument is specifically placed on the witness's chest, matching X226: 'A small instrument lies on the chest of the witness.'",
+        "emotional_marker": null,
+        "chunk": 29
+      },
+      {
+        "motif_code": "B905",
+        "sequence_order": 266,
+        "source_citation": "It appeared to be very heavy, and seemed to be regarded by the others as highly significant, 'As if it were the most important part of the entire operation.'",
+        "memory_state": "hypnosis",
+        "source_page": "87",
+        "ai_justification": "The beings treat the instrument as the most important part of the operation, showing a cold, task-focused indifference to the witness's experience, matching B905: 'Beings behave in a cold, indifferent, insensitive' manner.",
+        "emotional_marker": "clinical detachment",
+        "chunk": 29
+      },
+      {
+        "motif_code": "A107",
+        "sequence_order": 267,
+        "source_citation": "I told him about cases I had uncovered involving scars on the bodies of UFO abductees.",
+        "memory_state": "conscious",
+        "source_page": "87",
+        "ai_justification": "The investigator notes scars on abductees' bodies, and Steven is selected for medical examination of these wound traces, matching A107: 'Linear or circular scar.'",
+        "emotional_marker": null,
+        "chunk": 29
+      },
+      {
+        "motif_code": "X244",
+        "sequence_order": 268,
+        "source_citation": "He said when they pressed here, and he indicated his femoral nerve, his thigh moved. / He exactly described the motor reaction that happens when the femoral nerve is stimulated.",
+        "memory_state": "hypnosis",
+        "source_page": "88",
+        "ai_justification": "Steven describes the beings stimulating his femoral nerve and observing the resulting motor reflex in his thigh. This is a test of reflexes (X244), confirmed by Dr. Cooper as anatomically accurate.",
+        "emotional_marker": null,
+        "chunk": 30
+      },
+      {
+        "motif_code": "X221",
+        "sequence_order": 269,
+        "source_citation": "He asked me what I thought they were doing when they went up and down his back with their machine, stimulating various nerves.",
+        "memory_state": "hypnosis",
+        "source_page": "88",
+        "ai_justification": "Steven describes the beings using a machine that moved along his back stimulating various nerves. This corresponds to X221: beings use probes or electrodes connected to other machinery.",
+        "emotional_marker": null,
+        "chunk": 30
+      },
+      {
+        "motif_code": "B716",
+        "sequence_order": 270,
+        "source_citation": "I told him that it seemed to me they just wanted to find out how he worked.",
+        "memory_state": "hypnosis",
+        "source_page": "88",
+        "ai_justification": "Dr. Cooper's medical interpretation of the beings' systematic nerve stimulation is that they were investigating how the human nervous system functions, mapping B716: interest in the nervous system.",
+        "emotional_marker": null,
+        "chunk": 30
+      },
+      {
+        "motif_code": "A107",
+        "sequence_order": 271,
+        "source_citation": "The tiny scar near his navel could have had any number of causes.",
+        "memory_state": "conscious",
+        "source_page": "88",
+        "ai_justification": "A small scar near the navel is noted during the post-abduction medical examination. This maps to A107: linear or circular scar. Memory state is 'conscious' as this is a physical finding observed during a waking medical exam, not recovered under hypnosis.",
+        "emotional_marker": null,
+        "chunk": 30
+      }
+    ],
+    "model_name": "claude-opus-4-6",
+    "profile_used": "baseline_test",
+    "run_timestamp": "2026-04-01T23:01:28.716744"
+  }
+}

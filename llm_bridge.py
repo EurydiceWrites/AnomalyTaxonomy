@@ -66,15 +66,19 @@ RETRIEVAL_CONTEXT_MAP = {
 
 # --- Narrative structure context strings ---
 # These tell the LLM how the text is structured so it can extract events correctly.
-# Preambles will be written by Eurydice in a future session.
-NARRATIVE_STRUCTURE_MAP = {
-    'third_person_investigation': 'TODO: preamble pending Eurydice',
-    'interview_dialogue':         'TODO: preamble pending Eurydice',
-    'first_person_testimony':     'TODO: preamble pending Eurydice',
-    'literary_narration':         'TODO: preamble pending Eurydice',
-    'compiled_catalogue':         'TODO: preamble pending Eurydice',
-    'not_applicable':             '',
-}
+# Preambles are loaded from prompt_library.json["narrative_structure_preambles"].
+# Three preambles contain {experiencer_name} template variables for name substitution.
+def _load_narrative_structure_map():
+    """Load narrative structure preambles from prompt_library.json."""
+    try:
+        lib_path = os.path.join(os.path.dirname(__file__) or ".", "prompt_library.json")
+        with open(lib_path, "r", encoding="utf-8") as f:
+            lib = json.load(f)
+        return lib.get("narrative_structure_preambles", {})
+    except Exception:
+        return {}
+
+NARRATIVE_STRUCTURE_MAP = _load_narrative_structure_map()
 
 
 def flatten_motif_key(nested_dict):
@@ -99,8 +103,10 @@ def flatten_motif_key(nested_dict):
 
 
 def extract_narrative(text=None, sticky_header="", retrieval_method="unknown",
-                      profile_name="baseline", case_number=None,
-                      pipeline_json_path=None, narrative_structure=None):
+                      profile_name="baseline_test", case_number=None,
+                      pipeline_json_path=None, narrative_structure=None,
+                      model="gemini-3.1-pro-preview", experiencer_name=None,
+                      include_vol1=False):
     """
     Sends narrative text to Gemini and returns structured extraction results.
 
@@ -142,10 +148,11 @@ def extract_narrative(text=None, sticky_header="", retrieval_method="unknown",
         with open(text_path, "r", encoding="utf-8") as f:
             text = f.read()
 
-        # Get the two preamble fields from the JSON
+        # Get preamble fields from the JSON
         step1 = pipeline_data["step_1_scanned_metadata"]
         retrieval_method = step1.get("memory_retrieval_method", "unknown")
         narrative_structure = step1.get("narrative_structure", "not_applicable")
+        experiencer_name = step1.get("experiencer_name", None)
 
         # No sticky_header in pipeline mode — the engine is intentionally naive
         sticky_header = ""
@@ -191,9 +198,16 @@ def extract_narrative(text=None, sticky_header="", retrieval_method="unknown",
 
     structure_context = ""
     if narrative_structure:
-        structure_context = NARRATIVE_STRUCTURE_MAP.get(narrative_structure, "")
-        if structure_context:
+        preamble_template = NARRATIVE_STRUCTURE_MAP.get(narrative_structure, "")
+        if preamble_template:
+            if experiencer_name:
+                structure_context = preamble_template.format(experiencer_name=experiencer_name)
+            else:
+                print(f"  WARNING: No experiencer_name available for preamble substitution. Using 'the experiencer'.")
+                structure_context = preamble_template.replace("{experiencer_name}", "the experiencer")
             print(f"[*] Narrative structure: {narrative_structure}")
+            if experiencer_name:
+                print(f"[*] Experiencer name: {experiencer_name}")
 
     # Load the prompt library and select the requested profile
     with open("prompt_library.json", "r", encoding="utf-8") as f:
@@ -221,81 +235,181 @@ def extract_narrative(text=None, sticky_header="", retrieval_method="unknown",
     You MUST output valid JSON matching the requested schema.
     """
 
-    # --- GEMINI CACHE MANAGEMENT ---
-    # Volume 1 is cached on Google's servers so we don't re-upload it every time.
-    print("Checking Google Servers to see if Volume 1 is already Cached...")
-    cached_context = None
-    try:
-        caches = list(client.caches.list())
-        if caches:
-            cached_context = caches[0]
-            print(f"[*] Found ACTIVE Cache ({cached_context.name}). Reusing it for $0 to save costs!\n")
-    except Exception as e:
-        print(f"DEBUG: Exception during cache listing: {e}")
-
-    if not cached_context:
-        print("Uploading Bullard Volume 1 Context Guide to Gemini API...")
-        try:
-            bullard_vol1 = client.files.upload(file=os.path.join("Sources", "bullard_vol1_raw.txt"))
-            print(f"File uploaded! File URI: {bullard_vol1.uri}")
-
-            print("Caching the book into the AI's permanent memory...")
-            cached_context = client.caches.create(
-                model='gemini-3.1-pro-preview',
-                config=types.CreateCachedContentConfig(
-                    contents=[bullard_vol1],
-                    system_instruction=system_instruction,
-                    display_name="bullard_vol_1_cache",
-                    ttl="3600s"
-                )
-            )
-            print("Successfully cached!\n")
-
-        except Exception as e:
-            print(f"File upload to Gemini failed: {e}")
-            print("Please check your API key quotas or file path.")
-            return None, None, None
-
-    # --- EXTRACTION: Send each chunk to Gemini ---
-    print("Sending raw text to Gemini using the Cached Brain...\n")
-
     all_events = []       # List of (chunk_index, EncounterEvent) tuples
     final_profile = None
 
-    for chunk_idx, chunk_text in enumerate(chunks):
-        print(f"\n--- PROCESSING CHUNK {chunk_idx + 1} OF {len(chunks)} ---")
+    if model.startswith("claude"):
+        # --- CLAUDE PATH ---
+        vol1_block = ""
+        if include_vol1:
+            vol1_path = os.path.join(os.path.dirname(__file__) or ".", "Sources", "bullard_vol1_raw.txt")
+            with open(vol1_path, "r", encoding="utf-8") as f:
+                vol1_text = f.read()
+            vol1_block = f"""*** REFERENCE: BULLARD'S COMPARATIVE STUDY (Volume 1) ***
+The following is Thomas Bullard's complete comparative analysis of UFO abduction reports.
+This provides the theoretical framework, motif definitions, and coding methodology you should follow.
+Use this to understand the INTENT and CONTEXT behind each motif code when making your assignments.
 
-        # Build the payload: preambles + sticky header (if any) + narrative chunk.
-        # In pipeline mode, sticky_header is empty and the two preambles guide extraction.
-        preamble_parts = [retrieval_context]
-        if structure_context:
-            preamble_parts.append(structure_context)
-        if sticky_header:
-            preamble_parts.append(sticky_header)
-        preamble = "\n\n".join(preamble_parts)
-        payload = f"{preamble}\n\n[NARRATIVE CHUNK]\n{chunk_text}"
+{vol1_text}
 
-        response = client.models.generate_content(
-            model='gemini-3.1-pro-preview',
-            contents=payload,
-            config=types.GenerateContentConfig(
-                cached_content=cached_context.name,
-                response_mime_type="application/json",
-                response_schema=EncounterProfile,
-                temperature=0.1
-            ),
-        )
+"""
+            print(f"[*] Vol 1 loaded: {len(vol1_text)} chars")
+        else:
+            print(f"[*] Vol 1 SKIPPED — dictionary-only mode")
 
-        chunk_profile: EncounterProfile = response.parsed
+        claude_system_prompt = f"""{vol1_block}{system_instruction}
 
-        # Keep the profile from the first chunk (it has the subject metadata)
-        if chunk_idx == 0:
-            final_profile = chunk_profile
+You MUST return your results as a JSON object matching this schema:
+- "pseudonym" (string), "age" (string or null), "gender" (string or null),
+  "date_of_encounter" (string or null), "location" (string or null),
+  "encounter_duration" (string or null), "principal_investigator" (string or null),
+  "number_of_witnesses" (integer or null), "entity_type" (string or null),
+  "investigator_credibility" (string "0"-"5"), "witness_credibility" (string "0"-"5"),
+  "narrative_summary" (string),
+  "events" (array of objects with: "sequence_order" (int), "motif_code" (string),
+    "source_citation" (string), "emotional_marker" (string or null),
+    "memory_state" (string), "source_page" (string), "ai_justification" (string))
+Return ONLY the JSON object with no preamble, commentary, or markdown formatting."""
 
-        # Store each event with its chunk index so we can track provenance
-        for event in chunk_profile.events:
-            all_events.append((chunk_idx + 1, event))  # chunk is 1-indexed
-        print(f"  -> Extracted {len(chunk_profile.events)} motif events from this chunk.")
+        print(f"[*] Claude system prompt: {len(claude_system_prompt)} chars (will be cached by Anthropic)")
+        print(f"Sending raw text to Claude using prompt caching...\n")
+
+        for chunk_idx, chunk_text in enumerate(chunks):
+            print(f"\n--- PROCESSING CHUNK {chunk_idx + 1} OF {len(chunks)} ---")
+
+            preamble_parts = [retrieval_context]
+            if structure_context:
+                preamble_parts.append(structure_context)
+            if sticky_header:
+                preamble_parts.append(sticky_header)
+            preamble = "\n\n".join(preamble_parts)
+            payload = f"{preamble}\n\n[NARRATIVE CHUNK]\n{chunk_text}"
+
+            raw_events = _call_claude(payload, claude_system_prompt, model, temperature=0.1)
+
+            # The response may be a full profile dict or just an events list.
+            # Try to extract the profile structure if present.
+            if isinstance(raw_events, list) and raw_events and isinstance(raw_events[0], dict):
+                # Check if this is a list of events (has motif_code) or a single profile dict
+                if 'motif_code' in raw_events[0]:
+                    # It's a flat list of events — wrap into a profile-like structure
+                    chunk_data = {"events": raw_events}
+                else:
+                    chunk_data = raw_events[0]
+            elif isinstance(raw_events, dict):
+                chunk_data = raw_events
+            else:
+                chunk_data = {"events": raw_events if isinstance(raw_events, list) else []}
+
+            # Build EncounterEvent objects from the parsed data
+            events_data = chunk_data.get("events", raw_events if isinstance(raw_events, list) else [])
+            chunk_events = []
+            for ev in events_data:
+                if not isinstance(ev, dict) or 'motif_code' not in ev:
+                    continue
+                chunk_events.append(EncounterEvent(
+                    sequence_order=ev.get("sequence_order", ev.get("sequence", 0)),
+                    motif_code=ev.get("motif_code", ""),
+                    source_citation=ev.get("source_citation", ev.get("citation", "")),
+                    emotional_marker=ev.get("emotional_marker"),
+                    memory_state=ev.get("memory_state", "unknown"),
+                    source_page=ev.get("source_page", ""),
+                    ai_justification=ev.get("ai_justification", ev.get("reasoning", "")),
+                ))
+
+            # Build EncounterProfile from first chunk
+            if chunk_idx == 0:
+                final_profile = EncounterProfile(
+                    pseudonym=chunk_data.get("pseudonym", "Unknown"),
+                    age=chunk_data.get("age"),
+                    gender=chunk_data.get("gender"),
+                    date_of_encounter=chunk_data.get("date_of_encounter"),
+                    location=chunk_data.get("location"),
+                    encounter_duration=chunk_data.get("encounter_duration"),
+                    principal_investigator=chunk_data.get("principal_investigator"),
+                    number_of_witnesses=chunk_data.get("number_of_witnesses"),
+                    entity_type=chunk_data.get("entity_type"),
+                    investigator_credibility=chunk_data.get("investigator_credibility", "3"),
+                    witness_credibility=chunk_data.get("witness_credibility", "3"),
+                    narrative_summary=chunk_data.get("narrative_summary", ""),
+                    events=chunk_events,
+                )
+
+            for event in chunk_events:
+                all_events.append((chunk_idx + 1, event))
+            print(f"  -> Extracted {len(chunk_events)} motif events from this chunk.")
+
+    else:
+        # --- GEMINI PATH ---
+        # Volume 1 is cached on Google's servers so we don't re-upload it every time.
+        print("Checking Google Servers to see if Volume 1 is already Cached...")
+        cached_context = None
+        try:
+            caches = list(client.caches.list())
+            if caches:
+                cached_context = caches[0]
+                print(f"[*] Found ACTIVE Cache ({cached_context.name}). Reusing it for $0 to save costs!\n")
+        except Exception as e:
+            print(f"DEBUG: Exception during cache listing: {e}")
+
+        if not cached_context:
+            print("Uploading Bullard Volume 1 Context Guide to Gemini API...")
+            try:
+                bullard_vol1 = client.files.upload(file=os.path.join("Sources", "bullard_vol1_raw.txt"))
+                print(f"File uploaded! File URI: {bullard_vol1.uri}")
+
+                print("Caching the book into the AI's permanent memory...")
+                cached_context = client.caches.create(
+                    model=model,
+                    config=types.CreateCachedContentConfig(
+                        contents=[bullard_vol1],
+                        system_instruction=system_instruction,
+                        display_name="bullard_vol_1_cache",
+                        ttl="3600s"
+                    )
+                )
+                print("Successfully cached!\n")
+
+            except Exception as e:
+                print(f"File upload to Gemini failed: {e}")
+                print("Please check your API key quotas or file path.")
+                return None, None, None
+
+        # --- EXTRACTION: Send each chunk to Gemini ---
+        print("Sending raw text to Gemini using the Cached Brain...\n")
+
+        for chunk_idx, chunk_text in enumerate(chunks):
+            print(f"\n--- PROCESSING CHUNK {chunk_idx + 1} OF {len(chunks)} ---")
+
+            preamble_parts = [retrieval_context]
+            if structure_context:
+                preamble_parts.append(structure_context)
+            if sticky_header:
+                preamble_parts.append(sticky_header)
+            preamble = "\n\n".join(preamble_parts)
+            payload = f"{preamble}\n\n[NARRATIVE CHUNK]\n{chunk_text}"
+
+            response = client.models.generate_content(
+                model=model,
+                contents=payload,
+                config=types.GenerateContentConfig(
+                    cached_content=cached_context.name,
+                    response_mime_type="application/json",
+                    response_schema=EncounterProfile,
+                    temperature=0.1
+                ),
+            )
+
+            chunk_profile: EncounterProfile = response.parsed
+
+            # Keep the profile from the first chunk (it has the subject metadata)
+            if chunk_idx == 0:
+                final_profile = chunk_profile
+
+            # Store each event with its chunk index so we can track provenance
+            for event in chunk_profile.events:
+                all_events.append((chunk_idx + 1, event))  # chunk is 1-indexed
+            print(f"  -> Extracted {len(chunk_profile.events)} motif events from this chunk.")
 
     print(f"\nSUCCESS! Extraction complete.")
     print(f"Subject: {final_profile.pseudonym}")
@@ -377,7 +491,7 @@ def extract_narrative(text=None, sticky_header="", retrieval_method="unknown",
                 }
                 for ev in ai_events_json
             ],
-            "model_name": "gemini-3.1-pro-preview",
+            "model_name": model,
             "profile_used": profile_name,
             "run_timestamp": datetime.now().isoformat(),
         }
@@ -720,10 +834,23 @@ def parse_extraction_response(raw_text: str) -> list[dict]:
     try:
         parsed = json.loads(text)
     except json.JSONDecodeError as e:
-        raise ValueError(
-            f"Failed to parse LLM response as JSON: {e}\n"
-            f"First 200 chars: {text[:200]}"
-        )
+        # Try to extract just the first JSON object/array from the response
+        # (model sometimes appends reasoning text after the JSON)
+        for end_char, start_char in [(']', '['), ('}', '{')]:
+            last = text.rfind(end_char)
+            first = text.find(start_char)
+            if first != -1 and last != -1 and last >= first:
+                try:
+                    parsed = json.loads(text[first:last + 1])
+                    print(f"  WARNING: Recovered JSON by trimming extra data after position {last + 1}")
+                    break
+                except json.JSONDecodeError:
+                    continue
+        else:
+            raise ValueError(
+                f"Failed to parse LLM response as JSON: {e}\n"
+                f"First 200 chars: {text[:200]}"
+            )
 
     # If it's already a list of event dicts, return directly
     if isinstance(parsed, list):
@@ -732,6 +859,9 @@ def parse_extraction_response(raw_text: str) -> list[dict]:
 
     # If it's a dict, try to find the event list inside
     if isinstance(parsed, dict):
+        # Empty dict = model found no events in this chunk
+        if not parsed:
+            return []
         unwrapped = _find_motif_list(parsed)
         if unwrapped is not None:
             return unwrapped

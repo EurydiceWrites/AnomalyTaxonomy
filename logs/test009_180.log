@@ -1,0 +1,236 @@
+
+[Front Matter] Scanning pages 1-147 for source attribution...
+    [OCR] Front-matter page 1... done.
+    [*] Source attribution satisfied after page 1.
+
+=== SOURCE ATTRIBUTION ===
+  Title:       Missing Time
+  Author:      Budd Hopkins
+  Role:        author
+  Publisher:   Ballantine
+  Complete:    True
+=== END ATTRIBUTION ===
+
+[Step 0] Extracting text from PDF: Budd Hopkins - Missing Time [OCR].pdf
+         Pages 148 to 181
+    [*] Printed page numbers detected: 154-183 (single-page, reliable)
+    [*] Extracted 34 pages, 69,769 characters.
+
+[*] Extracted text saved to: staging\extracted_text_Budd_Hopkins_-_Missing_Time__OCR__148-181.txt
+
+[Step 1] Running metadata scan via Gemini Flash...
+    [*] Scan complete.
+    [*] Author role upgraded to 'investigator': Budd Hopkins
+
+=== METADATA SCAN RESULTS ===
+Source:     Budd Hopkins - Missing Time [OCR].pdf (pages 148-181)
+Subject:    Philip Osborne
+Type:       investigation
+Location:   Smoky Mountains, Tennessee; Pittsburgh, Pennsylvania
+Date:       Summer 1949 or 1950
+Retrieval:  hypnosis
+Summary:    The text details Budd Hopkins' investigation into Philip Osborne, a man whose intense interest in UFOs suggested hidden abduction memories. Through multiple hypnotic regression sessions, Philip recalled a childhood abduction in the Smoky Mountains in 1949 or 1950, involving a geodesic dome-like UFO and a surgical procedure on his leg. He also recalled a 1964 paralysis incident in his Pittsburgh college room, followed by an abduction to the deserted Heinz mansion where he encountered humanoid figures with metallic eyes and a "robot arm." A more recent paralysis in his New York apartment in 1979 also prompted his investigation. The sessions revealed Philip's struggle to articulate frightening memories, often self-censoring, but consistent patterns emerged, including descriptions of metallic-eyed humanoids, a "robot arm" for incisions, and a calming transition during the experience. Hopkins personally visited the Pittsburgh site to assess its plausibility.
+---
+Investigator:  Budd Hopkins
+Witnesses:     1
+Entity Types:  humanoid, robot
+Structure:     investigation
+Source Pages:  154-183
+=== END SCAN ===
+
+[*] Pipeline JSON saved to: staging\philip_osborne_missing_time_metadata.json
+
+=================================================================
+  PIPELINE METADATA — REVIEW BEFORE PROCEEDING
+=================================================================
+
+  Source text:  staging\extracted_text_Budd_Hopkins_-_Missing_Time__OCR__148-181.txt
+  PDF pages:   148-181
+  Source pages: 154-183
+
+  Experiencer:  Philip Osborne
+  Gender:       male
+  Age:          6 or 7
+  Type:         investigation
+  Structure:    investigation
+  Retrieval:    hypnosis
+  Investigator: Budd Hopkins
+  Location:     Smoky Mountains, Tennessee; Pittsburgh, Pennsylvania
+  Date:         Summer 1949 or 1950
+  Entities:     humanoid, robot
+  Summary:      The text details Budd Hopkins' investigation into Philip Osborne, a man whose intense interest in UF...
+
+  Author:       Budd Hopkins
+  Title:        Missing Time
+  Role:         investigator
+
+=================================================================
+
+Metadata looks correct? [y/n/edit]: [*] Metadata confirmed. Ready for Step 3 (extraction).
+
+[*] Starting Step 3: Extraction via extract_narrative() (model: claude-opus-4-6)...
+[*] Pipeline mode: reading from staging\philip_osborne_missing_time_metadata.json
+    Text source: staging\extracted_text_Budd_Hopkins_-_Missing_Time__OCR__148-181.txt
+Divided the narrative into 24 high-detail chunks.
+[*] Loaded 550 motif codes from motif_key.json
+[*] Retrieval method: hypnosis
+[*] Narrative structure: investigation
+[*] Experiencer name: Philip Osborne
+[*] Claude system prompt: 1148034 chars (will be cached by Anthropic)
+Sending raw text to Claude using prompt caching...
+
+
+--- PROCESSING CHUNK 1 OF 24 ---
+  Cache write: 360900 tokens
+  Cache read:  0 tokens
+  Uncached:    890 tokens
+  -> Extracted 0 motif events from this chunk.
+
+--- PROCESSING CHUNK 2 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    892 tokens
+  -> Extracted 5 motif events from this chunk.
+
+--- PROCESSING CHUNK 3 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    914 tokens
+  -> Extracted 5 motif events from this chunk.
+
+--- PROCESSING CHUNK 4 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    989 tokens
+  -> Extracted 3 motif events from this chunk.
+
+--- PROCESSING CHUNK 5 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    1018 tokens
+  -> Extracted 11 motif events from this chunk.
+
+--- PROCESSING CHUNK 6 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    905 tokens
+  -> Extracted 5 motif events from this chunk.
+
+--- PROCESSING CHUNK 7 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    981 tokens
+  -> Extracted 5 motif events from this chunk.
+
+--- PROCESSING CHUNK 8 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    1090 tokens
+  -> Extracted 1 motif events from this chunk.
+
+--- PROCESSING CHUNK 9 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    1010 tokens
+  -> Extracted 10 motif events from this chunk.
+
+--- PROCESSING CHUNK 10 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    995 tokens
+  -> Extracted 8 motif events from this chunk.
+
+--- PROCESSING CHUNK 11 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    912 tokens
+  -> Extracted 6 motif events from this chunk.
+
+--- PROCESSING CHUNK 12 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    963 tokens
+  -> Extracted 4 motif events from this chunk.
+
+--- PROCESSING CHUNK 13 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    972 tokens
+  -> Extracted 2 motif events from this chunk.
+
+--- PROCESSING CHUNK 14 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    990 tokens
+  -> Extracted 6 motif events from this chunk.
+
+--- PROCESSING CHUNK 15 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    942 tokens
+  -> Extracted 4 motif events from this chunk.
+
+--- PROCESSING CHUNK 16 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    979 tokens
+  -> Extracted 7 motif events from this chunk.
+
+--- PROCESSING CHUNK 17 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    966 tokens
+  -> Extracted 11 motif events from this chunk.
+
+--- PROCESSING CHUNK 18 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    925 tokens
+  -> Extracted 11 motif events from this chunk.
+
+--- PROCESSING CHUNK 19 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    958 tokens
+  -> Extracted 7 motif events from this chunk.
+
+--- PROCESSING CHUNK 20 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    984 tokens
+  -> Extracted 8 motif events from this chunk.
+
+--- PROCESSING CHUNK 21 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    973 tokens
+  -> Extracted 7 motif events from this chunk.
+
+--- PROCESSING CHUNK 22 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    919 tokens
+  -> Extracted 5 motif events from this chunk.
+
+--- PROCESSING CHUNK 23 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    916 tokens
+  -> Extracted 26 motif events from this chunk.
+
+--- PROCESSING CHUNK 24 OF 24 ---
+  Cache write: 0 tokens
+  Cache read:  360900 tokens
+  Uncached:    849 tokens
+  -> Extracted 1 motif events from this chunk.
+
+SUCCESS! Extraction complete.
+Subject: Unknown
+Date: None
+Summary: 
+
+[*] After deduplication: 158 events (from 158 raw)
+[*] Extraction results merged back into: staging\philip_osborne_missing_time_metadata.json
+
+[*] Extraction complete: 158 events
+[*] Results merged into: staging\philip_osborne_missing_time_metadata.json
