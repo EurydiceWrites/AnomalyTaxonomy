@@ -49,8 +49,10 @@ CREATE TABLE IF NOT EXISTS Encounter_Events (
     Source_Citation TEXT, 
     memory_state VARCHAR,
     source_page VARCHAR,
+    pdf_page VARCHAR,
     AI_Justification TEXT,
-    AI_Event_Description TEXT,
+    voice_speaker TEXT,
+    voice_content_type TEXT,
     run_timestamp TEXT,
     FOREIGN KEY (Encounter_ID) REFERENCES Encounters(Encounter_ID),
     FOREIGN KEY (Motif_Code) REFERENCES Motif_Dictionary(Motif_Code)

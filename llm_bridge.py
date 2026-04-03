@@ -14,9 +14,9 @@ class EncounterEvent(BaseModel):
     source_citation: str = Field(description="The exact quote from the text that justifies this motif code")
     emotional_marker: Optional[str] = Field(description="The primary emotion the subject felt during this specific action (e.g., 'Terror', 'Calm', 'Confusion'). Leave null if not mentioned.")
     memory_state: Literal["conscious", "hypnosis", "altered", "unconscious", "not_applicable"] = Field(description="The memory state of the subject during this event. 'conscious' = natural waking recall. 'hypnosis' = recovered via hypnotic regression. 'altered' = non-ordinary state like dream or trance. 'unconscious' = no memory of this period. 'not_applicable' = source is authored literature, mythology, or historical narrative, not a recalled personal experience.")
-    source_page: str = Field(description="The physical page number(s) where this event is described, derived from the [--- START PAGE X ---] markers in the text (e.g., '42' or '42-43').")
+    source_page: str = Field(description="The printed page number(s) from the original document where this event is described, derived from the SOURCE PAGE number in markers like [--- PDF PAGE 51 / SOURCE PAGE 37 ---]. Use the SOURCE PAGE number (e.g., '37'). If only PDF PAGE markers are present with no SOURCE PAGE, use the PDF PAGE number.")
+    pdf_page: str = Field(description="The PDF file page number(s) where this event is described, derived from the PDF PAGE number in markers like [--- PDF PAGE 51 / SOURCE PAGE 37 ---] or [--- PDF PAGE 51 ---]. Use the PDF PAGE number (e.g., '51').")
     ai_justification: str = Field(description="When writing the ai_justification field, if the dictionary definition does not obviously match the text Bullard assigned the code to, do not assert that it fits. Instead, state what the dictionary defines the code as, state what the text actually describes, and acknowledge the gap. It is acceptable for Bullard's usage to stretch beyond the dictionary definition — your job is to be transparent about it, not to force a match.")
-    ai_event_description: str = Field(description="Must begin with a narrative voice tag — 'Experiencer (direct):', 'Experiencer (reported):', or 'Interpretation:' — followed by a description of what is being depicted. The experiencer is identified in the extraction metadata.")
 
 class EncounterProfile(BaseModel):
     """
@@ -274,8 +274,7 @@ You MUST return your results as a JSON object matching this schema:
   "narrative_summary" (string),
   "events" (array of objects with: "sequence_order" (int), "motif_code" (string),
     "source_citation" (string), "emotional_marker" (string or null),
-    "memory_state" (string), "source_page" (string), "ai_justification" (string),
-    "ai_event_description" (string: must begin with a voice tag — "Experiencer (direct):", "Experiencer (reported):", or "Interpretation:" — followed by what is being depicted))
+    "memory_state" (string), "source_page" (string), "pdf_page" (string), "ai_justification" (string))
 Return ONLY the JSON object with no preamble, commentary, or markdown formatting."""
 
         print(f"[*] Claude system prompt: {len(claude_system_prompt)} chars (will be cached by Anthropic)")
@@ -321,8 +320,8 @@ Return ONLY the JSON object with no preamble, commentary, or markdown formatting
                     emotional_marker=ev.get("emotional_marker"),
                     memory_state=ev.get("memory_state", "unknown"),
                     source_page=ev.get("source_page", ""),
+                    pdf_page=ev.get("pdf_page", ""),
                     ai_justification=ev.get("ai_justification", ev.get("reasoning", "")),
-                    ai_event_description=ev.get("ai_event_description", ""),
                 ))
 
             # Build EncounterProfile from first chunk
@@ -457,11 +456,11 @@ Return ONLY the JSON object with no preamble, commentary, or markdown formatting
             "motif_code": event.motif_code,
             "citation": event.source_citation,
             "reasoning": event.ai_justification,
-            "ai_event_description": event.ai_event_description,
             "chunk": chunk_idx,
             "memory_state": event.memory_state,
             "emotional_marker": event.emotional_marker,
             "source_page": event.source_page,
+            "pdf_page": event.pdf_page,
         })
 
     print(f"[*] After deduplication: {len(deduped_events)} events (from {len(all_events)} raw)")
@@ -496,8 +495,8 @@ Return ONLY the JSON object with no preamble, commentary, or markdown formatting
                     "source_citation": ev["citation"],
                     "memory_state": ev["memory_state"],
                     "source_page": ev["source_page"],
+                    "pdf_page": ev.get("pdf_page", ""),
                     "ai_justification": ev["reasoning"],
-                    "ai_event_description": ev.get("ai_event_description", ""),
                     "emotional_marker": ev.get("emotional_marker"),
                     "chunk": ev["chunk"],
                 }
@@ -515,12 +514,122 @@ Return ONLY the JSON object with no preamble, commentary, or markdown formatting
     # Return just the EncounterEvent objects (without chunk index) for load_to_database
     events_only = [event for (_chunk_idx, event) in deduped_events]
 
-    return final_profile, events_only, ai_events_json
+    return final_profile, events_only, ai_events_json, chunks
+
+
+def classify_voice_tags(events_json, chunks, model="claude-opus-4-6"):
+    """
+    Pass 2 — Voice Classification.
+
+    Examines the original source text for each extracted event and classifies
+    two independent dimensions:
+      - voice_speaker: "experiencer" or "investigator"
+      - voice_content_type: "testimony" or "commentary"
+
+    This runs AFTER extract_narrative() and BEFORE load_to_database(). The
+    extraction engine (pass 1) is intentionally naive about voice — this pass
+    checks the actual source text for voice markers.
+
+    Parameters:
+        events_json:  List of event dicts from extract_narrative() (ai_events_json).
+                      Each has: sequence, motif_code, citation, chunk
+        chunks:       The original text chunks (same list used by pass 1)
+        model:        LLM model for classification (default: claude-opus-4-6)
+
+    Returns:
+        The same events_json list, with voice_speaker and voice_content_type added.
+    """
+    VOICE_SYSTEM_PROMPT = """You are a narrative voice classifier for research transcripts.
+
+For each extracted event, examine the source citation against the original source text and answer two questions:
+
+1. voice_speaker: Who is the speaker in this citation?
+   - "experiencer" if the experiencer is speaking in their own words (first person, direct quotation)
+   - "investigator" if the investigator is narrating, paraphrasing, or analyzing — including when the investigator embeds the experiencer's quoted words within their own sentences
+   Default to "investigator" when uncertain.
+
+2. voice_content_type: What kind of content is this?
+   - "testimony" if the citation recounts what happened during the experience
+   - "commentary" if the citation contains analysis, comparison, editorial commentary, or conclusions about the experience
+   Default to "testimony" when uncertain.
+
+Return ONLY a JSON array where each element has:
+- "sequence" (integer matching the input event sequence number)
+- "voice_speaker" (string: "experiencer" or "investigator")
+- "voice_content_type" (string: "testimony" or "commentary")
+
+Return ONLY the JSON array with no preamble, commentary, or markdown formatting."""
+
+    # Group events by chunk index
+    from collections import defaultdict
+    chunk_events = defaultdict(list)
+    for ev in events_json:
+        chunk_events[ev["chunk"]].append(ev)
+
+    # Track classifications by sequence number
+    voice_results = {}
+
+    print(f"\n[Pass 2] Voice classification ({len(events_json)} events across {len(chunk_events)} chunks)")
+
+    for chunk_idx in sorted(chunk_events.keys()):
+        events_in_chunk = chunk_events[chunk_idx]
+
+        # Build the event list for the prompt
+        event_lines = []
+        for ev in events_in_chunk:
+            event_lines.append(
+                f"- Seq {ev['sequence']}: [{ev['motif_code']}] "
+                f"Citation: \"{ev['citation']}\""
+            )
+
+        source_text = chunks[chunk_idx - 1] if chunk_idx <= len(chunks) else ""
+
+        payload = f"""[ORIGINAL SOURCE TEXT]
+{source_text}
+
+[EXTRACTED EVENTS TO CLASSIFY]
+{chr(10).join(event_lines)}"""
+
+        print(f"  Chunk {chunk_idx}: {len(events_in_chunk)} events...", end=" ")
+
+        raw_result = _call_claude(payload, VOICE_SYSTEM_PROMPT, model, temperature=0.0)
+
+        # Parse results — may be a list of dicts or a single dict
+        classifications = raw_result if isinstance(raw_result, list) else [raw_result]
+
+        for item in classifications:
+            if isinstance(item, dict) and "sequence" in item:
+                voice_results[item["sequence"]] = {
+                    "voice_speaker": item.get("voice_speaker", "investigator"),
+                    "voice_content_type": item.get("voice_content_type", "testimony"),
+                }
+
+        print(f"done.")
+
+    # Attach voice data to events_json
+    tagged = 0
+    for ev in events_json:
+        vr = voice_results.get(ev["sequence"], {})
+        ev["voice_speaker"] = vr.get("voice_speaker", "investigator")
+        ev["voice_content_type"] = vr.get("voice_content_type", "testimony")
+        tagged += 1
+
+    print(f"[Pass 2] Classified {tagged}/{len(events_json)} events")
+
+    # Count distribution
+    exp_count = sum(1 for ev in events_json if ev["voice_speaker"] == "experiencer")
+    inv_count = sum(1 for ev in events_json if ev["voice_speaker"] == "investigator")
+    test_count = sum(1 for ev in events_json if ev["voice_content_type"] == "testimony")
+    comm_count = sum(1 for ev in events_json if ev["voice_content_type"] == "commentary")
+    print(f"[Pass 2] Speaker: {exp_count} experiencer / {inv_count} investigator")
+    print(f"[Pass 2] Content: {test_count} testimony / {comm_count} commentary")
+
+    return events_json
 
 
 def load_to_database(final_profile, all_events, case_number, source_citation,
                      retrieval_method="unknown", db_path="ufo_matrix.db",
-                     metadata_scan=None):
+                     metadata_scan=None, voice_data=None):
     """
     Takes the extraction output and writes it to a SQLite database.
 
@@ -544,8 +653,17 @@ def load_to_database(final_profile, all_events, case_number, source_citation,
         db_path:          Path to the target database (default: "ufo_matrix.db")
         metadata_scan:    Dict from pipeline JSON step_1_scanned_metadata (optional).
                           Used to fill gaps the extraction engine leaves behind.
+        voice_data:       List of dicts from classify_voice_tags() (optional).
+                          Each has: sequence, voice_speaker, voice_content_type.
+                          Indexed by sequence number for lookup during event insertion.
     """
     scan = metadata_scan or {}
+
+    # Build voice lookup by sequence number
+    voice_lookup = {}
+    if voice_data:
+        for vd in voice_data:
+            voice_lookup[vd["sequence"]] = vd
 
     # --- Reconcile each field: extraction wins, metadata scan fills gaps ---
     def _reconcile(extraction_val, scan_val, field_name):
@@ -654,22 +772,26 @@ def load_to_database(final_profile, all_events, case_number, source_citation,
                 description = result[0] if result else "[[WARNING: AI HALLUCINATED FAKE CODE]]"
 
             try:
+                # Look up voice classification from pass 2
+                vd = voice_lookup.get(global_sequence, {})
+                speaker = vd.get("voice_speaker", "")
+                content_type = vd.get("voice_content_type", "")
+
                 cursor.execute("""
-                    INSERT INTO Encounter_Events (Encounter_ID, Sequence_Order, Motif_Code, Source_Citation, memory_state, source_page, AI_Justification, AI_Event_Description, Emotional_Marker)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-                """, (encounter_id, global_sequence, event.motif_code, event.source_citation, event.memory_state, event.source_page, event.ai_justification, event.ai_event_description, event.emotional_marker))
+                    INSERT INTO Encounter_Events (Encounter_ID, Sequence_Order, Motif_Code, Source_Citation, memory_state, source_page, pdf_page, AI_Justification, Emotional_Marker, voice_speaker, voice_content_type)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """, (encounter_id, global_sequence, event.motif_code, event.source_citation, event.memory_state, event.source_page, event.pdf_page, event.ai_justification, event.emotional_marker, speaker, content_type))
 
                 emotion_str = f"Emotion: {event.emotional_marker}" if event.emotional_marker else "No explicit emotion"
+                voice_str = f"Voice: {speaker}/{content_type}" if speaker else ""
 
                 # Sanitize output for Windows terminal, ignoring unmappable unicode characters from PDF artifacts
                 safe_desc = description.encode('cp1252', errors='ignore').decode('cp1252')
                 safe_quote = event.source_citation.encode('cp1252', errors='ignore').decode('cp1252')
                 safe_logic = event.ai_justification.encode('cp1252', errors='ignore').decode('cp1252')
-                safe_event_desc = event.ai_event_description.encode('cp1252', errors='ignore').decode('cp1252')
 
                 print(f"[{global_sequence}] DATABASE INSERT -> {event.motif_code}: {safe_desc}")
-                print(f"    Page {event.source_page} | State: {event.memory_state.upper()} | {emotion_str}")
-                print(f"    Describes: {safe_event_desc}")
+                print(f"    Page {event.source_page} (PDF {event.pdf_page}) | State: {event.memory_state.upper()} | {emotion_str} | {voice_str}")
                 print(f"    Quote: '{safe_quote}'")
                 print(f"    AI Logic: {safe_logic}\n")
 
@@ -709,7 +831,7 @@ def process_narrative(text: str, sticky_header: str, source_citation: str, case_
         pass
 
     # Step 1: Extract (no database interaction)
-    final_profile, all_events, _ai_events_json = extract_narrative(
+    final_profile, all_events, _ai_events_json, _chunks = extract_narrative(
         text=text,
         sticky_header=sticky_header,
         retrieval_method=retrieval_method,
@@ -898,19 +1020,28 @@ def parse_extraction_response(raw_text: str) -> list[dict]:
     try:
         parsed = json.loads(text)
     except json.JSONDecodeError as e:
-        # Try to extract just the first JSON object/array from the response
-        # (model sometimes appends reasoning text after the JSON)
-        for end_char, start_char in [(']', '['), ('}', '{')]:
-            last = text.rfind(end_char)
+        # Try to extract the first complete JSON object/array from the response
+        # (model sometimes appends reasoning text or a second object after the JSON)
+        parsed = None
+        for start_char, end_char in [('{', '}'), ('[', ']')]:
             first = text.find(start_char)
-            if first != -1 and last != -1 and last >= first:
+            if first == -1:
+                continue
+            # Try progressively shorter slices from the last end_char backward
+            search_from = len(text)
+            while search_from > first:
+                last = text.rfind(end_char, first, search_from)
+                if last == -1 or last <= first:
+                    break
                 try:
                     parsed = json.loads(text[first:last + 1])
                     print(f"  WARNING: Recovered JSON by trimming extra data after position {last + 1}")
                     break
                 except json.JSONDecodeError:
-                    continue
-        else:
+                    search_from = last  # try shorter
+            if parsed is not None:
+                break
+        if parsed is None:
             raise ValueError(
                 f"Failed to parse LLM response as JSON: {e}\n"
                 f"First 200 chars: {text[:200]}"

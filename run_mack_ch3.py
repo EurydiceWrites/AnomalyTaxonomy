@@ -14,7 +14,7 @@ from pipeline_ingest import (
     scan_front_matter, extract_pdf_text, scan_metadata,
     _build_pipeline_json, _make_pipeline_json_path, make_output_stem,
 )
-from llm_bridge import extract_narrative, load_to_database
+from llm_bridge import extract_narrative, classify_voice_tags, load_to_database
 
 # --- Configuration ---
 PDF_PATH = "Sources/John E. Mack, MD - Abduction - Human Encounters with Aliens.pdf"
@@ -71,13 +71,16 @@ print("=" * 65)
 
 # Step 3: Extraction via Claude Opus 4.6
 print(f"\n[*] Starting Step 3: Extraction (model: {MODEL})...")
-final_profile, all_events, ai_events_json = extract_narrative(
+final_profile, all_events, ai_events_json, chunks = extract_narrative(
     pipeline_json_path=json_path,
     profile_name="baseline_test",
     model=MODEL,
     include_vol1=False,
 )
-print(f"\n[*] Extraction complete: {len(all_events)} events")
+print(f"\n[*] Pass 1 extraction complete: {len(all_events)} events")
+
+# Step 3b: Voice classification (Pass 2)
+ai_events_json = classify_voice_tags(ai_events_json, chunks, model=MODEL)
 
 # Step 4: Load to staging database
 print(f"\n[*] Loading results to staging database: {STAGING_DB}...")
@@ -98,6 +101,7 @@ load_to_database(
     retrieval_method=retrieval_method,
     db_path=STAGING_DB,
     metadata_scan=s1,
+    voice_data=ai_events_json,
 )
 
 print(f"\n{'=' * 65}")

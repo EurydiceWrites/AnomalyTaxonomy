@@ -50,7 +50,8 @@ def load_ai_results(input_path):
                 'code': ev.get('motif_code', '').strip(),
                 'citation': ev.get('citation', '').strip(),
                 'reasoning': ev.get('reasoning', '').strip(),
-                'ai_event_description': ev.get('ai_event_description', '').strip(),
+                'voice_speaker': ev.get('voice_speaker', '').strip(),
+                'voice_content_type': ev.get('voice_content_type', '').strip(),
             })
     else:
         # Default: CSV
@@ -63,7 +64,8 @@ def load_ai_results(input_path):
                     'code': row['motif_code'].strip(),
                     'citation': row['citation'].strip(),
                     'reasoning': row['reasoning'].strip(),
-                    'ai_event_description': row.get('ai_event_description', '').strip(),
+                    'voice_speaker': row.get('voice_speaker', '').strip(),
+                    'voice_content_type': row.get('voice_content_type', '').strip(),
                 })
     return rows
 
@@ -177,7 +179,7 @@ def align(gt_rows, ai_rows, motif_dict):
                 'bullard_desc': gt['desc'],
                 'bullard_citation': gt['citation'],
                 'ai_code': '', 'ai_desc': '', 'ai_citation': '',
-                'ai_reasoning': '', 'ai_event_description': '',
+                'ai_reasoning': '', 'voice_speaker': '', 'voice_content_type': '',
                 'ai_seq': '', 'ai_chunk': '',
             })
         elif len(candidates) == 1:
@@ -194,7 +196,8 @@ def align(gt_rows, ai_rows, motif_dict):
                 'ai_desc': motif_dict.get(ai['code'], ''),
                 'ai_citation': ai['citation'],
                 'ai_reasoning': ai['reasoning'],
-                'ai_event_description': ai.get('ai_event_description', ''),
+                'voice_speaker': ai.get('voice_speaker', ''),
+                'voice_content_type': ai.get('voice_content_type', ''),
                 'ai_seq': ai['seq'],
                 'ai_chunk': ai['chunk'],
             })
@@ -228,7 +231,8 @@ def align(gt_rows, ai_rows, motif_dict):
                 'ai_desc': motif_dict.get(ai['code'], ''),
                 'ai_citation': ai['citation'],
                 'ai_reasoning': ai['reasoning'],
-                'ai_event_description': ai.get('ai_event_description', ''),
+                'voice_speaker': ai.get('voice_speaker', ''),
+                'voice_content_type': ai.get('voice_content_type', ''),
                 'ai_seq': ai['seq'],
                 'ai_chunk': ai['chunk'],
             })
@@ -244,7 +248,8 @@ def align(gt_rows, ai_rows, motif_dict):
                 'ai_desc': motif_dict.get(ai['code'], ''),
                 'ai_citation': ai['citation'],
                 'ai_reasoning': ai['reasoning'],
-                'ai_event_description': ai.get('ai_event_description', ''),
+                'voice_speaker': ai.get('voice_speaker', ''),
+                'voice_content_type': ai.get('voice_content_type', ''),
                 'ai_seq': ai['seq'],
                 'ai_chunk': ai['chunk'],
             })
@@ -426,7 +431,8 @@ def build_spreadsheet(aligned_rows, case_number, profile, output_path,
     headers = [
         'GT Seq', 'Bullard Code', 'Bullard Description', 'Bullard Source Text',
         'AI Code', 'AI Description', 'Result',
-        'AI Sentence Fragment', 'AI Event Description', 'AI Justification',
+        'AI Sentence Fragment', 'AI Justification',
+        'Voice Speaker', 'Voice Content',
         'Divergence Type', 'Your Notes', 'AI Seq', 'Chunk'
     ]
     for col_idx, header in enumerate(headers, 1):
@@ -437,7 +443,7 @@ def build_spreadsheet(aligned_rows, case_number, profile, output_path,
         cell.border = thin_border
     ws.row_dimensions[6].height = 30
 
-    widths = [8, 12, 35, 40, 12, 35, 12, 40, 40, 45, 35, 30, 10, 8]
+    widths = [8, 12, 35, 40, 12, 35, 12, 40, 45, 14, 14, 35, 30, 10, 8]
     for i, w in enumerate(widths, 1):
         ws.column_dimensions[get_column_letter(i)].width = w
 
@@ -455,8 +461,9 @@ def build_spreadsheet(aligned_rows, case_number, profile, output_path,
             r['ai_desc'],
             r['type'],
             r['ai_citation'],
-            r.get('ai_event_description', ''),
             r['ai_reasoning'],
+            r.get('voice_speaker', ''),
+            r.get('voice_content_type', ''),
             r.get('divergence_draft', ''),
             '',  # Your Notes — for the human reviewer
             r['ai_seq'] if r['ai_seq'] != '' else '',
@@ -469,13 +476,13 @@ def build_spreadsheet(aligned_rows, case_number, profile, output_path,
             cell.border = thin_border
             cell.alignment = wrap_align
 
-        # Purple italic for draft divergence column (column 11 after adding AI Event Description)
-        div_cell = ws.cell(row=row_idx, column=11)
+        # Purple italic for draft divergence column (column 12)
+        div_cell = ws.cell(row=row_idx, column=12)
         if div_cell.value and '[DRAFT]' in str(div_cell.value):
             div_cell.font = DRAFT_FONT
 
     ws.freeze_panes = 'A7'
-    ws.auto_filter.ref = f'A6:N{6 + len(aligned_rows)}'
+    ws.auto_filter.ref = f'A6:O{6 + len(aligned_rows)}'
 
     # ── Sheet 2: Summary ──
     ws2 = wb.create_sheet('Summary')
