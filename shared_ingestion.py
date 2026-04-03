@@ -140,7 +140,7 @@ def process_case(case_number, enc_id, extraction_text, master_prompt_template,
         cursor.execute('''
             INSERT INTO Encounter_Events
             (Encounter_ID, Motif_Code, Sequence_Order, Source_Citation,
-             source_page, pdf_page, memory_state, ai_justification, run_timestamp)
+             source_page, pdf_page, memory_state, AI_Justification, run_timestamp)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             enc_id,

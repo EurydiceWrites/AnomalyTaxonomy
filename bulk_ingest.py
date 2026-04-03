@@ -70,9 +70,10 @@ CRITICAL INSTRUCTIONS:
 1. Extract ALL motifs presented in the 'TEXT TO EXTRACT FROM' block in exact chronological order.
 2. Link every motif to its correct 'case_number' (For this text it is '__CASE_NUMBER__').
 3. If a quote is missing or unclear, provide the surrounding sentence text verbatim as the source_citation.
-4. YOU MUST RETURN ONLY A VALID JSON ARRAY OF OBJECTS containing keys: "case_number", "motif_code", "source_citation", "memory_state", "ai_justification". Do NOT include source_page — page numbers are handled by the pipeline.
+4. YOU MUST RETURN ONLY A VALID JSON ARRAY OF OBJECTS containing keys: "case_number", "motif_code", "source_citation", "memory_state", "ai_justification", "ai_event_description". Do NOT include source_page — page numbers are handled by the pipeline.
 5. For "memory_state", use the RETRIEVAL METHOD CONTEXT provided above as your primary guide.
 6. For "ai_justification", provide a brief, logical explanation of why this specific Motif Code was chosen based on the text.
+7. For "ai_event_description", provide a brief description of what the narrator is describing in the passage. This should capture whose experience is being described and what is happening, not why you chose the motif code.
 
 === TEXT TO EXTRACT FROM ===
 """

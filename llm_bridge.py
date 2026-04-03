@@ -16,6 +16,7 @@ class EncounterEvent(BaseModel):
     memory_state: Literal["conscious", "hypnosis", "altered", "unconscious", "not_applicable"] = Field(description="The memory state of the subject during this event. 'conscious' = natural waking recall. 'hypnosis' = recovered via hypnotic regression. 'altered' = non-ordinary state like dream or trance. 'unconscious' = no memory of this period. 'not_applicable' = source is authored literature, mythology, or historical narrative, not a recalled personal experience.")
     source_page: str = Field(description="The physical page number(s) where this event is described, derived from the [--- START PAGE X ---] markers in the text (e.g., '42' or '42-43').")
     ai_justification: str = Field(description="When writing the ai_justification field, if the dictionary definition does not obviously match the text Bullard assigned the code to, do not assert that it fits. Instead, state what the dictionary defines the code as, state what the text actually describes, and acknowledge the gap. It is acceptable for Bullard's usage to stretch beyond the dictionary definition — your job is to be transparent about it, not to force a match.")
+    ai_event_description: str = Field(description="Brief description of what the narrator is describing in the coded passage. Capture whose experience is being described and what is happening, not why you chose the motif code.")
 
 class EncounterProfile(BaseModel):
     """
@@ -32,7 +33,9 @@ class EncounterProfile(BaseModel):
     number_of_witnesses: Optional[int] = Field(description="The number of people who witnessed the event (integer, e.g. 1)")
     entity_type: Optional[str] = Field(description="The physical typology of the entities (e.g., 'Grey', 'Humanoid', 'Reptilian', 'Nordic')")
     investigator_credibility: Literal["0", "1", "2", "3", "4", "5"] = Field(description="Using the Bullard scale (0-5), rate the credibility of the INVESTIGATION based on the methods used. e.g. '5' for highly reliable, '0' for known hoax.")
+    ai_investigator_credibility_justification: str = Field(description="1-2 sentence justification for the investigator credibility score. Cite specific methodological strengths or weaknesses observed in the text (e.g., 'Investigator used hypnotic regression with proper protocols and conducted multiple sessions' or 'No corroborating evidence sought, single interview only').")
     witness_credibility: Literal["0", "1", "2", "3", "4", "5"] = Field(description="Using the Bullard scale (0-5), rate the credibility of the WITNESS report itself. e.g. '5' for multiple reliable witnesses, '0' for known hoax.")
+    ai_witness_credibility_justification: str = Field(description="1-2 sentence justification for the witness credibility score. Cite specific factors from the text (e.g., 'Consistent account across multiple sessions, emotional affect appropriate to described events' or 'Account changed significantly between conscious recall and hypnosis').")
     narrative_summary: str = Field(description="A brief 1-paragraph summary of the entire event")
     events: List[EncounterEvent] = Field(description="The chronological sequence of motif events in this encounter")
 
@@ -264,11 +267,15 @@ You MUST return your results as a JSON object matching this schema:
   "date_of_encounter" (string or null), "location" (string or null),
   "encounter_duration" (string or null), "principal_investigator" (string or null),
   "number_of_witnesses" (integer or null), "entity_type" (string or null),
-  "investigator_credibility" (string "0"-"5"), "witness_credibility" (string "0"-"5"),
+  "investigator_credibility" (string "0"-"5"),
+  "ai_investigator_credibility_justification" (string: 1-2 sentences citing specific methodological strengths or weaknesses observed in the text),
+  "witness_credibility" (string "0"-"5"),
+  "ai_witness_credibility_justification" (string: 1-2 sentences citing specific factors from the text supporting the witness credibility score),
   "narrative_summary" (string),
   "events" (array of objects with: "sequence_order" (int), "motif_code" (string),
     "source_citation" (string), "emotional_marker" (string or null),
-    "memory_state" (string), "source_page" (string), "ai_justification" (string))
+    "memory_state" (string), "source_page" (string), "ai_justification" (string),
+    "ai_event_description" (string: brief description of what the narrator is describing in the coded passage))
 Return ONLY the JSON object with no preamble, commentary, or markdown formatting."""
 
         print(f"[*] Claude system prompt: {len(claude_system_prompt)} chars (will be cached by Anthropic)")
@@ -315,6 +322,7 @@ Return ONLY the JSON object with no preamble, commentary, or markdown formatting
                     memory_state=ev.get("memory_state", "unknown"),
                     source_page=ev.get("source_page", ""),
                     ai_justification=ev.get("ai_justification", ev.get("reasoning", "")),
+                    ai_event_description=ev.get("ai_event_description", ""),
                 ))
 
             # Build EncounterProfile from first chunk
@@ -330,7 +338,9 @@ Return ONLY the JSON object with no preamble, commentary, or markdown formatting
                     number_of_witnesses=chunk_data.get("number_of_witnesses"),
                     entity_type=chunk_data.get("entity_type"),
                     investigator_credibility=chunk_data.get("investigator_credibility", "3"),
+                    ai_investigator_credibility_justification=chunk_data.get("ai_investigator_credibility_justification", ""),
                     witness_credibility=chunk_data.get("witness_credibility", "3"),
+                    ai_witness_credibility_justification=chunk_data.get("ai_witness_credibility_justification", ""),
                     narrative_summary=chunk_data.get("narrative_summary", ""),
                     events=chunk_events,
                 )
@@ -447,6 +457,7 @@ Return ONLY the JSON object with no preamble, commentary, or markdown formatting
             "motif_code": event.motif_code,
             "citation": event.source_citation,
             "reasoning": event.ai_justification,
+            "ai_event_description": event.ai_event_description,
             "chunk": chunk_idx,
             "memory_state": event.memory_state,
             "emotional_marker": event.emotional_marker,
@@ -486,6 +497,7 @@ Return ONLY the JSON object with no preamble, commentary, or markdown formatting
                     "memory_state": ev["memory_state"],
                     "source_page": ev["source_page"],
                     "ai_justification": ev["reasoning"],
+                    "ai_event_description": ev.get("ai_event_description", ""),
                     "emotional_marker": ev.get("emotional_marker"),
                     "chunk": ev["chunk"],
                 }
@@ -507,13 +519,21 @@ Return ONLY the JSON object with no preamble, commentary, or markdown formatting
 
 
 def load_to_database(final_profile, all_events, case_number, source_citation,
-                     retrieval_method="unknown", db_path="ufo_matrix.db"):
+                     retrieval_method="unknown", db_path="ufo_matrix.db",
+                     metadata_scan=None):
     """
     Takes the extraction output and writes it to a SQLite database.
 
     This function handles ONLY the database insertion step. It can target either
     the production database (ufo_matrix.db) or the staging database (ufo_matrix_staging.db)
     depending on the db_path parameter.
+
+    The extraction engine is intentionally naive — it never receives metadata from
+    Step 1 so it can't be contaminated. But this means extraction may return
+    "Unknown" or None for fields like pseudonym, age, gender, location, etc.
+    When a metadata_scan dict is provided (from the pipeline JSON's
+    step_1_scanned_metadata), this function reconciles: extraction wins when it
+    has a real value, metadata scan fills the gaps.
 
     Parameters:
         final_profile:    EncounterProfile object (from extract_narrative)
@@ -522,13 +542,49 @@ def load_to_database(final_profile, all_events, case_number, source_citation,
         source_citation:  Academic citation for the source material
         retrieval_method: One of: conscious, hypnosis, altered, mixed, unknown
         db_path:          Path to the target database (default: "ufo_matrix.db")
+        metadata_scan:    Dict from pipeline JSON step_1_scanned_metadata (optional).
+                          Used to fill gaps the extraction engine leaves behind.
     """
-    print(f"\nCommitting to database: {db_path}...")
-    print(f"Subject: {final_profile.pseudonym}")
+    scan = metadata_scan or {}
 
-    case_meta = CaseMetadata(
-        memory_retrieval_method=retrieval_method
-    )
+    # --- Reconcile each field: extraction wins, metadata scan fills gaps ---
+    def _reconcile(extraction_val, scan_val, field_name):
+        """Prefer extraction value unless it's empty/unknown, then fall back to scan."""
+        if extraction_val and str(extraction_val).lower() not in ("unknown", "none", ""):
+            return extraction_val
+        if scan_val:
+            print(f"[*] Reconcile '{field_name}': extraction='{extraction_val}' -> "
+                  f"using metadata scan='{scan_val}'")
+            return scan_val
+        return extraction_val
+
+    # Subjects fields
+    pseudonym = _reconcile(final_profile.pseudonym, scan.get("experiencer_name"), "pseudonym")
+    age = _reconcile(final_profile.age, scan.get("age_at_time"), "age")
+    gender = _reconcile(final_profile.gender, scan.get("gender"), "gender")
+    narrative_summary = _reconcile(
+        final_profile.narrative_summary, scan.get("narrative_summary"), "narrative_summary")
+
+    # Encounters fields
+    date_of_encounter = _reconcile(
+        final_profile.date_of_encounter, scan.get("date_of_experience"), "date_of_encounter")
+    location = _reconcile(final_profile.location, scan.get("location"), "location")
+    principal_investigator = _reconcile(
+        final_profile.principal_investigator, scan.get("principal_investigator"), "principal_investigator")
+
+    # Entity type: extraction returns a single string, scan returns a list
+    entity_type_scan = ", ".join(scan["entity_types"]) if scan.get("entity_types") else None
+    entity_type = _reconcile(final_profile.entity_type, entity_type_scan, "entity_type")
+
+    # Narrative structure: only available from metadata scan (extraction never has it)
+    narrative_structure = scan.get("narrative_structure")
+
+    # Credibility scores: only from extraction (scan doesn't assess these)
+    investigator_credibility = final_profile.investigator_credibility
+    witness_credibility = final_profile.witness_credibility
+
+    print(f"\nCommitting to database: {db_path}...")
+    print(f"Subject: {pseudonym}")
 
     with sqlite3.connect(db_path, timeout=15) as conn:
         cursor = conn.cursor()
@@ -553,16 +609,22 @@ def load_to_database(final_profile, all_events, case_number, source_citation,
             cursor.execute("""
                 INSERT INTO Subjects (Pseudonym, Age, Baseline_Psychology, Gender)
                 VALUES (?, ?, ?, ?)
-            """, (final_profile.pseudonym, final_profile.age, final_profile.narrative_summary, final_profile.gender))
+            """, (pseudonym, age, narrative_summary, gender))
 
             subject_id = cursor.lastrowid
             print(f"[*] Created Subject Record (ID: {subject_id})")
 
             # Insert new Encounter record
             cursor.execute("""
-                INSERT INTO Encounters (Subject_ID, Case_Number, Date_of_Encounter, Location_Type, Investigator_Credibility, Witness_Credibility, Source_Material, memory_retrieval_method, Entity_Type, Principal_Investigator)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            """, (subject_id, case_number, final_profile.date_of_encounter, final_profile.location, final_profile.investigator_credibility, final_profile.witness_credibility, source_citation, retrieval_method, final_profile.entity_type, final_profile.principal_investigator))
+                INSERT INTO Encounters (Subject_ID, Case_Number, Date_of_Encounter, Location_Type, Investigator_Credibility, AI_Investigator_Credibility_Justification, Witness_Credibility, AI_Witness_Credibility_Justification, Source_Material, memory_retrieval_method, Entity_Type, Principal_Investigator, narrative_structure)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """, (subject_id, case_number, date_of_encounter, location,
+                  investigator_credibility,
+                  final_profile.ai_investigator_credibility_justification,
+                  witness_credibility,
+                  final_profile.ai_witness_credibility_justification,
+                  source_citation, retrieval_method, entity_type,
+                  principal_investigator, narrative_structure))
             encounter_id = cursor.lastrowid
             print(f"[*] Created Encounter Record (ID: {encounter_id})")
 
@@ -593,9 +655,9 @@ def load_to_database(final_profile, all_events, case_number, source_citation,
 
             try:
                 cursor.execute("""
-                    INSERT INTO Encounter_Events (Encounter_ID, Sequence_Order, Motif_Code, Source_Citation, memory_state, source_page, ai_justification, Emotional_Marker)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-                """, (encounter_id, global_sequence, event.motif_code, event.source_citation, event.memory_state, event.source_page, event.ai_justification, event.emotional_marker))
+                    INSERT INTO Encounter_Events (Encounter_ID, Sequence_Order, Motif_Code, Source_Citation, memory_state, source_page, AI_Justification, AI_Event_Description, Emotional_Marker)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """, (encounter_id, global_sequence, event.motif_code, event.source_citation, event.memory_state, event.source_page, event.ai_justification, event.ai_event_description, event.emotional_marker))
 
                 emotion_str = f"Emotion: {event.emotional_marker}" if event.emotional_marker else "No explicit emotion"
 
@@ -603,9 +665,11 @@ def load_to_database(final_profile, all_events, case_number, source_citation,
                 safe_desc = description.encode('cp1252', errors='ignore').decode('cp1252')
                 safe_quote = event.source_citation.encode('cp1252', errors='ignore').decode('cp1252')
                 safe_logic = event.ai_justification.encode('cp1252', errors='ignore').decode('cp1252')
+                safe_event_desc = event.ai_event_description.encode('cp1252', errors='ignore').decode('cp1252')
 
                 print(f"[{global_sequence}] DATABASE INSERT -> {event.motif_code}: {safe_desc}")
                 print(f"    Page {event.source_page} | State: {event.memory_state.upper()} | {emotion_str}")
+                print(f"    Describes: {safe_event_desc}")
                 print(f"    Quote: '{safe_quote}'")
                 print(f"    AI Logic: {safe_logic}\n")
 
@@ -857,11 +921,16 @@ def parse_extraction_response(raw_text: str) -> list[dict]:
         unwrapped = _find_motif_list(parsed)
         return unwrapped if unwrapped is not None else parsed
 
-    # If it's a dict, try to find the event list inside
+    # If it's a dict, check if it's a full profile (has metadata + events)
+    # or just a wrapper around the events list
     if isinstance(parsed, dict):
         # Empty dict = model found no events in this chunk
         if not parsed:
             return []
+        # If the dict has profile-level fields (pseudonym, credibility, etc.),
+        # return the full dict so the caller can extract both metadata and events
+        if "pseudonym" in parsed or "investigator_credibility" in parsed:
+            return parsed
         unwrapped = _find_motif_list(parsed)
         if unwrapped is not None:
             return unwrapped
