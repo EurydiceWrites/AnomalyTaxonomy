@@ -49,7 +49,8 @@ def load_ai_results(input_path):
                 'chunk': int(ev.get('chunk', 0)),
                 'code': ev.get('motif_code', '').strip(),
                 'citation': ev.get('citation', '').strip(),
-                'reasoning': ev.get('reasoning', '').strip()
+                'reasoning': ev.get('reasoning', '').strip(),
+                'ai_event_description': ev.get('ai_event_description', '').strip(),
             })
     else:
         # Default: CSV
@@ -61,7 +62,8 @@ def load_ai_results(input_path):
                     'chunk': int(row['chunk']),
                     'code': row['motif_code'].strip(),
                     'citation': row['citation'].strip(),
-                    'reasoning': row['reasoning'].strip()
+                    'reasoning': row['reasoning'].strip(),
+                    'ai_event_description': row.get('ai_event_description', '').strip(),
                 })
     return rows
 
@@ -175,7 +177,8 @@ def align(gt_rows, ai_rows, motif_dict):
                 'bullard_desc': gt['desc'],
                 'bullard_citation': gt['citation'],
                 'ai_code': '', 'ai_desc': '', 'ai_citation': '',
-                'ai_reasoning': '', 'ai_seq': '', 'ai_chunk': '',
+                'ai_reasoning': '', 'ai_event_description': '',
+                'ai_seq': '', 'ai_chunk': '',
             })
         elif len(candidates) == 1:
             # Single match — pair directly (unchanged behavior)
@@ -191,6 +194,7 @@ def align(gt_rows, ai_rows, motif_dict):
                 'ai_desc': motif_dict.get(ai['code'], ''),
                 'ai_citation': ai['citation'],
                 'ai_reasoning': ai['reasoning'],
+                'ai_event_description': ai.get('ai_event_description', ''),
                 'ai_seq': ai['seq'],
                 'ai_chunk': ai['chunk'],
             })
@@ -224,6 +228,7 @@ def align(gt_rows, ai_rows, motif_dict):
                 'ai_desc': motif_dict.get(ai['code'], ''),
                 'ai_citation': ai['citation'],
                 'ai_reasoning': ai['reasoning'],
+                'ai_event_description': ai.get('ai_event_description', ''),
                 'ai_seq': ai['seq'],
                 'ai_chunk': ai['chunk'],
             })
@@ -239,6 +244,7 @@ def align(gt_rows, ai_rows, motif_dict):
                 'ai_desc': motif_dict.get(ai['code'], ''),
                 'ai_citation': ai['citation'],
                 'ai_reasoning': ai['reasoning'],
+                'ai_event_description': ai.get('ai_event_description', ''),
                 'ai_seq': ai['seq'],
                 'ai_chunk': ai['chunk'],
             })
@@ -420,7 +426,7 @@ def build_spreadsheet(aligned_rows, case_number, profile, output_path,
     headers = [
         'GT Seq', 'Bullard Code', 'Bullard Description', 'Bullard Source Text',
         'AI Code', 'AI Description', 'Result',
-        'AI Sentence Fragment', 'AI Justification',
+        'AI Sentence Fragment', 'AI Event Description', 'AI Justification',
         'Divergence Type', 'Your Notes', 'AI Seq', 'Chunk'
     ]
     for col_idx, header in enumerate(headers, 1):
@@ -431,7 +437,7 @@ def build_spreadsheet(aligned_rows, case_number, profile, output_path,
         cell.border = thin_border
     ws.row_dimensions[6].height = 30
 
-    widths = [8, 12, 35, 40, 12, 35, 12, 40, 45, 35, 30, 10, 8]
+    widths = [8, 12, 35, 40, 12, 35, 12, 40, 40, 45, 35, 30, 10, 8]
     for i, w in enumerate(widths, 1):
         ws.column_dimensions[get_column_letter(i)].width = w
 
@@ -449,6 +455,7 @@ def build_spreadsheet(aligned_rows, case_number, profile, output_path,
             r['ai_desc'],
             r['type'],
             r['ai_citation'],
+            r.get('ai_event_description', ''),
             r['ai_reasoning'],
             r.get('divergence_draft', ''),
             '',  # Your Notes — for the human reviewer
@@ -462,13 +469,13 @@ def build_spreadsheet(aligned_rows, case_number, profile, output_path,
             cell.border = thin_border
             cell.alignment = wrap_align
 
-        # Purple italic for draft divergence column
-        div_cell = ws.cell(row=row_idx, column=10)
+        # Purple italic for draft divergence column (column 11 after adding AI Event Description)
+        div_cell = ws.cell(row=row_idx, column=11)
         if div_cell.value and '[DRAFT]' in str(div_cell.value):
             div_cell.font = DRAFT_FONT
 
     ws.freeze_panes = 'A7'
-    ws.auto_filter.ref = f'A6:M{6 + len(aligned_rows)}'
+    ws.auto_filter.ref = f'A6:N{6 + len(aligned_rows)}'
 
     # ── Sheet 2: Summary ──
     ws2 = wb.create_sheet('Summary')

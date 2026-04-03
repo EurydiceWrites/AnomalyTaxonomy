@@ -150,6 +150,7 @@ Return a JSON array where each element has:
 - "motif_code" (string, from the dictionary)
 - "citation" (string, the text passage justifying the code)
 - "reasoning" (string, brief explanation of why this code fits)
+- "ai_event_description" (string, brief description of what the narrator is describing in the passage)
 - "memory_state" (string, the memory state during this event)
 
 *** ENCOUNTER NARRATIVE (CHUNK {i+1} of {len(chunks)}) ***
