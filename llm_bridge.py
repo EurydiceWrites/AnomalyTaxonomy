@@ -16,7 +16,7 @@ class EncounterEvent(BaseModel):
     memory_state: Literal["conscious", "hypnosis", "altered", "unconscious", "not_applicable"] = Field(description="The memory state of the subject during this event. 'conscious' = natural waking recall. 'hypnosis' = recovered via hypnotic regression. 'altered' = non-ordinary state like dream or trance. 'unconscious' = no memory of this period. 'not_applicable' = source is authored literature, mythology, or historical narrative, not a recalled personal experience.")
     source_page: str = Field(description="The physical page number(s) where this event is described, derived from the [--- START PAGE X ---] markers in the text (e.g., '42' or '42-43').")
     ai_justification: str = Field(description="When writing the ai_justification field, if the dictionary definition does not obviously match the text Bullard assigned the code to, do not assert that it fits. Instead, state what the dictionary defines the code as, state what the text actually describes, and acknowledge the gap. It is acceptable for Bullard's usage to stretch beyond the dictionary definition — your job is to be transparent about it, not to force a match.")
-    ai_event_description: str = Field(description="Brief description of what the narrator is describing in the coded passage. Capture whose experience is being described and what is happening, not why you chose the motif code.")
+    ai_event_description: str = Field(description="Must begin with a narrative voice tag — 'Experiencer (direct):', 'Experiencer (reported):', or 'Interpretation:' — followed by a description of what is being depicted. The experiencer is identified in the extraction metadata.")
 
 class EncounterProfile(BaseModel):
     """
@@ -275,7 +275,7 @@ You MUST return your results as a JSON object matching this schema:
   "events" (array of objects with: "sequence_order" (int), "motif_code" (string),
     "source_citation" (string), "emotional_marker" (string or null),
     "memory_state" (string), "source_page" (string), "ai_justification" (string),
-    "ai_event_description" (string: brief description of what the narrator is describing in the coded passage))
+    "ai_event_description" (string: must begin with a voice tag — "Experiencer (direct):", "Experiencer (reported):", or "Interpretation:" — followed by what is being depicted))
 Return ONLY the JSON object with no preamble, commentary, or markdown formatting."""
 
         print(f"[*] Claude system prompt: {len(claude_system_prompt)} chars (will be cached by Anthropic)")
