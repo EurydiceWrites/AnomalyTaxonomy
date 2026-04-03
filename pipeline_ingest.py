@@ -1016,16 +1016,20 @@ def main():
 
     # Step 3: Extraction via LLM bridge
     print(f"\n[*] Starting Step 3: Extraction via extract_narrative() (model: {args.model})...")
-    from llm_bridge import extract_narrative
+    from llm_bridge import extract_narrative, classify_voice_tags
 
-    final_profile, all_events, ai_events_json = extract_narrative(
+    final_profile, all_events, ai_events_json, chunks = extract_narrative(
         pipeline_json_path=json_path,
         profile_name="baseline_test",
         model=args.model,
         include_vol1=args.include_vol1,
     )
 
-    print(f"\n[*] Extraction complete: {len(all_events)} events")
+    print(f"\n[*] Pass 1 extraction complete: {len(all_events)} events")
+
+    # Pass 2: Voice classification
+    ai_events_json = classify_voice_tags(ai_events_json, chunks, model=args.model)
+
     print(f"[*] Results merged into: {json_path}")
 
 
