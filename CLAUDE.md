@@ -33,6 +33,7 @@ See `schema.sql` for the full 4-table definition. Key fields added in Phase 4:
 - `AI_Event_Description` — Narrative voice-tagged event descriptions
 - `voice_speaker` / `voice_content_type` — Two-field voice classification
 - `AI_Investigator_Credibility_Justification` / `AI_Witness_Credibility_Justification` — Credibility scoring with chain-of-thought
+- `case_type` — Bullard story type classification: `abduction`, `teleportation`, `kidnapping`, `unknown` (DEC-010)
 
 ## Rules
 

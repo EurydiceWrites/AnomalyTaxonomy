@@ -41,9 +41,11 @@ How does encounter phenomenology change over decades and across regions? When di
 
 ## Immediate (current sprint)
 
-1. **Voice tag verification** — Rerun Ed with the approved 3-tag narrative voice rule; verify distribution of Experiencer (direct) / Experiencer (reported) / Interpretation tags
-2. **Weekend audit** — 10 scattered Ed events checked against physical Mack book (end-to-end validation)
-3. **ISS-001: Cache bleed** — CRITICAL, not started. Investigate and fix.
+1. **Case type classification** — DONE (DEC-010). `case_type` column added and populated: 255 abduction, 22 teleportation, 17 kidnapping, 39 unknown, 5 non-Bullard NULL.
+2. **Stage 1A: Internal coherence analysis** — Group Bullard GT codes by case_type, compute motif family distributions per type. Test whether the three types produce distinct signatures. Metric decision pending (raw counts vs proportional vs binary).
+3. **Voice tag verification** — Rerun Ed with the approved 3-tag narrative voice rule; verify distribution of Experiencer (direct) / Experiencer (reported) / Interpretation tags
+4. **Weekend audit** — 10 scattered Ed events checked against physical Mack book (end-to-end validation)
+5. **ISS-001: Cache bleed** — CRITICAL, not started. Investigate and fix.
 
 ## Short-term (next 1-2 weeks)
 
