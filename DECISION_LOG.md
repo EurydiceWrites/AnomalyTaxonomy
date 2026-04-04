@@ -127,6 +127,18 @@ Every entry traces to a specific rationale and evidence base. Decisions are neve
 
 ---
 
+### DEC-011: Two analytical dimensions (case_type + conformance) and Stage 1A metrics
+- **Date:** 2026-04-04
+- **Decision:** Define two orthogonal analytical dimensions for Bullard's typology. (1) `case_type` — which episode template the narrative maps to (implemented, DEC-010). (2) `conformance` — how faithfully the episode sequence follows the prescribed template (`orthodox`, `deviant`, `trivial`, `fragmentary`). Conformance column is planned but not yet implemented; requires sequence-level comparison logic.
+- **Metric decision for Stage 1A:** Primary metric is binary presence/absence per case per motif family, reported as percentage of cases per type. Secondary metric is proportional frequency (share of events within each type belonging to each family). Raw counts excluded due to group size imbalance (255 abductions vs 17 kidnappings).
+- **Scope:** Stage 1A tests case_type discrimination only. Unknown cases (1–31, 223–230) excluded from primary analysis; run separately as follow-up. Conformance analysis is a separate future stage.
+- **Rationale:** Separating type (content) from conformance (order) allows independent testing. Binary presence/absence avoids inflating results from cases with many sub-events in one family.
+- **Evidence:** Bullard Vol. 1, Ch. IV: Table IV-1 (orthodox), Table IV-3 (deviant), trivial/fragmentary lists (p. 55).
+- **Status:** ACTIVE
+- **Decided in:** Eurydice chat, 2026-04-04
+
+---
+
 ## Conventions
 
 - Decisions are numbered sequentially and never reused

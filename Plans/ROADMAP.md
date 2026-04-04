@@ -42,10 +42,11 @@ How does encounter phenomenology change over decades and across regions? When di
 ## Immediate (current sprint)
 
 1. **Case type classification** — DONE (DEC-010). `case_type` column added and populated: 255 abduction, 22 teleportation, 17 kidnapping, 39 unknown, 5 non-Bullard NULL.
-2. **Stage 1A: Internal coherence analysis** — Group Bullard GT codes by case_type, compute motif family distributions per type. Test whether the three types produce distinct signatures. Metric decision pending (raw counts vs proportional vs binary).
-3. **Voice tag verification** — Rerun Ed with the approved 3-tag narrative voice rule; verify distribution of Experiencer (direct) / Experiencer (reported) / Interpretation tags
-4. **Weekend audit** — 10 scattered Ed events checked against physical Mack book (end-to-end validation)
-5. **ISS-001: Cache bleed** — CRITICAL, not started. Investigate and fix.
+2. **Stage 1A: Internal coherence analysis** — DONE. Bullard GT codes grouped by case_type, motif family distributions computed. Result: three types produce clearly distinct signatures. Hard discriminators (X, M, T, S, W = abduction-only), gradient discriminators (A, C = present across types at different rates), universal features (U, E). Raw data: `test_results/stage_1a_results.csv`. (DEC-011)
+3. **Stage 1A Test B: Conformance reproduction** — Does the sequence position of anchor motif families (X, W, T, A) in the event data computationally reproduce Bullard's hand-classified conformance categories (orthodox, deviant, trivial, fragmentary) for abduction cases? Requires: implement `conformance` column (DEC-011), build sequence comparison logic against Bullard's prescribed episode order. *Tests whether conformance can be derived from the data rather than manually assigned.*
+4. **Voice tag verification** — Rerun Ed with the approved 3-tag narrative voice rule; verify distribution of Experiencer (direct) / Experiencer (reported) / Interpretation tags
+5. **Weekend audit** — 10 scattered Ed events checked against physical Mack book (end-to-end validation)
+6. **ISS-001: Cache bleed** — CRITICAL, not started. Investigate and fix.
 
 ## Short-term (next 1-2 weeks)
 
@@ -60,7 +61,7 @@ How does encounter phenomenology change over decades and across regions? When di
 9. **Deduplication fix** — Address the consistent duplicate-code problem across all calibration cases
 10. **memory_retrieval_method** — Populate remaining 205 unknown rows (requires physical Bullard Vol. 2)
 11. **Bullard letter** — Send follow-up (4-part structure already agreed)
-12. **Case type signature exploration** — Preliminary query: group Bullard 270 events by case type, compute motif frequency distributions per type. *First look at R1.*
+12. **Stage 1B: Narrative coherence** — Run Bullard Vol. 2 prose summaries through extraction engine blind (no type label). Test whether type distinction emerges from narrative content independently of Bullard's coding decisions. *Second line of evidence for R1.*
 
 ## Horizon (future tracks)
 

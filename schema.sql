@@ -28,6 +28,11 @@ CREATE TABLE IF NOT EXISTS Encounters (
     Number_of_Witnesses INTEGER,
     Entity_Type VARCHAR,
     case_type TEXT,
+    -- conformance: Bullard Ch. IV episode sequence fidelity (abduction cases only)
+    -- Valid values: 'orthodox', 'deviant', 'trivial', 'fragmentary', 'omit'
+    -- Source: Bullard Vol. 1, Tables IV-1, IV-3 (pp. 54-57)
+    -- NULL for non-abduction encounters and Mack Phase 4 cases
+    conformance TEXT,
     FOREIGN KEY (Subject_ID) REFERENCES Subjects(Subject_ID)
 );
 
