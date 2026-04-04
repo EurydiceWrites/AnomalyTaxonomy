@@ -27,6 +27,7 @@ CREATE TABLE IF NOT EXISTS Encounters (
     is_hypnosis_used BOOLEAN,
     Number_of_Witnesses INTEGER,
     Entity_Type VARCHAR,
+    case_type TEXT,
     FOREIGN KEY (Subject_ID) REFERENCES Subjects(Subject_ID)
 );
 

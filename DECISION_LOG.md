@@ -111,6 +111,22 @@ Every entry traces to a specific rationale and evidence base. Decisions are neve
 
 ---
 
+### DEC-010: Add case_type column and three-stage type signature analysis
+- **Date:** 2026-04-04
+- **Decision:** Add `case_type` column to Encounters table (`abduction`, `teleportation`, `kidnapping`, `unknown`). Populate from Bullard Vol. 1, Chapter IV, Tables IV-1 through IV-3. Execute a three-stage analytical plan to test whether Bullard's case types produce distinct motif signatures.
+- **Rationale:** R1 (case type signature analysis) requires knowing which cases belong to which type. Bullard defines three story types in Chapter IV with explicit case number assignments. The three-stage plan separates internal coherence (1A: do Bullard's own codes distinguish types?), narrative coherence (1B: does the prose itself carry the distinction?), and engine fidelity (2: does AI extraction preserve it?).
+- **Assignment rules:**
+  - Cases 32–222 and 246: `abduction`
+  - Cases 231–253 (excluding 246): `teleportation`
+  - Cases 254–270: `kidnapping`
+  - Cases 1–31 and 223–230: `unknown`
+  - Case 246: `abduction` — dual appearance investigated; Bullard's structural judgment governs; teleportation captured at motif level (E205)
+- **Evidence:** Bullard Vol. 1, Chapter IV, pp. 47–57; Tables IV-1 (orthodox abductions), IV-2 (teleportations and kidnappings), IV-3 (deviant abductions).
+- **Status:** ACTIVE
+- **Decided in:** Eurydice chat, 2026-04-04
+
+---
+
 ## Conventions
 
 - Decisions are numbered sequentially and never reused
