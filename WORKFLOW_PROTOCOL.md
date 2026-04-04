@@ -2,7 +2,7 @@
 
 **Established:** March 29, 2026  
 **Project:** Mack-Bullard UFO Matrix  
-**Current Phase:** 2b — Calibration & Infrastructure Governance
+**Current Phase:** 4 — Mack Source Extraction with Advanced Credibility Scoring & Narrative Voice Classification
 
 ---
 
@@ -21,9 +21,10 @@
 - **Rule:** No autonomous design decisions. Every change must trace back to a decision made in Eurydice chat.
 
 ### Claude Cowork
-- **Function:** QA triage and comparison work
+- **Function:** QA triage, comparison work, and bulk data tasks
 - **Receives:** Handoff blocks from Eurydice with explicit instructions
-- **Scope:** Phase 2b calibration spreadsheets, line-by-line comparison generation, data formatting
+- **Scope:** Calibration spreadsheets, line-by-line comparison generation, data formatting
+- **Note:** Eurydice can now run QA triage directly via skill. Cowork is used for heavier comparison work or when Eurydice's context is better preserved by delegating.
 - **Rule:** No autonomous design decisions. Every change must trace back to a decision made in Eurydice chat.
 
 ---
@@ -63,8 +64,14 @@ Every significant decision is recorded in-chat as:
 ### Session Recaps
 - Produced at end of session or when context limits approach
 - Format matches existing `session_recap_YYYY-MM-DD.md` files
-- Stored in project top-level directory
+- Stored in `Plans/Recaps/`
 - Must include: decisions made, files modified, open items, next steps
+
+### Issues Log
+- Active issues are tracked with ISS-### identifiers (e.g., ISS-001)
+- Each issue has a severity (CRITICAL, HIGH, MEDIUM, LOW) and status
+- Current issues are listed in `CLAUDE.md` for quick reference across sessions
+- Issues are resolved by linking to the decision or PR that fixed them
 
 ---
 
@@ -115,11 +122,25 @@ Every calibration run follows this sequence. No step is skipped.
 
 ---
 
+## PROJECT DOCUMENTS
+
+| Document | Purpose |
+|----------|---------|
+| `CLAUDE.md` | Quick-start context for new Claude Code sessions |
+| `WORKFLOW_PROTOCOL.md` | This file — multi-agent governance and SOP |
+| `DECISION_LOG.md` | Permanent record of all architectural/methodological decisions (DEC-###) |
+| `Plans/ROADMAP.md` | Research north stars, prioritized work queue, and calibration baseline |
+| `test_results/CALIBRATION_LEDGER.md` | Validated per-case calibration results |
+| `TODO.md` | Master task list (updated after each session) |
+
+---
+
 ## SOURCE OF TRUTH
 
 | Item | Source of Truth |
 |------|----------------|
-| Research decisions | Eurydice chat history + session recaps |
+| Research decisions | `DECISION_LOG.md` + Eurydice chat history + session recaps |
+| Research priorities | `Plans/ROADMAP.md` |
 | Code state | Git / local files as modified by Claude Code |
 | Data | `ufo_matrix.db` (SQLite) |
 | Motif taxonomy | Bullard Vol. 2 (physical book + clean PDF) |
@@ -127,7 +148,9 @@ Every calibration run follows this sequence. No step is skipped.
 | Prompt rules | `prompt_library.json` |
 | Schema definitions | `llm_bridge.py` Pydantic models |
 | Calibration accuracy | QA triage spreadsheets (not raw phase2 JSON) |
-| Validated results | `CALIBRATION_LEDGER.md` |
+| Validated results | `test_results/CALIBRATION_LEDGER.md` |
+| Active issues | `CLAUDE.md` issues table (ISS-###) |
+| Session context for new agents | `CLAUDE.md` |
 
 
 ---
