@@ -33,6 +33,7 @@ CREATE TABLE IF NOT EXISTS Encounters (
     -- Source: Bullard Vol. 1, Tables IV-1, IV-3 (pp. 54-57)
     -- NULL for non-abduction encounters and Mack Phase 4 cases
     conformance TEXT,
+    computed_conformance TEXT,
     FOREIGN KEY (Subject_ID) REFERENCES Subjects(Subject_ID)
 );
 
@@ -60,6 +61,7 @@ CREATE TABLE IF NOT EXISTS Encounter_Events (
     voice_speaker TEXT,
     voice_content_type TEXT,
     run_timestamp TEXT,
+    computed_episode INTEGER,
     FOREIGN KEY (Encounter_ID) REFERENCES Encounters(Encounter_ID),
     FOREIGN KEY (Motif_Code) REFERENCES Motif_Dictionary(Motif_Code)
 );
