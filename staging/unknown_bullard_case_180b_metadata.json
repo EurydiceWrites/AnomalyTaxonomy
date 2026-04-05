@@ -1,0 +1,323 @@
+{
+  "step_0": {
+    "source_text_path": "staging\\extracted_text_bullard_case_180b.txt",
+    "pdf_page_start": null,
+    "pdf_page_end": null,
+    "source_page_start": 169,
+    "source_page_end": 179
+  },
+  "step_1_scanned_metadata": {
+    "source_type": "investigation",
+    "memory_retrieval_method": "unknown",
+    "narrative_structure": "investigation",
+    "principal_investigator": "Budd Hopkins",
+    "experiencer_name": null,
+    "gender": "male",
+    "age_at_time": null,
+    "location": "Pittsburgh, Pennsylvania",
+    "date_of_experience": "January 20, 1964",
+    "entity_types": [
+      "humanoid"
+    ],
+    "narrative_summary": "The witness awoke paralyzed, seeing a light and a humanoid figure at his third-floor window. After the paralysis passed, he felt an inner urge to go to a deserted mansion where he encountered a group of humanoid beings with large crania and metallic eyes, near a landed craft. He then found himself reclining in a domed room, feeling calm as two glowing spheres flanked his head, and was reassured by the beings."
+  },
+  "step_1_source_attribution": {
+    "author_name": null,
+    "title": null,
+    "publication_year": null,
+    "publisher": null,
+    "place_of_publication": null,
+    "edition": null,
+    "translator": null,
+    "editor": null,
+    "author_role": null
+  },
+  "step_3_extraction": {
+    "encounter_events": [
+      {
+        "motif_code": "E315",
+        "sequence_order": 1,
+        "source_citation": "The witness awoke in the night, unable to speak or Move",
+        "memory_state": "conscious",
+        "source_page": "167",
+        "pdf_page": "167",
+        "ai_justification": "The witness experienced paralysis and inability to speak upon waking, matching E315 (paralysis, numbness).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "U120",
+        "sequence_order": 2,
+        "source_citation": "a light shone into the rooM",
+        "memory_state": "conscious",
+        "source_page": "167",
+        "pdf_page": "167",
+        "ai_justification": "A beam of light immersed or shone upon the witness, matching U120 (beam of light immerses the witness).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 3,
+        "source_citation": "a huManoid figure looked in at the third-floor window",
+        "memory_state": "conscious",
+        "source_page": "167",
+        "pdf_page": "167",
+        "ai_justification": "A humanoid being was observed at the window, matching B201 (humanoid).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "E218",
+        "sequence_order": 4,
+        "source_citation": "When the paralysis passed he dressed and went outside, guided by an inner urge onto the grounds of a deserted Mansion",
+        "memory_state": "conscious",
+        "source_page": "167",
+        "pdf_page": "167",
+        "ai_justification": "The witness acted on an irresistible inner urge without knowing why, matching E218 (predestination: act without knowing why).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "B230",
+        "sequence_order": 5,
+        "source_citation": "They had large crania",
+        "memory_state": "conscious",
+        "source_page": "167",
+        "pdf_page": "167",
+        "ai_justification": "The beings had large heads/crania, matching B230 (head large).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "B241",
+        "sequence_order": 6,
+        "source_citation": "large, seeMingly Metallic eyes recessed beneath the forehead",
+        "memory_state": "conscious",
+        "source_page": "167",
+        "pdf_page": "167",
+        "ai_justification": "The beings had large eyes, matching B241 (large size eyes).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "U100",
+        "sequence_order": 7,
+        "source_citation": "He saw a landed craft like a flying saucer nearby",
+        "memory_state": "conscious",
+        "source_page": "167",
+        "pdf_page": "167",
+        "ai_justification": "The craft is described as a flying saucer, matching U100 (disk).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "E201",
+        "sequence_order": 8,
+        "source_citation": "He found hiMself reclining in a doMed rooM",
+        "memory_state": "conscious",
+        "source_page": "167",
+        "pdf_page": "167",
+        "ai_justification": "The witness has no memory of the transition from outside to inside the craft, indicating doorway amnesia (E201).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "X155",
+        "sequence_order": 9,
+        "source_citation": "He found hiMself reclining in a doMed rooM",
+        "memory_state": "conscious",
+        "source_page": "167",
+        "pdf_page": "167",
+        "ai_justification": "The witness was reclining, matching X155 (witness lies on an examining table or couch).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "U211",
+        "sequence_order": 10,
+        "source_citation": "a doMed rooM",
+        "memory_state": "conscious",
+        "source_page": "167",
+        "pdf_page": "167",
+        "ai_justification": "The room is described as domed, matching U211 (domed).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "U230",
+        "sequence_order": 11,
+        "source_citation": "illuMinated with a white, hazy light",
+        "memory_state": "conscious",
+        "source_page": "167",
+        "pdf_page": "167",
+        "ai_justification": "White hazy light without specific source matches U230 (bright and uniform, without specific source) combined with U251.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "U251",
+        "sequence_order": 12,
+        "source_citation": "illuMinated with a white, hazy light",
+        "memory_state": "conscious",
+        "source_page": "167",
+        "pdf_page": "167",
+        "ai_justification": "The hazy quality of the light matches U251 (misty).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "M100",
+        "sequence_order": 13,
+        "source_citation": "the beings told hiM everything would be all right",
+        "memory_state": "conscious",
+        "source_page": "168",
+        "pdf_page": "168",
+        "ai_justification": "The beings promised the witness would be safe, matching M100 (promise subject will be safe).",
+        "emotional_marker": "reassurance",
+        "chunk": 1
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 14,
+        "source_citation": "he felt calM",
+        "memory_state": "conscious",
+        "source_page": "168",
+        "pdf_page": "168",
+        "ai_justification": "The witness felt calm, matching E300 (pacification effect: witness calm, euphoric, relaxed).",
+        "emotional_marker": "calm",
+        "chunk": 1
+      },
+      {
+        "motif_code": "E326",
+        "sequence_order": 15,
+        "source_citation": "two glowing spheres flanked his head",
+        "memory_state": "conscious",
+        "source_page": "168",
+        "pdf_page": "168",
+        "ai_justification": "Luminous globes flanked the witness's head, associated with the calming effect, matching E326 (luminous globe controls witness).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 16,
+        "source_citation": "He found hiMself reclining in a doMed rooM",
+        "memory_state": "conscious",
+        "source_page": "167",
+        "pdf_page": "167",
+        "ai_justification": "The transition from outside to inside the craft with no memory implies a time lapse, matching E200 (time lapse).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "A225",
+        "sequence_order": 17,
+        "source_citation": "Again in 1979 he awoke paralyzed",
+        "memory_state": "conscious",
+        "source_page": "168",
+        "pdf_page": "168",
+        "ai_justification": "A subsequent abduction event in 1979 matches A225 (further abductions).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "M119",
+        "sequence_order": 18,
+        "source_citation": "not remember him, he said",
+        "memory_state": "conscious",
+        "source_page": "168",
+        "pdf_page": "168",
+        "ai_justification": "The being tells the witness to forget, consistent with M119 (beings tell subject to forget, because the time is not right).",
+        "emotional_marker": null,
+        "chunk": 2
+      },
+      {
+        "motif_code": "M122",
+        "sequence_order": 19,
+        "source_citation": "he could always find and recognize her",
+        "memory_state": "conscious",
+        "source_page": "168",
+        "pdf_page": "168",
+        "ai_justification": "The being's claim that he can always find and recognize her implies long-term special interest in and surveillance of the witness, matching M122.",
+        "emotional_marker": null,
+        "chunk": 2
+      },
+      {
+        "motif_code": "M149",
+        "sequence_order": 20,
+        "source_citation": "he might take her at some later time to the other world he described",
+        "memory_state": "conscious",
+        "source_page": "168",
+        "pdf_page": "168",
+        "ai_justification": "The being promises to return to the witness and take her to another world, matching M149.",
+        "emotional_marker": null,
+        "chunk": 2
+      },
+      {
+        "motif_code": "B901",
+        "sequence_order": 21,
+        "source_citation": "At some point he asked her permission to take a 'piece of her'",
+        "memory_state": "conscious",
+        "source_page": "168",
+        "pdf_page": "168",
+        "ai_justification": "The being asks permission before taking a sample, showing considerate and helpful behavior consistent with B901.",
+        "emotional_marker": null,
+        "chunk": 2
+      },
+      {
+        "motif_code": "X235",
+        "sequence_order": 22,
+        "source_citation": "he asked her permission to take a 'piece of her' (blood sample?), which they needed for the sake of understanding",
+        "memory_state": "conscious",
+        "source_page": "168",
+        "pdf_page": "168",
+        "ai_justification": "The being requests a body sample (likely blood), matching X235 (beings take a blood or body fluids sample).",
+        "emotional_marker": null,
+        "chunk": 2
+      },
+      {
+        "motif_code": "X222",
+        "sequence_order": 23,
+        "source_citation": "A tubular arm then cut her leg painlessly and stopped the bleeding",
+        "memory_state": "conscious",
+        "source_page": "168",
+        "pdf_page": "168",
+        "ai_justification": "A tubular arm makes an incision on the witness's leg, matching X222 (beings make incision for unknown purpose).",
+        "emotional_marker": null,
+        "chunk": 2
+      },
+      {
+        "motif_code": "X229",
+        "sequence_order": 24,
+        "source_citation": "stopped the bleeding",
+        "memory_state": "conscious",
+        "source_page": "168",
+        "pdf_page": "168",
+        "ai_justification": "The being stops the bleeding after the incision, implying easing of injury, matching X229.",
+        "emotional_marker": null,
+        "chunk": 2
+      },
+      {
+        "motif_code": "B711",
+        "sequence_order": 25,
+        "source_citation": "which they needed for the sake of understanding",
+        "memory_state": "conscious",
+        "source_page": "168",
+        "pdf_page": "168",
+        "ai_justification": "The stated purpose of taking the sample is 'understanding,' implying interest in the witness's chemical composition or internal makeup, matching B711.",
+        "emotional_marker": null,
+        "chunk": 2
+      }
+    ],
+    "model_name": "claude-opus-4-6",
+    "profile_used": "baseline_test",
+    "run_timestamp": "2026-04-05T11:38:46.726031",
+    "include_vol1": false,
+    "narrative_structure": "investigation",
+    "retrieval_method": "unknown",
+    "experiencer_name": null,
+    "chunk_size": 3000,
+    "num_chunks": 2
+  }
+}

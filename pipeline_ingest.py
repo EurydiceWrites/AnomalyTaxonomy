@@ -832,13 +832,21 @@ def _build_pipeline_json(metadata, attribution, text_output_path,
     return pipeline
 
 
-def _make_pipeline_json_path(metadata, attribution):
+def _make_pipeline_json_path(metadata, attribution, source_text_path=None):
     """
     Build the JSON filename: staging/{experiencer_name}_{source_title}_metadata.json
+    Falls back to the source text filename when both experiencer and title are unknown,
+    to prevent filename collisions.
     """
     experiencer = _slugify(metadata.pseudonym) if metadata.pseudonym else "unknown"
     title = _slugify(attribution.title) if attribution and attribution.title else "unknown"
-    filename = f"{experiencer}_{title}_metadata.json"
+    # If both are unknown, use the source text filename to avoid collisions
+    if experiencer == "unknown" and title == "unknown" and source_text_path:
+        source_stem = os.path.splitext(os.path.basename(source_text_path))[0]
+        source_stem = source_stem.replace("extracted_text_", "")
+        filename = f"unknown_{_slugify(source_stem)}_metadata.json"
+    else:
+        filename = f"{experiencer}_{title}_metadata.json"
     return os.path.join("staging", filename)
 
 
@@ -1006,7 +1014,7 @@ def main():
 
     # Save the JSON using the naming convention:
     # staging/{experiencer_name}_{source_title}_metadata.json
-    json_path = _make_pipeline_json_path(metadata, attribution)
+    json_path = _make_pipeline_json_path(metadata, attribution, text_output_path)
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(pipeline_json, f, indent=2, ensure_ascii=False)
     print(f"\n[*] Pipeline JSON saved to: {json_path}")
