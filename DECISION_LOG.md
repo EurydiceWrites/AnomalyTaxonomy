@@ -147,6 +147,14 @@ Every entry traces to a specific rationale and evidence base. Decisions are neve
 - **Status:** ACTIVE
 - **Decided in:** Eurydice chat, 2026-04-04
 
+### DEC-013: Standardize LLM temperature at 0.1 for both extraction passes
+- **Date:** 2026-04-05
+- **Decision:** Set temperature=0.1 for both Pass 1 (motif extraction) and Pass 2 (voice classification). Previously Pass 1 was 0.1 and Pass 2 was 0.0. Neither setting had been formally decided or documented.
+- **Rationale:** 0.0 (fully deterministic) locks the model into the single most probable token. For voice classification, this caused consistent misses on ambiguous cases — e.g., investigator sentences embedding direct experiencer quotes. 0.1 gives enough flexibility to consider near-miss alternatives without introducing creative drift. Future testing will evaluate 0.3 to see if additional flexibility improves accuracy on edge cases.
+- **Evidence:** Observed voice classification misses during Ed (MACK-003) audit where experiencer direct quotes were classified as investigator voice.
+- **Status:** ACTIVE
+- **Decided in:** Claude Code walkthrough, 2026-04-05
+
 ---
 
 ## Conventions

@@ -108,7 +108,7 @@ def flatten_motif_key(nested_dict):
 def extract_narrative(text=None, sticky_header="", retrieval_method="unknown",
                       profile_name="baseline_test", case_number=None,
                       pipeline_json_path=None, narrative_structure=None,
-                      model="gemini-3.1-pro-preview", experiencer_name=None,
+                      model="claude-opus-4-6", experiencer_name=None,
                       include_vol1=False):
     """
     Sends narrative text to Gemini and returns structured extraction results.
@@ -224,11 +224,14 @@ def extract_narrative(text=None, sticky_header="", retrieval_method="unknown",
     sys_inst_text = "\n".join(profile.get("system_instruction", []))
     few_shot_examples = "\n".join(profile.get("few_shot_examples", []))
     anti_hallucination_rules = "\n".join(profile.get("anti_hallucination_rules", []))
+    narrative_context_rules = "\n".join(profile.get("narrative_context_rules", []))
 
     system_instruction = f"""
     {sys_inst_text}
 
     {few_shot_examples}
+
+    {narrative_context_rules}
 
     {anti_hallucination_rules}
 
@@ -505,6 +508,12 @@ Return ONLY the JSON object with no preamble, commentary, or markdown formatting
             "model_name": model,
             "profile_used": profile_name,
             "run_timestamp": datetime.now().isoformat(),
+            "include_vol1": include_vol1,
+            "narrative_structure": narrative_structure,
+            "retrieval_method": retrieval_method,
+            "experiencer_name": experiencer_name,
+            "chunk_size": 3000,
+            "num_chunks": len(chunks),
         }
 
         with open(pipeline_json_path, "w", encoding="utf-8") as f:
@@ -592,7 +601,7 @@ Return ONLY the JSON array with no preamble, commentary, or markdown formatting.
 
         print(f"  Chunk {chunk_idx}: {len(events_in_chunk)} events...", end=" ")
 
-        raw_result = _call_claude(payload, VOICE_SYSTEM_PROMPT, model, temperature=0.0)
+        raw_result = _call_claude(payload, VOICE_SYSTEM_PROMPT, model, temperature=0.1)
 
         # Parse results — may be a list of dicts or a single dict
         classifications = raw_result if isinstance(raw_result, list) else [raw_result]
