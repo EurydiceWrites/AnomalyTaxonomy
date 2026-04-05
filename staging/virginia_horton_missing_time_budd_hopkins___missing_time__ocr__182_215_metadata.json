@@ -1,0 +1,37 @@
+{
+  "step_0": {
+    "source_text_path": "staging\\extracted_text_Budd_Hopkins_-_Missing_Time__OCR__182-215.txt",
+    "pdf_page_start": 182,
+    "pdf_page_end": 215,
+    "source_page_start": 181,
+    "source_page_end": 214
+  },
+  "step_1_scanned_metadata": {
+    "source_type": "investigation",
+    "memory_retrieval_method": "hypnosis",
+    "narrative_structure": "investigation",
+    "principal_investigator": "Budd Hopkins",
+    "experiencer_name": "Virginia Horton",
+    "gender": "female",
+    "age_at_time": "6 and 16",
+    "location": "grandfather's farmyard (1950), French woods (1960)",
+    "date_of_experience": "1950 and 1960",
+    "entity_types": [
+      "Grey",
+      "humanoid"
+    ],
+    "narrative_summary": "The narrative details two abduction experiences of Virginia Horton, retrieved through hypnotic regression conducted by Budd Hopkins and Aphrodite Clamar. The first encounter occurred in 1950 when Virginia was six, involving a trip aboard a UFO where she interacted with humanoids and had samples taken from her leg. The second, in 1960 when she was sixteen, involved being lured by a 'deer' (a hypnotic cover for a humanoid), taken to a UFO for a 'celebration' of the entities' research, and having blood/tissue samples taken from her nose. Hopkins analyzes the consistent patterns across these and other abduction cases, noting the use of 'love techniques' by abductors to reduce resistance, the physical examinations, and the subsequent memory suppression."
+  },
+  "step_1_source_attribution": {
+    "author_name": "Budd Hopkins",
+    "title": "Missing Time",
+    "publication_year": null,
+    "publisher": "Ballantine",
+    "place_of_publication": null,
+    "edition": null,
+    "translator": null,
+    "editor": null,
+    "author_role": "investigator"
+  },
+  "step_3_extraction": null
+}

@@ -147,6 +147,30 @@ Every entry traces to a specific rationale and evidence base. Decisions are neve
 - **Status:** ACTIVE
 - **Decided in:** Eurydice chat, 2026-04-04
 
+### DEC-014: Three-tier measurement framework — code, subfamily, family
+- **Date:** 2026-04-05
+- **Decision:** Extraction accuracy is measured at three levels, each answering a different question:
+
+  **1. Code level (individual motif codes)**
+  - **When:** Calibrating the extraction engine against a same-source ground truth (e.g., Bullard text → AI extraction → compare against Bullard's own codes).
+  - **How:** Greedy sequential matching. Metrics: match count, miss count, AI extra count, detection rate (match/GT), precision (match/AI total). Genuine alternates counted separately.
+  - **Why:** Tests whether the AI assigns the same specific code Bullard would. Only valid when AI and ground truth read the same text.
+
+  **2. Subfamily level (binary presence/absence per subfamily range)**
+  - **When:** Comparing extractions across different sources describing the same case (e.g., Bullard summary vs Hopkins full narrative). Also the primary analytical comparison for cross-case pattern analysis.
+  - **How:** For each subfamily range (e.g., E300-E399, B200-B299), mark present or absent. Compare presence sets between sources. Metric: agreement rate (shared / GT subfamilies).
+  - **Why:** Different narrators use different words and emphasize different details, so individual codes won't match. But if both sources show the same subfamilies present, the encounter's structural fingerprint is the same. Validated at 100% agreement on case 084 (Kilburn): Bullard 19 subfamilies, Hopkins AI 19/19 matched + 10 additional.
+
+  **3. Family level (binary presence/absence per letter family)**
+  - **When:** High-level structural classification — type signatures (Stage 1A), quick sanity checks.
+  - **How:** For each family (A, B, C, E, M, S, T, U, W, X), mark present or absent.
+  - **Why:** Fastest comparison, useful for distinguishing story types (abduction vs teleportation vs kidnapping). Too coarse for detecting subfamily-level problems like E100 overcoding / E300 undercoding — those cancel out at the family level.
+
+- **Rationale:** Code-level comparison is meaningless across sources because narrator differences inflate misses and extras. Subfamily-level collapses narrator variance while preserving enough resolution to detect structural patterns. Family-level is too coarse for calibration but useful for classification.
+- **Evidence:** Case 084 (Kilburn) — code-level detection from Hopkins source = 86.3% (44/51), but subfamily agreement = 100% (19/19). The "misses" at code level are narrator differences, not structural gaps.
+- **Status:** ACTIVE
+- **Decided in:** Claude Code walkthrough, 2026-04-05
+
 ---
 
 ## Conventions
