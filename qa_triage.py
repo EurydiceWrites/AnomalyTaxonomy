@@ -42,14 +42,18 @@ def load_ai_results(input_path):
     if ext == '.json':
         with open(input_path, 'r', encoding='utf-8-sig') as f:
             data = json.load(f)
-        events = data.get('ai_events', data) if isinstance(data, dict) else data
+        # Support pipeline JSON format (step_3_extraction.encounter_events)
+        if isinstance(data, dict) and 'step_3_extraction' in data:
+            events = data['step_3_extraction'].get('encounter_events', [])
+        else:
+            events = data.get('ai_events', data) if isinstance(data, dict) else data
         for ev in events:
             rows.append({
-                'seq': int(ev.get('sequence', 0)),
+                'seq': int(ev.get('sequence', ev.get('sequence_order', 0))),
                 'chunk': int(ev.get('chunk', 0)),
                 'code': ev.get('motif_code', '').strip(),
-                'citation': ev.get('citation', '').strip(),
-                'reasoning': ev.get('reasoning', '').strip(),
+                'citation': ev.get('citation', ev.get('source_citation', '')).strip(),
+                'reasoning': ev.get('reasoning', ev.get('ai_justification', '')).strip(),
                 'voice_speaker': ev.get('voice_speaker', '').strip(),
                 'voice_content_type': ev.get('voice_content_type', '').strip(),
             })

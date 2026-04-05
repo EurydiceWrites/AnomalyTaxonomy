@@ -1,0 +1,211 @@
+{
+  "step_0": {
+    "source_text_path": "staging\\extracted_text_bullard_case_180a_stripped.txt",
+    "pdf_page_start": null,
+    "pdf_page_end": null,
+    "source_page_start": 156,
+    "source_page_end": 165
+  },
+  "step_1_scanned_metadata": {
+    "source_type": "investigation",
+    "memory_retrieval_method": "hypnosis",
+    "narrative_structure": "investigation",
+    "principal_investigator": "Ted Bloecher, Budd Hopkins",
+    "experiencer_name": "Philip Osborne",
+    "gender": "male",
+    "age_at_time": null,
+    "location": "Smokey Mountains, Tenn.",
+    "date_of_experience": "summer 1949-50",
+    "entity_types": [],
+    "narrative_summary": "Philip Osborne recalled under hypnosis an encounter in the Smokey Mountains in 1949-50. While looking for his brother's coat at night, he remembered a metallic disc with a luminous geodesic dome landing. He felt drawn into the ship, where he lay in a hospital-like room. An arm-like device made an incision in his leg, leaving a scar, and an eye-like device appeared above him, after which he seemed to fly through space. He did not recall seeing any beings or what happened to his family."
+  },
+  "step_1_source_attribution": {
+    "author_name": null,
+    "title": null,
+    "publication_year": null,
+    "publisher": null,
+    "place_of_publication": null,
+    "edition": null,
+    "translator": null,
+    "editor": null,
+    "author_role": null
+  },
+  "step_3_extraction": {
+    "encounter_events": [
+      {
+        "motif_code": "U101",
+        "sequence_order": 1,
+        "source_citation": "he recalled a Metallic disc with a luMinous geodesic doMe (or a sphere)",
+        "memory_state": "hypnosis",
+        "source_page": "158-159",
+        "pdf_page": "N/A",
+        "ai_justification": "A metallic disc with a luminous geodesic dome matches the domed disk / Saturn shape motif.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "A100",
+        "sequence_order": 2,
+        "source_citation": "the light irritated his eyes",
+        "memory_state": "hypnosis",
+        "source_page": "158-159",
+        "pdf_page": "N/A",
+        "ai_justification": "Light from the craft irritated the witness's eyes, matching eye troubles (burn, vision impaired, sensitive to light).",
+        "emotional_marker": "discomfort",
+        "chunk": 1
+      },
+      {
+        "motif_code": "U134",
+        "sequence_order": 3,
+        "source_citation": "This object landed on vertical supports",
+        "memory_state": "hypnosis",
+        "source_page": "158-159",
+        "pdf_page": "N/A",
+        "ai_justification": "Vertical supports on which the craft landed correspond to landing gear.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "U131",
+        "sequence_order": 4,
+        "source_citation": "a wedgelike section opened",
+        "memory_state": "hypnosis",
+        "source_page": "158-159",
+        "pdf_page": "N/A",
+        "ai_justification": "A wedge-like section opening on the craft corresponds to a door opening.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "E123",
+        "sequence_order": 5,
+        "source_citation": "He felt hiMself drawn into the ship, perhaps by flotation or carried on a stretcher",
+        "memory_state": "hypnosis",
+        "source_page": "159",
+        "pdf_page": "N/A",
+        "ai_justification": "Being drawn into the ship by flotation matches levitation / drawing force.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "X155",
+        "sequence_order": 6,
+        "source_citation": "found hiMself lying down in a hospital-like rooM",
+        "memory_state": "hypnosis",
+        "source_page": "159",
+        "pdf_page": "N/A",
+        "ai_justification": "Lying down in a hospital-like room implies lying on an examining table or couch.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "U202",
+        "sequence_order": 7,
+        "source_citation": "a hospital-like rooM",
+        "memory_state": "hypnosis",
+        "source_page": "159",
+        "pdf_page": "N/A",
+        "ai_justification": "A hospital-like room where examination occurs corresponds to the examination room motif.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "U230",
+        "sequence_order": 8,
+        "source_citation": "where light (?) surrounded hiM",
+        "memory_state": "hypnosis",
+        "source_page": "159",
+        "pdf_page": "N/A",
+        "ai_justification": "Light surrounding the witness without a specific source matches bright and uniform lighting.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "E300",
+        "sequence_order": 9,
+        "source_citation": "His initial anxiety gave way to relaxation",
+        "memory_state": "hypnosis",
+        "source_page": "159",
+        "pdf_page": "N/A",
+        "ai_justification": "Anxiety giving way to relaxation during the examination matches the pacification effect.",
+        "emotional_marker": "relaxation",
+        "chunk": 1
+      },
+      {
+        "motif_code": "X222",
+        "sequence_order": 10,
+        "source_citation": "an arMlike device Made an incision in his leg, taking out soMething or reMoving a saMple",
+        "memory_state": "hypnosis",
+        "source_page": "159-165",
+        "pdf_page": "N/A",
+        "ai_justification": "An arm-like device making an incision in the witness's leg matches beings making an incision for unknown purpose.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "A107",
+        "sequence_order": 11,
+        "source_citation": "A scar reMained.",
+        "memory_state": "hypnosis",
+        "source_page": "159-165",
+        "pdf_page": "N/A",
+        "ai_justification": "A scar remaining from the incision matches the linear or circular scar aftereffect.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "X225",
+        "sequence_order": 12,
+        "source_citation": "An eye (?) like device (or intent organic eye) appeared above hiM",
+        "memory_state": "hypnosis",
+        "source_page": "159-165",
+        "pdf_page": "N/A",
+        "ai_justification": "An eye-like device appearing above the witness matches the eyelike device descending from ceiling and scanning the witness.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "E111",
+        "sequence_order": 13,
+        "source_citation": "he seeMed to fly through space and see stars",
+        "memory_state": "hypnosis",
+        "source_page": "159-165",
+        "pdf_page": "N/A",
+        "ai_justification": "Seeming to fly through space while lying on a table suggests an out-of-body experience or visionary state.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "B100",
+        "sequence_order": 14,
+        "source_citation": "nor did he see any beings",
+        "memory_state": "hypnosis",
+        "source_page": "159-165",
+        "pdf_page": "N/A",
+        "ai_justification": "The witness did not see any beings, yet procedures were performed on him, implying beings were present but unseen.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "E203",
+        "sequence_order": 15,
+        "source_citation": "He did not recall what happened to the rest of his faMily",
+        "memory_state": "hypnosis",
+        "source_page": "159-165",
+        "pdf_page": "N/A",
+        "ai_justification": "The witness's inability to recall what happened to his family members during the event implies differential memory in a multiple-witness scenario.",
+        "emotional_marker": null,
+        "chunk": 1
+      }
+    ],
+    "model_name": "claude-opus-4-6",
+    "profile_used": "baseline_test",
+    "run_timestamp": "2026-04-05T11:51:13.474331",
+    "include_vol1": false,
+    "narrative_structure": "investigation",
+    "retrieval_method": "hypnosis",
+    "experiencer_name": "Philip Osborne",
+    "chunk_size": 3000,
+    "num_chunks": 1
+  }
+}

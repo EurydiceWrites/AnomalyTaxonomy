@@ -1,0 +1,312 @@
+{
+  "step_0": {
+    "source_text_path": "staging\\extracted_text_bullard_case_069_stripped.txt",
+    "pdf_page_start": null,
+    "pdf_page_end": null,
+    "source_page_start": 89,
+    "source_page_end": 106
+  },
+  "step_1_scanned_metadata": {
+    "source_type": "investigation",
+    "memory_retrieval_method": "hypnosis",
+    "narrative_structure": "investigation",
+    "principal_investigator": "Budd Hopkins",
+    "experiencer_name": "Howard Rich",
+    "gender": "male",
+    "age_at_time": "38",
+    "location": "Toms River, New Jersey",
+    "date_of_experience": "October 6-7, 1979",
+    "entity_types": [
+      "humanoid"
+    ],
+    "narrative_summary": "Howard Rich experienced a feeling of apprehension followed by an intense blue light in his room. Investigating outside, he saw another light and felt something touch his neck, rendering him immobile. Small, shadowy humanoids with bright eyes and long fingers approached him; they seemed weak and fearful. He was surrounded by light and floated towards a dark cloud with an internal light. He vaguely recalled being in a cold room where the beings manipulated him with lights and drained his energy, though he later felt warm and comfortable. After walking out of the cloud, he found himself back outside, retrieving his pistol, with no memory of the intervening time. He felt an unspoken instruction not to reveal what happened and tried to deter investigators from examining the site."
+  },
+  "step_1_source_attribution": {
+    "author_name": null,
+    "title": null,
+    "publication_year": null,
+    "publisher": null,
+    "place_of_publication": null,
+    "edition": null,
+    "translator": null,
+    "editor": null,
+    "author_role": null
+  },
+  "step_3_extraction": {
+    "encounter_events": [
+      {
+        "motif_code": "E208",
+        "sequence_order": 1,
+        "source_citation": "A feeling of apprehension overcaMe the witness while he watched TV about Midnight",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "E208 (Premonition): The witness experiences a sense that something will happen — apprehension overcomes him before any visible event occurs.",
+        "emotional_marker": "apprehension",
+        "chunk": 1
+      },
+      {
+        "motif_code": "E125",
+        "sequence_order": 2,
+        "source_citation": "an intense blue light, seeMingly inside the rooM, suddenly brightened and faded",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "E125 (Light behaves in odd way): An intense blue light appears seemingly inside the room, brightens and fades — anomalous light behavior.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "E100",
+        "sequence_order": 3,
+        "source_citation": "The night seeMed unnaturally quiet.",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "E100 (Vacuum effect: stillness, silence): The night seemed unnaturally quiet, indicating the classic silence/stillness effect.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "E320",
+        "sequence_order": 4,
+        "source_citation": "SoMething touched his neck and he dropped his pistol",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "E320 (Control by touch or gesture): Something touched his neck causing him to involuntarily drop his pistol — control exerted through physical touch.",
+        "emotional_marker": "shock",
+        "chunk": 1
+      },
+      {
+        "motif_code": "E315",
+        "sequence_order": 5,
+        "source_citation": "then stood (or fell to the ground) and was unable to Move.",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "E315 (Paralysis, numbness): The witness was unable to move after being touched — classic paralysis effect.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "B201",
+        "sequence_order": 6,
+        "source_citation": "Shadowy noids, sMall in stature",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "B201 (Humanoid): The beings are described as humanoid in form.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "B220",
+        "sequence_order": 7,
+        "source_citation": "sMall in stature",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "B220 (Short, 3.5 feet or less): The beings are described as small in stature.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "B245",
+        "sequence_order": 8,
+        "source_citation": "with bright eyes",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "B245 (Luminous): The beings' eyes are described as bright, indicating luminous eyes.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "B285",
+        "sequence_order": 9,
+        "source_citation": "long fingers",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "B285 (Fingers long and thin): The beings are described as having long fingers.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "B270",
+        "sequence_order": 10,
+        "source_citation": "skinny arMs",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "B270 (Extraordinarily long and spindly): The beings have skinny arms, indicating spindly limbs.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "B904",
+        "sequence_order": 11,
+        "source_citation": "The beings seeMed weak and fearful, with no will of their own",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "B904 (Beings are weak, lacking in will, and fearful): Directly described as weak, fearful, with no will of their own.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "B291",
+        "sequence_order": 12,
+        "source_citation": "he described theM as cold",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "B291 (Skin cold, sunless, sickly, soft): The beings are described as cold to the touch.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "B509",
+        "sequence_order": 13,
+        "source_citation": "with no tolerance for sunlight",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "B509 (Photophobia: retreat from or stay clear of light, sound): The beings have no tolerance for sunlight — photophobic behavior.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "E124",
+        "sequence_order": 14,
+        "source_citation": "They touched hiM and a light surrounded hiM, floating hiM toward a k cloud with a light inside.",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "E124 (Levitation in beam of light): A light surrounded the witness and floated him toward the craft — levitation within a beam of light.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "E216",
+        "sequence_order": 15,
+        "source_citation": "He felt no urge to escape",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "E216 (Denial of defense impulse): The witness felt no urge to escape despite being abducted — suppression of the natural defense/flight impulse.",
+        "emotional_marker": "calm",
+        "chunk": 1
+      },
+      {
+        "motif_code": "U170",
+        "sequence_order": 16,
+        "source_citation": "floating hiM toward a k cloud with a light inside",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "U170 (Mist, smoke, fog): The craft or conveyance is described as a dark cloud with a light inside — a fog/cloud-like appearance.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "X224",
+        "sequence_order": 17,
+        "source_citation": "He had a vague MeMory of a rooM where the beings hed with lights",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "X224 (Light or light beam shines on witness): The beings probed or examined the witness with lights in the room.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "E212",
+        "sequence_order": 18,
+        "source_citation": "drained hiM of his energy",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "E212 (Lassitude, weakness): The beings drained the witness of his energy, indicating a state of weakness/lassitude.",
+        "emotional_marker": "weakness",
+        "chunk": 1
+      },
+      {
+        "motif_code": "U250",
+        "sequence_order": 19,
+        "source_citation": "the rooM was cold at first",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "U250 (Cold): The room was cold at first — describing the environmental condition of the craft interior.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "U257",
+        "sequence_order": 20,
+        "source_citation": "the rooM was cold at first, but later he felt warM and coMfortable.",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "U257 (Room changes from cold to warm): The room transitioned from cold to warm during the experience.",
+        "emotional_marker": "comfort",
+        "chunk": 1
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 21,
+        "source_citation": "He walked out of the cloud and retrieved the pistol, conscious of nothing since he went outside to investigate.",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "E200 (Time lapse): The witness was conscious of nothing between going outside to investigate and retrieving his pistol — a period of missing time.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "E201",
+        "sequence_order": 22,
+        "source_citation": "He walked out of the cloud and retrieved the pistol, conscious of nothing since he went outside to investigate.",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "E201 (Doorway amnesia): The witness has no memory of entering or leaving the craft — blackout on entering/leaving.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "A114",
+        "sequence_order": 23,
+        "source_citation": "The beings never spoke to hiM, but he felt he should not tell what happened, and tried to discourage investigators froM exaMining the site.",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "A114 (Witness feels obliged to keep experience a secret): The witness felt compelled to keep the experience secret and actively discouraged investigation, despite no verbal instruction from the beings.",
+        "emotional_marker": "compulsion",
+        "chunk": 1
+      },
+      {
+        "motif_code": "C110",
+        "sequence_order": 24,
+        "source_citation": "The beings never spoke to hiM, but he felt he should not tell what happened",
+        "memory_state": "hypnosis",
+        "source_page": "1",
+        "pdf_page": "1",
+        "ai_justification": "C110 (Subject hears voice in his head or understands meanings): Though the beings never spoke, the witness received a clear impression/understanding that he should not tell — implying non-verbal telepathic communication of intent.",
+        "emotional_marker": null,
+        "chunk": 1
+      }
+    ],
+    "model_name": "claude-opus-4-6",
+    "profile_used": "baseline_test",
+    "run_timestamp": "2026-04-05T11:47:51.994552",
+    "include_vol1": false,
+    "narrative_structure": "investigation",
+    "retrieval_method": "hypnosis",
+    "experiencer_name": "Howard Rich",
+    "chunk_size": 3000,
+    "num_chunks": 1
+  }
+}
