@@ -139,6 +139,16 @@ Every entry traces to a specific rationale and evidence base. Decisions are neve
 
 ---
 
+### DEC-012: A-code anchor exclusions for episode segmentation
+- **Date:** 2026-04-04
+- **Decision:** A-family motif codes are anchors for Episode 8 (Aftermath) in the walk-and-inherit episode segmentation algorithm, **except** A115 (nightmares/abduction dreams), A116 (memory return), A220 (other sightings), and A221 (other encounters). These four codes are treated as non-anchors and inherit their episode from context.
+- **Rationale:** These four codes describe investigation context (why the case came to light) rather than the Aftermath episode (what happened after the abduction). A115/A116 relate to hypnotic memory recovery methodology; A220/A221 relate to prior sightings mentioned as background. All four have high early-appearance rates (21.6% average) compared to other A-codes (8.0%), causing false-deviant classifications when they fire Episode 8 before Examination.
+- **Evidence:** v2→v4 comparison: excluding these 4 codes improved orthodox accuracy from 60.9% to 63.1% and overall accuracy from 55.6% to 56.8%. v3 (removing A entirely) showed that A still carries signal: deviant detection dropped from 26.7% to 16.7% without it.
+- **Status:** ACTIVE
+- **Decided in:** Eurydice chat, 2026-04-04
+
+---
+
 ## Conventions
 
 - Decisions are numbered sequentially and never reused
