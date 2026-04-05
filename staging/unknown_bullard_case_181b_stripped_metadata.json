@@ -1,0 +1,324 @@
+{
+  "step_0": {
+    "source_text_path": "staging\\extracted_text_bullard_case_181b_stripped.txt",
+    "pdf_page_start": null,
+    "pdf_page_end": null,
+    "source_page_start": 186,
+    "source_page_end": 207
+  },
+  "step_1_scanned_metadata": {
+    "source_type": "investigation",
+    "memory_retrieval_method": "conscious",
+    "narrative_structure": "investigation",
+    "principal_investigator": null,
+    "experiencer_name": null,
+    "gender": "female",
+    "age_at_time": null,
+    "location": "Alsace, France",
+    "date_of_experience": "June 1960",
+    "entity_types": [
+      "being",
+      "humanoid"
+    ],
+    "narrative_summary": "While on a family picnic in Alsace, France, in June 1960, a young female approached a lighted, top-shaped craft. She was called by a voice in her head and entered the craft via a light ramp. Inside, she found a celebration underway with music and games, marking the completion of a major research project by an older being who had previously abducted her. She conversed with another young female entity about mundane topics. During an examination, a blood sample was taken from her nose, intended for her to observe how she had changed. She had vague memories of traveling in the ship over North America before her conscious memory returned upon seeing a deer with eyes resembling the beings'. She found drops of blood on her blouse, which her father's camera recorded, and experienced eye irritation from the ship's light."
+  },
+  "step_1_source_attribution": {
+    "author_name": null,
+    "title": null,
+    "publication_year": null,
+    "publisher": null,
+    "place_of_publication": null,
+    "edition": null,
+    "translator": null,
+    "editor": null,
+    "author_role": null
+  },
+  "step_3_extraction": {
+    "encounter_events": [
+      {
+        "motif_code": "U104",
+        "sequence_order": 1,
+        "source_citation": "she approached a top-shaped, lighted craft",
+        "memory_state": "conscious",
+        "source_page": "203",
+        "pdf_page": "N/A",
+        "ai_justification": "The craft is described as top-shaped, matching U104 (bell, mushroom or top shape).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "C110",
+        "sequence_order": 2,
+        "source_citation": "heard a voice in her head, calling her naMe",
+        "memory_state": "conscious",
+        "source_page": "203",
+        "pdf_page": "N/A",
+        "ai_justification": "The witness hears a telepathic voice in her head, matching C110 (subject hears voice in his head).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "U133.1",
+        "sequence_order": 3,
+        "source_citation": "She entered on a conveyor-belt raMp Made of light",
+        "memory_state": "conscious",
+        "source_page": "203",
+        "pdf_page": "N/A",
+        "ai_justification": "A ramp made of light matches U133.1 (ramp made of light).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "C200",
+        "sequence_order": 4,
+        "source_citation": "talk in high-pitched clicking sounds",
+        "memory_state": "conscious",
+        "source_page": "203",
+        "pdf_page": "N/A",
+        "ai_justification": "High-pitched clicking sounds among beings matches C200 (beings communicate with each other using mumbling or unusual sounds) / C201 (unknown language or yelping, animal-like sounds).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "B914",
+        "sequence_order": 5,
+        "source_citation": "A celebration was under way with talk in high-pitched clicking sounds, gaMes and Music",
+        "memory_state": "conscious",
+        "source_page": "203",
+        "pdf_page": "N/A",
+        "ai_justification": "The beings are celebrating with games and music, indicating they are happy, matching B914 (beings are happy in their work, or laugh).",
+        "emotional_marker": "celebratory",
+        "chunk": 1
+      },
+      {
+        "motif_code": "B801",
+        "sequence_order": 6,
+        "source_citation": "the older being froM her first abduction coMpleting a Major research project",
+        "memory_state": "conscious",
+        "source_page": "203",
+        "pdf_page": "N/A",
+        "ai_justification": "An older being from a prior abduction is identified, matching B801 (one being is an elder).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "B223",
+        "sequence_order": 7,
+        "source_citation": "The taller helper was there as well",
+        "memory_state": "conscious",
+        "source_page": "203",
+        "pdf_page": "N/A",
+        "ai_justification": "A taller helper is described, consistent with B223 (tall) or at minimum indicating height dimorphism.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "B211",
+        "sequence_order": 8,
+        "source_citation": "also a young feMale",
+        "memory_state": "conscious",
+        "source_page": "203",
+        "pdf_page": "N/A",
+        "ai_justification": "A young female being is present, matching B211 (feminine).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "C101",
+        "sequence_order": 9,
+        "source_citation": "The two girls talked together about dating, school and career plans",
+        "memory_state": "conscious",
+        "source_page": "203",
+        "pdf_page": "N/A",
+        "ai_justification": "The witness and the young female being converse about everyday topics, indicating verbal communication in the subject's language (C101).",
+        "emotional_marker": "friendly",
+        "chunk": 1
+      },
+      {
+        "motif_code": "B900",
+        "sequence_order": 10,
+        "source_citation": "The two girls talked together about dating, school and career plans",
+        "memory_state": "conscious",
+        "source_page": "203",
+        "pdf_page": "N/A",
+        "ai_justification": "The friendly, familiar conversation about everyday topics matches B900 (beings are friendly, polite, familiar in manner).",
+        "emotional_marker": "friendly",
+        "chunk": 1
+      },
+      {
+        "motif_code": "B806",
+        "sequence_order": 11,
+        "source_citation": "The older beings wore the darkest clothing and the younger were deferential",
+        "memory_state": "conscious",
+        "source_page": "206-207",
+        "pdf_page": "N/A",
+        "ai_justification": "Older beings in darker clothing with younger beings being deferential indicates rank-based dimorphism, matching B806 (taller/older beings lead, shorter/younger are subservient).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "B365",
+        "sequence_order": 12,
+        "source_citation": "The older beings wore the darkest clothing",
+        "memory_state": "conscious",
+        "source_page": "206-207",
+        "pdf_page": "N/A",
+        "ai_justification": "The darkest clothing matches B365 (dark).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "M125",
+        "sequence_order": 13,
+        "source_citation": "They wanted the witness to share in the celebration because she had contributed to the success of the project. It had changed their understanding of otherworldly life",
+        "memory_state": "conscious",
+        "source_page": "205-207",
+        "pdf_page": "N/A",
+        "ai_justification": "The beings explain the witness contributed to a research project that changed their understanding, matching M125 (they have come to learn, teach or experiment).",
+        "emotional_marker": "appreciative",
+        "chunk": 1
+      },
+      {
+        "motif_code": "A131",
+        "sequence_order": 14,
+        "source_citation": "the work seeMed endowed soMehow with spiritual significance",
+        "memory_state": "conscious",
+        "source_page": "205-207",
+        "pdf_page": "N/A",
+        "ai_justification": "The spiritual significance of the work implies the witness develops new spiritual awareness/interests, matching A131.",
+        "emotional_marker": "awe",
+        "chunk": 1
+      },
+      {
+        "motif_code": "X235",
+        "sequence_order": 15,
+        "source_citation": "They used the incision instruMent to draw a blood saMple froM her nose",
+        "memory_state": "conscious",
+        "source_page": "205-207",
+        "pdf_page": "N/A",
+        "ai_justification": "Drawing a blood sample matches X235 (beings take a blood or body fluids sample).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "X222",
+        "sequence_order": 16,
+        "source_citation": "They used the incision instruMent to draw a blood saMple froM her nose",
+        "memory_state": "conscious",
+        "source_page": "205-207",
+        "pdf_page": "N/A",
+        "ai_justification": "Use of an incision instrument matches X222 (beings make incision for unknown purpose).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "X240",
+        "sequence_order": 17,
+        "source_citation": "They used the incision instruMent to draw a blood saMple froM her nose",
+        "memory_state": "conscious",
+        "source_page": "205-207",
+        "pdf_page": "N/A",
+        "ai_justification": "The nose is in the head area; drawing a sample from the nose indicates special interest in the head area, matching X240.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "B711",
+        "sequence_order": 18,
+        "source_citation": "this saMple seeMed intended for the girl to exaMine like a rare speciMen, to see how the witness had changed froM before",
+        "memory_state": "conscious",
+        "source_page": "205-207",
+        "pdf_page": "N/A",
+        "ai_justification": "Examining the blood sample to see how the witness had changed indicates interest in chemical composition/internal makeup, matching B711.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "W110",
+        "sequence_order": 19,
+        "source_citation": "She had vague MeMories of going up in the ship and looking down over North AMerica",
+        "memory_state": "conscious",
+        "source_page": "197",
+        "pdf_page": "N/A",
+        "ai_justification": "Looking down over North America from the ship matches W110 (otherworld seen approaching out a window, or earth departing).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "E200",
+        "sequence_order": 20,
+        "source_citation": "She had vague MeMories of going up in the ship and looking down over North AMerica",
+        "memory_state": "conscious",
+        "source_page": "197",
+        "pdf_page": "N/A",
+        "ai_justification": "Vague memories of the journey suggest a time lapse or partial amnesia during this phase, matching E200.",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "A116.1",
+        "sequence_order": 21,
+        "source_citation": "Her conscious MeMory returned when she saw a deer of unusual beauty, with eyes which reMinded her of the beings' eyes",
+        "memory_state": "conscious",
+        "source_page": "195-196",
+        "pdf_page": "N/A",
+        "ai_justification": "Conscious memory returning upon seeing the deer indicates fragmentary memories persisting and returning, matching A116.1.",
+        "emotional_marker": "wonder",
+        "chunk": 1
+      },
+      {
+        "motif_code": "B246",
+        "sequence_order": 22,
+        "source_citation": "eyes which reMinded her of the beings' eyes",
+        "memory_state": "conscious",
+        "source_page": "195-196",
+        "pdf_page": "N/A",
+        "ai_justification": "The deer's eyes remind her of the beings' eyes, implying the beings' eyes were notably compelling or distinctive, matching B246 (eyes unblinking, staring, hypnotic).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "M109",
+        "sequence_order": 23,
+        "source_citation": "It seeMed to say goodbye to her and disappeared",
+        "memory_state": "conscious",
+        "source_page": "195-196",
+        "pdf_page": "N/A",
+        "ai_justification": "The deer seeming to say goodbye functions as a farewell, matching M109.",
+        "emotional_marker": "sadness",
+        "chunk": 1
+      },
+      {
+        "motif_code": "A105",
+        "sequence_order": 24,
+        "source_citation": "she had drops of blood on her blouse, and though she had no MeMory of their origin",
+        "memory_state": "conscious",
+        "source_page": "186",
+        "pdf_page": "N/A",
+        "ai_justification": "Drops of blood on her blouse with no memory of origin match A105 (spots or reddish marks like puncture wounds, soreness).",
+        "emotional_marker": null,
+        "chunk": 1
+      },
+      {
+        "motif_code": "A100",
+        "sequence_order": 25,
+        "source_citation": "She again experinced eye irritation froM the light within the ship",
+        "memory_state": "conscious",
+        "source_page": "186",
+        "pdf_page": "N/A",
+        "ai_justification": "Eye irritation from the light matches A100 (eye troubles: water, burn, vision impaired, sensitive to light).",
+        "emotional_marker": "discomfort",
+        "chunk": 1
+      }
+    ],
+    "model_name": "claude-opus-4-6",
+    "profile_used": "baseline_test",
+    "run_timestamp": "2026-04-05T11:55:37.839257",
+    "include_vol1": false,
+    "narrative_structure": "investigation",
+    "retrieval_method": "conscious",
+    "experiencer_name": null,
+    "chunk_size": 3000,
+    "num_chunks": 1
+  }
+}

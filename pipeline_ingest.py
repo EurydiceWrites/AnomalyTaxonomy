@@ -834,17 +834,18 @@ def _build_pipeline_json(metadata, attribution, text_output_path,
 
 def _make_pipeline_json_path(metadata, attribution, source_text_path=None):
     """
-    Build the JSON filename: staging/{experiencer_name}_{source_title}_metadata.json
-    Falls back to the source text filename when both experiencer and title are unknown,
-    to prevent filename collisions.
+    Build the JSON filename: staging/{experiencer_name}_{source_title}_{source_id}_metadata.json
+    Always includes a source identifier (from the extracted text filename) to prevent
+    collisions when the same experiencer appears in multiple chapters or sources.
     """
     experiencer = _slugify(metadata.pseudonym) if metadata.pseudonym else "unknown"
     title = _slugify(attribution.title) if attribution and attribution.title else "unknown"
-    # If both are unknown, use the source text filename to avoid collisions
-    if experiencer == "unknown" and title == "unknown" and source_text_path:
+    # Always include source text identifier for uniqueness
+    if source_text_path:
         source_stem = os.path.splitext(os.path.basename(source_text_path))[0]
         source_stem = source_stem.replace("extracted_text_", "")
-        filename = f"unknown_{_slugify(source_stem)}_metadata.json"
+        source_id = _slugify(source_stem)
+        filename = f"{experiencer}_{title}_{source_id}_metadata.json"
     else:
         filename = f"{experiencer}_{title}_metadata.json"
     return os.path.join("staging", filename)
@@ -1037,6 +1038,17 @@ def main():
 
     # Pass 2: Voice classification
     ai_events_json = classify_voice_tags(ai_events_json, chunks, model=args.model)
+
+    # Merge voice tags back into the pipeline JSON
+    with open(json_path, "r", encoding="utf-8") as f:
+        pipeline_data = json.load(f)
+
+    for ev_json, ev_stored in zip(ai_events_json, pipeline_data["step_3_extraction"]["encounter_events"]):
+        ev_stored["voice_speaker"] = ev_json.get("voice_speaker", "investigator")
+        ev_stored["voice_content_type"] = ev_json.get("voice_content_type", "testimony")
+
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(pipeline_data, f, indent=2, ensure_ascii=False)
 
     print(f"[*] Results merged into: {json_path}")
 
